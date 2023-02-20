@@ -1,0 +1,374 @@
+---
+title: "Code Update"
+output: html_notebook
+---
+
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(ggnewscale)
+
+```
+
+
+```{r Read In and Tidy}
+
+## read in data from healthcare utilisation data set 
+
+## "hu_los_by_diagnosis.csv" is a CSV download of 
+## "Health Care Utilisation: Hospital average length of stay by diagnostic categories" 
+## from
+## https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC
+los_data_raw <- read.csv("hu_los_by_diagnosis.csv")
+
+## Change names to snake case, switch from long to wide format
+los_data_tidy <- los_data_raw %>% 
+  clean_names() %>% 
+  pivot_wider(names_from = c(variable, measure),
+              values_from = value,
+              id_cols = c(year, country))
+
+
+```
+
+
+
+```{r Subset Mental Health}
+
+
+## subsetting mental health
+mh_los_data <- los_data_tidy %>% 
+  select(year, 
+         country, 
+         "Mental and behavioural disorders_Days" : 
+         "Other Mental and behavioural disorders_Days") %>% 
+  mutate(country = as_factor(country)) %>%
+  clean_names()
+
+
+## update length of stay data with date range, convert year/country data type to factor
+mh_los_tidy <- mh_los_data %>% 
+  filter(year %in% 2016:2021) %>% 
+    mutate(across( .cols =  c(country, year), .fns = as.factor ))
+
+```
+
+
+```{r Long Term Care Provision}
+
+## long term care staff data
+## "ltc_workers.csv" data is csv download of 
+## "Long-Term Care Resources and Utilisation: Long-term care workers: formal sector"
+## from
+## https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC
+
+ltc_staff <- read.csv("ltc_workers.csv")
+
+## extract variables of interest/remove duplicates
+ltc_staff_tidy <- ltc_staff %>% 
+  filter(Year %in% 2016:2020) %>% 
+  select(Variable, 
+         Measure, 
+         Country, 
+         Year, 
+         Value, 
+         Flags) %>% 
+  mutate(Variable = as_factor(Variable),
+         Measure = as_factor(Measure),
+         Country = as_factor(Country),
+         Year = as.integer(Year)) %>% 
+  clean_names()
+  
+
+## filter to look at users
+ltc_counts <- ltc_staff_tidy %>% 
+ filter(variable == "Formal LTC workers (FTE)",
+        measure == "Total (nurses and personal carers)" | measure == "Per 100 population aged 65 years old and over") %>% 
+  pivot_wider(names_from = c(variable, measure), 
+              values_from = value) %>% 
+  mutate(year = as_factor(year)) %>% 
+  clean_names()
+
+```
+
+```{r Edinburgh Style}
+
+## load University of Edinburgh brand colours
+## source: https://uoe.sharepoint.com/sites/Brand/SitePages/Colours.aspx
+
+## default call to rgb() assume value of 0-1, need to set maxColorValue = 255 to 
+## match formatting from University of Edinburgh site
+
+
+## Core colours - university red and university blue
+
+edin_uni_red_rgb <- rgb(193, 0, 67, maxColorValue = 255)
+
+edin_uni_blue_rgb <- rgb(4, 30, 66, maxColorValue = 255)
+
+## Bright colours - bright pink, bright green, blue, bright orange, bright red, 
+## purple, bright yellow and bright blue
+
+edin_bright_pink_rgb <- rgb(208, 0, 111, maxColorValue = 255)
+
+edin_bright_green_rgb <- rgb(41, 188, 41, maxColorValue = 255)
+
+edin_blue_rgb <- rgb(0, 114, 136, maxColorValue = 255)
+
+edin_bright_orange_rgb <- rgb(205, 90, 19, maxColorValue = 255)
+
+edin_bright_red_rgb <- rgb(172, 0, 64, maxColorValue = 255)
+
+edin_purple_rgb <- rgb(131, 0, 101, maxColorValue = 255)
+
+edin_bright_yellow_rgb <- rgb(244, 170, 0, maxColorValue = 255)
+
+edin_bright_blue_rgb <- rgb(0, 196, 223, maxColorValue = 255)
+
+
+## Muted colours - muted brown, brown, muted yellow, muted turquoise, light blue, 
+## muted blue, dark green, muted pink
+
+edin_muted_brown_rgb <- rgb(109, 79, 71, maxColorValue = 255)
+
+edin_brown_rgb <- rgb(106, 51, 40, maxColorValue = 255)
+
+edin_muted_yellow_rgb <- rgb(156, 154, 0, maxColorValue = 255)
+
+edin_muted_turquoise_rgb <- rgb(69, 126, 129, maxColorValue = 255)
+
+edin_light_blue_rgb <- rgb(194, 211, 223, maxColorValue = 255)
+
+edin_muted_blue_rgb <- rgb(0, 79, 113, maxColorValue = 255)
+
+edin_dark_green_rgb <- rgb(21, 71, 52, maxColorValue = 255)
+
+edin_muted_pink_rgb <- rgb(184, 133, 141, maxColorValue = 255)
+
+
+## Digital colours - university red, bright pink, dark green, muted brown, university
+## blue, purple, jade, spruce grey, bright blue(2 - different to previous bright blue),
+## burgundy, muted blue
+## some repetition of previous - new only below
+
+edin_jade_rgb <- rgb(72, 122, 123, maxColorValue = 255)
+
+edin_spruce_grey_rgb <- rgb(51, 63, 72, maxColorValue = 255)
+
+edin_bright_blue_2_rgb <- rgb(0, 114, 136, maxColorValue = 255)
+
+edin_burgundy_rgb <- rgb(165, 0, 52, maxColorValue = 255)
+
+
+
+
+## make colour palettes from University of Edinburgh colour groups
+
+## palette from off-white to uni blue
+edin_white_blue_pal <- colorRampPalette(c(edin_light_blue_rgb,
+                                          edin_bright_blue_rgb,
+                                          edin_blue_rgb,
+                                          edin_muted_blue_rgb,
+                                          edin_uni_blue_rgb))
+
+## palette from pink to red
+edin_pink_pal <- colorRampPalette(c(edin_muted_pink_rgb,
+                                    edin_bright_pink_rgb,
+                                    edin_uni_red_rgb,
+                                    edin_burgundy_rgb,
+                                    edin_purple_rgb))
+
+
+```
+
+```{r Presentation Plot LoS}
+
+## create data frame of LoS for all countries except with Korea removed for ease of
+## plotting
+mh_los_kor_rm <- mh_los_data %>% 
+  filter(country != "Korea")
+
+## Data frame sorting non-Korea countries by length of stay in 2020
+mh_los_2020_sort <- mh_los_kor_rm %>% 
+  filter(year == 2020) %>% 
+  arrange(desc(mental_and_behavioural_disorders_days)) 
+
+## main length of stay plot - shows average mental health admission length of stay for
+## each country for years 2016-2020 inclusive
+presentation_plot_mh_los <- mh_los_data %>% 
+  filter(year %in% 2016:2020) %>%
+  group_by(country) %>% 
+   ggplot() +
+   aes(x = year, 
+       y = mental_and_behavioural_disorders_days) +
+  ## plot non-Korea countries - highest and lowest length of stay in 2020 only
+  geom_line(data = mh_los_kor_rm %>% 
+              filter(year %in% 2016:2020,
+                    ## select only countries with the highest and lowest length of stay
+                    ## in 2020 (outside of Korea)
+                    country == pull(mh_los_2020_sort, 
+                                    country)[1] |
+                    country == pull(mh_los_2020_sort, 
+                                    country)[max(length(mh_los_2020_sort$country))]),
+            aes(colour = country),
+            show.legend = FALSE,
+            linetype = "solid", 
+            size = 1.2) + 
+  ## set custom Edinburgh blues for non-highlighted, comparison lines
+  scale_colour_manual(name = "Countries",
+                      values = c(edin_bright_blue_rgb, 
+                                 edin_muted_blue_rgb)) +
+  ## label lines with relevant country names in same colour as line
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 70,
+           label = "Spain",
+           colour = edin_muted_blue_rgb,
+           size = 7) +
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 20,
+           label = "Belgium",
+           colour = edin_bright_blue_rgb,
+           size = 7) +
+  ## clear previous colour scale specification to allow custom colours for lines plotted
+  ## below
+  ggnewscale::new_scale_colour() +
+  geom_line(data = filter(mh_los_data,
+                         country == "Korea",
+                         year %in% 2016:2020),
+            aes(colour = country),
+            size = 1.5,
+            show.legend = FALSE) +
+  ## set colour of Korea line to pink to highlight
+  scale_colour_manual(values = edin_bright_pink_rgb) +
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 210,
+           label = "Korea",
+           colour = edin_bright_pink_rgb,
+           size = 7) +
+  ## set generic theme
+  theme_bw() +
+  ## label axes with neater names
+  ylab("Mental Health Admission Average Length of Stay in Days") +
+  xlab("Year") +
+  ## set titles/caption text
+  labs(title = "Korea's average mental health admission is almost four times longer \nthan the next highest average length of stay",
+       subtitle = "Spain has the second longest average mental health admission in the OECD, Belgium has the shortest \n",
+       caption = "Source: Organisation for Economic Co-operation and Development \nhttps://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_REAC") +
+  ## set title, caption, axis and gridlines colours
+  theme(title = element_text(colour = edin_spruce_grey_rgb,
+                             size = 20),
+        plot.subtitle = element_text(colour = edin_spruce_grey_rgb,
+                                     size = 16),
+        plot.caption = element_text(face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size = 7),
+        axis.title = element_text(colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        axis.text = element_text(colour = edin_spruce_grey_rgb,
+                                 size = 13),
+        axis.line = element_line(colour = edin_spruce_grey_rgb,
+                                 size = 1), 
+        panel.grid = element_line(colour = edin_light_blue_rgb))
+
+
+presentation_plot_mh_los
+
+```
+
+
+
+
+
+```{r Presentation Plot Long Term Care}
+
+## main long term care plot - shows long term community care provision (including nurses
+## and personal care givers) per capita aged 65 and over for each country for years
+## 2016-2020 inclusive
+presentation_plot_ltc_counts <- ltc_counts %>%
+  group_by(country, year) %>%
+  # country factors levels start in nonsensical order - reorders alphabetically
+  mutate(country = fct_relevel(country,
+                               sort(as.character(unique(ltc_counts$country))))
+         ) %>% 
+  ggplot() +
+  aes(x = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+       y = country,
+       fill = year) +
+  geom_col(position = "dodge") +
+  ## flip y axis albel so alphabetical top to bottom rather than bottom to top
+  scale_y_discrete(limits = rev) +
+  ## colour all non-Korea countries in custom Edinburgh blues
+   scale_fill_manual(name = "Year",
+                    values = edin_white_blue_pal(
+                      ## splits palette into same number of colours as max possible
+                      ## number of years to be plotted - allows colour interpolation if
+                      ## more years than colours
+                      (length(unique(ltc_counts$year)))),
+                    guide = guide_legend(reverse = TRUE)) +
+  ## clear previous colour scale specification to allow custom colours for bars plotted
+  ## below
+  ggnewscale::new_scale_fill() +
+  ## highlight Korea in pink/red
+  geom_col(data = filter(ltc_counts,
+                         country == "Korea",
+                         year %in% 2016:2020),
+           aes(y = country,
+               x = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+               fill = year),
+           position = "dodge",
+           ## extra legend in pink/red suppressed as looks better, years for Korean data
+           ## can be inferred with reference to bar groups for other countries
+           show.legend = FALSE) +
+  scale_fill_manual(values = edin_pink_pal(
+    ##splits palette into same number of colours as max possible number of years to be
+    ## plotted - allows colour interpolation if more years than colours
+    (length(unique(ltc_counts$year))))
+    ) +
+  ## add median for reference
+  geom_vline(aes(xintercept = median(ltc_counts$formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over, 
+                                     na.rm = TRUE)),
+             linetype = "dashed",
+             colour = edin_bright_orange_rgb,
+             size = 1
+             ) +
+  annotate(geom = "text", 
+           x = 4.5, 
+           y = "Ireland",
+           label = "Median",
+           size = 5,
+           vjust = 0,
+           colour = edin_bright_orange_rgb) +
+  xlab("Long Term Care Workers per 100 Population Aged 65 and Over") +
+  ylab( "Country") +
+  ## sets titles/caption text
+  labs(title = "Korea has substantially fewer community care workers per capita \nthan the OECD median",
+       subtitle = "This number has risen over the past four years \n",
+       caption = "Source: Organisation for Economic Co-operation and Development \nhttps://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_REAC") +
+  theme_bw() +
+  ## set title, caption, axis and gridlines colours
+  theme(title = element_text(colour = edin_spruce_grey_rgb,
+                             size = 20),
+        plot.subtitle = element_text(colour = edin_spruce_grey_rgb,
+                             size = 16),
+        legend.title = element_text(colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        plot.caption = element_text(face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size = 7),
+        axis.title = element_text(colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        axis.text = element_text(colour = edin_spruce_grey_rgb,
+                                 size = 13),
+        axis.line = element_line(colour = edin_spruce_grey_rgb,
+                                 size = 1), 
+        panel.grid = element_line(colour = edin_light_blue_rgb))
+
+presentation_plot_ltc_counts
+
+```

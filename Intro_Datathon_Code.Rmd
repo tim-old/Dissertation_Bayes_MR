@@ -1,0 +1,883 @@
+---
+title: "Intro Datathon Notes"
+output:
+  pdf_document:
+    df_print: paged
+date: '2022-10-23'
+df_print: kable
+fig_caption: yes
+toc: yes
+
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(RColorBrewer)
+library(ggnewscale)
+library(sysfonts)
+
+```
+
+
+```{r Read In and Tidy Length of Stay (LoS) and Discharge (dc) Data}
+
+## read in data from healthcare utilisation data set
+dc_data_raw <- read.csv("hu_discharges_by_diagnosis.csv")
+
+los_data_raw <- read.csv("hu_los_by_diagnosis.csv")
+
+## Change names to snake case, switch from long to wide format
+dc_data_tidy <- dc_data_raw %>% 
+  clean_names() %>% 
+  pivot_wider(names_from = c(variable, measure),
+              values_from = value,
+              id_cols = c(year, country))
+
+los_data_tidy <- los_data_raw %>% 
+  clean_names() %>% 
+  pivot_wider(names_from = c(variable, measure),
+              values_from = value,
+              id_cols = c(year, country))
+
+## check data-frame dimensions
+dim(dc_data_tidy)
+dim(los_data_tidy)
+
+```
+
+
+
+```{r Subset Mental Health}
+
+## checking names to direct subsetting (hashed for ease of reading of report - 312 + 157 names printed otherwise!)
+#names(dc_data_tidy)
+#names(los_data_tidy)
+
+## subsetting mental health
+mh_dc_data <- dc_data_tidy %>% 
+  select(year, country, "Mental and behavioural disorders_Number" : "Other Mental and behavioural disorders_Per 100 000 population") %>% 
+  clean_names()
+
+mh_los_data <- los_data_tidy %>% 
+  select(year, 
+         country, 
+         "Mental and behavioural disorders_Days" : "Other Mental and behavioural disorders_Days") %>% 
+  mutate(country = as_factor(country)) %>%
+  clean_names()
+
+```
+
+
+
+```{r Exploratory Analysis}
+
+## check data subsetting successful
+glimpse(mh_dc_data)
+
+glimpse(mh_los_data)
+
+## plot mental health average LoS by year for each country, then average discharge rate by year for each country
+mh_los_plot <- mh_los_data %>% 
+  filter(year %in% 2016:2021) %>% 
+   ggplot() +
+   aes(x = year, y = mental_and_behavioural_disorders_days, colour = country) +
+   geom_line() +
+  ylab("Mental Health Admission Average Length of Stay in Days")
+
+mh_dc_plot <- mh_dc_data %>% 
+   ggplot() +
+   aes(x = year, y = mental_and_behavioural_disorders_per_100_000_population, colour = country) +
+   geom_line()
+
+mh_los_plot
+
+mh_dc_plot
+
+```
+
+
+
+```{r Investigate LoS Outlier}
+
+## clear outlier noted for los - repeat graph with highest LoS countries:
+
+mh_long_los_plot <- mh_los_data %>% 
+   filter(mental_and_behavioural_disorders_days > 50) %>% 
+   ggplot() +
+   aes(x = year, y = mental_and_behavioural_disorders_days, colour = country) +
+   geom_line()
+
+
+## outlier noted as Korea -> graph Korea only by diagnosis to see underlying trends
+
+kor_los_data <- mh_los_data %>% 
+  filter(country == "Korea")
+
+kor_dc_data <- mh_dc_data %>% 
+  filter(country == "Korea")
+
+## switch back to long format to plot by diagnosis
+kor_los_data_long_format <- kor_los_data %>% 
+  pivot_longer(cols = mental_and_behavioural_disorders_days:other_mental_and_behavioural_disorders_days, names_to = "diagnosis",  values_to = "days")
+
+kor_los_plot <-  kor_los_data_long_format %>% 
+  filter(year %in% 2016:2021) %>% 
+   ggplot() +
+   aes(x = year, y = days, colour = diagnosis) +
+   geom_line() +
+  geom_line(data = filter(kor_los_data_long_format, diagnosis == "mental_and_behavioural_disorders_days", year %in% 2016:2021), size = 3 ) +
+  labs(title = "Average Length of Stay by Mental Health Diagnosis in Korea", subtitle = "Thick line is average across all diagnoses")
+
+## Plot discharge rate by diagnosis
+
+kor_dc_rate_long_format <- kor_dc_data %>% 
+  select(year, ends_with("_per_100_000_population")) %>% 
+  pivot_longer(cols = mental_and_behavioural_disorders_per_100_000_population:other_mental_and_behavioural_disorders_per_100_000_population, names_to = "diagnosis",  values_to = "rate")
+
+kor_dc_rough_plot_rate <-  kor_dc_rate_long_format %>% 
+  ggplot() +
+  aes(x = year, y = rate, colour = diagnosis) +
+  geom_line()
+
+```
+
+
+
+```{r Alcohol Wrangling/Mental health update}
+
+## Alcohol data wrangling code written by Zahra
+
+
+## read in alcohol (alcohol) data:
+alcohol_data <- read.csv("alcohol_consumption.csv")
+
+## review structure to determine wrangling needs:
+glimpse(alcohol_data)
+
+alcohol_data <- read.csv("alcohol_consumption.csv")
+
+
+# Factorise years and country
+alcohol_data_tidy <- alcohol_data %>% 
+  mutate(Year = as_factor(Year)) %>% 
+  mutate(Country = factor(Country)) %>% 
+  filter(Year %in% 2016:2021) %>% 
+  arrange(Country, Year) %>% 
+  select(Country, Year, Value)
+
+#glimpse(alcohol_data_tidy)
+
+
+## update length of stay/discharge data with date range, convert year/country data type to factor
+mh_los_tidy <- mh_los_data %>% 
+  filter(year %in% 2016:2021) %>% 
+    mutate(across( .cols =  c(country, year), .fns = as.factor ))
+
+
+mh_dc_tidy <- mh_dc_data %>% 
+  filter(year %in% 2016:2021) %>% 
+  mutate(across( .cols =  c(country, year), .fns = as.factor ))
+
+
+
+## combine data frames for alcohol and length of stay, then alcohol and discharges
+mh_los_alcohol <- full_join(alcohol_data_tidy, mh_los_tidy, by = c(c("Year" = "year"), c("Country" = "country"))) %>% 
+  rename("alcohol_consumption" = Value) %>% 
+  as_tibble() %>% 
+  mutate(across( .cols =  c(Country, Year), .fns = as.factor ))
+
+mh_dc_alcohol <- full_join(alcohol_data_tidy, mh_dc_tidy, by = c(c("Year" = "year"), c("Country" = "country"))) %>% 
+  rename("alcohol_consumption" = Value) %>% 
+  as_tibble() %>% 
+  mutate(across( .cols =  c(Country, Year), .fns = as.factor ))
+
+```
+
+
+
+
+```{r Alcohol / Mental Health LoS}
+
+
+## Plotting alcohol consumption vs mental health average LoS
+rough_plot_los_alcohol <- mh_los_alcohol %>% 
+  filter(Country != "Korea") %>% 
+  group_by(Country) %>% 
+  ggplot() +
+  aes(x = mental_and_behavioural_disorders_days, y = alcohol_consumption, colour = Year) +
+    geom_point() +
+  xlab("Average Length of Stay in days - All mental and behavioural disorders") +
+  ylab("Average per capita alcohol consumption - litres per year") +
+  facet_wrap(~Year) +
+  stat_smooth()
+
+## Plotting alcohol consumption vs mental health discharges
+rough_plot_dc_alcohol <- mh_dc_alcohol %>% 
+  #filter(Country != "Korea") %>% 
+  group_by(Country) %>% 
+  ggplot() +
+  aes(x = mental_and_behavioural_disorders_per_100_000_population, y = alcohol_consumption, colour = Year) +
+    geom_point() + 
+  facet_wrap(~Year) +
+  stat_smooth()
+
+rough_plot_los_alcohol
+
+rough_plot_dc_alcohol
+
+
+## Plots just trends in alcohol consumption across years by country
+rough_plot_alcohol <- alcohol_data_tidy %>% 
+  group_by(Country) %>% 
+  ggplot() +
+  aes(x = Year, 
+      y = Value, 
+      colour = Country) +
+  geom_point() +
+  geom_line( aes(group = Country)) +
+  ylab(label = "Average per capita alcohol consumption - litres per year" )
+
+
+rough_plot_alcohol
+
+
+```
+
+
+```{r Mental Health Burden}
+
+## indicators of mental health burden - only available is suicide rate (death by intentional self harm)
+
+deaths_raw <- read.csv("mortality.csv")
+
+## remove other diagnoses, tidy format
+
+ish_deaths_tidy <- deaths_raw %>% 
+  filter(Variable == "Intentional self-harm") %>% 
+  select(Measure, Country, Year, Value, Flags) %>% 
+  pivot_wider(names_from = Measure, values_from = Value) %>%
+  clean_names()
+
+## plot standardised suicide mortality by country
+
+rough_plot_ish_deaths <- ish_deaths_tidy %>% 
+  group_by(country) %>% 
+  filter(year %in% 2016:2020) %>% 
+  ggplot() +
+  aes(x = year, 
+      y = deaths_per_100_000_population_standardised_rates,
+      colour = country) +
+  geom_line() +
+  geom_line(data = filter(ish_deaths_tidy, 
+                          country == "Korea", 
+                          year %in% 2016:2021), 
+            size = 2 ) +
+  ylab("Standardised Suicide Rate per 100,000 Population") +
+  labs(title = "Suicide Rate by Year", subtitle = "Thick Line is Korea")
+
+rough_plot_ish_deaths
+
+## Korea is main outlier, Lithuania second highest
+
+```
+
+
+
+```{r Mental health care quality}
+
+## only measures of quality available for mental health are suicide in hospital/shortly after discharge
+
+
+## read in data set
+mh_quality_raw <- read.csv("health_quality_mh.csv")
+
+## tidy data set 
+mh_quality_tidy <- mh_quality_raw %>% 
+  select(Country, Periods, Indicator, Gender, Value, Value.1, Flags) %>% 
+  pivot_wider(names_from = c(Value),
+               values_from = Value.1,
+               id_cols = c(Periods, Country, Gender, Flags, Indicator)) %>%
+  clean_names()
+  
+## plot of suicide within 30 days of discharge from mental health facilities
+rough_plot_mh_quality <- mh_quality_tidy %>% 
+  filter(gender == "Total", 
+         periods %in% 2016:2021, 
+         indicator == "Suicide within 30 days after discharge among patients diagnosed with a mental disorder") %>% 
+  group_by(country) %>% 
+  ggplot() +
+  aes(x = periods, 
+      y = lower_confidence_interval, 
+      colour = country ) +
+  geom_line() +
+  #highlights Korea with a thicker line
+  geom_line(data = filter(mh_quality_tidy, 
+                          country == "Korea", 
+                          gender == "Total", 
+                          periods %in% 2016:2021, 
+                          indicator == "Suicide within 30 days after discharge among patients diagnosed with a mental disorder"), 
+            size = 2 ) + 
+  labs(title = "Suicide within 30 days after discharge among patients diagnosed with a mental disorder (lower confidence interval)")
+  #facet_wrap(~indicator)
+
+rough_plot_mh_quality  
+  
+```
+
+
+
+```{r Mental Health Spending}
+
+## read in spending data
+
+spend_raw <- read.csv("expenditure_by_disease.csv")
+
+## select only relevant data
+mh_spend_tidy <- spend_raw %>% 
+  filter(Diagnostic.Category == "Mental and behavioural disorders") %>% 
+  select(Country, Unit, Year, Value) %>% 
+  pivot_wider(names_from = Unit, values_from = Value) %>% 
+  clean_names()
+  
+## limited data - not enough for trend line
+
+rough_plot_mh_spend <- mh_spend_tidy %>% 
+group_by(country) %>% 
+  ggplot() +
+  aes(x = year, 
+      y = percent_current_expenditure_on_health, 
+      colour = country ) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Mental Health Spending as Percentage of Total Healthcare Spend each Year")
+
+
+## combine mental health spending and LoS in single table
+
+mh_los_spend_join <- left_join(mh_spend_tidy, mh_los_data, by = c("country", "year"))
+
+## no data in common -> even in untidy LoS data, only Czech Rep/Netherlands 2011 
+
+```
+
+
+
+```{r  Mental Health Beds}
+## mental health beds -> turns out, no data for Korea, only total hospital beds are available
+
+beds_raw <- read.csv("hosp_beds_by_function.csv")
+
+beds_tidy <- beds_raw %>% 
+  select(Variable, Measure, Country, Year, Value) %>% 
+  clean_names()
+
+mh_beds <- beds_tidy %>% 
+  filter(variable %in% c("Long-term psychiatric care beds", 
+                         "Psychiatric care beds",
+                         "Total hospital beds",
+                         "Curative psychiatric care beds",
+                         "Rehabilitative psychiatric care beds",
+                         "Other psychiatric hospital beds")) %>% 
+  pivot_wider(names_from = c(measure, variable), values_from = value) %>% 
+  mutate(year = (as_factor(year))) %>% 
+  clean_names()
+
+## plot total beds by year/country
+rough_plot_total_beds <- mh_beds %>% 
+  group_by(country) %>% 
+  filter(year %in% 2016:2020) %>% 
+  ggplot() +
+  aes(x = country, 
+      y = per_1_000_population_total_hospital_beds,
+      fill = year) +
+  geom_col(position = "dodge") +
+  geom_col(data = filter(mh_beds,
+                         country == "Korea",
+                         year %in% 2016:2020), 
+           colour = "black", 
+           position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  scale_fill_brewer(palette = "Blues")
+
+```
+
+
+```{r Mental Health Doctors}
+
+
+## data on number of doctors per speciality
+drs_raw <- read.csv("physicians_categories.csv")
+
+mh_drs_tidy <- drs_raw %>% 
+  select(Variable, 
+         Measure, 
+         Country, 
+         Year, 
+         Value, 
+         Flags) %>%   
+  filter(Variable == "Psychiatrists",
+         Year %in% 2016:2020) %>% 
+  mutate(Year = (as_factor(Year)),
+         Variable = (as_factor(Variable))) %>%
+  pivot_wider(names_from = c(Variable, Measure), 
+              values_from = Value) %>% 
+  clean_names()
+
+## Odd handling of u with umlaut, mutate can't seem to fix and affects subsequent plot labels - gsub() seems to work to replace name
+mh_drs_tidy$country <- gsub(pattern = "TÃ¼rkiye", 
+                            replacement = "Turkey", 
+                            x = mh_drs_tidy$country)
+
+## bar chart - number of psychiatrists per 1000 population
+rough_plot_mh_drs <- mh_drs_tidy %>% 
+  group_by(country) %>% 
+  filter(year %in% 2016:2020) %>% 
+  ggplot() +
+  aes(x = country, 
+      y = psychiatrists_density_per_1_000_population_head_counts,
+      fill = year) +
+  geom_col(position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  scale_fill_brewer(palette = "Blues") +
+  ggnewscale::new_scale_fill() +
+  ## highlight Korea in green, hide legend with green squares
+  geom_col(data = filter(mh_drs_tidy,
+                         country == "Korea",
+                         year %in% 2016:2020), 
+           aes(x = country,
+               y = psychiatrists_density_per_1_000_population_head_counts,
+               fill = year), 
+           position = "dodge",
+           show.legend = FALSE) +
+  scale_fill_brewer(palette = "BuGn") +
+  guides(colour = guide_legend(override.aes = list(scale_fill_brewer("Blues")))) +
+  ## add median for reference
+  geom_hline(aes(yintercept = median(mh_drs_tidy$psychiatrists_density_per_1_000_population_head_counts, na.rm = TRUE)),linetype = "dashed")
+
+rough_plot_mh_drs
+
+rough_plot_los_vs_drs <- mh_los_tidy %>% 
+  left_join(mh_drs_tidy, by = (c("year", "country"))) %>% 
+  filter(year %in% 2016:2020,
+         country != "Korea") %>% # & country != "Switzerland") %>% 
+  group_by(country) %>% 
+  ggplot() +
+  aes(y = psychiatrists_density_per_1_000_population_head_counts, 
+      x = mental_and_behavioural_disorders_days,
+      colour = country) + 
+  geom_point() #+
+  #geom_smooth() +
+  #facet_wrap(~year)
+
+rough_plot_los_vs_drs
+
+```
+
+
+
+```{r Long Term Care Provision}
+
+## long term care staff data:
+
+ltc_staff <- read.csv("ltc_workers.csv")
+
+## extract variables of interest/remove duplicates
+ltc_staff_tidy <- ltc_staff %>% 
+  filter(Year %in% 2016:2020) %>% 
+  select(Variable, 
+         Measure, 
+         Country, 
+         Year, 
+         Value, 
+         Flags) %>% 
+  mutate(Variable = as_factor(Variable),
+         Measure = as_factor(Measure),
+         Country = as_factor(Country),
+         Year = as.integer(Year)) %>% 
+  clean_names()
+  
+
+## filter to look at users
+ltc_counts <- ltc_staff_tidy %>% 
+ filter(variable == "Formal LTC workers (FTE)",
+        measure == "Total (nurses and personal carers)" | measure == "Per 100 population aged 65 years old and over") %>% 
+  pivot_wider(names_from = c(variable, measure), 
+              values_from = value) %>% 
+  mutate(year = as_factor(year)) %>% 
+  clean_names()
+
+
+rough_plot_ltc_counts <- ltc_counts %>%
+   group_by(country, year) %>%
+   ggplot() +
+   aes(y = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+       x = country,
+       fill = year) +
+   geom_col(position = "dodge") +
+   geom_hline(yintercept = median(ltc_counts$formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over))
+
+ rough_plot_ltc_counts
+ 
+## ltc vs los
+ 
+ltc_los <- ltc_counts %>% 
+  full_join(mh_los_data)
+
+rough_plot_ltc_los <- ltc_los %>% 
+  filter(year %in% 2016:2020) %>%  #,
+         #country != "Korea") %>% 
+  group_by(country) %>% 
+  ggplot() +
+  aes(x = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+      y = mental_and_behavioural_disorders_days) +
+  geom_point(aes(colour = country)) #+
+  #facet_wrap(~year)
+ 
+rough_plot_ltc_los 
+
+
+```
+
+
+```{r Edinburgh Style}
+
+## load University of Edinburgh brand colours
+source(file = "edin_uni_colours.R")
+
+## use Edinburgh font - source sans pro. Uses sysfonts package.
+## ref: https://gel.ed.ac.uk/foundations/typography/
+font_add_google("Source Sans Pro")
+font_add_google("Crimson Pro")
+
+## make colour palettes from University of Edinburgh colour groups
+
+## Starter palette functions:
+
+
+## from bright colours
+edin_bright_pal <- colorRampPalette(edin_bright_cols_rgb)
+
+## from muted colours
+edin_muted_pal <- colorRampPalette(edin_muted_cols_rgb)
+
+## from digital colours
+edin_dig_pal <- colorRampPalette(edin_dig_cols_rgb)
+
+## palette from white to uni blue
+edin_white_blue_pal <- colorRampPalette(c(#"white",
+                                          edin_light_blue_rgb,
+                                          #edin_muted_turquoise_rgb,
+                                          edin_bright_blue_rgb,
+                                          edin_blue_rgb,
+                                          #edin_bright_blue_2_rgb,
+                                          edin_muted_blue_rgb,
+                                          edin_uni_blue_rgb
+                                          ))
+
+## palette from white to bright pink
+edin_pink_pal <- colorRampPalette(c(edin_muted_pink_rgb,
+                                    edin_bright_pink_rgb,
+                                    edin_uni_red_rgb,
+                                    #edin_bright_red_rgb,
+                                    edin_burgundy_rgb,
+                                    edin_purple_rgb))
+
+
+## Palettes for specific plotting tasks
+
+## colour per country
+countries_pal <- edin_white_blue_pal(length(unique(mh_los_data$country)))
+## used as:
+#scale_colour_manual(values = countries_pal) +
+
+
+## test with:
+## colour_test <- edin_muted_pal(50)
+## barplot(rep(1, length(colour_test)), names.arg = colour_test, col = colour_test)
+
+```
+
+
+
+```{r Presentation Plot LoS, warning=FALSE}
+
+## create data frame of LoS for all countries except Korea for ease of plotting
+mh_los_kor_rm <- mh_los_data %>% 
+  filter(country != "Korea")
+
+## Data frame sorting non-Korea countries by length of stay in 2020
+mh_los_2020_sort <- mh_los_kor_rm %>% 
+  filter(year == 2020) %>% 
+  arrange(desc(mental_and_behavioural_disorders_days)) 
+
+
+## main length of stay plot
+presentation_plot_mh_los <- mh_los_data %>% 
+  filter(year %in% 2016:2020) %>%
+  group_by(country) %>% 
+   ggplot() +
+   aes(x = year, 
+       y = mental_and_behavioural_disorders_days) +
+  ## plot non-Korea countries - highest and lowest length of stay in 2020 only
+  geom_line(data = mh_los_kor_rm %>% 
+              filter(year %in% 2016:2020,
+                    ## select only countries with the highest and lowest length of stay in 2020 (outside of Korea)
+                    country == pull(mh_los_2020_sort, 
+                                    country)[1] |
+                    country == pull(mh_los_2020_sort, 
+                                    country)[max(length(mh_los_2020_sort$country))]),
+            aes(colour = country),
+            show.legend = FALSE,
+            linetype = "solid", 
+            size = 1.2) + 
+  ## set custom/Edinburgh colours for non-highlighted, comparison lines
+  scale_colour_manual(name = "Countries",
+                      values = c(edin_bright_blue_rgb, 
+                                 edin_muted_blue_rgb)) +
+  ## label lines with relevant country names in same colour as line
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 70,
+           label = "Spain",
+           colour = edin_muted_blue_rgb,
+           family = "Source Sans Pro", 
+           size = 7) +
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 20,
+           label = "Belgium",
+           colour = edin_bright_blue_rgb,
+           family = "Source Sans Pro",
+           size = 7) +
+  ## clear previous colour scale specification to allow custom colours for lines plotted below
+  ggnewscale::new_scale_colour() +
+  geom_line(data = filter(mh_los_data,
+                         country == "Korea",
+                         year %in% 2016:2020),
+            aes(colour = country),
+            size = 1.5,
+            show.legend = FALSE) +
+  ## set colour of Korea line to pink to highlight
+  scale_colour_manual(values = edin_bright_pink_rgb) +
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 210,
+           label = "Korea",
+           colour = edin_bright_pink_rgb,
+           family = "Source Sans Pro",
+           size = 7) +
+  ## set generic theme
+  theme_bw() +
+  ## label axes with neater names
+  ylab("Mental Health Admission Average Length of Stay in Days") +
+  xlab("Year") +
+  ## change font to University of Edinburgh brand font, source sans pro. \n introduces line break
+  labs(family = "Source Sans Pro",
+       title = "Korea's average mental health admission is almost four times longer \nthan the next highest average length of stay",
+       subtitle = "Spain has the second longest average mental health admission in the OECD, Belgium has the shortest \n",
+       caption = "Source: Organisation for Economic Co-operation and Development \nhttps://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_REAC") +
+  ## set title and axis colours/font
+  theme(title = element_text(family = "Source Sans Pro",
+                             colour = edin_spruce_grey_rgb,
+                             size = 20),
+        plot.subtitle = element_text(family = "Source Sans Pro",
+                             colour = edin_spruce_grey_rgb,
+                             size = 16),
+        plot.caption = element_text(family = "Source Sans Pro",
+                                    face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size = 7),
+        axis.title = element_text(family = "Source Sans Pro",
+                                  colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        axis.text = element_text(family = "Source Sans Pro",
+                                 colour = edin_spruce_grey_rgb,
+                                 size = 13),
+        axis.line = element_line(colour = edin_spruce_grey_rgb,
+                                 size = 1), 
+        panel.grid = element_line(colour = edin_light_blue_rgb))
+
+#https://albert-rapp.de/posts/ggplot2-tips/07_four_ways_colors_more_efficiently/07_four_ways_colors_more_efficiently.html
+
+presentation_plot_mh_los
+
+```
+
+
+```{r Presentation Plot Mental Health Doctors, warning=FALSE}
+
+## bar chart - number of psychiatrists per 1000 population
+presentation_plot_mh_drs <- mh_drs_tidy %>% 
+  group_by(country) %>% 
+  filter(year %in% 2016:2020) %>% 
+  ggplot() +
+  # orientation flipped vs rough plot - allows easier reading of country names
+  aes(y = country, 
+      x = psychiatrists_density_per_1_000_population_head_counts,
+      fill = year) +
+  geom_col(position = "dodge") +
+  scale_y_discrete(limits = rev) +
+  # colour all non-Korea countries in blues
+  scale_fill_manual(name = "Year",
+                    values = edin_white_blue_pal(
+                      #splits palette into same number of colours as max possible number of years to be plotted - allows colour interpolation if more years than colours
+                      (length(unique(mh_drs_tidy$year)))),
+                    guide = guide_legend(reverse = TRUE)) +
+  ggnewscale::new_scale_fill() +
+  # highlight Korea in pink/red
+  geom_col(data = filter(mh_drs_tidy,
+                         country == "Korea",
+                         year %in% 2016:2020),
+           aes(y = country,
+               x = psychiatrists_density_per_1_000_population_head_counts,
+               fill = year),
+           position = "dodge",
+           show.legend = FALSE) +
+  scale_fill_manual(values = edin_pink_pal(
+    #splits palette into same number of colours as max possible number of years to be plotted - allows colour interpolation if more years than colours
+    (length(unique(mh_drs_tidy$year))))
+    ) +
+  ## add median for reference
+  geom_vline(aes(xintercept = median(mh_drs_tidy$psychiatrists_density_per_1_000_population_head_counts, na.rm = TRUE)),
+             linetype = "dashed",
+             colour = edin_bright_orange_rgb,
+             size = 1
+             ) +
+  annotate(geom = "text", 
+           x = 0.193, 
+           y = "Colombia",
+           vjust = 0,
+           label = "Median",
+           size = 5,
+           colour = edin_bright_orange_rgb) +
+  xlab("Psychiatrists per 1,000 Population") +
+  ylab( "Country") +
+  ## change font to University of Edinburgh brand font, source sans pro. \n introduces line break
+  labs(family = "Source Sans Pro",
+       title = "Korea has substantially fewer psychiatrists per capita than the OECD median",
+       subtitle = "This number has not risen for the past four years \n",
+       caption = "Source: Organisation for Economic Co-operation and Development \nhttps://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_REAC") +
+  theme_bw() +
+  ## set title and axis colours/font
+  theme(title = element_text(family = "Source Sans Pro",
+                             colour = edin_spruce_grey_rgb,
+                             size = 20),
+        plot.subtitle = element_text(family = "Source Sans Pro",
+                             colour = edin_spruce_grey_rgb,
+                             size = 16),
+        legend.title = element_text(family = "Source Sans Pro",
+                                  colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        plot.caption = element_text(family = "Source Sans Pro",
+                                    face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size = 7),
+        axis.title = element_text(family = "Source Sans Pro",
+                                  colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        axis.text = element_text(family = "Source Sans Pro",
+                                 colour = edin_spruce_grey_rgb,
+                                 size = 13),
+        axis.line = element_line(colour = edin_spruce_grey_rgb,
+                                 size = 1), 
+        panel.grid = element_line(colour = edin_light_blue_rgb))
+
+presentation_plot_mh_drs
+
+```
+
+
+
+```{r Presentation Plot Long Term Care, warning=FALSE}
+
+presentation_plot_ltc_counts <- ltc_counts %>%
+  group_by(country, year) %>%
+  # country factors levels start in nonsensical order - reorders alphabetically
+  mutate(country = fct_relevel(country,
+                               sort(as.character(unique(ltc_counts$country))))
+         ) %>% 
+  ggplot() +
+  aes(x = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+       y = country,
+       fill = year) +
+  geom_col(position = "dodge") +
+  # flip y axis albel so alphabetical top to bottom rather than bottom to top
+  scale_y_discrete(limits = rev) +
+  # colour all non-Korea countries in blues
+   scale_fill_manual(name = "Year",
+                    values = edin_white_blue_pal(
+                      #splits palette into same number of colours as max possible number of years to be plotted - allows colour interpolation if more years than colours
+                      (length(unique(ltc_counts$year)))),
+                    guide = guide_legend(reverse = TRUE)) +
+  ggnewscale::new_scale_fill() +
+  # highlight Korea in pink/red
+  geom_col(data = filter(ltc_counts,
+                         country == "Korea",
+                         year %in% 2016:2020),
+           aes(y = country,
+               x = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+               fill = year),
+           position = "dodge",
+           show.legend = FALSE) +
+  scale_fill_manual(values = edin_pink_pal(
+    #splits palette into same number of colours as max possible number of years to be plotted - allows colour interpolation if more years than colours
+    (length(unique(ltc_counts$year))))
+    ) +
+  ## add median for reference
+  geom_vline(aes(xintercept = median(ltc_counts$formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over, 
+                                     na.rm = TRUE)),
+             linetype = "dashed",
+             colour = edin_bright_orange_rgb,
+             size = 1
+             ) +
+  annotate(geom = "text", 
+           x = 4.5, 
+           y = "Ireland",
+           label = "Median",
+           size = 5,
+           vjust = 0,
+           colour = edin_bright_orange_rgb) +
+  xlab("Long Term Care Workers per 100 Population Aged 65 and Over") +
+  ylab( "Country") +
+  ## change font to University of Edinburgh brand font, source sans pro. \n introduces line break
+  labs(family = "Source Sans Pro",
+       title = "Korea has substantially fewer community care workers per capita \nthan the OECD median",
+       subtitle = "This number has risen over the past four years \n",
+       caption = "Source: Organisation for Economic Co-operation and Development \nhttps://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_REAC") +
+  theme_bw() +
+  ## set title and axis colours/font
+  theme(title = element_text(family = "Source Sans Pro",
+                             colour = edin_spruce_grey_rgb,
+                             size = 20),
+        plot.subtitle = element_text(family = "Source Sans Pro",
+                             colour = edin_spruce_grey_rgb,
+                             size = 16),
+        legend.title = element_text(family = "Source Sans Pro",
+                                  colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        plot.caption = element_text(family = "Source Sans Pro",
+                                    face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size = 7),
+        axis.title = element_text(family = "Source Sans Pro",
+                                  colour = edin_spruce_grey_rgb,
+                                  size = 15),
+        axis.text = element_text(family = "Source Sans Pro",
+                                 colour = edin_spruce_grey_rgb,
+                                 size = 13),
+        axis.line = element_line(colour = edin_spruce_grey_rgb,
+                                 size = 1), 
+        panel.grid = element_line(colour = edin_light_blue_rgb))
+
+presentation_plot_ltc_counts
+
+```
+
+
+
+```{r}
+
+```
+

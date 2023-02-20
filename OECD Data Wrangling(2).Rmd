@@ -1,0 +1,69 @@
+---
+title: "OECD Data Wrangling"
+author: "Brittany Blankinship"
+date: "2022-09-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries, message=FALSE}
+library(tidyverse)
+# you may need to install this package if you have not done so already 
+library(janitor)
+```
+
+You are not required to use this helper code, but you are invited to use it to get your team started on your data wrangling journey in creating your data story
+
+## Import data 
+
+First download the [Health Care Utilisation dataset](https://stats.oecd.org/viewhtml.aspx?datasetcode=HEALTH_PROC&lang=en)
+
+I have exported the data as a "Text file (CSV)" and renamed the data file to be "OECD Health Care Util Data Raw.csv". 
+
+In order for the code below to run, you must follow the same steps.If you choose a different file type or name for the raw data file, you will need to update the code accordingly. 
+
+```{r data-import, message = FALSE}
+oecd_data_raw <- read_csv(here::here("OECD Health Care Util Data Raw.csv"))
+```
+
+There are 225039 observations and 11 variables in the raw data. Clearly the data is *very* long and not quite in tidy format, so let's pivot it to a wider format for better usability.
+
+But first, some basic data checks that what we imported is as expected.
+
+```{r data-checks}
+names(oecd_data_raw)
+
+skimr::skim(oecd_data_raw)
+
+glimpse(oecd_data_raw)
+```
+
+## Data wrangling 
+
+```{r wrangle}
+oecd_data <- oecd_data_raw %>%
+  #reformat variable names to be all be in snake_case
+  clean_names() %>% 
+  pivot_wider(names_from = c(variable, measure),
+              values_from = value,
+              id_cols = c(year, country))
+
+
+## if you wanted to only include those with Flag Code "E"
+oecd_data_flagE <- oecd_data_raw %>%
+  clean_names() %>% 
+  filter(flag_codes == "E") %>%
+  pivot_wider(names_from = c(variable, measure),
+              values_from = value,
+              id_cols = c(year, country)) 
+```
+
+Using the code above, we now have a data set with 519 observations and 718 variables. 
+
+The variable names include both the variable itself and the measure (see the `names_from` argument). So for example: `Immunisation: Hepatitis B_% of children immunised` variable name tells you this is the data for Hepatitis B immunisations and the number represents the percent of children immunised. 
+
+
+

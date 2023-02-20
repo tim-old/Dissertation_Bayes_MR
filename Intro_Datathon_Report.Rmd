@@ -1,0 +1,502 @@
+---
+title: "Datathon Report: Long psychiatric admissions suggest mental health care reform is needed in South Korea"
+subtitle: "Exam Number: B233241"
+output: pdf_document
+date: 'September - December 2022'
+df_print: kable
+fig_caption: yes
+toc: yes
+bibliography: Intro_Module_Datathon_Refs.bib
+csl: vancouver.csl
+link-citations: TRUE
+---
+
+
+_____
+
+
+# Set-Up Information
+
+```{r setup, warning=FALSE, message=FALSE}
+## display code throughout report
+knitr::opts_chunk$set(echo = TRUE)
+
+
+## load R packages used in report
+library(tidyverse)
+library(janitor)
+library(ggnewscale)
+
+```
+
+```{r University of Edinburgh Style}
+
+## load selected University of Edinburgh brand colours
+## source: https://uoe.sharepoint.com/sites/Brand/SitePages/Colours.aspx
+
+## default call to rgb() assume value of 0-1, need to set maxColorValue = 255 to 
+## match formatting from University of Edinburgh site
+
+
+## Core colours - university red and university blue
+
+edin_uni_red_rgb <- rgb(193, 0, 67, maxColorValue = 255)
+
+edin_uni_blue_rgb <- rgb(4, 30, 66, maxColorValue = 255)
+
+
+## Bright colours
+
+edin_bright_pink_rgb <- rgb(208, 0, 111, maxColorValue = 255)
+
+edin_blue_rgb <- rgb(0, 114, 136, maxColorValue = 255)
+
+edin_bright_orange_rgb <- rgb(205, 90, 19, maxColorValue = 255)
+
+edin_bright_red_rgb <- rgb(172, 0, 64, maxColorValue = 255)
+
+edin_purple_rgb <- rgb(131, 0, 101, maxColorValue = 255)
+
+edin_bright_blue_rgb <- rgb(0, 196, 223, maxColorValue = 255)
+
+
+## Muted colours
+
+edin_muted_turquoise_rgb <- rgb(69, 126, 129, maxColorValue = 255)
+
+edin_light_blue_rgb <- rgb(194, 211, 223, maxColorValue = 255)
+
+edin_muted_blue_rgb <- rgb(0, 79, 113, maxColorValue = 255)
+
+edin_muted_pink_rgb <- rgb(184, 133, 141, maxColorValue = 255)
+
+
+## Digital colours
+
+edin_spruce_grey_rgb <- rgb(51, 63, 72, maxColorValue = 255)
+
+edin_bright_blue_2_rgb <- rgb(0, 114, 136, maxColorValue = 255)
+
+edin_burgundy_rgb <- rgb(165, 0, 52, maxColorValue = 255)
+
+
+## make colour palettes from University of Edinburgh colour groups
+
+## palette from off-white to uni blue
+edin_white_blue_pal <- colorRampPalette(c(edin_light_blue_rgb,
+                                          edin_bright_blue_rgb,
+                                          edin_blue_rgb,
+                                          edin_muted_blue_rgb,
+                                          edin_uni_blue_rgb))
+
+## palette from pink to red
+edin_pink_pal <- colorRampPalette(c(edin_muted_pink_rgb,
+                                    edin_bright_pink_rgb,
+                                    edin_uni_red_rgb,
+                                    edin_burgundy_rgb,
+                                    edin_purple_rgb))
+
+
+```
+
+
+_____
+
+# Data Storytelling
+
+## Executive Summary
+
+Our exploratory analysis of Health Care Utilisation data from the Organisation for Economic Co-operation and Development (OECD) found an unusually long average length of stay for psychiatric inpatients in South Korea (hereafter, "Korea"). We therefore investigated possible reasons for this to better inform the Korean Ministry of Health and Welfare. 
+
+Limitations in the available data hampered a comprehensive insight into possible determinants using this source alone. Contextual research suggested several factors which potentially contributed to prolonged admissions, including poor mental health funding and inadequate community care provision.
+
+
+Available OECD data evidenced some of these shortcomings in Korea relative to other countries. We suggest that Korea trials Flexible Assertive Community Treatment (FACT), an evidence-based intervention which should both improve outcomes for patients, and save the Korean government money through reduced spending on prolonged and ineffective inpatient treatment.
+
+## The Data and its Context
+
+### Length of Stay
+
+Our project centred around a subset of OECD Health Care Utilisation data: "Hospital average length of stay by diagnostic categories" [@noauthor_health_nodate-1]. This contains numerical data on average hospital length of stay (LoS) in days for a variety of medical conditions, as measured across 36 countries. This information is derived from routinely collected data for acute hospitals, mental health hospitals and other specialised hospitals in each country; admissions for day-case treatments are excluded.
+
+LoS was chosen as having importance both to patients wishing to be treated and discharged as expediently as possible, and to healthcare commissioners wishing to avoid unnecessary expenditure. We focused on data from the last 5 available years, 2016 - 2020, to focus on the most current insights, yet still capture recent trends for any variables of interest. We chose mental health as an area which is increasingly recognised as being central to health and well-being, yet which has previously been neglected.
+
+Exploratory analysis began by obtaining the relevant data:
+
+```{r Read In and Tidy Length of Stay}
+
+## read in data from healthcare utilisation data set 
+
+## "hu_los_by_diagnosis.csv" is a CSV download of 
+## "Health Care Utilisation: Hospital average length of stay by diagnostic categories" 
+## from
+## https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC
+los_data_raw <- read.csv("hu_los_by_diagnosis.csv")
+
+## Change names to snake case, switch from long to wide format
+los_data_tidy <- los_data_raw %>% 
+  clean_names() %>% 
+  pivot_wider(names_from = c(variable, measure),
+              values_from = value,
+              id_cols = c(year, country))
+
+
+```
+
+Next, data were filtered to focus on mental health admissions:
+
+```{r Subset Mental Health}
+
+
+## subsetting mental health
+mh_los_data <- los_data_tidy %>% 
+  select(year, 
+         country, 
+         "Mental and behavioural disorders_Days" : 
+         "Other Mental and behavioural disorders_Days") %>% 
+  clean_names()
+
+
+## update length of stay data with date range, convert year/country data type to factor
+mh_los_tidy <- mh_los_data %>% 
+  filter(year %in% 2016:2021) %>% 
+    mutate(across( .cols =  c(country, year), .fns = as.factor ))
+
+```
+
+Finally, line graphs were plotted to show trends across years in mental health admission LoS for each country. The visualisation below has been subsetted for clarity, and aside from Korea shows only the countries at each extreme of psychiatric LoS when Korea is excluded:
+
+
+```{r Presentation Plot LoS}
+
+## create data frame of LoS for all countries except with Korea removed for ease of
+## plotting
+mh_los_kor_rm <- mh_los_data %>% 
+  filter(country != "Korea")
+
+## Data frame sorting non-Korea countries by length of stay in 2020
+mh_los_2020_sort <- mh_los_kor_rm %>% 
+  filter(year == 2020) %>% 
+  arrange(desc(mental_and_behavioural_disorders_days)) 
+
+## main length of stay plot - shows average mental health admission length of stay for
+## each country for years 2016-2020 inclusive
+presentation_plot_mh_los <- mh_los_data %>% 
+  filter(year %in% 2016:2020) %>%
+  group_by(country) %>% 
+   ggplot() +
+   aes(x = year, 
+       y = mental_and_behavioural_disorders_days) +
+  ## plot non-Korea countries - highest and lowest length of stay in 2020 only
+  geom_line(data = mh_los_kor_rm %>% 
+              filter(year %in% 2016:2020,
+                    ## select only countries with the highest and lowest length of stay
+                    ## in 2020 (outside of Korea)
+                    country == pull(mh_los_2020_sort, 
+                                    country)[1] |
+                    country == pull(mh_los_2020_sort, 
+                                    country)[max(length(mh_los_2020_sort$country))]),
+            aes(colour = country),
+            show.legend = FALSE,
+            linetype = "solid", 
+            linewidth = 1.2) + 
+  ## set custom Edinburgh blues for non-highlighted, comparison lines
+  scale_colour_manual(name = "Countries",
+                      values = c(edin_bright_blue_rgb, 
+                                 edin_muted_blue_rgb)) +
+  ## label lines with relevant country names in same colour as line
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 70,
+           label = "Spain",
+           colour = edin_muted_blue_rgb,
+           size = 5) +
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 20,
+           label = "Belgium",
+           colour = edin_bright_blue_rgb,
+           size = 5) +
+  ## clear previous colour scale specification to allow custom colours for lines plotted
+  ## below
+  ggnewscale::new_scale_colour() +
+  geom_line(data = filter(mh_los_data,
+                         country == "Korea",
+                         year %in% 2016:2020),
+            aes(colour = country),
+            linewidth = 1.5,
+            show.legend = FALSE) +
+  ## set colour of Korea line to pink to highlight
+  scale_colour_manual(values = edin_bright_pink_rgb) +
+  annotate(geom = "text", 
+           x = 2019.7, 
+           y = 210,
+           label = "Korea",
+           colour = edin_bright_pink_rgb,
+           size = 5) +
+  ## set generic theme
+  theme_bw() +
+  ## label axes with neater names
+  ylab("Mental Health Admission 
+Average Length of Stay in Days") +
+  xlab("Year") +
+  ## set titles/caption text
+  labs(title = "Korea's average mental health admission is almost four 
+times longer than the next highest average length of stay",
+       subtitle = "Spain has the second longest average mental health admission in the OECD, 
+Belgium has the shortest \n",
+       caption = "Source: Organisation for Economic Co-operation and Development
+https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC") +
+  ## set title, caption, axis and gridlines colours
+  theme(title = element_text(colour = edin_spruce_grey_rgb,
+                             size = 13),
+        plot.subtitle = element_text(colour = edin_spruce_grey_rgb,
+                                     size = 11),
+        plot.caption = element_text(face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size = 7),
+        axis.title = element_text(colour = edin_spruce_grey_rgb,
+                                  size = 12),
+        axis.text = element_text(colour = edin_spruce_grey_rgb,
+                                 size = 10),
+        axis.line = element_line(colour = edin_spruce_grey_rgb,
+                                 linewidth = 1), 
+        panel.grid = element_line(colour = edin_light_blue_rgb))
+
+
+presentation_plot_mh_los
+
+```
+
+
+### Explanatory Co-variates for Length of Stay
+
+The striking finding of a >6 month average Korean mental health admission demanded explanation; we began searching for data which could give insight into root causes.
+
+
+#### Rationale for Approach:
+
+
+Possible explanations for long LoS include scenarios where prolonged LoS was appropriate, and those where it was not. 
+
+A high average psychiatric LoS would be appropriate if extensive inpatient treatment were needed to adequately treat illnesses present in the population considered. This would imply Korean psychiatric inpatients are sicker than patients in otherwise comparable countries, and therefore require longer to improve sufficiently to safely discharge. This situation may arise if there is a high burden of severe psychiatric disease across the Korean population in general, or if Korean mental health facilities have a high threshold for admission such that only the sickest Korean patients are admitted.
+
+An inappropriately high LoS would arise as a result of poor quality care: either patients remain sick due to ineffective treatment; or they are adequately treated in a timely manner, but are not identified as suitable for discharge, e.g. non-health issues precluding discharge, or inadequate recognition of improvement.
+
+We therefore sought data representing either burden of mental illness or quality of mental healthcare in each country; here, the limitations of the OECD data became more apparent.
+
+
+#### Available Insights and Limitations:
+
+
+Considering burden of mental illness, several metrics could hypothetically be considered, e.g.: 
+
+* Prevalence of mental illness of any type
+* Absence from work due to mental illness
+* Mortality attributable to mental illness
+
+However, across all OECD data, the only measure of burden of psychiatric illness is rate of death by intentional self harm. This measure misses both general morbidity due to psychiatric conditions, and even some forms of attributable mortality (e.g. accidental deaths due to risk-taking during manic episodes). That said, available data do show Korea's standardised suicide rate to be the highest in the OECD, suggesting a high prevalence of severe mental illness [@noauthor_health_nodate-3]. 
+
+Similarly, measures representing quality of psychiatric care provision are lacking. Data for mental health spending is sparse; the one data-point available for Korea was from 2009, and showed only 5.9% of total health spending was dedicated to mental health, compared to double-digit figures for other countries [@noauthor_health_nodate-4]. Korea's suicide rate within 30 days of discharge from a mental health admission was the second highest in the OECD for available years, but was last recorded in 2018 [@noauthor_health_nodate-2]. Numbers of inpatient beds are only available as a total for all hospital types, with no specific mental health data available. Korea did have the 4th lowest number of psychiatrists per capita of 36 countries surveyed [@noauthor_health_nodate], but the significance of this could not be determined from the data alone. At this point, we focused our attention on contextual data to help guide further analysis.
+
+### The Context
+
+Contextual research showed that Korean mental health provision had been identified as problematic in academic literature [@kim_why_2017]. Issues particular to Korea included:
+
+* A high burden of mental health problems generally
+* A funding system which financially incentivised providers to treat mental health conditions on an inpatient rather than outpatient basis
+* Social stigma discouraging families from interacting with mentally unwell relatives
+* Poor funding of mental health care in relation to physical health
+* Inadequate community health and social care provision
+
+
+Many of these issues interacted; in particular, social stigma meant families were often unwilling to look after psychiatric patients on discharge from hospital, meaning poor community social care provision was a particular limiting factor for hospital discharge.
+
+### Long Term Care
+
+As such, we next looked for measures of community care provision. The only relevant measure available which was expressed as a per capita style rate was the provision of long term care workers (community nurses and personal care workers either at home or in non-hospital institutions) per 100 population aged 65 and over  [@noauthor_long-term_nodate]:
+
+```{r Long Term Care}
+
+## long term care staff data
+## "ltc_workers.csv" data is csv download of 
+## "Long-Term Care Resources and Utilisation: Long-term care workers: formal sector"
+## from
+## https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_PROC
+
+ltc_staff <- read.csv("ltc_workers.csv")
+
+## extract variables of interest/remove duplicates
+ltc_staff_tidy <- ltc_staff %>% 
+  filter(Year %in% 2016:2020) %>% 
+  select(Variable, 
+         Measure, 
+         Country, 
+         Year, 
+         Value, 
+         Flags) %>% 
+  mutate(Variable = as_factor(Variable),
+         Measure = as_factor(Measure),
+         Country = as_factor(Country),
+         Year = as.integer(Year)) %>% 
+  clean_names()
+  
+
+## filter to look at users
+ltc_counts <- ltc_staff_tidy %>% 
+ filter(variable == "Formal LTC workers (FTE)",
+        measure == "Total (nurses and personal carers)" | 
+        measure == "Per 100 population aged 65 years old and over") %>% 
+  pivot_wider(names_from = c(variable, measure), 
+              values_from = value) %>% 
+  mutate(year = as_factor(year)) %>% 
+  clean_names()
+
+```
+
+
+Analysis of Korea's mental health LoS data showed that the subgroup with the longest LoS was dementia patients, followed by those with schizophrenia/other delusional disorders. As dementia is predominantly a disease of the elderly, we thought that this metric would be an informative and comparable measure of relevant care provision. A grouped bar chart was chosen to prioritise highlighting differences between countries above those across years, though still representing temporal trends. The resulting visualisation is shown below:
+
+
+
+```{r Presentation Plot Long Term Care}
+
+## main long term care plot - shows long term community care provision (including nurses
+## and personal care givers) per 100 population aged 65 and over for each country for years
+## 2016-2020 inclusive
+presentation_plot_ltc_counts <- ltc_counts %>%
+  group_by(country, year) %>%
+  # country factors levels start in nonsensical order - reorders alphabetically
+  mutate(country = fct_relevel(country,
+                               sort(as.character(unique(ltc_counts$country))))
+         ) %>% 
+  ggplot() +
+  aes(x = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+       y = country,
+       fill = year) +
+  geom_col(position = "dodge") +
+  ## flip y axis albel so alphabetical top to bottom rather than bottom to top
+  scale_y_discrete(limits = rev) +
+  ## colour all non-Korea countries in custom Edinburgh blues
+   scale_fill_manual(name = "Year",
+                    values = edin_white_blue_pal(
+                      ## splits palette into same number of colours as max possible
+                      ## number of years to be plotted - allows colour interpolation if
+                      ## more years than colours
+                      (length(unique(ltc_counts$year)))),
+                    guide = guide_legend(reverse = TRUE)) +
+  ## clear previous colour scale specification to allow custom colours for bars plotted
+  ## below
+  ggnewscale::new_scale_fill() +
+  ## highlight Korea in pink/red
+  geom_col(data = filter(ltc_counts,
+                         country == "Korea",
+                         year %in% 2016:2020),
+           aes(y = country,
+               x = formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+               fill = year),
+           position = "dodge",
+           ## extra legend in pink/red suppressed as looks better, years for Korean data
+           ## can be inferred with reference to bar groups for other countries
+           show.legend = FALSE) +
+  scale_fill_manual(values = edin_pink_pal(
+    ##splits palette into same number of colours as max possible number of years to be
+    ## plotted - allows colour interpolation if more years than colours
+    (length(unique(ltc_counts$year))))
+    ) +
+  ## add median for reference
+  geom_vline(aes
+             (xintercept = 
+                 median(ltc_counts$
+             formal_ltc_workers_fte_per_100_population_aged_65_years_old_and_over,
+             na.rm = TRUE)),
+             linetype = "dashed",
+             colour = edin_bright_orange_rgb,
+             linewidth = 1
+             ) +
+  annotate(geom = "text", 
+           x = 4.5, 
+           y = "Ireland",
+           label = "Median",
+           size = 4,
+           vjust = 0,
+           hjust = 0.2,
+           colour = edin_bright_orange_rgb) +
+  xlab("Long Term Care Workers per 100 Population Aged 65 and Over") +
+  ylab( "Country") +
+  ## sets titles/caption text
+  labs(title = "Korea has substantially fewer community care 
+workers per capita than the OECD median",
+       subtitle = "This number has risen over the past four years \n",
+       caption = "Source: Organisation for Economic Co-operation and Development 
+https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_LTCR") +
+  theme_bw() +
+  ## set title, caption, axis and gridlines colours
+    theme(title = element_text(colour = edin_spruce_grey_rgb,
+                             size = 13),
+        plot.subtitle = element_text(colour = edin_spruce_grey_rgb,
+                                     size = 11),
+        plot.caption = element_text(face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size = 7),
+        axis.title = element_text(colour = edin_spruce_grey_rgb,
+                                  size = 12),
+        axis.text = element_text(colour = edin_spruce_grey_rgb,
+                                 size = 10),
+        axis.line = element_line(colour = edin_spruce_grey_rgb,
+                                 linewidth = 1), 
+        panel.grid = element_line(colour = edin_light_blue_rgb))
+
+presentation_plot_ltc_counts
+
+```
+
+This graph highlights that Korea's provision of long term care workers is below average for the OECD, despite small staffing improvements in recent years.
+
+## Conclusions and Recommendations
+
+Overall, we felt that Korea needed to prioritise outpatient services to allow safe discharge of psychiatric patients. We reviewed relevant academic literature, and found a promising community treatment framework: Flexible Assertive Community Treatment (FACT). FACT is a community-based programme of interventions for psychiatric patients, involving routine multidisciplinary care for stable patients, and additional intensive case management for unstable/care-avoidant patients at risk of rehospitalisation. European trials of various iterations of FACT found around 50% reduced rehospitalisations and inpatient bed days, with cost savings of around €4000 per patient per year [@de_jong_intensive_2019].
+
+
+## Future Directions
+
+Various additional data would have benefited this project, as discussed above in "Available Insights and Limitations". In particular, data on spending directed to mental health would give insight into whether the amount allocated is simply inadequate, or whether enough money is available but inefficiently spent. This information would help direct more relevant recommendations, e.g. if not enough money is available to psychiatry, a review of where additional funds could be sourced would be necessary.
+
+
+LoS data is also available for a variety of diagnoses outside of mental health; correlations between long term care provision and other conditions could be investigated using, for example, exploratory scatter plots or line graphs. If LoS for other conditions also benefits from enhanced community care provision, this could strengthen the argument for enhancing outpatient services, and may suggest a way to finance funding for other mental health spending priorities. 
+
+There are separate data splitting long term care employees into "at home" versus "in institutions". The relative effect of each of these strategies on LoS could be investigated, subgrouping by mental health diagnosis. It seems plausible that progressive and irreversible conditions such as dementia may benefit more from long term institutionalisation compared to e.g. schizophrenia, where patients are typically younger and more able to integrate into society between psychotic crises.
+
+
+
+_____
+
+
+
+
+
+# Reflective Practice
+
+I arranged the first meeting, and was therefore assigned project manager and communications director roles during our first meeting. It became apparent that I had the most experience with R programming, and also of working in health care. When we started investigating the data, although everyone agreed to attempt exploratory analyses, only I made much progress in the first week. I was therefore initially worried that I would end up doing a disproportionate amount of work - arranging all meetings and deadlines, analysing and visualising the data, and interpreting it in a health care context to create a relevant narrative. 
+
+During subsequent meetings, I therefore obtained commitments from individual group members to complete specific tasks; for example, when data wrangling, each data set of interest was assigned to a single person. I initially felt uncomfortable being so prescriptive - I am used to medical teams where members have similar skill sets, and generally share responsibilities more fluidly. However, in our group, it became clear that each member had specific strengths and weaknesses; sub-dividing tasks more precisely allowed each person to contribute to areas where their efforts would be most effective, and resulted in a more successful and collaborative final product. There are some changes I may have made were I working on my own: some of our slides seemed text-heavy to me, and I would have swapped some writing for other visual elements, e.g. pictures or diagrams with explanatory narration to guide the audience in a less overwhelming way. However, I also would have not considered other design elements such as a consistent colour scheme for both of the final visualisations which I created; I believe the final presentation is of much higher quality than I could have made either individually or before undertaking the course.
+
+This structure of a diverse specialists collaborating closely is more typical of data science teams than medical settings. For future data science projects, I will be more mindful of this difference in team structure, and will make an active effort to alter my approaches to collaboration to reflect this, particularly with regards to specific division of labour.
+
+
+
+_____
+
+
+# Word Count
+
+```{r Word Count, message=FALSE, results='asis'}
+cat(paste("Word Count:",
+          wordcountaddin::word_count("Intro_Datathon_Report.Rmd")))
+```
+
+
+_____
+
+# References
+
