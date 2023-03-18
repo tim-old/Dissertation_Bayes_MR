@@ -1,0 +1,9 @@
+﻿variable,value,discharge_alive_n,discharge_alive_pc,discharge_dead_n,discharge_dead_pc
+admit_age,16-49,1420,85.5,241,14.5
+admit_age,50-69,2130,73.3,774,26.7
+admit_age,70+,1504,67.6,722,32.4
+sex,Male,2970,73,1097,27
+sex,Female,2095,76.6,641,23.4
+bmi,<25,1978,75.3,649,24.7
+bmi,25-30,1437,73.7,513,26.3
+bmi,>=30,1431,76.1,450,23.9

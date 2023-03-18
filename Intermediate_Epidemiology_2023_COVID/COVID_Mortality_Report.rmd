@@ -1,0 +1,328 @@
+---
+title: "COVID Mortality Report"
+subtitle: "Exam Number: B233241"
+output: pdf_document
+date: 'March 2023'
+df_print: kable
+fig_caption: yes
+toc: yes
+
+---
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+
+#load packages
+library("tidyverse")
+library("ggtext")
+library("ggnewscale")
+
+#get University of Edinburgh official colour palettes 
+source("edin_uni_colours.R")
+```
+
+
+```{r read in/clean data, echo=FALSE, warning=FALSE, message=FALSE}
+
+
+# read in/clean data
+
+#Worksheet 1: Adults' body mass index (BMI), by survey year, age and sex
+#Health Survey for England 1993-2019: Adults aged 16 and over with a valid height and weight measurements
+
+gen_pop_data <- tibble(read.csv("gen_pop_1993_2019_age_sex_bmi.csv"))
+
+gen_pop_tidy <- gen_pop_data %>% 
+  pivot_longer(cols = !var,
+               names_to = "year",
+               values_to = "value")  %>% 
+  separate(col = var,
+           into = c("sex", "age", "measure"),
+           sep = "_") %>% 
+  pivot_wider(names_from = measure,
+              values_from = value) %>% 
+  mutate(.keep = "all",
+         year = as.character(
+           gsub("[a-zA-Z]", "", year)
+         ),
+         sex = as.factor(sex),
+         age = as.character(age),
+         bmi = as.double(bmi),
+         sem = as.double(sem))
+
+#Worksheet 2: Age, sex and Body Mass Index (BMI) of patients critically ill with 
+#confirmed COVID-19 admitted in English hospitals for two periods 
+#(1 May 2021 - 31 December 2021, 1 January 2022 - 31 December 2022) and 
+#data on BMI in an age- and sex-matched general population
+    
+matched_covid_data <- read.csv("icnarc_21_22_covid_age_sex_matched_bmi.csv")
+
+
+#Worksheet 3: Critical care outcome by age, sex and BMI for 
+#patients admitted from 1 January 2022 to 1 December 2022
+
+icnarc_outcomes_data <- read.csv("icnarc_2022_outcomes_2.csv")
+
+icnarc_outcomes_tidy <- icnarc_outcomes_data %>% 
+  select(variable,
+         value,
+         discharge_alive_pc,
+         discharge_dead_pc) %>% 
+  pivot_longer(cols = discharge_alive_pc:discharge_dead_pc,
+               names_to = "discharge_type", 
+               names_prefix = "discharge_",
+               values_to = "percentage") %>% 
+  mutate(discharge_type = str_remove(discharge_type, "_pc"))
+
+icnarc_outcomes_tidy_n <- icnarc_outcomes_data %>% 
+  select(variable,
+         value,
+         discharge_alive_n,
+         discharge_dead_n) %>% 
+  pivot_longer(cols = discharge_alive_n:discharge_dead_n,
+               names_to = "discharge_type", 
+               names_prefix = "discharge_",
+               values_to = "number") %>% 
+  mutate(discharge_type = str_remove(discharge_type, "_n"))
+
+```
+
+
+```{r plot template, echo=FALSE, warning=FALSE, message=FALSE}
+#plot template
+
+plot_template <- function(data)  {
+  data %>% 
+  ggplot() +
+  ## set generic theme
+  theme_bw() +
+  theme(title = element_text(colour = edin_spruce_grey_rgb,
+                             size = 9),
+        plot.subtitle = element_text(colour = edin_spruce_grey_rgb,
+                                     size = 7),
+        plot.caption = element_text(face = "italic",
+                                    colour = edin_spruce_grey_rgb,
+                                    size =3),
+        axis.title = element_text(colour = edin_spruce_grey_rgb,
+                                  size = 8),
+        axis.text = element_text(colour = edin_spruce_grey_rgb,
+                                 size = 6),
+        panel.grid = element_line(colour = edin_light_blue_rgb),
+        strip.text = element_text(colour = edin_spruce_grey_rgb,
+                                     size = 7),
+        strip.background = element_rect(fill = edin_light_blue_hex,
+                                        colour = edin_spruce_grey_hex))
+}
+
+```
+
+
+
+
+# Lay Summary
+
+Summarises the content of the report in a language accessible to a lay (non-expert) audience (maximum 200 words; 20 marks)
+
+# Introduction
+
+This section should include a brief relevant background, including points relating to burden of disease and a short description of the focus of the report (about 300 words; 8 marks).
+
+# Public Health Burden of Obesity
+
+
+# Links Between Obesity, Age, Sex and COVID-19
+
+
+
+risk and outcomes in England and globally. Illustrate this by creating two figures using the data provided in worksheets 1 to 3 in the Excel spreadsheet and one figure or table using information from one or more of the provided journal articles (about 350 words; 20 marks).
+
+
+
+
+```{r gen pop plot, include=TRUE}
+
+plot_gen_pop <- gen_pop_tidy %>% 
+  filter(year %in% c(1994,
+                     1999,
+                     2004,
+                     2009,
+                     2014,
+                     2019)) %>%
+  group_by(sex) %>% 
+  plot_template() +
+  aes(x = age,
+      y = bmi,
+      fill = sex) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(name = "Sex",
+                    breaks = c("men",
+                               "women"),
+                    values = c(edin_bright_blue_hex,
+                               edin_bright_pink_hex),
+                    labels = c("Male",
+                               "Female")) +
+  geom_errorbar(aes(ymin = bmi - 2*sem,
+                    ymax = bmi + 2*sem),
+                    width = 0.2,
+                    position = position_dodge(1.0),
+                    colour = edin_spruce_grey_hex) +
+  facet_wrap( ~ year) +
+  labs(title = "Average BMI distribution for English adults by age group at 5 year intervals",
+       x = "Age Group (Years)",
+       y = "Average BMI (kg/m^(2))",
+       caption = "Source: https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england/2019/health-survey-for-england-2019-data-tables
+       \nHealth Survey for England 1993-2019: Adults aged 16 and over with a valid height and weight measurements
+       \nBMI: Body Mass Index") +
+  theme(axis.title.y = element_markdown())
+
+print(plot_gen_pop)
+
+```
+
+```{r matched COVID plot, include=TRUE}
+
+matched_pop_only = matched_covid_data[ matched_covid_data$year == "matched",]
+
+covid_icu_pop_only <- matched_covid_data %>% 
+  anti_join(matched_pop_only)
+
+plot_matched_covid <- covid_icu_pop_only %>%
+  group_by(year) %>% 
+  plot_template() +
+  aes(x = bmi, 
+      y = bmi_pc,
+      fill = year) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(name = "Year",
+                    #breaks = c("2021",
+                    #          "2022"),
+                    values = c("2021" = edin_uni_blue_hex,
+                               "2022" = edin_uni_red_hex),
+                    labels = c("2021" = "1st May to 31st December 2021",
+                               "2022" = "1st January to 31st December 2022")) +
+  new_scale_fill() +
+  geom_line(data = matched_pop_only,
+            aes(x = bmi,
+                y = bmi_pc,
+                colour = year,
+                group = year)) +
+  scale_colour_manual(name = "",
+                    values = edin_bright_orange_hex,
+                    labels = "Age- and Sex-Matched General Population") +
+  labs(title = "Distribution of BMI ranges in English intensive care patients with COVID-19 \nper year compared with age- and sex-matched general population",
+       x = "BMI Range (kg/m^(2))",
+       y = "Percentage of population",
+       caption = "Source: \nBMI: Body Mass Index", ) +
+    theme(axis.title.x = element_markdown())
+
+
+print(plot_matched_covid)
+
+```
+
+```{r icu outcomes plot, include=TRUE}
+
+plot_icu_outcomes <- icnarc_outcomes_tidy %>% 
+  mutate(value = factor(value, 
+                        levels = c("16-49",
+                                   "50-69",
+                                   "70+",
+                                   "<25",
+                                   "25-30",
+                                   ">=30",
+                                   "Female",
+                                   "Male"))) %>%
+  plot_template() +
+  aes(x = value,
+      y = percentage,
+      fill = discharge_type, 
+      group = discharge_type,
+      position = "stack") +
+  geom_col() +
+  scale_fill_manual(name = "Vital Status at \nICU Discharge",
+                    values = c(alive = edin_blue_hex,
+                               dead = edin_spruce_grey_hex),
+                    labels = c("Alive", "Deceased")) +
+  facet_grid(cols = vars(variable),
+             scales = "free",
+             labeller = labeller(variable = variable_labels)) +
+  labs(title = "Vital status of patients at time of ICU discharge by age, BMI and sex",
+       x = "Value",
+       y = "Percentage of Patients")
+  
+  
+
+
+print(plot_icu_outcomes)
+
+```
+
+```{r plot icu outcomes absolute}
+
+variable_labels <- c(admit_age = "Age at ICU \nAdmission",
+                     bmi = "BMI",
+                     sex = "Sex")
+
+plot_icu_outcomes_n <- icnarc_outcomes_tidy_n %>% 
+  mutate(value = factor(value, 
+                        levels = c("16-49",
+                                   "50-69",
+                                   "70+",
+                                   "<25",
+                                   "25-30",
+                                   ">=30",
+                                   "Female",
+                                   "Male"))) %>% 
+  plot_template() +
+  aes(x = value,
+      y = number,
+      fill = discharge_type, 
+      group = discharge_type,
+      position = "stack") +
+  geom_col() +
+  scale_fill_manual(name = "Vital Status at \nICU Discharge",
+                    values = c(alive = edin_blue_hex,
+                               dead = edin_spruce_grey_hex),
+                    labels = c("Alive", "Deceased")) +
+  facet_grid(cols = vars(variable),
+             scales = "free",
+             labeller = labeller(variable = variable_labels)) +
+  labs(title = "Vital status of patients at time of ICU discharge by age, BMI and sex",
+       x = "Value",
+       y = "Number of Patients")
+  
+
+
+print(plot_icu_outcomes_n)
+
+```
+
+
+
+# Limitations
+
+Identify two limitations in the evidence presented in part 3 above. If you choose to include limitations that are mentioned in the provided articles, you need to expand on the justification for the limitation and explain why/how they affect results/conclusions (thus taking the point much further than what is stated in the article) (about 250 words; 12 marks).  
+
+# Recommendations
+
+Taking into consideration sections 2-4 above and the data provided in all 3 excel worksheets, describe one research recommendation and one policy recommendation. You should consider issues relating to confounding, bias, effect modification and evidence of causality. Your recommendations should include details of both what should be addressed and how this should be addressed. Your research recommendation should include a clear statement of the most appropriate study design to address this next research step (about 700 words; 30 marks [20 for the research recommendation and 10 for the policy recommendation]).  
+
+The entire assignment is worth 100 marks. In addition to the section marks specified above, up to 10 marks will be awarded for presentation, including structure, use of subheadings, visual appearance and clarity. Please note that although we have indicated the core sections to be included, the required format is a cohesive report and not in a question and answer format.
+ 
+# Additional guidance
+You can assume the reader is knowledgeable about Covid19 and so you are not expected to include a background on COVID-19 or a summary of the pandemic situation in terms of cases and deaths to date in the setting.
+Use clear figures and tables, remembering to include appropriate titles, legends, clearly labelled axes and columns/rows etc.
+Consider the layout of your report, which should be well-balanced in terms of text and figures/tables
+Do not copy/recreate tables or figures directly from articles
+Do not use any other data sources or articles other than those listed above
+Do not exceed the word count, since you will be penalised
+
+
+# Word Count
+
+```{r Word Count, echo = FALSE, message=FALSE, results='asis'}
+cat(paste("Word Count:",
+          wordcountaddin::word_count("COVID_Mortality_Report.Rmd")))
+```
