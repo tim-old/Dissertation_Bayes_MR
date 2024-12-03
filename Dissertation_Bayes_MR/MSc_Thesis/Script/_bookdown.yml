@@ -1,0 +1,8 @@
+---
+book_filename: "MR_Dissertation"
+delete_merged_file: TRUE
+new_session: TRUE
+rmd_subdir: ["Script"]
+#rmd_files: ["index.Rmd", "Simulations.Rmd"]
+output_dir: "../Output"
+---
