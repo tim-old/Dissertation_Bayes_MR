@@ -1,16 +1,17 @@
 ---
-output: pdf
+title: "Simulations"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+    dev: cairo_pdf
 ---
 
-
-# Simulations
 
 The data generating model used was from Appendix 3 of Bowden et al (ref), and was as follows
 
 
 \begin{equation} 
-  U_i = \sum^J_{j=1} \phi_jG_{ij} + \epsilon_i^U  
-  (\#eq:label) 
+  U_i = \sum^J_{j=1} \phi_jG_{ij} + \epsilon_i^U
 \end{equation}
 
 
@@ -31,6 +32,8 @@ genetic instrument was a valid instrumental variable. Otherwise (with probabilit
 2. In Scenario 2 (directional pleiotropy, InSIDE satisfied), the $\alpha_j$ parameter was drawn from a uniform distribution between 0 and 0.2.
 
 3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the $\phi_j$ parameter was drawn from a uniform distribution between −0.2 and 0.2.
+
+
 The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 participants. Only the summary
 data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn,were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants. The Monte Carlo standard error for the mean estimates was 0.002 or less, and for the power was less than 0.5% in all cases.
 
@@ -47,6 +50,8 @@ library(tidyverse)
 
 ```{r wme-model}
 
+# Define function to create data generating model
+# Arguments based on Bowden et al
 wme_model_sim <- function(n_participants = as.integer(), 
                           n_instruments = as.integer(),
                           n_datasets = as.integer(),
@@ -67,7 +72,7 @@ wme_model_sim <- function(n_participants = as.integer(),
   
   
   # Assign features common to all datasets
-  beta <- if_else(causal_effect == TRUE,
+  beta <- if_else(causal_effect == TRUE, # size of causal effect
                     0.1,
                     0)
   
@@ -197,11 +202,11 @@ extract_plotting_XY <- function(sim){
   for(mat in 1:length(sim$X)){
     # Get mean/SD cols for X, grouped by dataset + instrument
     summ_X_list[[mat]] <- sim$X[[mat]] %>% 
-      as.tibble(.name_repair = "unique") %>% # unique names = ...1, ...2 etc for each genetic instrument
+      as_tibble(.name_repair = "unique") %>% # unique names = ...1, ...2 etc for each instrument
       mutate(Dataset = mat) %>%
       pivot_longer(cols = starts_with("..."), 
                    names_prefix = "...",
-                   names_to = "instrument") %>% 
+                   names_to = "Instrument") %>% 
       mutate(Instrument = as.integer(Instrument)) %>% 
       group_by(Dataset, 
                Instrument) %>% 
@@ -211,11 +216,11 @@ extract_plotting_XY <- function(sim){
     
     # Get mean/SD cols for Y, grouped by dataset + instrument
     summ_Y_list[[mat]] <- sim$Y[[mat]] %>% 
-      as.tibble(.name_repair = "unique") %>% 
+      as_tibble(.name_repair = "unique") %>% 
       mutate(Dataset = mat) %>% 
       pivot_longer(cols = starts_with("..."), 
                    names_prefix = "...",
-                   names_to = "instrument") %>% 
+                   names_to = "Instrument") %>% 
       mutate(Instrument = as.integer(Instrument)) %>% 
       group_by(Dataset, 
                Instrument) %>% 
@@ -237,10 +242,6 @@ extract_plotting_XY <- function(sim){
     mutate(Instrument = as_factor(Instrument)) # to aid plotting
   
   return(summ_XY_tib)
-  
-  
-  #assign(paste0(deparse(substitute(sim)), "_plotting_X"), value = summ_X_list, envir = .GlobalEnv) 
-  #assign(paste0(deparse(substitute(sim)), "_plotting_Y"), value = summ_Y_list, envir = .GlobalEnv)
 
 }
 
@@ -262,16 +263,16 @@ sim_test_data <- wme_model_sim(n_participants = 1000,
 test_plot_tib <- extract_plotting_XY(sim_test_data) 
   
 test_plot_tib %>%
-  group_by(NULL) %>% # needed to make Gradient work
+  group_by(NULL) %>% # needed for Gradient across all datasets combined
   #group_by(Dataset) %>% 
   mutate(Gradient = round(coefficients(lm(Mean_Y ~ 0 + Mean_X))[1], 5),
          Intercept = 0) %>% 
   ggplot() +
   aes(x = Mean_X, y = Mean_Y) +
-  geom_point(aes(colour = instrument)) +
+  geom_point(aes(colour = Instrument)) +
   geom_abline(aes(intercept = 0, 
-                  slope = Gradient)) +
-  geom_text(aes(x = 0.1, # labels with gradient
+                  slope = Gradient),) +
+  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
                 y = 0.1, 
                 label = paste0("beta == ", Gradient)), 
             parse = TRUE) +
