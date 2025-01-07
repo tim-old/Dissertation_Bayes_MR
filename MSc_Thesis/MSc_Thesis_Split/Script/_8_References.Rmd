@@ -1,0 +1,20 @@
+---
+title: "8. References"
+author: "B233241"
+date: "2025-01-07"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    dev: cairo_pdf
+knit: (function(inputFile, encoding) {
+      rmarkdown::render(inputFile,
+                        encoding = encoding,
+                        knit_root_dir = rprojroot::find_rstudio_root_file(),
+                        output_dir = file.path("../Output")
+                        )})
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
