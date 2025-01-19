@@ -59,8 +59,7 @@ wme_model_sim <- function(n_participants = as.integer(),
                           causal_effect = TRUE,
                           balanced_pleio = TRUE,
                           InSIDE_satisfied = TRUE){
-  
-  set.seed(1701)
+
   
   
   # Initialise blank lists to receive datasets for
@@ -124,6 +123,7 @@ wme_model_sim <- function(n_participants = as.integer(),
                          ncol = n_instruments,
                          byrow = TRUE)
     
+    # Uncomment to check:
     # Check that observed vs expected allele frequencies roughly match
     # cbind(colSums(G_mat) / (2*n_participants), allele_freq_vect)
     
@@ -180,6 +180,12 @@ wme_model_sim <- function(n_participants = as.integer(),
     # https://stackoverflow.com/questions/22060515/the-r-operator 
     # http://matrixmultiplication.xyz/
     
+    # *** Split X + Y? ***
+    # "In the two-sample setting, data were generated on 2N 
+    # participants, and genetic associations with the exposure were
+    # estimated in the first N participants, and genetic associations 
+    # with the outcome in the second N participants."
+    
     Ui_vect <- G_mat %*% phi_vect + U_epsilon_vect
     
     Xi_vect <- G_mat %*% gamma_vect + Ui_vect + X_epsilon_vect
@@ -220,7 +226,7 @@ wme_model_sim <- function(n_participants = as.integer(),
 }
 ```
 
-```{r extract-plotting-XY}
+```{r extract-models-XY}
 
 
 # Create plotting tibble with Mean/SD X + Y grouped by
@@ -229,7 +235,9 @@ extract_models_XY <- function(sim){
   
   output_list <- list()
   
-  # Create linear model per dataset
+  # Create linear models per dataset to get coefficients
+  # for gene:exposure association (beta_X_G) and gene:outcome
+  # association (beta_Y_G)
   #for(dataset in 1:length(sim$X)){
   for(dataset in 1:2){
     
@@ -241,21 +249,24 @@ extract_models_XY <- function(sim){
     gamma <- sim$gamma[[dataset]]
     phi <- sim$phi[[dataset]]
     
+    # Model for gene:exposure
     X_lm <- lm(X ~ Instruments)
     beta_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 1]
     SE_beta_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 2]
 
-    
+    # Model for gene:outcome
     Y_lm <- lm(Y ~ Instruments)
     beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 1]
     SE_beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 2]
     
-    output_list[[dataset]] <- as_tibble(list(beta_X_G = beta_X_G_vect,
+    output_list[[dataset]] <- as_tibble(list(dataset = dataset,
+                                             Instrument = c(1:ncol(Instruments)),
+                                             beta_X_G = beta_X_G_vect,
                                              beta_X_G_SE = SE_beta_X_G_vect,
+                                             gamma = gamma,
                                              beta_Y_G = beta_Y_G_vect,
                                              beta_Y_G_SE = SE_beta_Y_G_vect,
                                              alpha = alpha,
-                                             gamma = gamma,
                                              phi = phi), 
                                         .name_repair = "unique")
   }
@@ -264,21 +275,87 @@ extract_models_XY <- function(sim){
   
 }  
 
-test_plot_tib <- extract_models_XY(sim_test_data) 
+
+```
+
+
+
+```{r test-plotting, cache=TRUE}
+
+set.seed(1701)
+sim_test_data_X <- wme_model_sim(n_participants = 10000,
+                                 n_instruments = 25,
+                                 n_datasets = 10,
+                                 prop_invalid = 0.1,
+                                 causal_effect = TRUE,
+                                 balanced_pleio = TRUE,
+                                 InSIDE_satisfied = TRUE)
+
+
+test_plot_tib_X <- extract_models_XY(sim_test_data_X)[[1]] 
   
-test_plot_tib[[1]] %>% 
+test_plot_tib_X
+
+# Check gene:exposure coefficients approximate true
+# values
+test_plot_tib_X %>% 
   select(beta_X_G, gamma) %>% 
   plot(.)
 
 
-test_plot_tib[[1]] %>% 
+# Check gene:outcome coefficients approximate pleiotropic
+# effects when no causal effect present
+set.seed(1701)
+sim_test_data_Y <- wme_model_sim(n_participants = 10000,
+                                 n_instruments = 25,
+                                 n_datasets = 10,
+                                 prop_invalid = 0.3,
+                                 causal_effect = FALSE,
+                                 balanced_pleio = TRUE,
+                                 InSIDE_satisfied = TRUE)
+
+
+test_plot_tib_Y <- extract_models_XY(sim_test_data_Y)[[1]]
+
+test_plot_tib_Y %>% 
   select(alpha, beta_Y_G) %>% 
   plot(.)
 
 
-# Check betas (estimated effects) 
-plot(as.numeric(test_plot_tib[[1]]$beta),
-     as.numeric(test_plot_tib[[1]]$gamma))
+
+```
+
+
+
+```{r include=FALSE}
+
+
+
+test_plot_tib %>%
+  group_by(NULL) %>% # needed for Gradient across all datasets combined
+  #group_by(Dataset) %>% 
+  mutate(Gradient = round(coefficients(lm(Mean_Y ~ 0 + Mean_X))[1], 5),
+         Intercept = 0) %>% 
+  ggplot() +
+  aes(x = Mean_X, y = Mean_Y) +
+  geom_point(aes(colour = Instrument)) +
+  geom_abline(aes(intercept = 0, 
+                  slope = Gradient),) +
+  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
+                y = 0.1, 
+                label = paste0("beta == ", Gradient)), 
+            parse = TRUE) +
+  facet_wrap(~NULL) #+
+  #facet_wrap(~Dataset) #+
+
+
+
+
+
+
+
+
+
 
 
   # summ_X_list <- list()
@@ -331,40 +408,3 @@ plot(as.numeric(test_plot_tib[[1]]$beta),
 }
 
 ```
-
-
-
-```{r test-plotting, cache=TRUE}
-
-sim_test_data <- wme_model_sim(n_participants = 1000,
-                               n_instruments = 25,
-                               n_datasets = 10,
-                               prop_invalid = 0.5,
-                               causal_effect = TRUE,
-                               balanced_pleio = TRUE,
-                               InSIDE_satisfied = TRUE)
-
-
-test_plot_tib <- extract_models_XY(sim_test_data) 
-  
-test_plot_tib %>%
-  group_by(NULL) %>% # needed for Gradient across all datasets combined
-  #group_by(Dataset) %>% 
-  mutate(Gradient = round(coefficients(lm(Mean_Y ~ 0 + Mean_X))[1], 5),
-         Intercept = 0) %>% 
-  ggplot() +
-  aes(x = Mean_X, y = Mean_Y) +
-  geom_point(aes(colour = Instrument)) +
-  geom_abline(aes(intercept = 0, 
-                  slope = Gradient),) +
-  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
-                y = 0.1, 
-                label = paste0("beta == ", Gradient)), 
-            parse = TRUE) +
-  facet_wrap(~NULL) #+
-  #facet_wrap(~Dataset) #+
-
-
-```
-
-
