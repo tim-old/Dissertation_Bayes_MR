@@ -250,8 +250,10 @@ extract_models_XY <- function(sim){
     beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 1]
     SE_beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 2]
     
-    output_list[[dataset]] <- as_tibble(list(beta = beta_X_G_vect,
-                                             beta_SE = SE_beta_X_G_vect,
+    output_list[[dataset]] <- as_tibble(list(beta_X_G = beta_X_G_vect,
+                                             beta_X_G_SE = SE_beta_X_G_vect,
+                                             beta_Y_G = beta_Y_G_vect,
+                                             beta_Y_G_SE = SE_beta_Y_G_vect,
                                              alpha = alpha,
                                              gamma = gamma,
                                              phi = phi), 
@@ -265,7 +267,12 @@ extract_models_XY <- function(sim){
 test_plot_tib <- extract_models_XY(sim_test_data) 
   
 test_plot_tib[[1]] %>% 
-  select(beta, gamma) %>% 
+  select(beta_X_G, gamma) %>% 
+  plot(.)
+
+
+test_plot_tib[[1]] %>% 
+  select(alpha, beta_Y_G) %>% 
   plot(.)
 
 
@@ -329,10 +336,10 @@ plot(as.numeric(test_plot_tib[[1]]$beta),
 
 ```{r test-plotting, cache=TRUE}
 
-sim_test_data <- wme_model_sim(n_participants = 100000,
+sim_test_data <- wme_model_sim(n_participants = 1000,
                                n_instruments = 25,
                                n_datasets = 10,
-                               prop_invalid = 0.1,
+                               prop_invalid = 0.5,
                                causal_effect = TRUE,
                                balanced_pleio = TRUE,
                                InSIDE_satisfied = TRUE)
