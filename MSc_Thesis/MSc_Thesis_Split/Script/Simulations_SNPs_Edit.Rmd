@@ -65,16 +65,22 @@ wme_model_sim <- function(n_participants = as.integer(),
   
   # Initialise blank lists to receive datasets for
   # each of U (unmeasured confounding exposures), 
-  # x (exposures) and Y (outcomes)
+  # x (exposures) and Y (outcomes), plus the matrices
+  # of Genotype data
   U_list <- list()
   X_list <- list()
   Y_list <- list()
+  G_list <- list()
+  
+  alpha_list <- list()
+  gamma_list <- list()
+  phi_list <- list()
   
   
   # Assign features common to all datasets
   beta <- if_else(causal_effect == TRUE, # size of causal effect
-                    0.1,
-                    0)
+                  0.1,
+                  0)
   
   
   # Create N datasets by simulating genotype matrices with
@@ -93,8 +99,9 @@ wme_model_sim <- function(n_participants = as.integer(),
     Y_epsilon_vect <- rnorm(n = n_participants)
     
         
-    # Create matrix of genotypes, 0 = reference, 
-    # 1 = 1 effect allele, 2 = 2 effect alleles 
+    ## -- Create matrix of genotypes -- 
+    ## 0 = reference, 
+    ## 1 = 1 effect allele, 2 = 2 effect alleles 
     
     
     # Probability of effect allele set per dataset  
@@ -168,29 +175,45 @@ wme_model_sim <- function(n_participants = as.integer(),
       }
     }
     
+    # Create vectors of estimates for U, X and Y per individual,
+    # i.e. Ui, Xi and Yi. Uses matrix inner product operator " %*%" 
+    # https://stackoverflow.com/questions/22060515/the-r-operator 
+    # http://matrixmultiplication.xyz/
+    
     Ui_vect <- G_mat %*% phi_vect + U_epsilon_vect
+    
     Xi_vect <- G_mat %*% gamma_vect + Ui_vect + X_epsilon_vect
+    
     Yi_vect <- G_mat %*% alpha_vect + beta * Xi_vect + Ui_vect + Y_epsilon_vect
     
     
-    # Complete U matrix
-    # U_mat[ ,j] <- phi_vect[j] + U_mat[ ,j]
+    # Add vectors of estimates from this dataset to lists of 
+    # estimates from all datasets
     U_list[[n]] <- Ui_vect
     
-    
-    # Complete X matrix
-    #X_mat[ , j] <- gamma_vect[j]*G_mat[ , j] + U_mat[ , j] + X_mat[ , j]
     X_list[[n]] <- Xi_vect
     
-    # Complete Y matrix
-    #Y_mat[ ,j] <- alpha_vect[j] + beta*X_mat[ ,j] + U_mat[ ,j] + Y_mat[ ,j]
     Y_list[[n]] <- Yi_vect
+    
+    G_list[[n]] <- G_mat
+    
+    alpha_list[[n]] <- alpha_vect
+    
+    gamma_list[[n]] <- gamma_vect
+    
+    phi_list[[n]] <- phi_vect
+  
     
   }
   
-  combined_list <- list(#U=U_list, 
-                        X=X_list, 
-                        Y=Y_list)
+  combined_list <- list(U = U_list,          # Estimates 
+                        X = X_list, 
+                        Y = Y_list,
+                        G = G_list,
+                        alpha = alpha_list, # Actual values for troubleshooting
+                        gamma = gamma_list,
+                        phi = phi_list
+                        )
   
   return(combined_list)
 
@@ -202,54 +225,101 @@ wme_model_sim <- function(n_participants = as.integer(),
 
 # Create plotting tibble with Mean/SD X + Y grouped by
 # Dataset + instrument
-extract_plotting_XY <- function(sim){
+extract_models_XY <- function(sim){
   
-  summ_X_list <- list()
-  summ_Y_list <- list()
+  output_list <- list()
   
-  for(mat in 1:length(sim$X)){
-    # Get mean/SD cols for X, grouped by dataset + instrument
-    summ_X_list[[mat]] <- sim$X[[mat]] %>% 
-      as_tibble(.name_repair = "unique") %>% # unique names = ...1, ...2 etc for each instrument
-      mutate(Dataset = mat) %>%
-      pivot_longer(cols = starts_with("..."), 
-                   names_prefix = "...",
-                   names_to = "Instrument") %>% 
-      mutate(Instrument = as.integer(Instrument)) %>% 
-      group_by(Dataset, 
-               Instrument) %>% 
-      summarise(Mean_X = mean(value),
-                SD_X = sd(value), 
-                .groups = "keep")
+  # Create linear model per dataset
+  #for(dataset in 1:length(sim$X)){
+  for(dataset in 1:2){
     
-    # Get mean/SD cols for Y, grouped by dataset + instrument
-    summ_Y_list[[mat]] <- sim$Y[[mat]] %>% 
-      as_tibble(.name_repair = "unique") %>% 
-      mutate(Dataset = mat) %>% 
-      pivot_longer(cols = starts_with("..."), 
-                   names_prefix = "...",
-                   names_to = "Instrument") %>% 
-      mutate(Instrument = as.integer(Instrument)) %>% 
-      group_by(Dataset, 
-               Instrument) %>% 
-      summarise(Mean_Y = mean(value),
-                SD_Y = sd(value), 
-                .groups = "keep")
+    X <- sim$X[[dataset]]
+    Y <- sim$Y[[dataset]]
+    Instruments <- sim$G[[dataset]]
     
-  } 
+    alpha <- sim$alpha[[dataset]]
+    gamma <- sim$gamma[[dataset]]
+    phi <- sim$phi[[dataset]]
+    
+    X_lm <- lm(X ~ Instruments)
+    beta_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 1]
+    SE_beta_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 2]
+
+    
+    Y_lm <- lm(Y ~ Instruments)
+    beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 1]
+    SE_beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 2]
+    
+    output_list[[dataset]] <- as_tibble(list(beta = beta_X_G_vect,
+                                             beta_SE = SE_beta_X_G_vect,
+                                             alpha = alpha,
+                                             gamma = gamma,
+                                             phi = phi), 
+                                        .name_repair = "unique")
+  }
   
-  # Combine matrices for X+Y into single tibble and return
-  summ_X_tib <- summ_X_list %>% 
-    list_rbind()
+  return(output_list)
   
-  summ_Y_tib <- summ_Y_list %>% 
-    list_rbind()
+}  
+
+test_plot_tib <- extract_models_XY(sim_test_data) 
   
-  summ_XY_tib <- summ_X_tib %>%
-    full_join(summ_Y_tib) %>% 
-    mutate(Instrument = as_factor(Instrument)) # to aid plotting
-  
-  return(summ_XY_tib)
+test_plot_tib[[1]] %>% 
+  select(beta, gamma) %>% 
+  plot(.)
+
+
+# Check betas (estimated effects) 
+plot(as.numeric(test_plot_tib[[1]]$beta),
+     as.numeric(test_plot_tib[[1]]$gamma))
+
+
+  # summ_X_list <- list()
+  # summ_Y_list <- list()
+  # 
+  # for(vect in 1:length(sim$X)){
+  #   # Get mean/SD cols for X, grouped by dataset + instrument
+  #   summ_X_list[[vect]] <- sim$X[[vect]] %>% 
+  #     as_tibble(.name_repair = "unique") %>% # unique names = ...1, ...2 etc for each instrument
+  #     mutate(Dataset = vect) %>%
+  #     pivot_longer(cols = starts_with("..."), 
+  #                  names_prefix = "...",
+  #                  names_to = "Instrument") %>% 
+  #     mutate(Instrument = as.integer(Instrument)) %>% 
+  #     group_by(Dataset, 
+  #              Instrument) %>% 
+  #     summarise(Mean_X = mean(value),
+  #               SD_X = sd(value), 
+  #               .groups = "keep")
+  #   
+  #   # Get mean/SD cols for Y, grouped by dataset + instrument
+  #   summ_Y_list[[vect]] <- sim$Y[[vect]] %>% 
+  #     as_tibble(.name_repair = "unique") %>% 
+  #     mutate(Dataset = vect) %>% 
+  #     pivot_longer(cols = starts_with("..."), 
+  #                  names_prefix = "...",
+  #                  names_to = "Instrument") %>% 
+  #     mutate(Instrument = as.integer(Instrument)) %>% 
+  #     group_by(Dataset, 
+  #              Instrument) %>% 
+  #     summarise(Mean_Y = mean(value),
+  #               SD_Y = sd(value), 
+  #               .groups = "keep")
+  #   
+  # } 
+  # 
+  # # Combine matrices for X+Y into single tibble and return
+  # summ_X_tib <- summ_X_list %>% 
+  #   list_rbind()
+  # 
+  # summ_Y_tib <- summ_Y_list %>% 
+  #   list_rbind()
+  # 
+  # summ_XY_tib <- summ_X_tib %>%
+  #   full_join(summ_Y_tib) %>% 
+  #   mutate(Instrument = as_factor(Instrument)) # to aid plotting
+  # 
+  # return(summ_XY_tib)
 
 }
 
@@ -259,8 +329,8 @@ extract_plotting_XY <- function(sim){
 
 ```{r test-plotting, cache=TRUE}
 
-sim_test_data <- wme_model_sim(n_participants = 1000,
-                               n_instruments = 15,
+sim_test_data <- wme_model_sim(n_participants = 100000,
+                               n_instruments = 25,
                                n_datasets = 10,
                                prop_invalid = 0.1,
                                causal_effect = TRUE,
@@ -268,7 +338,7 @@ sim_test_data <- wme_model_sim(n_participants = 1000,
                                InSIDE_satisfied = TRUE)
 
 
-test_plot_tib <- extract_plotting_XY(sim_test_data) 
+test_plot_tib <- extract_models_XY(sim_test_data) 
   
 test_plot_tib %>%
   group_by(NULL) %>% # needed for Gradient across all datasets combined
