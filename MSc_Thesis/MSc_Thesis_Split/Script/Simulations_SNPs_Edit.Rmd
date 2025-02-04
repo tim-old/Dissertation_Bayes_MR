@@ -34,12 +34,8 @@ genetic instrument was a valid instrumental variable. Otherwise (with probabilit
 3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the $\phi_j$ parameter was drawn from a uniform distribution between −0.2 and 0.2.
 
 
-The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 participants. Only the summary
-data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn,were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants. The Monte Carlo standard error for the mean estimates was 0.002 or less, and for the power was less than 0.5% in all cases.
+The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 [sic] participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn,were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants. 
 
-
-The standard errors used in the IVW and MR-Egger methods in this simulation correspond to those used in the simulations of Bowden et al. [Bowden et al., 2015], but differ from those previously recommended for use in the IVW [Johnson, 2013; Burgess et al., 2013] and originally recommended for the MR-Egger regression method (see Web Appendix 2 above). The reason is that the IVW method corresponds to a fixed-effect meta-analysis of the ratio estimates from each genetic instrument. In the examples of this paper, there is heterogeneity in the ratio estimates, and so a fixedeffect analysis is inappropriate, and leads to overly precise confidence intervals and inflated Type 1 error rates. A conventional random-effects meta-analysis would not be wise, as the random-effects estimate upweights outlying estimates, inflating the influence of pleiotropic genetic instruments on the analysis. Hence we have reached a compromise, similar to that suggested by Copas et al. [Henmi and Copas, 2010], that we take the point estimate from a fixed-effect analysis, but allow confidence intervals to be inflated by heterogeneity as per a random-effects analysis. This is achieved by performing a weighted regression as described in the description of MR-Egger regression, but not setting the residual standard error in the regression to be 1, as is recommended in meta-analysis to correspond to a fixed-effect analysis (unless the estimate of the residual standard error is less than 1, in which case we divide the standard errors of the coefficients by the estimate of the residual standard error to avoid over-precision). This is equivalent to a multiplicative random-effects model
-[Thompson and Sharp, 1999].
 
 ```{r setup, include=FALSE}
 
@@ -63,16 +59,22 @@ wme_model_sim <- function(n_participants = as.integer(),
   
   
   # Initialise blank lists to receive datasets for
-  # each of U (unmeasured confounding exposures), 
-  # x (exposures) and Y (outcomes), plus the matrices
-  # of Genotype data
+  # each of:
+  #     U (vector representing unmeasured confounding exposures per participant), 
+  #     X (vector representing exposure:outcome associations estimated per participant) 
+  #     Y (vector of gene:outcome association estimated per participant), 
+  #     G (Matrices of Genotype data)
+  #
+  #     gamma (vector representing pleiotropic effects of each instrument on exposure)
+  #     alpha (vector representing pleiotropic effects of each instrument on outcome)
+  #     phi (vector representing additional pleiotropic effects of each instrument when InSIDE assumption not satisfied)
   U_list <- list()
   X_list <- list()
   Y_list <- list()
   G_list <- list()
   
-  alpha_list <- list()
   gamma_list <- list()
+  alpha_list <- list()
   phi_list <- list()
   
   
@@ -99,7 +101,7 @@ wme_model_sim <- function(n_participants = as.integer(),
     
         
     ## -- Create matrix of genotypes -- 
-    ## 0 = reference, 
+    ## 0 = reference, i.e. zero effect alleles, 
     ## 1 = 1 effect allele, 2 = 2 effect alleles 
     
     
@@ -116,17 +118,26 @@ wme_model_sim <- function(n_participants = as.integer(),
     # Assign genotypes by sampling from binomial distribution
     # twice (as two alleles) per participant with probability
     # equal to frequency of effect allele
-    G_mat <- matrix(rbinom(n = n_participants * n_instruments,
+    
+    
+        G_mat <- matrix(rbinom(n = n_participants * n_instruments,
                                 size = 2,
                                 prob = rep(allele_freq_vect, n_participants)),
                          nrow = n_participants,
                          ncol = n_instruments,
                          byrow = TRUE)
+
+    # --- Alternative: Athina code adapted --- #
+    # allele.probs <- matrix(runif(2* n_participants * n_instruments, min = 0, max = 1), nrow = 2 * n_participants, ncol = n_instruments)
+    # alleles <- allele.probs < matrix(rep(allele_freq_vect, 2 * n_participants), nrow = 2 * n_participants, ncol = n_instruments, byrow = TRUE)
+    # G_mat <- alleles[1:n_participants, ] + alleles[(n_participants+1):(2*n_participants), ]
     
     # Uncomment to check:
     # Check that observed vs expected allele frequencies roughly match
     # cbind(colSums(G_mat) / (2*n_participants), allele_freq_vect)
+    # ---
     
+        
     # Set which instruments invalid
     invalid_instrument_vect <- rbinom(n = n_instruments,
                                    size = 1, 
@@ -216,13 +227,13 @@ wme_model_sim <- function(n_participants = as.integer(),
                         X = X_list, 
                         Y = Y_list,
                         G = G_list,
-                        alpha = alpha_list, # Actual values for troubleshooting
+                        alpha = alpha_list, # Actual values for validating simulation
                         gamma = gamma_list,
                         phi = phi_list
                         )
   
   return(combined_list)
-
+  #return(G_mat)
 }
 ```
 
@@ -236,10 +247,10 @@ extract_models_XY <- function(sim){
   output_list <- list()
   
   # Create linear models per dataset to get coefficients
-  # for gene:exposure association (beta_X_G) and gene:outcome
-  # association (beta_Y_G)
-  #for(dataset in 1:length(sim$X)){
-  for(dataset in 1:2){
+  # for gene:exposure association (coeff_X_G) and gene:outcome
+  # association (coeff_Y_G)
+  for(dataset in 1:length(sim$X)){
+  #for(dataset in 1:2){
     
     X <- sim$X[[dataset]]
     Y <- sim$Y[[dataset]]
@@ -251,21 +262,21 @@ extract_models_XY <- function(sim){
     
     # Model for gene:exposure
     X_lm <- lm(X ~ Instruments)
-    beta_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 1]
-    SE_beta_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 2]
+    coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 1]
+    SE_coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 2]
 
     # Model for gene:outcome
     Y_lm <- lm(Y ~ Instruments)
-    beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 1]
-    SE_beta_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 2]
+    coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 1]
+    SE_coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 2]
     
     output_list[[dataset]] <- as_tibble(list(dataset = dataset,
                                              Instrument = c(1:ncol(Instruments)),
-                                             beta_X_G = beta_X_G_vect,
-                                             beta_X_G_SE = SE_beta_X_G_vect,
+                                             coeff_X_G = coeff_X_G_vect,
+                                             coeff_X_G_SE = SE_coeff_X_G_vect,
                                              gamma = gamma,
-                                             beta_Y_G = beta_Y_G_vect,
-                                             beta_Y_G_SE = SE_beta_Y_G_vect,
+                                             coeff_Y_G = coeff_Y_G_vect,
+                                             coeff_Y_G_SE = SE_coeff_Y_G_vect,
                                              alpha = alpha,
                                              phi = phi), 
                                         .name_repair = "unique")
@@ -278,52 +289,219 @@ extract_models_XY <- function(sim){
 
 ```
 
+A series of test plots were used to verify that data were simulated as intended under the various conditions required:
 
+```{r test-tib, cache=TRUE}
 
-```{r test-plotting, cache=TRUE}
-
+# Check data produced in
 set.seed(1701)
-sim_test_data_X <- wme_model_sim(n_participants = 10000,
+sim_test_data_tib <- wme_model_sim(n_participants = 1000,
                                  n_instruments = 25,
-                                 n_datasets = 10,
+                                 n_datasets = 1,
                                  prop_invalid = 0.1,
                                  causal_effect = TRUE,
                                  balanced_pleio = TRUE,
                                  InSIDE_satisfied = TRUE)
 
 
-test_plot_tib_X <- extract_models_XY(sim_test_data_X)[[1]] 
+test_tib <- extract_models_XY(sim_test_data_tib)[[1]] 
   
-test_plot_tib_X
+head(test_tib)
 
-# Check gene:exposure coefficients approximate true
-# values
-test_plot_tib_X %>% 
-  select(beta_X_G, gamma) %>% 
-  plot(.)
+```
 
 
-# Check gene:outcome coefficients approximate pleiotropic
-# effects when no causal effect present
+```{r test-plot-gamma-1, cache=TRUE}
+
+# Check observed gene:exposure coefficients for each instrument
+# (coeff_X_G) approximate true values (gamma) when a causal effect 
+# is present & a large number of participants are included 
 set.seed(1701)
-sim_test_data_Y <- wme_model_sim(n_participants = 10000,
+sim_test_data_gamma_1 <- wme_model_sim(n_participants = 100000,
                                  n_instruments = 25,
-                                 n_datasets = 10,
-                                 prop_invalid = 0.3,
-                                 causal_effect = FALSE,
+                                 n_datasets = 1,
+                                 prop_invalid = 0.1,
+                                 causal_effect = TRUE,
                                  balanced_pleio = TRUE,
                                  InSIDE_satisfied = TRUE)
 
 
-test_plot_tib_Y <- extract_models_XY(sim_test_data_Y)[[1]]
+test_plot_tib_gamma_1 <- extract_models_XY(sim_test_data_gamma_1)[[1]] 
 
-test_plot_tib_Y %>% 
-  select(alpha, beta_Y_G) %>% 
-  plot(.)
+test_plot_tib_gamma_1 %>% 
+  select(coeff_X_G, gamma) %>% 
+  plot(.,
+       ylab = "Observed Gene:Exposure Coefficient")
+
+```
+
+
+
+```{r test-plot-alpha, cache=TRUE}
+
+# Check gene:outcome coefficients (coeff_Y_G) approximate 
+# pleiotropic effects (alphas) when no causal effect present
+# N.B. cluster around alpha = 0 represents valid instruments with
+# no pleiotropic effects
+set.seed(1701)
+sim_test_data_alpha <- wme_model_sim(n_participants = 10000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.3,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = TRUE,
+                                     InSIDE_satisfied = TRUE)
+
+
+test_plot_tib_alpha <- extract_models_XY(sim_test_data_alpha)[[1]]
+
+test_plot_tib_alpha %>% 
+  select(alpha, coeff_Y_G) %>% 
+  plot(.,
+       ylab = "Observed Gene:Outcome Coefficient")
 
 
 
 ```
+
+```{r test-plot-causal, cache=TRUE}
+
+# Check altering proportion of invalid instruments alters 
+# proportion of instruments displaying pleiotropic effects
+# N.B. cluster around alpha = 0 represents valid instruments with
+# no pleiotropic effects
+
+# No causal effect present
+set.seed(1701)
+sim_test_data_causal_0 <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.1,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = TRUE,
+                                     InSIDE_satisfied = TRUE)
+
+# Causal effect present
+set.seed(1701)
+sim_test_data_causal_1 <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.1,
+                                     causal_effect = TRUE,
+                                     balanced_pleio = TRUE,
+                                     InSIDE_satisfied = TRUE)
+
+
+test_plot_tib_causal_0 <- extract_models_XY(sim_test_data_causal_0)[[1]]
+test_plot_tib_causal_1 <- extract_models_XY(sim_test_data_causal_1)[[1]]
+
+test_plot_tib_causal_0 %>% 
+  select(coeff_X_G, coeff_Y_G) %>% 
+  plot(.,
+       main = "No Causal Effect Present")
+
+test_plot_tib_causal_1 %>% 
+  select(coeff_X_G, coeff_Y_G) %>% 
+  plot(.,
+       main = "Causal Effect Present")
+
+
+
+```
+
+
+
+```{r test-plot-prop-invalid, cache=TRUE}
+
+# Check altering proportion of invalid instruments alters 
+# proportion of instruments displaying pleiotropic effects
+# N.B. cluster around alpha = 0 represents valid instruments with
+# no pleiotropic effects
+
+# 10% of instruments invalid
+set.seed(1701)
+sim_test_data_inval_0.1 <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.1,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = TRUE,
+                                     InSIDE_satisfied = TRUE)
+
+# 50% of instruments invalid
+set.seed(1701)
+sim_test_data_inval_0.5 <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.5,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = TRUE,
+                                     InSIDE_satisfied = TRUE)
+
+
+test_plot_tib_inval_0.1 <- extract_models_XY(sim_test_data_inval_0.1)[[1]]
+test_plot_tib_inval_0.5 <- extract_models_XY(sim_test_data_inval_0.5)[[1]]
+
+test_plot_tib_inval_0.1 %>% 
+  select(alpha, coeff_Y_G) %>% 
+  plot(.,
+       ylab = "Beta of Y on G",
+       main = "10% Invalid Instruments")
+
+test_plot_tib_inval_0.5 %>% 
+  select(alpha, coeff_Y_G) %>% 
+  plot(.,
+       ylab = "Beta of Y on G",
+       main = "50% Invalid Instruments")
+
+
+
+```
+
+
+```{r test-plot-phi, cache=TRUE}
+
+# Check violating InSIDE assumption results in distorted 
+# estimation of pleiotropic effects
+# N.B. cluster around alpha = 0 represents valid instruments with
+# no pleiotropic effects
+set.seed(1701)
+sim_test_data_phi_1 <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.3,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = FALSE,
+                                     InSIDE_satisfied = FALSE)
+
+set.seed(1701)
+sim_test_data_phi_0 <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.3,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = FALSE,
+                                     InSIDE_satisfied = TRUE)
+
+
+test_plot_tib_phi_1 <- extract_models_XY(sim_test_data_phi_1)[[1]]
+test_plot_tib_phi_0 <- extract_models_XY(sim_test_data_phi_0)[[1]]
+
+test_plot_tib_phi_1 %>% 
+  select(alpha, coeff_Y_G) %>% 
+  plot(., 
+       main = "InSIDE Violated")
+
+test_plot_tib_phi_0 %>% 
+  select(alpha, coeff_Y_G) %>% 
+  plot(.,
+       main = "InSIDE Not Violated")
+
+
+
+```
+
+
 
 
 
