@@ -71,7 +71,8 @@ wme_model_sim <- function(n_participants = as.integer(),
   U_list <- list()
   X_list <- list()
   Y_list <- list()
-  G_list <- list()
+  G_X_list <- list()
+  G_Y_list <- list()
   
   gamma_list <- list()
   alpha_list <- list()
@@ -93,7 +94,7 @@ wme_model_sim <- function(n_participants = as.integer(),
     # Create error terms for U, X + Y per participant,
     # each drawn from standard normal distribution
     
-    U_epsilon_vect <- rnorm(n = n_participants)
+    U_epsilon_vect <- rnorm(n = 2 * n_participants)
     
     X_epsilon_vect <- rnorm(n = n_participants)
     
@@ -118,12 +119,14 @@ wme_model_sim <- function(n_participants = as.integer(),
     # Assign genotypes by sampling from binomial distribution
     # twice (as two alleles) per participant with probability
     # equal to frequency of effect allele
+    # Create twice as many genotypes as participants in sample
+    # to simulate 2 sample MR, i.e. first half used to estimate
+    # Gene:Exposure, second half used to estimate Gene:Outcome
     
-    
-        G_mat <- matrix(rbinom(n = n_participants * n_instruments,
+        G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
                                 size = 2,
-                                prob = rep(allele_freq_vect, n_participants)),
-                         nrow = n_participants,
+                                prob = rep(allele_freq_vect, 2 * n_participants)),
+                         nrow = 2 * n_participants,
                          ncol = n_instruments,
                          byrow = TRUE)
 
@@ -199,9 +202,11 @@ wme_model_sim <- function(n_participants = as.integer(),
     
     Ui_vect <- G_mat %*% phi_vect + U_epsilon_vect
     
-    Xi_vect <- G_mat %*% gamma_vect + Ui_vect + X_epsilon_vect
+    Xi_vect <- G_mat[1:n_participants, ] %*% gamma_vect + Ui_vect[1:n_participants, ] + X_epsilon_vect
     
-    Yi_vect <- G_mat %*% alpha_vect + beta * Xi_vect + Ui_vect + Y_epsilon_vect
+    
+    #Yi_vect <- G_mat[(n_participants+1):(2*n_participants), ] %*% alpha_vect + beta * Xi_vect + Ui_vect[(n_participants+1):(2*n_participants), ] + Y_epsilon_vect
+    Yi_vect <- G_mat[1:n_participants, ] %*% alpha_vect + (beta * Xi_vect) + Ui_vect[1:n_participants, ] + Y_epsilon_vect
     
     
     # Add vectors of estimates from this dataset to lists of 
@@ -212,7 +217,9 @@ wme_model_sim <- function(n_participants = as.integer(),
     
     Y_list[[n]] <- Yi_vect
     
-    G_list[[n]] <- G_mat
+    G_X_list[[n]] <- G_mat[1:n_participants, ]
+    
+    G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ]
     
     alpha_list[[n]] <- alpha_vect
     
@@ -226,14 +233,15 @@ wme_model_sim <- function(n_participants = as.integer(),
   combined_list <- list(U = U_list,          # Estimates 
                         X = X_list, 
                         Y = Y_list,
-                        G = G_list,
+                        G_X = G_X_list,     # Genotypes of 1st sample
+                        G_Y = G_Y_list,     # Genotypes of 2nd sample
                         alpha = alpha_list, # Actual values for validating simulation
                         gamma = gamma_list,
                         phi = phi_list
                         )
   
   return(combined_list)
-  #return(G_mat)
+  
 }
 ```
 
@@ -250,35 +258,36 @@ extract_models_XY <- function(sim){
   # for gene:exposure association (coeff_X_G) and gene:outcome
   # association (coeff_Y_G)
   for(dataset in 1:length(sim$X)){
-  #for(dataset in 1:2){
-    
+ 
     X <- sim$X[[dataset]]
     Y <- sim$Y[[dataset]]
-    Instruments <- sim$G[[dataset]]
+    Instruments_X <- sim$G_X[[dataset]]
+    Instruments_Y <- sim$G_Y[[dataset]]
     
     alpha <- sim$alpha[[dataset]]
     gamma <- sim$gamma[[dataset]]
     phi <- sim$phi[[dataset]]
     
     # Model for gene:exposure
-    X_lm <- lm(X ~ Instruments)
-    coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 1]
-    SE_coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments) + 1), 2]
+    X_lm <- lm(X ~ Instruments_X)
+    coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), 1]
+    SE_coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), 2]
 
     # Model for gene:outcome
-    Y_lm <- lm(Y ~ Instruments)
-    coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 1]
-    SE_coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments) + 1), 2]
-    
+    Y_lm <- lm(Y ~ Instruments_Y)
+    coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments_Y) + 1), 1]
+    SE_coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments_Y) + 1), 2]
+
     output_list[[dataset]] <- as_tibble(list(dataset = dataset,
-                                             Instrument = c(1:ncol(Instruments)),
+                                             Instrument = c(1:ncol(Instruments_X)),
                                              coeff_X_G = coeff_X_G_vect,
                                              coeff_X_G_SE = SE_coeff_X_G_vect,
                                              gamma = gamma,
+                                             #Instrument_Y = c(1:ncol(Instruments_Y)),
                                              coeff_Y_G = coeff_Y_G_vect,
                                              coeff_Y_G_SE = SE_coeff_Y_G_vect,
                                              alpha = alpha,
-                                             phi = phi), 
+                                             phi = phi),
                                         .name_repair = "unique")
   }
   
@@ -297,16 +306,18 @@ A series of test plots were used to verify that data were simulated as intended 
 set.seed(1701)
 sim_test_data_tib <- wme_model_sim(n_participants = 1000,
                                  n_instruments = 25,
-                                 n_datasets = 1,
+                                 n_datasets = 2,
                                  prop_invalid = 0.1,
                                  causal_effect = TRUE,
                                  balanced_pleio = TRUE,
                                  InSIDE_satisfied = TRUE)
 
+str(sim_test_data_tib)
 
 test_tib <- extract_models_XY(sim_test_data_tib)[[1]] 
   
 head(test_tib)
+
 
 ```
 
@@ -329,7 +340,7 @@ sim_test_data_gamma_1 <- wme_model_sim(n_participants = 100000,
 test_plot_tib_gamma_1 <- extract_models_XY(sim_test_data_gamma_1)[[1]] 
 
 test_plot_tib_gamma_1 %>% 
-  select(coeff_X_G, gamma) %>% 
+  select(gamma, coeff_X_G) %>% 
   plot(.,
        ylab = "Observed Gene:Exposure Coefficient")
 
@@ -373,7 +384,7 @@ test_plot_tib_alpha %>%
 
 # No causal effect present
 set.seed(1701)
-sim_test_data_causal_0 <- wme_model_sim(n_participants = 100000,
+sim_test_data_causal_0 <- wme_model_sim(n_participants = 10000,
                                      n_instruments = 25,
                                      n_datasets = 1,
                                      prop_invalid = 0.1,
@@ -383,7 +394,7 @@ sim_test_data_causal_0 <- wme_model_sim(n_participants = 100000,
 
 # Causal effect present
 set.seed(1701)
-sim_test_data_causal_1 <- wme_model_sim(n_participants = 100000,
+sim_test_data_causal_1 <- wme_model_sim(n_participants = 10000,
                                      n_instruments = 25,
                                      n_datasets = 1,
                                      prop_invalid = 0.1,
@@ -396,14 +407,36 @@ test_plot_tib_causal_0 <- extract_models_XY(sim_test_data_causal_0)[[1]]
 test_plot_tib_causal_1 <- extract_models_XY(sim_test_data_causal_1)[[1]]
 
 test_plot_tib_causal_0 %>% 
-  select(coeff_X_G, coeff_Y_G) %>% 
-  plot(.,
-       main = "No Causal Effect Present")
+  mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5),
+         Intercept = 0) %>%
+  ggplot() +
+  aes(x = coeff_X_G, y = coeff_Y_G) +
+  geom_point() +
+  geom_abline(aes(intercept = 0, 
+                  slope = Gradient),) +
+  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
+                y = 0.1, 
+                label = paste0("beta == ", Gradient)), 
+            parse = TRUE) +
+  labs(title = "No Causal Effect Present",
+       x = "Gene:Exposure Coefficient",
+       y = "Gene:Outcome Coefficient")
 
 test_plot_tib_causal_1 %>% 
-  select(coeff_X_G, coeff_Y_G) %>% 
-  plot(.,
-       main = "Causal Effect Present")
+  mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5),
+         Intercept = 0) %>%
+  ggplot() +
+  aes(x = coeff_X_G, y = coeff_Y_G) +
+  geom_point() +
+  geom_abline(aes(intercept = 0, 
+                  slope = Gradient),) +
+  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
+                y = 0.1, 
+                label = paste0("beta == ", Gradient)), 
+            parse = TRUE) +
+  labs(title = "Causal Effect Present",
+       x = "Gene:Exposure Coefficient",
+       y = "Gene:Outcome Coefficient")
 
 
 
@@ -445,13 +478,13 @@ test_plot_tib_inval_0.5 <- extract_models_XY(sim_test_data_inval_0.5)[[1]]
 test_plot_tib_inval_0.1 %>% 
   select(alpha, coeff_Y_G) %>% 
   plot(.,
-       ylab = "Beta of Y on G",
+       ylab = "Observed Gene:Outcome Coefficient",
        main = "10% Invalid Instruments")
 
 test_plot_tib_inval_0.5 %>% 
   select(alpha, coeff_Y_G) %>% 
   plot(.,
-       ylab = "Beta of Y on G",
+       ylab = "Observed Gene:Outcome Coefficient",
        main = "50% Invalid Instruments")
 
 
@@ -467,7 +500,7 @@ test_plot_tib_inval_0.5 %>%
 # no pleiotropic effects
 set.seed(1701)
 sim_test_data_phi_1 <- wme_model_sim(n_participants = 100000,
-                                     n_instruments = 25,
+                                     n_instruments = 100,
                                      n_datasets = 1,
                                      prop_invalid = 0.3,
                                      causal_effect = FALSE,
@@ -476,7 +509,7 @@ sim_test_data_phi_1 <- wme_model_sim(n_participants = 100000,
 
 set.seed(1701)
 sim_test_data_phi_0 <- wme_model_sim(n_participants = 100000,
-                                     n_instruments = 25,
+                                     n_instruments = 100,
                                      n_datasets = 1,
                                      prop_invalid = 0.3,
                                      causal_effect = FALSE,
@@ -490,99 +523,17 @@ test_plot_tib_phi_0 <- extract_models_XY(sim_test_data_phi_0)[[1]]
 test_plot_tib_phi_1 %>% 
   select(alpha, coeff_Y_G) %>% 
   plot(., 
-       main = "InSIDE Violated")
+       main = "InSIDE Violated",
+       ylab = "Gene:Outcome Coefficient")
 
 test_plot_tib_phi_0 %>% 
   select(alpha, coeff_Y_G) %>% 
   plot(.,
-       main = "InSIDE Not Violated")
+       main = "InSIDE Not Violated",
+       ylab = "Gene:Outcome Coefficient")
 
 
 
 ```
 
 
-
-
-
-```{r include=FALSE}
-
-
-
-test_plot_tib %>%
-  group_by(NULL) %>% # needed for Gradient across all datasets combined
-  #group_by(Dataset) %>% 
-  mutate(Gradient = round(coefficients(lm(Mean_Y ~ 0 + Mean_X))[1], 5),
-         Intercept = 0) %>% 
-  ggplot() +
-  aes(x = Mean_X, y = Mean_Y) +
-  geom_point(aes(colour = Instrument)) +
-  geom_abline(aes(intercept = 0, 
-                  slope = Gradient),) +
-  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
-                y = 0.1, 
-                label = paste0("beta == ", Gradient)), 
-            parse = TRUE) +
-  facet_wrap(~NULL) #+
-  #facet_wrap(~Dataset) #+
-
-
-
-
-
-
-
-
-
-
-
-  # summ_X_list <- list()
-  # summ_Y_list <- list()
-  # 
-  # for(vect in 1:length(sim$X)){
-  #   # Get mean/SD cols for X, grouped by dataset + instrument
-  #   summ_X_list[[vect]] <- sim$X[[vect]] %>% 
-  #     as_tibble(.name_repair = "unique") %>% # unique names = ...1, ...2 etc for each instrument
-  #     mutate(Dataset = vect) %>%
-  #     pivot_longer(cols = starts_with("..."), 
-  #                  names_prefix = "...",
-  #                  names_to = "Instrument") %>% 
-  #     mutate(Instrument = as.integer(Instrument)) %>% 
-  #     group_by(Dataset, 
-  #              Instrument) %>% 
-  #     summarise(Mean_X = mean(value),
-  #               SD_X = sd(value), 
-  #               .groups = "keep")
-  #   
-  #   # Get mean/SD cols for Y, grouped by dataset + instrument
-  #   summ_Y_list[[vect]] <- sim$Y[[vect]] %>% 
-  #     as_tibble(.name_repair = "unique") %>% 
-  #     mutate(Dataset = vect) %>% 
-  #     pivot_longer(cols = starts_with("..."), 
-  #                  names_prefix = "...",
-  #                  names_to = "Instrument") %>% 
-  #     mutate(Instrument = as.integer(Instrument)) %>% 
-  #     group_by(Dataset, 
-  #              Instrument) %>% 
-  #     summarise(Mean_Y = mean(value),
-  #               SD_Y = sd(value), 
-  #               .groups = "keep")
-  #   
-  # } 
-  # 
-  # # Combine matrices for X+Y into single tibble and return
-  # summ_X_tib <- summ_X_list %>% 
-  #   list_rbind()
-  # 
-  # summ_Y_tib <- summ_Y_list %>% 
-  #   list_rbind()
-  # 
-  # summ_XY_tib <- summ_X_tib %>%
-  #   full_join(summ_Y_tib) %>% 
-  #   mutate(Instrument = as_factor(Instrument)) # to aid plotting
-  # 
-  # return(summ_XY_tib)
-
-}
-
-```
