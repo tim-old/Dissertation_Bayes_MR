@@ -140,6 +140,10 @@ wme_model_sim <- function(n_participants = as.integer(),
     # to simulate 2 sample MR, i.e. first half used to estimate
     # Gene:Exposure, second half used to estimate Gene:Outcome
     
+    # Matrix where columns are instruments, rows are participants
+    # Values 0, 1 or 2
+    
+    
     G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
                            size = 2,
                            prob = rep(allele_freq_vect, 2 * n_participants)),
@@ -202,15 +206,15 @@ wme_model_sim <- function(n_participants = as.integer(),
     # http://matrixmultiplication.xyz/
 
     
-    Ui_vect <-  G_mat %*% phi_vect + U_epsilon_vect
+    Ui_vect <-  (G_mat %*% phi_vect) + U_epsilon_vect
     
     Xi_vect <-  G_mat[1:n_participants, ] %*% gamma_vect + 
                 Ui_vect[1:n_participants, ] + 
                 X_epsilon_vect
 
-    Yi_vect <-  G_mat[1:n_participants, ] %*% alpha_vect + 
+    Yi_vect <-  G_mat[(n_participants+1):(2*n_participants), ] %*% alpha_vect + 
                 (beta * Xi_vect) + 
-                Ui_vect[1:n_participants, ] + 
+                Ui_vect[(n_participants+1):(2*n_participants), ] + 
                 Y_epsilon_vect
     
     
@@ -224,9 +228,7 @@ wme_model_sim <- function(n_participants = as.integer(),
     
     G_X_list[[n]] <- G_mat[1:n_participants, ]
     
-    G_Y_list[[n]] <- G_mat[1:n_participants, ]
-    
-    #G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ]
+    G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ]
     
     alpha_list[[n]] <- alpha_vect
     
@@ -248,8 +250,9 @@ wme_model_sim <- function(n_participants = as.integer(),
                         gamma = gamma_list,
                         phi = phi_list
                         )
-  
   return(combined_list)
+  #return(min(beta * Xi_vect))
+  #return(G_mat[1:n_participants, ] %*% gamma_vect)
 }
 ```
 
@@ -276,24 +279,24 @@ extract_models_XY <- function(sim){
     gamma <- sim$gamma[[dataset]]
     phi <- sim$phi[[dataset]]
     
+    #ds <- as.data.frame(c(X,Y, Instruments_X, Instruments_Y, alpha, gamma, phi))
+    
     # Model for gene:exposure
-    X_lm <- lm(X ~ Instruments_X)
-    Xi_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), ]
-    coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), 1]
-    SE_coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), 2]
+    #X_lm <- lm(X ~ 0 + Instruments_X, data = ds)
+    X_lm <- lm(X ~ 0 + Instruments_X)
+    coeff_X_G_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
+    SE_coeff_X_G_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]
 
     # Model for gene:outcome
-    Y_lm <- lm(Y ~ Instruments_Y)
-    coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments_Y) + 1), 1]
-    SE_coeff_Y_G_vect <- coef(summary(Y_lm))[2:(ncol(Instruments_Y) + 1), 2]
+    Y_lm <- lm(Y ~ 0 + Instruments_Y)
+    coeff_Y_G_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 1] 
+    SE_coeff_Y_G_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 2]
 
     output_list[[dataset]] <- as_tibble(list(dataset = dataset,
                                              Instrument = c(1:ncol(Instruments_X)),
-                                             #Xi = Xi_vect,
                                              coeff_X_G = coeff_X_G_vect,
                                              coeff_X_G_SE = SE_coeff_X_G_vect,
                                              gamma = gamma,
-                                             #Instrument_Y = c(1:ncol(Instruments_Y)),
                                              coeff_Y_G = coeff_Y_G_vect,
                                              coeff_Y_G_SE = SE_coeff_Y_G_vect,
                                              alpha = alpha,
@@ -318,17 +321,18 @@ sim_test_data_tib <- wme_model_sim(n_participants = 1000,
                                  n_instruments = 25,
                                  n_datasets = 2,
                                  prop_invalid = 0.3,
-                                 rand_error = TRUE,
+                                 rand_error = FALSE,
                                  causal_effect = TRUE,
                                  balanced_pleio = TRUE,
                                  InSIDE_satisfied = TRUE)
 
+#sim_test_data_tib
 str(sim_test_data_tib)
 
-test_tib <- extract_models_XY(sim_test_data_tib)[[1]] 
+#test_tib <- extract_models_XY(sim_test_data_tib)[[1]] 
   
 #head(test_tib)
-test_tib
+#test_tib
 
 ```
 
@@ -344,7 +348,7 @@ sim_test_data_gamma_1 <- wme_model_sim(n_participants = 100,
                                        n_datasets = 1,
                                        prop_invalid = 0.1,
                                        causal_effect = FALSE,
-                                       rand_error = TRUE,
+                                       rand_error = FALSE,
                                        balanced_pleio = TRUE,
                                        InSIDE_satisfied = TRUE)
 
@@ -358,8 +362,6 @@ test_plot_tib_gamma_1 %>%
 
 ```
 
-
-
 ```{r test-plot-alpha, cache=TRUE}
 
 # Check gene:outcome coefficients (coeff_Y_G) approximate 
@@ -370,15 +372,16 @@ test_plot_tib_gamma_1 %>%
 set.seed(1701)
 sim_test_data_alpha <- wme_model_sim(n_participants = 10000,
                                      n_instruments = 25,
-                                     n_datasets = 1,
+                                     n_datasets = 2,
                                      prop_invalid = 0.5,
-                                     causal_effect = TRUE,
+                                     beta_val = 1,
+                                     causal_effect = FALSE,
                                      balanced_pleio = TRUE,
                                      InSIDE_satisfied = TRUE,
                                      rand_error = FALSE)
 
 
-test_plot_tib_alpha <- extract_models_XY(sim_test_data_alpha)[[1]]
+test_plot_tib_alpha <- extract_models_XY(sim_test_data_alpha)[[2]]
 
 test_plot_tib_alpha %>% 
   select(alpha, coeff_Y_G) %>% 
@@ -389,6 +392,64 @@ test_plot_tib_alpha %>%
 
 ```
 
+```{r plot-GY-GX-fn}
+
+plot_GY_GX <- function(model_tib, plot_title = as.character(NA)){
+  
+  model %>% 
+  mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5)) %>%
+  ggplot() +
+  aes(x = coeff_X_G, y = coeff_Y_G) +
+  geom_point() +
+  geom_abline(aes(intercept = 0, 
+                  slope = Gradient),) +
+  geom_text(aes(x = 0.075, # labels with gradient (causal effect estimate)
+                y = 0.05, 
+                label = paste0("\U03B2 == ", Gradient)), #beta
+            hjust = 0,
+            parse = TRUE) +
+  annotate("text", 
+           x = 0.075,      # add hat to beta
+           y = 0.053, 
+           label = paste("\U02C6"),
+           hjust = -0.4,
+           vjust = 0.9,
+           parse = TRUE) +
+  labs(title = plot_title,
+       x = "Gene:Exposure Coefficient",
+       y = "Gene:Outcome Coefficient") +
+  xlim(0, 0.1) +
+  ylim(-0.05, 0.06)
+  
+}
+
+
+```
+
+```{r test-plot-no-causal, cache=TRUE}
+
+# No causal effect present
+set.seed(5000000)
+sim_test_data_causal_0 <- wme_model_sim(n_participants = 10000,
+                                        n_instruments = 1000,
+                                        n_datasets = 1,
+                                        prop_invalid = 0,
+                                        causal_effect = FALSE,
+                                        balanced_pleio = FALSE,
+                                        InSIDE_satisfied = TRUE,
+                                        rand_error = FALSE,
+                                        beta_val = 0.1,                 # size of causal effect
+                                        gamma_min = 0.03,               # size of pleiotropic effects on exposure
+                                        gamma_max = 0.1,
+                                        alpha_min = -0.2,               # size of pleiotropic effects on outcome
+                                        alpha_max = 0.2)
+
+test_plot_tib_causal_0 <- extract_models_XY(sim_test_data_causal_0)[[1]]
+
+plot_GY_GX(test_plot_tib_causal_0, plot_title = "No Causal Effect")
+
+```
+
 ```{r test-plot-causal, cache=TRUE}
 
 # Check altering proportion of invalid instruments alters 
@@ -396,91 +457,29 @@ test_plot_tib_alpha %>%
 # N.B. cluster around alpha = 0 represents valid instruments with
 # no pleiotropic effects
 
-# No causal effect present
-set.seed(1701)
-sim_test_data_causal_0 <- wme_model_sim(n_participants = 10000,
-                                        n_instruments = 25,
-                                        n_datasets = 1,
-                                        prop_invalid = 0.1,
-                                        causal_effect = FALSE,
-                                        balanced_pleio = TRUE,
-                                        InSIDE_satisfied = TRUE,
-                                        rand_error = FALSE,
-                                        beta_val = 100,                 # size of causal effect
-                                        allele_freq_min = 0.01,         # frequency of effect allele
-                                        allele_freq_max = 0.99,
-                                        gamma_min = 0.03,               # size of pleiotropic effects on exposure
-                                        gamma_max = 0.1,
-                                        alpha_min = -0.2,               # size of pleiotropic effects on outcome
-                                        alpha_max = 0.2,
-                                        phi_min = -0.2,                 # size of additional pleiotropic effects
-                                        phi_max = 0.2)
 
 # Causal effect present
-set.seed(1701)
+set.seed(5000000)
 sim_test_data_causal_1 <- wme_model_sim(n_participants = 10000,
-                                        n_instruments = 25,
+                                        n_instruments = 1000,
                                         n_datasets = 1,
-                                        prop_invalid = 0.1,
+                                        prop_invalid = 0,
                                         causal_effect = TRUE,
-                                        balanced_pleio = TRUE,
+                                        balanced_pleio = FALSE,
                                         InSIDE_satisfied = TRUE,
                                         rand_error = FALSE,
-                                        beta_val = 100,                 # size of causal effect
-                                        allele_freq_min = 0.01,         # frequency of effect allele
-                                        allele_freq_max = 0.99,
+                                        beta_val = 0.1,                 # size of causal effect
                                         gamma_min = 0.03,               # size of pleiotropic effects on exposure
                                         gamma_max = 0.1,
                                         alpha_min = -0.2,               # size of pleiotropic effects on outcome
-                                        alpha_max = 0.2,
-                                        phi_min = -0.2,                 # size of additional pleiotropic effects
-                                        phi_max = 0.2)
+                                        alpha_max = 0.2)
 
-
-test_plot_tib_causal_0 <- extract_models_XY(sim_test_data_causal_0)[[1]]
 test_plot_tib_causal_1 <- extract_models_XY(sim_test_data_causal_1)[[1]]
 
-test_plot_tib_causal_0 %>% 
-  mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5),
-         Intercept = 0) %>%
-  ggplot() +
-  aes(x = coeff_X_G, y = coeff_Y_G) +
-  geom_point() +
-  geom_abline(aes(intercept = 0, 
-                  slope = Gradient),) +
-  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
-                y = 0.1, 
-                label = paste0("beta == ", Gradient)), 
-            parse = TRUE) +
-  labs(title = "No Causal Effect Present",
-       x = "Gene:Exposure Coefficient",
-       y = "Gene:Outcome Coefficient") +
-  xlim(-0.2, 0.2) +
-  ylim(-0.2, 0.2)
-
-test_plot_tib_causal_1 %>% 
-  mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5),
-         Intercept = 0) %>%
-  ggplot() +
-  aes(x = coeff_X_G, y = coeff_Y_G) +
-  geom_point() +
-  geom_abline(aes(intercept = 0, 
-                  slope = Gradient),) +
-  geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
-                y = 0.1, 
-                label = paste0("beta == ", Gradient)), # beta hat
-            parse = TRUE) +
-  labs(title = "Causal Effect Present",
-       x = "Gene:Exposure Coefficient",
-       y = "Gene:Outcome Coefficient") +
-  xlim(-0.2, 0.2) +
-  ylim(-0.2, 0.2)
-
+plot_GY_GX(test_plot_tib_causal_1, plot_title = "Causal Effect Present")
 
 
 ```
-
-
 
 ```{r test-plot-prop-invalid, cache=TRUE}
 
