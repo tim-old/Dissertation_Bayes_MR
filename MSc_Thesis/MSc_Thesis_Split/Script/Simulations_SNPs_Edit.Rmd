@@ -81,7 +81,7 @@ wme_model_sim <- function(n_participants = as.integer(),
   
   # Assign features common to all datasets
   beta <- if_else(causal_effect == TRUE, # size of causal effect
-                  0.1,
+                  1000,
                   0)
   
   
@@ -432,7 +432,7 @@ test_plot_tib_causal_1 %>%
                   slope = Gradient),) +
   geom_text(aes(x = 0.1, # labels with gradient (causal effect estimate)
                 y = 0.1, 
-                label = paste0("beta == ", Gradient)), 
+                label = paste0("beta == ", Gradient)), # beta hat
             parse = TRUE) +
   labs(title = "Causal Effect Present",
        x = "Gene:Exposure Coefficient",
@@ -532,6 +532,7 @@ test_plot_tib_phi_0 %>%
        main = "InSIDE Not Violated",
        ylab = "Gene:Outcome Coefficient")
 
+#phi on y
 
 
 ```
