@@ -54,20 +54,30 @@ wme_model_sim <- function(n_participants = as.integer(),
                           prop_invalid = 0.1,
                           causal_effect = TRUE,
                           balanced_pleio = TRUE,
-                          InSIDE_satisfied = TRUE){
+                          InSIDE_satisfied = TRUE,
+                          rand_error = TRUE,              # remove random errors for testing
+                          beta_val = 0.1,                 # size of causal effect
+                          allele_freq_min = 0.01,         # frequency of effect allele
+                          allele_freq_max = 0.99,
+                          gamma_min = 0.03,               # size of pleiotropic effects on exposure
+                          gamma_max = 0.1,
+                          alpha_min = -0.2,               # size of pleiotropic effects on outcome
+                          alpha_max = 0.2,
+                          phi_min = -0.2,                 # size of additional pleiotropic effects
+                          phi_max = 0.2){                 # when InSIDE not satisfied
 
   
   
   # Initialise blank lists to receive datasets for
   # each of:
-  #     U (vector representing unmeasured confounding exposures per participant), 
-  #     X (vector representing exposure:outcome associations estimated per participant) 
-  #     Y (vector of gene:outcome association estimated per participant), 
-  #     G (Matrices of Genotype data)
+  #     U (vector: unmeasured confounding exposures per participant), 
+  #     X (vector: exposure:outcome associations estimated per participant) 
+  #     Y (vector: gene:outcome association estimated per participant), 
+  #     G (Matrices: Genotype data)
   #
-  #     gamma (vector representing pleiotropic effects of each instrument on exposure)
-  #     alpha (vector representing pleiotropic effects of each instrument on outcome)
-  #     phi (vector representing additional pleiotropic effects of each instrument when InSIDE assumption not satisfied)
+  #     gamma (vector: pleiotropic effects of each instrument on exposure)
+  #     alpha (vector: pleiotropic effects of each instrument on outcome)
+  #     phi (vector: additional pleiotropic effects of each instrument when InSIDE assumption not satisfied)
   U_list <- list()
   X_list <- list()
   Y_list <- list()
@@ -81,7 +91,7 @@ wme_model_sim <- function(n_participants = as.integer(),
   
   # Assign features common to all datasets
   beta <- if_else(causal_effect == TRUE, # size of causal effect
-                  1000,
+                  beta_val,
                   0)
   
   
@@ -93,26 +103,33 @@ wme_model_sim <- function(n_participants = as.integer(),
     
     # Create error terms for U, X + Y per participant,
     # each drawn from standard normal distribution
+    # unless random error turned off (for testing)
     
-    U_epsilon_vect <- rnorm(n = 2 * n_participants)
+    ifelse(rand_error == TRUE,
+           U_epsilon_vect <- rnorm(n = 2 * n_participants),
+           U_epsilon_vect <- rep(0, 2 * n_participants))
+
+    ifelse(rand_error == TRUE,
+           X_epsilon_vect <- rnorm(n = n_participants),
+           X_epsilon_vect <- rep(0, n_participants))
     
-    X_epsilon_vect <- rnorm(n = n_participants)
+    ifelse(rand_error == TRUE,
+           Y_epsilon_vect <- rnorm(n = n_participants),
+           Y_epsilon_vect <- rep(0, n_participants))
+
     
-    Y_epsilon_vect <- rnorm(n = n_participants)
-    
-        
     ## -- Create matrix of genotypes -- 
     ## 0 = reference, i.e. zero effect alleles, 
     ## 1 = 1 effect allele, 2 = 2 effect alleles 
     
     
     # Probability of effect allele set per dataset  
-    # for each instrument, value set at random 
-    # between 0.01-0.99 (i.e. both effect +
+    # for each instrument, default value set at  
+    # random between 0.01-0.99 (i.e. both effect +
     # reference are common alleles)
     allele_freq_vect <- runif(n = n_instruments,
-                              min = 0.01,
-                              max = 0.99)
+                              min = allele_freq_min,
+                              max = allele_freq_max)
     
     
     
@@ -123,23 +140,13 @@ wme_model_sim <- function(n_participants = as.integer(),
     # to simulate 2 sample MR, i.e. first half used to estimate
     # Gene:Exposure, second half used to estimate Gene:Outcome
     
-        G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
-                                size = 2,
-                                prob = rep(allele_freq_vect, 2 * n_participants)),
-                         nrow = 2 * n_participants,
-                         ncol = n_instruments,
-                         byrow = TRUE)
+    G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
+                           size = 2,
+                           prob = rep(allele_freq_vect, 2 * n_participants)),
+                    nrow = 2 * n_participants,
+                    ncol = n_instruments,
+                    byrow = TRUE)
 
-    # --- Alternative: Athina code adapted --- #
-    # allele.probs <- matrix(runif(2* n_participants * n_instruments, min = 0, max = 1), nrow = 2 * n_participants, ncol = n_instruments)
-    # alleles <- allele.probs < matrix(rep(allele_freq_vect, 2 * n_participants), nrow = 2 * n_participants, ncol = n_instruments, byrow = TRUE)
-    # G_mat <- alleles[1:n_participants, ] + alleles[(n_participants+1):(2*n_participants), ]
-    
-    # Uncomment to check:
-    # Check that observed vs expected allele frequencies roughly match
-    # cbind(colSums(G_mat) / (2*n_participants), allele_freq_vect)
-    # ---
-    
         
     # Set which instruments invalid
     invalid_instrument_vect <- rbinom(n = n_instruments,
@@ -151,8 +158,8 @@ wme_model_sim <- function(n_participants = as.integer(),
     # drawn from uniform distribution, min/max as per Bowden 
     # et al
     gamma_vect <- runif(n = n_instruments,
-                        min = 0.03,
-                        max = 0.1)
+                        min = gamma_min,
+                        max = gamma_max)
   
     
     # Set pleiotropic effects on outcome, Scenarios and 
@@ -161,27 +168,27 @@ wme_model_sim <- function(n_participants = as.integer(),
     phi_vect <- double() # Pleiotropic effects of confounders on outcome
     
     for(j in 1:n_instruments){
-      alpha_vect[j] <- ifelse(invalid_instrument_vect[j] == FALSE,
-                              0,
-                              ifelse(balanced_pleio == TRUE,
-                                     runif(n = n_instruments,
-                                           min = -0.2,
-                                           max = 0.2),
-                                     runif(n = n_instruments,
+      ifelse(invalid_instrument_vect[j] == FALSE,
+             alpha_vect[j] <- 0,
+             ifelse(balanced_pleio == TRUE,
+                    alpha_vect[j] <- runif(n = n_instruments,
+                                           min = alpha_min,
+                                           max = alpha_max),
+                    alpha_vect[j] <- runif(n = n_instruments,
                                            min = 0,
-                                           max = 0.2)
-                                    )
-                              )
+                                           max = alpha_max)
+             )
+      )
       
       # Assign default phi = 0 unless unbalanced pleiotropy & 
       # InSIDE assumption not satisfied & genetic instrument invalid
       if(balanced_pleio == FALSE & InSIDE_satisfied == FALSE){
-        phi_vect[j] <- ifelse(invalid_instrument_vect[j] == FALSE,
-                              0,
-                              runif(n = 1,
-                                    min = -0.2,
-                                    max = 0.2)
-                             )
+        ifelse(invalid_instrument_vect[j] == FALSE,
+               phi_vect[j] <- 0,
+               phi_vect[j] <- runif(n = 1,
+                                    min = phi_min,
+                                    max = phi_max)
+        )
         
       }
       else{
@@ -193,20 +200,18 @@ wme_model_sim <- function(n_participants = as.integer(),
     # i.e. Ui, Xi and Yi. Uses matrix inner product operator " %*%" 
     # https://stackoverflow.com/questions/22060515/the-r-operator 
     # http://matrixmultiplication.xyz/
+
     
-    # *** Split X + Y? ***
-    # "In the two-sample setting, data were generated on 2N 
-    # participants, and genetic associations with the exposure were
-    # estimated in the first N participants, and genetic associations 
-    # with the outcome in the second N participants."
+    Ui_vect <-  G_mat %*% phi_vect + U_epsilon_vect
     
-    Ui_vect <- G_mat %*% phi_vect + U_epsilon_vect
-    
-    Xi_vect <- G_mat[1:n_participants, ] %*% gamma_vect + Ui_vect[1:n_participants, ] + X_epsilon_vect
-    
-    
-    #Yi_vect <- G_mat[(n_participants+1):(2*n_participants), ] %*% alpha_vect + beta * Xi_vect + Ui_vect[(n_participants+1):(2*n_participants), ] + Y_epsilon_vect
-    Yi_vect <- G_mat[1:n_participants, ] %*% alpha_vect + (beta * Xi_vect) + Ui_vect[1:n_participants, ] + Y_epsilon_vect
+    Xi_vect <-  G_mat[1:n_participants, ] %*% gamma_vect + 
+                Ui_vect[1:n_participants, ] + 
+                X_epsilon_vect
+
+    Yi_vect <-  G_mat[1:n_participants, ] %*% alpha_vect + 
+                (beta * Xi_vect) + 
+                Ui_vect[1:n_participants, ] + 
+                Y_epsilon_vect
     
     
     # Add vectors of estimates from this dataset to lists of 
@@ -219,7 +224,9 @@ wme_model_sim <- function(n_participants = as.integer(),
     
     G_X_list[[n]] <- G_mat[1:n_participants, ]
     
-    G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ]
+    G_Y_list[[n]] <- G_mat[1:n_participants, ]
+    
+    #G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ]
     
     alpha_list[[n]] <- alpha_vect
     
@@ -230,7 +237,9 @@ wme_model_sim <- function(n_participants = as.integer(),
     
   }
   
-  combined_list <- list(U = U_list,          # Estimates 
+  
+  # Combine all outputs to return
+  combined_list <- list(U = U_list,         # Estimates 
                         X = X_list, 
                         Y = Y_list,
                         G_X = G_X_list,     # Genotypes of 1st sample
@@ -241,7 +250,6 @@ wme_model_sim <- function(n_participants = as.integer(),
                         )
   
   return(combined_list)
-  
 }
 ```
 
@@ -270,6 +278,7 @@ extract_models_XY <- function(sim){
     
     # Model for gene:exposure
     X_lm <- lm(X ~ Instruments_X)
+    Xi_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), ]
     coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), 1]
     SE_coeff_X_G_vect <- coef(summary(X_lm))[2:(ncol(Instruments_X) + 1), 2]
 
@@ -280,6 +289,7 @@ extract_models_XY <- function(sim){
 
     output_list[[dataset]] <- as_tibble(list(dataset = dataset,
                                              Instrument = c(1:ncol(Instruments_X)),
+                                             #Xi = Xi_vect,
                                              coeff_X_G = coeff_X_G_vect,
                                              coeff_X_G_SE = SE_coeff_X_G_vect,
                                              gamma = gamma,
@@ -292,7 +302,7 @@ extract_models_XY <- function(sim){
   }
   
   return(output_list)
-  
+
 }  
 
 
@@ -302,12 +312,13 @@ A series of test plots were used to verify that data were simulated as intended 
 
 ```{r test-tib, cache=TRUE}
 
-# Check data produced in
+# Check data produced in expected format
 set.seed(1701)
 sim_test_data_tib <- wme_model_sim(n_participants = 1000,
                                  n_instruments = 25,
                                  n_datasets = 2,
-                                 prop_invalid = 0.1,
+                                 prop_invalid = 0.3,
+                                 rand_error = TRUE,
                                  causal_effect = TRUE,
                                  balanced_pleio = TRUE,
                                  InSIDE_satisfied = TRUE)
@@ -316,8 +327,8 @@ str(sim_test_data_tib)
 
 test_tib <- extract_models_XY(sim_test_data_tib)[[1]] 
   
-head(test_tib)
-
+#head(test_tib)
+test_tib
 
 ```
 
@@ -328,13 +339,14 @@ head(test_tib)
 # (coeff_X_G) approximate true values (gamma) when a causal effect 
 # is present & a large number of participants are included 
 set.seed(1701)
-sim_test_data_gamma_1 <- wme_model_sim(n_participants = 100000,
-                                 n_instruments = 25,
-                                 n_datasets = 1,
-                                 prop_invalid = 0.1,
-                                 causal_effect = TRUE,
-                                 balanced_pleio = TRUE,
-                                 InSIDE_satisfied = TRUE)
+sim_test_data_gamma_1 <- wme_model_sim(n_participants = 100,
+                                       n_instruments = 25,
+                                       n_datasets = 1,
+                                       prop_invalid = 0.1,
+                                       causal_effect = FALSE,
+                                       rand_error = TRUE,
+                                       balanced_pleio = TRUE,
+                                       InSIDE_satisfied = TRUE)
 
 
 test_plot_tib_gamma_1 <- extract_models_XY(sim_test_data_gamma_1)[[1]] 
@@ -354,14 +366,16 @@ test_plot_tib_gamma_1 %>%
 # pleiotropic effects (alphas) when no causal effect present
 # N.B. cluster around alpha = 0 represents valid instruments with
 # no pleiotropic effects
+
 set.seed(1701)
 sim_test_data_alpha <- wme_model_sim(n_participants = 10000,
                                      n_instruments = 25,
                                      n_datasets = 1,
-                                     prop_invalid = 0.3,
-                                     causal_effect = FALSE,
+                                     prop_invalid = 0.5,
+                                     causal_effect = TRUE,
                                      balanced_pleio = TRUE,
-                                     InSIDE_satisfied = TRUE)
+                                     InSIDE_satisfied = TRUE,
+                                     rand_error = FALSE)
 
 
 test_plot_tib_alpha <- extract_models_XY(sim_test_data_alpha)[[1]]
@@ -385,22 +399,42 @@ test_plot_tib_alpha %>%
 # No causal effect present
 set.seed(1701)
 sim_test_data_causal_0 <- wme_model_sim(n_participants = 10000,
-                                     n_instruments = 25,
-                                     n_datasets = 1,
-                                     prop_invalid = 0.1,
-                                     causal_effect = FALSE,
-                                     balanced_pleio = TRUE,
-                                     InSIDE_satisfied = TRUE)
+                                        n_instruments = 25,
+                                        n_datasets = 1,
+                                        prop_invalid = 0.1,
+                                        causal_effect = FALSE,
+                                        balanced_pleio = TRUE,
+                                        InSIDE_satisfied = TRUE,
+                                        rand_error = FALSE,
+                                        beta_val = 100,                 # size of causal effect
+                                        allele_freq_min = 0.01,         # frequency of effect allele
+                                        allele_freq_max = 0.99,
+                                        gamma_min = 0.03,               # size of pleiotropic effects on exposure
+                                        gamma_max = 0.1,
+                                        alpha_min = -0.2,               # size of pleiotropic effects on outcome
+                                        alpha_max = 0.2,
+                                        phi_min = -0.2,                 # size of additional pleiotropic effects
+                                        phi_max = 0.2)
 
 # Causal effect present
 set.seed(1701)
 sim_test_data_causal_1 <- wme_model_sim(n_participants = 10000,
-                                     n_instruments = 25,
-                                     n_datasets = 1,
-                                     prop_invalid = 0.1,
-                                     causal_effect = TRUE,
-                                     balanced_pleio = TRUE,
-                                     InSIDE_satisfied = TRUE)
+                                        n_instruments = 25,
+                                        n_datasets = 1,
+                                        prop_invalid = 0.1,
+                                        causal_effect = TRUE,
+                                        balanced_pleio = TRUE,
+                                        InSIDE_satisfied = TRUE,
+                                        rand_error = FALSE,
+                                        beta_val = 100,                 # size of causal effect
+                                        allele_freq_min = 0.01,         # frequency of effect allele
+                                        allele_freq_max = 0.99,
+                                        gamma_min = 0.03,               # size of pleiotropic effects on exposure
+                                        gamma_max = 0.1,
+                                        alpha_min = -0.2,               # size of pleiotropic effects on outcome
+                                        alpha_max = 0.2,
+                                        phi_min = -0.2,                 # size of additional pleiotropic effects
+                                        phi_max = 0.2)
 
 
 test_plot_tib_causal_0 <- extract_models_XY(sim_test_data_causal_0)[[1]]
@@ -420,7 +454,9 @@ test_plot_tib_causal_0 %>%
             parse = TRUE) +
   labs(title = "No Causal Effect Present",
        x = "Gene:Exposure Coefficient",
-       y = "Gene:Outcome Coefficient")
+       y = "Gene:Outcome Coefficient") +
+  xlim(-0.2, 0.2) +
+  ylim(-0.2, 0.2)
 
 test_plot_tib_causal_1 %>% 
   mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5),
@@ -436,7 +472,9 @@ test_plot_tib_causal_1 %>%
             parse = TRUE) +
   labs(title = "Causal Effect Present",
        x = "Gene:Exposure Coefficient",
-       y = "Gene:Outcome Coefficient")
+       y = "Gene:Outcome Coefficient") +
+  xlim(-0.2, 0.2) +
+  ylim(-0.2, 0.2)
 
 
 
@@ -536,5 +574,6 @@ test_plot_tib_phi_0 %>%
 
 
 ```
+
 
 

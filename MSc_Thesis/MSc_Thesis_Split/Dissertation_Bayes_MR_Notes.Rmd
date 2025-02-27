@@ -322,3 +322,17 @@ o	English full-text not accessible
 
 The above sample of 10 highly-cited studies will then be re-analysed using MR-Hevo in place of WME, and the resulting conclusion regarding the main study question will be recorded. The proportion of studies where conclusions of main research questions differ between MR-Hevo and MWE analyses will then be quantified, and the potential reasons for and implications of such differences will be discussed
 
+
+```{r g-mat-alternative, include=FALSE}
+    # --- Alternative: Athina code adapted for G_mat --- #
+    # allele.probs <- matrix(runif(2* n_participants * n_instruments, min = 0, max = 1), nrow = 2 * n_participants, ncol = n_instruments)
+    # alleles <- allele.probs < matrix(rep(allele_freq_vect, 2 * n_participants), nrow = 2 * n_participants, ncol = n_instruments, byrow = TRUE)
+    # G_mat <- alleles[1:n_participants, ] + alleles[(n_participants+1):(2*n_participants), ]
+    
+    # Uncomment to check:
+    # Check that observed vs expected allele frequencies roughly match
+    # cbind(colSums(G_mat) / (2*n_participants), allele_freq_vect)
+    # ---
+    
+```
+
