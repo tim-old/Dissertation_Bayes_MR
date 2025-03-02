@@ -40,6 +40,8 @@ The causal effect of the exposure on the outcome was either $\beta X = 0$ (null 
 ```{r setup, include=FALSE}
 
 library(tidyverse)
+library(TwoSampleMR)
+library(mrhevo)
 
 ```
 
@@ -327,13 +329,7 @@ sim_test_data_tib <- wme_model_sim(n_participants = 1000,
                                  balanced_pleio = TRUE,
                                  InSIDE_satisfied = TRUE)
 
-#sim_test_data_tib
 str(sim_test_data_tib)
-
-#test_tib <- extract_models_XY(sim_test_data_tib)[[1]] 
-  
-#head(test_tib)
-#test_tib
 
 ```
 
@@ -443,7 +439,7 @@ test_plot_tib_alpha %>%
 
 plot_GY_GX <- function(model_tib, plot_title = as.character(NA)){
   
-  model %>% 
+  model_tib %>% 
   mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5)) %>%
   ggplot() +
   aes(x = coeff_X_G, y = coeff_Y_G) +
@@ -476,13 +472,13 @@ plot_GY_GX <- function(model_tib, plot_title = as.character(NA)){
 ```{r test-plot-no-causal, cache=TRUE}
 
 # No causal effect present
-set.seed(5000000)
+set.seed(1701)
 sim_test_data_causal_0 <- wme_model_sim(n_participants = 10000,
                                         n_instruments = 1000,
                                         n_datasets = 1,
-                                        prop_invalid = 0.2,
+                                        prop_invalid = 0,
                                         causal_effect = FALSE,
-                                        balanced_pleio = FALSE,
+                                        balanced_pleio = TRUE,
                                         InSIDE_satisfied = TRUE,
                                         rand_error = FALSE,
                                         beta_val = 0.1,                 # size of causal effect
@@ -575,18 +571,6 @@ test_plot_tib_phi_0 %>%
 
 ```
 
-```{r}
-library(TwoSampleMR)
-
-
-mr_weighted_median(b_exp = test_plot_tib_causal_0$coeff_X_G,
-                   b_out = test_plot_tib_causal_0$coeff_Y_G,
-                   se_exp = test_plot_tib_causal_0$coeff_X_G_SE, 
-                   se_out = test_plot_tib_causal_0$coeff_Y_G_SE)
-
-
-
-```
 
 ```{r summary-MR-tib-fn}
 
@@ -678,42 +662,52 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
     results_tib[dataset, ]$WME_Q_pval <- WME_results$Q_pval
     results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
     
+    # N.B. MR-Hevo terminology vs WME paper/other code:
+      # alpha = effects of instruments on exposure, i.e. coeff_G_X
+      # beta = pleiotropic effects of instruments on outcome, i.e. alpha in WME
+      # gamma = effects of instruments on outcome, i.e. coeff_G_Y
+      # theta = causal effect X on Y, i.e. b
+    
   }
   
   output_tib_row <- results_tib %>% 
     summarise(N = N_datasets,
+              Prop_Invalid = prop_invalid,
+              F_Stat = NA,
+              R2_stat = NA,
               WME_Av = mean(WME_b),
               WME_SE = mean(WME_se),
-              WME_Pos_Rate = length(WME_pval[WME_pval < 0.05])/N_datasets
-              ) %>% 
+              WME_Pos_Rate = length(WME_pval[WME_pval < 0.05])/N_datasets,
+              Hevo_Av = NA,
+              Hevo_SE = NA,
+              Hevo_Pos_Rate = NA) %>% 
     mutate(across(where(is.double), round, 3))
   
-  #return(results_tib)
   return(output_tib_row)
 }
 
 ```
 
+```{r}
+str(test_plot_tib_alpha)
+```
 
 
-```{r test-summary-MR-tib-fn, warning=FALSE, cache=TRUE}
+```{r test-summary-MR-tib-row-fn, warning=FALSE, cache=TRUE}
 
-set.seed(1583)
+set.seed(14101583)
 get_summary_MR_tib_row(n_participants = 10000,
-#sim_test_data_multi <- wme_model_sim(n_participants = 10000,
-                                     n_instruments = 25,
-                                     n_datasets = 100,
-                                     prop_invalid = 0.3,
-                                     beta_val = 0.1,
-                                     causal_effect = TRUE,
-                                     balanced_pleio = TRUE,
-                                     InSIDE_satisfied = TRUE)
-
-#sim_test_model_multi <- extract_models_XY(sim_test_data_multi)
+                       n_instruments = 25,
+                       n_datasets = 100,
+                       prop_invalid = 0.3,
+                       beta_val = 0.1,
+                       causal_effect = TRUE,
+                       balanced_pleio = TRUE,
+                       InSIDE_satisfied = TRUE)
 
 
-
-#get_summary_MR_tib_row(sim_test_model_multi)
 
 ```
+
+
 
