@@ -42,6 +42,8 @@ The causal effect of the exposure on the outcome was either $\beta X = 0$ (null 
 library(tidyverse)
 library(TwoSampleMR)
 library(mrhevo)
+library(rstan)
+library(here)
 
 ```
 
@@ -89,6 +91,8 @@ wme_model_sim <- function(n_participants = as.integer(),
   gamma_list <- list()
   alpha_list <- list()
   phi_list <- list()
+  beta_list <- list()
+  prop_invalid_list <- list()
   
   
   # Assign features common to all datasets
@@ -238,6 +242,10 @@ wme_model_sim <- function(n_participants = as.integer(),
     gamma_list[[n]] <- gamma_vect
     
     phi_list[[n]] <- phi_vect
+    
+    beta_list[[n]] <- beta
+    
+    prop_invalid_list[[n]] <- prop_invalid
   
     
   }
@@ -251,7 +259,9 @@ wme_model_sim <- function(n_participants = as.integer(),
                         G_Y = G_Y_list,     # Genotypes of 2nd sample
                         alpha = alpha_list, # Actual values for validating simulation
                         gamma = gamma_list,
-                        phi = phi_list
+                        phi = phi_list,
+                        beta = beta_list,
+                        prop_invalid = prop_invalid_list
                         )
   
   return(combined_list)
@@ -269,8 +279,8 @@ extract_models_XY <- function(sim){
   output_list <- list()
   
   # Create linear models per dataset to get coefficients
-  # for gene:exposure association (coeff_X_G) and gene:outcome
-  # association (coeff_Y_G)
+  # for gene:exposure association (coeff_G_X) and gene:outcome
+  # association (coeff_G_Y)
   for(dataset in 1:length(sim$X)){
  
     X <- sim$X[[dataset]]
@@ -281,29 +291,33 @@ extract_models_XY <- function(sim){
     alpha <- sim$alpha[[dataset]]
     gamma <- sim$gamma[[dataset]]
     phi <- sim$phi[[dataset]]
+    beta <- sim$beta[[dataset]]
+    prop_invalid <- sim$prop_invalid[[dataset]]
     
     #ds <- as.data.frame(c(X,Y, Instruments_X, Instruments_Y, alpha, gamma, phi))
     
     # Model for gene:exposure
     #X_lm <- lm(X ~ 0 + Instruments_X, data = ds)
     X_lm <- lm(X ~ 0 + Instruments_X)
-    coeff_X_G_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
-    SE_coeff_X_G_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]
+    coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
+    SE_coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]
 
     # Model for gene:outcome
     Y_lm <- lm(Y ~ 0 + Instruments_Y)
-    coeff_Y_G_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 1] 
-    SE_coeff_Y_G_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 2]
+    coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 1] 
+    SE_coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 2]
 
     output_list[[dataset]] <- as_tibble(list(dataset = dataset,
                                              Instrument = c(1:ncol(Instruments_X)),
-                                             coeff_X_G = coeff_X_G_vect,
-                                             coeff_X_G_SE = SE_coeff_X_G_vect,
+                                             coeff_G_X = coeff_G_X_vect,
+                                             coeff_G_X_SE = SE_coeff_G_X_vect,
                                              gamma = gamma,
-                                             coeff_Y_G = coeff_Y_G_vect,
-                                             coeff_Y_G_SE = SE_coeff_Y_G_vect,
+                                             coeff_G_Y = coeff_G_Y_vect,
+                                             coeff_G_Y_SE = SE_coeff_G_Y_vect,
                                              alpha = alpha,
-                                             phi = phi),
+                                             phi = phi,
+                                             beta = beta,
+                                             prop_invalid = prop_invalid),
                                         .name_repair = "unique")
   }
   
@@ -365,13 +379,13 @@ test_plot_tib_inval_0.1 <- extract_models_XY(sim_test_data_inval_0.1)[[1]]
 test_plot_tib_inval_0.5 <- extract_models_XY(sim_test_data_inval_0.5)[[1]]
 
 test_plot_tib_inval_0.1 %>% 
-  select(alpha, coeff_Y_G) %>% 
+  select(alpha, coeff_G_Y) %>% 
   plot(.,
        ylab = "Observed Gene:Outcome Coefficient",
        main = "10% Invalid Instruments")
 
 test_plot_tib_inval_0.5 %>% 
-  select(alpha, coeff_Y_G) %>% 
+  select(alpha, coeff_G_Y) %>% 
   plot(.,
        ylab = "Observed Gene:Outcome Coefficient",
        main = "50% Invalid Instruments")
@@ -383,7 +397,7 @@ test_plot_tib_inval_0.5 %>%
 ```{r test-plot-gamma-1, cache=TRUE}
 
 # Check observed gene:exposure coefficients for each instrument
-# (coeff_X_G) approximate true values (gamma) when a causal effect 
+# (coeff_G_X) approximate true values (gamma) when a causal effect 
 # is present & a large number of participants are included 
 set.seed(1701)
 sim_test_data_gamma_1 <- wme_model_sim(n_participants = 100,
@@ -399,7 +413,7 @@ sim_test_data_gamma_1 <- wme_model_sim(n_participants = 100,
 test_plot_tib_gamma_1 <- extract_models_XY(sim_test_data_gamma_1)[[1]] 
 
 test_plot_tib_gamma_1 %>% 
-  select(gamma, coeff_X_G) %>% 
+  select(gamma, coeff_G_X) %>% 
   plot(.,
        ylab = "Observed Gene:Exposure Coefficient")
 
@@ -407,7 +421,7 @@ test_plot_tib_gamma_1 %>%
 
 ```{r test-plot-alpha, cache=TRUE}
 
-# Check gene:outcome coefficients (coeff_Y_G) approximate 
+# Check gene:outcome coefficients (coeff_G_Y) approximate 
 # pleiotropic effects (alphas) when no causal effect present
 # N.B. cluster around alpha = 0 represents valid instruments with
 # no pleiotropic effects
@@ -427,7 +441,7 @@ sim_test_data_alpha <- wme_model_sim(n_participants = 10000,
 test_plot_tib_alpha <- extract_models_XY(sim_test_data_alpha)[[2]]
 
 test_plot_tib_alpha %>% 
-  select(alpha, coeff_Y_G) %>% 
+  select(alpha, coeff_G_Y) %>% 
   plot(.,
        ylab = "Observed Gene:Outcome Coefficient")
 
@@ -440,9 +454,9 @@ test_plot_tib_alpha %>%
 plot_GY_GX <- function(model_tib, plot_title = as.character(NA)){
   
   model_tib %>% 
-  mutate(Gradient = round(coefficients(lm(coeff_Y_G ~ 0 + coeff_X_G))[1], 5)) %>%
+  mutate(Gradient = round(coefficients(lm(coeff_G_Y ~ 0 + coeff_G_X))[1], 5)) %>%
   ggplot() +
-  aes(x = coeff_X_G, y = coeff_Y_G) +
+  aes(x = coeff_G_X, y = coeff_G_Y) +
   geom_point() +
   geom_abline(aes(intercept = 0, 
                   slope = Gradient),) +
@@ -555,13 +569,13 @@ test_plot_tib_phi_1 <- extract_models_XY(sim_test_data_phi_1)[[1]]
 test_plot_tib_phi_0 <- extract_models_XY(sim_test_data_phi_0)[[1]]
 
 test_plot_tib_phi_1 %>% 
-  select(alpha, coeff_Y_G) %>% 
+  select(alpha, coeff_G_Y) %>% 
   plot(., 
        main = "InSIDE Violated",
        ylab = "Gene:Outcome Coefficient")
 
 test_plot_tib_phi_0 %>% 
-  select(alpha, coeff_Y_G) %>% 
+  select(alpha, coeff_G_Y) %>% 
   plot(.,
        main = "InSIDE Not Violated",
        ylab = "Gene:Outcome Coefficient")
@@ -649,10 +663,10 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
   # Run WME for each dataset 
   for(dataset in 1:N_datasets){
     
-    WME_results <- mr_weighted_median(b_exp = model_list[[dataset]]$coeff_X_G,
-                                      b_out = model_list[[dataset]]$coeff_Y_G,
-                                      se_exp = model_list[[dataset]]$coeff_X_G_SE,
-                                      se_out = model_list[[dataset]]$coeff_Y_G_SE)
+    WME_results <- mr_weighted_median(b_exp = model_list[[dataset]]$coeff_G_X,
+                                      b_out = model_list[[dataset]]$coeff_G_Y,
+                                      se_exp = model_list[[dataset]]$coeff_G_X_SE,
+                                      se_out = model_list[[dataset]]$coeff_G_Y_SE)
     
     results_tib[dataset, ]$WME_b <- WME_results$b
     results_tib[dataset, ]$WME_se <- WME_results$se
@@ -688,12 +702,46 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
 
 ```
 
-```{r}
-str(test_plot_tib_alpha)
+```{r hevo-test, cache=TRUE}
+
+
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
+
+source("functions.mrhevo.R")
+
+set.seed(1701)
+sim_test_data_hevo <- wme_model_sim(n_participants = 10000,
+                                     n_instruments = 25,
+                                     n_datasets = 2,
+                                     prop_invalid = 0.1,
+                                     beta_val = 0.1,
+                                     causal_effect = TRUE,
+                                     balanced_pleio = TRUE,
+                                     InSIDE_satisfied = TRUE,
+                                     rand_error = TRUE)
+
+
+test_plot_tib_hevo <- extract_models_XY(sim_test_data_hevo)[[2]]
+
+
+
+str(sim_test_data_hevo)
+str(test_plot_tib_hevo)
+
+test_plot_tib_hevo %>% 
+  run_mrhevo.sstats(alpha_hat = .$coeff_G_X,
+                    se.alpha_hat = .$coeff_G_X_SE,
+                    gamma_hat = .$coeff_G_Y,
+                    se.gamma_hat = .$coeff_G_Y_SE,
+                    fraction_pleio = .$prop_invalid,
+                    model.dir = here(), priorsd_theta = 1)
 ```
 
 
 ```{r test-summary-MR-tib-row-fn, warning=FALSE, cache=TRUE}
+
+
 
 set.seed(14101583)
 get_summary_MR_tib_row(n_participants = 10000,
@@ -708,6 +756,7 @@ get_summary_MR_tib_row(n_participants = 10000,
 
 
 ```
+
 
 
 
