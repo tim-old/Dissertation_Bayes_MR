@@ -44,6 +44,7 @@ library(TwoSampleMR)
 library(mrhevo)
 library(rstan)
 library(here)
+library(data.table)
 
 ```
 
@@ -233,6 +234,8 @@ wme_model_sim <- function(n_participants = as.integer(),
     Y_list[[n]] <- Yi_vect
     
     G_X_list[[n]] <- G_mat[1:n_participants, ]
+    
+    #--- Test for Causal Effect ---#
     #G_Y_list[[n]] <- G_mat[1:n_participants, ]
     
     G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ]
@@ -293,11 +296,9 @@ extract_models_XY <- function(sim){
     phi <- sim$phi[[dataset]]
     beta <- sim$beta[[dataset]]
     prop_invalid <- sim$prop_invalid[[dataset]]
-    
-    #ds <- as.data.frame(c(X,Y, Instruments_X, Instruments_Y, alpha, gamma, phi))
+
     
     # Model for gene:exposure
-    #X_lm <- lm(X ~ 0 + Instruments_X, data = ds)
     X_lm <- lm(X ~ 0 + Instruments_X)
     coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
     SE_coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]
@@ -580,13 +581,57 @@ test_plot_tib_phi_0 %>%
        main = "InSIDE Not Violated",
        ylab = "Gene:Outcome Coefficient")
 
-#phi on y
+#phi on y, not alpha
+
+
+```
+```{r test-plot-phi-2, cache=TRUE}
+
+# Check violating InSIDE assumption results in distorted 
+# estimation of pleiotropic effects
+# N.B. cluster around alpha = 0 represents valid instruments with
+# no pleiotropic effects
+set.seed(1701)
+sim_test_data_phi_T <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 100,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.3,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = FALSE,
+                                     InSIDE_satisfied = FALSE)
+
+set.seed(1701)
+sim_test_data_phi_F <- wme_model_sim(n_participants = 100000,
+                                     n_instruments = 100,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.3,
+                                     causal_effect = FALSE,
+                                     balanced_pleio = FALSE,
+                                     InSIDE_satisfied = TRUE)
+
+
+test_plot_tib_phi_T <- extract_models_XY(sim_test_data_phi_T)[[1]]
+test_plot_tib_phi_F <- extract_models_XY(sim_test_data_phi_F)[[1]]
+
+test_plot_tib_phi_T %>% 
+  select(phi, coeff_G_Y) %>% 
+  plot(., 
+       main = "InSIDE Violated",
+       ylab = "Gene:Outcome Coefficient")
+
+test_plot_tib_phi_F %>% 
+  select(phi, coeff_G_Y) %>% 
+  plot(.,
+       main = "InSIDE Not Violated",
+       ylab = "Gene:Outcome Coefficient")
+
+#phi on y, not alpha
 
 
 ```
 
 
-```{r summary-MR-tib-fn}
+```{r summary-MR-tib-row-fn}
 
 get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 10,000 for final
                                    n_instruments = 25,
@@ -704,11 +749,16 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
 
 ```{r hevo-test, cache=TRUE}
 
-
+# Standard set-up for RStan
 options(mc.cores = parallel::detectCores())
 rstan_options(auto_write = TRUE)
 
-source("functions.mrhevo.R")
+#source("functions.mrhevo.R")
+
+# use.sampling <- TRUE
+# logistic <- TRUE
+# priorsd_theta <- 1
+# newrun <- FALSE
 
 set.seed(1701)
 sim_test_data_hevo <- wme_model_sim(n_participants = 10000,
@@ -729,13 +779,23 @@ test_plot_tib_hevo <- extract_models_XY(sim_test_data_hevo)[[2]]
 str(sim_test_data_hevo)
 str(test_plot_tib_hevo)
 
-test_plot_tib_hevo %>% 
-  run_mrhevo.sstats(alpha_hat = .$coeff_G_X,
-                    se.alpha_hat = .$coeff_G_X_SE,
-                    gamma_hat = .$coeff_G_Y,
-                    se.gamma_hat = .$coeff_G_Y_SE,
-                    fraction_pleio = .$prop_invalid,
-                    model.dir = here(), priorsd_theta = 1)
+a_h <- test_plot_tib_hevo$coeff_G_X
+se_a_h <- test_plot_tib_hevo$coeff_G_X_SE
+g_h <- test_plot_tib_hevo$coeff_G_Y
+se_g_h <- test_plot_tib_hevo$coeff_G_X_SE
+
+#test_mod <- test_plot_tib_hevo %>% 
+  #as.data.frame() %>% 
+  run_mrhevo.sstats(alpha_hat = a_h,
+                    se.alpha_hat = se_a_h,
+                    gamma_hat = g_h,
+                    se.gamma_hat = se_g_h,
+                    fraction_pleio = 0.2,
+                    model.dir = here(),
+                    priorsd_theta = priorsd_theta)
+
+
+
 ```
 
 
