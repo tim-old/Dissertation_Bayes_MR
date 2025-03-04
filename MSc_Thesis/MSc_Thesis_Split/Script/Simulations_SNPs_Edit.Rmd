@@ -696,30 +696,38 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
   # Create blank tibble to receive results of Weighted
   # Median Estimator function from MR-Base
   
-  results_tib <-  tibble(WME_b = as.double(),
+  results_tib <-  tibble(WME_est = as.double(),
                          WME_se = as.double(),
                          WME_pval = as.double(),
                          WME_Q = as.double(),
                          WME_Q_df = as.double(),
                          WME_Q_pval = as.double(),
-                         WME_nsnp = as.integer())
+                         WME_nsnp = as.integer(),
+                         Hevo_est = as.double(),
+                         Hevo_se = as.double(),
+                         Hevo_sd = as.double(),
+                         Hevo_2.5 = as.double(),
+                         Hevo_25 = as.double(),
+                         Hevo_50 = as.double(),
+                         Hevo_75 = as.double(),
+                         Hevo_97.5 = as.double(),
+                         Hevo_n_eff = as.double(),
+                         Hevo_n_Rhat = as.double(),
+                         Hevo_z_stat = as.double(),
+                         Hevo_pval = as.double()
+                         )
   
   
   # Run WME for each dataset 
   for(dataset in 1:N_datasets){
     
-    WME_results <- mr_weighted_median(b_exp = model_list[[dataset]]$coeff_G_X,
-                                      b_out = model_list[[dataset]]$coeff_G_Y,
-                                      se_exp = model_list[[dataset]]$coeff_G_X_SE,
-                                      se_out = model_list[[dataset]]$coeff_G_Y_SE)
+    # Stored as individual vectors for MR-Hevo/RStan - not
+    # Tidyverse compatible
+    coeff_G_X_vect <- model_list[[dataset]]$coeff_G_X
+    coeff_G_Y_vect <- model_list[[dataset]]$coeff_G_Y
+    coeff_G_X_SE_vect <- model_list[[dataset]]$coeff_G_X_SE
+    coeff_G_Y_SE_vect <- model_list[[dataset]]$coeff_G_Y_SE
     
-    results_tib[dataset, ]$WME_b <- WME_results$b
-    results_tib[dataset, ]$WME_se <- WME_results$se
-    results_tib[dataset, ]$WME_pval <- WME_results$pval
-    results_tib[dataset, ]$WME_Q <- WME_results$Q
-    results_tib[dataset, ]$WME_Q_df <- WME_results$Q_df
-    results_tib[dataset, ]$WME_Q_pval <- WME_results$Q_pval
-    results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
     
     # N.B. MR-Hevo terminology vs WME paper/other code:
       # alpha = effects of instruments on exposure, i.e. coeff_G_X
@@ -727,22 +735,75 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
       # gamma = effects of instruments on outcome, i.e. coeff_G_Y
       # theta = causal effect X on Y, i.e. b
     
+    # Results from weighted median estimator method
+    WME_results <- mr_weighted_median(b_exp = coeff_G_X_vect,
+                                      b_out = coeff_G_Y_vect,
+                                      se_exp = coeff_G_X_SE_vect,
+                                      se_out = coeff_G_Y_SE_vect)
+    
+    # Results from MR-Hevo method
+    Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
+                                     se.alpha_hat = coeff_G_X_SE_vect,
+                                     gamma_hat = coeff_G_Y_vect,
+                                     se.gamma_hat = coeff_G_Y_SE_vect,
+                                     fraction_pleio = 0.2,
+                                     #priorsd_theta = priorsd_theta,
+                                     model.dir = here()) %>%
+      summary()
+
+    
+    
+    results_tib[dataset, ]$WME_est <- WME_results$b
+    results_tib[dataset, ]$WME_se <- WME_results$se
+    results_tib[dataset, ]$WME_pval <- WME_results$pval
+    results_tib[dataset, ]$WME_Q <- WME_results$Q
+    results_tib[dataset, ]$WME_Q_df <- WME_results$Q_df
+    results_tib[dataset, ]$WME_Q_pval <- WME_results$Q_pval
+    results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
+    
+    # Extract MR-Hevo Results
+    results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
+    results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
+    results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
+    results_tib[dataset, ]$Hevo_2.5 <- Hevo_results$summary["theta","2.5%"]
+    results_tib[dataset, ]$Hevo_25 <- Hevo_results$summary["theta","25%"]
+    results_tib[dataset, ]$Hevo_50 <- Hevo_results$summary["theta","50%"]
+    results_tib[dataset, ]$Hevo_75 <- Hevo_results$summary["theta","75%"]
+    results_tib[dataset, ]$Hevo_97.5 <- Hevo_results$summary["theta","97.5%"]
+    results_tib[dataset, ]$Hevo_n_eff <- Hevo_results$summary["theta","n_eff"]
+    results_tib[dataset, ]$Hevo_n_Rhat <- Hevo_results$summary["theta","Rhat"]
+    
+    
   }
+  
+  # Calculate MR-Hevo p-values from CI, based on https://doi.org/10.1136/bmj.d2304:
+  #
+  # If the upper and lower limits of a 95% CI are u and l respectively:
+  # - 1) calculate the standard error: SE = (u − l)/(2×1.96)
+  # - 2) calculate the test statistic: z = Est/SE
+  # - 3) calculate the P value2: P = exp(−0.717×z − 0.416×z2).
+  
+  results_tib <- results_tib %>% 
+    mutate(Hevo_z_stat = Hevo_est/Hevo_se,
+           Hevo_pval = exp(-0.717 * Hevo_z_stat - 0.416* Hevo_z_stat^2 ))
   
   output_tib_row <- results_tib %>% 
     summarise(N = N_datasets,
               Prop_Invalid = prop_invalid,
               F_Stat = NA,
               R2_stat = NA,
-              WME_Av = mean(WME_b),
+              WME_Av = mean(WME_est),
               WME_SE = mean(WME_se),
-              WME_Pos_Rate = length(WME_pval[WME_pval < 0.05])/N_datasets,
-              Hevo_Av = NA,
-              Hevo_SE = NA,
-              Hevo_Pos_Rate = NA) %>% 
+              WME_Pos_Rate = length(WME_pval[WME_pval < 0.05]) / N_datasets,
+              Hevo_Av = mean(Hevo_est),
+              Hevo_SE = mean(Hevo_se),
+              Hevo_Pos_Rate = length(Hevo_pval[Hevo_pval < 0.05]) / N_datasets
+              ) %>% 
     mutate(across(where(is.double), round, 3))
   
-  return(output_tib_row)
+  #return(output_tib_row)
+  return(results_tib)
+  
 }
 
 ```
@@ -776,25 +837,29 @@ test_plot_tib_hevo <- extract_models_XY(sim_test_data_hevo)[[2]]
 
 
 
-str(sim_test_data_hevo)
-str(test_plot_tib_hevo)
+# str(sim_test_data_hevo)
+# str(test_plot_tib_hevo)
 
 a_h <- test_plot_tib_hevo$coeff_G_X
 se_a_h <- test_plot_tib_hevo$coeff_G_X_SE
 g_h <- test_plot_tib_hevo$coeff_G_Y
 se_g_h <- test_plot_tib_hevo$coeff_G_X_SE
 
-#test_mod <- test_plot_tib_hevo %>% 
-  #as.data.frame() %>% 
-  run_mrhevo.sstats(alpha_hat = a_h,
+#test_mod <- test_plot_tib_hevo %>%
+#as.data.table() %>%
+  test_mod <- run_mrhevo.sstats(alpha_hat = a_h,
                     se.alpha_hat = se_a_h,
                     gamma_hat = g_h,
                     se.gamma_hat = se_g_h,
                     fraction_pleio = 0.2,
                     model.dir = here(),
-                    priorsd_theta = priorsd_theta)
+                    #priorsd_theta = priorsd_theta
+                    ) %>% 
+    summary()
 
-
+test_mod$summary["theta","mean"]
+test_mod$summary["theta","se_mean"]
+test_mod$summary["theta","sd"]
 
 ```
 
@@ -804,10 +869,10 @@ se_g_h <- test_plot_tib_hevo$coeff_G_X_SE
 
 
 set.seed(14101583)
-get_summary_MR_tib_row(n_participants = 10000,
+get_summary_MR_tib_row(n_participants = 200,
                        n_instruments = 25,
-                       n_datasets = 100,
-                       prop_invalid = 0.3,
+                       n_datasets = 10,
+                       prop_invalid = 0.1,
                        beta_val = 0.1,
                        causal_effect = TRUE,
                        balanced_pleio = TRUE,
