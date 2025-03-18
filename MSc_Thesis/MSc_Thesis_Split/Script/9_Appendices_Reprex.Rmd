@@ -27,8 +27,6 @@ library(rstan)
 library(here)
 library(data.table)
 
-source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
-#source(here("MSc_Thesis_Split", "Script", "Hevo", "MRHevo_summarystats.stan"))
 
 ```
 
@@ -699,18 +697,22 @@ test_plot_tib_phi_F %>%
 ```{r summary-MR-tib-row-fn, warning=FALSE}
 
 
-# # Standard set-up for RStan
-# options(mc.cores = parallel::detectCores())
-# rstan_options(auto_write = TRUE, save_dso = TRUE)
-# 
-# # Run local MR-Hevo functions file
-# # Changes to suppress messages/prevent model recompiling
-# source(here("functions.mrhevo.R"))
-# 
-# # Compile model for MR-Hevo
-# mr.sstats.stanmodel <- stan_model(file= here("MRHevo_summarystats.stan"),
-#                                   model_name="MRHevo.summarystats", verbose=FALSE)
-# --- Need to comment out model.dir in Hevo_results --- #  
+source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
+source(here("MSc_Thesis_Split", "Script", "Hevo", "stanmodels.R"))
+#source(here("MSc_Thesis_Split", "Script", "Hevo", "MRHevo_summarystats.stan"))
+
+# Standard set-up for RStan
+#options(mc.cores = parallel::detectCores())
+#rstan_options(auto_write = TRUE, save_dso = TRUE)
+
+# Run local MR-Hevo functions file
+# Changes to suppress messages/prevent model recompiling
+#source(here("functions.mrhevo.R"))
+
+# Compile model for MR-Hevo
+#mr.sstats.stanmodel <- stan_model(file= here("MSc_Thesis_Split", "Script", "Hevo", "MRHevo_summarystats.stan"),
+#                                  model_name="MRHevo.summarystats", verbose=FALSE)
+# --- Need to comment out model.dir in Hevo_results --- #
 
 
 get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 10,000 for final
@@ -827,10 +829,10 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
     Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
                                      se.alpha_hat = coeff_G_X_SE_vect,
                                      gamma_hat = coeff_G_Y_vect,
-                                     se.gamma_hat = coeff_G_Y_SE_vect,
+                                     se.gamma_hat = coeff_G_Y_SE_vect#,
                                      #fraction_pleio = 0.2,
                                      #priorsd_theta = 1,
-                                     model.dir = here()
+                                     #model.dir = here()
                                      ) %>%
       summary()
 
@@ -933,8 +935,8 @@ test_mod <- run_mrhevo.sstats(alpha_hat = a_h[, V1],
                               se.alpha_hat = se_a_h[, V1],
                               gamma_hat = g_h[, V1],
                               se.gamma_hat = se_g_h[, V1],
-                              fraction_pleio = 0.2,
-                              model.dir = here(),
+                              fraction_pleio = 0.2#,
+                              #model.dir = here(),
                               #priorsd_theta = priorsd_theta
 ) %>%
   summary()
@@ -1021,7 +1023,7 @@ time_precomp <- system.time(get_summary_MR_tib_row(n_participants = 10000,
 cat("Tibble: ", tib_time)
 print(".")
 
-cat("Precomp: ", tib_time_precomp)
+cat("Precomp: ", time_precomp)
 
 ```
 

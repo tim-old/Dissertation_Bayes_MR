@@ -301,10 +301,12 @@ run_mrhevo <- function(use.sampling=TRUE, logistic=TRUE, Z, Y, sigma_y=1, X_u,
     options(mc.cores = parallel::detectCores())
     rstan_options(auto_write = TRUE)
 
-    cat("compiling stan model ... ")
+    message("compiling stan model ... ")
+    #cat("compiling stan model ... ")
     mr.stanmodel <- stan_model(file="../mrhevo/MRHevo_logistic.stan",
                                model_name="MRHevo.logistic", verbose=FALSE)
-    cat("done\n")
+    message("done\n")
+    #cat("done\n")
 
     ## check arguments for consistency
     stopifnot(length(unique(c(nrow(Z), nrow(X_u), length(Y)))) == 1)
@@ -394,24 +396,31 @@ run_mrhevo <- function(use.sampling=TRUE, logistic=TRUE, Z, Y, sigma_y=1, X_u,
 #' @param priorsd_theta Standard deviation of prior on theta.
 #' @returns An object of class stanfit. 
 run_mrhevo.sstats <- function(alpha_hat, se.alpha_hat, gamma_hat, se.gamma_hat,
-                              info, 
+                              #info, 
                               tau0=0.1, slab_scale=0.2, slab_df=2, priorsd_theta=1,
                               regularized=TRUE) {
     require(rstan)
     options(mc.cores = parallel::detectCores())
     rstan_options(auto_write = TRUE)
 
-    if(regularized) {
-        cat("compiling stan model ... ")
-        mr.sstats.stanmodel <- stan_model(file="../mrhevo/MRHevo_summarystats.stan",
-                                          model_name="MRHevo.summarystats", verbose=FALSE)
-        cat("done\n")
-    } else {
-        cat("compiling stan model for unregularized horseshoe ... ")
-        mr.sstats.stanmodel <- stan_model(file="../mrhevo/MRHorse_summarystats.stan",
-                                          model_name="MRHorse.summarystats", verbose=FALSE)
-        cat("done\n")
-    }
+    
+    # --- Abstracted to Rmd for speed
+    
+    # if(regularized) {
+    #     message("compiling stan model ... ")
+    #     #cat("compiling stan model ... ")
+    #     mr.sstats.stanmodel <- stan_model(file="../mrhevo/MRHevo_summarystats.stan",
+    #                                       model_name="MRHevo.summarystats", verbose=FALSE)
+    #     message("done\n")
+    #     #cat("done\n")
+    # } else {
+    #     message("compiling stan model for unregularized horseshoe ... ")
+    #     #cat("compiling stan model for unregularized horseshoe ... ")
+    #     mr.sstats.stanmodel <- stan_model(file="../mrhevo/MRHorse_summarystats.stan",
+    #                                       model_name="MRHorse.summarystats", verbose=FALSE)
+    #     message("done\n")
+    #     #cat("done\n")
+    # }
     
     ## check arguments for consistency
     stopifnot(length(alpha_hat)==length(gamma_hat))
@@ -424,7 +433,8 @@ run_mrhevo.sstats <- function(alpha_hat, se.alpha_hat, gamma_hat, se.gamma_hat,
 
 
     ## prior median of a half-t distribution with nu_global df
-    cat("tau0 set to ", tau0, "\n") 
+    message("tau0 set to ", tau0, "\n") 
+    #cat("tau0 set to ", tau0, "\n") 
     ## choose scale_global so that the prior median of the half-t distribution equates to tau_0
     priormedian <- qt(p=0.75, df=nu_global, lower.tail=TRUE) # 1 with nu_global=1)
     scale_global <- tau0 / priormedian
@@ -434,14 +444,15 @@ run_mrhevo.sstats <- function(alpha_hat, se.alpha_hat, gamma_hat, se.gamma_hat,
                       sd_gamma_hat=se.gamma_hat,
                       alpha_hat=alpha_hat,
                       sd_alpha_hat=se.alpha_hat,
-                      info=info, 
+                      #info=info, 
                       nu_global=nu_global,
                       nu_local=nu_local,
                       scale_global=scale_global,
                       priorsd_theta=priorsd_theta,
                       slab_scale=slab_scale,
                       slab_df=slab_df, priorsd_theta=priorsd_theta)
-    cat("Sampling posterior distribution ... ")
+    message("Sampling posterior distribution ... ")
+    #cat("Sampling posterior distribution ... ")
     options(warn=1)
     fit.mc <- rstan::sampling(object=mr.sstats.stanmodel,
                               data=data.stan,
@@ -452,7 +463,8 @@ run_mrhevo.sstats <- function(alpha_hat, se.alpha_hat, gamma_hat, se.gamma_hat,
                               control=list(adapt_delta=0.99),
                               verbose=TRUE)
     options(warn=2)
-    cat("done\n")
+    message("done\n")
+    #cat("done\n")
     return(fit.mc)
 }
 
@@ -475,10 +487,12 @@ run_mrhevo.sstats.fixedtau <- function(alpha_hat, se.alpha_hat, gamma_hat, se.ga
     ## check arguments for consistency
     stopifnot(length(alpha_hat)==length(gamma_hat))
     
-    cat("compiling stan model ... ")
+    message("compiling stan model ... ")
+    #cat("compiling stan model ... ")
     mr.fixedtau.stanmodel <- stan_model(file="../mrhevo/MRHevo_summarystats_fixedtau.stan",
                                         model_name="MRHevo.fixedtau", verbose=FALSE)
-    cat("done\n")
+    message("done\n")
+    #cat("done\n")
     
     J <- length(alpha_hat)
     
@@ -497,7 +511,8 @@ run_mrhevo.sstats.fixedtau <- function(alpha_hat, se.alpha_hat, gamma_hat, se.ga
                       slab_scale=slab_scale,
                       slab_df=slab_df, priorsd_theta=priorsd_theta)
 
-    cat("Sampling posterior distribution ... ")
+    message("Sampling posterior distribution ... ")
+    #cat("Sampling posterior distribution ... ")
     options(warn=1)
     fit.mc <- rstan::sampling(object=mr.fixedtau.stanmodel,
                               data=data.stan,
@@ -508,7 +523,8 @@ run_mrhevo.sstats.fixedtau <- function(alpha_hat, se.alpha_hat, gamma_hat, se.ga
                               control=list(adapt_delta=0.99),
                               verbose=TRUE)
     options(warn=2)
-    cat("done\n")
+    message("done\n")
+    #cat("done\n")
     return(fit.mc)
 }
 
