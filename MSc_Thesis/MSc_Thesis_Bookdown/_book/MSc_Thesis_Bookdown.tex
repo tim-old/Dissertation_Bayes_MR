@@ -158,12 +158,6 @@ Word count:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\NormalTok{opts\_chunk}\SpecialCharTok{$}\FunctionTok{set}\NormalTok{(}\AttributeTok{echo =} \ConstantTok{TRUE}\NormalTok{,}
-                      \AttributeTok{warning=}\ConstantTok{FALSE}\NormalTok{,}
-                      \AttributeTok{message=}\ConstantTok{FALSE}\NormalTok{,}
-                      \AttributeTok{error=}\ConstantTok{FALSE}\NormalTok{,}
-                      \AttributeTok{cache =} \ConstantTok{TRUE}\NormalTok{)}
-
 \CommentTok{\# Load packages}
  \FunctionTok{library}\NormalTok{(tidyverse)}
  \FunctionTok{library}\NormalTok{(TwoSampleMR)}
@@ -211,7 +205,7 @@ The data generating model used was from Appendix 3 of Bowden et al (ref); the re
 
 \emph{3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the \(\phi_j\) parameter was drawn from a uniform distribution between −0.2 and 0.2.}
 
-\emph{The causal effect of the exposure on the outcome was either \(\beta X = 0\) (null causal effect) or \(\beta X = 0.1\) (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 {[}sic{]} participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants.''} \citep{bowden_consistent_2016}
+\emph{The causal effect of the exposure on the outcome was either \(\beta X = 0\) (null causal effect) or \(\beta X = 0.1\) (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 {[}sic{]} participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants.''} \citet{bowden_consistent_2016}
 
 To reproduce this model, code was written in R to generate the relevant participant level data. First, a function (\texttt{simulate\_MR\_data}) was written which included arameters specified by Bowden et al, and also to allow testing of data simulation:
 

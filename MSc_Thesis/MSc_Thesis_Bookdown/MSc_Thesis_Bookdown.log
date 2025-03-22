@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  22 MAR 2025 20:32
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  22 MAR 2025 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -759,42 +759,45 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 
 [2]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 161.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 162.
 Missing character: There is no γ (U+03B3) in font [lmroman10-italic]:mapping=tex-text;!
+
+Package natbib Warning: Citation `bowden_consistent_2016' on page 3 undefined on input line 208.
+
 
 
 [3]
-
-Package natbib Warning: Citation `bowden_consistent_2016' on page 4 undefined on input line 214.
+Overfull \vbox (1.95996pt too high) detected at line 447
+ []
 
 
 
 [4]
-Underfull \vbox (badness 10000) detected at line 453
+Underfull \vbox (badness 10000) detected at line 447
  []
 
 
-Underfull \vbox (badness 10000) detected at line 453
+Underfull \vbox (badness 10000) detected at line 447
  []
 
 
 
 [5]
-Underfull \vbox (badness 10000) detected at line 453
+Underfull \vbox (badness 10000) detected at line 447
  []
 
 
-Underfull \vbox (badness 10000) detected at line 453
+Underfull \vbox (badness 10000) detected at line 447
  []
 
 
 
 [6]
-Underfull \vbox (badness 10000) detected at line 453
+Underfull \vbox (badness 10000) detected at line 447
  []
 
 
-Underfull \vbox (badness 10000) detected at line 453
+Underfull \vbox (badness 10000) detected at line 447
  []
 
 
@@ -808,19 +811,11 @@ Underfull \vbox (badness 10000) detected at line 453
 [10]
 
 [11]
-Underfull \vbox (badness 10000) detected at line 697
- []
-
-
-Underfull \vbox (badness 10000) detected at line 697
- []
-
-
-
-[12]
 File: 9_Test_Appendices_files/figure-latex/test-plot-prop-invalid-1.pdf Graphic file (type pdf)
 <use 9_Test_Appendices_files/figure-latex/test-plot-prop-invalid-1.pdf>
 
+
+[12]
 
 [13]
 File: 9_Test_Appendices_files/figure-latex/test-plot-gamma-1-1.pdf Graphic file (type pdf)
@@ -863,10 +858,10 @@ L3 programming layer <2024-12-09>
 Here is how much of TeX's memory you used:
  17910 strings out of 475887
  328982 string characters out of 5773725
- 897069 words of memory out of 5000000
+ 895069 words of memory out of 5000000
  40570 multiletter control sequences out of 15000+600000
  564504 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,5n,123p,1048b,481s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,6n,123p,1048b,481s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on MSc_Thesis_Bookdown.pdf (20 pages).
