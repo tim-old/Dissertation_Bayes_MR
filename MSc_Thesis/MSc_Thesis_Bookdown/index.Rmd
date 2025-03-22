@@ -1,10 +1,9 @@
 ---
 title: "Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology"
-output: 
-  bookdown: gitbook
+#bibliography: Lit_Rev_Refs.bib
 ---
 
-
+\newpage
 
 ## Acknowledgements
 
@@ -15,6 +14,15 @@ I would like to acknowledge
 
 Mine others
 
-Statement of originality
+## Statement of originality
 
 I confirm that all work is my own except where indicated, that all sources are clearly referenced....
+
+
+## Word Count
+
+Word count: 
+`r 
+wordcountaddin::word_count("9_Test_Appendices.Rmd") + 
+wordcountaddin::word_count("index.Rmd")
+`

@@ -1,5 +1,11 @@
 book_filename: "MSc_Thesis_Bookdown"
-new_session: FALSE
+output: 
+  bookdown: gitbook
+  pdf_document:
+    latex_engine: xelatex
+    dev: cairo_pdf
+    #citation_package: natbib
+new_session: TRUE
 before_chapter_script: _common.R
 delete_merged_file: true
 language:
@@ -7,3 +13,9 @@ language:
     chapter_name: "Chapter "
 fontsize: 12pt
 monofont: "Arial"
+fig_caption: TRUE
+toc: TRUE
+bibliography: Lit_Rev_Refs.bib
+#csl: vancouver-superscript.csl
+link-citations: TRUE
+urlcolor: blue

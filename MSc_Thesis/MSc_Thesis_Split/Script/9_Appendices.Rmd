@@ -1,7 +1,7 @@
 ---
 title: "9. Appendices"
-author: "B233241"
-date: "2025-01-07"
+#author: "B233241"
+#date: "2025-01-07"
 output:
   pdf_document:
     latex_engine: xelatex
@@ -12,20 +12,27 @@ knit: (function(inputFile, encoding) {
                         knit_root_dir = rprojroot::find_rstudio_root_file(),
                         output_dir = file.path("../Output/")
                         )})
+fig_caption: TRUE
+toc: TRUE
+bibliography: ../Script/Lit_Rev_Refs.bib
+csl: ../Script/vancouver-superscript.csl
+link-citations: TRUE
+urlcolor: blue  
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
                       warning=FALSE, 
                       message=FALSE, 
-                      error=FALSE)
+                      error=FALSE,
+                      cache = TRUE)
 
 # Load packages
 library(tidyverse)
 library(TwoSampleMR)
 library(rstan)
 library(here)
-library(data.table)
+library(cowplot)
 
 # Load University of Edinburgh colour palette
 source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
@@ -33,12 +40,17 @@ source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
 # Load pre-formatted plot template - call to ggplot with UoE colours
 source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 
+# Compile model for MR-Hevo
+mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", "Script", "Hevo", "MRHevo_summarystats.stan"),
+                                  model_name="MRHevo.summarystats", verbose=FALSE)
+
+
 ```
 
 
 ## Appendix A: List of Abbreviations
 
-/newpage
+\newpage
 
 ## Appendix B: Simulation Code
 
@@ -72,7 +84,7 @@ _2. In Scenario 2 (directional pleiotropy, InSIDE satisfied), the $\alpha_j$ par
 _3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the $\phi_j$ parameter was drawn from a uniform distribution between −0.2 and 0.2._
 
 
-_The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 [sic] participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants."_ (ref)
+_The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 [sic] participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants."_ [@bowden_consistent_2016]
 
 To reproduce this model, code was written in R to generate the relevant participant level data. First, a function (`simulate_MR_data`) was written which included parameters specified by Bowden et al, and also to allow testing of data simulation:
 
@@ -89,17 +101,17 @@ simulate_MR_data <- function(n_participants = as.integer(),
                              causal_effect = TRUE,
                              balanced_pleio = TRUE,
                              InSIDE_satisfied = TRUE,
-                             rand_error = TRUE,              # remove random errors, for testing
-                             two_sample = TRUE,              # 1- or 2-sample MR toggle, for testing
-                             beta_val = 0.1,                 # size of causal effect
-                             allele_freq_min = 0.01,         # frequency of effect allele
+                             rand_error = TRUE,      # remove random errors, for testing
+                             two_sample = TRUE,      # 1- or 2-sample MR toggle, for testing
+                             beta_val = 0.1,         # size of causal effect
+                             allele_freq_min = 0.01, # frequency of effect allele
                              allele_freq_max = 0.99,
-                             gamma_min = 0.03,               # size of pleiotropic effects on exposure
+                             gamma_min = 0.03,       # size of pleiotropic effects on exposure
                              gamma_max = 0.1,
-                             alpha_min = -0.2,               # size of pleiotropic effects on outcome
+                             alpha_min = -0.2,       # size of pleiotropic effects on outcome
                              alpha_max = 0.2,
-                             phi_min = -0.2,                 # size of additional pleiotropic effects
-                             phi_max = 0.2){                 # when InSIDE not satisfied
+                             phi_min = -0.2,         # size of additional pleiotropic effects
+                             phi_max = 0.2){         # when InSIDE not satisfied
   
   
   
@@ -112,7 +124,8 @@ simulate_MR_data <- function(n_participants = as.integer(),
   #
   #     gamma (vector: pleiotropic effects of each instrument on exposure)
   #     alpha (vector: pleiotropic effects of each instrument on outcome)
-  #     phi (vector: additional pleiotropic effects of each instrument when InSIDE assumption not satisfied)
+  #     phi (vector: additional pleiotropic effects of each instrument when InSIDE 
+  #     assumption not satisfied)
   U_list <- list()
   X_list <- list()
   Y_list <- list()
@@ -142,8 +155,8 @@ simulate_MR_data <- function(n_participants = as.integer(),
   # two_sample == FALSE toggles to single sample for testing simulation
          
   ifelse(two_sample == FALSE,
-         sample_2_ref <- sample_1_ref, # same participant indices for outcome + exposure - 1 sample MR
-         sample_2_ref <- (n_participants+1):(2*n_participants)) # change participant indices for outcome + exposure - 2 sample MR
+         sample_2_ref <- sample_1_ref, # 1 sample MR
+         sample_2_ref <- (n_participants+1):(2*n_participants)) # 2 sample MR
   
   # --- Create separate datasets --- #
   
@@ -348,7 +361,7 @@ str(test_data_sim)
 A function (`extract_models`) was then written to create linear models from each dataset generated as per Bowden et al:
 
 
-```{r extract-models}
+```{r extract-models, include=TRUE}
 
 
 # Create plotting tibble with Mean/SD X + Y grouped by
@@ -406,7 +419,7 @@ extract_models <- function(sim){
 ```
 
 
-This model generated estimates of the coefficient of gene:exposure association (`coeff_G_X`), coefficient of gene:outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene:exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when InSIDE assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
+These models generated estimates of the coefficient of gene:exposure association (`coeff_G_X`), coefficient of gene:outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene:exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when InSIDE assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
 
 ```{r test-extract-model}
 
@@ -479,7 +492,7 @@ test_plot_inval_0.1 <- test_plot_tib_inval_0.1 %>%
   scale_x_continuous(limits = c(-0.2, 0.2)) +
   labs(y = "Observed Gene:Outcome Coefficient",
        title = "Test: 10% of 25 Instruments Invalid",
-       subtitle = "Pleiotropic effects range -0.2 to 0.2")
+       subtitle = "Pleiotropic effects range -0.2 to 0.2") 
 
 test_plot_inval_0.3 <- test_plot_tib_inval_0.3 %>% 
   select(alpha, coeff_G_Y) %>% 
@@ -490,7 +503,8 @@ test_plot_inval_0.3 <- test_plot_tib_inval_0.3 %>%
   scale_x_continuous(limits = c(-0.2, 0.2)) +
   labs(y = "Observed Gene:Outcome Coefficient",
        title = "Test: 30% of 25 Instruments Invalid",
-       subtitle = "Pleiotropic effects range -0.2 to 0.2")
+       subtitle = "Pleiotropic effects range -0.2 to 0.2") +
+  theme(axis.title.y = element_blank())
 
 test_plot_inval_0.5 <- test_plot_tib_inval_0.5 %>% 
   select(alpha, coeff_G_Y) %>% 
@@ -501,11 +515,14 @@ test_plot_inval_0.5 <- test_plot_tib_inval_0.5 %>%
   scale_x_continuous(limits = c(-0.2, 0.2)) +
   labs(y = "Observed Gene:Outcome Coefficient",
        title = "Test: 50% of 25 Instruments Invalid",
-       subtitle = "Pleiotropic effects range -0.2 to 0.2")
+       subtitle = "Pleiotropic effects range -0.2 to 0.2") +
+  theme(axis.title.y = element_blank())
 
-test_plot_inval_0.1
-test_plot_inval_0.3
-test_plot_inval_0.5
+plot_grid(test_plot_inval_0.1,
+          test_plot_inval_0.3,
+          test_plot_inval_0.5,
+          ncol = 3,
+          rel_widths = c(1.1, 1, 1))
 
 
 ```
@@ -540,7 +557,7 @@ test_plot_tib_gamma_1 %>%
 
 ```
 
-
+For the next phase of testing, a function (`plot_GY_GX`) was written to plot the coefficients for gene:exposure versus gene:outcome as estimated using the previously created linear models:
 
 ```{r plot-GY-GX-fn, warning=FALSE}
 
@@ -560,18 +577,22 @@ plot_GY_GX <- function(model_tib,
     mutate(Gradient = round(coefficients(lm(coeff_G_Y ~ 0 + coeff_G_X, digits = 2))[1], 5)) %>%
     plot_template() +
     aes(x = coeff_G_X, y = coeff_G_Y) +
-    geom_point() +
+    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
     geom_abline(aes(intercept = 0, 
-                    slope = Gradient),) +
+                    slope = Gradient),
+                size = 1,
+                colour = edin_uni_blue_hex) +
     geom_text(aes(x = beta_x, # labels with gradient (causal effect estimate)
                   y = beta_y,
-                  label = paste0("\U03B2 == ", Gradient)), #beta
+                  label = paste0("\U03B2 == ", as.character(Gradient))), #beta
+              colour = edin_uni_blue_hex, 
               hjust = 0,
               parse = TRUE) +
     annotate("text",
              x = beta_x,      # add hat to beta
              y = beta_y + hat_offset,
              label = paste("\U02C6"),
+             colour = edin_uni_blue_hex, 
              hjust = -0.4,
              vjust = 0.9,
              parse = TRUE) +
@@ -590,19 +611,12 @@ plot_GY_GX <- function(model_tib,
 
 # No causal effect present
 set.seed(1701)
-sim_test_data_causal_0 <- simulate_MR_data(n_participants = 10000,
-                                           n_instruments = 1000,
+sim_test_data_causal_0 <- simulate_MR_data(n_participants = 1000,
+                                           n_instruments = 100,
                                            n_datasets = 1,
                                            prop_invalid = 0,
                                            causal_effect = FALSE,
-                                           balanced_pleio = TRUE,
-                                           InSIDE_satisfied = TRUE,
-                                           rand_error = FALSE,
-                                           beta_val = 0.1,                 # size of causal effect
-                                           gamma_min = 0.03,               # size of pleiotropic effects on exposure
-                                           gamma_max = 0.1,
-                                           alpha_min = -0.2,               # size of pleiotropic effects on outcome
-                                           alpha_max = 0.2)
+                                           rand_error = FALSE)
 
 test_plot_tib_causal_0 <- extract_models(sim_test_data_causal_0)[[1]]
 
@@ -623,17 +637,10 @@ set.seed(1701)
 sim_test_data_causal_1 <- simulate_MR_data(n_participants = 1000,
                                            n_instruments = 100,
                                            n_datasets = 1,
-                                           prop_invalid = 0.2,
+                                           prop_invalid = 0,
                                            causal_effect = TRUE,
-                                           balanced_pleio = TRUE,
-                                           InSIDE_satisfied = TRUE,
-                                           rand_error = FALSE, 
-                                           two_sample = FALSE,
-                                           beta_val = 0.1,                 # size of causal effect
-                                           gamma_min = 0.03,               # size of pleiotropic effects on exposure
-                                           gamma_max = 0.1,
-                                           alpha_min = -0.2,               # size of pleiotropic effects on outcome
-                                           alpha_max = 0.2)
+                                           rand_error = FALSE,
+                                           two_sample = FALSE)
 
 test_plot_tib_causal_1 <- extract_models(sim_test_data_causal_1)[[1]]
 
@@ -644,7 +651,7 @@ plot_GY_GX(test_plot_tib_causal_1, plot_title = "Causal Effect Present")
 
 
 
-```{r test-plot-phi, warning=FALSE}
+```{r test-plot-phi, warning=FALSE, include=FALSE}
 
 # Check violating InSIDE assumption results in distorted 
 # estimation of pleiotropic effects
@@ -737,7 +744,7 @@ test_plot_tib_phi_F %>%
 
 
 
-```{r summary-MR-tib-row-fn, warning=FALSE}
+```{r summary-MR-tib-row-fn, warning=FALSE, include=FALSE}
 
 # Run local copy of MR-Hevo functions
 # Not using full package due to conflicts with Windows
@@ -751,6 +758,7 @@ rstan_options(auto_write = TRUE, save_dso = TRUE)
 # Compile model for MR-Hevo
 mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", "Script", "Hevo", "MRHevo_summarystats.stan"),
                                   model_name="MRHevo.summarystats", verbose=FALSE)
+
 # --- Need to comment out model.dir in Hevo_results --- #  
 
 
@@ -868,10 +876,7 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
     Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
                                      se.alpha_hat = coeff_G_X_SE_vect,
                                      gamma_hat = coeff_G_Y_vect,
-                                     se.gamma_hat = coeff_G_Y_SE_vect#,
-                                     #fraction_pleio = 0.2,
-                                     #priorsd_theta = 1,
-                                     #model.dir = here("MSc_Thesis_Split", "Script", "Hevo")
+                                     se.gamma_hat = coeff_G_Y_SE_vect
                                      ) %>%
       summary()
 
@@ -936,99 +941,97 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
 
 
 
-```{r test-summary-MR-tib-row-fn}
+```{r test-summary-MR-tib-row-fn, include=FALSE}
 
 
-
-#set.seed(14101583)
-set.seed(1701)
-test_tib_summ_MR <-  get_summary_MR_tib_row(n_participants = 100000,
-                                            n_instruments = 25,
-                                            n_datasets = 1,
-                                            prop_invalid = 0.3,
-                                            beta_val = 1,
-                                            causal_effect = TRUE,
-                                            rand_error = FALSE, 
-                                            two_sample = FALSE,
-                                            balanced_pleio = TRUE,
-                                            InSIDE_satisfied = TRUE)
-
-
-# Causal effect present
-set.seed(1701)
-sim_test_data_causal_2 <- simulate_MR_data(n_participants = 100000,
-                                           n_instruments = 25,
-                                           n_datasets = 1,
-                                           prop_invalid = 0.3,
-                                           beta_val = 1,                 # size of causal effect
-                                           causal_effect = TRUE,
-                                           rand_error = FALSE, 
-                                           two_sample = FALSE,
-                                           balanced_pleio = TRUE,
-                                           InSIDE_satisfied = TRUE,
-                                           allele_freq_min = 0.01,
-                                           allele_freq_max = 0.99,
-                                           gamma_min = 0.03,               # size of pleiotropic effects on exposure
-                                           gamma_max = 0.1,
-                                           alpha_min = -0.2,               # size of pleiotropic effects on outcome
-                                           alpha_max = 0.2,
-                                           phi_min = 0,
-                                           phi_max = 0)
-
-#sim_test_data_causal_2
-
-test_plot_tib_causal_2 <- extract_models(sim_test_data_causal_2)[[1]]
-
-plot_GY_GX(test_plot_tib_causal_2, plot_title = "Causal Effect Present", x_max = 0.3, y_max = 0.3)
-
-test_tib_summ_MR
-
+# set.seed(14101583)
+# test_tib_summ_MR <-  get_summary_MR_tib_row(n_participants = 100000,
+#                                             n_instruments = 25,
+#                                             n_datasets = 1,
+#                                             prop_invalid = 0.3,
+#                                             beta_val = 1,
+#                                             causal_effect = TRUE,
+#                                             rand_error = FALSE, 
+#                                             two_sample = FALSE,
+#                                             balanced_pleio = TRUE,
+#                                             InSIDE_satisfied = TRUE)
+# 
+# 
+# # Causal effect present
+# set.seed(14101583)
+# sim_test_data_causal_2 <- simulate_MR_data(n_participants = 100000,
+#                                            n_instruments = 25,
+#                                            n_datasets = 1,
+#                                            prop_invalid = 0.3,
+#                                            beta_val = 1,                 # size of causal effect
+#                                            causal_effect = TRUE,
+#                                            rand_error = FALSE, 
+#                                            two_sample = FALSE,
+#                                            balanced_pleio = TRUE,
+#                                            InSIDE_satisfied = TRUE,
+#                                            allele_freq_min = 0.01,
+#                                            allele_freq_max = 0.99,
+#                                            gamma_min = 0.03,               # size of pleiotropic effects on exposure
+#                                            gamma_max = 0.1,
+#                                            alpha_min = -0.2,               # size of pleiotropic effects on outcome
+#                                            alpha_max = 0.2,
+#                                            phi_min = 0,
+#                                            phi_max = 0)
+# 
+# #sim_test_data_causal_2
+# 
+# test_plot_tib_causal_2 <- extract_models(sim_test_data_causal_2)[[1]]
+# 
+# plot_GY_GX(test_plot_tib_causal_2, plot_title = "Causal Effect Present", x_max = 0.3, y_max = 0.3)
+# 
+# test_tib_summ_MR
+# 
 
 ```
 
 
 
-```{r no-causal-tenk-point1-scen1, echo=FALSE, warning=FALSE, cache=TRUE}
+```{r no-causal-tenk-point1-scen1, echo=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
 
-#set.seed(14101583)
-no_causal_tenk_point1_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
-                                                       n_instruments = 25,
-                                                       n_datasets = 5,
-                                                       prop_invalid = 0.1,
-                                                       causal_effect = FALSE,
-                                                       balanced_pleio = TRUE,
-                                                       InSIDE_satisfied = TRUE)
-
-no_causal_tenk_point1_scen1
-
-```
-
-```{r no-causal-tenk-point2-scen1, echo=FALSE, warning=FALSE, cache=TRUE}
-
-#set.seed(14101583)
-no_causal_tenk_point2_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
-                                                       n_instruments = 25,
-                                                       n_datasets = 10,
-                                                       prop_invalid = 0.5,
-                                                       causal_effect = FALSE,
-                                                       balanced_pleio = FALSE,
-                                                       InSIDE_satisfied = FALSE)
-
-no_causal_tenk_point2_scen1
+# set.seed(14101583)
+# no_causal_tenk_point1_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
+#                                                        n_instruments = 25,
+#                                                        n_datasets = 5,
+#                                                        prop_invalid = 0.1,
+#                                                        causal_effect = FALSE,
+#                                                        balanced_pleio = TRUE,
+#                                                        InSIDE_satisfied = TRUE)
+# 
+# no_causal_tenk_point1_scen1
 
 ```
 
+```{r no-causal-tenk-point2-scen1, echo=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
 
-```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE}
-
-scen1_sim_summ_tib <- bind_rows(no_causal_tenk_point1_scen1, 
-                                no_causal_tenk_point2_scen1)
-
-scen1_sim_summ_tib
+# set.seed(14101583)
+# no_causal_tenk_point2_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
+#                                                        n_instruments = 25,
+#                                                        n_datasets = 10,
+#                                                        prop_invalid = 0.5,
+#                                                        causal_effect = FALSE,
+#                                                        balanced_pleio = FALSE,
+#                                                        InSIDE_satisfied = FALSE)
+# 
+# no_causal_tenk_point2_scen1
 
 ```
 
 
+```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
+
+# scen1_sim_summ_tib <- bind_rows(no_causal_tenk_point1_scen1, 
+#                                 no_causal_tenk_point2_scen1)
+# 
+# scen1_sim_summ_tib
+
+```
 
 
-## Citation Search Strategy
+\newpage
+
+## Appendix C: Citation Search Strategy
