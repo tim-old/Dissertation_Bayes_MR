@@ -326,39 +326,6 @@ simulate_MR_data <- function(n_participants = as.integer(),
 }
 ```
 
-```{r sim-test-causal-2}
-
-
-
-# Causal effect present
-set.seed(170)
-sim_test_data_causal_2 <- simulate_MR_data(n_participants = 1000,
-                                           n_instruments = 100,
-                                           n_datasets = 1,
-                                           prop_invalid = 0.3,
-                                           causal_effect = TRUE,
-                                           balanced_pleio = TRUE,
-                                           InSIDE_satisfied = TRUE,
-                                           rand_error = FALSE, 
-                                           two_sample = FALSE,
-                                           beta_val = 0.1,                 # size of causal effect
-                                           allele_freq_min = 0.01,
-                                           allele_freq_max = 0.99,
-                                           gamma_min = 0.03,               # size of pleiotropic effects on exposure
-                                           gamma_max = 0.1,
-                                           alpha_min = -0.2,               # size of pleiotropic effects on outcome
-                                           alpha_max = 0.2,
-                                           phi_min = 0,
-                                           phi_max = 0)
-
-#sim_test_data_causal_2
-
-test_plot_tib_causal_2 <- extract_models(sim_test_data_causal_2)[[1]]
-
-plot_GY_GX(test_plot_tib_causal_2, plot_title = "Causal Effect Present")
-
-
-```
 This initial simulation function generated data in the following format:
 
 ```{r test-data-sim, warning=FALSE}
@@ -753,20 +720,23 @@ test_plot_tib_phi_F %>%
 ```
 
 
+
+
+
 ```{r summary-MR-tib-row-fn, warning=FALSE}
 
 
 # # Standard set-up for RStan
-# options(mc.cores = parallel::detectCores())
-# rstan_options(auto_write = TRUE, save_dso = TRUE)
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE, save_dso = TRUE)
 # 
 # # Run local MR-Hevo functions file
 # # Changes to suppress messages/prevent model recompiling
 # source(here("functions.mrhevo.R"))
 # 
-# # Compile model for MR-Hevo
-# mr.sstats.stanmodel <- stan_model(file= here("MRHevo_summarystats.stan"),
-#                                   model_name="MRHevo.summarystats", verbose=FALSE)
+# Compile model for MR-Hevo
+mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", "Script", "Hevo", "MRHevo_summarystats.stan"),
+                                  model_name="MRHevo.summarystats", verbose=FALSE)
 # --- Need to comment out model.dir in Hevo_results --- #  
 
 
@@ -878,16 +848,16 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
                                       b_out = coeff_G_Y_vect,
                                       se_exp = coeff_G_X_SE_vect,
                                       se_out = coeff_G_Y_SE_vect,
-                                      parameters = list(nboot = 100000))
+                                      parameters = list(nboot = 1000))
     
     # Results from MR-Hevo method
     Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
                                      se.alpha_hat = coeff_G_X_SE_vect,
                                      gamma_hat = coeff_G_Y_vect,
-                                     se.gamma_hat = coeff_G_Y_SE_vect,
+                                     se.gamma_hat = coeff_G_Y_SE_vect#,
                                      #fraction_pleio = 0.2,
                                      #priorsd_theta = 1,
-                                     model.dir = here()
+                                     #model.dir = here("MSc_Thesis_Split", "Script", "Hevo")
                                      ) %>%
       summary()
 
@@ -915,19 +885,10 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
     
     
   }
-  
-  # Calculate MR-Hevo p-values from CI, based on https://doi.org/10.1136/bmj.d2304:
-  #
-  # If the upper and lower limits of a 95% CI are u and l respectively:
-  # - 1) calculate the standard error: SE = (u − l)/(2×1.96)
-  # - 2) calculate the test statistic: z = Est/SE
-  # - 3) calculate the P value2: P = exp(−0.717×z − 0.416×z2).
+
   
   results_tib <- results_tib %>% 
-    mutate(Hevo_z_stat = Hevo_est/Hevo_se,
-           Hevo_pval = exp(-0.717 * Hevo_z_stat - 0.416* Hevo_z_stat^2 ),
-           Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
-           #Hevo_p_threshold = 0.05 / n_datasets)
+    mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
   
   output_tib_row <- results_tib %>% 
     summarise(N = n_datasets,
@@ -939,148 +900,25 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
               WME_Pos_Rate = length(WME_pval[WME_pval < 0.05]) / n_datasets,
               Hevo_Av = mean(Hevo_est),
               Hevo_SE = mean(Hevo_se),
-              Hevo_Pos_Rate = length(Hevo_causal_detected)#[Hevo_pval < (0.05/n_datasets) ] ) / n_datasets
+              Hevo_Pos_Rate = sum(Hevo_causal_detected) / n_datasets#[Hevo_pval < (0.05/n_datasets) ] ) / n_datasets
               #Hevo_Pos_Rate = length(Hevo_pval[Hevo_pval < (0.05/n_datasets) ] ) / n_datasets
     ) %>% 
     mutate(across(where(is.double), round, 3))
   
-  #return(output_tib_row)
-  return(results_tib)
+  return(output_tib_row)
+  #return(results_tib)
   
 }
 
 ```
 
-```{r hevo-test, warning=FALSE, include=FALSE}
-
-
-#use.sampling <- TRUE
-#logistic <- TRUE
-# priorsd_theta <- 1
-#newrun <- FALSE
-
-set.seed(1701)
-sim_test_data_hevo <- simulate_MR_data(n_participants = 10000,
-                                       n_instruments = 25,
-                                       n_datasets = 2,
-                                       prop_invalid = 0.1,
-                                       beta_val = 0.1,
-                                       causal_effect = TRUE,
-                                       balanced_pleio = TRUE,
-                                       InSIDE_satisfied = TRUE,
-                                       rand_error = TRUE)
-
-
-test_plot_tib_hevo <- extract_models(sim_test_data_hevo)[[2]]
-
-
-#mr_weighted_median(b_exp = a_h_vect,b_out = g_h_vect,se_exp = se_a_h_vect,se_out = se_g_h_vect)
-
-a_h <- as.data.table(test_plot_tib_hevo$coeff_G_X) 
-
-se_a_h <- as.data.table(test_plot_tib_hevo$coeff_G_X_SE)
-
-g_h <- as.data.table(test_plot_tib_hevo$coeff_G_Y)
-
-se_g_h <- as.data.table(test_plot_tib_hevo$coeff_G_X_SE)
-#names(se_g_h) <-  c("Instrument", "Value")
-
-
-test_mod <- run_mrhevo.sstats(alpha_hat = a_h[, V1],
-                              se.alpha_hat = se_a_h[, V1],
-                              gamma_hat = g_h[, V1],
-                              se.gamma_hat = se_g_h[, V1],
-                              fraction_pleio = 0.2,
-                              model.dir = here(),
-                              #priorsd_theta = priorsd_theta
-) %>%
-  summary()
-
-
-# As tibble
-
-a_h_tib <- test_plot_tib_hevo$coeff_G_X
-
-se_a_h_tib <- test_plot_tib_hevo$coeff_G_X_SE
-
-g_h_tib <- test_plot_tib_hevo$coeff_G_Y
-
-se_g_h_tib <- test_plot_tib_hevo$coeff_G_X_SE
-#names(se_g_h) <-  c("Instrument", "Value")
-
-
-test_mod_tib <- run_mrhevo.sstats(alpha_hat = a_h_tib,
-                              se.alpha_hat = se_a_h_tib,
-                              gamma_hat = g_h_tib,
-                              se.gamma_hat = se_g_h_tib,
-                              fraction_pleio = 0.2,
-                              model.dir = here(),
-                              #priorsd_theta = priorsd_theta
-) %>%
-  summary()
-
-
-# As vector
-
-a_h_vect <- as.double(test_plot_tib_hevo$coeff_G_X)
-
-se_a_h_vect <- as.double(test_plot_tib_hevo$coeff_G_X_SE)
-
-g_h_vect <- as.double(test_plot_tib_hevo$coeff_G_Y)
-
-se_g_h_vect <- as.double(test_plot_tib_hevo$coeff_G_X_SE)
-#names(se_g_h) <-  c("Instrument", "Value")
-
-
-test_mod_vect <- run_mrhevo.sstats(alpha_hat = a_h_vect,
-                              se.alpha_hat = se_a_h_vect,
-                              gamma_hat = g_h_vect,
-                              se.gamma_hat = se_g_h_vect,
-                              fraction_pleio = 0.2,
-                              model.dir = here()
-) %>%
-  summary()
-
-
-
-```
-
-```{r system-time-testing, include=FALSE}
-
-
-time_standard <- system.time(get_summary_MR_tib_row(n_participants = 10000,
-                                                    n_instruments = 25,
-                                                    n_datasets = 5,
-                                                    prop_invalid = 0.1,
-                                                    beta_val = 0.1,
-                                                    causal_effect = TRUE,
-                                                    balanced_pleio = TRUE,
-                                                    InSIDE_satisfied = TRUE,
-                                                    rand_error = TRUE)
-                             )
-
-
-
-time_precomp <- system.time(get_summary_MR_tib_row(n_participants = 10000,
-                                                    n_instruments = 25,
-                                                    n_datasets = 5,
-                                                    prop_invalid = 0.1,
-                                                    beta_val = 0.1,
-                                                    causal_effect = TRUE,
-                                                    balanced_pleio = TRUE,
-                                                    InSIDE_satisfied = TRUE,
-                                                    rand_error = TRUE)
-                            )
 
 
 
 
-cat("Tibble: ", tib_time)
-print(".")
 
-cat("Precomp: ", tib_time_precomp)
 
-```
+
 
 
 
@@ -1089,17 +927,45 @@ cat("Precomp: ", tib_time_precomp)
 
 
 #set.seed(14101583)
-#set.seed(1701)
-test_tib_summ_MR <-  get_summary_MR_tib_row(n_participants = 10000,
+set.seed(1701)
+test_tib_summ_MR <-  get_summary_MR_tib_row(n_participants = 100000,
                                             n_instruments = 25,
                                             n_datasets = 1,
-                                            prop_invalid = 0.1,
-                                            beta_val = 10000,
+                                            prop_invalid = 0.3,
+                                            beta_val = 1,
                                             causal_effect = TRUE,
                                             rand_error = FALSE, 
                                             two_sample = FALSE,
                                             balanced_pleio = TRUE,
                                             InSIDE_satisfied = TRUE)
+
+
+# Causal effect present
+set.seed(1701)
+sim_test_data_causal_2 <- simulate_MR_data(n_participants = 100000,
+                                           n_instruments = 25,
+                                           n_datasets = 1,
+                                           prop_invalid = 0.3,
+                                           beta_val = 1,                 # size of causal effect
+                                           causal_effect = TRUE,
+                                           rand_error = FALSE, 
+                                           two_sample = FALSE,
+                                           balanced_pleio = TRUE,
+                                           InSIDE_satisfied = TRUE,
+                                           allele_freq_min = 0.01,
+                                           allele_freq_max = 0.99,
+                                           gamma_min = 0.03,               # size of pleiotropic effects on exposure
+                                           gamma_max = 0.1,
+                                           alpha_min = -0.2,               # size of pleiotropic effects on outcome
+                                           alpha_max = 0.2,
+                                           phi_min = 0,
+                                           phi_max = 0)
+
+#sim_test_data_causal_2
+
+test_plot_tib_causal_2 <- extract_models(sim_test_data_causal_2)[[1]]
+
+plot_GY_GX(test_plot_tib_causal_2, plot_title = "Causal Effect Present", x_max = 0.3, y_max = 0.3)
 
 test_tib_summ_MR
 
@@ -1107,12 +973,13 @@ test_tib_summ_MR
 ```
 
 
+
 ```{r no-causal-tenk-point1-scen1, echo=FALSE, warning=FALSE, cache=TRUE}
 
 #set.seed(14101583)
 no_causal_tenk_point1_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
                                                        n_instruments = 25,
-                                                       n_datasets = 2,
+                                                       n_datasets = 5,
                                                        prop_invalid = 0.1,
                                                        causal_effect = FALSE,
                                                        balanced_pleio = TRUE,
@@ -1127,11 +994,11 @@ no_causal_tenk_point1_scen1
 #set.seed(14101583)
 no_causal_tenk_point2_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
                                                        n_instruments = 25,
-                                                       n_datasets = 1,
-                                                       prop_invalid = 0.2,
+                                                       n_datasets = 10,
+                                                       prop_invalid = 0.5,
                                                        causal_effect = FALSE,
-                                                       balanced_pleio = TRUE,
-                                                       InSIDE_satisfied = TRUE)
+                                                       balanced_pleio = FALSE,
+                                                       InSIDE_satisfied = FALSE)
 
 no_causal_tenk_point2_scen1
 
