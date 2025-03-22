@@ -475,7 +475,7 @@ run_mrhevo.sstats <- function(alpha_hat, se.alpha_hat, gamma_hat, se.gamma_hat,
                               priorsd_theta=1, iter=4000, warmup=2000) {
 
     # --- Comment out - abstract to Rmd --- #
-    mr.stanmodel <- stanmodels$MRHevo_summarystats
+    # mr.stanmodel <- stanmodels$MRHevo_summarystats
 
     ## check arguments for consistency
     stopifnot(length(alpha_hat)==length(gamma_hat))

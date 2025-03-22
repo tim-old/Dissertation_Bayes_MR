@@ -122,13 +122,16 @@ simulate_MR_data <- function(n_participants = as.integer(),
   prop_invalid_list <- list()
   
   
-  # --- Assign features common to all datasets ---
+  # --- Assign features common to all datasets --- #
   
   beta <- if_else(causal_effect == TRUE, # size of causal effect
                   beta_val,
                   0)
   
-  
+  sample_1_ref <- 1:n_participants
+  ifelse(two_sample == FALSE,
+         sample_2_ref <- sample_1_ref,
+         sample_2_ref <- (n_participants+1):(2*n_participants))
   
   # --- Create separate datasets ---
   
@@ -212,7 +215,7 @@ simulate_MR_data <- function(n_participants = as.integer(),
     phi_vect <- double() # Pleiotropic effects of confounders on outcome
     
     for(j in 1:n_instruments){
-      ifelse(invalid_instrument_vect[j] == FALSE,
+      ifelse(invalid_instrument_vect[j] == 0,
              alpha_vect[j] <- 0,
              ifelse(balanced_pleio == TRUE,
                     alpha_vect[j] <- runif(n = n_instruments,
@@ -227,7 +230,7 @@ simulate_MR_data <- function(n_participants = as.integer(),
       # Assign default phi = 0 unless unbalanced pleiotropy & 
       # InSIDE assumption not satisfied & genetic instrument invalid
       if(balanced_pleio == FALSE & InSIDE_satisfied == FALSE){
-        ifelse(invalid_instrument_vect[j] == FALSE,
+        ifelse(invalid_instrument_vect[j] == 0,
                phi_vect[j] <- 0,
                phi_vect[j] <- runif(n = 1,
                                     min = phi_min,
@@ -251,13 +254,16 @@ simulate_MR_data <- function(n_participants = as.integer(),
     
     Ui_vect <-  G_mat %*% phi_vect + U_epsilon_vect
     
-    Xi_vect <-  G_mat[1:n_participants, ] %*% gamma_vect + 
-      Ui_vect[1:n_participants, ] + 
+    Xi_vect <-  G_mat[sample_1_ref, ] %*% gamma_vect + 
+    #Xi_vect <-  G_mat[1:n_participants, ] %*% gamma_vect #+ 
+      Ui_vect[sample_1_ref, ] + 
       X_epsilon_vect
     
-    Yi_vect <-  G_mat[(n_participants+1):(2*n_participants), ] %*% alpha_vect + 
+    Yi_vect <-  G_mat[sample_2_ref, ] %*% alpha_vect + 
+    #Yi_vect <-  G_mat[(n_participants+1):(2*n_participants), ] %*% alpha_vect #+ 
       beta * Xi_vect + 
-      Ui_vect[(n_participants+1):(2*n_participants), ] + 
+      Ui_vect[sample_2_ref, ] + 
+      #Ui_vect[(n_participants+1):(2*n_participants), ] + 
       Y_epsilon_vect
     
     
@@ -269,14 +275,18 @@ simulate_MR_data <- function(n_participants = as.integer(),
     
     Y_list[[n]] <- Yi_vect
     
-    G_X_list[[n]] <- G_mat[1:n_participants, ]
+    G_X_list[[n]] <- G_mat[sample_1_ref, ]
+    #G_X_list[[n]] <- G_mat[1:n_participants, ]
     
     # Default is to estimate gene:outcome coefficient from different sample
     # to gene:exposure coefficient (i.e. simulating 2-sample MR)
     # two_sample == FALSE toggles to single sample for testing simulation
-    ifelse(two_sample == TRUE,
-           G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ],
-           G_Y_list[[n]] <- G_mat[1:n_participants, ])
+    
+    G_Y_list[[n]] <- G_mat[sample_2_ref, ]
+    
+    # ifelse(two_sample == TRUE,
+    #        G_Y_list[[n]] <- G_mat[(n_participants+1):(2*n_participants), ],
+    #        G_Y_list[[n]] <- G_mat[1:n_participants, ])
     
     
     alpha_list[[n]] <- alpha_vect
@@ -311,10 +321,44 @@ simulate_MR_data <- function(n_participants = as.integer(),
   )
   
   return(combined_list)
-  
+  #return(sample_2_ref)
+         #, X = head(Xi_vect)))
 }
 ```
 
+```{r sim-test-causal-2}
+
+
+
+# Causal effect present
+set.seed(170)
+sim_test_data_causal_2 <- simulate_MR_data(n_participants = 1000,
+                                           n_instruments = 100,
+                                           n_datasets = 1,
+                                           prop_invalid = 0.3,
+                                           causal_effect = TRUE,
+                                           balanced_pleio = TRUE,
+                                           InSIDE_satisfied = TRUE,
+                                           rand_error = FALSE, 
+                                           two_sample = FALSE,
+                                           beta_val = 0.1,                 # size of causal effect
+                                           allele_freq_min = 0.01,
+                                           allele_freq_max = 0.99,
+                                           gamma_min = 0.03,               # size of pleiotropic effects on exposure
+                                           gamma_max = 0.1,
+                                           alpha_min = -0.2,               # size of pleiotropic effects on outcome
+                                           alpha_max = 0.2,
+                                           phi_min = 0,
+                                           phi_max = 0)
+
+#sim_test_data_causal_2
+
+test_plot_tib_causal_2 <- extract_models(sim_test_data_causal_2)[[1]]
+
+plot_GY_GX(test_plot_tib_causal_2, plot_title = "Causal Effect Present")
+
+
+```
 This initial simulation function generated data in the following format:
 
 ```{r test-data-sim, warning=FALSE}
@@ -333,6 +377,8 @@ test_data_sim <- simulate_MR_data(n_participants = 1000,
 str(test_data_sim)
 
 ```
+
+
 A function (`extract_models`) was then written to create linear models from each dataset generated as per Bowden et al:
 
 
@@ -393,6 +439,7 @@ extract_models <- function(sim){
 
 ```
 
+
 This model generated estimates of the coefficient of gene:exposure association (`coeff_G_X`), coefficient of gene:outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene:exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when InSIDE assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
 
 ```{r test-extract-model}
@@ -400,6 +447,7 @@ This model generated estimates of the coefficient of gene:exposure association (
 test_extract_model <- extract_models(test_data_sim)
 
 summary(test_extract_model[[1]])
+#test_extract_model[[1]]
 
 ```
 
@@ -516,32 +564,41 @@ test_plot_tib_alpha %>%
 
 ```{r plot-GY-GX-fn, warning=FALSE}
 
-plot_GY_GX <- function(model_tib, plot_title = as.character(NA)){
+plot_GY_GX <- function(model_tib, 
+                       plot_title = as.character(NA),
+                       x_min = 0,
+                       x_max = 0.1,
+                       y_min = -0.05,
+                       y_max = 0.06,
+                       beta_x = 0.075,
+                       beta_y = 0.05,
+                       hat_offset = 0.003)
+  {
   
   model_tib %>% 
-    mutate(Gradient = round(coefficients(lm(coeff_G_Y ~ 0 + coeff_G_X))[1], 5)) %>%
+    mutate(Gradient = round(coefficients(lm(coeff_G_Y ~ 0 + coeff_G_X, digits = 2))[1], 5)) %>%
     ggplot() +
     aes(x = coeff_G_X, y = coeff_G_Y) +
     geom_point() +
     geom_abline(aes(intercept = 0, 
                     slope = Gradient),) +
-    # geom_text(aes(x = 0.075, # labels with gradient (causal effect estimate)
-    #               y = 0.05, 
-    #               label = paste0("\U03B2 == ", Gradient)), #beta
-    #           hjust = 0,
-    #           parse = TRUE) +
-    # annotate("text", 
-    #          x = 0.075,      # add hat to beta
-    #          y = 0.053, 
-    #          label = paste("\U02C6"),
-    #          hjust = -0.4,
-    #          vjust = 0.9,
-    #          parse = TRUE) +
+    geom_text(aes(x = beta_x, # labels with gradient (causal effect estimate)
+                  y = beta_y,
+                  label = paste0("\U03B2 == ", Gradient)), #beta
+              hjust = 0,
+              parse = TRUE) +
+    annotate("text",
+             x = beta_x,      # add hat to beta
+             y = beta_y + hat_offset,
+             label = paste("\U02C6"),
+             hjust = -0.4,
+             vjust = 0.9,
+             parse = TRUE) +
     labs(title = plot_title,
          x = "Gene:Exposure Coefficient",
          y = "Gene:Outcome Coefficient") +
-    xlim(0, 0.1) +
-    ylim(-0.05, 0.06)
+    xlim(x_min, x_max) +
+    ylim(y_min, y_max)
   
 }
 
@@ -585,7 +642,7 @@ set.seed(1701)
 sim_test_data_causal_1 <- simulate_MR_data(n_participants = 1000,
                                            n_instruments = 100,
                                            n_datasets = 1,
-                                           prop_invalid = 0,
+                                           prop_invalid = 0.2,
                                            causal_effect = TRUE,
                                            balanced_pleio = TRUE,
                                            InSIDE_satisfied = TRUE,
