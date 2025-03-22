@@ -1,8 +1,7 @@
 ## University of Edinburgh Approved Colour Palettes
 ## source: https://uoe.sharepoint.com/sites/Brand/SitePages/Colours.aspx
-## Author: Tim Old - tim.old@doctors.org.uk
 
-## all colours specified seperately as both hexidecimal and RGB formats 
+## all colours specified separately as both hexidecimal and RGB formats 
 ## default call to rgb() assume value of 0-1, need to set maxColorValue = 255 to match formatting
 ## from University of Edinburgh site
 ## Similarly, original hex values don't convert into R, inc because R format starts with "#" - 

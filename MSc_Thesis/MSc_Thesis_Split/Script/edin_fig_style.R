@@ -1,6 +1,3 @@
-# get University of Edinburgh colours
-source("../../edin_uni_colours.R")
-
 # plot template
 plot_template <- function(data)  {
   data %>%
