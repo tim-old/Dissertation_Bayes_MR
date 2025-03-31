@@ -104,23 +104,55 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{booktabs}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{plainnat}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
   pdftitle={Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology},
+  pdfauthor={B233241},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology}
-\author{}
-\date{\vspace{-2.5em}}
+\author{B233241}
+\date{September 2024 - June 2025}
 
 \begin{document}
 \maketitle
@@ -146,15 +178,75 @@ I confirm that all work is my own except where indicated, that all sources are c
 \subsection{Word Count}\label{word-count}
 
 Word count:
-918
-
-\section{Appendices}\label{appendices}
-
-\subsection{Appendix A: List of Abbreviations}\label{appendix-a-list-of-abbreviations}
+922
 
 \newpage
 
-\subsection{Appendix B: Simulation Code}\label{appendix-b-simulation-code}
+\section{Introduction and Background}\label{introduction-and-background}
+
+Mendelian randomisation (MR) is a methodology intended to support causal inference from observational data. It applies the principles of instrumental variable (IV) analysis to genetic data: naturally occurring genetic variants - ``instruments'' -- with a known association to an exposure of interest are chosen, and by comparing the association of those same genetic instruments to an outcome of interest, genetic data can be used to investigate causal links between exposures and outcomes\textsuperscript{1}. In theory, provided that the assumptions of IV analysis are met, random assignment of genetic variants from parents to offspring during meiosis can create a form of natural experiment, analogous to randomisation during a clinical trial -- both measured and unmeasured confounders should be distributed evenly between the groups created, allowing valid causal inference after other sources of bias and random variation are accounted for\textsuperscript{2}.
+
+Three key assumptions of IV analysis must be met {[}@ \textbf{\emph{REF}}{]}:
+1. Relevance -- the genetic variant must be associated with the exposure of interest
+2. Independence -- the genetic variant is independent of confounders of the relationship between exposure and outcome
+3. Exclusion restriction -- the genetic variant must not be associated with the outcome except via the exposure
+
+If these assumptions are satisfied, the ``causal effect estimate'' of the exposure on the outcome can be estimated by the Wald ratio, i.e.~by dividing the co-efficient of gene-outcome association by the co-efficient of gene-exposure, giving a numerical measure of strength of causal exposure-outcome association\textsuperscript{3}.
+
+Figure X. Taken from Burgess et al 2016 (DAG)\textsuperscript{4}
+
+In practice, only the relevance assumption can be directly tested and proven, as independence and exclusion restriction depend on all possible confounders of the exposure-outcome association, both measured and unmeasured{[}@ \textbf{\emph{REF}}{]}. Threats to the independence assumption will vary depending on the population, exposure and outcome being studied{[}@ \textbf{\emph{REF}}{]}. Exclusion restriction is a particularly universal issue in MR, due to so-called (horizontal) genetic pleiotropy, where a single genetic variant may have multiple ``pleiotropic'' effects -- i.e.~it may influence several traits simultaneously. Such pleiotropic effects may be unknown and open unmeasured causal pathways between a genetic instrument and the outcome, separate to the path involving the exposure of interest, thus potentially biasing MR estimates of the association between exposure and outcome\textsuperscript{5}.
+
+Although not possible to prove exclusion restriction for any MR study, several methods attempt to produce exposure-outcome causal effect estimates which are robust to violations of this assumption. A common approach is the Weighted Median Estimator (WME) method, proposed by Bowden et al\textsuperscript{6}.
+
+In WME analysis, several genetic instruments are used to estimate the exposure-outcome causal effect; each instrument is known to be associated with the exposure of interest, but a proportion of these instruments may be invalid due to unknown pleiotropic genetic effects. Any genetic instrument causally linked an outcome via multiple pleiotropic causal pathways would be expected to exhibit a less consistent gene-outcome association than if only a single pathway mediated the gene-outcome relationship; this would be reflected in larger variance in causal effect estimates derived from invalid/pleiotropic genetic instruments. WME therefore assigns a weight to each genetic instrument's estimate of the causal effect according to the inverse of the variance of the estimate; these weighted effect estimates are used to construct a cumulative distribution function for probability of true causal effect size across the range of estimated values.
+
+Causal effect estimates from each instrument are ordered by size, then used to create a cumulative distribution function for probability of true causal effect size. The relative contribution of each instrument's effect estimate to the probability distribution is weighted according to the inverse of the variance of the estimate. Genetic instruments whose causal effect estimates exhibit a large variance, which would be expected would therefore contribute less to\ldots.
+
+In WME analysis, several genetic instruments are used to estimate the exposure-outcome causal effect. Any instrument linked to an outcome via multiple pleiotropic causal pathways will exhibit a less consistent gene-outcome association than a relationship mediated by a single pathway; this results in larger variance in causal estimates derived from invalid/pleiotropic genetic instruments. WME therefore assigns a weight to each genetic instrument's causal estimate according to the inverse of its variance, then constructs a cumulative distribution function for probability of true causal effect size across the range of estimated values, before taking the 50th percentile of this distribution as a ``weighted median estimate'' of the true causal effect, theoretically producing consistent causal estimates even if up to 50\% of the included information comes from invalid instruments.
+
+\newpage
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
+\bibitem[\citeproctext]{ref-richmond_mendelian_2022}
+\CSLLeftMargin{1. }%
+\CSLRightInline{Richmond RC, Smith GD. Mendelian {Randomization}: {Concepts} and {Scope}. Cold Spring Harbor Perspectives in Medicine {[}Internet{]}. 2022 Jan {[}cited 2024 Oct 22{]};12(1):a040501. Available from: \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC8725623/}}
+
+\bibitem[\citeproctext]{ref-davies_reading_2018}
+\CSLLeftMargin{2. }%
+\CSLRightInline{Davies NM, Holmes MV, Smith GD. Reading {Mendelian} randomisation studies: A guide, glossary, and checklist for clinicians. BMJ {[}Internet{]}. 2018 Jul {[}cited 2025 Jan 7{]};362:k601. Available from: \url{https://www.bmj.com/content/362/bmj.k601}}
+
+\bibitem[\citeproctext]{ref-burgess_robust_2020}
+\CSLLeftMargin{3. }%
+\CSLRightInline{Burgess S, Foley CN, Allara E, Staley JR, Howson JMM. A robust and efficient method for {Mendelian} randomization with hundreds of genetic variants. Nature Communications {[}Internet{]}. 2020 Jan {[}cited 2025 Jan 7{]};11(1):376. Available from: \url{https://www.nature.com/articles/s41467-019-14156-4}}
+
+\bibitem[\citeproctext]{ref-burgess_sensitivity_2016}
+\CSLLeftMargin{4. }%
+\CSLRightInline{Burgess S, Bowden J, Fall T, Ingelsson E, Thompson SG. Sensitivity {Analyses} for {Robust} {Causal} {Inference} from {Mendelian} {Randomization} {Analyses} with {Multiple} {Genetic} {Variants}. Epidemiology (Cambridge, Mass) {[}Internet{]}. 2016 Nov {[}cited 2024 Oct 22{]};28(1):30. Available from: \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC5133381/}}
+
+\bibitem[\citeproctext]{ref-hemani_evaluating_2018}
+\CSLLeftMargin{5. }%
+\CSLRightInline{Hemani G, Bowden J, Smith GD. Evaluating the potential role of pleiotropy in {Mendelian} randomization studies. Human Molecular Genetics {[}Internet{]}. 2018 May {[}cited 2024 Oct 23{]};27(R2):R195. Available from: \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC6061876/}}
+
+\bibitem[\citeproctext]{ref-bowden_consistent_2016}
+\CSLLeftMargin{6. }%
+\CSLRightInline{Bowden J, Smith GD, Haycock PC, Burgess S. Consistent {Estimation} in {Mendelian} {Randomization} with {Some} {Invalid} {Instruments} {Using} a {Weighted} {Median} {Estimator}. Genetic Epidemiology {[}Internet{]}. 2016 Apr {[}cited 2024 Oct 22{]};40(4):304. Available from: \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC4849733/}}
+
+\end{CSLReferences}
+
+\appendix
+
+
+\newpage
+
+\section{Appendix A: List of Abbreviations}\label{appendix-a-list-of-abbreviations}
+
+\newpage
+
+\section{Appendix B: Simulation Code}\label{appendix-b-simulation-code}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -205,7 +297,7 @@ The data generating model used was from Appendix 3 of Bowden et al (ref); the re
 
 \emph{3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the \(\phi_j\) parameter was drawn from a uniform distribution between −0.2 and 0.2.}
 
-\emph{The causal effect of the exposure on the outcome was either \(\beta X = 0\) (null causal effect) or \(\beta X = 0.1\) (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 {[}sic{]} participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants.''} \citet{bowden_consistent_2016}
+\emph{The causal effect of the exposure on the outcome was either \(\beta X = 0\) (null causal effect) or \(\beta X = 0.1\) (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 {[}sic{]} participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants.''}\textsuperscript{6}
 
 To reproduce this model, code was written in R to generate the relevant participant level data. First, a function (\texttt{simulate\_MR\_data}) was written which included arameters specified by Bowden et al, and also to allow testing of data simulation:
 
@@ -876,6 +968,6 @@ For the next phase of testing, a function (\texttt{plot\_GY\_GX}) was written to
 
 \newpage
 
-\subsection{Appendix C: Citation Search Strategy}\label{appendix-c-citation-search-strategy}
+\section{Appendix C: Citation Search Strategy}\label{appendix-c-citation-search-strategy}
 
 \end{document}
