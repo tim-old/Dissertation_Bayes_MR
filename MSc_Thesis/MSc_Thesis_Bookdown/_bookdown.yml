@@ -9,6 +9,3 @@ fontsize: 12pt
 monofont: "Arial"
 fig_caption: TRUE
 toc: TRUE
-biblio-style: "apalike"
-link-citations: TRUE
-urlcolor: blue
