@@ -1,6 +1,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
 ]{article}
@@ -147,7 +148,11 @@
 \hypersetup{
   pdftitle={Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology},
   pdfauthor={B233241},
-  hidelinks,
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
   pdfcreator={LaTeX via pandoc}}
 
 \title{Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology}
@@ -158,6 +163,7 @@
 \maketitle
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
@@ -184,20 +190,20 @@ Word count:
 
 \section{Introduction and Background}\label{introduction-and-background}
 
-Mendelian randomisation (MR) is a methodology intended to support causal inference from observational data. It applies the principles of instrumental variable (IV) analysis to genetic data: naturally occurring genetic variants - ``instruments'' -- with a known association to an exposure of interest are chosen, and by comparing the association of those same genetic instruments to an outcome of interest, genetic data can be used to investigate causal links between exposures and outcomes\textsuperscript{1}. In theory, provided that the assumptions of IV analysis are met, random assignment of genetic variants from parents to offspring during meiosis can create a form of natural experiment, analogous to randomisation during a clinical trial -- both measured and unmeasured confounders should be distributed evenly between the groups created, allowing valid causal inference after other sources of bias and random variation are accounted for\textsuperscript{2}.
+Mendelian randomisation (MR) is a methodology intended to support causal inference from observational data. It applies the principles of instrumental variable (IV) analysis to genetic data: naturally occurring genetic variants - ``instruments'' -- with a known association to an exposure of interest are chosen, and by comparing the association of those same genetic instruments to an outcome of interest, genetic data can be used to investigate causal links between exposures and outcomes\textsuperscript{\citeproc{ref-richmond_mendelian_2022}{1}}. In theory, provided that the assumptions of IV analysis are met, random assignment of genetic variants from parents to offspring during meiosis can create a form of natural experiment, analogous to randomisation during a clinical trial -- both measured and unmeasured confounders should be distributed evenly between the groups created, allowing valid causal inference after other sources of bias and random variation are accounted for\textsuperscript{\citeproc{ref-davies_reading_2018}{2}}.
 
 Three key assumptions of IV analysis must be met {[}@ \textbf{\emph{REF}}{]}:
 1. Relevance -- the genetic variant must be associated with the exposure of interest
 2. Independence -- the genetic variant is independent of confounders of the relationship between exposure and outcome
 3. Exclusion restriction -- the genetic variant must not be associated with the outcome except via the exposure
 
-If these assumptions are satisfied, the ``causal effect estimate'' of the exposure on the outcome can be estimated by the Wald ratio, i.e.~by dividing the co-efficient of gene-outcome association by the co-efficient of gene-exposure, giving a numerical measure of strength of causal exposure-outcome association\textsuperscript{3}.
+If these assumptions are satisfied, the ``causal effect estimate'' of the exposure on the outcome can be estimated by the Wald ratio, i.e.~by dividing the co-efficient of gene-outcome association by the co-efficient of gene-exposure, giving a numerical measure of strength of causal exposure-outcome association\textsuperscript{\citeproc{ref-burgess_robust_2020}{3}}.
 
-Figure X. Taken from Burgess et al 2016 (DAG)\textsuperscript{4}
+Figure X. Taken from Burgess et al 2016 (DAG)\textsuperscript{\citeproc{ref-burgess_sensitivity_2016}{4}}
 
-In practice, only the relevance assumption can be directly tested and proven, as independence and exclusion restriction depend on all possible confounders of the exposure-outcome association, both measured and unmeasured{[}@ \textbf{\emph{REF}}{]}. Threats to the independence assumption will vary depending on the population, exposure and outcome being studied{[}@ \textbf{\emph{REF}}{]}. Exclusion restriction is a particularly universal issue in MR, due to so-called (horizontal) genetic pleiotropy, where a single genetic variant may have multiple ``pleiotropic'' effects -- i.e.~it may influence several traits simultaneously. Such pleiotropic effects may be unknown and open unmeasured causal pathways between a genetic instrument and the outcome, separate to the path involving the exposure of interest, thus potentially biasing MR estimates of the association between exposure and outcome\textsuperscript{5}.
+In practice, only the relevance assumption can be directly tested and proven, as independence and exclusion restriction depend on all possible confounders of the exposure-outcome association, both measured and unmeasured{[}@ \textbf{\emph{REF}}{]}. Threats to the independence assumption will vary depending on the population, exposure and outcome being studied{[}@ \textbf{\emph{REF}}{]}. Exclusion restriction is a particularly universal issue in MR, due to so-called (horizontal) genetic pleiotropy, where a single genetic variant may have multiple ``pleiotropic'' effects -- i.e.~it may influence several traits simultaneously. Such pleiotropic effects may be unknown and open unmeasured causal pathways between a genetic instrument and the outcome, separate to the path involving the exposure of interest, thus potentially biasing MR estimates of the association between exposure and outcome\textsuperscript{\citeproc{ref-hemani_evaluating_2018}{5}}.
 
-Although not possible to prove exclusion restriction for any MR study, several methods attempt to produce exposure-outcome causal effect estimates which are robust to violations of this assumption. A common approach is the Weighted Median Estimator (WME) method, proposed by Bowden et al\textsuperscript{6}.
+Although not possible to prove exclusion restriction for any MR study, several methods attempt to produce exposure-outcome causal effect estimates which are robust to violations of this assumption. A common approach is the Weighted Median Estimator (WME) method, proposed by Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{6}}.
 
 In WME analysis, several genetic instruments are used to estimate the exposure-outcome causal effect; each instrument is known to be associated with the exposure of interest, but a proportion of these instruments may be invalid due to unknown pleiotropic genetic effects. Any genetic instrument causally linked an outcome via multiple pleiotropic causal pathways would be expected to exhibit a less consistent gene-outcome association than if only a single pathway mediated the gene-outcome relationship; this would be reflected in larger variance in causal effect estimates derived from invalid/pleiotropic genetic instruments. WME therefore assigns a weight to each genetic instrument's estimate of the causal effect according to the inverse of the variance of the estimate; these weighted effect estimates are used to construct a cumulative distribution function for probability of true causal effect size across the range of estimated values.
 
@@ -297,7 +303,7 @@ The data generating model used was from Appendix 3 of Bowden et al (ref); the re
 
 \emph{3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the \(\phi_j\) parameter was drawn from a uniform distribution between −0.2 and 0.2.}
 
-\emph{The causal effect of the exposure on the outcome was either \(\beta X = 0\) (null causal effect) or \(\beta X = 0.1\) (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 {[}sic{]} participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants.''}\textsuperscript{6}
+\emph{The causal effect of the exposure on the outcome was either \(\beta X = 0\) (null causal effect) or \(\beta X = 0.1\) (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 {[}sic{]} participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants.''}\textsuperscript{\citeproc{ref-bowden_consistent_2016}{6}}
 
 To reproduce this model, code was written in R to generate the relevant participant level data. First, a function (\texttt{simulate\_MR\_data}) was written which included arameters specified by Bowden et al, and also to allow testing of data simulation:
 
