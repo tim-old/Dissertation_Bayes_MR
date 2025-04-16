@@ -60,7 +60,7 @@ mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", "Script", "Hevo", "MRH
 
 ### Generating Data and Models
 
-The data generating model used was from Appendix 3 of Bowden et al (ref); the relevant section describing their model is reproduced below:
+The data generating model used was from Appendix 3 of Bowden et al [@bowden_consistent_2016]; the relevant section describing their model is reproduced below:
 
 _"..._
 
@@ -447,14 +447,21 @@ extract_models <- function(sim){
     phi <- sim$phi[[dataset]]
     beta <- sim$beta_val[[dataset]]
     prop_invalid <- sim$prop_invalid[[dataset]]
+    n_instruments <- sim$n_instruments[[dataset]]
+    n_participants<- sim$n_participants[[dataset]]
     
     
     # Model for gene:exposure
+    #X_lm <- lm(X ~ Instruments_X)
     X_lm <- lm(X ~ 0 + Instruments_X)
     coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
     SE_coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]
     
+    R2_stat <- summary(lm(X ~ Instruments_X))$r.squared
+    #R2_stat <- summary(X_lm)$r.squared
+    
     # Model for gene:outcome
+    #Y_lm <- lm(Y ~ Instruments_Y)
     Y_lm <- lm(Y ~ 0 + Instruments_Y)
     coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 1] 
     SE_coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 2]
@@ -464,12 +471,15 @@ extract_models <- function(sim){
                                              coeff_G_X = coeff_G_X_vect,
                                              coeff_G_X_SE = SE_coeff_G_X_vect,
                                              gamma = gamma,
+                                             R2_stat = R2_stat,
                                              coeff_G_Y = coeff_G_Y_vect,
                                              coeff_G_Y_SE = SE_coeff_G_Y_vect,
                                              alpha = alpha,
                                              phi = phi,
                                              beta = beta,
-                                             prop_invalid = prop_invalid),
+                                             prop_invalid = prop_invalid,
+                                             n_instruments = n_instruments,
+                                             n_participants = n_participants),
                                         .name_repair = "unique")
   }
   
@@ -800,7 +810,7 @@ plot_grid(test_plot_causal_0_2SMR,
 
 ```
 
-Where invalid instruments are present (i.e. `prop_invalid =\= 0`)
+Where invalid instruments are present (i.e. `prop_invalid` $\ne$ `0`) and random error terms are set to 0, graphs of gene:exposure coefficients versus gene:outcome coefficients should be straight lines through the origin and all points representing valid instruments; the invalid instruments should appear as outliers to this line:
 
 ```{r test-plot-causal-inval}
 
@@ -817,7 +827,7 @@ sim_test_data_causal_0_inval <- simulate_MR_data(n_participants = 10000,
 
 test_plot_tib_causal_0_inval <- extract_models(sim_test_data_causal_0_inval)[[1]]
 
-test_plot_causal_0_inval <- plot_GY_GX(test_plot_tib_causal_0_inval, plot_title = "Causal Effect Not Present")
+test_plot_causal_0_inval <- plot_GY_GX(test_plot_tib_causal_0_inval, plot_title = "No Causal Effect")
 
 # Causal effect present
 set.seed(1701)
@@ -842,97 +852,177 @@ plot_grid(test_plot_causal_0_inval,
 
 ```
 
+Replotting the above with unbalanced pleiotropy present (`balanced_pleio = FALSE`), the invalid instruments should all appear as outliers in the positive direction, i.e. steepening the line of best fit and leading to overestimation of the causal effect: 
+
+```{r test-plot-causal-unbal}
 
 
-```{r test-plot-phi, warning=FALSE, include=FALSE}
+# Causal effect not present
+set.seed(1701)
+sim_test_data_causal_0_unbal <- simulate_MR_data(n_participants = 10000,
+                                                 n_instruments = 100,
+                                                 n_datasets = 1,
+                                                 prop_invalid = 0.2,
+                                                 causal_effect = FALSE,
+                                                 rand_error = FALSE, 
+                                                 balanced_pleio = FALSE,
+                                                 two_sample = FALSE)
+
+test_plot_tib_causal_0_unbal <- extract_models(sim_test_data_causal_0_unbal)[[1]]
+
+test_plot_causal_0_unbal <- plot_GY_GX(test_plot_tib_causal_0_unbal, plot_title = "No Causal Effect")
+
+# Causal effect present
+set.seed(1701)
+sim_test_data_causal_1_unbal <- simulate_MR_data(n_participants = 10000,
+                                                 n_instruments = 100,
+                                                 n_datasets = 1,
+                                                 prop_invalid = 0.2,
+                                                 causal_effect = TRUE,
+                                                 rand_error = FALSE,
+                                                 balanced_pleio = FALSE,
+                                                 two_sample = FALSE)
+
+test_plot_tib_causal_1_unbal <- extract_models(sim_test_data_causal_1_unbal)[[1]]
+
+test_plot_causal_1_unbal <- plot_GY_GX(test_plot_tib_causal_1_unbal, plot_title = "Causal Effect Present") +
+  theme(axis.title.y = element_blank())
+
+plot_grid(test_plot_causal_0_unbal,
+          test_plot_causal_1_unbal,
+          ncol = 2,
+          rel_widths = c(1.05, 1))
+
+
+```
+<!-- https://pmc.ncbi.nlm.nih.gov/articles/PMC4469799/ -->
+<!-- https://mr-dictionary.mrcieu.ac.uk/term/inside/ -->
+
+The variable phi represents additional pleiotropic effects of each invalid instrument when the InSIDE assumption (INstrument Strength Independent of Direct Effect) is not satisfied. The InSIDE assumption states that the gene:exposure association is not correlated with the pleiotropic path gene:outcome path of any invalid genetic instruments. This assumption can be violated if e.g.:
+
+ - several invalid genetic instruments influence the outcome via the same pleiotropic path
+ 
+ - several invalid genetic instruments are related to the same (unmeasured) confounders of the exposure:outcome relationship, aka correlated pleiotropy. 
+ 
+As such, when the InSIDE assumption is violated, even "strong" instruments (i.e. those with a strong gene:exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are balanced, InSIDE assumption violation may lead to greater imprecision in causal effect estimation; if pleiotropic effects are directional, InSIDE assumption violation may lead to bias.
+
+Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and InSIDE assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene:outcome coefficients with random error terms set to zero:
+
+
+```{r test-plot-phi}
 
 # Check violating InSIDE assumption results in distorted 
 # estimation of pleiotropic effects
 # N.B. cluster around alpha = 0 represents valid instruments with
 # no pleiotropic effects
-set.seed(1701)
-sim_test_data_phi_1 <- simulate_MR_data(n_participants = 100000,
-                                        n_instruments = 100,
-                                        n_datasets = 1,
-                                        prop_invalid = 0.3,
-                                        causal_effect = FALSE,
-                                        balanced_pleio = FALSE,
-                                        InSIDE_satisfied = FALSE)
-
 set.seed(1701)
 sim_test_data_phi_0 <- simulate_MR_data(n_participants = 100000,
                                         n_instruments = 100,
                                         n_datasets = 1,
                                         prop_invalid = 0.3,
                                         causal_effect = FALSE,
+                                        rand_error = FALSE, 
                                         balanced_pleio = FALSE,
                                         InSIDE_satisfied = TRUE)
 
 
-test_plot_tib_phi_1 <- extract_models(sim_test_data_phi_1)[[1]]
+set.seed(1701)
+sim_test_data_phi_1 <- simulate_MR_data(n_participants = 100000,
+                                        n_instruments = 100,
+                                        n_datasets = 1,
+                                        prop_invalid = 0.3,
+                                        causal_effect = FALSE,
+                                        rand_error = FALSE, 
+                                        balanced_pleio = FALSE,
+                                        InSIDE_satisfied = FALSE)
+
+
+
 test_plot_tib_phi_0 <- extract_models(sim_test_data_phi_0)[[1]]
+test_plot_tib_phi_1 <- extract_models(sim_test_data_phi_1)[[1]]
 
-# test_plot_tib_phi_1 %>% 
-#   plot_template() +
-#     aes(x = alpha, y = coeff_G_Y) +
-#     geom_point(colour = edin_bright_red_hex, alpha = 0.3)
-# labs(title = "InSIDE Violated",
-#          y = "Gene:Outcome Coefficient")
+test_plot_phi_0 <- test_plot_tib_phi_0 %>%
+  plot_template() +
+    aes(x = alpha, y = coeff_G_Y) +
+    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+labs(title = "InSIDE Not Violated",
+         y = "Gene:Outcome Coefficient")
 
 
-test_plot_tib_phi_0 %>% 
-  select(alpha, coeff_G_Y) %>% 
-  plot(.,
-       main = "InSIDE Not Violated",
-       ylab = "Gene:Outcome Coefficient")
+test_plot_phi_1 <- test_plot_tib_phi_1 %>%
+  plot_template() +
+    aes(x = alpha, y = coeff_G_Y) +
+    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+labs(title = "InSIDE Violated",
+         y = "Gene:Outcome Coefficient") +
+  theme(axis.title.y = element_blank())
 
-#phi on y, not alpha
+
+plot_grid(test_plot_phi_0,
+          test_plot_phi_1,
+          ncol = 2,
+          rel_widths = c(1.05, 1))
+
 
 
 ```
 
+Setting `InSIDE_satisfied = TRUE` should mean `phi = 0`; `InSIDE_satisfied = FALSE` should result in `phi` $\propto$ gene:outcome coefficient, with scatter only in the positive direction of gene:outcome coefficients given the model also requires directional pleiotropy before `phi` is used:
 
 
-
-```{r test-plot-phi-2, warning=FALSE}
+```{r test-plot-phi-2}
 
 # Check violating InSIDE assumption results in distorted 
 # estimation of pleiotropic effects
 # N.B. cluster around alpha = 0 represents valid instruments with
 # no pleiotropic effects
 set.seed(1701)
-sim_test_data_phi_T <- simulate_MR_data(n_participants = 100000,
+sim_test_data_phi_0 <- simulate_MR_data(n_participants = 100000,
                                         n_instruments = 100,
                                         n_datasets = 1,
                                         prop_invalid = 0.3,
                                         causal_effect = FALSE,
-                                        balanced_pleio = FALSE,
-                                        InSIDE_satisfied = FALSE)
-
-set.seed(1701)
-sim_test_data_phi_F <- simulate_MR_data(n_participants = 100000,
-                                        n_instruments = 100,
-                                        n_datasets = 1,
-                                        prop_invalid = 0.3,
-                                        causal_effect = FALSE,
+                                        rand_error = FALSE, 
                                         balanced_pleio = FALSE,
                                         InSIDE_satisfied = TRUE)
 
 
-test_plot_tib_phi_T <- extract_models(sim_test_data_phi_T)[[1]]
-test_plot_tib_phi_F <- extract_models(sim_test_data_phi_F)[[1]]
+set.seed(1701)
+sim_test_data_phi_1 <- simulate_MR_data(n_participants = 100000,
+                                        n_instruments = 100,
+                                        n_datasets = 1,
+                                        prop_invalid = 0.3,
+                                        causal_effect = FALSE,
+                                        rand_error = FALSE, 
+                                        balanced_pleio = FALSE,
+                                        InSIDE_satisfied = FALSE)
 
-test_plot_tib_phi_T %>% 
-  select(phi, coeff_G_Y) %>% 
-  plot(., 
-       main = "InSIDE Violated",
-       ylab = "Gene:Outcome Coefficient")
 
-test_plot_tib_phi_F %>% 
-  select(phi, coeff_G_Y) %>% 
-  plot(.,
-       main = "InSIDE Not Violated",
-       ylab = "Gene:Outcome Coefficient")
+
+test_plot_tib_phi_0 <- extract_models(sim_test_data_phi_0)[[1]]
+test_plot_tib_phi_1 <- extract_models(sim_test_data_phi_1)[[1]]
+
+test_plot_phi_0 <- test_plot_tib_phi_0 %>%
+  plot_template() +
+    aes(x = phi, y = coeff_G_Y) +
+    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+labs(title = "InSIDE Not Violated",
+         y = "Gene:Outcome Coefficient")
+
+
+test_plot_phi_1 <- test_plot_tib_phi_1 %>%
+  plot_template() +
+    aes(x = phi, y = coeff_G_Y) +
+    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+labs(title = "InSIDE Violated",
+         y = "Gene:Outcome Coefficient") +
+  theme(axis.title.y = element_blank())
+
+
+plot_grid(test_plot_phi_0,
+          test_plot_phi_1,
+          ncol = 2,
+          rel_widths = c(1.05, 1))
 
 #phi on y, not alpha
 
@@ -942,8 +1032,7 @@ test_plot_tib_phi_F %>%
 
 
 
-
-```{r summary-MR-tib-row-fn, warning=FALSE, include=FALSE}
+```{r summary-MR-tib-row-fn}
 
 # Run local copy of MR-Hevo functions
 # Not using full package due to conflicts with Windows
@@ -961,49 +1050,51 @@ mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", "Script", "Hevo", "MRH
 # --- Need to comment out model.dir in Hevo_results --- #  
 
 
-get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 10,000 for final
-                                   n_instruments = 25,
-                                   n_datasets = 100,               # update to 10,000 for final
-                                   prop_invalid = 0.1,
-                                   causal_effect = TRUE,
-                                   balanced_pleio = TRUE,
-                                   InSIDE_satisfied = TRUE,
-                                   rand_error = TRUE,
-                                   two_sample = TRUE, 
-                                   beta_val = 0.1,
-                                   allele_freq_min = 0.01,
-                                   allele_freq_max = 0.99,
-                                   gamma_min = 0.03,               
-                                   gamma_max = 0.1,
-                                   alpha_min = -0.2,               
-                                   alpha_max = 0.2,
-                                   phi_min = -0.2,                 
-                                   phi_max = 0.2){        
+get_summary_MR_tib_row <- function(model_list){
+  
+# get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 10,000 for final
+#                                    n_instruments = 25,
+#                                    n_datasets = 100,               # update to 10,000 for final
+#                                    prop_invalid = 0.1,
+#                                    causal_effect = TRUE,
+#                                    balanced_pleio = TRUE,
+#                                    InSIDE_satisfied = TRUE,
+#                                    rand_error = TRUE,
+#                                    two_sample = TRUE, 
+#                                    beta_val = 0.1,
+#                                    allele_freq_min = 0.01,
+#                                    allele_freq_max = 0.99,
+#                                    gamma_min = 0.03,               
+#                                    gamma_max = 0.1,
+#                                    alpha_min = -0.2,               
+#                                    alpha_max = 0.2,
+#                                    phi_min = -0.2,                 
+#                                    phi_max = 0.2){        
   
   
   # Generate data as per Bowden models with helper function 
-  dataset_list <- simulate_MR_data(n_participants = n_participants,          
-                                   n_instruments = n_instruments,
-                                   n_datasets = n_datasets,               
-                                   prop_invalid = prop_invalid,
-                                   causal_effect = causal_effect,
-                                   balanced_pleio = balanced_pleio,
-                                   InSIDE_satisfied = InSIDE_satisfied,
-                                   rand_error = rand_error,     
-                                   two_sample = two_sample,
-                                   beta_val = beta_val,                 
-                                   allele_freq_min = allele_freq_min,         
-                                   allele_freq_max = allele_freq_max,
-                                   gamma_min = gamma_min,                
-                                   gamma_max = gamma_max,
-                                   alpha_min = alpha_min,               
-                                   alpha_max = alpha_max,
-                                   phi_min = phi_min,                 
-                                   phi_max = phi_max)
+  # dataset_list <- simulate_MR_data(n_participants = n_participants,          
+  #                                  n_instruments = n_instruments,
+  #                                  n_datasets = n_datasets,               
+  #                                  prop_invalid = prop_invalid,
+  #                                  causal_effect = causal_effect,
+  #                                  balanced_pleio = balanced_pleio,
+  #                                  InSIDE_satisfied = InSIDE_satisfied,
+  #                                  rand_error = rand_error,     
+  #                                  two_sample = two_sample,
+  #                                  beta_val = beta_val,                 
+  #                                  allele_freq_min = allele_freq_min,         
+  #                                  allele_freq_max = allele_freq_max,
+  #                                  gamma_min = gamma_min,                
+  #                                  gamma_max = gamma_max,
+  #                                  alpha_min = alpha_min,               
+  #                                  alpha_max = alpha_max,
+  #                                  phi_min = phi_min,                 
+  #                                  phi_max = phi_max)
   
   
   # Use data to create model per dataset
-  model_list <- extract_models(dataset_list)
+  # model_list <- extract_models(dataset_list)
   
   
   # Create output tibble in same format as Table 2/3 from
@@ -1018,6 +1109,8 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
                            Hevo_Av = as.double(),
                            Hevo_SE = as.double(),
                            Hevo_Pos_Rate = as.double())
+  
+  n_datasets <- length(model_list)
   
   output_tib_row$N <-  n_datasets
   
@@ -1056,6 +1149,10 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
     coeff_G_Y_vect <- model_list[[dataset]]$coeff_G_Y
     coeff_G_X_SE_vect <- model_list[[dataset]]$coeff_G_X_SE
     coeff_G_Y_SE_vect <- model_list[[dataset]]$coeff_G_Y_SE
+    prop_invalid <- min(model_list[[dataset]]$prop_invalid)
+    R2_stat <- min(model_list[[dataset]]$R2_stat)
+    n_instruments <- max(model_list[[dataset]]$Instrument)
+    n_participants <- min(model_list[[dataset]]$n_participants)
     
     
     # N.B. MR-Hevo terminology vs WME paper/other code:
@@ -1108,11 +1205,14 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
   results_tib <- results_tib %>% 
     mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
   
+  
+  # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
+  # https://mr-dictionary.mrcieu.ac.uk/term/r-squared/#:~:text=The%20R%2Dsquared%20can%20also,and%20sample%20size%20of%20the
   output_tib_row <- results_tib %>% 
     summarise(N = n_datasets,
               Prop_Invalid = prop_invalid,
-              F_Stat = NA,
-              R2_stat = NA,
+              F_Stat = R2_stat * n_participants / n_instruments,
+              R2_stat = R2_stat,
               WME_Av = mean(WME_est),
               WME_SE = mean(WME_se),
               WME_Pos_Rate = length(WME_pval[WME_pval < 0.05]) / n_datasets,
@@ -1128,6 +1228,7 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
   
 }
 
+
 ```
 
 
@@ -1140,21 +1241,34 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
 
 
 
-```{r test-summary-MR-tib-row-fn, include=FALSE}
+```{r test-summary-MR-tib-row-fn}
 
 
-# set.seed(14101583)
-# test_tib_summ_MR <-  get_summary_MR_tib_row(n_participants = 100000,
-#                                             n_instruments = 25,
-#                                             n_datasets = 1,
-#                                             prop_invalid = 0.3,
-#                                             beta_val = 1,
-#                                             causal_effect = TRUE,
-#                                             rand_error = FALSE, 
-#                                             two_sample = FALSE,
-#                                             balanced_pleio = TRUE,
-#                                             InSIDE_satisfied = TRUE)
-# 
+set.seed(14101583)
+test_tib_summ_MR_data <-  simulate_MR_data(n_participants = 10000,
+                                           n_instruments = 25,
+                                           n_datasets = 5,
+                                           prop_invalid = 0.1,
+                                           beta_val = 0.1,
+                                           causal_effect = TRUE,
+                                           rand_error = TRUE,
+                                           two_sample = TRUE,
+                                           balanced_pleio = TRUE,
+                                           InSIDE_satisfied = TRUE)
+
+test_tib_summ_MR_models <- extract_models(test_tib_summ_MR_data)
+
+
+# first element of each list element
+# map(test_tib_summ_MR_data, first) %>% 
+#   map(., first)
+
+#test_tib_summ_MR_models[[1]]
+
+
+#test_tib_summ_MR_row <- get_summary_MR_tib_row(test_tib_summ_MR_models)
+
+
 # 
 # # Causal effect present
 # set.seed(14101583)
@@ -1185,6 +1299,8 @@ get_summary_MR_tib_row <- function(n_participants = 1000,          # update to 1
 # 
 # test_tib_summ_MR
 # 
+
+#test_tib_summ_MR_row
 
 ```
 
