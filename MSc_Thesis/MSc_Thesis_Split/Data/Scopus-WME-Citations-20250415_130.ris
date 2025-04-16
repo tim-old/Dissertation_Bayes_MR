@@ -1,0 +1,1020 @@
+﻿TY  - JOUR
+AU  - Wright, D.J.
+AU  - Day, F.R.
+AU  - Kerrison, N.D.
+AU  - Zink, F.
+AU  - Cardona, A.
+AU  - Sulem, P.
+AU  - Thompson, D.J.
+AU  - Sigurjonsdottir, S.
+AU  - Gudbjartsson, D.F.
+AU  - Helgason, A.
+AU  - Chapman, J.R.
+AU  - Jackson, S.P.
+AU  - Langenberg, C.
+AU  - Wareham, N.J.
+AU  - Scott, R.A.
+AU  - Thorsteindottir, U.
+AU  - Ong, K.K.
+AU  - Stefansson, K.
+AU  - Perry, J.R.B.
+TI  - Genetic variants associated with mosaic Y chromosome loss highlight cell cycle genes and overlap with cancer susceptibility
+PY  - 2017
+T2  - Nature Genetics
+VL  - 49
+IS  - 5
+SP  - 674
+EP  - 679
+DO  - 10.1038/ng.3821
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85016089260&doi=10.1038%2fng.3821&partnerID=40&md5=86e479025c93d3ab8ad4413c3d8813dc
+AD  - MRC Epidemiology Unit, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom
+AD  - DeCODE Genetics-Amgen, Inc., Reykjavik, Iceland
+AD  - Center for Cancer Genetic Epidemiology, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Wellcome Trust Center for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - Wellcome Trust, Cancer Research UK Gurdon Institute, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Biochemistry, University of Cambridge, Cambridge, United Kingdom
+AD  - Faculty of Medicine, University of Iceland, Reykjavik, Iceland
+AD  - Department of Pediatrics, University of Cambridge, Cambridge, United Kingdom
+AB  - The Y chromosome is frequently lost in hematopoietic cells, which represents the most common somatic alteration in men. However, the mechanisms that regulate mosaic loss of chromosome Y (mLOY), and its clinical relevance, are unknown. We used genotype-array-intensity data and sequence reads from 85,542 men to identify 19 genomic regions (P < 5 × 10-8) that are associated with mLOY. Cumulatively, these loci also predicted X chromosome loss in women (n = 96,123; P = 4 × 10-6). Additional epigenome-wide methylation analyses using whole blood highlighted 36 differentially methylated sites associated with mLOY. The genes identified converge on aspects of cell proliferation and cell cycle regulation, including DNA synthesis (NPAT), DNA damage response (ATM), mitosis (PMF1, CENPN and MAD1L1) and apoptosis (TP53). We highlight the shared genetic architecture between mLOY and cancer susceptibility, in addition to inferring a causal effect of smoking on mLOY. Collectively, our results demonstrate that genotype-array-intensity data enables a measure of cell cycle efficiency at population scale and identifies genes implicated in aneuploidy, genome instability and cancer susceptibility. © 2017 Nature America, Inc., part of Springer Nature. All rights reserved.
+KW  - Cell Cycle
+KW  - Chromosome Deletion
+KW  - Chromosomes, Human, X
+KW  - Chromosomes, Human, Y
+KW  - DNA Methylation
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Genome, Human
+KW  - Genome-Wide Association Study
+KW  - Genomic Instability
+KW  - Genotype
+KW  - Humans
+KW  - INDEL Mutation
+KW  - Male
+KW  - Neoplasms
+KW  - Polymorphism, Single Nucleotide
+KW  - protein p53
+KW  - adult
+KW  - aged
+KW  - aneuploidy
+KW  - apoptosis
+KW  - Article
+KW  - cancer susceptibility
+KW  - cell cycle
+KW  - cell cycle regulation
+KW  - cell proliferation
+KW  - cenpn gene
+KW  - chromosome loss
+KW  - chromosome mosaicism
+KW  - DNA damage response
+KW  - DNA synthesis
+KW  - epigenetics
+KW  - gene
+KW  - gene expression
+KW  - gene frequency
+KW  - gene identification
+KW  - gene replication
+KW  - genetic association
+KW  - genetic variability
+KW  - genetic variation
+KW  - genomic instability
+KW  - human
+KW  - mad1l1 gene
+KW  - major clinical study
+KW  - male
+KW  - mitosis
+KW  - pmf1 gene
+KW  - priority journal
+KW  - quantitative trait locus
+KW  - single nucleotide polymorphism
+KW  - X chromosome
+KW  - Y chromosome
+KW  - cell cycle
+KW  - chromosome deletion
+KW  - DNA methylation
+KW  - female
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - genetics
+KW  - genome-wide association study
+KW  - genotype
+KW  - human genome
+KW  - indel mutation
+KW  - neoplasm
+KW  - pathology
+KW  - procedures
+KW  - statistics and numerical data
+KW  - Y chromosome
+PB  - Nature Publishing Group
+SN  - 10614036 (ISSN)
+C2  - 28346444
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 120; Correspondence Address: J.R.B. Perry; MRC Epidemiology Unit, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom; email: john.perry@mrc-epid.cam.ac.uk; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Yarmolinsky, J.
+AU  - Wade, K.H.
+AU  - Richmond, R.C.
+AU  - Langdon, R.J.
+AU  - Bull, C.J.
+AU  - Tilling, K.M.
+AU  - Relton, C.L.
+AU  - Lewis, S.J.
+AU  - Smith, G.D.
+AU  - Martin, R.M.
+TI  - Causal inference in cancer epidemiology: What is the role of mendelian randomization?
+PY  - 2018
+T2  - Cancer Epidemiology Biomarkers and Prevention
+VL  - 27
+IS  - 9
+SP  - 995
+EP  - 1010
+DO  - 10.1158/1055-9965.EPI-17-1177
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85053043417&doi=10.1158%2f1055-9965.EPI-17-1177&partnerID=40&md5=da3c854a540d4f1d54d8a6da94f7bafc
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Canynge Hall, 39 Whatley Road, Bristol, BS8 2PS, United Kingdom
+AB  - Observational epidemiologic studies are prone to confounding, measurement error, and reverse causation, undermining robust causal inference. Mendelian randomization (MR) uses genetic variants to proxy modifiable exposures to generate more reliable estimates of the causal effects of these exposures on diseases and their outcomes. MR has seen widespread adoption within cardio-metabolic epidemiology, but also holds much promise for identifying possible interventions for cancer prevention and treatment. However, some methodologic challenges in the implementation of MR are particularly pertinent when applying this method to cancer etiology and prognosis, including reverse causation arising from disease latency and selection bias in studies of cancer progression. These issues must be carefully considered to ensure appropriate design, analysis, and interpretation of such studies. In this review, we provide an overview of the key principles and assumptions of MR, focusing on applications of this method to the study of cancer etiology and prognosis. We summarize recent studies in the cancer literature that have adopted a MR framework to highlight strengths of this approach compared with conventional epidemiological studies. Finally, limitations of MR and recent methodologic developments to address them are discussed, along with the translational opportunities they present to inform public health and clinical interventions in cancer. © 2018 American Association for Cancer Research.
+KW  - Causality
+KW  - Epidemiologic Studies
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Neoplasms
+KW  - Prognosis
+KW  - alcohol
+KW  - selenium
+KW  - body mass
+KW  - cancer epidemiology
+KW  - cancer growth
+KW  - cancer prognosis
+KW  - cancer research
+KW  - cancer risk
+KW  - carcinogenesis
+KW  - drug repositioning
+KW  - esophagus cancer
+KW  - human
+KW  - latent period
+KW  - long term exposure
+KW  - lung cancer
+KW  - Mendelian randomization analysis
+KW  - priority journal
+KW  - prostate cancer
+KW  - randomized controlled trial (topic)
+KW  - Review
+KW  - causality
+KW  - epidemiology
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - neoplasm
+KW  - procedures
+KW  - prognosis
+PB  - American Association for Cancer Research Inc.
+SN  - 10559965 (ISSN)
+C2  - 29941659
+LA  - English
+J2  - Cancer Epidemiol. Biomarkers Prev.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 116; Correspondence Address: R.M. Martin; Population Health Sciences, Bristol Medical School, University of Bristol, Canynge Hall, Bristol, 39 Whatley Road, BS8 2PS, United Kingdom; email: richard.martin@bristol.ac.uk; CODEN: CEBPE
+ER  -
+
+TY  - JOUR
+AU  - Yuan, S.
+AU  - Chen, J.
+AU  - Li, X.
+AU  - Fan, R.
+AU  - Arsenault, B.
+AU  - Gill, D.
+AU  - Giovannucci, E.L.
+AU  - Zheng, J.-S.
+AU  - Larsson, S.C.
+TI  - Lifestyle and metabolic factors for nonalcoholic fatty liver disease: Mendelian randomization study
+PY  - 2022
+T2  - European Journal of Epidemiology
+VL  - 37
+IS  - 7
+SP  - 723
+EP  - 733
+DO  - 10.1007/s10654-022-00868-3
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85129124785&doi=10.1007%2fs10654-022-00868-3&partnerID=40&md5=948d3ab1d795b40d89a97152890f9069
+AD  - Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Nobelsväg 13, Stockholm, 17177, Sweden
+AD  - Centre for Global Health, Zhejiang University School of Medicine, Hangzhou, China
+AD  - Department of Gastroenterology, The Third Xiangya Hospital, Central South University, Changsha, China
+AD  - School of Public Health and the Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China
+AD  - Centre for Global Health, Usher Institute, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Department of Biosciences and Nutrition, Karolinska Institutet, Huddinge, Sweden
+AD  - Centre de Recherche de l’Institut Universitaire de Cardiologie et de Pneumologie de Québec, Quebec City, QC, Canada
+AD  - Department of Medicine, Faculty of Medicine, Université Laval, Quebec, QC, Canada
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Clinical Pharmacology and Therapeutics Section, Institute for Infection and Immunity, St George’s, University of London, London, United Kingdom
+AD  - Clinical Pharmacology Group, Pharmacy and Medicines Directorate, St George’s University Hospitals NHS Foundation Trust, London, United Kingdom
+AD  - Novo Nordisk Research Centre Oxford, Old Road Campus, Oxford, United Kingdom
+AD  - Department of Epidemiology, Harvard T H Chan School of Public Health, Boston, MA, United States
+AD  - Department of Nutrition, Harvard T H Chan School of Public Health, Boston, MA, United States
+AD  - Key Laboratory of Growth Regulation and Translational Research of Zhejiang Province, School of Life Sciences, Westlake University, Hangzhou, China
+AD  - Department of Surgical Sciences, Uppsala University, Uppsala, Sweden
+AB  - The risk factors for nonalcoholic fatty liver disease (NAFLD) have not been clearly identified. We conducted a Mendelian randomization (MR) study to explore this. Independent genetic variants strongly associated with 5 lifestyle and 9 metabolic factors were selected as instrumental variables from corresponding genome-wide association studies (GWASs). Summary-level data for NAFLD were obtained from a GWAS meta-analysis of 8434 cases and 770,180 non-cases (discovery dataset) and another GWAS meta-analysis of 1483 cases and 17,781 non-cases (replication dataset). Univariable and multivariable MR analyses were performed. There were associations with NAFLD for lifetime smoking index (odds ratio (OR) 1.59, 95% confidence interval (CI) 1.31–1.93 per SD-increase), body mass index (BMI, OR 1.33, 95% CI 1.23–1.43 per SD-increase), waist circumference (OR 1.82; 95% CI 1.48–2.24 per SD-increase), type 2 diabetes (OR 1.21, 95% CI 1.15–1.27 per unit increase in log-transformed odds), systolic blood pressure (OR 1.17; 95% CI 1.07–1.26 per 10 mmHg increase), high-density lipoprotein cholesterol (OR 0.84, 95% CI 0.77–0.90 per SD-increase), and triglycerides (OR 1.23, 95% CI 1.15–1.33 per SD-increase). The associations for type 2 diabetes, systolic blood pressure, triglycerides, but not for high-density lipoprotein cholesterol remained strong after adjusting for genetically-predicted BMI. Genetic liability to type 2 diabetes mediated 51.4% (95% CI 13.4–89.3%) of the BMI-effects on NAFLD risk. There were suggestive inverse associations of genetically-predicted alcohol, coffee, and caffeine consumption, and vigorous physical activity with NAFLD risk. This study identified several lifestyle and metabolic factors that may be causally implicated in NAFLD. © 2022, The Author(s).
+KW  - Lifestyle
+KW  - Mendelian randomization
+KW  - Metabolic factor
+KW  - Nonalcoholic fatty liver disease
+KW  - Body Mass Index
+KW  - Cholesterol, HDL
+KW  - Diabetes Mellitus, Type 2
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Life Style
+KW  - Mendelian Randomization Analysis
+KW  - Non-alcoholic Fatty Liver Disease
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - alcohol
+KW  - high density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - Article
+KW  - controlled study
+KW  - devices
+KW  - electronic medical record
+KW  - gene linkage disequilibrium
+KW  - genome-wide association study
+KW  - genomics
+KW  - human
+KW  - informed consent
+KW  - lifestyle
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - nonalcoholic fatty liver
+KW  - single nucleotide polymorphism
+KW  - body mass
+KW  - genetics
+KW  - lifestyle
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - nonalcoholic fatty liver
+KW  - risk factor
+PB  - Springer Science and Business Media B.V.
+SN  - 03932990 (ISSN)
+C2  - 35488966
+LA  - English
+J2  - Eur. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 111; Correspondence Address: S.C. Larsson; Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Nobelsväg 13, 17177, Sweden; email: susanna.larsson@ki.se; CODEN: EJEPE
+ER  -
+
+TY  - JOUR
+AU  - Li, C.
+AU  - Stoma, S.
+AU  - Lotta, L.A.
+AU  - Warner, S.
+AU  - Albrecht, E.
+AU  - Allione, A.
+AU  - Arp, P.P.
+AU  - Broer, L.
+AU  - Buxton, J.L.
+AU  - Da Silva Couto Alves, A.
+AU  - Deelen, J.
+AU  - Fedko, I.O.
+AU  - Gordon, S.D.
+AU  - Jiang, T.
+AU  - Karlsson, R.
+AU  - Kerrison, N.
+AU  - Loe, T.K.
+AU  - Mangino, M.
+AU  - Milaneschi, Y.
+AU  - Miraglio, B.
+AU  - Pervjakova, N.
+AU  - Russo, A.
+AU  - Surakka, I.
+AU  - van der Spek, A.
+AU  - Verhoeven, J.E.
+AU  - Amin, N.
+AU  - Beekman, M.
+AU  - Blakemore, A.I.
+AU  - Canzian, F.
+AU  - Hamby, S.E.
+AU  - Hottenga, J.-J.
+AU  - Jones, P.D.
+AU  - Jousilahti, P.
+AU  - Mägi, R.
+AU  - Medland, S.E.
+AU  - Montgomery, G.W.
+AU  - Nyholt, D.R.
+AU  - Perola, M.
+AU  - Pietiläinen, K.H.
+AU  - Salomaa, V.
+AU  - Sillanpää, E.
+AU  - Suchiman, H.E.
+AU  - van Heemst, D.
+AU  - Willemsen, G.
+AU  - Agudo, A.
+AU  - Boeing, H.
+AU  - Boomsma, D.I.
+AU  - Chirlaque, M.-D.
+AU  - Fagherazzi, G.
+AU  - Ferrari, P.
+AU  - Franks, P.
+AU  - Gieger, C.
+AU  - Eriksson, J.G.
+AU  - Gunter, M.
+AU  - Hägg, S.
+AU  - Hovatta, I.
+AU  - Imaz, L.
+AU  - Kaprio, J.
+AU  - Kaaks, R.
+AU  - Key, T.
+AU  - Krogh, V.
+AU  - Martin, N.G.
+AU  - Melander, O.
+AU  - Metspalu, A.
+AU  - Moreno, C.
+AU  - Onland-Moret, N.C.
+AU  - Nilsson, P.
+AU  - Ong, K.K.
+AU  - Overvad, K.
+AU  - Palli, D.
+AU  - Panico, S.
+AU  - Pedersen, N.L.
+AU  - Penninx, B.W.J.H.
+AU  - Quirós, J.R.
+AU  - Jarvelin, M.R.
+AU  - Rodríguez-Barranco, M.
+AU  - Scott, R.A.
+AU  - Severi, G.
+AU  - Slagboom, P.E.
+AU  - Spector, T.D.
+AU  - Tjonneland, A.
+AU  - Trichopoulou, A.
+AU  - Tumino, R.
+AU  - Uitterlinden, A.G.
+AU  - van der Schouw, Y.T.
+AU  - van Duijn, C.M.
+AU  - Weiderpass, E.
+AU  - Denchi, E.L.
+AU  - Matullo, G.
+AU  - Butterworth, A.S.
+AU  - Danesh, J.
+AU  - Samani, N.J.
+AU  - Wareham, N.J.
+AU  - Nelson, C.P.
+AU  - Langenberg, C.
+AU  - Codd, V.
+TI  - Genome-wide Association Analysis in Humans Links Nucleotide Metabolism to Leukocyte Telomere Length
+PY  - 2020
+T2  - American Journal of Human Genetics
+VL  - 106
+IS  - 3
+SP  - 389
+EP  - 404
+DO  - 10.1016/j.ajhg.2020.02.006
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85080107195&doi=10.1016%2fj.ajhg.2020.02.006&partnerID=40&md5=7b19acf94dd54c51199fd1f80ee7bada
+AD  - MRC Epidemiology Unit, University of Cambridge, CB2 0SL, United Kingdom
+AD  - Department of Cardiovascular Sciences, University of Leicester, LE3 9QP, United Kingdom
+AD  - NIHR Leicester Biomedical Research Centre, Glenfield Hospital, Leicester, LE3 9QP, United Kingdom
+AD  - Institute of Epidemiology, Helmholtz Zentrum München—German Research Centre for Environmental Health, Neuherberg, D-85764, Germany
+AD  - Department of Medical Science, Genomic Variation and Translational Research Unit, University of Turin, Turin, 10126, Italy
+AD  - Italian Institute for Genomic Medicine (IIGM), Turin, 10126, Italy
+AD  - Department of Internal Medicine, Erasmus Medical Centre, Postbus 2040, Rotterdam, 3000, CA, Netherlands
+AD  - School of Life Sciences, Pharmacy, and Chemistry, Kingston University, Kingston upon Thames, KT1 2EE, United Kingdom
+AD  - Genetics and Genomic Medicine Programme, UCL Great Ormond Street Institute of Child Health, London, WC1N 1EH, United Kingdom
+AD  - School of Public Health, Imperial College London, St Mary's Hospital, London, W2 1PG, United Kingdom
+AD  - School of Biosciences and Medicine, University of Surrey, Guildford, GU2 7XH, United Kingdom
+AD  - Max Planck Institute for Biology of Ageing, Cologne, D-50931, Germany
+AD  - Department of Biomedical Data Sciences, Section of Molecular Epidemiology, Leiden University Medical Centre, PO Box 9600, Leiden, 2300, RC, Netherlands
+AD  - Department of Biological Psychology, Vrije Universteit, Amsterdam, 1081, BT, Netherlands
+AD  - Genetic Epidemiology, QIMR Berghofer Medical Research Institute, 4006, Queensland, Australia
+AD  - BHF Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, CB1 8RN, United Kingdom
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, 17177, Sweden
+AD  - Department of Molecular Medicine, The Scripps Research Institute, La Jolla, 92037, CA, United States
+AD  - Department of Twin Research and Genetic Epidemiology, Kings College London, London, SE1 7EH, United Kingdom
+AD  - NIHR Biomedical Research Centre at Guy's and St Thomas’ Foundation Trust, London, SE1 9RT, United Kingdom
+AD  - Department of Psychiatry, Amsterdam Public Health and Amsterdam Neuroscience, Amsterdam UMC/Vrije Universiteit, Amsterdam, 1081HJ, Netherlands
+AD  - Institute for Molecular Medicine Finland (FIMM), PO Box 20, 00014 University of Helsinki, Finland
+AD  - Estonian Genome Centre, Institute of Genomics, University of Tartu, Tartu, 51010, Estonia
+AD  - Division of Cardiovascular Medicine, Department of Internal Medicine, University of Michigan, Ann Arbor, 48109, MI, United States
+AD  - Department of Epidemiology, Erasmus Medical Centre, Postbus 2040, Rotterdam, 3000, CA, Netherlands
+AD  - Department of Life Sciences, Brunel University London, Uxbridge, UB8 3PH, United Kingdom
+AD  - Department of Medicine, Imperial College London, London, W12 0HS, United Kingdom
+AD  - Genomic Epidemiology Group, German Cancer Research Centre (DKFZ), Heidelberg, 69120, Germany
+AD  - Department of Public Health Solutions, Finnish Institute for Health and Welfare, PO Box 30, FI-00271 Helsinki, Finland
+AD  - Institute for Molecular Bioscience, The University of Queensland, 4072, Queensland, Australia
+AD  - School of Biomedical Sciences and Institute of Health and Biomedical Innovation, Queensland University of Technology, 4059, Queensland, Australia
+AD  - Research Program for Clinical and Molecular Metabolism, Faculty of Medicine, Biomedicum 1, PO Box 63, 00014 University of Helsinki, Finland
+AD  - Obesity Research Unit, Research Program for Clinical and Molecular Metabolism, Haartmaninkatu 8, University of Helsinki, Helsinki, 00014, Finland
+AD  - Obesity Center, Abdominal Center, Endocrinology, Helsinki University Hospital and University of Helsinki, Haartmaninkatu 4, Helsinki, 00029 HUS, Finland
+AD  - Gerontology Research Center, Faculty of Sport and Health Sciences, PO Box 35, 40014 University of Jyväskylä, Finland
+AD  - Department of Internal Medicine, Section of Gerontology and Geriatrics, Leiden University Medical Centre, Leiden, PO Box 9600, 2300, RC, Netherlands
+AD  - Unit of Nutrition, Environment, and Cancer, Cancer Epidemiology Research Program, Catalan Institute of Oncology—ICO, Group of Research on Nutrition and Cancer, Bellvitge Biomedical Research Institute—IDIBELL, L'Hospitalet of Llobregat, Barcelona, 08908, Spain
+AD  - German Institute of Human Nutrition Potsdam—Rehbruecke, Nuthetal, 14558, Germany
+AD  - Department of Epidemiology, Murcia Regional Health Council, IMIB—Arrixaca, Murcia, 30008, Spain
+AD  - CIBER of Epidemiology and Public Health (CIBERESP), Madrid, 28029, Spain
+AD  - Center of Research in Epidemiology and Population Health, UMR 1018 Inserm, Institut Gustave Roussy, Paris-Sud Paris-Saclay University, Villejuif, 94805, France
+AD  - Digital Epidemiology Research Hub, Department of Population Health, Luxembourg Institute of Health, L-1445 Strassen, Luxembourg
+AD  - International Agency for Research on Cancer, Lyon, 69372, France
+AD  - Department of Clinical Sciences, Clinical Research Center, Skåne University Hospital, Lund University, Malmö, 20502, Sweden
+AD  - Department of Public Health and Clinical Medicine, Umeå University, Umeå, 90187, Sweden
+AD  - Research Unit of Molecular Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health, D 85764 Neuherberg, Germany
+AD  - German Center for Diabetes Research (DZD e.V.), D-85764 Neuherberg, Germany
+AD  - Department of General Practice and Primary Health Care, University of Helsinki and Helsinki University Hospital, PO Box 20, 00014 University of Helsinki, Finland
+AD  - Folkhälsan Research Centre, PO Box 20, 00014 University of Helsinki, Finland
+AD  - Obstetrics and Gynaecology, Yong Loo Lin School of Medicine, National University of Singapore, Singapore
+AD  - SleepWell Research Program, Haartmaninkatu 3, 00014 University of Helsinki, Finland
+AD  - Department of Psychology and Logopedics, Haartmaninkatu 3, 00014 University of Helsinki, Finland
+AD  - Ministry of Health of the Basque Government, Public Health Division of Gipuzkoa, 20013, Donostia-San Sebastian, Spain
+AD  - Biodonostia Health Research Institute, 20014, Donostia-San Sebastian, Spain
+AD  - Department of Public Health, PO Box 20, 00014 University of Helsinki, Finland
+AD  - Division of Cancer Epidemiology, German Cancer Research Center (DKFZ), Heidelberg, 69120, Germany
+AD  - Cancer Epidemiology Unit, Nuffield Department of Population Health, University of Oxford, OX3 7LF, United Kingdom
+AD  - Epidemiology and Prevention Unit, Fondazione IRCCS—Istituto Nazionale dei Tumori, Milan, 20133, Italy
+AD  - Department of Clinical Sciences, Hypertension, and Cardiovascular Disease, Lund University, Malmö, 21428, Sweden
+AD  - Instituto de Salud Pública, Pamplona, 31003, Spain
+AD  - Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht, Utrecht University, CG Utrecht, 3584, Netherlands
+AD  - Department of Paediatrics, University of Cambridge, CB2 0QQ, United Kingdom
+AD  - Department of Public Health, Aarhus University, DK-8000 Aarhus, Denmark
+AD  - Department of Cardiology, Aalborg University Hospital, DK-9000 Aalborg, Denmark
+AD  - Cancer Risk Factors and Life-Style Epidemiology Unit, Institute for Cancer Research—ISPRO, Florence, 50139, Italy
+AD  - Dipartimento di Medicina Clinica e Chirurgia, Federico II University, Naples, 80131, Italy
+AD  - Consejería de Sanidad, Public Health Directorate, 33006, Asturias, Spain
+AD  - School of Epidemiology and Biostatistics, Imperial College London, SW7 2AZ, United Kingdom
+AD  - Andalusian School of Public Health (EASP), Granada, 18080, Spain
+AD  - Instituto de Investigación Biosanitaria ibs.GRANADA, Granada, 18012, Spain
+AD  - CESP, Facultés de médecine, Université Paris, Villejuif, 94805, France
+AD  - Gustave Roussy, Villejuif, 94805, France
+AD  - Department of Statistics, Computer Science, Applications “G. Parenti, ” University of Florence, Firenze, 50134, Italy
+AD  - Danish Cancer Society Research Center, Copenhagen, 2100, Denmark
+AD  - Hellenic Health Foundation, Athens, 11527, Greece
+AD  - Cancer Registry and Histopathology Department, Provincial Health Authority (ASP), Ragusa, 97100, Italy
+AD  - Hyblean Association for Research on Epidemiology, No Profit Organization, Ragusa, 97100, Italy
+AD  - Nuffield Department of Population Health, University of Oxford, OX3 7LF, United Kingdom
+AD  - Laboratory of Chromosome Instability, National Cancer Institute, NIH, Bethesda, 20892, MD, United States
+AD  - Health Data Research UK Cambridge, Wellcome Genome Campus and University of Cambridge, CB10 1SA, United Kingdom
+AD  - NIHR Blood and Transplant Research Unit in Donor Health and Genomics, Department of Public Health and Primary Care, University of Cambridge, CB1 8RN, United Kingdom
+AD  - Department of Human Genetics, Wellcome Sanger Institute, CB10 1SA, Hinxton, United Kingdom
+AD  - BHF Cambridge Centre of Excellence, School of Clinical Medicine, Addenbrookes’ Hospital, Cambridge, CB2 0QQ, United Kingdom
+AD  - NIHR Cambridge Biomedical Research Centre, School of Clinical Medicine, Addenbrooke's Hospital, CB2 0QQ, Cambridge, United Kingdom
+AB  - Leukocyte telomere length (LTL) is a heritable biomarker of genomic aging. In this study, we perform a genome-wide meta-analysis of LTL by pooling densely genotyped and imputed association results across large-scale European-descent studies including up to 78,592 individuals. We identify 49 genomic regions at a false dicovery rate (FDR) < 0.05 threshold and prioritize genes at 31, with five highlighting nucleotide metabolism as an important regulator of LTL. We report six genome-wide significant loci in or near SENP7, MOB1B, CARMIL1, PRRC2A, TERF2, and RFWD3, and our results support recently identified PARP1, POT1, ATM, and MPHOSPH6 loci. Phenome-wide analyses in >350,000 UK Biobank participants suggest that genetically shorter telomere length increases the risk of hypothyroidism and decreases the risk of thyroid cancer, lymphoma, and a range of proliferative conditions. Our results replicate previously reported associations with increased risk of coronary artery disease and lower risk for multiple cancer types. Our findings substantially expand current knowledge on genes that regulate LTL and their impact on human health and disease. © 2020 The Author(s)
+KW  - age-related disease
+KW  - biological aging
+KW  - Mendelian randomisation
+KW  - telomere length
+KW  - Article
+KW  - ATM gene
+KW  - cancer risk
+KW  - CARMIL1 gene
+KW  - European
+KW  - gene
+KW  - gene locus
+KW  - genetic risk
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - hypothyroidism
+KW  - leukocyte
+KW  - lymphoma
+KW  - MOB1B gene
+KW  - MPHOSPH6 gene
+KW  - nucleotide metabolism
+KW  - PARP1 gene
+KW  - POT1 gene
+KW  - priority journal
+KW  - PRRC2A gene
+KW  - RFWD3 gene
+KW  - risk reduction
+KW  - SENP7 gene
+KW  - systematic review
+KW  - telomere length
+KW  - TERF2 gene
+KW  - thyroid cancer
+PB  - Cell Press
+SN  - 00029297 (ISSN)
+C2  - 32109421
+LA  - English
+J2  - Am. J. Hum. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 117; Correspondence Address: C. Langenberg; MRC Epidemiology Unit, University of Cambridge, CB2 0SL, United Kingdom; email: Claudia.Langenberg@mrc-epid.cam.ac.uk; CODEN: AJHGA
+ER  -
+
+TY  - JOUR
+AU  - Gkatzionis, A.
+AU  - Burgess, S.
+TI  - Contextualizing selection bias in Mendelian randomization: How bad is it likely to be?
+PY  - 2019
+T2  - International Journal of Epidemiology
+VL  - 48
+IS  - 3
+SP  - 691
+EP  - 701
+DO  - 10.1093/ije/dyy202
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85063596419&doi=10.1093%2fije%2fdyy202&partnerID=40&md5=981d6a0fae2b41f116e5ce5a77cef559
+AD  - MRC Biostatistics Unit, School of Clinical Medicine, University of Cambridge, Robinson Way, Cambridge, CB2 0SR, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom
+AB  - Background: Selection bias affects Mendelian randomization investigations when selection into the study sample depends on a collider between the genetic variant and confounders of the risk factor-outcome association. However, the relative importance of selection bias for Mendelian randomization compared with other potential biases is unclear. Methods: We performed an extensive simulation study to assess the impact of selection bias on a typical Mendelian randomization investigation. We considered inverse probability weighting as a potential method for reducing selection bias. Finally, we investigated whether selection bias may explain a recently reported finding that lipoprotein(a) is not a causal risk factor for cardiovascular mortality in individuals with previous coronary heart disease. Results: Selection bias had a severe impact on bias and Type 1 error rates in our simulation study, but only when selection effects were large. For moderate effects of the risk factor on selection, bias was generally small and Type 1 error rate inflation was not considerable. Inverse probability weighting ameliorated bias when the selection model was correctly specified, but increased bias when selection bias was moderate and the model was misspecified. In the example of lipoprotein(a), strong genetic associations and strong confounder effects on selection mean the reported null effect on cardiovascular mortality could plausibly be explained by selection bias. Conclusions: Selection bias can adversely affect Mendelian randomization investigations, but its impact is likely to be less than other biases. Selection bias is substantial when the effects of the risk factor and confounders on selection are particularly large. © 2018 The Author(s) 2018. Published by Oxford University Press on behalf of the International Epidemiological Association.
+KW  - causal inference
+KW  - collider bias
+KW  - instrumental variables
+KW  - inverse probability weighting
+KW  - selection bias
+KW  - Cardiovascular Diseases
+KW  - Causality
+KW  - Computer Simulation
+KW  - Confounding Factors, Epidemiologic
+KW  - Coronary Disease
+KW  - Humans
+KW  - Lipoprotein(a)
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - Selection Bias
+KW  - lipoprotein A
+KW  - lipoprotein A
+KW  - cardiovascular disease
+KW  - genetic analysis
+KW  - mortality
+KW  - risk factor
+KW  - simulation
+KW  - Article
+KW  - cardiovascular mortality
+KW  - genetic association
+KW  - genetic risk score
+KW  - genetic variability
+KW  - human
+KW  - ischemic heart disease
+KW  - Mendelian randomization analysis
+KW  - model
+KW  - mortality risk
+KW  - priority journal
+KW  - probability
+KW  - selection bias
+KW  - simulation
+KW  - cardiovascular disease
+KW  - causality
+KW  - computer simulation
+KW  - coronary artery disease
+KW  - genetics
+KW  - metabolism
+KW  - mortality
+KW  - risk factor
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 30325422
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 113; Correspondence Address: S. Burgess; MRC Biostatistics Unit, School of Clinical Medicine, University of Cambridge, Cambridge, Robinson Way, CB2 0SR, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Nazarzadeh, M.
+AU  - Pinho-Gomes, A.-C.
+AU  - Bidel, Z.
+AU  - Dehghan, A.
+AU  - Canoy, D.
+AU  - Hassaine, A.
+AU  - Ayala Solares, J.R.
+AU  - Salimi-Khorshidi, G.
+AU  - Smith, G.D.
+AU  - Otto, C.M.
+AU  - Rahimi, K.
+TI  - Plasma lipids and risk of aortic valve stenosis: A Mendelian randomization study
+PY  - 2020
+T2  - European Heart Journal
+VL  - 41
+IS  - 40
+SP  - 3913
+EP  - 3920B
+DO  - 10.1093/eurheartj/ehaa070
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85086728141&doi=10.1093%2feurheartj%2fehaa070&partnerID=40&md5=33d3cdb6a4ed985d68c9ff4f6cdf48d2
+AD  - The George Institute for Global Health, University of Oxford, 1st Floor, Hayes House, 75 George Street, Oxford, OX1 2BQ, United Kingdom
+AD  - Deep Medicine, Oxford Martin School, University of Oxford, Oxford, United Kingdom
+AD  - The Collaboration Center of Meta-Analysis Research, School of Health, Torbat Heydariyeh University of Medical Sciences, Torbat Heydariyeh, Iran
+AD  - Department of Biostatistics and Epidemiology, School of Public Health, Imperial College London, London, United Kingdom
+AD  - NIHR Oxford Biomedical Research Centre, Oxford University, Hospitals NHS Foundation Trust, Oxford, United Kingdom
+AD  - Faculty of Medicine, University of New South Wales, Sydney, Australia
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - University of Washington, Seattle, WA, United States
+AB  - Aims : Aortic valve stenosis is commonly considered a degenerative disorder with no recommended preventive intervention, with only valve replacement surgery or catheter intervention as treatment options. We sought to assess the causal association between exposure to lipid levels and risk of aortic stenosis. Methods and results : Causality of association was assessed using two-sample Mendelian randomization framework through different statistical methods. We retrieved summary estimations of 157 genetic variants that have been shown to be associated with plasma lipid levels in the Global Lipids Genetics Consortium that included 188 577 participants, mostly European ancestry, and genetic association with aortic stenosis as the main outcome from a total of 432 173 participants in the UK Biobank. Secondary negative control outcomes included aortic regurgitation and mitral regurgitation. The odds ratio for developing aortic stenosis per unit increase in lipid parameter was 1.52 [95% confidence interval (CI) 1.22-1.90; per 0.98 mmol/L] for low density lipoprotein (LDL)-cholesterol, 1.03 (95% CI 0.80-1.31; per 0.41 mmol/L) for high density lipoprotein (HDL)-cholesterol, and 1.38 (95% CI 0.92-2.07; per 1 mmol/L) for triglycerides. There was no evidence of a causal association between any of the lipid parameters and aortic or mitral regurgitation. Conclusion : Lifelong exposure to high LDL-cholesterol increases the risk of symptomatic aortic stenosis, suggesting that LDL-lowering treatment may be effective in its prevention.  © 2020 The Author(s) 2020. Published by Oxford University Press on behalf of the European Society of Cardiology.
+KW  - Blood cholesterol
+KW  - Heart valve diseases
+KW  - Lipid profile
+KW  - Mendelian randomization analysis
+KW  - Aortic Valve Stenosis
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Lipids
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Plasma
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - high density lipoprotein cholesterol
+KW  - lipid
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - adult
+KW  - aged
+KW  - aortic regurgitation
+KW  - aortic valve stenosis
+KW  - Article
+KW  - Caucasian
+KW  - cholesterol blood level
+KW  - clinical outcome
+KW  - cohort analysis
+KW  - controlled study
+KW  - female
+KW  - genetic association
+KW  - genetic variability
+KW  - human
+KW  - incidence
+KW  - lipid blood level
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - mitral valve regurgitation
+KW  - priority journal
+KW  - prospective study
+KW  - risk assessment
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - aortic valve stenosis
+KW  - blood
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - plasma
+KW  - risk factor
+PB  - Oxford University Press
+SN  - 0195668X (ISSN)
+C2  - 32076698
+LA  - English
+J2  - Eur. Heart J.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 112; Correspondence Address: K. Rahimi; The George Institute for Global Health, University of Oxford, Oxford, 1st Floor, Hayes House, 75 George Street, OX1 2BQ, United Kingdom; email: kazem.rahimi@georgeinstitute.ox.ac.uk; CODEN: EHJOD
+ER  -
+
+TY  - JOUR
+AU  - Zhou, H.
+AU  - Rentsch, C.T.
+AU  - Cheng, Z.
+AU  - Kember, R.L.
+AU  - Nunez, Y.Z.
+AU  - Sherva, R.M.
+AU  - Tate, J.P.
+AU  - Dao, C.
+AU  - Xu, K.
+AU  - Polimanti, R.
+AU  - Farrer, L.A.
+AU  - Justice, A.C.
+AU  - Kranzler, H.R.
+AU  - Gelernter, J.
+TI  - Association of OPRM1 Functional Coding Variant with Opioid Use Disorder: A Genome-Wide Association Study
+PY  - 2020
+T2  - JAMA Psychiatry
+VL  - 77
+IS  - 10
+SP  - 1072
+EP  - 1080
+DO  - 10.1001/jamapsychiatry.2020.1206
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85087120343&doi=10.1001%2fjamapsychiatry.2020.1206&partnerID=40&md5=1750edfe2c433e3163aeead0fd485a0f
+AD  - Department of Psychiatry, Yale School of Medicine, New Haven, CT, United States
+AD  - Department of Psychiatry, Veterans Affairs Connecticut Healthcare System, West Haven, United States
+AD  - Department of Internal Medicine, Yale School of Medicine, New Haven, CT, United States
+AD  - Faculty of Epidemiology and Population Health, London School of Hygiene and Tropical Medicine, London, United Kingdom
+AD  - Department of Genetics, University of Pennsylvania Perelman, School of Medicine, Philadelphia, United States
+AD  - Crescenz Veterans Affairs Medical Center, Philadelphia, PA, United States
+AD  - Department of Medicine (Biomedical Genetics), Boston University, School of Medicine, Boston, MA, United States
+AD  - Department of Biostatistics, Boston University, School of Public Health, Boston, MA, United States
+AD  - Department of Epidemiology, Boston University, School of Public Health, Boston, MA, United States
+AD  - Department of Neurology, Boston University, School of Medicine, Boston, MA, United States
+AD  - Department of Ophthalmology, Boston University, School of Medicine, Boston, MA, United States
+AD  - Yale School of Public Health, New Haven, CT, United States
+AD  - Department of Psychiatry, University of Pennsylvania Perelman, School of Medicine, Philadelphia, United States
+AD  - Department of Genetics, Yale University, School of Medicine, New Haven, CT, United States
+AD  - Department of Neuroscience, Yale University, School of Medicine, New Haven, CT, United States
+AB  - Importance: With the current opioid crisis, it is important to improve understanding of the biological mechanisms of opioid use disorder (OUD). Objectives: To detect genetic risk variants for OUD and determine genetic correlations and causal association with OUD and other traits. Design, Setting, and Participants: A genome-wide association study of electronic health record-defined OUD in the Million Veteran Program sample was conducted, comprising 8529 affected European American individuals and 71200 opioid-exposed European American controls (defined by electronic health record trajectory analysis) and 4032 affected African American individuals and 26029 opioid-exposed African American controls. Participants were enrolled from January 10, 2011, to May 21, 2018, with electronic health record data for OUD diagnosis from October 1, 1999, to February 7, 2018. Million Veteran Program results and additional OUD case-control genome-wide association study results from the Yale-Penn and Study of Addiction: Genetics and Environment samples were meta-analyzed (total numbers: European American individuals, 10544 OUD cases and 72163 opioid-exposed controls; African American individuals, 5212 cases and 26876 controls). Data on Yale-Penn participants were collected from February 14, 1999, to April 1, 2017, and data on Study of Addiction: Genetics and Environment participants were collected from 1990 to 2007. The key result was replicated in 2 independent cohorts: Proxy-phenotype buprenorphine treatment in the UK Biobank and newly genotyped Yale-Penn participants. Genetic correlations between OUD and other traits were tested, and mendelian randomization analysis was conducted to identify potential causal associations. Main Outcomes and Measures: Main outcomes were International Classification of Diseases, Ninth Revision-diagnosed OUD or International Statistical Classification of Diseases and Related Health Problems, Tenth Revision-diagnosed OUD (Million Veteran Program), and DSM-IV-defined opioid dependence (Yale-Penn and Study of Addiction: Genetics and Environment). Results: A total of 114759 individuals (101016 men [88%]; mean [SD] age, 60.1 [12.8] years) were included. In 82707 European American individuals, a functional coding variant (rs1799971, encoding Asn40Asp) in OPRM1 (μ-opioid receptor gene, the main biological target for opioid drugs; OMIM 600018) reached genome-wide significance (G allele: β =-0.066 [SE = 0.012]; P = 1.51 × 10-8). The finding was replicated in 2 independent samples. Single-nucleotide polymorphism-based heritability of OUD was 11.3% (SE = 1.8%). Opioid use disorder was genetically correlated with 83 traits, including multiple substance use traits, psychiatric illnesses, cognitive performance, and others. Mendelian randomization analysis revealed the following associations with OUD: Risk of tobacco smoking, depression, neuroticism, worry neuroticism subcluster, and cognitive performance. No genome-wide significant association was detected for African American individuals or in transpopulation meta-analysis. Conclusions and Relevance: This genome-wide meta-analysis identified a significant association of OUD with an OPRM1 variant, which was replicated in 2 independent samples. Post-genome-wide association study analysis revealed associated pleiotropic characteristics. Recruitment of additional individuals with OUD for future studies-especially those of non-European ancestry-is a crucial next step in identifying additional significant risk loci.. © 2020 American Medical Association. All rights reserved.
+KW  - Aged
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Middle Aged
+KW  - Opioid-Related Disorders
+KW  - Receptors, Opioid, mu
+KW  - United States
+KW  - United States Department of Veterans Affairs
+KW  - buprenorphine
+KW  - mu opiate receptor
+KW  - opiate
+KW  - mu opiate receptor
+KW  - OPRM1 protein, human
+KW  - adult
+KW  - African American
+KW  - alcohol consumption
+KW  - alcoholism
+KW  - allele
+KW  - Article
+KW  - cognition
+KW  - cohort analysis
+KW  - controlled study
+KW  - depression
+KW  - European American
+KW  - female
+KW  - follow up
+KW  - genetic association
+KW  - genetic correlation
+KW  - genetic risk
+KW  - genetic trait
+KW  - genome-wide association study
+KW  - heritability
+KW  - human
+KW  - human tissue
+KW  - ICD-10
+KW  - ICD-9
+KW  - major clinical study
+KW  - major depression
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - middle aged
+KW  - neurosis
+KW  - opiate addiction
+KW  - single nucleotide polymorphism
+KW  - smoking
+KW  - smoking cessation
+KW  - substance use
+KW  - United Kingdom
+KW  - aged
+KW  - blood
+KW  - genetics
+KW  - genome-wide association study
+KW  - government
+KW  - opiate addiction
+KW  - organization and management
+KW  - procedures
+KW  - United States
+PB  - American Medical Association
+SN  - 2168622X (ISSN)
+C2  - 32492095
+LA  - English
+J2  - JAMA Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 120; Correspondence Address: J. Gelernter; Department of Psychiatry, Yale School of Medicine, New Haven, United States; email: joel.gelernter@yale.edu; J. Gelernter; Department of Psychiatry, Veterans Affairs Connecticut Healthcare System, West Haven, United States; email: joel.gelernter@yale.edu; J. Gelernter; Department of Genetics, Yale University, School of Medicine, New Haven, United States; email: joel.gelernter@yale.edu; J. Gelernter; Department of Neuroscience, Yale University, School of Medicine, New Haven, United States; email: joel.gelernter@yale.edu
+ER  -
+
+TY  - JOUR
+AU  - Duckworth, A.
+AU  - Gibbons, M.A.
+AU  - Allen, R.J.
+AU  - Almond, H.
+AU  - Beaumont, R.N.
+AU  - Wood, A.R.
+AU  - Lunnon, K.
+AU  - Lindsay, M.A.
+AU  - Wain, L.V.
+AU  - Tyrrell, J.
+AU  - Scotton, C.J.
+TI  - Telomere length and risk of idiopathic pulmonary fibrosis and chronic obstructive pulmonary disease: a mendelian randomisation study
+PY  - 2021
+T2  - The Lancet Respiratory Medicine
+VL  - 9
+IS  - 3
+SP  - 285
+EP  - 294
+DO  - 10.1016/S2213-2600(20)30364-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096860024&doi=10.1016%2fS2213-2600%2820%2930364-7&partnerID=40&md5=61a1f83fc78376ed9bda957894059c4b
+AD  - Institute of Biomedical & Clinical Science, College of Medicine & Health, University of Exeter, Exeter, United Kingdom
+AD  - Exeter Patients in Collaboration for PF, Exeter, United Kingdom
+AD  - Respiratory Medicine Department, Royal Devon and Exeter NHS Foundation Trust, Exeter, United Kingdom
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AD  - Department of Pharmacy and Pharmacology, University of Bath, Bath, United Kingdom
+AD  - National Institute for Health Research, Leicester Respiratory Biomedical Research Centre, Glenfield Hospital, Leicester, United Kingdom
+AB  - Background: Idiopathic pulmonary fibrosis (IPF) is a fatal lung disease accounting for 1% of UK deaths. In the familial form of pulmonary fibrosis, causal genes have been identified in about 30% of cases, and a majority of these causal genes are associated with telomere maintenance. Prematurely shortened leukocyte telomere length is associated with IPF and chronic obstructive pulmonary disease (COPD), a disease with similar demographics and shared risk factors. Using mendelian randomisation, we investigated evidence supporting a causal role for short telomeres in IPF and COPD. Methods: Mendelian randomisation inference of telomere length causality was done for IPF (up to 1369 cases) and COPD (13 538 cases) against 435 866 controls of European ancestry in UK Biobank. Polygenic risk scores were calculated and two-sample mendelian randomisation analyses were done using seven genetic variants previously associated with telomere length, with replication analysis in an IPF cohort (2668 cases vs 8591 controls) and COPD cohort (15 256 cases vs 47 936 controls). Findings: In the UK Biobank, a genetically instrumented one-SD shorter telomere length was associated with higher odds of IPF (odds ratio [OR] 4·19, 95% CI 2·33–7·55; p=0·0031) but not COPD (1·07, 0·88–1·30; p=0·51). Similarly, an association was found in the IPF replication cohort (12·3, 5·05–30·1; p=0·0015) and not in the COPD replication cohort (1·04, 0·71–1·53; p=0·83). Meta-analysis of the two-sample mendelian randomisation results provided evidence inferring that shorter telomeres cause IPF (5·81 higher odds of IPF, 95% CI 3·56–9·50; p=2·19 × 10−12). There was no evidence to infer that telomere length caused COPD (OR 1·07, 95% CI 0·90–1·27; p=0·46). Interpretation: Cellular senescence is hypothesised as a major driving force in IPF and COPD; telomere shortening might be a contributory factor in IPF, suggesting divergent mechanisms in COPD. Defining a key role for telomere shortening enables greater focus in telomere-related diagnostics, treatments, and the search for a cure in IPF. Investigation of therapies that improve telomere length is warranted. Funding: Medical Research Council. © 2021 Elsevier Ltd
+KW  - Aged
+KW  - Case-Control Studies
+KW  - Causality
+KW  - Female
+KW  - Humans
+KW  - Idiopathic Pulmonary Fibrosis
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Pulmonary Disease, Chronic Obstructive
+KW  - Risk Factors
+KW  - Telomere Shortening
+KW  - telomerase reverse transcriptase
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - causality
+KW  - chronic obstructive lung disease
+KW  - clinical feature
+KW  - cohort analysis
+KW  - controlled study
+KW  - disease association
+KW  - enzyme synthesis
+KW  - evidence based practice
+KW  - female
+KW  - fibrosing alveolitis
+KW  - gene replication
+KW  - genetic risk
+KW  - genetic risk score
+KW  - genetic variability
+KW  - human
+KW  - major clinical study
+KW  - male
+KW  - observational study
+KW  - randomized controlled trial
+KW  - risk assessment
+KW  - telomere length
+KW  - case control study
+KW  - chronic obstructive lung disease
+KW  - fibrosing alveolitis
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - risk factor
+KW  - telomere shortening
+PB  - Lancet Publishing Group
+SN  - 22132600 (ISSN)
+C2  - 33197388
+LA  - English
+J2  - Lancet Respir. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 119; Correspondence Address: C.J. Scotton; Institute of Biomedical & Clinical Science, College of Medicine & Health, University of Exeter, Exeter, EX1 2LU, United Kingdom; email: c.j.scotton@exeter.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Censin, J.C.
+AU  - Peters, S.A.E.
+AU  - Bovijn, J.
+AU  - Ferreira, T.
+AU  - Pulit, S.L.
+AU  - Mägi, R.
+AU  - Mahajan, A.
+AU  - Holmes, M.V.
+AU  - Lindgren, C.M.
+TI  - Causal relationships between obesity and the leading causes of death in women and men
+PY  - 2019
+T2  - PLoS Genetics
+VL  - 15
+IS  - 10
+C7  - e1008405
+DO  - 10.1371/journal.pgen.1008405
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074082818&doi=10.1371%2fjournal.pgen.1008405&partnerID=40&md5=6c57813df7f55fc80611ae15017da1fe
+AD  - Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, University of Oxford, Oxford, United Kingdom
+AD  - Wellcome Centre for Human Genetics, Nuffield Department of Medicine, University of Oxford, Oxford, United Kingdom
+AD  - George Institute for Global Health, University of Oxford, Oxford, United Kingdom
+AD  - Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Department of Genetics, Center for Molecular Medicine, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Program in Medical and Population Genetics, Broad Institute, Cambridge, MA, United States
+AD  - Estonian Genome Center, Institute of Genomics, University of Tartu, Tartu, Estonia
+AD  - Oxford Centre for Diabetes, Endocrinology and Metabolism, Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom
+AD  - NIHR Oxford Biomedical Research Centre, Oxford University Hospitals NHS Foundation Trust, John Radcliffe Hospital, Oxford, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, Big Data Institute Building, University of Oxford, Roosevelt Drive, Oxford, United Kingdom
+AB  - Obesity traits are causally implicated with risk of cardiometabolic diseases. It remains unclear whether there are similar causal effects of obesity traits on other non-communicable diseases. Also, it is largely unexplored whether there are any sex-specific differences in the causal effects of obesity traits on cardiometabolic diseases and other leading causes of death. We constructed sex-specific genetic risk scores (GRS) for three obesity traits; body mass index (BMI), waist-hip ratio (WHR), and WHR adjusted for BMI, including 565, 324, and 337 genetic variants, respectively. These GRSs were then used as instrumental variables to assess associations between the obesity traits and leading causes of mortality in the UK Biobank using Mendelian randomization. We also investigated associations with potential mediators, including smoking, glycemic and blood pressure traits. Sex-differences were subsequently assessed by Cochran’s Q-test (Phet). A Mendelian randomization analysis of 228,466 women and 195,041 men showed that obesity causes coronary artery disease, stroke (particularly ischemic), chronic obstructive pulmonary disease, lung cancer, type 2 and 1 diabetes mellitus, non-alcoholic fatty liver disease, chronic liver disease, and acute and chronic renal failure. Higher BMI led to higher risk of type 2 diabetes in women than in men (Phet = 1.4×10−5). Waist-hip-ratio led to a higher risk of chronic obstructive pulmonary disease (Phet = 3.7×10−6) and higher risk of chronic renal failure (Phet = 1.0×10−4) in men than women. Obesity traits have an etiological role in the majority of the leading global causes of death. Sex differences exist in the effects of obesity traits on risk of type 2 diabetes, chronic obstructive pulmonary disease, and renal failure, which may have downstream implications for public health. © 2019 Censin et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+KW  - Adiposity
+KW  - Aged
+KW  - Blood Pressure
+KW  - Body Mass Index
+KW  - Cause of Death
+KW  - Coronary Artery Disease
+KW  - Diabetes Mellitus, Type 2
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Neoplasms
+KW  - Obesity
+KW  - Polymorphism, Single Nucleotide
+KW  - Pulmonary Disease, Chronic Obstructive
+KW  - Risk Factors
+KW  - Stroke
+KW  - Waist-Hip Ratio
+KW  - acute kidney failure
+KW  - adult
+KW  - Article
+KW  - blood pressure
+KW  - body mass
+KW  - brain ischemia
+KW  - cause of death
+KW  - chronic kidney failure
+KW  - chronic liver disease
+KW  - chronic obstructive lung disease
+KW  - coronary artery disease
+KW  - disease association
+KW  - female
+KW  - genetic risk score
+KW  - genetic variability
+KW  - glycemic load
+KW  - high risk population
+KW  - human
+KW  - insulin dependent diabetes mellitus
+KW  - lung cancer
+KW  - male
+KW  - mortality
+KW  - non insulin dependent diabetes mellitus
+KW  - nonalcoholic fatty liver
+KW  - obesity
+KW  - outcome assessment
+KW  - public health problem
+KW  - sex difference
+KW  - smoking
+KW  - waist hip ratio
+KW  - aged
+KW  - cerebrovascular accident
+KW  - complication
+KW  - genetics
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - neoplasm
+KW  - obesity
+KW  - pathology
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Public Library of Science
+SN  - 15537390 (ISSN)
+C2  - 31647808
+LA  - English
+J2  - PLoS Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 114; Correspondence Address: C.M. Lindgren; Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, University of Oxford, Oxford, United Kingdom; email: lindgrenpa@bdi.ox.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Yu, X.-H.
+AU  - Yang, Y.-Q.
+AU  - Cao, R.-R.
+AU  - Bo, L.
+AU  - Lei, S.-F.
+TI  - The causal role of gut microbiota in development of osteoarthritis
+PY  - 2021
+T2  - Osteoarthritis and Cartilage
+VL  - 29
+IS  - 12
+SP  - 1741
+EP  - 1750
+DO  - 10.1016/j.joca.2021.08.003
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85114285467&doi=10.1016%2fj.joca.2021.08.003&partnerID=40&md5=fb1269aad55d8215d492438870788534
+AD  - Center for Genetic Epidemiology and Genomics, School of Public Health, Medical College of Soochow University, Suzhou, China
+AD  - Jiangsu Key Laboratory of Preventive and Translational Medicine for Geriatric Diseases, Soochow University, 199 Renai Road, Suzhou, 215123, Jiangsu, China
+AD  - Department of Rheumatology, The Second Affiliated Hospital of Soochow University, Suzhou, 215004, Jiangsu, China
+AB  - Objective: There is considerable evidence for relationship between gut microbiota and osteoarthritis (OA), but no studies have investigated their causal relationship. Method: This study utilized large-scale genome-wide association studies (GWAS) summary statistics to evaluate the causal association between gut microbiota and OA risk. Specifically, two-sample Mendelian randomization (MR) approach was used to identify the causal microbial taxa for OA. Comprehensively sensitive analyses were performed to validate the robustness of results and novel multivariable MR analyses were further conducted to ensure the independence of causal association. Reverse-direction MR analyses were performed to rule out the possibility of reverse associations. Finally, enrichment analyses were used to investigate the biofunction. Results: After correction, three microbial taxa were identified to be causally associated with diverse joint OA (PFDR < 0.100), namely Methanobacteriaceae family for knee OA (PFDR = 0.043) and any OA (PFDR = 0.028), Desulfovibrionales order for knee OA (PFDR = 0.045) and Ruminiclostridium5 genus for knee OA (PFDR = 0.063). In addition, we also identified five suggestive microbial taxa that were significant with three different methods under the nominal significance (P < 0.05). Sensitive analysis excluded the influence of heterogeneity and horizontal pleiotropy and multivariable MR analysis ruled out the possibility of horizontal pleiotropy of BMI. GO enrichment analysis illustrates the protective mechanism of the identified taxa against OA. Conclusions: This study found that several microbial taxa were causally associated with diverse joint OA. The results enhanced our understanding of gut microbiota in the pathology of OA. © 2021 Osteoarthritis Research Society International
+KW  - Gut microbiota
+KW  - Mendelian randomization
+KW  - Osteoarthrosis
+KW  - Causality
+KW  - Gastrointestinal Microbiome
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Osteoarthritis
+KW  - Article
+KW  - bacterium
+KW  - Desulfovibrionales
+KW  - disease association
+KW  - genome-wide association study
+KW  - hip osteoarthritis
+KW  - intestine flora
+KW  - knee osteoarthritis
+KW  - Methanobacteriaceae
+KW  - nonhuman
+KW  - osteoarthritis
+KW  - phenotype
+KW  - Ruminiclostridium
+KW  - single nucleotide polymorphism
+KW  - causality
+KW  - genetics
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - microbiology
+KW  - osteoarthritis
+PB  - W.B. Saunders Ltd
+SN  - 10634584 (ISSN)
+C2  - 34425228
+LA  - English
+J2  - Osteoarthritis Cartilage
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 112; Correspondence Address: S.-F. Lei; Center for Genetic Epidemiology and Genomics, School of Public Health, Medical College of Soochow University, Suzhou, China; email: leisf@suda.edu.cn; CODEN: OSCAE
+ER  -
+

@@ -1,0 +1,1101 @@
+﻿TY  - JOUR
+AU  - Venkatesh, S.S.
+AU  - Ferreira, T.
+AU  - Benonisdottir, S.
+AU  - Rahmioglu, N.
+AU  - Becker, C.M.
+AU  - Granne, I.
+AU  - Zondervan, K.T.
+AU  - Holmes, M.V.
+AU  - Lindgren, C.M.
+AU  - Wittemans, L.B.L.
+TI  - Obesity and risk of female reproductive conditions: A Mendelian randomisation study
+PY  - 2022
+T2  - PLoS Medicine
+VL  - 19
+IS  - 2
+C7  - e1003679
+DO  - 10.1371/journal.pmed.1003679
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85123974554&doi=10.1371%2fjournal.pmed.1003679&partnerID=40&md5=dc76746c8b489791e9f6eaae748d27d3
+AD  - Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, University of Oxford, Oxford, United Kingdom
+AD  - Wellcome Centre for Human Genetics, Nuffield Department of Medicine, University of Oxford, Oxford, United Kingdom
+AD  - Nuffield Department of Women’s and Reproductive Health, Medical Sciences Division, University of Oxford, Oxford, United Kingdom
+AD  - Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, Oxford, United Kingdom
+AD  - Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AB  - Background Obesity is observationally associated with altered risk of many female reproductive conditions. These include polycystic ovary syndrome (PCOS), abnormal uterine bleeding, endometriosis, infertility, and pregnancy-related disorders. However, the roles and mechanisms of obesity in the aetiology of reproductive disorders remain unclear. Thus, we aimed to estimate observational and genetically predicted causal associations between obesity, metabolic hormones, and female reproductive disorders. Methods and findings Logistic regression, generalised additive models, and Mendelian randomisation (MR) (2-sample, non-linear, and multivariable) were applied to obesity and reproductive disease data on up to 257,193 women of European ancestry in UK Biobank and publicly available genome-wide association studies (GWASs). Body mass index (BMI), waist-to-hip ratio (WHR), and WHR adjusted for BMI were observationally (odds ratios [ORs] = 1.02–1.87 per 1-SD increase in obesity trait) and genetically (ORs = 1.06–2.09) associated with uterine fibroids (UF), PCOS, heavy menstrual bleeding (HMB), and pre-eclampsia. Genetically predicted visceral adipose tissue (VAT) mass was associated with the development of HMB (OR [95% CI] per 1-kg increase in predicted VAT mass = 1.32 [1.06–1.64], P = 0.0130), PCOS (OR [95% CI] = 1.15 [1.08–1.23], P = 3.24 × 10−05), and pre-eclampsia (OR [95% CI] = 3.08 [1.98–4.79], P = 6.65 × 10−07). Increased waist circumference posed a higher genetic risk (ORs = 1.16–1.93) for the development of these disorders and UF than did increased hip circumference (ORs = 1.06–1.10). Leptin, fasting insulin, and insulin resistance each mediated between 20% and 50% of the total genetically predicted association of obesity with pre-eclampsia. Reproductive conditions clustered based on shared genetic components of their aetiological relationships with obesity. This study was limited in power by the low prevalence of female reproductive conditions among women in the UK Biobank, with little information on pre-diagnostic anthropometric traits, and by the susceptibility of MR estimates to genetic pleiotropy. Conclusions We found that common indices of overall and central obesity were associated with increased risks of reproductive disorders to heterogenous extents in a systematic, large-scale genetics-based analysis of the aetiological relationships between obesity and female reproductive conditions. Our results suggest the utility of exploring the mechanisms mediating the causal associations of overweight and obesity with gynaecological health to identify targets for disease prevention and treatment. 2022 Venkatesh et al.
+KW  - Adult
+KW  - Aged
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Leiomyoma
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Obesity
+KW  - Polycystic Ovary Syndrome
+KW  - Pre-Eclampsia
+KW  - Pregnancy
+KW  - Risk Assessment
+KW  - United Kingdom
+KW  - Uterine Hemorrhage
+KW  - insulin
+KW  - leptin
+KW  - thyrotropin
+KW  - abdominal obesity
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - body composition
+KW  - body mass
+KW  - cohort analysis
+KW  - controlled study
+KW  - disease association
+KW  - endometriosis
+KW  - female
+KW  - genetic risk
+KW  - genome-wide association study
+KW  - hip circumference
+KW  - human
+KW  - infertility
+KW  - insulin resistance
+KW  - insulin sensitivity
+KW  - intra-abdominal fat
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - menorrhagia
+KW  - non insulin dependent diabetes mellitus
+KW  - obesity
+KW  - ovary cancer
+KW  - ovary polycystic disease
+KW  - pleiotropy
+KW  - preeclampsia
+KW  - pregnancy
+KW  - prevalence
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - spontaneous abortion
+KW  - stillbirth
+KW  - waist circumference
+KW  - waist hip ratio
+KW  - complication
+KW  - genetics
+KW  - leiomyoma
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - obesity
+KW  - ovary polycystic disease
+KW  - preeclampsia
+KW  - risk assessment
+KW  - United Kingdom
+KW  - uterus bleeding
+PB  - Public Library of Science
+SN  - 15491277 (ISSN)
+C2  - 35104295
+LA  - English
+J2  - PLoS Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 107
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Zuber, V.
+AU  - Valdes-Marquez, E.
+AU  - Sun, B.B.
+AU  - Hopewell, J.C.
+TI  - Mendelian randomization with fine-mapped genetic data: Choosing from large numbers of correlated instrumental variables
+PY  - 2017
+T2  - Genetic Epidemiology
+VL  - 41
+IS  - 8
+SP  - 714
+EP  - 725
+DO  - 10.1002/gepi.22077
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85030248626&doi=10.1002%2fgepi.22077&partnerID=40&md5=f98a61fcb809a10a53ee9e8e13f50d8f
+AD  - MRC Biostatistics Unit, Cambridge, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - European Bioinformatics Institute, Hinxton, nr Duxford, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AB  - Mendelian randomization uses genetic variants to make causal inferences about the effect of a risk factor on an outcome. With fine-mapped genetic data, there may be hundreds of genetic variants in a single gene region any of which could be used to assess this causal relationship. However, using too many genetic variants in the analysis can lead to spurious estimates and inflated Type 1 error rates. But if only a few genetic variants are used, then the majority of the data is ignored and estimates are highly sensitive to the particular choice of variants. We propose an approach based on summarized data only (genetic association and correlation estimates) that uses principal components analysis to form instruments. This approach has desirable theoretical properties: it takes the totality of data into account and does not suffer from numerical instabilities. It also has good properties in simulation studies: it is not particularly sensitive to varying the genetic variants included in the analysis or the genetic correlation matrix, and it does not have greatly inflated Type 1 error rates. Overall, the method gives estimates that are less precise than those from variable selection approaches (such as using a conditional analysis or pruning approach to select variants), but are more robust to seemingly arbitrary choices in the variable selection step. Methods are illustrated by an example using genetic associations with testosterone for 320 genetic variants to assess the effect of sex hormone related pathways on coronary artery disease risk, in which variable selection approaches give inconsistent inferences. © 2017 The Authors Genetic Epidemiology Published by Wiley Periodicals, Inc.
+KW  - allele score
+KW  - conditional analysis
+KW  - correlated variants
+KW  - Mendelian randomization
+KW  - summarized data
+KW  - Coronary Disease
+KW  - Genetic Predisposition to Disease
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Models, Genetic
+KW  - Principal Component Analysis
+KW  - Risk Factors
+KW  - Testosterone
+KW  - testosterone
+KW  - testosterone
+KW  - Article
+KW  - coronary artery disease
+KW  - gene mapping
+KW  - genetic association
+KW  - genetic correlation
+KW  - genetic variability
+KW  - instrumental variable analysis
+KW  - Mendelian randomization analysis
+KW  - principal component analysis
+KW  - simulation
+KW  - testosterone blood level
+KW  - biological model
+KW  - blood
+KW  - genetic predisposition
+KW  - human
+KW  - pathology
+KW  - risk factor
+PB  - Wiley-Liss Inc.
+SN  - 07410395 (ISSN)
+C2  - 28944551
+LA  - English
+J2  - Genet. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 108; Correspondence Address: S. Burgess; MRC Biostatistics Unit, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: GENYE
+ER  -
+
+TY  - JOUR
+AU  - Zeng, P.
+AU  - Zhou, X.
+TI  - Causal effects of blood lipids on amyotrophic lateral sclerosis: A Mendelian randomization study
+PY  - 2019
+T2  - Human Molecular Genetics
+VL  - 28
+IS  - 4
+SP  - 688
+EP  - 697
+DO  - 10.1093/hmg/ddy384
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85060972752&doi=10.1093%2fhmg%2fddy384&partnerID=40&md5=f42998b96790b7276ca4a0807d7e1c36
+AD  - Department of Epidemiology and Biostatistics, Xuzhou Medical University, Xuzhou, Jiangsu, 221004, China
+AD  - Department of Biostatistics, Center for Statistical Genetics, University of Michigan, Ann Arbor, 48109, MI, United States
+AB  - Amyotrophic lateral sclerosis (ALS) is a late-onset fatal neurodegenerative disorder that is predicted to increase across the globe by ∼70% in the following decades. Understanding the disease causal mechanism underlying ALS and identifying modifiable risks factors for ALS hold the key for the development of effective preventative and treatment strategies. Here, we investigate the causal effects of four blood lipid traits that include high-density lipoprotein, low-density lipoprotein (LDL), total cholesterol and triglycerides on the risk of ALS. By leveraging instrument variables from multiple large-scale genome-wide association studies in both European and East Asian populations, we carry out one of the largest and most comprehensive Mendelian randomization analyses performed to date on the causal relationship between lipids and ALS. Among the four lipids, we found that only LDL is causally associated with ALS and that higher LDL level increases the risk of ALS in both the European and East Asian populations. Specifically, the odds ratio of ALS per 1 standard deviation (i.e. 39.0 mg/dL) increase of LDL is estimated to be 1.14 [95% confidence interval (CI), 1.05-1.24; P = 1.38E-3] in the European population and 1.06 (95% CI, 1.00-1.12; P = 0.044) in the East Asian population. The identified causal relationship between LDL and ALS is robust with respect to the choice of statistical methods and is validated through extensive sensitivity analyses that guard against various model assumption violations. Our study provides important evidence supporting the causal role of higher LDL on increasing the risk of ALS, paving ways for the development of preventative strategies for reducing the disease burden of ALS across multiple nations. © 2018 The Author(s).
+KW  - Amyotrophic Lateral Sclerosis
+KW  - Cholesterol
+KW  - Female
+KW  - Humans
+KW  - Lipids
+KW  - Lipoproteins, HDL
+KW  - Lipoproteins, LDL
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Triglycerides
+KW  - cholesterol
+KW  - high density lipoprotein
+KW  - low density lipoprotein
+KW  - triacylglycerol
+KW  - cholesterol
+KW  - high density lipoprotein
+KW  - lipid
+KW  - low density lipoprotein
+KW  - triacylglycerol
+KW  - amyotrophic lateral sclerosis
+KW  - Article
+KW  - cholesterol blood level
+KW  - controlled study
+KW  - East Asian
+KW  - European
+KW  - female
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - Japanese (people)
+KW  - lipid blood level
+KW  - lipid level
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - population genetics
+KW  - priority journal
+KW  - single nucleotide polymorphism
+KW  - amyotrophic lateral sclerosis
+KW  - blood
+KW  - genetics
+KW  - pathophysiology
+PB  - Oxford University Press
+SN  - 09646906 (ISSN)
+C2  - 30445611
+LA  - English
+J2  - Hum. Mol. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 104; Correspondence Address: P. Zeng; Department of Epidemiology and Biostatistics, Xuzhou Medical University, Xuzhou, Jiangsu, 221004, China; email: zpstat@xzhmu.edu.cn; CODEN: HMGEE
+ER  -
+
+TY  - JOUR
+AU  - Murphy, N.
+AU  - Knuppel, A.
+AU  - Papadimitriou, N.
+AU  - Martin, R.M.
+AU  - Tsilidis, K.K.
+AU  - Smith-Byrne, K.
+AU  - Fensom, G.
+AU  - Perez-Cornago, A.
+AU  - Travis, R.C.
+AU  - Key, T.J.
+AU  - Gunter, M.J.
+TI  - Insulin-like growth factor-1, insulin-like growth factor-binding protein-3, and breast cancer risk: observational and Mendelian randomization analyses with ∼430 000 women
+PY  - 2020
+T2  - Annals of Oncology
+VL  - 31
+IS  - 5
+SP  - 641
+EP  - 649
+DO  - 10.1016/j.annonc.2020.01.066
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85083518317&doi=10.1016%2fj.annonc.2020.01.066&partnerID=40&md5=ae1c1d1983b8fcabfd6bff9e76aa702c
+AD  - Section of Nutrition and Metabolism, International Agency for Research on Cancer, Lyon, France
+AD  - Cancer Epidemiology Unit, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Bristol Medical School, Department of Population Health Sciences, University of Bristol, Bristol, United Kingdom
+AD  - National Institute for Health Research (NIHR) Bristol Biomedical Research Centre, University Hospitals Bristol NHS Foundation Trust and the University of Bristol, Bristol, United Kingdom
+AD  - Department of Hygiene and Epidemiology, University of Ioannina School of Medicine, Ioannina, Greece
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Genetic Epidemiology Group, International Agency for Research on Cancer, Lyon, France
+AB  - Background: Epidemiological evidence supports a positive association between circulating insulin-like growth factor-1 (IGF-1) concentrations and breast cancer risk, but both the magnitude and causality of this relationship are uncertain. We conducted observational analyses with adjustment for regression dilution bias, and Mendelian randomization (MR) analyses allowed for causal inference. Patients and methods: We investigated the associations between circulating IGF-1 concentrations and incident breast cancer risk in 206 263 women in the UK Biobank. Multivariable hazard ratios (HRs) and 95% confidence intervals (CI) were estimated using Cox proportional hazards models. HRs were corrected for regression dilution using repeat IGF-1 measures available in a subsample of 6711 women. For the MR analyses, genetic variants associated with circulating IGF-1 and IGF-binding protein-3 (IGFBP-3) levels were identified and their association with breast cancer was examined with two-sample MR methods using genome-wide data from 122 977 cases and 105 974 controls. Results: In the UK Biobank, after a median follow-up of 7.1 years, 4360 incident breast cancer cases occurred. In the multivariable-adjusted models corrected for regression dilution, higher IGF-1 concentrations were associated with a greater risk of breast cancer (HR per 5 nmol/l increment of IGF-1 = 1.11, 95% CI = 1.07–1.16). Similar positive associations were found by follow-up time, menopausal status, body mass index, and other risk factors. In the MR analyses, a 5 nmol/l increment in genetically-predicted IGF-1 concentration was associated with a greater breast cancer risk (odds ratio = 1.05, 95% CI = 1.01–1.10; P = 0.02), with a similar effect estimate for estrogen-positive (ER+) tumours, but no effect found for estrogen-negative (ER−) tumours. Genetically-predicted IGFBP-3 concentrations were not associated with breast cancer risk (odds ratio per 1-standard deviation increment = 1.00, 95% CI = 0.97–1.04; P = 0.98). Conclusion: Our results support a probable causal relationship between circulating IGF-1 concentrations and breast cancer, suggesting that interventions targeting the IGF pathway may be beneficial in preventing breast tumorigenesis. © 2020
+KW  - breast cancer
+KW  - insulin-like growth factor-1 (IGF-1)
+KW  - insulin-like growth factor-binding protein-3 (IGFBP-3)
+KW  - Mendelian randomization
+KW  - observational
+KW  - Breast Neoplasms
+KW  - Case-Control Studies
+KW  - Female
+KW  - Humans
+KW  - Insulin-Like Growth Factor Binding Protein 3
+KW  - Insulin-Like Growth Factor I
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - somatomedin binding protein 3
+KW  - somatomedin C
+KW  - somatomedin binding protein 3
+KW  - somatomedin C
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - biobank
+KW  - body mass
+KW  - breast cancer
+KW  - cancer risk
+KW  - controlled study
+KW  - female
+KW  - follow up
+KW  - genetic variability
+KW  - hazard ratio
+KW  - human
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - menopause
+KW  - observational study
+KW  - priority journal
+KW  - United Kingdom
+KW  - breast tumor
+KW  - case control study
+KW  - genetics
+KW  - risk factor
+PB  - Elsevier Ltd
+SN  - 09237534 (ISSN)
+C2  - 32169310
+LA  - English
+J2  - Ann. Oncol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 106; Correspondence Address: N. Murphy; Section of Nutrition and Metabolism, International Agency for Research on Cancer, Lyon Cedex 08, 150 cours Albert Thomas, 69372, France; email: murphyn@iarc.fr; CODEN: ANONE
+ER  -
+
+TY  - JOUR
+AU  - Bai, W.
+AU  - Suzuki, H.
+AU  - Huang, J.
+AU  - Francis, C.
+AU  - Wang, S.
+AU  - Tarroni, G.
+AU  - Guitton, F.
+AU  - Aung, N.
+AU  - Fung, K.
+AU  - Petersen, S.E.
+AU  - Piechnik, S.K.
+AU  - Neubauer, S.
+AU  - Evangelou, E.
+AU  - Dehghan, A.
+AU  - O’Regan, D.P.
+AU  - Wilkins, M.R.
+AU  - Guo, Y.
+AU  - Matthews, P.M.
+AU  - Rueckert, D.
+TI  - A population-based phenome-wide association study of cardiac and aortic structure and function
+PY  - 2020
+T2  - Nature Medicine
+VL  - 26
+IS  - 10
+SP  - 1654
+EP  - 1662
+DO  - 10.1038/s41591-020-1009-y
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85089725406&doi=10.1038%2fs41591-020-1009-y&partnerID=40&md5=ed79f577e0eb5718b06af0e1cf143b21
+AD  - Data Science Institute, Imperial College London, London, United Kingdom
+AD  - Department of Brain Sciences, Imperial College London, London, United Kingdom
+AD  - Department of Cardiovascular Medicine, Tohoku University Hospital, Sendai, Japan
+AD  - Tohoku Medical Megabank Organization, Tohoku University, Sendai, Japan
+AD  - MRC Centre for Environment and Health, Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AD  - UK Dementia Research Institute, Imperial College London, London, United Kingdom
+AD  - National Heart and Lung Institute, Imperial College London, London, United Kingdom
+AD  - Biomedical Image Analysis Group, Department of Computing, Imperial College London, London, United Kingdom
+AD  - CitAI Research Centre, Department of Computer Science, City University of London, London, United Kingdom
+AD  - NIHR Barts Biomedical Research Centre, Queen Mary University of London, London, United Kingdom
+AD  - NIHR Oxford Biomedical Research Centre, Division of Cardiovascular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom
+AD  - Department of Hygiene and Epidemiology, University of Ioannina Medical School, Ioannina, Greece
+AD  - MRC London Institute of Medical Sciences, Imperial College London, London, United Kingdom
+AB  - Differences in cardiac and aortic structure and function are associated with cardiovascular diseases and a wide range of other types of disease. Here we analyzed cardiovascular magnetic resonance images from a population-based study, the UK Biobank, using an automated machine-learning-based analysis pipeline. We report a comprehensive range of structural and functional phenotypes for the heart and aorta across 26,893 participants, and explore how these phenotypes vary according to sex, age and major cardiovascular risk factors. We extended this analysis with a phenome-wide association study, in which we tested for correlations of a wide range of non-imaging phenotypes of the participants with imaging phenotypes. We further explored the associations of imaging phenotypes with early-life factors, mental health and cognitive function using both observational analysis and Mendelian randomization. Our study illustrates how population-based cardiac and aortic imaging phenotypes can be used to better define cardiovascular disease risks as well as heart–brain health interactions, highlighting new opportunities for studying disease mechanisms and developing image-based biomarkers. © 2020, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Age Factors
+KW  - Anatomy, Cross-Sectional
+KW  - Aorta
+KW  - Biological Specimen Banks
+KW  - Cardiovascular Diseases
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Heart
+KW  - Heart Function Tests
+KW  - Humans
+KW  - Image Processing, Computer-Assisted
+KW  - Machine Learning
+KW  - Magnetic Resonance Imaging
+KW  - Male
+KW  - Myocardium
+KW  - Phenomics
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Sex Factors
+KW  - Structure-Activity Relationship
+KW  - United Kingdom
+KW  - biological marker
+KW  - adult
+KW  - age
+KW  - anatomical concepts
+KW  - anthropometry
+KW  - aorta
+KW  - artery compliance
+KW  - Article
+KW  - asthma
+KW  - biobank
+KW  - blood vessel function
+KW  - bronchitis
+KW  - cardiovascular disease
+KW  - cardiovascular magnetic resonance
+KW  - cardiovascular risk
+KW  - cerebrovascular accident
+KW  - chronic obstructive lung disease
+KW  - clinical outcome
+KW  - cognition
+KW  - cohort analysis
+KW  - controlled study
+KW  - cross-sectional study
+KW  - dementia
+KW  - depression
+KW  - diabetes mellitus
+KW  - female
+KW  - genetic association
+KW  - genome-wide association study
+KW  - heart atrium
+KW  - heart disease
+KW  - heart ejection fraction
+KW  - heart function
+KW  - heart left ventricle enddiastolic volume
+KW  - heart right ventricle enddiastolic volume
+KW  - human
+KW  - hypertension
+KW  - image segmentation
+KW  - left atrium maximum volume
+KW  - machine learning
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - mental health
+KW  - molecular pathology
+KW  - observational study
+KW  - Parkinson disease
+KW  - phenotype
+KW  - population research
+KW  - priority journal
+KW  - right ventricle maximum volume
+KW  - sex
+KW  - sex difference
+KW  - single nucleotide polymorphism
+KW  - United Kingdom
+KW  - volume
+KW  - anatomy
+KW  - anatomy and histology
+KW  - aorta
+KW  - cardiac muscle
+KW  - cardiovascular disease
+KW  - diagnostic imaging
+KW  - epidemiology
+KW  - genetic predisposition
+KW  - genetics
+KW  - heart
+KW  - heart function test
+KW  - image processing
+KW  - nuclear magnetic resonance imaging
+KW  - pathology
+KW  - pathophysiology
+KW  - physiology
+KW  - procedures
+KW  - sex factor
+KW  - structure activity relation
+PB  - Nature Research
+SN  - 10788956 (ISSN)
+C2  - 32839619
+LA  - English
+J2  - Nat. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 108; Correspondence Address: W. Bai; Data Science Institute, Imperial College London, London, United Kingdom; email: w.bai@imperial.ac.uk; CODEN: NAMEF
+ER  -
+
+TY  - JOUR
+AU  - Yuan, S.
+AU  - Kar, S.
+AU  - Carter, P.
+AU  - Vithayathil, M.
+AU  - Mason, A.M.
+AU  - Burgess, S.
+AU  - Larsson, S.C.
+TI  - Is type 2 diabetes causally associated with cancer risk? Evidence from a two-sample mendelian randomization study
+PY  - 2020
+T2  - Diabetes
+VL  - 69
+IS  - 7
+SP  - 1588
+EP  - 1596
+DO  - 10.2337/db20-0084
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85086775406&doi=10.2337%2fdb20-0084&partnerID=40&md5=a3a270e99c8560b206154c59ef277a09
+AD  - Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Department of Surgical Sciences, Uppsala University, Uppsala, Sweden
+AD  - MRC Integrative Epidemiology Unit, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Cancer Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - British Heart Foundation Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - National Institute for Health Research Cambridge Biomedical Research Centre, University of Cambridge and Cambridge University Hospitals, Cambridge, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AB  - We conducted a two-sample Mendelian randomization study to investigate the causal associations of type 2 diabetes mellitus (T2DM) with risk of overall cancer and 22 site-specific cancers. Summary-level data for cancer were extracted from the Breast Cancer Association Consortium and UK Biobank. Genetic predisposition to T2DM was associated with higher odds of pancreatic, kidney, uterine, and cervical cancer and lower odds of esophageal cancer and melanoma but not associated with 16 other site-specific cancers or overall cancer. The odds ratios (ORs) were 1.13 (95% CI 1.04, 1.22), 1.08 (1.00, 1.17), 1.08 (1.01, 1.15), 1.07 (1.01, 1.15), 0.89 (0.81, 0.98), and 0.93 (0.89, 0.97) for pancreatic, kidney, uterine, cervical, and esophageal cancer and melanoma, respectively. The association between T2DM and pancreatic cancer was also observed in a meta-analysis of this and a previous Mendelian randomization study (OR 1.08; 95% CI 1.02, 1.14; P 5 0.009). There was limited evidence supporting causal associations between fasting glucose and cancer. Genetically predicted fasting insulin levels were positively associated with cancers of the uterus, kidney, pancreas, and lung. The current study found causal detrimental effects of T2DM on several cancers. We suggest reinforcing the cancer screening in T2DM patients to enable the early detection of cancer. © 2020 by the American Diabetes Association.
+KW  - Blood Glucose
+KW  - Diabetes Mellitus, Type 2
+KW  - Early Detection of Cancer
+KW  - Fasting
+KW  - Genetic Predisposition to Disease
+KW  - Humans
+KW  - Insulin
+KW  - Mendelian Randomization Analysis
+KW  - Neoplasms
+KW  - Risk
+KW  - glucose
+KW  - insulin
+KW  - insulin
+KW  - Article
+KW  - biliary tract cancer
+KW  - brain cancer
+KW  - breast cancer
+KW  - cancer risk
+KW  - colorectal cancer
+KW  - disease association
+KW  - early cancer diagnosis
+KW  - esophagus cancer
+KW  - fasting
+KW  - glucose blood level
+KW  - human
+KW  - insulin blood level
+KW  - kidney cancer
+KW  - leukemia
+KW  - liver cancer
+KW  - melanoma
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - metabolic syndrome X
+KW  - non insulin dependent diabetes mellitus
+KW  - nonhodgkin lymphoma
+KW  - pancreas cancer
+KW  - pleiotropy
+KW  - priority journal
+KW  - single nucleotide polymorphism
+KW  - stomach cancer
+KW  - testis cancer
+KW  - thyroid cancer
+KW  - uterine cervix cancer
+KW  - uterus cancer
+KW  - blood
+KW  - complication
+KW  - diet restriction
+KW  - genetic predisposition
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - neoplasm
+KW  - non insulin dependent diabetes mellitus
+KW  - procedures
+KW  - risk
+PB  - American Diabetes Association Inc.
+SN  - 00121797 (ISSN)
+C2  - 32349989
+LA  - English
+J2  - Diabetes
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 111; Correspondence Address: S.C. Larsson; Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden; email: susanna.larsson@ki.se; S.C. Larsson; Department of Surgical Sciences, Uppsala University, Uppsala, Sweden; email: susanna.larsson@ki.se; CODEN: DIAEA
+ER  -
+
+TY  - JOUR
+AU  - Ni, J.-J.
+AU  - Xu, Q.
+AU  - Yan, S.-S.
+AU  - Han, B.-X.
+AU  - Zhang, H.
+AU  - Wei, X.-T.
+AU  - Feng, G.-J.
+AU  - Zhao, M.
+AU  - Pei, Y.-F.
+AU  - Zhang, L.
+TI  - Gut Microbiota and Psychiatric Disorders: A Two-Sample Mendelian Randomization Study
+PY  - 2022
+T2  - Frontiers in Microbiology
+VL  - 12
+C7  - 737197
+DO  - 10.3389/fmicb.2021.737197
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85124952320&doi=10.3389%2ffmicb.2021.737197&partnerID=40&md5=b2f320dbcf917cfd04b28ad23d12f4d4
+AD  - Jiangsu Key Laboratory of Preventive and Translational Medicine for Geriatric Diseases, Medical College of Soochow University, Suzhou, China
+AD  - Center for Genetic Epidemiology and Genomics, School of Public Health, Medical College of Soochow University, Suzhou, China
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Medical College of Soochow University, Suzhou, China
+AB  - Evidence supports the observational associations of gut microbiota with a variety of psychiatric disorders, but the causal nature of such associations remains obscure. Aiming to comprehensively investigate their causal relationship and to identify specific causal microbe taxa for psychiatric diseases, we conducted a two-sample Mendelian randomization (MR) analysis of gut microbiome with 15 psychiatric diseases. Specifically, the microbiome genome-wide association study (GWAS) in 18,473 individuals from the MiBioGen study was used as exposure sample, and the GWAS for 15 psychiatric diseases was used as outcome samples. One-hundred ninety bacterial taxa from six levels were available for analysis. At a multiple-testing corrected significance level (phylum P < 5.56 × 10–3, class P < 3.33 × 10–3, order P < 2.63 × 10–3, family P < 1.67 × 10–3, genus P < 4.90 × 10–4, and species P < 3.33 × 10–3), the following eight causal associations from seven bacterial features (one phylum + three classes + one order + one family + one species) were identified: family Prevotellaceae with autism spectrum disorder (P = 5.31 × 10–4), class Betaproteobacteria with bipolar disorder (P = 1.53 × 10–3), class Actinobacteria with schizophrenia (P = 1.33 × 10–3), class Bacteroidia and order Bacteroidales with Tourette syndrome (P = 2.51 × 10–3 and 2.51 × 10–3), phylum Actinobacteria and class Actinobacteria with extroversion (P = 8.22 × 10–4 and 1.09 × 10–3), and species Clostridium innocuum with neuroticism (P = 8.92 × 10–4). Sensitivity analysis showed no evidence of reverse causality, pleiotropy, and heterogeneity. Our findings offered novel insights into the gut microbiota–mediated development mechanism of psychiatric disorders. Copyright © 2022 Ni, Xu, Yan, Han, Zhang, Wei, Feng, Zhao, Pei and Zhang.
+KW  - causal relationship
+KW  - gut microbiota (GM)
+KW  - Mendelian randomization (MR)
+KW  - psychiatric disorders
+KW  - species Clostridium innocuum
+KW  - RNA 16S
+KW  - Actinobacteria
+KW  - Alcohol Use Disorders Identification Test
+KW  - anorexia nervosa
+KW  - anxiety disorder
+KW  - Article
+KW  - attention deficit hyperactivity disorder
+KW  - autism
+KW  - Bacteroidales
+KW  - Bacteroidia
+KW  - Betaproteobacteria
+KW  - bipolar disorder
+KW  - cannabis use
+KW  - Clostridium innocuum
+KW  - cohort analysis
+KW  - Crohn disease
+KW  - extraversion
+KW  - gene linkage disequilibrium
+KW  - gene sequence
+KW  - genome-wide association study
+KW  - genotyping
+KW  - Gilles de la Tourette syndrome
+KW  - human
+KW  - inflammatory bowel disease
+KW  - intestine flora
+KW  - irritable colon
+KW  - Mendelian randomization analysis
+KW  - mental disease
+KW  - neurosis
+KW  - nonhuman
+KW  - obsessive compulsive disorder
+KW  - pleiotropy
+KW  - posttraumatic stress disorder
+KW  - Prevotellaceae
+KW  - Roseburia
+KW  - schizophrenia
+KW  - Senegalimassilia
+KW  - sensitivity analysis
+KW  - sequence analysis
+KW  - single nucleotide polymorphism
+KW  - suicide attempt
+KW  - ulcerative colitis
+PB  - Frontiers Media S.A.
+SN  - 1664302X (ISSN)
+LA  - English
+J2  - Front. Microbiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 108; Correspondence Address: L. Zhang; Jiangsu Key Laboratory of Preventive and Translational Medicine for Geriatric Diseases, Medical College of Soochow University, Suzhou, China; email: lzhang6@suda.edu.cn
+ER  -
+
+TY  - JOUR
+AU  - Zhu, T.
+AU  - Cui, J.
+AU  - Goodarzi, M.O.
+TI  - Polycystic ovary syndrome and risk of type 2 diabetes, coronary heart disease, and stroke
+PY  - 2021
+T2  - Diabetes
+VL  - 70
+IS  - 2
+SP  - 627
+EP  - 637
+DO  - 10.2337/db20-0800
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85099834318&doi=10.2337%2fdb20-0800&partnerID=40&md5=3143e5e8dcb74ed456e19611b707e796
+AD  - Division of Endocrinology, Diabetes, and Metabolism, Department of Medicine, Cedars-Sinai Medical Center, Los Angeles, CA, United States
+AB  - Polycystic ovary syndrome (PCOS) has been associated with diabetes and cardiovascular disease; however, whether the relationship is causal is uncertain. We conducted a two-sample Mendelian randomization study to investigate the associations of PCOS with type 2 diabetes, coronary heart disease (CHD), and stroke. Association between PCOS and diabetes risk was examined in European and Asian cohorts, both sex specific and sex combined. Causal effects of PCOS on risks of CHD and stroke were evaluated in European cohorts. Stroke was analyzed as any stroke as well as four subtypes of stroke (ischemic, large artery, cardioembolic, small vessel). We found no association of genetically predicted PCOS with risk of diabetes, CHD, or stroke. This suggests that PCOS in and of itself does not increase the risk of these outcomes. Other features of PCOS (obesity, elevated testosterone, low sex hormone binding globulin) may explain the association between PCOS and cardiometabolic diseases. In light of these results, efforts to prevent cardiometabolic complications in PCOS should focus on women with high-risk features rather than all women with PCOS. © 2020 by the American Diabetes Association.
+KW  - Adult
+KW  - Case-Control Studies
+KW  - Comorbidity
+KW  - Coronary Disease
+KW  - Diabetes Mellitus, Type 2
+KW  - Female
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polycystic Ovary Syndrome
+KW  - Risk
+KW  - Stroke
+KW  - sex hormone binding globulin
+KW  - testosterone
+KW  - Article
+KW  - cardioembolic stroke
+KW  - cerebrovascular accident
+KW  - controlled study
+KW  - female
+KW  - human
+KW  - ischemic heart disease
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - obesity
+KW  - ovary polycystic disease
+KW  - priority journal
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - waist hip ratio
+KW  - adult
+KW  - case control study
+KW  - cerebrovascular accident
+KW  - comorbidity
+KW  - coronary artery disease
+KW  - genetics
+KW  - non insulin dependent diabetes mellitus
+KW  - ovary polycystic disease
+KW  - risk
+PB  - American Diabetes Association Inc.
+SN  - 00121797 (ISSN)
+C2  - 33158931
+LA  - English
+J2  - Diabetes
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 108; Correspondence Address: M.O. Goodarzi; Division of Endocrinology, Diabetes, and Metabolism, Department of Medicine, Cedars-Sinai Medical Center, Los Angeles, United States; email: mark.goodarzi@cshs.org; CODEN: DIAEA
+ER  -
+
+TY  - JOUR
+AU  - Walker, K.A.
+AU  - Chen, J.
+AU  - Zhang, J.
+AU  - Fornage, M.
+AU  - Yang, Y.
+AU  - Zhou, L.
+AU  - Grams, M.E.
+AU  - Tin, A.
+AU  - Daya, N.
+AU  - Hoogeveen, R.C.
+AU  - Wu, A.
+AU  - Sullivan, K.J.
+AU  - Ganz, P.
+AU  - Zeger, S.L.
+AU  - Gudmundsson, E.F.
+AU  - Emilsson, V.
+AU  - Launer, L.J.
+AU  - Jennings, L.L.
+AU  - Gudnason, V.
+AU  - Chatterjee, N.
+AU  - Gottesman, R.F.
+AU  - Mosley, T.H.
+AU  - Boerwinkle, E.
+AU  - Ballantyne, C.M.
+AU  - Coresh, J.
+TI  - Large-scale plasma proteomic analysis identifies proteins and pathways associated with dementia risk
+PY  - 2021
+T2  - Nature Aging
+VL  - 1
+IS  - 5
+SP  - 473
+EP  - 489
+DO  - 10.1038/s43587-021-00064-0
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85110150927&doi=10.1038%2fs43587-021-00064-0&partnerID=40&md5=929e0c9c385af7304de439a742886c48
+AD  - Laboratory of Behavioral Neuroscience, National Institute on Aging, Intramural Research Program, Baltimore, MD, United States
+AD  - Department of Neurology, Johns Hopkins University School of Medicine, Baltimore, MD, United States
+AD  - Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, United States
+AD  - Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, United States
+AD  - Brown Foundation Institute of Molecular Medicine, McGovern Medical School and Human Genetics Center, School of Public Health, The University of Texas Health Science Center at Houston, Houston, TX, United States
+AD  - Division of Nephrology, Department of Medicine, Johns Hopkins University School of Medicine, Baltimore, MD, United States
+AD  - MIND Center and Division of Nephrology, University of Mississippi Medical Center, Jackson, MS, United States
+AD  - Section of Cardiovascular Research, Department of Medicine, Baylor College of Medicine, Houston, TX, United States
+AD  - Department of Medicine, Division of Geriatrics, University of Mississippi Medical Center, Jackson, MS, United States
+AD  - Department of Medicine, University of California-San Francisco, San Francisco, CA, United States
+AD  - Icelandic Heart Association, Kopavogur, Iceland
+AD  - Laboratory of Epidemiology and Population Sciences, Intramural Research Program, National Institute on Aging, Bethesda, MD, United States
+AD  - Novartis Institutes for Biomedical Research, Cambridge, MA, United States
+AD  - University of Iceland, Reykjavik, Iceland
+AD  - Department of Epidemiology, Human Genetics and Environmental Sciences, School of Public Health, University of Texas Health Science Center at Houston, Houston, TX, United States
+AD  - Human Genome Sequencing Center, Baylor College of Medicine, Houston, TX, United States
+AB  - The plasma proteomic changes that precede the onset of dementia could yield insights into disease biology and highlight new biomarkers and avenues for intervention. We quantified 4,877 plasma proteins in nondemented older adults in the Atherosclerosis Risk in Communities cohort and performed a proteome-wide association study of dementia risk over five years (n = 4,110; 428 incident cases). Thirty-eight proteins were associated with incident dementia after Bonferroni correction. Of these, 16 were also associated with late-life dementia risk when measured in plasma collected nearly 20 years earlier, during mid-life. Two-sample Mendelian randomization causally implicated two dementia-associated proteins (SVEP1 and angiostatin) in Alzheimer’s disease. SVEP1, an immunologically relevant cellular adhesion protein, was found to be part of larger dementia-associated protein networks, and circulating levels were associated with atrophy in brain regions vulnerable to Alzheimer’s pathology. Pathway analyses for the broader set of dementia-associated proteins implicated immune, lipid, metabolic signaling and hemostasis pathways in dementia pathogenesis. © 2021, This is a U.S. government work and not under copyright protection in the U.S.; foreign copyright protection may apply.
+KW  - agouti related protein
+KW  - amino terminal pro brain natriuretic peptide
+KW  - angiopoietin 2
+KW  - angiostatin
+KW  - anthrax toxin receptor 2
+KW  - antidiabetic agent
+KW  - antihypertensive agent
+KW  - binding protein
+KW  - biological marker
+KW  - blood clotting factor 10
+KW  - complement component C1q
+KW  - creatinine
+KW  - ephrin A2
+KW  - ephrin receptor
+KW  - florbetapir
+KW  - growth differentiation factor
+KW  - growth differentiation factor 11
+KW  - growth differentiation factor 15
+KW  - growth hormone receptor
+KW  - hemoglobin A1c
+KW  - interleukin 18 binding protein
+KW  - isotope
+KW  - lipid
+KW  - plasma protein
+KW  - protein
+KW  - protein svep1
+KW  - serine peptidase inhibitor Kazal type
+KW  - spondin 1
+KW  - syntaxin 7
+KW  - transgelin
+KW  - unclassified drug
+KW  - Y box binding protein 2
+KW  - adult
+KW  - Alzheimer disease
+KW  - anterior cingulate
+KW  - Article
+KW  - Black person
+KW  - blood pressure measurement
+KW  - body height
+KW  - body mass
+KW  - body weight
+KW  - cardiovascular risk factor
+KW  - Caucasian
+KW  - cell adhesion
+KW  - clinical dementia rating scale
+KW  - cognition
+KW  - cohort analysis
+KW  - creatinine blood level
+KW  - cross validation
+KW  - dementia
+KW  - dementia assessment
+KW  - demographics
+KW  - diabetes mellitus
+KW  - DSM-5
+KW  - elastic tissue
+KW  - female
+KW  - fluid-attenuated inversion recovery imaging
+KW  - functional activities questionnaire
+KW  - functional assessment
+KW  - gene expression
+KW  - genome-wide association study
+KW  - hospital discharge
+KW  - human
+KW  - hypertension
+KW  - image quality
+KW  - incidence
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - neuroimaging
+KW  - neuropathology
+KW  - nuclear magnetic resonance imaging
+KW  - occipital lobe
+KW  - people by smoking status
+KW  - positron emission tomography
+KW  - posterior cingulate
+KW  - precuneus
+KW  - prediction
+KW  - priority journal
+KW  - protein analysis
+KW  - proteomics
+KW  - quantitative trait locus
+KW  - questionnaire
+KW  - risk
+KW  - senescence
+KW  - standardized uptake value
+PB  - Springer
+SN  - 26628465 (ISSN)
+LA  - English
+J2  - Nat. Aging.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 105; Correspondence Address: K.A. Walker; Laboratory of Behavioral Neuroscience, National Institute on Aging, Intramural Research Program, Baltimore, United States; email: Keenan.walker@nih.gov; J. Coresh; Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, United States; email: coresh@jhu.edu
+ER  -
+
+TY  - JOUR
+AU  - Morris, A.P.
+AU  - Le, T.H.
+AU  - Wu, H.
+AU  - Akbarov, A.
+AU  - van der Most, P.J.
+AU  - Hemani, G.
+AU  - Smith, G.D.
+AU  - Mahajan, A.
+AU  - Gaulton, K.J.
+AU  - Nadkarni, G.N.
+AU  - Valladares-Salgado, A.
+AU  - Wacher-Rodarte, N.
+AU  - Mychaleckyj, J.C.
+AU  - Dueker, N.D.
+AU  - Guo, X.
+AU  - Hai, Y.
+AU  - Haessler, J.
+AU  - Kamatani, Y.
+AU  - Stilp, A.M.
+AU  - Zhu, G.
+AU  - Cook, J.P.
+AU  - Ärnlöv, J.
+AU  - Blanton, S.H.
+AU  - de Borst, M.H.
+AU  - Bottinger, E.P.
+AU  - Buchanan, T.A.
+AU  - Cechova, S.
+AU  - Charchar, F.J.
+AU  - Chu, P.-L.
+AU  - Damman, J.
+AU  - Eales, J.
+AU  - Gharavi, A.G.
+AU  - Giedraitis, V.
+AU  - Heath, A.C.
+AU  - Ipp, E.
+AU  - Kiryluk, K.
+AU  - Kramer, H.J.
+AU  - Kubo, M.
+AU  - Larsson, A.
+AU  - Lindgren, C.M.
+AU  - Lu, Y.
+AU  - Madden, P.A.F.
+AU  - Montgomery, G.W.
+AU  - Papanicolaou, G.J.
+AU  - Raffel, L.J.
+AU  - Sacco, R.L.
+AU  - Sanchez, E.
+AU  - Stark, H.
+AU  - Sundstrom, J.
+AU  - Taylor, K.D.
+AU  - Xiang, A.H.
+AU  - Zivkovic, A.
+AU  - Lind, L.
+AU  - Ingelsson, E.
+AU  - Martin, N.G.
+AU  - Whitfield, J.B.
+AU  - Cai, J.
+AU  - Laurie, C.C.
+AU  - Okada, Y.
+AU  - Matsuda, K.
+AU  - Kooperberg, C.
+AU  - Chen, Y.-D.I.
+AU  - Rundek, T.
+AU  - Rich, S.S.
+AU  - Loos, R.J.F.
+AU  - Parra, E.J.
+AU  - Cruz, M.
+AU  - Rotter, J.I.
+AU  - Snieder, H.
+AU  - Tomaszewski, M.
+AU  - Humphreys, B.D.
+AU  - Franceschini, N.
+TI  - Trans-ethnic kidney function association study reveals putative causal genes and effects on kidney-specific disease aetiologies
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 29
+DO  - 10.1038/s41467-018-07867-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85059496132&doi=10.1038%2fs41467-018-07867-7&partnerID=40&md5=fa5228db78b0c20e9b96e7d4cf779837
+AD  - Department of Biostatistics, University of Liverpool, Liverpool, L69 3GL, United Kingdom
+AD  - Wellcome Centre for Human Genetics, University of Oxford, Oxford, OX3 7BN, United Kingdom
+AD  - Department of Medicine, Division of Nephrology, University of Virginia, Charlottesville, 22908, VA, United States
+AD  - Division of Nephrology, Washington University School of Medicine, St Louis, 63110, MO, United States
+AD  - Division of Cardiovascular Sciences, Faculty of Medicine, Biology and Health, University of Manchester, Manchester, M13 9PT, United Kingdom
+AD  - Department of Epidemiology, University of Groningen, University Medical Center Groningen, P.O. Box 30.001, Groningen, 9700 RB, Netherlands
+AD  - MRC Integrative Epidemiology Unit, Population Health Sciences, University of Bristol, Bristol, BS8 1TH, United Kingdom
+AD  - Department of Pediatrics, University of California, San Diego, San Diego, 92161, CA, United States
+AD  - Charles Bronfman Institute for Personalized Medicine, Icahn School of Medicine at Mount Sinai, New York, 10029, NY, United States
+AD  - Division of Nephrology and Department of Medicine, Icahn School of Medicine at Mount Sinai, New York, 10029, NY, United States
+AD  - Unidad de Investigación Médica en Bioquímica, Hospital de Especialidades, Centro Médico Nacional Siglo XXI, Instituto Mexicano del Seguro Social, Mexico City, 06720, Mexico
+AD  - Unidad de Investigación Médica en Epidemiologia Clinica, Hospital de Especialidades, Centro Médico Nacional Siglo XXI, Instituto Mexicano del Seguro Social, Mexico City, 06720, Mexico
+AD  - Center for Public Health Genomics, University of Virginia School of Medicine, Charlottesville, 22908, VA, United States
+AD  - John P Hussman Institute for Human Genomics, University of Miami Miller School of Medicine, Miami, 33124, FL, United States
+AD  - Institute for Translational Genomics and Population Sciences, Departments of Pediatrics and Medicine, Los Angeles Biomedical Research Institute at Harbor-UCLA Medical Center, Torrance, 90502, CA, United States
+AD  - Division of Public Health Sciences, Fred Hutchinson Cancer Research Center, Seattle, 98109-1024, WA, United States
+AD  - Laboratory for Statistical Analysis, RIKEN Center for Integrative Medical Sciences, Yokohama, 230-0045, Kanagawa, Japan
+AD  - Department of Biostatistics, University of Washington, Seattle, 98195, WA, United States
+AD  - Genetic Epidemiology Laboratory, QIMR Berghofer Medical Research Institute, Brisbane, 4006, QLD, Australia
+AD  - Department of Neurobiology, Care Sciences and Society, Division of Family Medicine and Primary Care, Karolinska Institutet, Huddinge, 141 83, Sweden
+AD  - School of Health and Social Studies, Dalarna University, Falun, 791 88, Sweden
+AD  - Dr John T Macdonald Department of Human Genetics, University of Miami, Miami, 33124, FL, United States
+AD  - Department of Internal Medicine, Division of Nephrology, University of Groningen, University Medical Center Groningen, P.O. Box 30.001, Groningen, 9700 RB, Netherlands
+AD  - Department of Medicine, Division of Endocrinology and Diabetes, Keck School of Medicine of USC, Los Angeles, 90033, CA, United States
+AD  - School of Health and Life Sciences, Federation University Australia, Ballarat, 3350, VIC, Australia
+AD  - Department of Cardiovascular Sciences, University of Leicester, Leicester, LE1 7RH, United Kingdom
+AD  - Department of Physiology, University of Melbourne, Parkville, 3010, VIC, Australia
+AD  - Department of Internal Medicine, Fu Jen Catholic University Hospital, School of Medicine, Fu Jen Catholic University, New Taipei City, 242, Taiwan
+AD  - Department of Pathology, Erasmus Medical Center Rotterdam, P.O. Box 2040, Rotterdam, 3000 CA, Netherlands
+AD  - Department of Medicine, Division of Nephrology, College of Physicians and Surgeons, Columbia University, New York, 10032, NY, United States
+AD  - Department of Public Health and Caring Sciences, Molecular Geriatrics, Uppsala University, Uppsala, 751 85, Sweden
+AD  - Department of Psychiatry, Washington University in St Louis, St Louis, 63110, MO, United States
+AD  - David Geffen School of Medicine, University of California Los Angeles, Los Angeles, 90024, CA, United States
+AD  - Los Angeles Biomedical Research Institute at Harbor UCLA Medical Center, Torrance, 90502, CA, United States
+AD  - Department of Medicine and Nephrology, Loyola University Medical Center, Maywood, 60153, IL, United States
+AD  - Laboratory for Genotyping Development, RIKEN Center for Integrative Medical Sciences, Yokohama, 230-0045, Kanagawa, Japan
+AD  - Department of Medical Sciences, Clinical Epidemiology, Uppsala University, Uppsala, 751 85, Sweden
+AD  - Li Ka Shing Centre for Health Information and Discovery, Big Data Institute, Nuffield Department of Medicine, University of Oxford, Oxford, OX3 7FZ, United Kingdom
+AD  - Broad Institute of Harvard and MIT, Boston, 02142, MA, United States
+AD  - Brisbane Institute for Molecular Bioscience, University of Queensland, St. Lucia, 4072, QLD, Australia
+AD  - Epidemiology Branch, Division of Cardiovascular Sciences, National Heart, Lung and Blood Institute, Bethesda, 20892, MD, United States
+AD  - Department of Pediatrics, Division of Genetic and Genomic Medicine, University of California, Irvine Orange, 92868, CA, United States
+AD  - Departments of Neurology and Public Health Sciences, Miller School of Medicine, University of Miami, Miami, 33136, FL, United States
+AD  - Evelyn F McKnight Brain Institute, Miller School of Medicine, University of Miami, Miami, 33136, FL, United States
+AD  - Jackson Memorial Hospital, University of Miami, Miami, 33136-1096, FL, United States
+AD  - Institute of Pharmaceutical and Medicinal Chemistry, Heinrich Heine University Düsseldorf, Düsseldorf, 40225, Germany
+AD  - Department of Research and Education, Kaiser Permanente Southern California, Pasadena, 91101, CA, United States
+AD  - Department of Medicine, Division of Cardiovascular Medicine, Stanford University School of Medicine, Stanford, 94309, CA, United States
+AD  - Stanford Cardiovascular Institute, Stanford University, Stanford, 94309, CA, United States
+AD  - Stanford Diabetes Research Center, Stanford University, Stanford, 94305, CA, United States
+AD  - Department of Medical Sciences, Molecular Epidemiology and Science for Life Laboratory, Uppsala University, Uppsala, 751 85, Sweden
+AD  - Collaborative Studies Coordinating Center, Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, 27599-7420, NC, United States
+AD  - Department of Statistical Genetics, Osaka University Graduate School of Medicine, Osaka, 565-0871, Suita, Japan
+AD  - Laboratory of Molecular Medicine, Human Genome Center, Institute of Medical Science, University of Tokyo, Tokyo, 108-8639, Japan
+AD  - Mindich Child Health and Development Institute, Icahn School of Medicine at Mount Sinai, New York, 10029, NY, United States
+AD  - Department of Anthropology, University of Toronto at Mississauga, Mississauga, L5L 1C6, ON, Canada
+AD  - Division of Medicine, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre, Manchester, M13 9WL, United Kingdom
+AD  - Department of Epidemiology, University of North Carolina, Chapel Hill, 27516-8050, NC, United States
+AB  - Chronic kidney disease (CKD) affects ~10% of the global population, with considerable ethnic differences in prevalence and aetiology. We assemble genome-wide association studies of estimated glomerular filtration rate (eGFR), a measure of kidney function that defines CKD, in 312,468 individuals of diverse ancestry. We identify 127 distinct association signals with homogeneous effects on eGFR across ancestries and enrichment in genomic annotations including kidney-specific histone modifications. Fine-mapping reveals 40 high-confidence variants driving eGFR associations and highlights putative causal genes with cell-type specific expression in glomerulus, and in proximal and distal nephron. Mendelian randomisation supports causal effects of eGFR on overall and cause-specific CKD, kidney stone formation, diastolic blood pressure and hypertension. These results define novel molecular mechanisms and putative causal genes for eGFR, offering insight into clinical outcomes and routes to CKD treatment development. © 2019, The Author(s).
+KW  - Adult
+KW  - Aged
+KW  - Blood Pressure
+KW  - Ethnic Groups
+KW  - Female
+KW  - Genetic Loci
+KW  - Genome-Wide Association Study
+KW  - Glomerular Filtration Rate
+KW  - Histone Code
+KW  - Histones
+KW  - Humans
+KW  - Hypertension
+KW  - Kidney
+KW  - Kidney Calculi
+KW  - Male
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Renal Insufficiency, Chronic
+KW  - bcas3 protein
+KW  - calcium channel L type
+KW  - carbamoyl phosphate synthase
+KW  - ceramide synthase 2
+KW  - cystatin C
+KW  - dipeptidase
+KW  - dpep1 protein
+KW  - fibroblast growth factor 5
+KW  - glucokinase
+KW  - glucokinase regulator
+KW  - glycoprotein
+KW  - glycoprotein 2
+KW  - histone deacetylase 2
+KW  - larp4b protein
+KW  - lrp2 protein
+KW  - mpped2 protein
+KW  - pip5k1b protein
+KW  - sodium phosphate cotransporter 2a
+KW  - sptbn1 protein
+KW  - t box 2 protein
+KW  - Tamm Horsfall glycoprotein
+KW  - transcription factor EZH2
+KW  - unclassified drug
+KW  - histone
+KW  - adult
+KW  - African American
+KW  - ancestry group
+KW  - animal cell
+KW  - animal experiment
+KW  - animal tissue
+KW  - Article
+KW  - binding site
+KW  - cell migration
+KW  - chromatin immunoprecipitation
+KW  - chronic kidney failure
+KW  - clinical outcome
+KW  - controlled study
+KW  - diastolic blood pressure
+KW  - estimated glomerular filtration rate
+KW  - ethnic group
+KW  - European
+KW  - exon
+KW  - expression quantitative trait locus
+KW  - gene frequency
+KW  - gene locus
+KW  - gene mapping
+KW  - gene overexpression
+KW  - genetic association
+KW  - genetic model
+KW  - genetic variation
+KW  - genome-wide association study
+KW  - glomerulus
+KW  - glomerulus capillary
+KW  - haplotype
+KW  - heritability
+KW  - Hispanic
+KW  - histone methylation
+KW  - human
+KW  - human tissue
+KW  - kidney biopsy
+KW  - kidney function
+KW  - kidney tubule absorption
+KW  - major clinical study
+KW  - male
+KW  - missense mutation
+KW  - mouse
+KW  - nephrolithiasis
+KW  - nephron
+KW  - nonhuman
+KW  - podocyte
+KW  - renal system parameters
+KW  - RNA sequence
+KW  - urea nitrogen blood level
+KW  - urine albumin creatinine ratio
+KW  - wound healing assay
+KW  - aged
+KW  - blood pressure
+KW  - chronic kidney failure
+KW  - ethnic group
+KW  - ethnology
+KW  - female
+KW  - genetics
+KW  - glomerulus filtration rate
+KW  - histone code
+KW  - hypertension
+KW  - kidney
+KW  - meta analysis
+KW  - metabolism
+KW  - middle aged
+KW  - pathophysiology
+KW  - single nucleotide polymorphism
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 30604766
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 104; Correspondence Address: A.P. Morris; Department of Biostatistics, University of Liverpool, Liverpool, L69 3GL, United Kingdom; email: apmorris@liverpool.ac.uk
+ER  -
+

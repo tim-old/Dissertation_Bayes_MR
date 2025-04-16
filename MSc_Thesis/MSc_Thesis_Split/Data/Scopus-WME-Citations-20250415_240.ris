@@ -1,0 +1,999 @@
+﻿TY  - JOUR
+AU  - Cornelis, M.C.
+AU  - Munafo, M.R.
+TI  - Mendelian randomization studies of coffee and caffeine consumption
+PY  - 2018
+T2  - Nutrients
+VL  - 10
+IS  - 10
+C7  - 1343
+DO  - 10.3390/nu10101343
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85053871160&doi=10.3390%2fnu10101343&partnerID=40&md5=643943924f1c254b34ef43e548a7450b
+AD  - Department of Preventive Medicine, Northwestern University Feinberg School of Medicine, Chicago, 60611, IL, United States
+AD  - MRC Integrative Epidemiology Unit (IEU), University of Bristol, UK Centre for Tobacco and Alcohol Studies, School of Psychological Science, University of Bristol, Bristol, BS8 1TU, United Kingdom
+AB  - Habitual coffee and caffeine consumption has been reported to be associated with numerous health outcomes. This perspective focuses on Mendelian Randomization (MR) approaches for determining whether such associations are causal. Genetic instruments for coffee and caffeine consumption are described, along with key concepts of MR and particular challenges when applying this approach to studies of coffee and caffeine. To date, at least fifteen MR studies have investigated the causal role of coffee or caffeine use on risk of type 2 diabetes, cardiovascular disease, Alzheimer’s disease, Parkinson’s disease, gout, osteoarthritis, cancers, sleep disturbances and other substance use. Most studies provide no consistent support for a causal role of coffee or caffeine on these health outcomes. Common study limitations include low statistical power, potential pleiotropy, and risk of collider bias. As a result, in many cases a causal role cannot confidently be ruled out. Conceptual challenges also arise from the different aspects of coffee and caffeine use captured by current genetic instruments. Nevertheless, with continued genome-wide searches for coffee and caffeine related loci along with advanced statistical methods and MR designs, MR promises to be a valuable approach to understanding the causal impact that coffee and caffeine have in human health. © 2018 by the authors. Licensee MDPI, Basel, Switzerland.
+KW  - Behavior
+KW  - Caffeine
+KW  - Causality
+KW  - Coffee
+KW  - Epidemiological methods
+KW  - Genetic epidemiology
+KW  - Mendelian randomization
+KW  - Caffeine
+KW  - Central Nervous System Stimulants
+KW  - Coffee
+KW  - Feeding Behavior
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Health Status
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Noncommunicable Diseases
+KW  - Phenotype
+KW  - Protective Factors
+KW  - Risk Factors
+KW  - biological marker
+KW  - caffeine
+KW  - cholesterol
+KW  - glucose
+KW  - high density lipoprotein
+KW  - triacylglycerol
+KW  - caffeine
+KW  - central stimulant agent
+KW  - Alzheimer disease
+KW  - behavior
+KW  - beverage
+KW  - body mass
+KW  - caffeine intake
+KW  - cardiovascular disease
+KW  - coffee intake
+KW  - cognition
+KW  - dietary intake
+KW  - genetic heterogeneity
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - gout
+KW  - health status
+KW  - human
+KW  - instrumental variable analysis
+KW  - malignant neoplasm
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - obesity
+KW  - osteoarthritis
+KW  - Parkinson disease
+KW  - pleiotropy
+KW  - pregnancy outcome
+KW  - prostate cancer
+KW  - Review
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - sleep disorder
+KW  - smoking
+KW  - systolic blood pressure
+KW  - triangulation
+KW  - coffee
+KW  - feeding behavior
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - health status
+KW  - Mendelian randomization analysis
+KW  - non communicable disease
+KW  - phenotype
+KW  - protection
+PB  - MDPI AG
+SN  - 20726643 (ISSN)
+C2  - 30241358
+LA  - English
+J2  - Nutrients
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 66; Correspondence Address: M.C. Cornelis; Department of Preventive Medicine, Northwestern University Feinberg School of Medicine, Chicago, 60611, United States; email: marilyn.cornelis@northwestern.edu
+ER  -
+
+TY  - JOUR
+AU  - Han, X.
+AU  - Ong, J.-S.
+AU  - An, J.
+AU  - Hewitt, A.W.
+AU  - Gharahkhani, P.
+AU  - MacGregor, S.
+TI  - Using Mendelian randomization to evaluate the causal relationship between serum C-reactive protein levels and age-related macular degeneration
+PY  - 2020
+T2  - European Journal of Epidemiology
+VL  - 35
+IS  - 2
+SP  - 139
+EP  - 146
+DO  - 10.1007/s10654-019-00598-z
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85077609886&doi=10.1007%2fs10654-019-00598-z&partnerID=40&md5=fb822abb79969aceab3cddd403e3824e
+AD  - Statistical Genetics, QIMR Berghofer Medical Research Institute, 300 Herston Road, Herston, Brisbane, 4006, QLD, Australia
+AD  - School of Medicine, University of Queensland, St Lucia, Brisbane, Australia
+AD  - Menzies Institute for Medical Research, University of Tasmania, Hobart, Australia
+AD  - Centre for Eye Research Australia, University of Melbourne, Melbourne, Australia
+AB  - Serum C-reactive protein (CRP), an important inflammatory marker, has been associated with age-related macular degeneration (AMD) in observational studies; however, the findings are inconsistent. It remains unclear whether the association between circulating CRP levels and AMD is causal. We used two-sample Mendelian randomization (MR) to evaluate the potential causal relationship between serum CRP levels and AMD risk. We derived genetic instruments for serum CRP levels in 418,642 participants of European ancestry from UK Biobank, and then conducted a genome-wide association study for 12,711 advanced AMD cases and 14,590 controls of European descent from the International AMD Genomics Consortium. Genetic variants which predicted elevated serum CRP levels were associated with advanced AMD (odds ratio [OR] for per standard deviation increase in serum CRP levels: 1.31, 95% confidence interval [CI]: 1.19–1.44, P = 5.2 × 10−8). The OR for the increase in advanced AMD risk when moving from low (< 3 mg/L) to high (> 3 mg/L) CRP levels is 1.29 (95% CI: 1.17–1.41). Our results were unchanged in sensitivity analyses using MR models which make different modelling assumptions. Our findings were broadly similar across the different forms of AMD (intermediate AMD, choroidal neovascularization, and geographic atrophy). We used multivariable MR to adjust for the effects of other potential AMD risk factors including smoking, body mass index, blood pressure and cholesterol; this did not alter our findings. Our study provides strong genetic evidence that higher circulating CRP levels lead to increases in risk for all forms of AMD. These findings highlight the potential utility for using circulating CRP as a biomarker in future trials aimed at modulating AMD risk via systemic therapies. © 2020, Springer Nature B.V.
+KW  - Age-related macular degeneration
+KW  - C-reactive protein
+KW  - Causal effect
+KW  - Mendelian randomization
+KW  - Aged
+KW  - Aged, 80 and over
+KW  - C-Reactive Protein
+KW  - Case-Control Studies
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Genotype
+KW  - Humans
+KW  - Macular Degeneration
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - C reactive protein
+KW  - high density lipoprotein cholesterol
+KW  - C reactive protein
+KW  - adult
+KW  - age related macular degeneration
+KW  - aged
+KW  - Article
+KW  - biobank
+KW  - blood pressure
+KW  - body mass
+KW  - cohort analysis
+KW  - controlled study
+KW  - female
+KW  - genetic risk
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - geographic atrophy
+KW  - human
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - protein blood level
+KW  - risk factor
+KW  - smoking
+KW  - subretinal neovascularization
+KW  - United Kingdom
+KW  - blood
+KW  - case control study
+KW  - genetics
+KW  - genotype
+KW  - macular degeneration
+KW  - metabolism
+KW  - middle aged
+KW  - single nucleotide polymorphism
+KW  - very elderly
+PB  - Springer
+SN  - 03932990 (ISSN)
+C2  - 31900758
+LA  - English
+J2  - Eur. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 65; Correspondence Address: X. Han; Statistical Genetics, QIMR Berghofer Medical Research Institute, Brisbane, 300 Herston Road, Herston, 4006, Australia; email: Xikun.Han@qimrberghofer.edu.au; CODEN: EJEPE
+ER  -
+
+TY  - JOUR
+AU  - Tin, A.
+AU  - Kottgen, A.
+TI  - Mendelian randomization analysis as a tool to gain insights into causes of diseases: A primer
+PY  - 2021
+T2  - Journal of the American Society of Nephrology
+VL  - 32
+IS  - 10
+SP  - 2400
+EP  - 2407
+DO  - 10.1681/ASN.2020121760
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85111907685&doi=10.1681%2fASN.2020121760&partnerID=40&md5=e4148985f564d19ca9611b21b8478dc4
+AD  - Department of Medicine, University of Mississippi Medical Center, Jackson, MS, United States
+AD  - Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, United States
+AD  - Department of Data Driven Medicine, Institute of Genetic Epidemiology, Faculty of Medicine and Medical Center, University of Freiburg, Freiburg, Germany
+AB  - Many Mendelian randomization (MR) studies have been published recently, with inferences on the causal relationships between risk factors and diseases that have potential implications for clinical research. In nephrology, MR methods have been applied to investigate potential causal relationships of traditional risk factors, lifestyle factors, and biomarkers from omics technologies with kidney function or CKD. This primer summarizes the basic concepts of MR studies, highlighting methods used in recent applications, and emphasizes key elements in conducting and reporting of MR studies that are important for interpreting the results. Copyright ß 2021 by the American Society of Nephrology
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Renal Insufficiency, Chronic
+KW  - Research Design
+KW  - Risk Factors
+KW  - C reactive protein
+KW  - albuminuria
+KW  - biobank
+KW  - chronic kidney failure
+KW  - clinical outcome
+KW  - conceptual framework
+KW  - estimated glomerular filtration rate
+KW  - follow up
+KW  - gene frequency
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - high throughput analysis
+KW  - human
+KW  - inflammation
+KW  - instrumental variable analysis
+KW  - kidney function
+KW  - lifestyle
+KW  - Mendelian randomization analysis
+KW  - nephrology
+KW  - obesity
+KW  - pleiotropy
+KW  - Review
+KW  - risk factor
+KW  - chronic kidney failure
+KW  - genetic variation
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - methodology
+KW  - pathophysiology
+KW  - procedures
+PB  - American Society of Nephrology
+SN  - 10466673 (ISSN)
+C2  - 34135084
+LA  - English
+J2  - J. Am. Soc. Nephrol.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 66; Correspondence Address: A. Tin; University of Mississippi, Medical Center, Jackson, 2500 N State Street, 39216, United States; email: atin@umc.edu; CODEN: JASNE
+ER  -
+
+TY  - JOUR
+AU  - Zeng, P.
+AU  - Wang, T.
+AU  - Zheng, J.
+AU  - Zhou, X.
+TI  - Causal association of type 2 diabetes with amyotrophic lateral sclerosis: New evidence from Mendelian randomization using GWAS summary statistics
+PY  - 2019
+T2  - BMC Medicine
+VL  - 17
+IS  - 1
+C7  - 225
+DO  - 10.1186/s12916-019-1448-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85076051973&doi=10.1186%2fs12916-019-1448-9&partnerID=40&md5=ca91ed7568b61cad3bad09b8cddb99f7
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Xuzhou Medical University, Xuzhou, Jiangsu, 221004, China
+AD  - Cancer Institute, Xuzhou Medical University, Xuzhou, Jiangsu, 221004, China
+AD  - Center of Clinical Oncology, Affiliated Hospital of Xuzhou Medical University, Xuzhou, 221004, China
+AD  - Jiangsu Center for the Collaboration and Innovation of Cancer Biotherapy, Cancer Institute, Xuzhou Medical University, Xuzhou, Jiangsu, 221004, China
+AD  - Department of Biostatistics, University of Michigan, Ann Arbor, 48109, MI, United States
+AD  - Center for Statistical Genetics, University of Michigan, Ann Arbor, 48109, MI, United States
+AB  - Background: Associations between type 2 diabetes (T2D) and amyotrophic lateral sclerosis (ALS) were discovered in observational studies in both European and East Asian populations. However, whether such associations are causal remains largely unknown. Methods: We employed a two-sample Mendelian randomization approach to evaluate the causal relationship of T2D with the risk of ALS in both European and East Asian populations. Our analysis was implemented using summary statistics obtained from large-scale genome-wide association studies with ∼660,000 individuals for T2D and ∼81,000 individuals for ALS in the European population, and ∼191,000 individuals for T2D and ~4100 individuals for ALS in the East Asian population. The causal relationship between T2D and ALS in both populations was estimated using the inverse-variance-weighted methods and was further validated through extensive complementary and sensitivity analyses. Results: Using multiple instruments that were strongly associated with T2D, a negative association between T2D and ALS was identified in the European population with the odds ratio (OR) estimated to be 0.93 (95% CI 0.88-0.99, p = 0.023), while a positive association between T2D and ALS was observed in the East Asian population with OR = 1.28 (95% CI 0.99-1.62, p = 0.058). These results were robust against instrument selection, various modeling misspecifications, and estimation biases, with the Egger regression and MR-PRESSO ruling out the possibility of horizontal pleiotropic effects of instruments. However, no causal association was found between T2D-related exposures (including glycemic traits) and ALS in the European population. Conclusion: Our results provide new evidence supporting the causal neuroprotective role of T2D on ALS in the European population and provide empirically suggestive evidence of increasing risk of T2D on ALS in the East Asian population. Our results have an important implication on ALS pathology, paving ways for developing therapeutic strategies across multiple populations. © 2019 The Author(s).
+KW  - Amyotrophic lateral sclerosis
+KW  - East Asian
+KW  - European
+KW  - Genome-wide association studies
+KW  - Instrumental variable
+KW  - Two-sample Mendelian randomization
+KW  - Type 2 diabetes
+KW  - Amyotrophic Lateral Sclerosis
+KW  - Diabetes Mellitus, Type 2
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - amyotrophic lateral sclerosis
+KW  - Article
+KW  - disease association
+KW  - East Asian
+KW  - European
+KW  - gene linkage disequilibrium
+KW  - genetic epidemiology
+KW  - genetic trait
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - neuroprotection
+KW  - non insulin dependent diabetes mellitus
+KW  - pleiotropy
+KW  - population research
+KW  - risk assessment
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - validation study
+KW  - amyotrophic lateral sclerosis
+KW  - complication
+KW  - female
+KW  - genome-wide association study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - procedures
+PB  - BioMed Central Ltd.
+SN  - 17417015 (ISSN)
+C2  - 31796040
+LA  - English
+J2  - BMC Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 67; Correspondence Address: P. Zeng; Department of Epidemiology and Biostatistics, School of Public Health, Xuzhou Medical University, Xuzhou, Jiangsu, 221004, China; email: zpstat@xzhmu.edu.cn
+ER  -
+
+TY  - JOUR
+AU  - Schooling, C.M.
+AU  - Lopez, P.M.
+AU  - Yang, Z.
+AU  - Zhao, J.V.
+AU  - Au Yeung, S.L.
+AU  - Huang, J.V.
+TI  - Use of Multivariable Mendelian Randomization to Address Biases Due to Competing Risk Before Recruitment
+PY  - 2021
+T2  - Frontiers in Genetics
+VL  - 11
+C7  - 610852
+DO  - 10.3389/fgene.2020.610852
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85100097893&doi=10.3389%2ffgene.2020.610852&partnerID=40&md5=fb073928343709dc4b4a302c42031f50
+AD  - Graduate School of Public Health and Health Policy, City University of New York, New York, NY, United States
+AD  - School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong, Hong Kong
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Faculty of Medicine, Imperial College London, London, United Kingdom
+AD  - Singapore Institute for Clinical Sciences (SICS), The Agency for Science, Technology and Research (A∗, STAR, Singapore, Singapore
+AB  - Background: Mendelian randomization (MR) provides unconfounded estimates. MR is open to selection bias when the underlying sample is selected on surviving to recruitment on the genetically instrumented exposure and competing risk of the outcome. Few methods to address this bias exist. Methods: We show that this selection bias can sometimes be addressed by adjusting for common causes of survival and outcome. We use multivariable MR to obtain a corrected MR estimate for statins on stroke. Statins affect survival, and stroke typically occurs later in life than ischemic heart disease (IHD), making estimates for stroke open to bias from competing risk. Results: In univariable MR in the UK Biobank, genetically instrumented statins did not protect against stroke [odds ratio (OR) 1.33, 95% confidence interval (CI) 0.80–2.20] but did in multivariable MR (OR 0.81, 95% CI 0.68–0.98) adjusted for major causes of survival and stroke [blood pressure, body mass index (BMI), and smoking initiation] with a multivariable Q-statistic indicating absence of selection bias. However, the MR estimate for statins on stroke using MEGASTROKE remained positive and the Q statistic indicated pleiotropy. Conclusion: MR studies of harmful exposures on late-onset diseases with shared etiology need to be conceptualized within a mechanistic understanding so as to identify any potential bias due to survival to recruitment on both genetically instrumented exposure and competing risk of the outcome, which may then be investigated using multivariable MR or estimated analytically and results interpreted accordingly. © Copyright © 2021 Schooling, Lopez, Yang, Zhao, Au Yeung and Huang.
+KW  - competing risk
+KW  - instrumental variable analysis
+KW  - Mendelian randomization
+KW  - selection bias
+KW  - shared etiology
+KW  - angiotensin receptor antagonist
+KW  - dipeptidyl carboxypeptidase inhibitor
+KW  - hydroxymethylglutaryl coenzyme A reductase inhibitor
+KW  - low density lipoprotein cholesterol
+KW  - accuracy
+KW  - acute heart failure
+KW  - Article
+KW  - atrial fibrillation
+KW  - biobank
+KW  - blood pressure
+KW  - body mass
+KW  - brain ischemia
+KW  - cardiovascular disease
+KW  - cerebrovascular accident
+KW  - cerebrovascular disease
+KW  - genetic susceptibility
+KW  - genetic variability
+KW  - human
+KW  - hypertension
+KW  - ischemic heart disease
+KW  - mathematical model
+KW  - Mendelian randomization analysis
+KW  - odds ratio
+KW  - phenotype
+KW  - pleiotropy
+KW  - risk assessment
+KW  - selection bias
+KW  - single nucleotide polymorphism
+KW  - smoking
+KW  - survival
+KW  - systolic blood pressure
+PB  - Frontiers Media S.A.
+SN  - 16648021 (ISSN)
+LA  - English
+J2  - Front. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 67; Correspondence Address: C.M. Schooling; Graduate School of Public Health and Health Policy, City University of New York, New York, United States; email: cms1@hku.hk; C.M. Schooling; School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong, Hong Kong; email: cms1@hku.hk
+ER  -
+
+TY  - JOUR
+AU  - Luo, J.
+AU  - Thomassen, J.Q.
+AU  - Nordestgaard, B.G.
+AU  - Tybjærg-Hansen, A.
+AU  - Frikke-Schmidt, R.
+TI  - Neutrophil counts and cardiovascular disease
+PY  - 2023
+T2  - European Heart Journal
+VL  - 44
+IS  - 47
+SP  - 4953
+EP  - 4964
+DO  - 10.1093/eurheartj/ehad649
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85180270615&doi=10.1093%2feurheartj%2fehad649&partnerID=40&md5=badb4fb4a2d8ca46cce4555196f909f8
+AD  - Department of Clinical Biochemistry, Copenhagen University Hospital, Rigshospitalet, Blegdamsvej 9, Copenhagen, DK-2100, Denmark
+AD  - Department of Clinical Biochemistry, Copenhagen University Hospital-Herlev and Gentofte, Herlev, Denmark
+AD  - The Copenhagen General Population Study, Copenhagen University Hospital-Herlev and Gentofte, Herlev, Denmark
+AD  - Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AB  - Background and Anti-inflammatory trials have shown considerable benefits for cardiovascular disease. High neutrophil counts, an easily ac-Aims cessible inflammation biomarker, are associated with atherosclerosis in experimental studies. This study aimed to investigate the associations between neutrophil counts and risk of nine cardiovascular endpoints using observational and genetic approaches. Methods Observational studies were conducted in the Copenhagen General Population Study (n = 101 730). Genetic studies were firstly performed using one-sample Mendelian randomization (MR) with individual-level data from the UK Biobank (n = 365 913); secondly, two-sample MR analyses were performed using summary-level data from the Blood Cell Consortium (n = 563 085). Outcomes included ischaemic heart disease, myocardial infarction, peripheral arterial disease, ischaemic cerebrovascular disease, ischaemic stroke, vascular-related dementia, vascular dementia, heart failure, and atrial fibrillation. Results Observational analyses showed associations between high neutrophil counts with high risks of all outcomes. In the UK Biobank, odds ratios (95% confidence intervals) per 1-SD higher genetically predicted neutrophil counts were 1.15 (1.08, 1.21) for ischaemic heart disease, 1.22 (1.12, 1.34) for myocardial infarction, and 1.19 (1.04, 1.36) for peripheral arterial disease; similar results were observed in men and women separately. In two-sample MR, corresponding estimates were 1.14 (1.05, 1.23) for ischaemic heart disease and 1.11 (1.02, 1.20) for myocardial infarction; multiple sensitivity analyses showed consistent results. No robust associations in two-sample MR analyses were found for other types of leucocytes. Conclusions Observational and genetically determined high neutrophil counts were associated with atherosclerotic cardiovascular disease, supporting that high blood neutrophil counts is a causal risk factor for atherosclerotic cardiovascular disease. © 2023 Oxford University Press. All rights reserved.
+KW  - Atherosclerosis
+KW  - Cardiovascular disease
+KW  - Inflammation
+KW  - Neutrophil
+KW  - acetylsalicylic acid
+KW  - C reactive protein
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - alcohol consumption
+KW  - Article
+KW  - atherosclerosis
+KW  - atrial fibrillation
+KW  - basophil
+KW  - biobank
+KW  - blood sampling
+KW  - body mass
+KW  - cardiovascular disease
+KW  - cerebrovascular accident
+KW  - cerebrovascular disease
+KW  - child
+KW  - dementia
+KW  - diastolic blood pressure
+KW  - eosinophil
+KW  - female
+KW  - genetic risk score
+KW  - genome-wide association study
+KW  - glucose blood level
+KW  - heart failure
+KW  - heart infarction
+KW  - human
+KW  - inflammation
+KW  - ischemic heart disease
+KW  - leukocyte count
+KW  - lymphocyte
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - monocyte
+KW  - neutrophil count
+KW  - non insulin dependent diabetes mellitus
+KW  - observational study
+KW  - peripheral arterial disease
+KW  - physical activity
+KW  - risk factor
+KW  - school child
+KW  - sensitivity analysis
+KW  - systolic blood pressure
+KW  - turbidimetry
+PB  - Oxford University Press
+SN  - 0195668X (ISSN)
+LA  - English
+J2  - Eur. Heart J.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 65; Correspondence Address: R. Frikke-Schmidt; Department of Clinical Biochemistry, Copenhagen University Hospital, Rigshospitalet, Copenhagen, Blegdamsvej 9, DK-2100, Denmark; email: ruth.frikke-schmidt@regionh.dk; CODEN: EHJOD
+ER  -
+
+TY  - JOUR
+AU  - Treur, J.L.
+AU  - Demontis, D.
+AU  - Smith, G.D.
+AU  - Sallis, H.
+AU  - Richardson, T.G.
+AU  - Wiers, R.W.
+AU  - Børglum, A.D.
+AU  - Verweij, K.J.H.
+AU  - Munafò, M.R.
+TI  - Investigating causality between liability to ADHD and substance use, and liability to substance use and ADHD risk, using Mendelian randomization
+PY  - 2021
+T2  - Addiction Biology
+VL  - 26
+IS  - 1
+C7  - e12849
+DO  - 10.1111/adb.12849
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075439674&doi=10.1111%2fadb.12849&partnerID=40&md5=9a6c003a20311ce509360a90f8aaa4fe
+AD  - Department of Psychiatry, Amsterdam UMC, University of Amsterdam, Amsterdam, Netherlands
+AD  - Addiction Development and Psychopathology (ADAPT) Lab, Department of Psychology, University of Amsterdam, Amsterdam, Netherlands
+AD  - School of Psychological Science, University of Bristol, Bristol, United Kingdom
+AD  - The Lundback Foundation Initiative for Integrative Psychiatric Research, iPSYCH, Aarhus, Denmark
+AD  - Department of Biomedicine and Centre for Integrative Sequencing, iSEQ, Aarhus University, Aarhus, Denmark
+AD  - Center for Genomics and Personalized Medicine, Central Region Denmark and Aarhus University, Aarhus, Denmark
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AB  - Attention-deficit hyperactivity disorder (ADHD) has consistently been associated with substance use, but the nature of this association is not fully understood. To inform intervention development and public health messages, a vital question is whether there are causal pathways from ADHD to substance use and/or vice versa. We applied bidirectional Mendelian randomization, using summary-level data from the largest available genome-wide association studies (GWAS) on ADHD, smoking (initiation, cigarettes per day, cessation, and a compound measure of lifetime smoking), alcohol use (drinks per week, alcohol problems, and alcohol dependence), cannabis use (initiation), and coffee consumption (cups per day). Genetic variants robustly associated with the “exposure” were selected as instruments and identified in the “outcome” GWAS. Effect estimates from individual genetic variants were combined with inverse-variance weighted regression and five sensitivity analyses (weighted median, weighted mode, MR-Egger, generalized summary data–based MR, and Steiger filtering). We found evidence that liability to ADHD increases likelihood of smoking initiation and heaviness of smoking among smokers, decreases likelihood of smoking cessation, and increases likelihood of cannabis initiation. There was weak evidence that liability to ADHD increases alcohol dependence risk but not drinks per week or alcohol problems. In the other direction, there was weak evidence that smoking initiation increases ADHD risk, but follow-up analyses suggested a high probability of horizontal pleiotropy. There was no clear evidence of causal pathways between ADHD and coffee consumption. Our findings corroborate epidemiological evidence, suggesting causal pathways from liability to ADHD to smoking, cannabis use, and, tentatively, alcohol dependence. Further work is needed to explore the exact mechanisms mediating these causal effects. © 2019 The Authors. Addiction Biology published by John Wiley & Sons Ltd on behalf of Society for the Study of Addiction
+KW  - ADHD
+KW  - alcohol
+KW  - cannabis
+KW  - coffee
+KW  - Mendelian randomization
+KW  - smoking
+KW  - Alcohol Drinking
+KW  - Attention Deficit Disorder with Hyperactivity
+KW  - Coffee
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Marijuana Use
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Smoking
+KW  - Smoking Cessation
+KW  - Substance-Related Disorders
+KW  - alcohol consumption
+KW  - alcoholism
+KW  - Article
+KW  - attention deficit disorder
+KW  - cannabis use
+KW  - cigarette smoking
+KW  - coffee consumption
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - heavy drinking
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - priority journal
+KW  - single nucleotide polymorphism
+KW  - substance use
+KW  - attention deficit disorder
+KW  - coffee
+KW  - drinking behavior
+KW  - drug dependence
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - risk factor
+KW  - smoking
+KW  - smoking cessation
+PB  - Blackwell Publishing Ltd
+SN  - 13556215 (ISSN)
+C2  - 31733098
+LA  - English
+J2  - Addict. Biol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 65; Correspondence Address: J.L. Treur; Department of Psychiatry, Amsterdam UMC, University of Amsterdam, Amsterdam, Netherlands; email: j.l.treur@amsterdamumc.nl; J.L. Treur; School of Psychological Science, University of Bristol, Bristol, United Kingdom; email: j.l.treur@amsterdamumc.nl; CODEN: ADBIF
+ER  -
+
+TY  - JOUR
+AU  - Jiang, L.
+AU  - Cai, X.
+AU  - Yao, D.
+AU  - Jing, J.
+AU  - Mei, L.
+AU  - Yang, Y.
+AU  - Li, S.
+AU  - Jin, A.
+AU  - Meng, X.
+AU  - Li, H.
+AU  - Wei, T.
+AU  - Wang, Y.
+AU  - Pan, Y.
+AU  - Wang, Y.
+TI  - Association of inflammatory markers with cerebral small vessel disease in community-based population
+PY  - 2022
+T2  - Journal of Neuroinflammation
+VL  - 19
+IS  - 1
+C7  - 106
+DO  - 10.1186/s12974-022-02468-0
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85129444180&doi=10.1186%2fs12974-022-02468-0&partnerID=40&md5=a8f0d5569778b934ff5bf299375c54fe
+AD  - Department of Neurology, Beijing Tiantan Hospital, Capital Medical University, No.119 South 4th Ring West Road, Fengtai District, Beijing, 100070, China
+AD  - China National Clinical Research Center for Neurological Diseases, Beijing, 100070, China
+AD  - Department of Neurology, Lishui Hospital, Zhejiang University School of Medicine, Lishui, 323000, China
+AD  - Cerebrovascular Research Lab, Lishui Hospital, Zhejiang University School of Medicine, Lishui, 323000, China
+AD  - Department of Cardiology, Lishui Hospital, Zhejiang University School of Medicine, Lishui, 323000, China
+AB  - Background: This study investigated the relationships of neutrophil count (NC), neutrophil-to-lymphocyte ratio (NLR) and systemic immune-inflammation index (SII) with cerebral small vessel disease (CSVD). Methods: A total of 3052 community-dwelling residents from the Poly-vasculaR Evaluation for Cognitive Impairment and vaScular Events (PRECISE) study were involved in this cross-sectional study. CSVD burden and imaging markers, including white matter hyperintensity (WMH), lacunes, cerebral microbleeds (CMBs) and enlarged perivascular spaces in basal ganglia (BG-EPVS), were assessed according to total CSVD burden score. The associations of NC, NLR and SII with CSVD and imaging markers were evaluated using logistic regression models. Furthermore, two-sample Mendelian randomization (MR) analysis was performed to investigate the genetically predicted effect of NC on CSVD. The prognostic performances of NC, NLR and SII for the presence of CSVD were assessed. Results: At baseline, the mean age was 61.2 ± 6.7 years, and 53.5% of the participants were female. Higher NC was suggestively associated with increased total CSVD burden and modified total CSVD burden (Q4 vs. Q1: common odds ratio (cOR) 1.33, 95% CI 1.05–1.70; cOR 1.28, 95% CI 1.02–1.60) and marginally correlated with the presence of CSVD (OR 1.29, 95% CI 1.00–1.66). Furthermore, elevated NC was linked to a higher risk of lacune (OR 2.13, 95% CI 1.25–3.62) and moderate-to-severe BG-EPVS (OR 1.67, 95% CI 1.14–2.44). A greater NLR was related to moderate-to-severe BG-EPVS (OR 1.68, 95% CI 1.16–2.45). Individuals with a higher SII had an increased risk of modified WMH burden (OR 1.35, 95% CI 1.08–1.69) and moderate-to-severe BG-EPVS (OR 1.70, 95% CI 1.20–2.41). MR analysis showed that genetically predicted higher NC was associated with an increased risk of lacunar stroke (OR 1.20, 95% CI 1.04–1.39) and small vessel stroke (OR 1.21, 95% CI 1.06–1.38). The addition of NC to the basic model with traditional risk factors improved the predictive ability for the presence of CSVD, as validated by the net reclassification index and integrated discrimination index (all p < 0.05). Conclusions: This community-based population study found a suggestive association between NC and CSVD, especially for BG-EPVS and lacune, and provided evidence supporting the prognostic significance of NC. © 2022, The Author(s).
+KW  - Cerebral small vessel disease
+KW  - Inflammation
+KW  - Neutrophil count
+KW  - Neutrophil–lymphocyte ratio
+KW  - Systemic immune-inflammation index
+KW  - Aged
+KW  - Biomarkers
+KW  - Cerebral Small Vessel Diseases
+KW  - Cognitive Dysfunction
+KW  - Cross-Sectional Studies
+KW  - Female
+KW  - Humans
+KW  - Magnetic Resonance Imaging
+KW  - Male
+KW  - Middle Aged
+KW  - Stroke
+KW  - homocysteine
+KW  - biological marker
+KW  - adult
+KW  - Article
+KW  - basal ganglion
+KW  - blood cell count
+KW  - brain hemorrhage
+KW  - cerebrovascular disease
+KW  - clinical assessment
+KW  - cognitive defect
+KW  - community care
+KW  - controlled study
+KW  - cross-sectional study
+KW  - diagnostic imaging
+KW  - disease severity
+KW  - female
+KW  - flow cytometry
+KW  - human
+KW  - lacunar stroke
+KW  - logistic regression analysis
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - neuroimaging
+KW  - neutrophil count
+KW  - neutrophil lymphocyte ratio
+KW  - nuclear magnetic resonance imaging
+KW  - perivascular space
+KW  - prognosis
+KW  - risk factor
+KW  - susceptibility weighted imaging
+KW  - white matter
+KW  - aged
+KW  - cerebrovascular accident
+KW  - cerebrovascular disease
+KW  - cognitive defect
+KW  - complication
+KW  - genetics
+KW  - middle aged
+PB  - BioMed Central Ltd
+SN  - 17422094 (ISSN)
+C2  - 35513834
+LA  - English
+J2  - J. Neuroinflamm.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 66; Correspondence Address: Y. Pan; Department of Neurology, Beijing Tiantan Hospital, Capital Medical University, Beijing, No.119 South 4th Ring West Road, Fengtai District, 100070, China; email: yuesongpan@ncrcnd.org.cn; Y. Wang; Department of Neurology, Beijing Tiantan Hospital, Capital Medical University, Beijing, No.119 South 4th Ring West Road, Fengtai District, 100070, China; email: yilong528@gmail.com
+ER  -
+
+TY  - JOUR
+AU  - Johansson, M.
+AU  - Carreras-Torres, R.
+AU  - Scelo, G.
+AU  - Purdue, M.P.
+AU  - Mariosa, D.
+AU  - Muller, D.C.
+AU  - Timpson, N.J.
+AU  - Haycock, P.C.
+AU  - Brown, K.M.
+AU  - Wang, Z.
+AU  - Ye, Y.
+AU  - Hofmann, J.N.
+AU  - Foll, M.
+AU  - Gaborieau, V.
+AU  - Machiela, M.J.
+AU  - Colli, L.M.
+AU  - Li, P.
+AU  - Garnier, J.-G.
+AU  - Blanche, H.
+AU  - Boland, A.
+AU  - Burdette, L.
+AU  - Prokhortchouk, E.
+AU  - Skryabin, K.G.
+AU  - Yeager, M.
+AU  - Radojevic-Skodric, S.
+AU  - Ognjanovic, S.
+AU  - Foretova, L.
+AU  - Holcatova, I.
+AU  - Janout, V.
+AU  - Mates, D.
+AU  - Mukeriya, A.
+AU  - Rascu, S.
+AU  - Zaridze, D.
+AU  - Bencko, V.
+AU  - Cybulski, C.
+AU  - Fabianova, E.
+AU  - Jinga, V.
+AU  - Lissowska, J.
+AU  - Lubinski, J.
+AU  - Navratilova, M.
+AU  - Rudnai, P.
+AU  - Benhamou, S.
+AU  - Cancel-Tassin, G.
+AU  - Cussenot, O.
+AU  - Weiderpass, E.
+AU  - Ljungberg, B.
+AU  - Tumkur Sitaram, R.
+AU  - Häggström, C.
+AU  - Bruinsma, F.
+AU  - Jordan, S.J.
+AU  - Severi, G.
+AU  - Winship, I.
+AU  - Hveem, K.
+AU  - Vatten, L.J.
+AU  - Fletcher, T.
+AU  - Larsson, S.C.
+AU  - Wolk, A.
+AU  - Banks, R.E.
+AU  - Selby, P.J.
+AU  - Easton, D.F.
+AU  - Andreotti, G.
+AU  - Beane Freeman, L.E.
+AU  - Koutros, S.
+AU  - Männistö, S.
+AU  - Weinstein, S.
+AU  - Clark, P.E.
+AU  - Edwards, T.L.
+AU  - Lipworth, L.
+AU  - Gapstur, S.M.
+AU  - Stevens, V.L.
+AU  - Carol, H.
+AU  - Freedman, M.L.
+AU  - Pomerantz, M.M.
+AU  - Cho, E.
+AU  - Wilson, K.M.
+AU  - Gaziano, J.M.
+AU  - Sesso, H.D.
+AU  - Freedman, N.D.
+AU  - Parker, A.S.
+AU  - Eckel-Passow, J.E.
+AU  - Huang, W.-Y.
+AU  - Kahnoski, R.J.
+AU  - Lane, B.R.
+AU  - Noyes, S.L.
+AU  - Petillo, D.
+AU  - Teh, B.T.
+AU  - Peters, U.
+AU  - White, E.
+AU  - Anderson, G.L.
+AU  - Johnson, L.
+AU  - Luo, J.
+AU  - Buring, J.
+AU  - Lee, I.-M.
+AU  - Chow, W.-H.
+AU  - Moore, L.E.
+AU  - Eisen, T.
+AU  - Henrion, M.
+AU  - Larkin, J.
+AU  - Barman, P.
+AU  - Leibovich, B.C.
+AU  - Choueiri, T.K.
+AU  - Lathrop, G.M.
+AU  - Deleuze, J.-F.
+AU  - Gunter, M.
+AU  - McKay, J.D.
+AU  - Wu, X.
+AU  - Houlston, R.S.
+AU  - Chanock, S.J.
+AU  - Relton, C.
+AU  - Richards, J.B.
+AU  - Martin, R.M.
+AU  - Davey Smith, G.
+AU  - Brennan, P.
+TI  - The influence of obesity-related factors in the etiology of renal cell carcinoma-A mendelian randomization study
+PY  - 2019
+T2  - PLoS Medicine
+VL  - 16
+IS  - 1
+C7  - e1002724
+DO  - 10.1371/journal.pmed.1002724
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85059499698&doi=10.1371%2fjournal.pmed.1002724&partnerID=40&md5=4e102559d04b720509623c94eb706e93
+AD  - International Agency for Research on Cancer (IARC), Lyon, France
+AD  - Division of Cancer Epidemiology and Genetics, National Cancer Institute, National Institutes of Health, Department Health and Human Services, Bethesda, MD, United States
+AD  - Imperial College, London, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - St. Jude Children's Research Hospital, Memphis, TN, United States
+AD  - Department of Epidemiology, Division of Cancer Prevention and Population Sciences, The University of Texas MD Anderson Cancer Center, Houston, TX, United States
+AD  - Max Planck Institute for Demographic Research, Rostock, Germany
+AD  - Centre National de Genotypage, Institut de Genomique, Centre de l'Energie Atomique et aux Energies Alternatives, Evry, France
+AD  - Fondation Jean Dausset - Centre d'Etude du Polymorphisme Humain, Paris, France
+AD  - Federal Research Centre "Fundamentals of Biotechnology" of the Russian Academy of Sciences, Moscow, Russian Federation
+AD  - Kurchatov Scientific Center, Moscow, Russian Federation
+AD  - Institute of Pathology, Medical School of Belgrade, Belgrade, Serbia
+AD  - Clinic of Urology, Clinical Center of Serbia, Belgrade, Serbia
+AD  - Mayo Clinic Graduate School of Biomedical Sciences, Rochester, MN, United States
+AD  - International Organization for Cancer Prevention and Research (IOCPR), Belgrade, Serbia
+AD  - Department of Cancer Epidemiology and Genetics, Masaryk Memorial Cancer Institute, Brno, Czech Republic
+AD  - Institute of Public Health and Preventive Medicine, 2nd Faculty of Medicine, Charles University, Prague, Czech Republic
+AD  - Department of Preventive Medicine, Faculty of Medicine, Palacky University, Olomouc, Czech Republic
+AD  - National Institute of Public Health, Bucharest, Romania
+AD  - Russian N.N. Blokhin Cancer Research Centre, Moscow, Russian Federation
+AD  - Carol Davila University of Medicine and Pharmacy, Th. Burghele Hospital, Bucharest, Romania
+AD  - Institute of Hygiene and Epidemiology, 1st Faculty of Medicine, Charles University, Prague, Czech Republic
+AD  - International Hereditary Cancer Center, Department of Genetics and Pathology, Pomeranian Medical University, Szczecin, Poland
+AD  - Regional Authority of Public Health in Banska Bystrica, Banska Bystrica, Slovakia
+AD  - The M Sklodowska-Curie Cancer Center, Institute of Oncology, Warsaw, Poland
+AD  - National Public Health Center, National Directorate of Environmental Health, Budapest, Hungary
+AD  - INSERM U946, Paris, France
+AD  - CNRS UMR8200, Institute Gustave Roussy, Villejuif, France
+AD  - CeRePP, Paris, France
+AD  - UPMC Univ Paris 06, GRC n°5, Institut Universitaire de Cancérologie, Paris, France
+AD  - AP-HP, Department of Urology, Hopitaux Universitaires Est Parisien Tenon, Paris, France
+AD  - Department of Research, Cancer Registry of Norway, Institute of Population-Based Cancer Research, Oslo, Norway
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - Genetic Epidemiology Group, Folkhälsan Research Center, Helsinki, Finland
+AD  - Department of Community Medicine, University of Tromsø, The Arctic University of Norway, Tromsø, Norway
+AD  - Department of Surgical and Perioperative Sciences, Urology and Andrology, Umeå University, Umeå, Sweden
+AD  - Department of Biobank Research, Umeå University, Umeå, Sweden
+AD  - Department of Surgical Sciences, Uppsala University, Uppsala, Sweden
+AD  - Cancer Epidemiology Centre, Cancer Council Victoria, Melbourne, Australia
+AD  - QIMR Berghofer Medical Research Institute, Herston, QLD, Australia
+AD  - School of Public Health, The University of Queensland, Brisbane, Australia
+AD  - “Health across generations” team, CESP Inserm, Facultés de Médicine, Université Paris-Sud, UVSQ, Université Paris-Saclay, Gustave Roussy, Villejuif, France
+AD  - Human Genetics Foundation (HuGeF), Torino, Italy
+AD  - Department of Medicine, Royal Melbourne Hospital, University of Melbourne, Melbourne, Australia
+AD  - K. G. Jebsen Center for Genetic Epidemiology, Department of Public Health, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Department of Public Health and General Practice, Faculty of Medicine, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - School of Hygiene and Tropical Medicine, University of London, London, United Kingdom
+AD  - Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Leeds Institute of Cancer and Pathology, University of Leeds, St James's University Hospital, Leeds, United Kingdom
+AD  - National Institute for Health Research Diagnostic Evidence Cooperative, Division of Surgery, Imperial College London, St Mary’s Hospital, London, United Kingdom
+AD  - Department of Oncology, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - National Institute for Health and Welfare, Helsinki, Finland
+AD  - Vanderbilt-Ingram Cancer Center, Nashville, TN, United States
+AD  - Department of Medicine, Division of Epidemiology, Vanderbilt Genetics Institute, Vanderbilt-Ingram Cancer Center, Nashville, TN, United States
+AD  - American Cancer Society, Atlanta, GA, United States
+AD  - Dana-Farber Cancer Institute, Boston, MA, United States
+AD  - Brown University, Providence, RI, United States
+AD  - Harvard T.H. Chan School of Public Health, Boston, MA, United States
+AD  - Brigham and Women's Hospital, Harvard Medical School, Boston, MA, United States
+AD  - Department of Medicine, Brigham and Women’s Hospital, Boston, MA, United States
+AD  - Department of Health Sciences Research, Mayo Clinic, Jacksonville, FL, United States
+AD  - Department of Health Sciences Research, Division of Biomedical Statistics and Informatics, Mayo Clinic, Rochester, MN, United States
+AD  - Division of Urology, Spectrum Health, Grand Rapids, MI, United States
+AD  - College of Human Medicine, Michigan State University, Grand Rapids, MI, United States
+AD  - Van Andel Research Institute, Center for Cancer Genomics and Quantitative Biology, Grand Rapids, MI, United States
+AD  - Spectrum Health, Grand Rapids, MI, United States
+AD  - Ferris State University, Grand Rapids, MI, United States
+AD  - Duke-National University of Singapore Medical School, Singapore
+AD  - Institute of Molecular and Cell Biology, A*STAR, Singapore, Singapore
+AD  - Laboratory of Cancer Epigenome, Division of Medical Sciences, National Cancer Centre Singapore, Singapore, Singapore
+AD  - Cancer Science Institute of Singapore, National University of Singapore, Singapore, Singapore
+AD  - Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - WHI Clinical Coordinating Center, Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - Department of Epidemiology and Biostatistics, School of Public, Health Indiana University Bloomington, Bloomington, IN, United States
+AD  - University of Cambridge, Cambridge, United Kingdom
+AD  - The Institute of Cancer Research, London, United Kingdom
+AD  - Dept. of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Royal Marsden NHS Foundation Trust, London, United Kingdom
+AD  - Department of Urology, Mayo Clinic, Rochester, MN, United States
+AD  - McGill University and Genome Quebec Innovation Centre, Montreal, QC, Canada
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Departments of Medicine, Human Genetics, Epidemiology and Biostatistics, Jewish General Hospital, McGill University, Montreal, QC, Canada
+AD  - University Hospitals Bristol NHS Foundation Trust National Institute for Health Research Bristol Nutrition Biomedical Research Unit, University of Bristol, Bristol, United Kingdom
+AB  -                              Background: Several obesity-related factors have been associated with renal cell carcinoma (RCC), but it is unclear which individual factors directly influence risk. We addressed this question using genetic markers as proxies for putative risk factors and evaluated their relation to RCC risk in a mendelian randomization (MR) framework. This methodology limits bias due to confounding and is not affected by reverse causation. Methods and findings: Genetic markers associated with obesity measures, blood pressure, lipids, type 2 diabetes, insulin, and glucose were initially identified as instrumental variables, and their association with RCC risk was subsequently evaluated in a genome-wide association study (GWAS) of 10,784 RCC patients and 20,406 control participants in a 2-sample MR framework. The effect on RCC risk was estimated by calculating odds ratios (OR                             SD                             ) for a standard deviation (SD) increment in each risk factor. The MR analysis indicated that higher body mass index increases the risk of RCC (OR                             SD                             : 1.56, 95% confidence interval [CI] 1.44-1.70), with comparable results for waist-to-hip ratio (OR                             SD                             : 1.63, 95% CI 1.40-1.90) and body fat percentage (OR                             SD                             : 1.66, 95% CI 1.44-1.90). This analysis further indicated that higher fasting insulin (OR                             SD                             : 1.82, 95% CI 1.30-2.55) and diastolic blood pressure (DBP; OR                             SD                             : 1.28, 95% CI 1.11-1.47), but not systolic blood pressure (OR                             SD                             : 0.98, 95% CI 0.84-1.14), increase the risk for RCC. No association with RCC risk was seen for lipids, overall type 2 diabetes, or fasting glucose. Conclusions: This study provides novel evidence for an etiological role of insulin in RCC, as well as confirmatory evidence that obesity and DBP influence RCC risk.                          © 2018, Public Library of Science. All rights reserved.
+KW  - Blood Glucose
+KW  - Blood Pressure
+KW  - Body Mass Index
+KW  - Carcinoma, Renal Cell
+KW  - Diabetes Mellitus, Type 2
+KW  - Female
+KW  - Genetic Markers
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Insulin
+KW  - Kidney Neoplasms
+KW  - Lipids
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Obesity
+KW  - Risk Factors
+KW  - cholesterol
+KW  - glucose
+KW  - high density lipoprotein cholesterol
+KW  - insulin
+KW  - lipid
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - insulin
+KW  - lipid
+KW  - Article
+KW  - body fat
+KW  - body mass
+KW  - cancer risk
+KW  - diastolic blood pressure
+KW  - female
+KW  - genetic heterogeneity
+KW  - genetic marker
+KW  - genome-wide association study
+KW  - human
+KW  - hyperglycemia
+KW  - hyperinsulinemia
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - obesity
+KW  - pulse pressure
+KW  - renal cell carcinoma
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - systolic blood pressure
+KW  - waist hip ratio
+KW  - analysis
+KW  - blood
+KW  - blood pressure
+KW  - complication
+KW  - genetics
+KW  - glucose blood level
+KW  - kidney tumor
+KW  - obesity
+KW  - renal cell carcinoma
+PB  - Public Library of Science
+SN  - 15491277 (ISSN)
+C2  - 30605491
+LA  - English
+J2  - PLoS Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 66; Correspondence Address: M. Johansson; International Agency for Research on Cancer (IARC), Lyon, France; email: johanssonm@iarc.fr
+ER  -
+
+TY  - JOUR
+AU  - Georgakis, M.K.
+AU  - Gill, D.
+AU  - Webb, A.J.S.
+AU  - Evangelou, E.
+AU  - Elliott, P.
+AU  - Sudlow, C.L.M.
+AU  - Dehghan, A.
+AU  - Malik, R.
+AU  - Tzoulaki, I.
+AU  - Dichgans, M.
+TI  - Genetically determined blood pressure, antihypertensive drug classes, and risk of stroke subtypes
+PY  - 2020
+T2  - Neurology
+VL  - 95
+IS  - 4
+SP  - E353
+EP  - E361
+DO  - 10.1212/WNL.0000000000009814
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85088849488&doi=10.1212%2fWNL.0000000000009814&partnerID=40&md5=c47143ddfe456e615722d4517f4231bc
+AD  - Institute for Stroke and Dementia Research (ISD), University Hospital
+AD  - Graduate School for Systemic Neurosciences, Ludwig-Maximilians-Universität Lmu, Munich, Germany
+AD  - Department of Biostatistics and Epidemiology, School of Public Health, United Kingdom
+AD  - Dementia Research Institute, United Kingdom
+AD  - Health Data Research-UK London, United Kingdom
+AD  - MRC-PHE Centre for Environment, School of Public Health, Imperial College London, United Kingdom
+AD  - Centre for Prevention of Stroke and Dementia, Department of Clinical Neurosciences, University of Oxford, United Kingdom
+AD  - Department of Hygiene and Epidemiology, University of Ioannina Medical School, Greece
+AD  - National Institute for Health Research, Imperial College Biomedical Research Centre, London, United Kingdom
+AD  - Institute for Genetics and Molecular Medicine, University of Edinburgh, United Kingdom
+AD  - Munich Cluster for Systems Neurology (SyNergy), Germany
+AD  - German Centre for Neurodegenerative Diseases (DZNE), Munich, Germany
+AB  - ObjectiveWe employed Mendelian randomization to explore whether the effects of blood pressure (BP) and BP-lowering through different antihypertensive drug classes on stroke risk vary by stroke etiology.MethodsWe selected genetic variants associated with systolic and diastolic BP and BP-lowering variants in genes encoding antihypertensive drug targets from genome-wide association studies (GWAS) on 757,601 individuals. Applying 2-sample Mendelian randomization, we examined associations with any stroke (67,162 cases; 454,450 controls), ischemic stroke and its subtypes (large artery, cardioembolic, small vessel stroke), intracerebral hemorrhage (ICH, deep and lobar), and the related small vessel disease phenotype of white matter hyperintensities (WMH).ResultsGenetic predisposition to higher systolic and diastolic BP was associated with higher risk of any stroke, ischemic stroke, and ICH. We found associations between genetically determined BP and all ischemic stroke subtypes with a higher risk of large artery and small vessel stroke compared to cardioembolic stroke, as well as associations with deep, but not lobar ICH. Genetic proxies for calcium channel blockers, but not ß-blockers, were associated with lower risk of any stroke and ischemic stroke. Proxies for calcium channel blockers showed particularly strong associations with small vessel stroke and the related radiologic phenotype of WMH.ConclusionsThis study supports a causal role of hypertension in all major stroke subtypes except lobar ICH. We find differences in the effects of BP and BP-lowering through antihypertensive drug classes between stroke subtypes and identify calcium channel blockade as a promising strategy for preventing manifestations of cerebral small vessel disease.  © American Academy of Neurology.
+KW  - Antihypertensive Agents
+KW  - Blood Pressure
+KW  - Cerebral Small Vessel Diseases
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Hypertension
+KW  - Mendelian Randomization Analysis
+KW  - Stroke
+KW  - antihypertensive agent
+KW  - beta adrenergic receptor blocking agent
+KW  - calcium channel blocking agent
+KW  - dipeptidyl carboxypeptidase inhibitor
+KW  - antihypertensive agent
+KW  - Article
+KW  - blood pressure
+KW  - blood pressure regulation
+KW  - brain hemorrhage
+KW  - brain ischemia
+KW  - brain size
+KW  - cardioembolic stroke
+KW  - case control study
+KW  - cerebrovascular accident
+KW  - cerebrovascular disease
+KW  - clinical feature
+KW  - controlled study
+KW  - diastolic blood pressure
+KW  - drug classification
+KW  - drug targeting
+KW  - genetic predisposition
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype phenotype correlation
+KW  - human
+KW  - hypertension
+KW  - large artery stroke
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - priority journal
+KW  - risk assessment
+KW  - risk reduction
+KW  - single nucleotide polymorphism
+KW  - small vessel stroke
+KW  - systolic blood pressure
+KW  - white matter
+KW  - white matter lesion
+KW  - blood pressure
+KW  - cerebrovascular accident
+KW  - cerebrovascular disease
+KW  - complication
+KW  - genetic predisposition
+KW  - genetics
+KW  - hypertension
+PB  - Lippincott Williams and Wilkins
+SN  - 00283878 (ISSN)
+C2  - 32611631
+LA  - English
+J2  - Neurology
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 66; Correspondence Address: M. Dichgans; Institute for Stroke and Dementia Research (ISD), University Hospital; email: martin.dichgans@med.uni-muenchen.de; CODEN: NEURA
+ER  -
+

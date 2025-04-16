@@ -1,0 +1,1294 @@
+﻿TY  - JOUR
+AU  - Wu, F.
+AU  - Huang, Y.
+AU  - Hu, J.
+AU  - Shao, Z.
+TI  - Mendelian randomization study of inflammatory bowel disease and bone mineral density
+PY  - 2020
+T2  - BMC Medicine
+VL  - 18
+IS  - 1
+C7  - 312
+DO  - 10.1186/s12916-020-01778-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85095713804&doi=10.1186%2fs12916-020-01778-5&partnerID=40&md5=c1eb8c4bb6b88367e7f8196cd768eca1
+AD  - Department of Orthopaedics, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, 430022, China
+AD  - Department of Otorhinolaryngology, The Third Hospital of Wuhan City, Wuhan, 430070, China
+AD  - School of Computer Science, Northwestern Polytechnical University, West Youyi Road 127, Xi’an, 710072, China
+AB  - Background: Recently, the association between inflammatory bowel disease (including ulcerative colitis and Crohn’s disease) and BMD has attracted great interest in the research community. However, the results of the published epidemiological observational studies on the relationship between inflammatory bowel disease and BMD are still inconclusive. Here, we performed a two-sample Mendelian randomization analysis to investigate the causal link between inflammatory bowel disease and level of BMD using publically available GWAS summary statistics. Methods: A series of quality control steps were taken in our analysis to select eligible instrumental SNPs which were strongly associated with exposure. To make the conclusions more robust and reliable, we utilized several robust analytical methods (inverse-variance weighting, MR-PRESSO method, mode-based estimate method, weighted median, MR-Egger regression, and MR.RAPS method) that are based on different assumptions of two-sample MR analysis. The MR-Egger intercept test, Cochran’s Q test, and “leave-one-out” sensitivity analysis were performed to evaluate the horizontal pleiotropy, heterogeneities, and stability of these genetic variants on BMD. Outlier variants identified by the MR-PRESSO outlier test were removed step-by-step to reduce heterogeneity and the effect of horizontal pleiotropy. Results: Our two-sample Mendelian randomization analysis with two groups of exposure GWAS summary statistics and four groups of outcome GWAS summary statistics suggested a definitively causal effect of genetically predicted ulcerative colitis on TB-BMD and FA-BMD but not on FN-BMD or LS-BMD (after Bonferroni correction), and we merely determined a causal effect of Crohn’s disease on FN-BMD but not on the others, which was somewhat inconsistent with many published observational researches. The causal effect of inflammatory bowel disease on TB-BMD was significant and robust but not on FA-BMD, FN-BMD, and LS-BMD, which might result from the cumulative effect of ulcerative colitis and Crohn’s disease on BMDs. Conclusions: Our Mendelian randomization analysis supported the causal effect of ulcerative colitis on TB-BMD and FA-BMD. As to Crohn’s disease, only the definitively causal effect of it on decreased FN-BMD was observed. Updated MR analysis is warranted to confirm our findings when a more advanced method to get less biased estimates and better precision or GWAS summary data with more ulcerative colitis and Crohn’s disease patients was available. © 2020, The Author(s).
+KW  - Bone mineral density
+KW  - Crohn’s disease
+KW  - Inflammatory bowel disease
+KW  - Osteoporosis
+KW  - Two-sample Mendelian randomization
+KW  - Ulcerative colitis
+KW  - Bone Density
+KW  - Humans
+KW  - Inflammatory Bowel Diseases
+KW  - Mendelian Randomization Analysis
+KW  - Research Design
+KW  - adult
+KW  - analytic method
+KW  - Article
+KW  - bone density
+KW  - case control study
+KW  - controlled study
+KW  - Crohn disease
+KW  - disease association
+KW  - female
+KW  - genetic stability
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - inflammatory bowel disease
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - osteoporosis
+KW  - pleiotropy
+KW  - population based case control study
+KW  - prediction
+KW  - regression analysis
+KW  - reliability
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - ulcerative colitis
+KW  - bone density
+KW  - inflammatory bowel disease
+KW  - methodology
+KW  - pathology
+KW  - procedures
+PB  - BioMed Central Ltd
+SN  - 17417015 (ISSN)
+C2  - 33167994
+LA  - English
+J2  - BMC Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 234; Correspondence Address: F. Wu; Department of Orthopaedics, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, 430022, China; email: 18771036347@163.com; Z. Shao; Department of Orthopaedics, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, 430022, China; email: szwpro@163.com; J. Hu; School of Computer Science, Northwestern Polytechnical University, Xi’an, West Youyi Road 127, 710072, China; email: jhu@nwpu.edu.cn
+ER  -
+
+TY  - JOUR
+AU  - Brumpton, B.
+AU  - Sanderson, E.
+AU  - Heilbron, K.
+AU  - Hartwig, F.P.
+AU  - Harrison, S.
+AU  - Vie, G.Å.
+AU  - Cho, Y.
+AU  - Howe, L.D.
+AU  - Hughes, A.
+AU  - Boomsma, D.I.
+AU  - Havdahl, A.
+AU  - Hopper, J.
+AU  - Neale, M.
+AU  - Nivard, M.G.
+AU  - Pedersen, N.L.
+AU  - Reynolds, C.A.
+AU  - Tucker-Drob, E.M.
+AU  - Grotzinger, A.
+AU  - Howe, L.
+AU  - Morris, T.
+AU  - Li, S.
+AU  - Auton, A.
+AU  - Windmeijer, F.
+AU  - Chen, W.-M.
+AU  - Bjørngaard, J.H.
+AU  - Hveem, K.
+AU  - Willer, C.
+AU  - Evans, D.M.
+AU  - Kaprio, J.
+AU  - Davey-Smith, G.
+AU  - Åsvold, B.O.
+AU  - Hemani, G.
+AU  - Davies, N.M.
+TI  - Avoiding dynastic, assortative mating, and population stratification biases in Mendelian randomization through within-family analyses
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 3519
+DO  - 10.1038/s41467-020-17117-4
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85087978841&doi=10.1038%2fs41467-020-17117-4&partnerID=40&md5=268c6af0fb2d47f16d521ae73966c848
+AD  - K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Clinic of Thoracic and Occupational Medicine, St. Olavs Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AD  - Postgraduate Program in Epidemiology, Federal University of Pelotas, Pelotas, Brazil
+AD  - Netherlands Twin Register, Department of Biological Psychology, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Nic Waals Institute, Lovisenberg Diaconal Hospital, Spångbergveien 25, Oslo, 0853, Norway
+AD  - Department of Mental Disorders, Norwegian Institute of Public Health, Sandakerveien 24 C, Oslo, 0473, Norway
+AD  - Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health, The University of Melbourne, 207 Bouverie Street, Carlton, 3053, VIC, Australia
+AD  - Virginia Institute for Psychiatric and Behavior Genetics, Virginia Commonwealth University, Richmond, VA, United States
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - Department of Psychology, University of California Riverside, Riverside, CA, United States
+AD  - Department of Psychology and Population Research Center, University of Texas at Austin, 108 E. Dean Keeton Stop A8000,, Austin, 78712, TX, United States
+AD  - Centre for Cancer Genetic Epidemiology, Department of Public Health and Primary Care, University of Cambridge, Strangeways Research Laboratory, Worts Causeway, Cambridge, CB1 8RN, United Kingdom
+AD  - Department of Economics, University of Bristol, 2 Priory Road, Bristol, BS8 1TU, United Kingdom
+AD  - Center for public health genomics, Department of public health sciences, University of Virginia, Charlottesville, VA, United States
+AD  - Faculty of Nursing and Health Sciences, Nord University, Levanger, Norway
+AD  - Department of Biostatistics and Center for Statistical Genetics, University of Michigan, Ann Arbor, MI, United States
+AD  - Department of Internal Medicine, University of Michigan, Ann Arbor, MI, United States
+AD  - Department of Human Genetics, University of Michigan, Ann Arbor, MI, United States
+AD  - University of Queensland Diamantina Institute, University of Queensland, Brisbane, QLD, Australia
+AD  - Institute for Molecular Medicine Finland (FIMM), University of Helsinki, Helsinki, Finland
+AD  - Department of Endocrinology, St Olavs Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - 23andMe, Inc., 223 N Mathilda Avenue, Sunnyvale, 94086, CA, United States
+AD  - Department of Public Health, University of Helsinki, Helsinki, Finland
+AB  - Estimates from Mendelian randomization studies of unrelated individuals can be biased due to uncontrolled confounding from familial effects. Here we describe methods for within-family Mendelian randomization analyses and use simulation studies to show that family-based analyses can reduce such biases. We illustrate empirically how familial effects can affect estimates using data from 61,008 siblings from the Nord-Trøndelag Health Study and UK Biobank and replicated our findings using 222,368 siblings from 23andMe. Both Mendelian randomization estimates using unrelated individuals and within family methods reproduced established effects of lower BMI reducing risk of diabetes and high blood pressure. However, while Mendelian randomization estimates from samples of unrelated individuals suggested that taller height and lower BMI increase educational attainment, these effects were strongly attenuated in within-family Mendelian randomization analyses. Our findings indicate the necessity of controlling for population structure and familial effects in Mendelian randomization studies. © 2020, The Author(s).
+KW  - Body Mass Index
+KW  - Epidemiology
+KW  - Female
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - assortative mating
+KW  - diabetes
+KW  - estimation method
+KW  - population structure
+KW  - sampling
+KW  - stratification
+KW  - adult
+KW  - anthropometric parameters
+KW  - Article
+KW  - assortative mating
+KW  - blood pressure
+KW  - body height
+KW  - body mass
+KW  - diabetes mellitus
+KW  - dynastic mating
+KW  - empirical research
+KW  - family study
+KW  - female
+KW  - gene mutation
+KW  - genetic association
+KW  - genetic trait
+KW  - genetic variability
+KW  - genotype
+KW  - genotyping technique
+KW  - hospitalization
+KW  - human
+KW  - hypertension
+KW  - inheritance
+KW  - major clinical study
+KW  - male
+KW  - mating
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - phenotypic variation
+KW  - population structure
+KW  - questionnaire
+KW  - single nucleotide polymorphism
+KW  - statistical model
+KW  - stratification
+KW  - epidemiology
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - procedures
+KW  - risk factor
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 32665587
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 210; Correspondence Address: B. Brumpton; K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway; email: ben.brumpton@ntnu.no; N.M. Davies; K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway; email: neil.davies@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Karlsson, T.
+AU  - Rask-Andersen, M.
+AU  - Pan, G.
+AU  - Höglund, J.
+AU  - Wadelius, C.
+AU  - Ek, W.E.
+AU  - Johansson, Å.
+TI  - Contribution of genetics to visceral adiposity and its relation to cardiovascular and metabolic disease
+PY  - 2019
+T2  - Nature Medicine
+VL  - 25
+IS  - 9
+SP  - 1390
+EP  - 1395
+DO  - 10.1038/s41591-019-0563-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85071965679&doi=10.1038%2fs41591-019-0563-7&partnerID=40&md5=2fa0efc989b80953b9b8b9323663410f
+AD  - Department of Immunology, Genetics and Pathology, Science for Life Laboratory, Uppsala University, Uppsala, Sweden
+AB  - Visceral adipose tissue (VAT)—fat stored around the internal organs—has been suggested as an independent risk factor for cardiovascular and metabolic disease1–3, as well as all-cause, cardiovascular-specific and cancer-specific mortality4,5. Yet, the contribution of genetics to VAT, as well as its disease-related effects, are largely unexplored due to the requirement for advanced imaging technologies to accurately measure VAT. Here, we develop sex-stratified, nonlinear prediction models (coefficient of determination = 0.76; typical 95% confidence interval (CI) = 0.74–0.78) for VAT mass using the UK Biobank cohort. We performed a genome-wide association study for predicted VAT mass and identified 102 novel visceral adiposity loci. Predicted VAT mass was associated with increased risk of hypertension, heart attack/angina, type 2 diabetes and hyperlipidemia, and Mendelian randomization analysis showed visceral fat to be a causal risk factor for all four diseases. In particular, a large difference in causal effect between the sexes was found for type 2 diabetes, with an odds ratio of 7.34 (95% CI = 4.48–12.0) in females and an odds ratio of 2.50 (95% CI = 1.98–3.14) in males. Our findings bolster the role of visceral adiposity as a potentially independent risk factor, in particular for type 2 diabetes in Caucasian females. Independent validation in other cohorts is necessary to determine whether the findings can translate to other ethnicities, or outside the UK. © 2019, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Adiposity
+KW  - Adult
+KW  - Aged
+KW  - Cardiovascular Diseases
+KW  - Diabetes Mellitus, Type 2
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Hypertension
+KW  - Intra-Abdominal Fat
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Metabolic Diseases
+KW  - Middle Aged
+KW  - Obesity
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Sex Characteristics
+KW  - adult
+KW  - aged
+KW  - body mass
+KW  - cardiovascular disease
+KW  - Caucasian
+KW  - controlled study
+KW  - disease association
+KW  - expression quantitative trait locus
+KW  - female
+KW  - gene linkage disequilibrium
+KW  - gene locus
+KW  - genetic association
+KW  - heart infarction
+KW  - human
+KW  - hyperlipidemia
+KW  - hypertension
+KW  - intra-abdominal fat
+KW  - Letter
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - metabolic disorder
+KW  - non insulin dependent diabetes mellitus
+KW  - obesity
+KW  - priority journal
+KW  - risk factor
+KW  - sex difference
+KW  - United Kingdom
+KW  - waist circumference
+KW  - waist hip ratio
+KW  - cardiovascular disease
+KW  - genetics
+KW  - genome-wide association study
+KW  - metabolic disorder
+KW  - metabolism
+KW  - middle aged
+KW  - obesity
+KW  - pathology
+KW  - sexual characteristics
+KW  - single nucleotide polymorphism
+PB  - Nature Publishing Group
+SN  - 10788956 (ISSN)
+C2  - 31501611
+LA  - English
+J2  - Nat. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 203; Correspondence Address: T. Karlsson; Department of Immunology, Genetics and Pathology, Science for Life Laboratory, Uppsala University, Uppsala, Sweden; email: torgny.karlsson@igp.uu.se; CODEN: NAMEF
+ER  -
+
+TY  - JOUR
+AU  - Teschendorff, A.E.
+AU  - Relton, C.L.
+TI  - Statistical and integrative system-level analysis of DNA methylation data
+PY  - 2018
+T2  - Nature Reviews Genetics
+VL  - 19
+IS  - 3
+SP  - 129
+EP  - 147
+DO  - 10.1038/nrg.2017.86
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85041405349&doi=10.1038%2fnrg.2017.86&partnerID=40&md5=ae7d816521498036a127653c41066dcc
+AD  - Department of Women's Cancer, University College London, 74 Huntley Street, London, WC1E 6AU, United Kingdom
+AD  - UCL Cancer Institute, University College London, 72 Huntley Street, London, WC1E 6BT, United Kingdom
+AD  - Chinese Academy of Sciences (CAS), Key Laboratory of Computational Biology, CAS-Max Planck Gesellschaft (MPG), Partner Institute for Computational Biology, 320 Yue Yang Road, Shanghai, 200031, China
+AD  - Medical Research Council Integrative Epidemiology Unit (MRC IEU), School of Social and Community Medicine, University of Bristol, Oakfield House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AB  - Epigenetics plays a key role in cellular development and function. Alterations to the epigenome are thought to capture and mediate the effects of genetic and environmental risk factors on complex disease. Currently, DNA methylation is the only epigenetic mark that can be measured reliably and genome-wide in large numbers of samples. This Review discusses some of the key statistical challenges and algorithms associated with drawing inferences from DNA methylation data, including cell-type heterogeneity, feature selection, reverse causation and system-level analyses that require integration with other data types such as gene expression, genotype, transcription factor binding and other epigenetic information. © 2018 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+KW  - Animals
+KW  - Databases, Genetic
+KW  - DNA Methylation
+KW  - Epigenesis, Genetic
+KW  - Epigenomics
+KW  - Humans
+KW  - cytosine
+KW  - transcription factor
+KW  - algorithm
+KW  - binding affinity
+KW  - cell heterogeneity
+KW  - cell interaction
+KW  - cells by body anatomy
+KW  - DNA methylation
+KW  - epigenetics
+KW  - gene expression
+KW  - genetic selection
+KW  - genotype
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - priority journal
+KW  - Review
+KW  - animal
+KW  - genetic database
+KW  - genetic epigenesis
+KW  - procedures
+PB  - Nature Publishing Group
+SN  - 14710056 (ISSN)
+C2  - 29129922
+LA  - English
+J2  - Nat. Rev. Gen.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 204; Correspondence Address: A.E. Teschendorff; Department of Women's Cancer, University College London, London, 74 Huntley Street, WC1E 6AU, United Kingdom; email: a.teschendorff@ucl.ac.uk; CODEN: NRGAA
+ER  -
+
+TY  - JOUR
+AU  - Hartwig, F.P.
+AU  - Borges, M.C.
+AU  - Horta, B.L.
+AU  - Bowden, J.
+AU  - Davey Smith, G.
+TI  - Inflammatory biomarkers and risk of schizophrenia: A 2-sample mendelian randomization study
+PY  - 2017
+T2  - JAMA Psychiatry
+VL  - 74
+IS  - 12
+SP  - 1226
+EP  - 1233
+DO  - 10.1001/jamapsychiatry.2017.3191
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85038248901&doi=10.1001%2fjamapsychiatry.2017.3191&partnerID=40&md5=578cb4b5602454e85f0452744126ba0b
+AD  - Postgraduate Program in Epidemiology, Federal University of Pelotas, Rua Marechal Deodoro, 1160, Pelotas, Rio Grande do Sul, 96020220, Brazil
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AB  - IMPORTANCE Positive associations between inflammatory biomarkers and risk of psychiatric disorders, including schizophrenia, have been reported in observational studies. However, conventional observational studies are prone to bias, such as reverse causation and residual confounding, thus limiting our understanding of the effect (if any) of inflammatory biomarkers on schizophrenia risk. OBJECTIVE To evaluate whether inflammatory biomarkers have an effect on the risk of developing schizophrenia. DESIGN, SETTING, AND PARTICIPANTS Two-sample mendelian randomization study using genetic variants associated with inflammatory biomarkers as instrumental variables to improve inference. Summary association results from large consortia of candidate gene or genome-wide association studies, including several epidemiologic studies with different designs, were used. Gene-inflammatory biomarker associations were estimated in pooled samples ranging from 1645 to more than 80 000 individuals, while gene-schizophrenia associations were estimated in more than 30 000 cases and more than 45 000 ancestry-matched controls. In most studies included in the consortia, participants were of European ancestry, and the prevalence of men was approximately 50%. All studies were conducted in adults, with a wide age range (18 to 80 years). EXPOSURES Genetically elevated circulating levels of C-reactive protein (CRP), interleukin-1 receptor antagonist (IL-1Ra), and soluble interleukin-6 receptor (sIL-6R). MAIN OUTCOMES AND MEASURES Risk of developing schizophrenia. Individuals with schizophrenia or schizoaffective disorders were included as cases. Given that many studies contributed to the analyses, different diagnostic procedures were used. RESULTS The pooled odds ratio estimate using 18 CRP genetic instruments was 0.90 (random effects 95%CI, 0.84-0.97; P = .005) per 2-fold increment in CRP levels; consistent results were obtained using different mendelian randomization methods and a more conservative set of instruments. The odds ratio for sIL-6R was 1.06 (95%CI, 1.01-1.12; P = .02) per 2-fold increment. Estimates for IL-1Ra were inconsistent among instruments, and pooled estimates were imprecise and centered on the null. CONCLUSIONS AND RELEVANCE Under mendelian randomization assumptions, our findings suggest a protective effect of CRP and a risk-increasing effect of sIL-6R (potentially mediated at least in part by CRP) on schizophrenia risk. It is possible that such effects are a result of increased susceptibility to early life infection. © 2017 Hartwig F et al.
+KW  - Adult
+KW  - Aged
+KW  - Biomarkers
+KW  - C-Reactive Protein
+KW  - Female
+KW  - Genetic Association Studies
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inflammation
+KW  - Interleukin 1 Receptor Antagonist Protein
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Protective Factors
+KW  - Receptors, Interleukin-6
+KW  - Schizophrenia
+KW  - C reactive protein
+KW  - interleukin 1 receptor blocking agent
+KW  - interleukin 6 receptor
+KW  - biological marker
+KW  - C reactive protein
+KW  - interleukin 1 receptor blocking agent
+KW  - interleukin 6 receptor
+KW  - Article
+KW  - disease association
+KW  - disease predisposition
+KW  - human
+KW  - inflammation
+KW  - Mendelian randomization analysis
+KW  - outcome assessment
+KW  - pathogenesis
+KW  - protein blood level
+KW  - schizoaffective psychosis
+KW  - schizophrenia
+KW  - adult
+KW  - aged
+KW  - female
+KW  - genetic association study
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - genetics
+KW  - genome-wide association study
+KW  - inflammation
+KW  - male
+KW  - middle aged
+KW  - protection
+KW  - schizophrenia
+PB  - American Medical Association
+SN  - 2168622X (ISSN)
+C2  - 29094161
+LA  - English
+J2  - JAMA Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 216; Correspondence Address: F.P. Hartwig; Postgraduate Program in Epidemiology, Federal University of Pelotas, Pelotas, Rio Grande do Sul, Rua Marechal Deodoro, 1160, 96020220, Brazil; email: fernandophartwig@gmail.com
+ER  -
+
+TY  - JOUR
+AU  - Mancuso, N.
+AU  - Freund, M.K.
+AU  - Johnson, R.
+AU  - Shi, H.
+AU  - Kichaev, G.
+AU  - Gusev, A.
+AU  - Pasaniuc, B.
+TI  - Probabilistic fine-mapping of transcriptome-wide association studies
+PY  - 2019
+T2  - Nature Genetics
+VL  - 51
+IS  - 4
+SP  - 675
+EP  - 682
+DO  - 10.1038/s41588-019-0367-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85063886628&doi=10.1038%2fs41588-019-0367-1&partnerID=40&md5=3277177a97b4fd5cee740e7532c69b31
+AD  - Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, University of California, Los Angeles, Los Angeles, CA, United States
+AD  - Department of Human Genetics, David Geffen School of Medicine, University of California, Los Angeles, Los Angeles, CA, United States
+AD  - Department of Computer Science, University of California, Los Angeles, Los Angeles, CA, United States
+AD  - Bioinformatics Interdepartmental Program, University of California, Los Angeles, Los Angeles, CA, United States
+AD  - Dana-Farber Cancer Institute, Boston, MA, United States
+AB  - Transcriptome-wide association studies using predicted expression have identified thousands of genes whose locally regulated expression is associated with complex traits and diseases. In this work, we show that linkage disequilibrium induces significant gene–trait associations at non-causal genes as a function of the expression quantitative trait loci weights used in expression prediction. We introduce a probabilistic framework that models correlation among transcriptome-wide association study signals to assign a probability for every gene in the risk region to explain the observed association signal. Importantly, our approach remains accurate when expression data for causal genes are not available in the causal tissue by leveraging expression prediction from other tissues. Our approach yields credible sets of genes containing the causal gene at a nominal confidence level (for example, 90%) that can be used to prioritize genes for functional assays. We illustrate our approach by using an integrative analysis of lipid traits, where our approach prioritizes genes with strong evidence for causality. © 2019, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Chromosome Mapping
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Linkage Disequilibrium
+KW  - Models, Genetic
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Probability
+KW  - Quantitative Trait Loci
+KW  - Transcriptome
+KW  - transcriptome
+KW  - Article
+KW  - causality
+KW  - expression quantitative trait locus
+KW  - gene expression
+KW  - gene expression level
+KW  - gene function
+KW  - gene linkage disequilibrium
+KW  - genetic association study
+KW  - genetic correlation
+KW  - genetic trait
+KW  - genome-wide association study
+KW  - heritability
+KW  - pleiotropy
+KW  - priority journal
+KW  - transcriptome wide association study
+KW  - transcriptomics
+KW  - biological model
+KW  - chromosomal mapping
+KW  - genetic predisposition
+KW  - genetics
+KW  - human
+KW  - phenotype
+KW  - probability
+KW  - procedures
+KW  - quantitative trait locus
+KW  - single nucleotide polymorphism
+PB  - Nature Publishing Group
+SN  - 10614036 (ISSN)
+C2  - 30926970
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 236; Correspondence Address: N. Mancuso; Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, University of California, Los Angeles, Los Angeles, United States; email: nmancuso@mednet.ucla.edu; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Ruth, K.S.
+AU  - Day, F.R.
+AU  - Hussain, J.
+AU  - Martínez-Marchal, A.
+AU  - Aiken, C.E.
+AU  - Azad, A.
+AU  - Thompson, D.J.
+AU  - Knoblochova, L.
+AU  - Abe, H.
+AU  - Tarry-Adkins, J.L.
+AU  - Gonzalez, J.M.
+AU  - Fontanillas, P.
+AU  - Claringbould, A.
+AU  - Bakker, O.B.
+AU  - Sulem, P.
+AU  - Walters, R.G.
+AU  - Terao, C.
+AU  - Turon, S.
+AU  - Horikoshi, M.
+AU  - Lin, K.
+AU  - Onland-Moret, N.C.
+AU  - Sankar, A.
+AU  - Hertz, E.P.T.
+AU  - Timshel, P.N.
+AU  - Shukla, V.
+AU  - Borup, R.
+AU  - Olsen, K.W.
+AU  - Aguilera, P.
+AU  - Ferrer-Roda, M.
+AU  - Huang, Y.
+AU  - Stankovic, S.
+AU  - Timmers, P.R.H.J.
+AU  - Ahearn, T.U.
+AU  - Alizadeh, B.Z.
+AU  - Naderi, E.
+AU  - Andrulis, I.L.
+AU  - Arnold, A.M.
+AU  - Aronson, K.J.
+AU  - Augustinsson, A.
+AU  - Bandinelli, S.
+AU  - Barbieri, C.M.
+AU  - Beaumont, R.N.
+AU  - Becher, H.
+AU  - Beckmann, M.W.
+AU  - Benonisdottir, S.
+AU  - Bergmann, S.
+AU  - Bochud, M.
+AU  - Boerwinkle, E.
+AU  - Bojesen, S.E.
+AU  - Bolla, M.K.
+AU  - Boomsma, D.I.
+AU  - Bowker, N.
+AU  - Brody, J.A.
+AU  - Broer, L.
+AU  - Buring, J.E.
+AU  - Campbell, A.
+AU  - Campbell, H.
+AU  - Castelao, J.E.
+AU  - Catamo, E.
+AU  - Chanock, S.J.
+AU  - Chenevix-Trench, G.
+AU  - Ciullo, M.
+AU  - Corre, T.
+AU  - Couch, F.J.
+AU  - Cox, A.
+AU  - Crisponi, L.
+AU  - Cross, S.S.
+AU  - Cucca, F.
+AU  - Czene, K.
+AU  - Smith, G.D.
+AU  - de Geus, E.J.C.N.
+AU  - de Mutsert, R.
+AU  - De Vivo, I.
+AU  - Demerath, E.W.
+AU  - Dennis, J.
+AU  - Dunning, A.M.
+AU  - Dwek, M.
+AU  - Eriksson, M.
+AU  - Esko, T.
+AU  - Fasching, P.A.
+AU  - Faul, J.D.
+AU  - Ferrucci, L.
+AU  - Franceschini, N.
+AU  - Frayling, T.M.
+AU  - Gago-Dominguez, M.
+AU  - Mezzavilla, M.
+AU  - García-Closas, M.
+AU  - Gieger, C.
+AU  - Giles, G.G.
+AU  - Grallert, H.
+AU  - Gudbjartsson, D.F.
+AU  - Gudnason, V.
+AU  - Guénel, P.
+AU  - Haiman, C.A.
+AU  - Håkansson, N.
+AU  - Hall, P.
+AU  - Hayward, C.
+AU  - He, C.
+AU  - He, W.
+AU  - Heiss, G.
+AU  - Høffding, M.K.
+AU  - Hopper, J.L.
+AU  - Hottenga, J.J.
+AU  - Hu, F.
+AU  - Hunter, D.
+AU  - Ikram, M.A.
+AU  - Jackson, R.D.
+AU  - Joaquim, M.D.R.
+AU  - John, E.M.
+AU  - Joshi, P.K.
+AU  - Karasik, D.
+AU  - Kardia, S.L.R.
+AU  - Kartsonaki, C.
+AU  - Karlsson, R.
+AU  - Kitahara, C.M.
+AU  - Kolcic, I.
+AU  - Kooperberg, C.
+AU  - Kraft, P.
+AU  - Kurian, A.W.
+AU  - Kutalik, Z.
+AU  - La Bianca, M.
+AU  - LaChance, G.
+AU  - Langenberg, C.
+AU  - Launer, L.J.
+AU  - Laven, J.S.E.
+AU  - Lawlor, D.A.
+AU  - Le Marchand, L.
+AU  - Li, J.
+AU  - Lindblom, A.
+AU  - Lindstrom, S.
+AU  - Lindstrom, T.
+AU  - Linet, M.
+AU  - Liu, Y.M.
+AU  - Liu, S.
+AU  - Luan, J.
+AU  - Mägi, R.
+AU  - Magnusson, P.K.E.
+AU  - Mangino, M.
+AU  - Mannermaa, A.
+AU  - Marco, B.
+AU  - Marten, J.
+AU  - Martin, N.G.
+AU  - Mbarek, H.
+AU  - McKnight, B.
+AU  - Medland, S.E.
+AU  - Meisinger, C.
+AU  - Meitinger, T.
+AU  - Menni, C.
+AU  - Metspalu, A.
+AU  - Milani, L.
+AU  - Milne, R.L.
+AU  - Montgomery, G.W.
+AU  - Mook-Kanamori, D.O.
+AU  - Mulas, A.
+AU  - Mulligan, A.M.
+AU  - Murray, A.
+AU  - Nalls, M.A.
+AU  - Newman, A.
+AU  - Noordam, R.
+AU  - Nutile, T.
+AU  - Nyholt, D.R.
+AU  - Olshan, A.F.
+AU  - Olsson, H.
+AU  - Painter, J.N.
+AU  - Patel, A.V.
+AU  - Pedersen, N.L.
+AU  - Perjakova, N.
+AU  - Peters, A.
+AU  - Peters, U.
+AU  - Pharoah, P.D.P.
+AU  - Polasek, O.
+AU  - Porcu, E.
+AU  - Psaty, B.M.
+AU  - Rahman, I.
+AU  - Rennert, G.
+AU  - Rennert, H.S.
+AU  - Ridker, P.M.
+AU  - Ring, S.M.
+AU  - Robino, A.
+AU  - Rose, L.M.
+AU  - Rosendaal, F.R.
+AU  - Rossouw, J.
+AU  - Rudan, I.
+AU  - Rueedi, R.
+AU  - Ruggiero, D.
+AU  - Sala, C.F.
+AU  - Saloustros, E.
+AU  - Sandler, D.P.
+AU  - Sanna, S.
+AU  - Sawyer, E.J.
+AU  - Sarnowski, C.
+AU  - Schlessinger, D.
+AU  - Schmidt, M.K.
+AU  - Schoemaker, M.J.
+AU  - Schraut, K.E.
+AU  - Scott, C.
+AU  - Shekari, S.
+AU  - Shrikhande, A.
+AU  - Smith, A.V.
+AU  - Smith, B.H.
+AU  - Smith, J.A.
+AU  - Sorice, R.
+AU  - Southey, M.C.
+AU  - Spector, T.D.
+AU  - Spinelli, J.J.
+AU  - Stampfer, M.
+AU  - Stöckl, D.
+AU  - van Meurs, J.B.J.
+AU  - Strauch, K.
+AU  - Styrkarsdottir, U.
+AU  - Swerdlow, A.J.
+AU  - Tanaka, T.
+AU  - Teras, L.R.
+AU  - Teumer, A.
+AU  - Þorsteinsdottir, U.
+AU  - Timpson, N.J.
+AU  - Toniolo, D.
+AU  - Traglia, M.
+AU  - Troester, M.A.
+AU  - Truong, T.
+AU  - Tyrrell, J.
+AU  - Uitterlinden, A.G.
+AU  - Ulivi, S.
+AU  - Vachon, C.M.
+AU  - Vitart, V.
+AU  - Völker, U.
+AU  - Vollenweider, P.
+AU  - Völzke, H.
+AU  - Wang, Q.
+AU  - Wareham, N.J.
+AU  - Weinberg, C.R.
+AU  - Weir, D.R.
+AU  - Wilcox, A.N.
+AU  - van Dijk, K.W.
+AU  - Willemsen, G.
+AU  - Wilson, J.F.
+AU  - Wolffenbuttel, B.H.R.
+AU  - Wolk, A.
+AU  - Wood, A.R.
+AU  - Zhao, W.
+AU  - Zygmunt, M.
+AU  - Chen, Z.
+AU  - Li, L.
+AU  - Franke, L.
+AU  - Burgess, S.
+AU  - Deelen, P.
+AU  - Pers, T.H.
+AU  - Grøndahl, M.L.
+AU  - Andersen, C.Y.
+AU  - Pujol, A.
+AU  - Lopez-Contreras, A.J.
+AU  - Daniel, J.A.
+AU  - Stefansson, K.
+AU  - Chang-Claude, J.
+AU  - van der Schouw, Y.T.
+AU  - Lunetta, K.L.
+AU  - Chasman, D.I.
+AU  - Easton, D.F.
+AU  - Visser, J.A.
+AU  - Ozanne, S.E.
+AU  - Namekawa, S.H.
+AU  - Solc, P.
+AU  - Murabito, J.M.
+AU  - Ong, K.K.
+AU  - Hoffmann, E.R.
+AU  - Murray, A.
+AU  - Roig, I.
+AU  - Perry, J.R.B.
+TI  - Genetic insights into biological mechanisms governing human ovarian ageing
+PY  - 2021
+T2  - Nature
+VL  - 596
+IS  - 7872
+SP  - 393
+EP  - 397
+DO  - 10.1038/s41586-021-03779-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85112666642&doi=10.1038%2fs41586-021-03779-7&partnerID=40&md5=8d7b45359f167782e8fb39e436cfd9ea
+AD  - Genetics of Human Complex Traits, University of Exeter Medical School, University of Exeter, Exeter, United Kingdom
+AD  - MRC Epidemiology Unit, University of Cambridge School of Clinical Medicine, Institute of Metabolic Science, Cambridge Biomedical Campus, Cambridge, United Kingdom
+AD  - DNRF Center for Chromosome Stability, Department of Cellular and Molecular Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - Genome Integrity and Instability Group, Institut de Biotecnologia i Biomedicina, Universitat Autònoma de Barcelona, Cerdanyola del Vallès, Spain
+AD  - Department of Cell Biology, Physiology and Immunology, Universitat Autònoma de Barcelona, Cerdanyola del Vallès, Spain
+AD  - University of Cambridge Metabolic Research Laboratories and MRC Metabolic Diseases Unit, Wellcome–MRC Institute of Metabolic Science, Addenbrooke’s Hospital, Cambridge, United Kingdom
+AD  - Department of Obstetrics and Gynaecology, University of Cambridge, The Rosie Hospital and NIHR Cambridge Biomedical Research Centre, Cambridge, United Kingdom
+AD  - Centre for Cancer Genetic Epidemiology, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Institute of Animal Physiology and Genetics of the Czech Academy of Sciences, Libechov, Czech Republic
+AD  - Faculty of Science, Charles University, Prague, Czech Republic
+AD  - Division of Reproductive Sciences, Cincinnati Children’s Hospital Medical Center, Cincinnati, OH, United States
+AD  - Transgenic Core Facility, Department of Experimental Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - 23andMe Inc., Sunnyvale, CA, United States
+AD  - Structural and Computational Biology Unit, EMBL, Heidelberg, Germany
+AD  - University of Groningen, University Medical Center Groningen, Department of Genetics, Groningen, Netherlands
+AD  - deCODE genetics/Amgen, Reykjavik, Iceland
+AD  - Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - MRC Population Health Research Unit, University of Oxford, Oxford, United Kingdom
+AD  - Laboratory for Statistical and Translational Genetics, RIKEN Center for Integrative Medical Sciences, Yokohama, Japan
+AD  - Clinical Research Center, Shizuoka General Hospital, Shizuoka, Japan
+AD  - Department of Applied Genetics, School of Pharmaceutical Sciences, University of Shizuoka, Shizuoka, Japan
+AD  - Transgenic Animal Unit, Center of Animal Biotechnology and Gene Therapy, Universitat Autònoma de Barcelona, Cerdanyola del Vallès, Spain
+AD  - Laboratory for Genomics of Diabetes and Metabolism, RIKEN Center for Integrative Medical Sciences, Yokohama, Japan
+AD  - Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht, Utrecht University, Utrecht, Netherlands
+AD  - The Novo Nordisk Foundation Center for Protein Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - The Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - Reproductive Medicine, Department of Obstetrics and Gynaecology, Herlev and Gentofte Hospital, Copenhagen University Hospital, Herlev, Denmark
+AD  - Centro Andaluz de Biología Molecular y Medicina Regenerativa (CABIMER), Consejo Superior de Investigaciones Científicas (CSIC) – Universidad de Sevilla –Universidad Pablo de Olavide, Seville, Spain
+AD  - Centre for Global Health Research, Usher Institute, University of Edinburgh, Edinburgh, United Kingdom
+AD  - MRC Human Genetics Unit, Institute of Genetics and Molecular Medicine, University of Edinburgh, Western General Hospital, Edinburgh, United Kingdom
+AD  - Division of Cancer Epidemiology and Genetics, National Cancer Institute, National Institutes of Health, Department of Health and Human Services, Bethesda, MD, United States
+AD  - Department of Epidemiology, University Medical Center Groningen, University of Groningen, Groningen, Netherlands
+AD  - Fred A. Litwin Center for Cancer Genetics, Lunenfeld-Tanenbaum Research Institute of Mount Sinai Hospital, Toronto, ON, Canada
+AD  - Department of Molecular Genetics, University of Toronto, Toronto, ON, Canada
+AD  - Department of Biostatistics, University of Washington, Seattle, WA, United States
+AD  - Department of Public Health Sciences, Queen’s University, Kingston, ON, Canada
+AD  - Cancer Research Institute, Queen’s University, Kingston, ON, Canada
+AD  - Department of Cancer Epidemiology, Clinical Sciences, Lund University, Lund, Sweden
+AD  - Geriatric Unit, Azienda Sanitaria Firenze (ASF), Florence, Italy
+AD  - Genetics of Common Disorders Unit, IRCCS San Raffaele Scientific Institute, Milan, Italy
+AD  - Institute of Medical Biometry and Epidemiology, University Medical Center Hamburg-Eppendorf, Hamburg, Germany
+AD  - Department of Gynecology and Obstetrics, Comprehensive Cancer Center ER-EMN, University Hospital Erlangen, Friedrich-Alexander-University Erlangen-Nuremberg, Erlangen, Germany
+AD  - Department of Computational Biology, University of Lausanne, Lausanne, Switzerland
+AD  - Swiss Institute of Bioinformatics, Lausanne, Switzerland
+AD  - University Center for Primary Care and Public Health, University of Lausanne, Lausanne, Switzerland
+AD  - Human Genetics Center, School of Public Health, The University of Texas Health Science Center at Houston, Houston, TX, United States
+AD  - Copenhagen General Population Study, Herlev and Gentofte Hospital, Copenhagen University Hospital, Herlev, Denmark
+AD  - Department of Clinical Biochemistry, Herlev and Gentofte Hospital, Copenhagen University Hospital, Herlev, Denmark
+AD  - Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - Department of Biological Psychology, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Amsterdam Public Health (APH) Research Institute, Amsterdam, Netherlands
+AD  - Amsterdam Reproduction and Development (AR&D) Research Institute, Amsterdam, Netherlands
+AD  - Cardiovascular Health Research Unit, Departments of Medicine, Epidemiology, and Health Services, University of Washington, Seattle, WA, United States
+AD  - Department of Internal Medicine, Erasmus MC, Rotterdam, Netherlands
+AD  - Brigham and Women’s Hospital, Boston, MA, United States
+AD  - Harvard Medical School, Boston, MA, United States
+AD  - Medical Genetics Section, Centre for Genomic and Experimental Medicine, Institute of Genetics and Molecular Medicine, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Oncology and Genetics Unit, Instituto de Investigacion Sanitaria Galicia Sur (IISGS), Xerencia de Xestion Integrada de Vigo-SERGAS, Vigo, Spain
+AD  - Institute for Maternal and Child Health – IRCCS ‘Burlo Garofolo’, Trieste, Italy
+AD  - Department of Genetics and Computational Biology, QIMR Berghofer Medical Research Institute, Brisbane, QLD, Australia
+AD  - Institute of Genetics and Biophysics – CNR, Naples, Italy
+AD  - IRCCS Neuromed, Pozzilli, Isernia, Italy
+AD  - Department of Laboratory Medicine and Pathology, Mayo Clinic, Rochester, MN, United States
+AD  - Sheffield Institute for Nucleic Acids (SInFoNiA), Department of Oncology and Metabolism, University of Sheffield, Sheffield, United Kingdom
+AD  - Institute of Genetics and Biomedical Research, National Research Council, Cagliari, Italy
+AD  - Academic Unit of Pathology, Department of Neuroscience, University of Sheffield, Sheffield, United Kingdom
+AD  - University of Sassari, Department of Biomedical Sciences, Sassari, Italy
+AD  - Karolinska Institutet, Department of Medical Epidemiology and Biostatistics, Stockholm, Sweden
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Science, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Clinical Epidemiology, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Epidemiology, Harvard T. H. Chan School of Public Health, Boston, MA, United States
+AD  - Channing Division of Network Medicine, Department of Medicine, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Division of Epidemiology & Community Health, University of Minnesotta, Minneapolis, MN, United States
+AD  - Centre for Cancer Genetic Epidemiology, Department of Oncology, University of Cambridge, Cambridge, United Kingdom
+AD  - School of Life Sciences, University of Westminster, London, United Kingdom
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - Population and Medical Genetics, Broad Institute, Cambridge, MA, United States
+AD  - Estonian Genome Center, Institute of Genomics, University of Tartu, Tartu, Estonia
+AD  - David Geffen School of Medicine, Department of Medicine, Division of Hematology and Oncology, University of California at Los Angeles, Los Angeles, CA, United States
+AD  - Survey Research Center, Institute for Social Research, Ann Arbor, MI, United States
+AD  - Translational Gerontology Branch, National Institute on Aging, Baltimore, MD, United States
+AD  - Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina, Chapel Hill, NC, United States
+AD  - Fundación Pública Galega de Medicina Xenómica, Instituto de Investigación Sanitaria de Santiago de Compostela (IDIS), Complejo Hospitalario Universitario de Santiago, SERGAS, Santiago de Compostela, Spain
+AD  - Moores Cancer Center, University of California San Diego, La Jolla, CA, United States
+AD  - Department of Medical Sciences, University of Trieste, Trieste, Italy
+AD  - Research Unit of Molecular Epidemiology, Helmholtz Zentrum München–German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Institute of Epidemiology II, Helmholtz Zentrum München–German Research Center for Environmental Health, Neuherberg, Germany
+AD  - German Center for Diabetes Research (DZD), Neuherberg, Germany
+AD  - Cancer Epidemiology Division, Cancer Council Victoria, Melbourne, VIC, Australia
+AD  - Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health, The University of Melbourne, Melbourne, VIC, Australia
+AD  - Precision Medicine, School of Clinical Sciences at Monash Health, Monash University, Clayton, VIC, Australia
+AD  - Icelandic Heart Association, Kopavogur, Iceland
+AD  - Faculty of Medicine, University of Iceland, Reykjavik, Iceland
+AD  - Cancer & Environment Group, Center for Research in Epidemiology and Population Health (CESP), INSERM, University Paris-Sud, University Paris-Saclay, Villejuif, France
+AD  - Department of Preventive Medicine, Keck School of Medicine, University of Southern California, Los Angeles, CA, United States
+AD  - Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Division of Medical Oncology, Department of Internal Medicine, University of Kentucky College of Medicine, Lexington, KY, United States
+AD  - The Cancer Prevention and Control Research Program, University of Kentucky Markey Cancer Center, Lexington, KY, United States
+AD  - Department of Nutrition, Harvard T. H. Chan School of Public Health, Boston, MA, United States
+AD  - Department of Epidemiology, Harvard T. H. Chan School of Public Health, Boston, MA, United States
+AD  - Broad Institute of Harvard and MIT, Cambridge, MA, United States
+AD  - Department of Epidemiology, Erasmus MC, Rotterdam, Netherlands
+AD  - Department of Internal Medicine, The Ohio State University, Columbus, OH, United States
+AD  - Department of Epidemiology & Population Health, Stanford University School of Medicine, Stanford, CA, United States
+AD  - Department of Medicine, Division of Oncology, Stanford Cancer Institute, Stanford University School of Medicine, Stanford, CA, United States
+AD  - Hebrew SeniorLife Institute for Aging Research, Boston, MA, United States
+AD  - Department of Epidemiology, School of Public Health, University of Michigan, Ann Arbor, MI, United States
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - Radiation Epidemiology Branch, Division of Cancer Epidemiology and Genetics, National Cancer Institute, Bethesda, MD, United States
+AD  - Faculty of Medicine, University of Split, Split, Croatia
+AD  - Division of Public Health Sciences, Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - Department of Biostatistics, Harvard T. H. Chan School of Public Health, Boston, MA, United States
+AD  - Department of Twin Research and Genetic Epidemiology, King’s College London, London, United Kingdom
+AD  - Laboratory of Epidemiology and Population Sciences, National Institute on Aging, Intramural Research Program, National Institutes of Health, Bethesda, MD, United States
+AD  - Division of Reproductive Endocrinology and Infertility, Department of Obstetrics and Gynecology, Erasmus University Medical Center, Rotterdam, Netherlands
+AD  - Epidemiology Program, University of Hawaii Cancer Center, Honolulu, HI, United States
+AD  - Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden
+AD  - Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden
+AD  - Department of Epidemiology, University of Washington, Seattle, WA, United States
+AD  - Department of Health Sciences Research, Mayo Clinic, Rochester, MN, United States
+AD  - Center for Human Genetics, Division of Public Health Sciences, Wake Forest School of Medicine, Wake Forest, NC, United States
+AD  - Department of Epidemiology, Brown University, Providence, RI, United States
+AD  - Department of Medicine, Brown University, Providence, RI, United States
+AD  - NIHR Biomedical Research Centre at Guy’s and St. Thomas’ Foundation Trust, London, United Kingdom
+AD  - Translational Cancer Research Area, University of Eastern Finland, Kuopio, Finland
+AD  - Institute of Clinical Medicine, Pathology and Forensic Medicine, University of Eastern Finland, Kuopio, Finland
+AD  - Biobank of Eastern Finland, Kuopio University Hospital, Kuopio, Finland
+AD  - QIMR Berghofer Medical Research Insititute, Brisbane, QLD, Australia
+AD  - Central Hospital of Augsburg, MONICA/KORA Myocardial Infarction Registry, Augsburg, Germany
+AD  - Institute of Human Genetics, Helmholtz Zentrum München, German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Institute for Molecular Bioscience, The University of Queensland, Brisbane, QLD, Australia
+AD  - Department of Public Health and Primary Care, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Laboratory Medicine and Pathobiology, University of Toronto, Toronto, ON, Canada
+AD  - Laboratory Medicine Program, University Health Network, Toronto, ON, Canada
+AD  - The Institute of Medical Sciences, Aberdeen Biomedical Imaging Centre, University of Aberdeen, Aberdeen, United Kingdom
+AD  - Laboratory of Neurogenetics, National Institute on Aging, National Institutes of Health, Bethesda, MD, United States
+AD  - Department of Epidemiology, University of Pittsburgh, Pittsburgh, PA, United States
+AD  - Department of Medicine, University of Pittsburgh, Pittsburgh, PA, United States
+AD  - Department of Internal Medicine, Section of Gerontology and Geriatrics, Leiden University Medical Center, Leiden, Netherlands
+AD  - Centre for Genomics and Personalised Health, School of Biomedical Sciences, Faculty of Health, Queensland University of Technology, Brisbane, QLD, Australia
+AD  - Department of Epidemiology, Gillings School of Global Public Health and UNC Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill, Chapel Hill, NC, United States
+AD  - Department of Population Science, American Cancer Society, Atlanta, GA, United States
+AD  - Faculty of Medicine, University of Split, Split, Croatia
+AD  - Gen-Info Ltd, Zagreb, Croatia
+AD  - Quantify Research, Stockholm, Sweden
+AD  - Clalit National Cancer Control Center, Carmel Medical Center and Technion Faculty of Medicine, Haifa, Israel
+AD  - Women’s Health Initiative Branch, National Heart, Lung, and Blood Institute, Bethesda, MD, United States
+AD  - Department of Oncology, University Hospital of Larissa, Larissa, Greece
+AD  - Epidemiology Branch, National Institute of Environmental Health Sciences, NIH, Research Triangle Park, NC, United States
+AD  - School of Cancer & Pharmaceutical Sciences, Comprehensive Cancer Centre, Guy’s Campus, King’s College London, London, United Kingdom
+AD  - Department of Biostatistics, Boston University School of Public Health, Boston, MA, United States
+AD  - National Institute on Aging, Intramural Research Program, Baltimore, MD, United States
+AD  - Division of Molecular Pathology, The Netherlands Cancer Institute – Antoni van Leeuwenhoek Hospital, Amsterdam, Netherlands
+AD  - Division of Psychosocial Research and Epidemiology, The Netherlands Cancer Institute – Antoni van Leeuwenhoek Hospital, Amsterdam, Netherlands
+AD  - Division of Genetics and Epidemiology, The Institute of Cancer Research, London, United Kingdom
+AD  - Centre for Cardiovascular Sciences, Queen’s Medical Research Institute, University of Edinburgh, Royal Infirmary of Edinburgh, Edinburgh, United Kingdom
+AD  - Division of Population and Health Genomics, University of Dundee, Dundee, United Kingdom
+AD  - Department of Clinical Pathology, The University of Melbourne, Melbourne, VIC, Australia
+AD  - Population Oncology, BC Cancer, Vancouver, BC, Canada
+AD  - School of Population and Public Health, University of British Columbia, Vancouver, BC, Canada
+AD  - Department of Obstetrics and Gynaecology, Campus Grosshadern, Ludwig-Maximilians-Universität, Munich, Germany
+AD  - Institute of Genetic Epidemiology, Helmholtz Zentrum München – German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Chair of Genetic Epidemiology, IBE, Faculty of Medicine, LMU Munich, Munich, Germany
+AD  - Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI), University Medical Center, Johannes Gutenberg University, Mainz, Germany
+AD  - Division of Breast Cancer Research, The Institute of Cancer Research, London, United Kingdom
+AD  - Institute for Community Medicine, University Medicine Greifswald, Greifswald, Germany
+AD  - Faculty of Medicine, School of Health Sciences, University of Iceland, Reykjavik, Iceland
+AD  - Department of Health Science Research, Division of Epidemiology, Mayo Clinic, Rochester, MN, United States
+AD  - Interfaculty Institute for Genetics and Functional Genomics, University Medicine Greifswald, Greifswald, Germany
+AD  - Department of Medicine, Internal Medicine, Lausanne University Hospital and University of Lausanne, Lausanne, Switzerland
+AD  - Biostatistics and Computational Biology Branch, National Institute of Environmental Health Sciences, NIH, Research Triangle Park, NC, United States
+AD  - Department of Internal Medicine, Division of Endocrinology, Leiden University Medical Center, Leiden, Netherlands
+AD  - Einthoven Laboratory for Experimental Vascular Medicine, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Endocrinology, University Medical Center Groningen, University of Groningen, Groningen, Netherlands
+AD  - Department of Surgical Sciences, Uppsala University, Uppsala, Sweden
+AD  - Department of Obstetrics and Gynecology, University Medicine Greifswald, Greifswald, Germany
+AD  - School of Public Health, Peking University Health Science Center, Beijing, China
+AD  - Peking University Center for Public Health and Epidemic Preparedness & Response, Beijing, China
+AD  - Oncode Institute, Utrecht, Netherlands
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Genetics, University Medical Centre Utrecht, Utrecht, Netherlands
+AD  - Laboratory of Reproductive Biology, The Juliane Marie Centre for Women, Children and Reproduction, Copenhagen University Hospital and Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - Division of Cancer Epidemiology, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Cancer Epidemiology Group, University Cancer Center Hamburg (UCCH), University Medical Center Hamburg-Eppendorf, Hamburg, Germany
+AD  - NHLBI’s and Boston University’s Framingham Heart Study, Framingham, MA, United States
+AD  - Boston University School of Medicine, Department of Medicine, Section of General Internal Medicine, Boston, MA, United States
+AD  - Department of Paediatrics, University of Cambridge, Cambridge, United Kingdom
+AB  - Reproductive longevity is essential for fertility and influences healthy ageing in women1,2, but insights into its underlying biological mechanisms and treatments to preserve it are limited. Here we identify 290 genetic determinants of ovarian ageing, assessed using normal variation in age at natural menopause (ANM) in about 200,000 women of European ancestry. These common alleles were associated with clinical extremes of ANM; women in the top 1% of genetic susceptibility have an equivalent risk of premature ovarian insufficiency to those carrying monogenic FMR1 premutations3. The identified loci implicate a broad range of DNA damage response (DDR) processes and include loss-of-function variants in key DDR-associated genes. Integration with experimental models demonstrates that these DDR processes act across the life-course to shape the ovarian reserve and its rate of depletion. Furthermore, we demonstrate that experimental manipulation of DDR pathways highlighted by human genetics increases fertility and extends reproductive life in mice. Causal inference analyses using the identified genetic variants indicate that extending reproductive life in women improves bone health and reduces risk of type 2 diabetes, but increases the risk of hormone-sensitive cancers. These findings provide insight into the mechanisms that govern ovarian ageing, when they act, and how they might be targeted by therapeutic approaches to extend fertility and prevent disease. © 2021, The Author(s), under exclusive licence to Springer Nature Limited.
+KW  - Adult
+KW  - Aging
+KW  - Alleles
+KW  - Animals
+KW  - Bone and Bones
+KW  - Checkpoint Kinase 1
+KW  - Checkpoint Kinase 2
+KW  - Diabetes Mellitus, Type 2
+KW  - Diet
+KW  - Europe
+KW  - Far East
+KW  - Female
+KW  - Fertility
+KW  - Fragile X Mental Retardation Protein
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Healthy Aging
+KW  - Humans
+KW  - Longevity
+KW  - Menopause
+KW  - Menopause, Premature
+KW  - Mice
+KW  - Mice, Inbred C57BL
+KW  - Middle Aged
+KW  - Ovary
+KW  - Primary Ovarian Insufficiency
+KW  - Uterus
+KW  - fragile X mental retardation protein
+KW  - checkpoint kinase 1
+KW  - checkpoint kinase 2
+KW  - Chek1 protein, mouse
+KW  - Chek2 protein, mouse
+KW  - FMR1 protein, human
+KW  - fragile X mental retardation protein
+KW  - aging population
+KW  - bone
+KW  - detection method
+KW  - diabetes
+KW  - disease control
+KW  - DNA
+KW  - fertility
+KW  - genetic analysis
+KW  - genetics
+KW  - hormone
+KW  - longevity
+KW  - adult
+KW  - aging
+KW  - allele
+KW  - Article
+KW  - cancer risk
+KW  - cohort analysis
+KW  - controlled study
+KW  - disease control
+KW  - DNA damage response
+KW  - European
+KW  - experimental model
+KW  - female
+KW  - female fertility
+KW  - FMR1 gene
+KW  - gene locus
+KW  - gene mutation
+KW  - genetic analysis
+KW  - genetic susceptibility
+KW  - genetic variability
+KW  - hormone sensitivity
+KW  - human
+KW  - human cell
+KW  - human tissue
+KW  - loss of function mutation
+KW  - major clinical study
+KW  - menopause
+KW  - non insulin dependent diabetes mellitus
+KW  - ovarian reserve
+KW  - ovary function
+KW  - premature ovarian failure
+KW  - reproduction
+KW  - risk factor
+KW  - aging
+KW  - animal
+KW  - bone
+KW  - C57BL mouse
+KW  - diet
+KW  - early menopause
+KW  - ethnology
+KW  - Europe
+KW  - Far East
+KW  - fertility
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - healthy aging
+KW  - longevity
+KW  - metabolism
+KW  - middle aged
+KW  - mouse
+KW  - ovary
+KW  - uterus
+PB  - Nature Research
+SN  - 00280836 (ISSN)
+C2  - 34349265
+LA  - English
+J2  - Nature
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 237; Correspondence Address: A. Murray; Genetics of Human Complex Traits, University of Exeter Medical School, University of Exeter, Exeter, United Kingdom; email: a.murray@exeter.ac.uk; J.R.B. Perry; MRC Epidemiology Unit, University of Cambridge School of Clinical Medicine, Institute of Metabolic Science, Cambridge Biomedical Campus, Cambridge, United Kingdom; email: john.perry@mrc-epid.cam.ac.uk; E.R. Hoffmann; DNRF Center for Chromosome Stability, Department of Cellular and Molecular Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark; email: eva@sund.ku.dk; I. Roig; Genome Integrity and Instability Group, Institut de Biotecnologia i Biomedicina, Universitat Autònoma de Barcelona, Cerdanyola del Vallès, Spain; email: ignasi.roig@uab.cat; CODEN: NATUA
+ER  -
+
+TY  - JOUR
+AU  - Zhou, H.
+AU  - Sealock, J.M.
+AU  - Sanchez-Roige, S.
+AU  - Clarke, T.-K.
+AU  - Levey, D.F.
+AU  - Cheng, Z.
+AU  - Li, B.
+AU  - Polimanti, R.
+AU  - Kember, R.L.
+AU  - Smith, R.V.
+AU  - Thygesen, J.H.
+AU  - Morgan, M.Y.
+AU  - Atkinson, S.R.
+AU  - Thursz, M.R.
+AU  - Nyegaard, M.
+AU  - Mattheisen, M.
+AU  - Børglum, A.D.
+AU  - Johnson, E.C.
+AU  - Justice, A.C.
+AU  - Palmer, A.A.
+AU  - McQuillin, A.
+AU  - Davis, L.K.
+AU  - Edenberg, H.J.
+AU  - Agrawal, A.
+AU  - Kranzler, H.R.
+AU  - Gelernter, J.
+TI  - Genome-wide meta-analysis of problematic alcohol use in 435,563 individuals yields insights into biology and relationships with other traits
+PY  - 2020
+T2  - Nature Neuroscience
+VL  - 23
+IS  - 7
+SP  - 809
+EP  - 818
+DO  - 10.1038/s41593-020-0643-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85085522562&doi=10.1038%2fs41593-020-0643-5&partnerID=40&md5=0caadf1e00c788e65bfaeed5bf26c150
+AD  - Department of Psychiatry, Yale School of Medicine, New Haven, CT, United States
+AD  - Veterans Affairs Connecticut Healthcare System, West Haven, CT, United States
+AD  - Vanderbilt Genetics Institute, Vanderbilt University Medical Center, Nashville, TN, United States
+AD  - Division of Medical Genetics, Department of Medicine, Vanderbilt University Medical Center, Nashville, TN, United States
+AD  - Department of Psychiatry, University of California San Diego, La Jolla, CA, United States
+AD  - Division of Psychiatry, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Department of Biostatistics, Yale School of Public Health, New Haven, CT, United States
+AD  - Department of Genetics, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA, United States
+AD  - Crescenz Veterans Affairs Medical Center, Philadelphia, PA, United States
+AD  - University of Louisville School of Nursing, Louisville, KY, United States
+AD  - Division of Psychiatry, University College London, London, United Kingdom
+AD  - UCL Institute for Liver & Digestive Health, Division of Medicine, Royal Free Campus, University College London, London, United Kingdom
+AD  - Department of Metabolism Digestion & Reproduction, Imperial College London, London, United Kingdom
+AD  - Department of Biomedicine, Aarhus University, Aarhus, Denmark
+AD  - Centre for Integrative Sequencing, Aarhus University, Aarhus, Denmark
+AD  - The Lundbeck Foundation Initiative for Integrative Psychiatric Research, Aarhus, Denmark
+AD  - Center for Genomics and Personalized Medicine, Aarhus, Denmark
+AD  - Department of Psychiatry, Psychosomatics and Psychotherapy, University of Würzburg, Würzburg, Germany
+AD  - Department of Clinical Neuroscience, Karolinska Institutet, Stockholm, Sweden
+AD  - Department of Psychiatry, Washington University School of Medicine, St. Louis, MO, United States
+AD  - Department of Internal Medicine, Yale School of Medicine, New Haven, CT, United States
+AD  - Center for Interdisciplinary Research on AIDS, Yale School of Public Health, New Haven, CT, United States
+AD  - Institute for Genomic Medicine, University of California San Diego, La Jolla, CA, United States
+AD  - Department of Psychiatry and Behavioral Sciences, Vanderbilt University Medical Center, Nashville, TN, United States
+AD  - Department of Biochemistry and Molecular Biology, Indiana University School of Medicine, Indianapolis, IN, United States
+AD  - Department of Medical and Molecular Genetics, Indiana University School of Medicine, Indianapolis, IN, United States
+AD  - Department of Psychiatry, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA, United States
+AD  - Departments of Genetics and Neuroscience, Yale University School of Medicine, New Haven, CT, United States
+AB  - Problematic alcohol use (PAU) is a leading cause of death and disability worldwide. Although genome-wide association studies have identified PAU risk genes, the genetic architecture of this trait is not fully understood. We conducted a proxy-phenotype meta-analysis of PAU, combining alcohol use disorder and problematic drinking, in 435,563 European-ancestry individuals. We identified 29 independent risk variants, 19 of them novel. PAU was genetically correlated with 138 phenotypes, including substance use and psychiatric traits. Phenome-wide polygenic risk score analysis in an independent biobank sample (BioVU, n = 67,589) confirmed the genetic correlations between PAU and substance use and psychiatric disorders. Genetic heritability of PAU was enriched in brain and in conserved and regulatory genomic regions. Mendelian randomization suggested causal effects on liability to PAU of substance use, psychiatric status, risk-taking behavior and cognitive performance. In summary, this large PAU meta-analysis identified novel risk loci and revealed genetic relationships with numerous other traits. © 2020, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Alcohol Drinking
+KW  - Alcoholism
+KW  - Datasets as Topic
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Multifactorial Inheritance
+KW  - adult
+KW  - alcohol consumption
+KW  - alcoholism
+KW  - Article
+KW  - cognition
+KW  - controlled study
+KW  - European
+KW  - female
+KW  - genetic correlation
+KW  - genetic risk score
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - heavy drinking
+KW  - heritability
+KW  - human
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - mental disease
+KW  - phenotype
+KW  - priority journal
+KW  - problematic alcohol use
+KW  - single nucleotide polymorphism
+KW  - social problem
+KW  - substance use
+KW  - drinking behavior
+KW  - genetic predisposition
+KW  - genetics
+KW  - information processing
+KW  - meta analysis
+KW  - multifactorial inheritance
+PB  - Nature Research
+SN  - 10976256 (ISSN)
+C2  - 32451486
+LA  - English
+J2  - Nat. Neurosci.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 222; Correspondence Address: J. Gelernter; Department of Psychiatry, Yale School of Medicine, New Haven, United States; email: joel.gelernter@yale.edu; CODEN: NANEF
+ER  -
+
+TY  - JOUR
+AU  - Ong, J.-S.
+AU  - MacGregor, S.
+TI  - Implementing MR-PRESSO and GCTA-GSMR for pleiotropy assessment in Mendelian randomization studies from a practitioner's perspective
+PY  - 2019
+T2  - Genetic Epidemiology
+VL  - 43
+IS  - 6
+SP  - 609
+EP  - 616
+DO  - 10.1002/gepi.22207
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85070493394&doi=10.1002%2fgepi.22207&partnerID=40&md5=b49ad753147d8eea7cd1f68f24a578ea
+AD  - Statistical Genetics Laboratory, Genetics and Computational Biology Department, QIMR Berghofer Medical Research Institute, Brisbane, Australia
+AB  - With the advent of very large scale genome-wide association studies (GWASs), the promise of Mendelian randomization (MR) has begun to be fulfilled. However, whilst GWASs have provided essential information on the single nucleotide polymorphisms (SNPs) associated with modifiable risk factors needed for MR, the availability of large numbers of SNP instruments raises issues of how best to use this information and how to deal with potential problems such as pleiotropy. Here we provide commentary on some of the recent advances in the MR analysis, including an overview of the different genetic architectures that are being uncovered for a variety of modifiable risk factors and how users ought to take that into consideration when designing MR studies. © 2019 The Authors. Genetic Epidemiology Published by Wiley Periodicals, Inc.
+KW  - causal inference
+KW  - genome-wide complex trait analysis-generalized summary mendelian randomization (GCTA-GSMR)
+KW  - mendelian randomization
+KW  - mendelian randomization pleiotropy RESidual sum and outlier (MR-PRESSO)
+KW  - pleiotropy assessment
+KW  - Disease
+KW  - General Practitioners
+KW  - Genetic Pleiotropy
+KW  - Genome-Wide Association Study
+KW  - Health Plan Implementation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Practice Patterns, Physicians'
+KW  - Risk Factors
+KW  - article
+KW  - genome
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - physician
+KW  - pleiotropy
+KW  - randomized controlled trial (topic)
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - clinical practice
+KW  - diseases
+KW  - general practitioner
+KW  - genetics
+KW  - genome-wide association study
+KW  - health care planning
+KW  - pleiotropy
+KW  - single nucleotide polymorphism
+PB  - Wiley-Liss Inc.
+SN  - 07410395 (ISSN)
+C2  - 31045282
+LA  - English
+J2  - Genet. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 225; Correspondence Address: S. MacGregor; Statistical Genetics Laboratory, Genetics and Computational Biology Department, QIMR Berghofer Medical Research Institute, Brisbane, Australia; email: stuart.macgregor@qimrberghofer.edu.au; CODEN: GENYE
+ER  -
+
+TY  - JOUR
+AU  - Long, Y.
+AU  - Tang, L.
+AU  - Zhou, Y.
+AU  - Zhao, S.
+AU  - Zhu, H.
+TI  - Causal relationship between gut microbiota and cancers: a two-sample Mendelian randomisation study
+PY  - 2023
+T2  - BMC Medicine
+VL  - 21
+IS  - 1
+C7  - 66
+DO  - 10.1186/s12916-023-02761-6
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85148730470&doi=10.1186%2fs12916-023-02761-6&partnerID=40&md5=42f2bea123903cf456de17170465db8a
+AD  - Department of Oncology, Xiangya Hospital, Central South University, Hunan, Changsha, 410008, China
+AD  - National Clinical Research Center for Geriatric Disorders, Xiangya Hospital, Central South University, Hunan, Changsha, 410008, China
+AD  - Department of Orthopedics, Xiangya Hospital, Central South University, Hunan, Changsha, 410008, China
+AB  - Background: Evidence from observational studies and clinical trials suggests that the gut microbiota is associated with cancer. However, the causal association between gut microbiota and cancer remains to be determined. Methods: We first identified two sets of gut microbiota based on phylum, class, order, family, and genus level information, and cancer data were obtained from the IEU Open GWAS project. We then performed two-sample Mendelian randomisation (MR) to determine whether the gut microbiota is causally associated with eight cancer types. Furthermore, we performed a bi-directional MR analysis to examine the direction of the causal relations. Results: We identified 11 causal relationships between genetic liability in the gut microbiome and cancer, including those involving the genus Bifidobacterium. We found 17 strong associations between genetic liability in the gut microbiome and cancer. Moreover, we found 24 associations between genetic liability in the gut microbiome and cancer using multiple datasets. Conclusions: Our MR analysis revealed that the gut microbiota was causally associated with cancers and may be useful in providing new insights for further mechanistic and clinical studies of microbiota-mediated cancer. © 2023, The Author(s).
+KW  - Cancer
+KW  - Genetics
+KW  - Gut microbiota
+KW  - Mendelian randomisation
+KW  - SNPs
+KW  - Causality
+KW  - Gastrointestinal Microbiome
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Microbiota
+KW  - Neoplasms
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Article
+KW  - Bifidobacterium
+KW  - controlled study
+KW  - disease association
+KW  - human
+KW  - intestine flora
+KW  - malignant neoplasm
+KW  - Mendelian randomization analysis
+KW  - nonhuman
+KW  - phylum
+KW  - single nucleotide polymorphism
+KW  - causality
+KW  - genome-wide association study
+KW  - microflora
+KW  - neoplasm
+KW  - risk factor
+PB  - BioMed Central Ltd
+SN  - 17417015 (ISSN)
+C2  - 36810112
+LA  - English
+J2  - BMC Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 210; Correspondence Address: H. Zhu; Department of Oncology, Xiangya Hospital, Central South University, Changsha, Hunan, 410008, China; email: zhuhong0719@126.com; S. Zhao; Department of Orthopedics, Xiangya Hospital, Central South University, Changsha, Hunan, 410008, China; email: zhaoshuiquan@126.com
+ER  -
+

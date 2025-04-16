@@ -1,0 +1,742 @@
+﻿TY  - JOUR
+AU  - McCormick, N.
+AU  - O’Connor, M.J.
+AU  - Yokose, C.
+AU  - Merriman, T.R.
+AU  - Mount, D.B.
+AU  - Leong, A.
+AU  - Choi, H.K.
+TI  - Assessing the Causal Relationships Between Insulin Resistance and Hyperuricemia and Gout Using Bidirectional Mendelian Randomization
+PY  - 2021
+T2  - Arthritis and Rheumatology
+VL  - 73
+IS  - 11
+SP  - 2096
+EP  - 2104
+DO  - 10.1002/art.41779
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85112753973&doi=10.1002%2fart.41779&partnerID=40&md5=3085be12a5e9109dd0c791874c727117
+AD  - Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts, and Arthritis Research Canada, Richmond, BC, Canada
+AD  - Massachusetts General Hospital, Boston, United States
+AD  - Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - University of Otago, Dunedin, New Zealand
+AD  - Brigham and Women’s Hospital, VA Boston Healthcare System, and Harvard Medical School, Boston, MA, United States
+AD  - Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts, and Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - University of Alabama, Birmingham, United States
+AB  - Objective: Hyperuricemia is closely associated with insulin resistance syndrome (and its many cardiometabolic sequelae); however, whether they are causally related has long been debated. We undertook this study to investigate the potential causal nature and direction between insulin resistance and hyperuricemia, along with gout, by using bidirectional Mendelian randomization (MR) analyses. Methods: We used genome-wide association data (n = 288,649 for serum urate [SU] concentration; n = 763,813 for gout risk; n = 153,525 for fasting insulin) to select genetic instruments for 2-sample MR analyses, using multiple MR methods to address potential pleiotropic associations. We then used individual-level, electronic medical record–linked data from the UK Biobank (n = 360,453 persons of European ancestry) to replicate our analyses via single-sample MR analysis. Results: Genetically determined SU levels, whether inferred from a polygenic score or strong individual loci, were not associated with fasting insulin concentrations. In contrast, genetically determined fasting insulin concentrations were positively associated with SU levels (0.37 mg/dl per log-unit increase in fasting insulin [95% confidence interval (95% CI) 0.15, 0.58]; P = 0.001). This persisted in outlier-corrected (β = 0.56 mg/dl [95% CI 0.45, 0.67]) and multivariable MR analyses adjusted for BMI (β = 0.69 mg/dl [95% CI 0.53, 0.85]) (P < 0.001 for both). Polygenic scores for fasting insulin were also positively associated with SU level among individuals in the UK Biobank (P < 0.001). Findings for gout risk were bidirectionally consistent with those for SU level. Conclusion: These findings provide evidence to clarify core questions about the close association between hyperuricemia and insulin resistance syndrome: hyperinsulinemia leads to hyperuricemia but not the other way around. Reducing insulin resistance could lower the SU level and gout risk, whereas lowering the SU level (e.g., allopurinol treatment) is unlikely to mitigate insulin resistance and its cardiometabolic sequelae. © 2021, American College of Rheumatology
+KW  - Adult
+KW  - Aged
+KW  - Female
+KW  - Genetic Loci
+KW  - Gout
+KW  - Humans
+KW  - Hyperuricemia
+KW  - Insulin
+KW  - Insulin Resistance
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Uric Acid
+KW  - insulin
+KW  - urate
+KW  - insulin
+KW  - uric acid
+KW  - adult
+KW  - ancestry group
+KW  - Article
+KW  - biobank
+KW  - body mass
+KW  - cohort analysis
+KW  - confidence interval
+KW  - controlled study
+KW  - electronic medical record
+KW  - European
+KW  - female
+KW  - gene locus
+KW  - genetic risk score
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - gout
+KW  - human
+KW  - hyperuricemia
+KW  - insulin resistance
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - outcome assessment
+KW  - pleiotropy
+KW  - uric acid blood level
+KW  - aged
+KW  - blood
+KW  - genetics
+KW  - gout
+KW  - hyperuricemia
+KW  - insulin resistance
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - single nucleotide polymorphism
+PB  - John Wiley and Sons Inc
+SN  - 23265191 (ISSN)
+C2  - 33982892
+LA  - English
+J2  - Arthritis Rheum.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 90; Correspondence Address: N. McCormick; Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts, and Arthritis Research Canada, Richmond, Canada; email: nmccormick@mgh.harvard.edu
+ER  -
+
+TY  - JOUR
+AU  - Yarmolinsky, J.
+AU  - Bull, C.J.
+AU  - Vincent, E.E.
+AU  - Robinson, J.
+AU  - Walther, A.
+AU  - Smith, G.D.
+AU  - Lewis, S.J.
+AU  - Relton, C.L.
+AU  - Martin, R.M.
+TI  - Association between Genetically Proxied Inhibition of HMG-CoA Reductase and Epithelial Ovarian Cancer
+PY  - 2020
+T2  - JAMA - Journal of the American Medical Association
+VL  - 323
+IS  - 7
+SP  - 646
+EP  - 655
+DO  - 10.1001/jama.2020.0150
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079670389&doi=10.1001%2fjama.2020.0150&partnerID=40&md5=598b7af7ca63ecff2594008486e2a1b7
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - School of Cellular and Molecular Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Bristol Cancer Institute, University Hospitals Bristol NHS Foundation Trust, Bristol, United Kingdom
+AD  - National Institute for Health Research Bristol Biomedical Research Centre, University of Bristol, University Hospitals Bristol NHS Foundation Trust, Bristol, United Kingdom
+AB  - Importance: Preclinical and epidemiological studies indicate a potential chemopreventive role of statins in epithelial ovarian cancer risk. Objective: To evaluate the association of genetically proxied inhibition of 3-hydroxy-3-methylglutaryl coenzyme A (HMG-CoA) reductase (ie, genetic variants related to lower function of HMG-CoA reductase, target of statins) with epithelial ovarian cancer among the general population and in BRCA1/2 mutation carriers. Design, Setting, and Participants: Single-nucleotide polymorphisms (SNPs) in HMGCR, NPC1L1, and PCSK9 associated with low-density lipoprotein (LDL) cholesterol in a genome-wide association study (GWAS) meta-analysis (N ≤196475) were used to proxy therapeutic inhibition of HMG-CoA reductase, Niemann-Pick C1-Like 1 (NPC1L1) and proprotein convertase subtilisin/kexin type 9 (PCSK9), respectively. Summary statistics were obtained for these SNPs from a GWAS meta-analysis of case-control analyses of invasive epithelial ovarian cancer in the Ovarian Cancer Association Consortium (OCAC; N = 63347) and from a GWAS meta-analysis of retrospective cohort analyses of epithelial ovarian cancer among BRCA1/2 mutation carriers in the Consortium of Investigators of Modifiers of BRCA1/2 (CIMBA; N = 31448). Across the 2 consortia, participants were enrolled between 1973 and 2014 and followed up through 2015. OCAC participants came from 14 countries and CIMBA participants came from 25 countries. SNPs were combined into multi-allelic models and mendelian randomization estimates representing lifelong inhibition of targets were generated using inverse-variance weighted random-effects models. Exposures: Primary exposure was genetically proxied inhibition of HMG-CoA reductase and secondary exposures were genetically proxied inhibition of NPC1L1 and PCSK9 and genetically proxied circulating LDL cholesterol levels. Main Outcomes and Measures: Overall and histotype-specific invasive epithelial ovarian cancer (general population) and epithelial ovarian cancer (BRCA1/2 mutation carriers), measured as ovarian cancer odds (general population) and hazard ratio (BRCA1/2 mutation carriers). Results: The OCAC sample included 22406 women with invasive epithelial ovarian cancer and 40941 control individuals and the CIMBA sample included 3887 women with epithelial ovarian cancer and 27561 control individuals. Median ages for the cohorts ranged from 41.5 to 59.0 years and all participants were of European ancestry. In the primary analysis, genetically proxied HMG-CoA reductase inhibition equivalent to a 1-mmol/L (38.7-mg/dL) reduction in LDL cholesterol was associated with lower odds of epithelial ovarian cancer (odds ratio [OR], 0.60 [95% CI, 0.43-0.83]; P =.002). In BRCA1/2 mutation carriers, genetically proxied HMG-CoA reductase inhibition was associated with lower ovarian cancer risk (hazard ratio, 0.69 [95% CI, 0.51-0.93]; P =.01). In secondary analyses, there were no significant associations of genetically proxied inhibition of NPC1L1 (OR, 0.97 [95% CI, 0.53-1.75]; P =.91), PCSK9 (OR, 0.98 [95% CI, 0.85-1.13]; P =.80), or circulating LDL cholesterol (OR, 0.98 [95% CI, 0.91-1.05]; P =.55) with epithelial ovarian cancer. Conclusions and Relevance: Genetically proxied inhibition of HMG-CoA reductase was significantly associated with lower odds of epithelial ovarian cancer. However, these findings do not indicate risk reduction from medications that inhibit HMG-CoA reductase; further research is needed to understand whether there is a similar association with such medications. © 2020 American Medical Association. All rights reserved.
+KW  - Adult
+KW  - Carcinoma, Ovarian Epithelial
+KW  - Case-Control Studies
+KW  - Cholesterol, LDL
+KW  - Female
+KW  - Genes, BRCA1
+KW  - Genes, BRCA2
+KW  - Humans
+KW  - Hydroxymethylglutaryl CoA Reductases
+KW  - Hydroxymethylglutaryl-CoA Reductase Inhibitors
+KW  - Membrane Transport Proteins
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Mutation
+KW  - Odds Ratio
+KW  - Ovarian Neoplasms
+KW  - Polymorphism, Single Nucleotide
+KW  - Proprotein Convertase 9
+KW  - Retrospective Studies
+KW  - Risk
+KW  - 3 hydroxy 3 methylglutaryl coenzyme A
+KW  - BRCA1 protein
+KW  - BRCA2 protein
+KW  - low density lipoprotein cholesterol
+KW  - NPC intracellular cholesterol transporter 1
+KW  - proprotein convertase 9
+KW  - carrier protein
+KW  - HMGCR protein, human
+KW  - hydroxymethylglutaryl coenzyme A reductase
+KW  - hydroxymethylglutaryl coenzyme A reductase inhibitor
+KW  - low density lipoprotein cholesterol
+KW  - NPC1L1 protein, human
+KW  - PCSK9 protein, human
+KW  - proprotein convertase 9
+KW  - allele
+KW  - Article
+KW  - case control study
+KW  - enzyme inhibition
+KW  - follow up
+KW  - gene mutation
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - heterozygosity
+KW  - human
+KW  - outcome assessment
+KW  - ovary carcinoma
+KW  - priority journal
+KW  - retrospective study
+KW  - single nucleotide polymorphism
+KW  - systematic review
+KW  - tumor invasion
+KW  - tumor suppressor gene
+KW  - adult
+KW  - blood
+KW  - female
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - mutation
+KW  - odds ratio
+KW  - ovary tumor
+KW  - prevention and control
+KW  - risk
+KW  - single nucleotide polymorphism
+PB  - American Medical Association
+SN  - 00987484 (ISSN)
+C2  - 32068819
+LA  - English
+J2  - JAMA
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 91; Correspondence Address: R.M. Martin; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: richard.martin@bristol.ac.uk; CODEN: JAMAA
+ER  -
+
+TY  - JOUR
+AU  - Feng, R.
+AU  - Lu, M.
+AU  - Xu, J.
+AU  - Zhang, F.
+AU  - Yang, M.
+AU  - Luo, P.
+AU  - Xu, K.
+AU  - Xu, P.
+TI  - Pulmonary embolism and 529 human blood metabolites: genetic correlation and two-sample Mendelian randomization study
+PY  - 2022
+T2  - BMC Genomic Data
+VL  - 23
+IS  - 1
+C7  - 69
+DO  - 10.1186/s12863-022-01082-6
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85136858823&doi=10.1186%2fs12863-022-01082-6&partnerID=40&md5=78bcb7d33119609bdc63810ad7aadb4c
+AD  - Department of Joint Surgery, HongHui Hospital, Xi’an Jiaotong University, Shanxi, Xi’an, 710054, China
+AD  - Department of Pediatrics, The Second Affiliated Hospital of Xi’an Jiaotong University, Shaanxi, Xi’an, China
+AD  - Orthopedic Research Institute, Department of Orthopedics, West China Hospital, Sichuan University, 37# Guoxue Road, Chengdu, 610041, China
+AD  - Key Laboratory of Trace Elements and Endemic Diseases, National Health and Family Planning Commission, School of Public Health, Health Science Center, Xi’an Jiao tong University, No.76 Yan Ta West Road, Xi’an, 710061, China
+AB  - Background: The incidence of pulmonary embolism complications in the literature ranges from 10 to 50%, with a 0.5–10% risk of fatal pulmonary embolism. However, the biological cause of pulmonary embolism is unknown. Methods: This study used data from the Genome-Wide Association Study (GWAS) of Pulmonary Embolism and Human Blood Metabolites from the UK Biobank, and the data from subjects of European ancestry were analyzed. We explored the relationship between pulmonary embolism and blood metabolites in three ways. We first analyzed the genetic correlation between pulmonary embolism and human blood metabolites using the linkage disequilibrium score regression (LDSC) and then analyzed the causal relationship between pulmonary embolism and meaningful blood metabolites obtained from the LDSC, a procedure for which we used Mendelian randomization analysis. Finally, we obtained transcriptome sequencing data for patients with a pulmonary embolism from the GEO database, analyzed differentially expressed genes (DEGs) in patients with pulmonary embolism versus healthy populations, and compared the DEGs with the resulting blood metabolite genes to further validate the relationship between pulmonary embolism and blood metabolites. Result: We found six human blood metabolites genetically associated with pulmonary embolism, stearic acid glycerol phosphate ethanolamine (correlation coefficient = 0.2582, P = 0.0493), hydroxytryptophan (correlation coefficient = 0.2894, P = 0.0435), and N1-methyladenosine (correlation coefficient = 0.0439, P = 0.3728), and a significant causal relationship was discovered between hydroxytryptophan and pulmonary embolism. After screening microarray data from the GEO database, we performed differential gene analysis on the GSE19151 dataset and screened a total of 22,216 genes with P values less than 0.05, including 17,361 upregulated genes and 4854 downregulated genes. By comparing the resulting differentially expressed genes with six genes encoding blood metabolites, LIPC and NAT2 were found to be differentially expressed in association with pulmonary embolism. © 2022, The Author(s).
+KW  - Genetic correlation
+KW  - Genome-wide association study
+KW  - Human blood metabolites
+KW  - Pulmonary embolism
+KW  - 5-Hydroxytryptophan
+KW  - Arylamine N-Acetyltransferase
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Linkage Disequilibrium
+KW  - Mendelian Randomization Analysis
+KW  - Pulmonary Embolism
+KW  - 5 hydroxytryptophan
+KW  - arylamine acetyltransferase
+KW  - NAT2 protein, human
+KW  - gene linkage disequilibrium
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - lung embolism
+KW  - Mendelian randomization analysis
+KW  - procedures
+PB  - BioMed Central Ltd
+SN  - 27306844 (ISSN)
+C2  - 36038828
+LA  - English
+J2  - BMC Genet. Data.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 88; Correspondence Address: P. Xu; Department of Joint Surgery, HongHui Hospital, Xi’an Jiaotong University, Xi’an, Shanxi, 710054, China; email: sousou369@163.com
+ER  -
+
+TY  - JOUR
+AU  - Lawlor, D.
+AU  - Richmond, R.
+AU  - Warrington, N.
+AU  - McMahon, G.
+AU  - Smith, G.D.
+AU  - Bowden, J.
+AU  - Evans, D.M.
+TI  - Using Mendelian randomization to determine causal effects of maternal pregnancy (intrauterine) exposures on offspring outcomes: Sources of bias and methods for assessing them
+PY  - 2017
+T2  - Wellcome Open Research
+VL  - 2
+C7  - 11
+DO  - 10.12688/wellcomeopenres.10567.1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85028432845&doi=10.12688%2fwellcomeopenres.10567.1&partnerID=40&md5=1ff0c3419aabeb30c0af436247d53340
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - University of Queensland, Diamantina Institute, Translational Research Institute, Brisbane, Australia
+AD  - School of Women's and Infants Health, University of Western Australia, Perth, Australia
+AB  - Mendelian randomization (MR), the use of genetic variants as instrumental variables (IVs) to test causal effects, is increasingly used in aetiological epidemiology. Few of the methodological developments in MR have considered the specific situation of using genetic IVs to test the causal effect of exposures in pregnant women on postnatal offspring outcomes. In this paper, we describe specific ways in which the IV assumptions might be violated when MR is used to test such intrauterine effects. We highlight the importance of considering the extent to which there is overlap between genetic variants in offspring that influence their outcome with genetic variants used as IVs in their mothers. Where there is overlap, and particularly if it generates a strong association of maternal genetic IVs with offspring outcome via the offspring genotype, the exclusion restriction assumption of IV analyses will be violated. We recommend a set of analyses that ought to be considered when MR is used to address research questions concerned with intrauterine effects on post-natal offspring outcomes, and provide details of how these can be undertaken and interpreted. These additional analyses include the use of genetic data from offspring and fathers, examining associations using maternal non-transmitted alleles, and using simulated data in sensitivity analyses (for which we provide code). We explore the extent to which new methods that have been developed for exploring violation of the exclusion restriction assumption in the two-sample setting (MR-Egger and median based methods) might be used when exploring intrauterine effects in one-sample MR. We provide a list of recommendations that researchers should use when applying MR to test the effects of intrauterine exposures on postnatal offspring outcomes and use an illustrative example with real data to demonstrate how our recommendations can be applied and subsequent results appropriately interpreted. © 2017.
+PB  - F1000 Research Ltd
+SN  - 2398502X (ISSN)
+LA  - English
+J2  - Wellcome Open Res.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 93; Correspondence Address: D. Lawlor; Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: d.a.lawlor@Bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Wittemans, L.B.L.
+AU  - Lotta, L.A.
+AU  - Oliver-Williams, C.
+AU  - Stewart, I.D.
+AU  - Surendran, P.
+AU  - Karthikeyan, S.
+AU  - Day, F.R.
+AU  - Koulman, A.
+AU  - Imamura, F.
+AU  - Zeng, L.
+AU  - Erdmann, J.
+AU  - Schunkert, H.
+AU  - Khaw, K.-T.
+AU  - Griffin, J.L.
+AU  - Forouhi, N.G.
+AU  - Scott, R.A.
+AU  - Wood, A.M.
+AU  - Burgess, S.
+AU  - Howson, J.M.M.
+AU  - Danesh, J.
+AU  - Wareham, N.J.
+AU  - Butterworth, A.S.
+AU  - Langenberg, C.
+TI  - Assessing the causal association of glycine with risk of cardio-metabolic diseases
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 1060
+DO  - 10.1038/s41467-019-08936-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85062584534&doi=10.1038%2fs41467-019-08936-1&partnerID=40&md5=494a81de12e4964e7150e1adc0688aec
+AD  - MRC Epidemiology Unit, University of Cambridge, Cambridge, CB2 0QQ, United Kingdom
+AD  - MRC/BHF Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, CB1 8RN, United Kingdom
+AD  - Homerton College, Hills Road, Cambridge, CB2 8PH, United Kingdom
+AD  - NIHR BRC Nutritional Biomarker Laboratory, University of Cambridge, Cambridge, CB2 0QQ, United Kingdom
+AD  - Deutsches Herzzentrum München, Technische Universität München, München, 80636, Germany
+AD  - DZHK, Partner Site München Heart Alliance, München, 80802, Germany
+AD  - Institute for Cardiogenetics, University of Lübeck, Lübeck, 23562, Germany
+AD  - DZHK, partner site Hamburg/Lübeck/Kiel, Lübeck, 23562, Germany
+AD  - University Heart Center Lübeck, Lübeck, 23562, Germany
+AD  - Department of Public Health and Primary Care, Institute of Public Health, University of Cambridge, Cambridge, CB2 0SR, United Kingdom
+AD  - Biochemistry Department, University of Cambridge, Cambridge, CB2 1QW, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, CB2 0SR, United Kingdom
+AD  - Wellcome Sanger Institute, Genome Campus, Hinxton, CB10 1SA, United Kingdom
+AB  - Circulating levels of glycine have previously been associated with lower incidence of coronary heart disease (CHD) and type 2 diabetes (T2D) but it remains uncertain if glycine plays an aetiological role. We present a meta-analysis of genome-wide association studies for glycine in 80,003 participants and investigate the causality and potential mechanisms of the association between glycine and cardio-metabolic diseases using genetic approaches. We identify 27 genetic loci, of which 22 have not previously been reported for glycine. We show that glycine is genetically associated with lower CHD risk and find that this may be partly driven by blood pressure. Evidence for a genetic association of glycine with T2D is weaker, but we find a strong inverse genetic effect of hyperinsulinaemia on glycine. Our findings strengthen evidence for a protective effect of glycine on CHD and show that the glycine-T2D association may be driven by a glycine-lowering effect of insulin resistance. © 2019, The Author(s).
+KW  - Coronary Disease
+KW  - Diabetes Mellitus, Type 2
+KW  - Genetic Loci
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Glycine
+KW  - Humans
+KW  - Hyperinsulinism
+KW  - Incidence
+KW  - Metabolic Networks and Pathways
+KW  - Polymorphism, Single Nucleotide
+KW  - glycine
+KW  - glycine
+KW  - amino acid
+KW  - blood
+KW  - cardiovascular disease
+KW  - diabetes
+KW  - etiology
+KW  - genetic analysis
+KW  - health risk
+KW  - hormone
+KW  - meta-analysis
+KW  - Article
+KW  - blood pressure
+KW  - cancer risk
+KW  - cardiometabolic risk
+KW  - cardiovascular disease
+KW  - gene locus
+KW  - genetic association
+KW  - genetic identification
+KW  - human
+KW  - hyperinsulinemia
+KW  - insulin resistance
+KW  - ischemic heart disease
+KW  - metabolic disorder
+KW  - non insulin dependent diabetes mellitus
+KW  - blood
+KW  - coronary artery disease
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - hyperinsulinism
+KW  - incidence
+KW  - meta analysis
+KW  - metabolism
+KW  - non insulin dependent diabetes mellitus
+KW  - single nucleotide polymorphism
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 30837465
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 92; Correspondence Address: C. Langenberg; MRC Epidemiology Unit, University of Cambridge, Cambridge, CB2 0QQ, United Kingdom; email: Claudia.Langenberg@mrc-epid.cam.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Wootton, R.E.
+AU  - Lawn, R.B.
+AU  - Millard, L.A.C.
+AU  - Davies, N.M.
+AU  - Taylor, A.E.
+AU  - Munafò, M.R.
+AU  - Timpson, N.J.
+AU  - Davis, O.S.P.
+AU  - Davey Smith, G.
+AU  - Haworth, C.M.A.
+TI  - Evaluation of the causal effects between subjective wellbeing and cardiometabolic health: Mendelian randomisation study
+PY  - 2018
+T2  - BMJ (Online)
+VL  - 362
+C7  - k3788
+DO  - 10.1136/bmj.k3788
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85054099880&doi=10.1136%2fbmj.k3788&partnerID=40&md5=27b3e29418d097ddd8e0f056d1156516
+AD  - School of Experimental Psychology, University of Bristol, Bristol, BS8 1TU, United Kingdom
+AD  - Department of Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - NIHR Biomedical Research Centre, University Hospitals Bristol NHS Foundation Trust, University of Bristol, Bristol, United Kingdom
+AD  - UK Centre for Tobacco and Alcohol Studies, University of Bristol, Bristol, United Kingdom
+AD  - Intelligent Systems Laboratory, Department of Computer Science, University of Bristol, Bristol, United Kingdom
+AD  - Avon Longitudinal Study of Parents and Children, Bristol, United Kingdom
+AB  - Objectives To investigate whether the association between subjective wellbeing (subjective happiness and life satisfaction) and cardiometabolic health is causal. Design Two sample, bidirectional mendelian randomisation study. Setting Genetic data taken from various cohorts comprised of the general population (mostly individuals of European ancestry, plus a small proportion of other ancestries); follow-up analysis included individuals from the United Kingdom. Participants Summary data were used from previous genome wide association studies (number of participants ranging from 83 198 to 339 224), which investigated traits related to cardiovascular or metabolic health, had the largest sample sizes, and consisted of the most similar populations while minimising sample overlap. A follow-up analysis included 337 112 individuals from the UK Biobank (54% female (n=181 363), mean age 56.87 years (standard deviation 8.00) at recruitment). Main outcome measures Subjective wellbeing and 11 measures of cardiometabolic health (coronary artery disease; myocardial infarction; total, high density lipoprotein, and low density lipoprotein cholesterol; diastolic and systolic blood pressure; body fat; waist to hip ratio; waist circumference; and body mass index). Results Evidence of a causal effect of body mass index on subjective wellbeing was seen; each 1 kg/m 2 increase in body mass index caused a -0.045 (95% confidence interval -0.084 to -0.006, P=0.02) standard deviation reduction in subjective wellbeing. Follow-up analysis of this association in an independent sample from the UK Biobank provided strong evidence of an effect of body mass index on satisfaction with health (β=-0.035 unit decrease in health satisfaction (95% confidence interval -0.043 to -0.027) per standard deviation increase in body mass index, P<0.001). No clear evidence of a causal effect was seen between subjective wellbeing and the other cardiometabolic health measures, in either direction. Conclusions These results suggest that a higher body mass index is associated with a lower subjective wellbeing. A follow-up analysis confirmed this finding, suggesting that the effect in middle aged people could be driven by satisfaction with health. Body mass index is a modifiable determinant, and therefore, this study provides further motivation to tackle the obesity epidemic because of the knock-on effects of higher body mass index on subjective wellbeing. © 2018 Published by the BMJ Publishing Group Limited.
+KW  - Adipose Tissue
+KW  - Adiposity
+KW  - Blood Pressure
+KW  - Body Mass Index
+KW  - Cardiovascular Diseases
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Coronary Disease
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Myocardial Infarction
+KW  - Systole
+KW  - United Kingdom
+KW  - Waist Circumference
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - adult
+KW  - Article
+KW  - biobank
+KW  - body fat
+KW  - body mass
+KW  - cardiometabolic risk
+KW  - Caucasian
+KW  - causality
+KW  - cohort analysis
+KW  - coronary artery disease
+KW  - diastolic blood pressure
+KW  - female
+KW  - follow up
+KW  - genome-wide association study
+KW  - happiness
+KW  - heart infarction
+KW  - human
+KW  - life satisfaction
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - priority journal
+KW  - sample size
+KW  - systolic blood pressure
+KW  - United Kingdom
+KW  - waist circumference
+KW  - waist hip ratio
+KW  - wellbeing
+KW  - adipose tissue
+KW  - blood pressure
+KW  - cardiovascular disease
+KW  - epidemiology
+KW  - genetics
+KW  - metabolism
+KW  - obesity
+KW  - physiology
+KW  - procedures
+KW  - systole
+PB  - BMJ Publishing Group
+SN  - 09598146 (ISSN)
+C2  - 30254091
+LA  - English
+J2  - BMJ (Online)
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 92; Correspondence Address: R.E. Wootton; School of Experimental Psychology, University of Bristol, Bristol, BS8 1TU, United Kingdom; email: robyn.wootton@bristol.ac.uk; CODEN: BMJOA
+ER  -
+
+TY  - JOUR
+AU  - Pagoni, P.
+AU  - Dimou, N.L.
+AU  - Murphy, N.
+AU  - Stergiakouli, E.
+TI  - Using Mendelian randomisation to assess causality in observational studies
+PY  - 2019
+T2  - Evidence-Based Mental Health
+VL  - 22
+IS  - 2
+SP  - 67
+EP  - 71
+DO  - 10.1136/ebmental-2019-300085
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064271334&doi=10.1136%2febmental-2019-300085&partnerID=40&md5=ef8ab3229ee15a0e7a6b711b19356d33
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, University of Bristol, Bristol, United Kingdom
+AD  - International Agency for Research on Cancer, Lyon, France
+AD  - School of Oral and Dental Sciences, University of Bristol, Bristol, United Kingdom
+AB  - Objective Mendelian randomisation (MR) is a technique that aims to assess causal effects of exposures on disease outcomes. The paper aims to present the main assumptions that underlie MR, the statistical methods used to estimate causal effects and how to account for potential violations of the key assumptions. Methods We discuss the key assumptions that should be satisfied in an MR setting. We list the statistical methodologies used in two-sample MR when summary data are available to estimate causal effects (ie, Wald ratio estimator, inverse-variance weighted and maximum likelihood method) and identify/adjust for potential violations of MR assumptions (ie, MR-Egger regression and weighted Median approach). We also present statistical methods and graphical tools used to evaluate the presence of heterogeneity. Results We use as an illustrative example of a published two-sample MR study, investigating the causal association of body mass index with three psychiatric disorders (ie, bipolar disorder, schizophrenia and major depressive disorder). We highlight the importance of assessing the results of all available methods rather than each method alone. We also demonstrate the impact of heterogeneity in the estimation of the causal effects. Conclusions MR is a useful tool to assess causality of risk factors in medical research. Assessment of the key assumptions underlying MR is crucial for a valid interpretation of the results. © Author(s) (or their employer(s)) 2019. No commercial re-use. See rights and permissions. Published by BMJ.
+KW  - Schizophrenia and psychotic disorders
+KW  - Body Mass Index
+KW  - Causality
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Mental Disorders
+KW  - Observational Studies as Topic
+KW  - body mass
+KW  - causality
+KW  - genetics
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - mental disease
+KW  - observational study
+KW  - procedures
+PB  - BMJ Publishing Group
+SN  - 13620347 (ISSN)
+C2  - 30979719
+LA  - English
+J2  - Evid. -Based Ment. Health
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 93; Correspondence Address: N.L. Dimou; International Agency for Research on Cancer, Lyon, France; email: DimouN@fellows.iarc.fr
+ER  -
+
+TY  - JOUR
+AU  - Lv, W.-Q.
+AU  - Lin, X.
+AU  - Shen, H.
+AU  - Liu, H.-M.
+AU  - Qiu, X.
+AU  - Li, B.-Y.
+AU  - Shen, W.-D.
+AU  - Ge, C.-L.
+AU  - Lv, F.-Y.
+AU  - Shen, J.
+AU  - Xiao, H.-M.
+AU  - Deng, H.-W.
+TI  - Human gut microbiome impacts skeletal muscle mass via gut microbial synthesis of the short-chain fatty acid butyrate among healthy menopausal women
+PY  - 2021
+T2  - Journal of Cachexia, Sarcopenia and Muscle
+VL  - 12
+IS  - 6
+SP  - 1860
+EP  - 1870
+DO  - 10.1002/jcsm.12788
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85114031766&doi=10.1002%2fjcsm.12788&partnerID=40&md5=5661ead4b47dacf6a4f705f3581b9d6c
+AD  - Center for System Biology, Data Sciences, and Reproductive Health, School of Basic Medical Science, Central South University, Hunan, Changsha, China
+AD  - Department of Endocrinology and Metabolism, The Third Affiliated Hospital of Southern Medical University, Guangzhou, China
+AD  - Tulane Center of Biomedical Informatics and Genomics, Deming Department of Medicine, Tulane University School of Medicine, New Orleans, LA, United States
+AD  - LC-Bio Technologies Co., Ltd., Hangzhou, China
+AD  - Shunde Hospital of Southern Medical University (The First People's Hospital of Shunde), Guangdong, Foshan, China
+AB  - Background: Increasing evidence suggests that human gut microbiome plays an important role in variation of skeletal muscle mass (SMM). However, specific causal mechanistic relationship of human gut microbiome with SMM remains largely unresolved. Understanding the causal mechanistic relationship may provide a basis for novel interventions for loss of SMM. This study investigated whether human gut microbiome has a causal effect on SMM among Chinese community-dwelling healthy menopausal women. Methods: Estimated SMM was derived from whole-body dual-energy X-ray absorptiometry. We performed integrated analyses on whole-genome sequencing, shotgun metagenomic sequencing, and serum short-chain fatty acids (SCFAs), as well as available host SMM measurements among community-dwelling healthy menopausal women (N = 482). We combined the results with summary statistics from genome-wide association analyses for human gut microbiome (N = 952) and SMM traits (N = 28 330). As a prerequisite for causality, we used a computational protocol that was proposed to measure correlations among gut metagenome, metabolome, and the host trait to investigate the relationship between human gut microbiome and SMM. Causal inference methods were applied to assess the potential causal effects of gut microbial features on SMM, through one-sample and two-sample Mendelian randomization (MR) analyses, respectively. Results: In metagenomic association analyses, the increased capacity for gut microbial synthesis of the SCFA butyrate was significantly associated with serum butyrate levels [Spearman correlation coefficient (SCC) = 0.13, P = 0.02] and skeletal muscle index (SCC = 0.084, P = 0.002). Of interest was the finding that two main butyrate-producing bacterial species were both positively associated with the increased capacity for gut microbial synthesis of butyrate [Faecalibacterium prausnitzii (SCC = 0.25, P = 6.6 × 10−7) and Butyricimonas virosa (SCC = 0.15, P = 0.001)] and for skeletal muscle index [F. prausnitzii (SCC = 0.16, P = 6.2 × 10−4) and B. virosa (SCC = 0.17, P = 2.4 × 10−4)]. One-sample MR results showed a causal effect between gut microbial synthesis of the SCFA butyrate and appendicular lean mass (β = 0.04, 95% confidence interval 0.029 to 0.051, P = 0.003). Two-sample MR results further confirmed the causal effect between gut microbial synthesis of the SCFA butyrate and appendicular lean mass (β = 0.06, 95% confidence interval 0 to 0.13, P = 0.06). Conclusions: Our results may help the future development of novel intervention approaches for preventing or alleviating loss of SMM. © 2021 The Authors. Journal of Cachexia, Sarcopenia and Muscle published by John Wiley & Sons Ltd on behalf of Society on Sarcopenia, Cachexia and Wasting Disorders.
+KW  - Butyrates
+KW  - Fatty Acids, Volatile
+KW  - Female
+KW  - Gastrointestinal Microbiome
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Menopause
+KW  - Muscle, Skeletal
+KW  - butyric acid
+KW  - estradiol
+KW  - short chain fatty acid
+KW  - butyric acid derivative
+KW  - volatile fatty acid
+KW  - adult
+KW  - anxiety
+KW  - Article
+KW  - body mass
+KW  - Butyricimonas virosa
+KW  - Clostridium
+KW  - community dwelling person
+KW  - cross-sectional study
+KW  - dual energy X ray absorptiometry
+KW  - Erysipelotrichaceae
+KW  - exercise
+KW  - Faecalibacterium prausnitzii
+KW  - fatigue
+KW  - female
+KW  - genome-wide association study
+KW  - genotype
+KW  - gut microbial synthesis
+KW  - human
+KW  - human experiment
+KW  - intestine flora
+KW  - lean body weight
+KW  - mass fragmentography
+KW  - menopause
+KW  - metabolome
+KW  - metagenome
+KW  - metagenomics
+KW  - microbial community
+KW  - microbiological parameters
+KW  - muscle mass
+KW  - musculoskeletal system parameters
+KW  - normal human
+KW  - people by drinking status
+KW  - people by smoking status
+KW  - physical stress
+KW  - Porphyromonadaceae
+KW  - shotgun sequencing
+KW  - single nucleotide polymorphism
+KW  - skeletal muscle
+KW  - skeletal muscle index
+KW  - whole genome sequencing
+KW  - menopause
+KW  - skeletal muscle
+PB  - John Wiley and Sons Inc
+SN  - 21905991 (ISSN)
+C2  - 34472211
+LA  - English
+J2  - J. Cachexia Sarcopenia Muscle
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 90; Correspondence Address: H.-M. Xiao; Center for System Biology, Data Sciences, and Reproductive Health, School of Basic Medical Science, Central South University, Changsha, Hunan, China; email: hmxiao@csu.edu.cn; H.-W. Deng; Center for System Biology, Data Sciences, and Reproductive Health, School of Basic Medical Science, Central South University, Changsha, Hunan, China; email: hdeng2@tulane.edu; J. Shen; Department of Endocrinology and Metabolism, The Third Affiliated Hospital of Southern Medical University, Guangzhou, China; email: shenjiedr@163.com
+ER  -
+
+TY  - JOUR
+AU  - Luo, J.
+AU  - Xu, Z.
+AU  - Noordam, R.
+AU  - Van Heemst, D.
+AU  - Li-Gao, R.
+TI  - Depression and Inflammatory Bowel Disease: A Bidirectional Two-sample Mendelian Randomization Study
+PY  - 2022
+T2  - Journal of Crohn's and Colitis
+VL  - 16
+IS  - 4
+SP  - 633
+EP  - 642
+DO  - 10.1093/ecco-jcc/jjab191
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85130001186&doi=10.1093%2fecco-jcc%2fjjab191&partnerID=40&md5=ed368c9507ff8a8f58e3c55af48f3f9a
+AD  - Department of Clinical Epidemiology, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Internal Medicine, Section of Gerontology and Geriatrics, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Medical Biochemistry and Biophysics, Section of Medical Inflammation Research, Karolinska Institute, Stockholm, Sweden
+AD  - CoRPS Center of Research on Psychology in Somatic Diseases, Tilburg University, Tilburg, Netherlands
+AD  - Department of Biological Psychology, Vrije Universiteit, Amsterdam, Netherlands
+AB  - Background and Aims: Observational studies have suggested a bidirectional association between depression and inflammatory bowel disease [IBD], including Crohn's disease [CD] and ulcerative colitis [UC]. However, it remains unclear whether the observed associations are causal due to the difficulties of determining sequential temporality. We investigated the association between depression and IBD by using bidirectional two-sample Mendelian randomization [MR]. Methods: Independent genetic variants for depression and IBD were selected as instruments from published genome-wide association studies [GWAS] among individuals of predominantly European ancestry. Summary statistics for instrument-outcome associations were retrieved from three separate databases for both depression [Psychiatric Genomics Consortium, FinnGen and UK Biobank] and IBD [the largest GWAS meta-analysis, FinnGen and UK Biobank], respectively. MR analyses included the inverse-variance-weighted method, weighted-median estimator, MR-Egger regression, and sensitivity analyses of Steiger filtering and MR PRESSO. From either direction, analyses were performed per outcome database and were subsequently meta-analysed using a fixed-effect model. Results: Genetically predicted depression [per log-odds ratio increase] was associated with a higher risk of IBD; odds ratios [95% confidence interval] for IBD, CD and UC were 1.20 [1.05, 1.36], 1.29 [1.07, 1.56] and 1.22 [1.01, 1.47] in a combined sample size of 693 183 [36 507 IBD cases], 212 172 [13 714 CD cases] and 219 686 [15 691 UC cases] individuals, respectively. In contrast, no association was observed between genetically influenced IBD and depression in 534 635 individuals [71 466 depression cases]. Conclusions: Our findings corroborated a causal association of depression on IBD, which may impact the clinical decision on the management of depression in patients with IBD. Though our results did not support a causal effect of IBD on depression, further investigations are needed to clarify the effect of IBD activity on depression [with different symptomology].  © 2021 The Author(s).
+KW  - Depression
+KW  - inflammatory bowel disease
+KW  - Mendelian randomization
+KW  - Chronic Disease
+KW  - Colitis, Ulcerative
+KW  - Depression
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inflammatory Bowel Diseases
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Article
+KW  - clinical decision making
+KW  - Crohn disease
+KW  - depression
+KW  - disease association
+KW  - European
+KW  - gene linkage disequilibrium
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - inflammatory bowel disease
+KW  - medical research
+KW  - Mendelian randomization analysis
+KW  - odds ratio
+KW  - prediction
+KW  - reference database
+KW  - regression analysis
+KW  - sample size
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - symptomatology
+KW  - ulcerative colitis
+KW  - chronic disease
+KW  - complication
+KW  - depression
+KW  - genetics
+KW  - inflammatory bowel disease
+KW  - meta analysis
+KW  - ulcerative colitis
+PB  - Oxford University Press
+SN  - 18739946 (ISSN)
+C2  - 34739073
+LA  - English
+J2  - J. Crohn's Colitis
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 89; Correspondence Address: J. Luo; Department of Clinical Epidemiology, Leiden University Medical Center, Leiden, Netherlands; email: j.luo@lumc.nl
+ER  -
+
+TY  - JOUR
+AU  - Yin, K.-J.
+AU  - Huang, J.-X.
+AU  - Wang, P.
+AU  - Yang, X.-K.
+AU  - Tao, S.-S.
+AU  - Li, H.-M.
+AU  - Ni, J.
+AU  - Pan, H.-F.
+TI  - No Genetic Causal Association Between Periodontitis and Arthritis: A Bidirectional Two-Sample Mendelian Randomization Analysis
+PY  - 2022
+T2  - Frontiers in Immunology
+VL  - 13
+C7  - 808832
+DO  - 10.3389/fimmu.2022.808832
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85124563347&doi=10.3389%2ffimmu.2022.808832&partnerID=40&md5=565833e802a60c8d8d07465f3e4a6ec9
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Anhui Medical University, Hefei, China
+AD  - Inflammation and Immune Mediated Diseases Laboratory of Anhui Province, Hefei, China
+AD  - Department of Rheumatology and Immunology, The First Affiliated Hospital of Anhui Medical University, Hefei, China
+AB  - Objectives: Periodontitis (PD) has been linked to arthritis in previous epidemiological observational studies; however, the results are inconclusive. It remains unclear whether the association between PD and arthritis is causal. The purpose of this study was to investigate the causal association of PD with arthritis, including rheumatoid arthritis (RA) and osteoarthritis (OA). Methods: We performed a two-sample bidirectional Mendelian randomization (MR) analysis using publicly released genome-wide association studies (GWAS) statistics. The inverse-variance weighted (IVW) method was used as the primary analysis. We applied four complementary methods, including weighted median, weighted mode, MR-Egger regression and MR pleiotropy residual sum and outlier (MR-PRESSO) to detect and correct for the effect of horizontal pleiotropy. Results: Genetically determined PD did not have a causal effect on OA (OR = 1.06, 95% CI: 0.99-1.15, P = 0.09) and RA (OR = 0.99, 95% CI: 0.87-1.13, P = 0.89). Furthermore, we did not find a significant causal effect of arthritis on PD in the reverse MR analysis. The results of MR-Egger regression, Weighted Median, and Weighted Mode methods were consistent with those of the IVW method. Horizontal pleiotropy was unlikely to distort the causal estimates according to the sensitivity analysis. Conclusions: Our MR analysis reveals non-causal association of PD with arthritis, despite observational studies reporting an association between PD and arthritis. Copyright © 2022 Yin, Huang, Wang, Yang, Tao, Li, Ni and Pan.
+KW  - causal relationship
+KW  - Mendelian randomization
+KW  - osteoarthritis
+KW  - periodontitis
+KW  - rheumatoid arthritis
+KW  - Arthritis
+KW  - Disease Susceptibility
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Periodontitis
+KW  - Article
+KW  - gene frequency
+KW  - genetic analysis
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - nucleotide sequence
+KW  - osteoarthritis
+KW  - periodontitis
+KW  - pleiotropy
+KW  - quality control
+KW  - rheumatoid arthritis
+KW  - robustness
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - arthritis
+KW  - disease predisposition
+KW  - genetic predisposition
+KW  - Mendelian randomization analysis
+KW  - periodontitis
+KW  - procedures
+PB  - Frontiers Media S.A.
+SN  - 16643224 (ISSN)
+C2  - 35154127
+LA  - English
+J2  - Front. Immunol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 89; Correspondence Address: J. Ni; Department of Epidemiology and Biostatistics, School of Public Health, Anhui Medical University, Hefei, China; email: nijing@ahmu.edu.cn; H.-F. Pan; Department of Epidemiology and Biostatistics, School of Public Health, Anhui Medical University, Hefei, China; email: panhaifeng1982@sina.com
+ER  -
+

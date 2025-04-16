@@ -1,0 +1,880 @@
+﻿TY  - JOUR
+AU  - Mounier, N.
+AU  - Kutalik, Z.
+TI  - Bias correction for inverse variance weighting Mendelian randomization
+PY  - 2023
+T2  - Genetic Epidemiology
+VL  - 47
+IS  - 4
+SP  - 314
+EP  - 331
+DO  - 10.1002/gepi.22522
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85152708358&doi=10.1002%2fgepi.22522&partnerID=40&md5=e764eb0887cce474d2637aa421117c18
+AD  - Department of Epidemiology and Health Systems, University Center for Primary Care and Public Health, Lausanne, Switzerland
+AD  - Swiss Institute of Bioinformatics, Lausanne, Switzerland
+AD  - Department of Computational Biology, University of Lausanne, Lausanne, Switzerland
+AB  - Inverse-variance weighted two-sample Mendelian randomization (IVW-MR) is the most widely used approach that utilizes genome-wide association studies (GWAS) summary statistics to infer the existence and the strength of the causal effect between an exposure and an outcome. Estimates from this approach can be subject to different biases due to the use of weak instruments and winner's curse, which can change as a function of the overlap between the exposure and outcome samples. We developed a method (MRlap) that simultaneously considers weak instrument bias and winner's curse while accounting for potential sample overlap. Assuming spike-and-slab genomic architecture and leveraging linkage disequilibrium score regression and other techniques, we could analytically derive, reliably estimate, and hence correct for the bias of IVW-MR using association summary statistics only. We tested our approach using simulated data for a wide range of realistic settings. In all the explored scenarios, our correction reduced the bias, in some situations by as much as 30-fold. In addition, our results are consistent with the fact that the strength of the biases will decrease as the sample size increases and we also showed that the overall bias is also dependent on the genetic architecture of the exposure, and traits with low heritability and/or high polygenicity are more strongly affected. Applying MRlap to obesity-related exposures revealed statistically significant differences between IVW-based and corrected effects, both for nonoverlapping and fully overlapping samples. Our method not only reduces bias in causal effect estimation but also enables the use of much larger GWAS sample sizes, by allowing for potentially overlapping samples. © 2023 The Authors. Genetic Epidemiology published by Wiley Periodicals LLC.
+KW  - Mendelian randomization
+KW  - sample overlap
+KW  - weak instrument bias
+KW  - winner's curse
+KW  - alcohol consumption
+KW  - Article
+KW  - body mass
+KW  - computer simulation
+KW  - gene linkage disequilibrium
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - obesity
+KW  - pleiotropy
+KW  - systolic blood pressure
+KW  - United Kingdom
+PB  - John Wiley and Sons Inc
+SN  - 07410395 (ISSN)
+LA  - English
+J2  - Genet. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 156; Correspondence Address: Z. Kutalik; University Center for Primary Care and Public Health, Lausanne, 1010, Switzerland; email: zoltan.kutalik@unil.ch; CODEN: GENYE
+ER  -
+
+TY  - JOUR
+AU  - Liu, Z.
+AU  - Zhang, Y.
+AU  - Graham, S.
+AU  - Wang, X.
+AU  - Cai, D.
+AU  - Huang, M.
+AU  - Pique-Regi, R.
+AU  - Dong, X.C.
+AU  - Chen, Y.E.
+AU  - Willer, C.
+AU  - Liu, W.
+TI  - Causal relationships between NAFLD, T2D and obesity have implications for disease subphenotyping
+PY  - 2020
+T2  - Journal of Hepatology
+VL  - 73
+IS  - 2
+SP  - 263
+EP  - 276
+DO  - 10.1016/j.jhep.2020.03.006
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85084387283&doi=10.1016%2fj.jhep.2020.03.006&partnerID=40&md5=cef783c8be8bcf9b4a7e97c773bfd9d6
+AD  - Department of Medicinal Chemistry and Molecular Pharmacology, College of Pharmacy, Purdue University, West Lafayette, 47907, IN, United States
+AD  - Department of Pharmaceutical Sciences, Eugene Applebaum College of Pharmacy and Health Sciences, Wayne State University, Detroit, 48201, MI, United States
+AD  - Department of Internal Medicine: Cardiology, University of Michigan, Ann Arbor, 48109, MI, United States
+AD  - The Affiliated Shenzhen Children's Hospital Laboratory Medicine, Shenzhen Children's Hospital, Shenzhen, 518038, China
+AD  - Department of Biochemistry and Molecular Biology, Indiana University School of Medicine, Indianapolis, 46202, IN, United States
+AD  - Center for Molecular Medicine and Medical Genetics, School of Medicine, Wayne State University, Detroit, 48201, MI, United States
+AD  - Department of Computational Medicine and Bioinformatics, University of Michigan, Ann Arbor, 48109, MI, United States
+AD  - Department of Human Genetics, University of Michigan, Ann Arbor, 48109, MI, United States
+AD  - Department of Pharmacology, School of Medicine, Wayne State University, Detroit, 48201, MI, United States
+AB  - Background & Aims: Non-alcoholic fatty liver disease (NAFLD), type 2 diabetes (T2D) and obesity are epidemiologically correlated with each other but the causal inter-relationships between them remain incompletely understood. We aimed to explore the causal relationships between the 3 diseases. Methods: Using both UK Biobank and publicly available genome-wide association study data, we performed a 2-sample bidirectional Mendelian randomization analysis to test the causal inter-relationships between NAFLD, T2D, and obesity. Transgenic mice expressing the human PNPLA3-I148M isoforms (TghPNPLA3-I148M) were used as an example to validate causal effects and explore underlying mechanisms. Results: Genetically driven NAFLD significantly increased the risk of T2D and central obesity but not insulin resistance or generalized obesity, while genetically driven T2D, body mass index and WHRadjBMI causally increased NAFLD risk. The animal study focusing on PNPLA3 corroborated these causal effects: compared to the TghPNPLA3-I148I controls, the TghPNPLA3-I148M mice developed glucose intolerance and increased visceral fat, but maintained normal insulin sensitivity, reduced body weight, and decreased circulating total cholesterol. Mechanistically, the TghPNPLA3-I148M mice demonstrated decreased pancreatic insulin but increased glucagon secretion, which was associated with increased pancreatic inflammation. In addition, transcription of hepatic cholesterol biosynthesis pathway genes was significantly suppressed, while transcription of thermogenic pathway genes was activated in subcutaneous and brown adipose tissues but not in visceral fat in TghPNPLA3-I148M mice. Conclusions: Our study suggests that lifelong, genetically driven NAFLD causally promotes T2D with a late-onset type 1-like diabetic subphenotype and central obesity; while genetically driven T2D, obesity, and central obesity all causally increase the risk of NAFLD. This causal relationship revealed new insights into how nature and nurture drive these diseases, providing novel hypotheses for disease subphenotyping. Lay summary: Non-alcoholic fatty liver disease, type 2 diabetes and obesity are epidemiologically correlated with each other, but their causal relationships were incompletely understood. Herein, we identified causal relationships between these conditions, which suggest that each of these closely related diseases should be further stratified into subtypes. This is important for accurate diagnosis, prevention and treatment of these diseases. © 2020 European Association for the Study of the Liver
+KW  - Mendelian randomization
+KW  - Non-alcoholic fatty liver disease
+KW  - Obesity
+KW  - PNPLA3
+KW  - Type 2 diabetes
+KW  - Animals
+KW  - Causality
+KW  - Diabetes Mellitus, Type 2
+KW  - Europe
+KW  - Founder Effect
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Lipase
+KW  - Membrane Proteins
+KW  - Mendelian Randomization Analysis
+KW  - Mice
+KW  - Mice, Transgenic
+KW  - Non-alcoholic Fatty Liver Disease
+KW  - Obesity, Abdominal
+KW  - Protein Isoforms
+KW  - cholesterol
+KW  - glucagon
+KW  - high density lipoprotein cholesterol
+KW  - insulin
+KW  - low density lipoprotein cholesterol
+KW  - patatin like phospholipase domain containing protein 3
+KW  - phospholipase
+KW  - triacylglycerol
+KW  - unclassified drug
+KW  - adiponutrin, human
+KW  - isoprotein
+KW  - membrane protein
+KW  - TM6SF2 protein, human
+KW  - triacylglycerol lipase
+KW  - animal experiment
+KW  - animal model
+KW  - Article
+KW  - association
+KW  - body weight
+KW  - brown adipose tissue
+KW  - cholesterol blood level
+KW  - cholesterol liver level
+KW  - controlled study
+KW  - gene expression level
+KW  - genetic association
+KW  - genetic variability
+KW  - glucagon release
+KW  - glucose intolerance
+KW  - high density lipoprotein cholesterol level
+KW  - ICD-10
+KW  - ICD-9
+KW  - insulin sensitivity
+KW  - intra-abdominal fat
+KW  - low density lipoprotein cholesterol level
+KW  - mouse
+KW  - non insulin dependent diabetes mellitus
+KW  - nonalcoholic fatty liver
+KW  - nonhuman
+KW  - obesity
+KW  - oral glucose tolerance test
+KW  - phenotype
+KW  - priority journal
+KW  - triacylglycerol blood level
+KW  - United Kingdom
+KW  - abdominal obesity
+KW  - animal
+KW  - causality
+KW  - Europe
+KW  - founder effect
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - nonalcoholic fatty liver
+KW  - transgenic mouse
+PB  - Elsevier B.V.
+SN  - 01688278 (ISSN)
+C2  - 32165250
+LA  - English
+J2  - J. Hepatol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 168; Correspondence Address: W. Liu; Department of Pharmaceutical Sciences, Eugene Applebaum College of Pharmacy and Health Sciences; and Department of Pharmacology, School of Medicine, Wayne State University, Detroit, MI 48201, USA; Integrative Biosciences Center Room 2401, Detroit, 6135 Woodward Ave, 48202, United States; email: wliu@wayne.edu; CODEN: JOHEE
+ER  -
+
+TY  - JOUR
+AU  - Kappelmann, N.
+AU  - Arloth, J.
+AU  - Georgakis, M.K.
+AU  - Czamara, D.
+AU  - Rost, N.
+AU  - Ligthart, S.
+AU  - Khandaker, G.M.
+AU  - Binder, E.B.
+TI  - Dissecting the Association between Inflammation, Metabolic Dysregulation, and Specific Depressive Symptoms: A Genetic Correlation and 2-Sample Mendelian Randomization Study
+PY  - 2021
+T2  - JAMA Psychiatry
+VL  - 78
+IS  - 2
+SP  - 161
+EP  - 170
+DO  - 10.1001/jamapsychiatry.2020.3436
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85094195777&doi=10.1001%2fjamapsychiatry.2020.3436&partnerID=40&md5=9bfd9f41a6c09a8c476c10315617776d
+AD  - Department of Research in Translational Psychiatry, Max Planck Institute of Psychiatry, Kraepelinstrasse 2-10, Munich, 80804, Germany
+AD  - International Max Planck Research School for Translational Psychiatry, Munich, Germany
+AD  - Institute of Computational Biology, Helmholtz Zentrum Munich, Neuherberg, Germany
+AD  - Institute for Stroke and Dementia Research, University Hospital, Ludwig Maximilians University, Munich, Germany
+AD  - Department of Epidemiology, Erasmus University Medical Center, Rotterdam, Netherlands
+AD  - Department of Psychiatry, University of Cambridge, Cambridge, United Kingdom
+AD  - Cambridgeshire and Peterborough NHS Foundation Trust, Cambridge, United Kingdom
+AB  - Importance: Observational studies highlight associations of C-reactive protein (CRP), a general marker of inflammation, and interleukin 6 (IL-6), a cytokine-stimulating CRP production, with individual depressive symptoms. However, it is unclear whether inflammatory activity is associated with individual depressive symptoms and to what extent metabolic dysregulation underlies the reported associations. Objective: To explore the genetic overlap and associations between inflammatory activity, metabolic dysregulation, and individual depressive symptoms. GWAS Data Sources: Genome-wide association study (GWAS) summary data of European individuals, including the following: CRP levels (204402 individuals); 9 individual depressive symptoms (3 of which did not differentiate between underlying diametrically opposite symptoms [eg, insomnia and hypersomnia]) as measured with the Patient Health Questionnaire 9 (up to 117907 individuals); summary statistics for major depression, including and excluding UK Biobank participants, resulting in sample sizes of 500 199 and up to 230 214 individuals, respectively; insomnia (up to 386533 individuals); body mass index (BMI) (up to 322154 individuals); and height (up to 253280 individuals). Design: In this genetic correlation and 2-sample mendelian randomization (MR) study, linkage disequilibrium score (LDSC) regression was applied to infer single-nucleotide variant-based heritability and genetic correlation estimates. Two-sample MR tested potential causal associations of genetic variants associated with CRP levels, IL-6 signaling, and BMI with depressive symptoms. The study dates were November 2019 to April 2020. Results: Based on large GWAS data sources, genetic correlation analyses revealed consistent false discovery rate (FDR)-controlled associations (genetic correlation range, 0.152-0.362; FDR P =.006 to P <.001) between CRP levels and depressive symptoms that were similar in size to genetic correlations of BMI with depressive symptoms. Two-sample MR analyses suggested that genetic upregulation of IL-6 signaling was associated with suicidality (estimate [SE], 0.035 [0.010]; FDR plus Bonferroni correction P =.01), a finding that remained stable across statistical models and sensitivity analyses using alternative instrument selection strategies. Mendelian randomization analyses did not consistently show associations of higher CRP levels or IL-6 signaling with other depressive symptoms, but higher BMI was associated with anhedonia, tiredness, changes in appetite, and feelings of inadequacy. Conclusions and Relevance: This study reports coheritability between CRP levels and individual depressive symptoms, which may result from the potentially causal association of metabolic dysregulation with anhedonia, tiredness, changes in appetite, and feelings of inadequacy. The study also found that IL-6 signaling is associated with suicidality. These findings may have clinical implications, highlighting the potential of anti-inflammatory approaches, especially IL-6 blockade, as a putative strategy for suicide prevention. © 2021 American Medical Association. All rights reserved.
+KW  - Biomarkers
+KW  - Body Mass Index
+KW  - Correlation of Data
+KW  - Depression
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inflammation
+KW  - Mendelian Randomization Analysis
+KW  - Metabolic Diseases
+KW  - Patient Health Questionnaire
+KW  - Regression Analysis
+KW  - biological marker
+KW  - blood
+KW  - body mass
+KW  - complication
+KW  - depression
+KW  - genome-wide association study
+KW  - human
+KW  - inflammation
+KW  - Mendelian randomization analysis
+KW  - metabolic disorder
+KW  - metabolism
+KW  - patient health questionnaire
+KW  - regression analysis
+PB  - American Medical Association
+SN  - 2168622X (ISSN)
+C2  - 33079133
+LA  - English
+J2  - JAMA Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 157; Correspondence Address: N. Kappelmann; Department of Research in Translational Psychiatry, Max Planck Institute of Psychiatry, Munich, Kraepelinstrasse 2-10, 80804, Germany; email: n.kappelmann@gmail.com
+ER  -
+
+TY  - JOUR
+AU  - Kar, S.P.
+AU  - Quiros, P.M.
+AU  - Gu, M.
+AU  - Jiang, T.
+AU  - Mitchell, J.
+AU  - Langdon, R.
+AU  - Iyer, V.
+AU  - Barcena, C.
+AU  - Vijayabaskar, M.S.
+AU  - Fabre, M.A.
+AU  - Carter, P.
+AU  - Petrovski, S.
+AU  - Burgess, S.
+AU  - Vassiliou, G.S.
+TI  - Genome-wide analyses of 200,453 individuals yield new insights into the causes and consequences of clonal hematopoiesis
+PY  - 2022
+T2  - Nature Genetics
+VL  - 54
+IS  - 8
+SP  - 1155
+EP  - 1166
+DO  - 10.1038/s41588-022-01121-z
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85134349110&doi=10.1038%2fs41588-022-01121-z&partnerID=40&md5=f69a16af79a48ee864e01990103e1b04
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Section of Translational Epidemiology, Division of Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Haematology, Wellcome-MRC Cambridge Stem Cell Institute, Jeffrey Cheah Biomedical Centre, University of Cambridge, Cambridge, United Kingdom
+AD  - Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge, United Kingdom
+AD  - Instituto de Investigación Sanitaria del Principado de Asturias (ISPA), Oviedo, Spain
+AD  - BHF Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, Strangeways Research Laboratory, University of Cambridge, Cambridge, United Kingdom
+AD  - Centre for Genomics Research, Discovery Sciences, BioPharmaceuticals R&D, AstraZeneca, Cambridge, United Kingdom
+AD  - Department of Haematology, Cambridge University Hospitals NHS Foundation Trust, Cambridge, United Kingdom
+AD  - Division of Cardiovascular Medicine, Department of Medicine, Cambridge University Hospitals NHS Foundation Trust, Cambridge, United Kingdom
+AD  - Department of Medicine, University of Melbourne, Austin Health, Melbourne, VIC, Australia
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AB  - Clonal hematopoiesis (CH), the clonal expansion of a blood stem cell and its progeny driven by somatic driver mutations, affects over a third of people, yet remains poorly understood. Here we analyze genetic data from 200,453 UK Biobank participants to map the landscape of inherited predisposition to CH, increasing the number of germline associations with CH in European-ancestry populations from 4 to 14. Genes at new loci implicate DNA damage repair (PARP1, ATM, CHEK2), hematopoietic stem cell migration/homing (CD164) and myeloid oncogenesis (SETBP1). Several associations were CH-subtype-specific including variants at TCL1A and CD164 that had opposite associations with DNMT3A- versus TET2-mutant CH, the two most common CH subtypes, proposing key roles for these two loci in CH development. Mendelian randomization analyses showed that smoking and longer leukocyte telomere length are causal risk factors for CH and that genetic predisposition to CH increases risks of myeloproliferative neoplasia, nonhematological malignancies, atrial fibrillation and blood epigenetic ageing. © 2022, The Author(s).
+KW  - Cell Transformation, Neoplastic
+KW  - Clonal Hematopoiesis
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Hematopoiesis
+KW  - Humans
+KW  - Mutation
+KW  - Risk Factors
+KW  - ATM protein
+KW  - checkpoint kinase 2
+KW  - DNA methyltransferase 3A
+KW  - nicotinamide adenine dinucleotide adenosine diphosphate ribosyltransferase 1
+KW  - peptides and proteins
+KW  - protein SETBP1
+KW  - sialomucin core protein 24
+KW  - unclassified drug
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - biobank
+KW  - Caucasian
+KW  - cell homing
+KW  - cell migration
+KW  - chromosome mosaicism
+KW  - clonal hematopoiesis
+KW  - controlled study
+KW  - DNA repair
+KW  - female
+KW  - gene locus
+KW  - gene mutation
+KW  - genetic predisposition
+KW  - genetic trait
+KW  - genome-wide association study
+KW  - hematopoietic stem cell
+KW  - human
+KW  - incidence
+KW  - inheritance
+KW  - leukocyte telomere length
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - pathogenesis
+KW  - prevalence
+KW  - risk factor
+KW  - smoking
+KW  - United Kingdom
+KW  - cell transformation
+KW  - genetics
+KW  - genome-wide association study
+KW  - hematopoiesis
+KW  - mutation
+PB  - Nature Research
+SN  - 10614036 (ISSN)
+C2  - 35835912
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 170; Correspondence Address: S.P. Kar; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: siddhartha.kar@bristol.ac.uk; P.M. Quiros; Instituto de Investigación Sanitaria del Principado de Asturias (ISPA), Oviedo, Spain; email: pmquiros@ispasturias.es; G.S. Vassiliou; Department of Haematology, Wellcome-MRC Cambridge Stem Cell Institute, Jeffrey Cheah Biomedical Centre, University of Cambridge, Cambridge, United Kingdom; email: gsv20@cam.ac.uk; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Wang, C.
+AU  - Zhu, D.
+AU  - Zhang, D.
+AU  - Zuo, X.
+AU  - Yao, L.
+AU  - Liu, T.
+AU  - Ge, X.
+AU  - He, C.
+AU  - Zhou, Y.
+AU  - Shen, Z.
+TI  - Causal role of immune cells in schizophrenia: Mendelian randomization (MR) study
+PY  - 2023
+T2  - BMC Psychiatry
+VL  - 23
+IS  - 1
+C7  - 590
+DO  - 10.1186/s12888-023-05081-4
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85168059525&doi=10.1186%2fs12888-023-05081-4&partnerID=40&md5=9896793ddde95ccb65dbd838143c028d
+AD  - Department of Psychiatry, The Affiliated Xuzhou Oriental Hospital of Xuzhou Medical University, Jiangsu, Xuzhou, 221004, China
+AD  - School of Psychology, Xinxiang Medical University, Henan, Xinxiang, 453003, China
+AD  - Department of Psychiatry, The Second Affiliated Hospital of Xinxiang Medical University, Henan, Xinxiang, 453005, China
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Xuzhou Medical University, Jiangsu, Xuzhou, 221004, China
+AD  - Medical Technology School of Xuzhou Medical University, Jiangsu, Xuzhou, 221004, China
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Anhui Medical University, Anhui, Hefei, 230032, China
+AB  - Background: Complex immune-brain interactions that affect neural development, survival and function might have causal and therapeutic implications for psychiatric illnesses. However, previous studies examining the association between immune inflammation and schizophrenia (SCZ) have yielded inconsistent findings. Methods: Comprehensive two-sample Mendelian randomization (MR) analysis was performed to determine the causal association between immune cell signatures and SCZ in this study. Based on publicly available genetic data, we explored causal associations between 731 immune cell signatures and SCZ risk. A total of four types of immune signatures (median fluorescence intensities (MFI), relative cell (RC), absolute cell (AC), and morphological parameters (MP)) were included. Comprehensive sensitivity analyses were used to verify the robustness, heterogeneity, and horizontal pleiotropy of the results. Results: After FDR correction, SCZ had no statistically significant effect on immunophenotypes. It was worth mentioning some phenotypes with unadjusted low P-values, including FSC-A on NKT (β = 0.119, 95% CI = 0.044 ~ 0.194, P = 0.002), DN (CD4-CD8-) NKT %T cell (β = 0.131, 95% CI = 0.054 ~ 0.208, P = 9.03 × 10− 4), and SSC-A on lymphocytes (β = 0.136, 95% CI = 0.059 ~ 0.213, P = 5.43 × 10− 4). The causal effect of SCZ IgD on transitional was estimated to 0.127 (95% CI = 0.051 ~ 0.203, P = 1.09 × 10− 3). SCZ also had a causal effect on IgD+ %B cell (β = 0.130, 95% CI = 0.054 ~ 0.207, P = 8.69 × 10− 4), and DP (CD4+CD8+) %T cell (β = 0.131, 95% CI = 0.054 ~ 0.207, P = 8.05 × 10− 4). Furthermore, four immunophenotypes were identified to be significantly associated with SCZ risk: naive CD4+ %T cell (OR = 0.986, 95% CI = 0.979 ~ 0.992, P = 1.37 × 10− 5), HLA DR on CD14− CD16− (OR = 0.738 (95% CI = 0.642 ~ 0.849, P = 2.00 × 10− 5), CD33dim HLA DR+ CD11b− AC (OR = 0.631, 95% CI = 0.529 ~ 0.753, P = 3.40 × 10− 7) and activated & resting Treg % CD4 Treg (OR = 0.937, 95% CI = 0.906 ~ 0.970, P = 1.96 × 10− 4). Conclusions: Our study has demonstrated the close connection between immune cells and SCZ by genetic means, thus providing guidance for future clinical research. © 2023, BioMed Central Ltd., part of Springer Nature.
+KW  - Brain
+KW  - Causal inference
+KW  - Immunity
+KW  - MR analysis
+KW  - Schizophrenia
+KW  - Sensitivity
+KW  - Brain
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inflammation
+KW  - Mendelian Randomization Analysis
+KW  - Phenotype
+KW  - Schizophrenia
+KW  - CD11b antigen
+KW  - CD14 antigen
+KW  - CD16 antigen
+KW  - CD33 antigen
+KW  - HLA DR antigen
+KW  - immunoglobulin D
+KW  - absolute cell
+KW  - Article
+KW  - CD4+ T lymphocyte
+KW  - CD8+ T lymphocyte
+KW  - cell structure
+KW  - cohort analysis
+KW  - controlled study
+KW  - fluorescence intensity
+KW  - genetics
+KW  - human
+KW  - human cell
+KW  - immunocompetent cell
+KW  - immunophenotyping
+KW  - major clinical study
+KW  - natural killer T cell
+KW  - pleiotropy
+KW  - regulatory T lymphocyte
+KW  - relative cell
+KW  - risk factor
+KW  - schizophrenia
+KW  - SSC A cell
+KW  - brain
+KW  - genome-wide association study
+KW  - inflammation
+KW  - Mendelian randomization analysis
+KW  - phenotype
+KW  - schizophrenia
+PB  - BioMed Central Ltd
+SN  - 1471244X (ISSN)
+C2  - 37582716
+LA  - English
+J2  - BMC Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 162; Correspondence Address: Z. Shen; Department of Epidemiology and Biostatistics, School of Public Health, Anhui Medical University, Hefei, Anhui, 230032, China; email: sshenzy@126.com; CODEN: BPMSC
+ER  -
+
+TY  - JOUR
+AU  - Yuan, S.
+AU  - Larsson, S.C.
+TI  - An atlas on risk factors for type 2 diabetes: a wide-angled Mendelian randomisation study
+PY  - 2020
+T2  - Diabetologia
+VL  - 63
+IS  - 11
+SP  - 2359
+EP  - 2371
+DO  - 10.1007/s00125-020-05253-x
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85090299450&doi=10.1007%2fs00125-020-05253-x&partnerID=40&md5=bb035bc8386e6e9c9aa4a31ad1ec10cc
+AD  - Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Nobelsväg 13, Stockholm, 17177, Sweden
+AD  - Department of Surgical Sciences, Uppsala University, Dag Hammarskjölds Väg 14B, Uppsala, 75185, Sweden
+AB  - Aims/hypothesis: The aim of this study was to use Mendelian randomisation (MR) to identify the causal risk factors for type 2 diabetes. Methods: We first conducted a review of meta-analyses and review articles to pinpoint possible risk factors for type 2 diabetes. Around 170 possible risk factors were identified of which 97 risk factors with available genetic instrumental variables were included in MR analyses. To reveal more risk factors that were not included in our MR analyses, we conducted a review of published MR studies of type 2 diabetes. For our MR analyses, we used summary-level data from the DIAbetes Genetics Replication And Meta-analysis consortium (74,124 type 2 diabetes cases and 824,006 controls of European ancestry). Potential causal associations were replicated using the FinnGen consortium (11,006 type 2 diabetes cases and 82,655 controls of European ancestry). The inverse-variance weighted method was used as the main analysis. Multivariable MR analysis was used to assess whether the observed associations with type 2 diabetes were mediated by BMI. We used the Benjamini–Hochberg method that controls false discovery rate for multiple testing. Results: We found evidence of causal associations between 34 exposures (19 risk factors and 15 protective factors) and type 2 diabetes. Insomnia was identified as a novel risk factor (OR 1.17 [95% CI 1.11, 1.23]). The other 18 risk factors were depression, systolic BP, smoking initiation, lifetime smoking, coffee (caffeine) consumption, plasma isoleucine, valine and leucine, liver alanine aminotransferase, childhood and adulthood BMI, body fat percentage, visceral fat mass, resting heart rate, and four plasma fatty acids. The 15 exposures associated with a decreased risk of type 2 diabetes were plasma alanine, HDL- and total cholesterol, age at menarche, testosterone levels, sex hormone binding globulin levels (adjusted for BMI), birthweight, adulthood height, lean body mass (for women), four plasma fatty acids, circulating 25-hydroxyvitamin D and education years. Eight associations remained after adjustment for adulthood BMI. We additionally identified 21 suggestive risk factors (p ' 0.05), such as alcohol consumption, breakfast skipping, daytime napping, short sleep, urinary sodium, and certain amino acids and inflammatory factors. Conclusions/interpretation: The present study verified several previously reported risk factors and identified novel potential risk factors for type 2 diabetes. Prevention strategies for type 2 diabetes should be considered from multiple perspectives on obesity, mental health, sleep quality, education level, birthweight and smoking. Graphical abstract: [Figure not available: see fulltext.]. © 2020, The Author(s).
+KW  - Mendelian randomisation
+KW  - Prevention
+KW  - Review
+KW  - Risk factors
+KW  - Type 2 diabetes
+KW  - Body Composition
+KW  - Body Mass Index
+KW  - Diabetes Mellitus, Type 2
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - 25 hydroxyvitamin D
+KW  - alanine
+KW  - alanine aminotransferase
+KW  - fatty acid
+KW  - high density lipoprotein cholesterol
+KW  - isoleucine
+KW  - leucine
+KW  - sex hormone binding globulin
+KW  - sodium
+KW  - testosterone
+KW  - valine
+KW  - alanine aminotransferase blood level
+KW  - alcohol consumption
+KW  - amino acid blood level
+KW  - Article
+KW  - birth weight
+KW  - body fat
+KW  - body height
+KW  - body mass
+KW  - breakfast skipping
+KW  - coffee consumption
+KW  - depression
+KW  - education
+KW  - fat mass
+KW  - fatty acid blood level
+KW  - high density lipoprotein cholesterol level
+KW  - human
+KW  - intra-abdominal fat
+KW  - lean body weight
+KW  - menarche
+KW  - Mendelian randomization analysis
+KW  - meta analysis (topic)
+KW  - non insulin dependent diabetes mellitus
+KW  - priority journal
+KW  - resting heart rate
+KW  - risk factor
+KW  - sleep
+KW  - smoking
+KW  - sodium urine level
+KW  - systolic blood pressure
+KW  - testosterone blood level
+KW  - body composition
+KW  - genome-wide association study
+KW  - metabolism
+KW  - non insulin dependent diabetes mellitus
+KW  - physiology
+KW  - risk factor
+PB  - Springer Science and Business Media Deutschland GmbH
+SN  - 0012186X (ISSN)
+C2  - 32895727
+LA  - English
+J2  - Diabetologia
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 157; Correspondence Address: S.C. Larsson; Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Nobelsväg 13, 17177, Sweden; email: susanna.larsson@surgsci.uu.se; CODEN: DBTGA
+ER  -
+
+TY  - JOUR
+AU  - Lin, Z.
+AU  - Deng, Y.
+AU  - Pan, W.
+TI  - Combining the strengths of inverse-variance weighting and Egger regression in Mendelian randomization using a mixture of regressions model
+PY  - 2021
+T2  - PLoS Genetics
+VL  - 17
+IS  - 11
+C7  - e1009922
+DO  - 10.1371/journal.pgen.1009922
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85119914691&doi=10.1371%2fjournal.pgen.1009922&partnerID=40&md5=c5942da5da9f45c364bf4c08802128a4
+AD  - Division of Biostatistics, University of Minnesota, Minneapolis, MN, United States
+AB  - With the increasing availability of large-scale GWAS summary data on various traits, Mendelian randomization (MR) has become commonly used to infer causality between a pair of traits, an exposure and an outcome. It depends on using genetic variants, typically SNPs, as instrumental variables (IVs). The inverse-variance weighted (IVW) method (with a fixedeffect meta-analysis model) is most powerful when all IVs are valid; however, when horizontal pleiotropy is present, it may lead to biased inference. On the other hand, Egger regression is one of the most widely used methods robust to (uncorrelated) pleiotropy, but it suffers from loss of power. We propose a two-component mixture of regressions to combine and thus take advantage of both IVW and Egger regression; it is often both more efficient (i.e. higher powered) and more robust to pleiotropy (i.e. controlling type I error) than either IVW or Egger regression alone by accounting for both valid and invalid IVs respectively. We propose a model averaging approach and a novel data perturbation scheme to account for uncertainties in model/IV selection, leading to more robust statistical inference for finite samples. Through extensive simulations and applications to the GWAS summary data of 48 risk factor-disease pairs and 63 genetically uncorrelated trait pairs, we showcase that our proposed methods could often control type I error better while achieving much higher power than IVW and Egger regression (and sometimes than several other new/popular MR methods). We expect that our proposed methods will be a useful addition to the toolbox of Mendelian randomization for causal inference.  Copyright © 2021 Lin et al.
+KW  - Genetic Pleiotropy
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Regression Analysis
+KW  - Article
+KW  - causality
+KW  - Egger regression
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - instrumental variable analysis
+KW  - inverse-variance weighting
+KW  - linear regression analysis
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - uncertainty
+KW  - genetic predisposition
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - regression analysis
+PB  - Public Library of Science
+SN  - 15537390 (ISSN)
+C2  - 34793444
+LA  - English
+J2  - PLoS Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 164; Correspondence Address: W. Pan; Division of Biostatistics, University of Minnesota, Minneapolis, United States; email: panxx014@umn.edu
+ER  -
+
+TY  - JOUR
+AU  - Reay, W.R.
+AU  - Cairns, M.J.
+TI  - Advancing the use of genome-wide association studies for drug repurposing
+PY  - 2021
+T2  - Nature Reviews Genetics
+VL  - 22
+IS  - 10
+SP  - 658
+EP  - 671
+DO  - 10.1038/s41576-021-00387-z
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85111646302&doi=10.1038%2fs41576-021-00387-z&partnerID=40&md5=2fae10f780f45516cd465fcdf0b19196
+AD  - School of Biomedical Sciences and Pharmacy, The University of Newcastle, Callaghan, NSW, Australia
+AD  - Centre for Brain and Mental Health Research, Hunter Medical Research Institute, Newcastle, NSW, Australia
+AB  - Genome-wide association studies (GWAS) have revealed important biological insights into complex diseases, which are broadly expected to lead to the identification of new drug targets and opportunities for treatment. Drug development, however, remains hampered by the time taken and costs expended to achieve regulatory approval, leading many clinicians and researchers to consider alternative paths to more immediate clinical outcomes. In this Review, we explore approaches that leverage common variant genetics to identify opportunities for repurposing existing drugs, also known as drug repositioning. These approaches include the identification of compounds by linking individual loci to genes and pathways that can be pharmacologically modulated, transcriptome-wide association studies, gene-set association, causal inference by Mendelian randomization, and polygenic scoring. © 2021, Springer Nature Limited.
+KW  - Drug Repositioning
+KW  - Gene Regulatory Networks
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Multifactorial Inheritance
+KW  - Pharmaceutical Preparations
+KW  - Polymorphism, Single Nucleotide
+KW  - Transcriptome
+KW  - interleukin 23
+KW  - transcriptome
+KW  - drug
+KW  - transcriptome
+KW  - bioinformatics
+KW  - Crohn disease
+KW  - drug repositioning
+KW  - drug targeting
+KW  - expression quantitative trait locus
+KW  - gene expression
+KW  - gene interaction
+KW  - gene locus
+KW  - gene set analysis
+KW  - genetic risk score
+KW  - genetic variability
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - molecular biology
+KW  - phenotype
+KW  - protein expression
+KW  - quantitative trait locus
+KW  - Review
+KW  - transcriptomics
+KW  - drug effect
+KW  - drug repositioning
+KW  - gene regulatory network
+KW  - multifactorial inheritance
+KW  - procedures
+KW  - single nucleotide polymorphism
+PB  - Nature Research
+SN  - 14710056 (ISSN)
+C2  - 34302145
+LA  - English
+J2  - Nat. Rev. Gen.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 160; Correspondence Address: M.J. Cairns; School of Biomedical Sciences and Pharmacy, The University of Newcastle, Callaghan, Australia; email: murray.cairns@newcastle.edu.au; CODEN: NRGAA
+ER  -
+
+TY  - JOUR
+AU  - Lindström, S.
+AU  - Wang, L.
+AU  - Smith, E.N.
+AU  - Gordon, W.
+AU  - Van Hylckama Vlieg, A.
+AU  - De Andrade, M.
+AU  - Brody, J.A.
+AU  - Pattee, J.W.
+AU  - Haessler, J.
+AU  - Brumpton, B.M.
+AU  - Chasman, D.I.
+AU  - Suchon, P.
+AU  - Chen, M.-H.
+AU  - Turman, C.
+AU  - Germain, M.
+AU  - Wiggins, K.L.
+AU  - MacDonald, J.
+AU  - Braekkan, S.K.
+AU  - Armasu, S.M.
+AU  - Pankratz, N.
+AU  - Jackson, R.D.
+AU  - Nielsen, J.B.
+AU  - Giulianini, F.
+AU  - Puurunen, M.K.
+AU  - Ibrahim, M.
+AU  - Heckbert, S.R.
+AU  - Damrauer, S.M.
+AU  - Natarajan, P.
+AU  - Klarin, D.
+AU  - De Vries, P.S.
+AU  - Sabater-Lleal, M.
+AU  - Huffman, J.E.
+AU  - Bammler, T.K.
+AU  - Frazer, K.A.
+AU  - McCauley, B.M.
+AU  - Taylor, K.
+AU  - Pankow, J.S.
+AU  - Reiner, A.P.
+AU  - Gabrielsen, M.E.
+AU  - Deleuze, J.-F.
+AU  - O'Donnell, C.J.
+AU  - Kim, J.
+AU  - McKnight, B.
+AU  - Kraft, P.
+AU  - Hansen, J.-B.
+AU  - Rosendaal, F.R.
+AU  - Heit, J.A.
+AU  - Psaty, B.M.
+AU  - Tang, W.
+AU  - Kooperberg, C.
+AU  - Hveem, K.
+AU  - Ridker, P.M.
+AU  - Morange, P.-E.
+AU  - Johnson, A.D.
+AU  - Kabrhel, C.
+AU  - Trégouët, D.-A.
+AU  - Smith, N.L.
+TI  - Genomic and transcriptomic association studies identify 16 novel susceptibility loci for venous thromboembolism
+PY  - 2019
+T2  - Blood
+VL  - 134
+IS  - 19
+SP  - 1645
+EP  - 1657
+DO  - 10.1182/blood.2019000435
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074331473&doi=10.1182%2fblood.2019000435&partnerID=40&md5=a4a766be4007b97eba4fcde292b7df09
+AD  - Department of Epidemiology, University of Washington, Seattle, WA, United States
+AD  - Public Health Sciences Division, Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - Department of Environmental and Occupational Health Sciences, University of Washington, Seattle, WA, United States
+AD  - Department of Pediatrics and Rady Children's Hospital, University of California San Diego, San Diego, CA, United States
+AD  - K.G. Jebsen Thrombosis Research and Expertise Center, Department of ClinicalMedicine, UiT-The Arctic University of Norway, Tromsø, Norway
+AD  - Department of Clinical Epidemiology, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Health Sciences Research, Mayo Clinic, Rochester, MN, United States
+AD  - Cardiovascular Health Research Unit, Department OfMedicine, University of Washington, Seattle, WA, United States
+AD  - Division of Biostatistics, School of Public Health, University OfMinnesota, Minneapolis, MN, United States
+AD  - K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Clinic of Thoracic and Occupational Medicine, St. Olavs Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - Division of Preventive Medicine, Brigham and Women's Hospital, Boston, MA, United States
+AD  - Departmentof Medicine, Harvard Medical School, Boston, MA, United States
+AD  - Laboratory of Haematology, La Timone Hospital, Marseille, France
+AD  - Center for CardioVascular and Nutrition Research (C2VN), Universite Aix-Marseille, Institut National de la Recherche Agronomique (INRA), Marseille, France
+AD  - Population Sciences Branch, National Heart, Lung, and Blood Institute, National Institutes of Health, Framingham, MA, United States
+AD  - Framingham Heart Study, Framingham, MA, United States
+AD  - PrograminGenetic Epidemiology and Statistical Genetics, Harvard T.H. Chan School of Public Health, Boston, MA, United States
+AD  - INSERMUMR-S 1219, Bordeaux Population Health Research Center, University of Bordeaux, Bordeaux, France
+AD  - Division of Internal Medicine, University Hospital of North Norway, Tromsø, Norway
+AD  - Department of Laboratory Medicine and Pathology, School of Medicine, University of Minnesota, Minneapolis, MN, United States
+AD  - Division of Endocrinology, Diabetes, and Metabolism, Ohio State University, Columbus, OH, United States
+AD  - Division of Cardiology, Department of Internal Medicine, University of Michigan Medical School, Ann Arbor, MI, United States
+AD  - Kaiser Permanente Washington, Health Research Institute, Seattle, WA, United States
+AD  - Department of Surgery, Corporal Michael Crescenz VA Medical Center, Philadelphia, PA, United States
+AD  - Department of Surgery, Perleman School of Medicine, University of Pennsylvania, Philadelphia, PA, United States
+AD  - Boston VA Healthcare System, Boston, MA, United States
+AD  - Cardiovascular Research Center and Center for Genomic Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Medicine, Harvard Medical School, Boston, MA, United States
+AD  - Program in Medical and Population Genetics, Broad Institute of Harvard and MIT, Cambridge, MA, United States
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Harvard Medical School, Boston, MA, United States
+AD  - Department of Surgery, Massachusetts General Hospital, Boston, MA, United States
+AD  - HumanGenetics Center, School of Public Health, University of Texas, Houston, TX, United States
+AD  - Unit of Genomics of Complex Diseases, Institut de Recerca de l'Hospital de Sant Pau, IIB-Sant Pau, Barcelona, Spain
+AD  - Karolinska Institutet, Center for Molecular Medicine, Karolinska University Hospital, Stockholm, Sweden
+AD  - Center for Population Genomics, MAVERIC, VA Boston Healthcare System, Boston, MA, United States
+AD  - Institute of Genomic Medicine, University of California San Diego, San Diego, CA, United States
+AD  - Los Angeles Biomedical Research Institute, Department of Pediatrics, Harbor-University of California Los Angeles Medical Center, Torrence, CA, United States
+AD  - Division of Epidemiology and Community Health, School of Public Health, University of Minnesota, Minneapolis, MN, United States
+AD  - Centre National de Recherche en Génomique Humaine, Direction de la Recherche Fondamentale, Le Commissariat À l'Énergie Atomique et Aux Énergies Alternatives, Evry, France
+AD  - Centre d'Etude du Polymorphism Humain (CEPH), Fondation Jean Dausset, Paris, France
+AD  - Million Veteran Program, Veteran's Administration, Boston, MA, United States
+AD  - Department of Biostatistics, University OfWashington, Seattle, WA, United States
+AD  - Cardiovascular Health Research Unit, Departments of Medicine, Epidemiology, and Health Services, University of Washington, Seattle, WA, United States
+AD  - Centre de Ressources Biologiques Assistance Publique-Hôpitaux de Marseille, HemoVasc, Marseille, France
+AD  - Center for Vascular Emergencies, Department of Emergency Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Channing Division of Network Medicine, Brigham and Women's Hospital, Boston, MA, United States
+AD  - Department of Emergency Medicine, Harvard Medical School, Boston, MA, United States
+AD  - Seattle Epidemiologic Research and Information Center, Department of Veterans Affairs Office of Research and Development, Seattle, WA, United States
+AB  - Venous thromboembolism (VTE) is a significant contributor to morbidity and mortality. To advance our understanding of the biology contributing to VTE,we conducted a genome-wide association study (GWAS) of VTE and a transcriptomewide association study (TWAS) based on imputed gene expression from whole blood and liver.Wemeta-analyzedGWAS data from18 studies for 30 234 VTE cases and 172 122 controls and assessed the association between 12 923 718 genetic variants and VTE. We generated variant prediction scores of gene expression from whole blood and liver tissue and assessed them for association with VTE. Mendelian randomization analyses were conducted for traits genetically associated with novel VTE loci.We identified 34 independent genetic signals for VTE risk from GWAS meta-analysis, of which 14 are newly reported associations. This included 11 newly associated genetic loci (C1orf198, PLEK, OSMR-AS1, NUGGC/SCARA5, GRK5, MPHOSPH9, ARID4A, PLCG2, SMG6, EIF5A, and STX10) of which 6 replicated, and 3 new independent signals in 3 known genes. Further, TWAS identified 5 additional genetic loci with imputed gene expression levels differing between cases and controls in whole blood (SH2B3, SPSB1, RP11-747H7.3, RP4-737E23.2) and in liver (ERAP1). At some GWAS loci, we found suggestive evidence that the VTE association signal for novel and previously known regions colocalized with expression quantitative trait locus signals. Mendelian randomization analyses suggested that blood traits may contribute to the underlying risk of VTE. To conclude,we identified 16 novel susceptibility loci for VTE; for some loci, the association signals are likely mediated through gene expression of nearby genes. © 2019 American Society of Hematology. All rights reserved.
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Venous Thromboembolism
+KW  - c1orf198 protein
+KW  - c4bpa protein
+KW  - deoxyribonuclease I
+KW  - erap1 protein
+KW  - f11 protein
+KW  - f5 protein
+KW  - fgg protein
+KW  - G protein coupled receptor kinase 5
+KW  - guanosine triphosphatase
+KW  - initiation factor 5A
+KW  - m phase phosphoprotein 9
+KW  - nonsense-mediated messenger RNA decay factor
+KW  - nuclear gtpase germinal center associated protein
+KW  - oncostatin M receptor
+KW  - phospholipase C gamma2
+KW  - plasminogen activator inhibitor 1
+KW  - pleckstrin
+KW  - plek protein
+KW  - protein
+KW  - retinoblastoma binding protein 1
+KW  - rp11 747h7.3 protein
+KW  - rp4 737e23.2 protein
+KW  - scavenger receptor class a member 5
+KW  - sh2b3 protein
+KW  - SNARE protein
+KW  - spsb1 protein
+KW  - stxbp5 protein
+KW  - tissue plasminogen activator
+KW  - unclassified drug
+KW  - von Willebrand factor
+KW  - zfpm2 protein
+KW  - Article
+KW  - blood analysis
+KW  - blood cell
+KW  - clinical assessment
+KW  - disease association
+KW  - expression quantitative trait locus
+KW  - gene expression
+KW  - gene expression level
+KW  - gene locus
+KW  - gene replication
+KW  - genetic analysis
+KW  - genetic association
+KW  - genetic risk
+KW  - genetic susceptibility
+KW  - genome-wide association study
+KW  - genomics
+KW  - heritability
+KW  - human
+KW  - liver tissue
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - phenotype
+KW  - priority journal
+KW  - risk assessment
+KW  - risk factor
+KW  - transcriptome wide association study
+KW  - transcriptomics
+KW  - venous thromboembolism
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - venous thromboembolism
+PB  - American Society of Hematology
+SN  - 00064971 (ISSN)
+C2  - 31420334
+LA  - English
+J2  - Blood
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 160; Correspondence Address: N.L. Smith; Cardiovascular Health Research Unit, University of Washington, Seattle, 1730 Minor Ave, 98101, United States; email: nlsmith@u.Washington.edu; CODEN: BLOOA
+ER  -
+
+TY  - JOUR
+AU  - Ai, S.
+AU  - Zhang, J.
+AU  - Zhao, G.
+AU  - Wang, N.
+AU  - Li, G.
+AU  - So, H.-C.
+AU  - Liu, Y.
+AU  - Chau, S.W.-H.
+AU  - Chen, J.
+AU  - Tan, X.
+AU  - Jia, F.
+AU  - Tang, X.
+AU  - Shi, J.
+AU  - Lu, L.
+AU  - Wing, Y.-K.
+TI  - Causal associations of short and long sleep durations with 12 cardiovascular diseases: Linear and nonlinear Mendelian randomization analyses in UK Biobank
+PY  - 2021
+T2  - European Heart Journal
+VL  - 42
+IS  - 34
+SP  - 3349
+EP  - 3357
+DO  - 10.1093/eurheartj/ehab170
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85116957802&doi=10.1093%2feurheartj%2fehab170&partnerID=40&md5=7d37ce8425cb7a4254c11d9d2287cc80
+AD  - Li Chiu Kong Family Sleep Assessment Unit, Department of Psychiatry, Faculty of Medicine, The Chinese University of Hong Kong, 33 A Kung Kok Street, Sha Tin District, 000000, Hong Kong
+AD  - Guangdong Mental Health Center, Guangdong Provincial People's Hospital, Guangdong Academy of Medical Sciences, 123 Huifu West Road, Guangzhou, 510000, China
+AD  - Department of Cardiology, Heart Center, The First Affiliated Hospital of Xinxiang Medical University, 88 Jiankang Road, Weihui, 453100, China
+AD  - The Second School of Clinical Medicine, Southern Medical University, 253 Industrial Avenue Middle, Guangzhou, 510280, China
+AD  - Institute and Department of Endocrinology and Metabolism, Shanghai Ninth People's Hospital, Shanghai JiaoTong University School of Medicine, 639 Manufacturing Bureau Road, Shanghai, 200011, China
+AD  - School of Biomedical Sciences, Department of Psychiatry, KIZ-CUHK Joint Laboratory of Bioresources and Molecular Research of Common Diseases, Cheung Research Centre for Management of Parkinsonism, Faculty of Medicine, Chinese University of Hong Kong, Da Xue Road, Sha Tin District, 000000, Hong Kong
+AD  - Department of Neuroscience, Uppsala University, BMC, 3 Husargatan, Uppsala, 75124, Sweden
+AD  - Sleep Medicine Center, Department of Respiratory and Critical Care Medicine, Mental Health Center, Translational Neuroscience Center, State Key Laboratory of Biotherapy, West China Hospital, Sichuan University, 37 Guoxue Alley, Chengdu, 610041, China
+AD  - National Institute on Drug Dependence, Peking University Sixth Hospital, Peking University, 38 Xueyuan Road, Beijing, 100191, China
+AB  - Aims: Observational studies have suggested strong associations between sleep duration and many cardiovascular diseases (CVDs), but causal inferences have not been confirmed. We aimed to determine the causal associations between genetically predicted sleep duration and 12 CVDs using both linear and nonlinear Mendelian randomization (MR) designs. Methods and results: Genetic variants associated with continuous, short (≤6 h) and long (≥9 h) sleep durations were used to examine the causal associations with 12 CVDs among 404 044 UK Biobank participants of White British ancestry. Linear MR analyses showed that genetically predicted sleep duration was negatively associated with arterial hypertension, atrial fibrillation, pulmonary embolism, and chronic ischaemic heart disease after correcting for multiple tests (P < 0.001). Nonlinear MR analyses demonstrated nonlinearity (L-shaped associations) between genetically predicted sleep duration and four CVDs, including arterial hypertension, chronic ischaemic heart disease, coronary artery disease, and myocardial infarction. Complementary analyses provided confirmative evidence of the adverse effects of genetically predicted short sleep duration on the risks of 5 out of the 12 CVDs, including arterial hypertension, pulmonary embolism, coronary artery disease, myocardial infarction, and chronic ischaemic heart disease (P < 0.001), and suggestive evidence for atrial fibrillation (P < 0.05). However, genetically predicted long sleep duration was not associated with any CVD. Conclusion: This study suggests that genetically predicted short sleep duration is a potential causal risk factor of several CVDs, while genetically predicted long sleep duration is unlikely to be a causal risk factor for most CVDs.  © 2021 Published on behalf of the European Society of Cardiology. All rights reserved. 
+KW  - Cardiovascular disease
+KW  - Linear
+KW  - Long sleep duration
+KW  - Mendelian randomization
+KW  - Nonlinear
+KW  - Short sleep duration
+KW  - Biological Specimen Banks
+KW  - Cardiovascular Diseases
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Sleep
+KW  - United Kingdom
+KW  - adult
+KW  - Article
+KW  - atrial fibrillation
+KW  - biobank
+KW  - cardiovascular disease
+KW  - cardiovascular risk factor
+KW  - cohort analysis
+KW  - controlled study
+KW  - coronary artery disease
+KW  - disease association
+KW  - female
+KW  - genetic variability
+KW  - heart infarction
+KW  - human
+KW  - hypertension
+KW  - ischemic heart disease
+KW  - linear system
+KW  - lung embolism
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - nonlinear system
+KW  - sleep time
+KW  - United Kingdom
+KW  - cardiovascular disease
+KW  - epidemiology
+KW  - genetics
+KW  - genome-wide association study
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - sleep
+PB  - Oxford University Press
+SN  - 0195668X (ISSN)
+C2  - 33822910
+LA  - English
+J2  - Eur. Heart J.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 165; Correspondence Address: J. Zhang; Li Chiu Kong Family Sleep Assessment Unit, Department of Psychiatry, Faculty of Medicine, The Chinese University of Hong Kong, Sha Tin District, 33 A Kung Kok Street, 000000, Hong Kong; email: jihui.zhang@cuhk.edu.hk; CODEN: EHJOD
+ER  -
+

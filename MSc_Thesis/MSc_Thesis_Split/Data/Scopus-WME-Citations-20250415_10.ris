@@ -1,0 +1,583 @@
+﻿TY  - JOUR
+AU  - Davies, N.M.
+AU  - Holmes, M.V.
+AU  - Davey Smith, G.
+TI  - Reading Mendelian randomisation studies: A guide, glossary, and checklist for clinicians
+PY  - 2018
+T2  - BMJ (Online)
+VL  - 362
+C7  - 1567
+DO  - 10.1136/bmj.k601
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85050202541&doi=10.1136%2fbmj.k601&partnerID=40&md5=2879e6298e1d78a5fc5185ed088c9ffd
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Bristol, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford, Roosevelt Drive, Oxford, United Kingdom
+AD  - National Institute for Health Research Oxford Biomedical Research Centre, Oxford University Hospital, Oxford, United Kingdom
+AD  - National Institute for Health Research Bristol Biomedical Research Centre, Oakfield House, Oakfield Grove, Bristol, United Kingdom
+AB  - Mendelian randomisation uses genetic variation as a natural experiment to investigate the causal relations between potentially modifiable risk factors and health outcomes in observational data. As with all epidemiological approaches, findings from Mendelian randomisation studies depend on specific assumptions. We provide explanations of the information typically reported in Mendelian randomisation studies that can be used to assess the plausibility of these assumptions and guidance on how to interpret findings from Mendelian randomisation studies in the context of other sources of evidence. © Published by the BMJ Publishing Group Limited. For permission to use (where not already granted under a licence) please go to.
+KW  - Causality
+KW  - Confounding Factors (Epidemiology)
+KW  - Effect Modifier, Epidemiologic
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Observational Studies as Topic
+KW  - Outcome Assessment (Health Care)
+KW  - Public Health
+KW  - article
+KW  - checklist
+KW  - controlled study
+KW  - genetic variation
+KW  - Mendelian randomization analysis
+KW  - risk factor
+KW  - causality
+KW  - epidemiology
+KW  - genome-wide association study
+KW  - human
+KW  - observational study
+KW  - outcome assessment
+KW  - procedures
+KW  - public health
+KW  - statistics and numerical data
+PB  - BMJ Publishing Group
+SN  - 09598146 (ISSN)
+C2  - 30002074
+LA  - English
+J2  - BMJ (Online)
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 2630; Correspondence Address: N.M. Davies; Medical Research Council Integrative Epidemiology Unit, University of Bristol, United Kingdom; email: pa-ieudirector@bristol.ac.uk; CODEN: BMJOA
+ER  -
+
+TY  - JOUR
+AU  - Emdin, C.A.
+AU  - Khera, A.V.
+AU  - Kathiresan, S.
+TI  - Mendelian randomization
+PY  - 2017
+T2  - JAMA - Journal of the American Medical Association
+VL  - 318
+IS  - 19
+SP  - 1925
+EP  - 1926
+DO  - 10.1001/jama.2017.17219
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85036533388&doi=10.1001%2fjama.2017.17219&partnerID=40&md5=285f82be392f06ac375fa9586448ad62
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Harvard Medical School, Boston, United States
+AD  - Cardiovascular Disease Initiative, Broad Institute, Cambridge, MA, United States
+KW  - Cholesterol, HDL
+KW  - Coronary Disease
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - high density lipoprotein cholesterol
+KW  - cardiovascular risk
+KW  - disease association
+KW  - genetic association
+KW  - genetic variability
+KW  - human
+KW  - ischemic heart disease
+KW  - Mendelian randomization analysis
+KW  - multivariate analysis
+KW  - pleiotropy
+KW  - priority journal
+KW  - randomized controlled trial (topic)
+KW  - risk factor
+KW  - sample size
+KW  - Short Survey
+KW  - total cholesterol level
+KW  - blood
+KW  - coronary artery disease
+KW  - genetics
+KW  - procedures
+PB  - American Medical Association
+SN  - 00987484 (ISSN)
+C2  - 29164242
+LA  - English
+J2  - JAMA
+M3  - Short survey
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 2132; Correspondence Address: S. Kathiresan; Center for Genomic Medicine, Massachusetts General Hospital, Boston, 185 Cambridge St, CPZN 5.830, 02114, United States; email: skathiresan1@mgh.harvard.edu; CODEN: JAMAA
+ER  -
+
+TY  - JOUR
+AU  - Hartwig, F.P.
+AU  - Smith, G.D.
+AU  - Bowden, J.
+TI  - Robust inference in summary data Mendelian randomization via the zero modal pleiotropy assumption
+PY  - 2017
+T2  - International Journal of Epidemiology
+VL  - 46
+IS  - 6
+SP  - 1985
+EP  - 1998
+DO  - 10.1093/ije/dyx102
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85036649300&doi=10.1093%2fije%2fdyx102&partnerID=40&md5=fa6ea37f842b528bde779337727ef559
+AD  - Postgraduate Program in Epidemiology, Federal University of Pelotas, Pelotas, Brazil
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AB  - Background: Mendelian randomization (MR) is being increasingly used to strengthen causal inference in observational studies. Availability of summary data of genetic associations for a variety of phenotypes from large genome-wide association studies (GWAS) allows straightforward application of MR using summary data methods, typically in a two-sample design. In addition to the conventional inverse variance weighting (IVW) method, recently developed summary data MR methods, such as the MR-Egger and weighted median approaches, allow a relaxation of the instrumental variable assumptions. Methods: Here, a new method - the mode-based estimate (MBE) - is proposed to obtain a single causal effect estimate from multiple genetic instruments. The MBE is consistent when the largest number of similar (identical in infinite samples) individual-instrument causal effect estimates comes from valid instruments, even if the majority of instruments are invalid. We evaluate the performance of the method in simulations designed to mimic the two-sample summary data setting, and demonstrate its use by investigating the causal effect of plasma lipid fractions and urate levels on coronary heart disease risk. Results: The MBE presented less bias and lower type-I error rates than other methods under the null in many situations. Its power to detect a causal effect was smaller compared with the IVW and weighted median methods, but was larger than that of MR-Egger regression, with sample size requirements typically smaller than those available from GWAS consortia. Conclusions: The MBE relaxes the instrumental variable assumptions, and should be used in combination with other approaches in sensitivity analyses. © The Author 2017.
+KW  - Causality
+KW  - Genetic pleiotropy
+KW  - Genetic variation
+KW  - Instrumental variables
+KW  - Mendelian randomization
+KW  - Causality
+KW  - Genetic Pleiotropy
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Models, Statistical
+KW  - Sample Size
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - urate
+KW  - analytical method
+KW  - cardiovascular disease
+KW  - cytogenetics
+KW  - data set
+KW  - genetic analysis
+KW  - genetic variation
+KW  - genome
+KW  - instrumentation
+KW  - lipid
+KW  - numerical method
+KW  - phenotype
+KW  - pleiotropy
+KW  - regression analysis
+KW  - Article
+KW  - cholesterol blood level
+KW  - genetic variability
+KW  - human
+KW  - ischemic heart disease
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - priority journal
+KW  - simulation
+KW  - triacylglycerol blood level
+KW  - causality
+KW  - genome-wide association study
+KW  - sample size
+KW  - statistical model
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 29040600
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1938; Correspondence Address: F.P. Hartwig; Postgraduate Program in Epidemiology, Federal University of Pelotas, Pelotas, 96020-220, Brazil; email: fernandophartwig@gmail.com; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Thompson, S.G.
+TI  - Interpreting findings from Mendelian randomization using the MR-Egger method
+PY  - 2017
+T2  - European Journal of Epidemiology
+VL  - 32
+IS  - 5
+SP  - 377
+EP  - 389
+DO  - 10.1007/s10654-017-0255-x
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85019688623&doi=10.1007%2fs10654-017-0255-x&partnerID=40&md5=12df0574afeff2b5027c7a406efdc9e2
+AD  - MRC Biostatistics Unit, Cambridge Institute of Public Health, University of Cambridge, Forvie Site, Robinson Way, Cambridge, CB2 0SR, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AB  - Mendelian randomization-Egger (MR-Egger) is an analysis method for Mendelian randomization using summarized genetic data. MR-Egger consists of three parts: (1) a test for directional pleiotropy, (2) a test for a causal effect, and (3) an estimate of the causal effect. While conventional analysis methods for Mendelian randomization assume that all genetic variants satisfy the instrumental variable assumptions, the MR-Egger method is able to assess whether genetic variants have pleiotropic effects on the outcome that differ on average from zero (directional pleiotropy), as well as to provide a consistent estimate of the causal effect, under a weaker assumption—the InSIDE (INstrument Strength Independent of Direct Effect) assumption. In this paper, we provide a critical assessment of the MR-Egger method with regard to its implementation and interpretation. While the MR-Egger method is a worthwhile sensitivity analysis for detecting violations of the instrumental variable assumptions, there are several reasons why causal estimates from the MR-Egger method may be biased and have inflated Type 1 error rates in practice, including violations of the InSIDE assumption and the influence of outlying variants. The issues raised in this paper have potentially serious consequences for causal inferences from the MR-Egger approach. We give examples of scenarios in which the estimates from conventional Mendelian randomization methods and MR-Egger differ, and discuss how to interpret findings in such cases. © 2017, The Author(s).
+KW  - Instrumental variable
+KW  - Mendelian randomization
+KW  - MR-Egger
+KW  - Robust methods
+KW  - Summarized data
+KW  - Data Interpretation, Statistical
+KW  - Genetic Pleiotropy
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Models, Biological
+KW  - Random Allocation
+KW  - Risk Factors
+KW  - controlled clinical trial
+KW  - controlled study
+KW  - genetic variability
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - randomized controlled trial
+KW  - biological model
+KW  - genetic variation
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - procedures
+KW  - randomization
+KW  - risk factor
+KW  - statistical analysis
+PB  - Springer Netherlands
+SN  - 03932990 (ISSN)
+C2  - 28527048
+LA  - English
+J2  - Eur. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 2712; Correspondence Address: S. Burgess; Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: EJEPE
+ER  -
+
+TY  - JOUR
+AU  - Hemani, G.
+AU  - Zheng, J.
+AU  - Elsworth, B.
+AU  - Wade, K.H.
+AU  - Haberland, V.
+AU  - Baird, D.
+AU  - Laurin, C.
+AU  - Burgess, S.
+AU  - Bowden, J.
+AU  - Langdon, R.
+AU  - Tan, V.Y.
+AU  - Yarmolinsky, J.
+AU  - Shihab, H.A.
+AU  - Timpson, N.J.
+AU  - Evans, D.M.
+AU  - Relton, C.
+AU  - Martin, R.M.
+AU  - Davey Smith, G.
+AU  - Gaunt, T.R.
+AU  - Haycock, P.C.
+TI  - The MR-base platform supports systematic causal inference across the human phenome
+PY  - 2018
+T2  - eLife
+VL  - 7
+C7  - e34408
+DO  - 10.7554/eLife.34408
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85051679391&doi=10.7554%2feLife.34408&partnerID=40&md5=bdc2cddae5694691eee3745ad394715e
+AD  - Medical Research Council (MRC) Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - University of Queensland Diamantina Institute, Translational Research Institute, Brisbane, Australia
+AB  - Results from genome-wide association studies (GWAS) can be used to infer causal relationships between phenotypes, using a strategy known as 2-sample Mendelian randomization (2SMR) and bypassing the need for individual-level data. However, 2SMR methods are evolving rapidly and GWAS results are often insufficiently curated, undermining efficient implementation of the approach. We therefore developed MR-Base (http://www.mrbase.org): a platform that integrates a curated database of complete GWAS results (no restrictions according to statistical significance) with an application programming interface, web app and R packages that automate 2SMR. The software includes several sensitivity analyses for assessing the impact of horizontal pleiotropy and other violations of assumptions. The database currently comprises 11 billion single nucleotide polymorphism-trait associations from 1673 GWAS and is updated on a regular basis. Integrating data with software ensures more rigorous application of hypothesis-driven analyses and allows millions of potential causal relationships to be efficiently evaluated in phenome-wide association studies. © Hemani et al.
+KW  - Cholesterol, LDL
+KW  - Coronary Disease
+KW  - Databases, Genetic
+KW  - Genetic Pleiotropy
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Models, Genetic
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - low density lipoprotein cholesterol
+KW  - article
+KW  - controlled study
+KW  - gene mutation
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - phenotype
+KW  - pleiotropy
+KW  - randomized controlled trial
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - software
+KW  - statistical significance
+KW  - biological model
+KW  - coronary artery disease
+KW  - genetic database
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - metabolism
+PB  - eLife Sciences Publications Ltd
+SN  - 2050084X (ISSN)
+C2  - 29846171
+LA  - English
+J2  - eLife
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 4531; Correspondence Address: G. Hemani; Medical Research Council (MRC) Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom; email: g.hemani@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Hemani, G.
+AU  - Tilling, K.
+AU  - Davey Smith, G.
+TI  - Orienting the causal relationship between imprecisely measured traits using GWAS summary data
+PY  - 2017
+T2  - PLoS Genetics
+VL  - 13
+IS  - 11
+C7  - e1007081
+DO  - 10.1371/journal.pgen.1007081
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85036637858&doi=10.1371%2fjournal.pgen.1007081&partnerID=40&md5=3c16a762fbff41ee8f5da3db8d345f6a
+AD  - MRC Integrative Epidemiology Unit (IEU) at the University of Bristol, School of Social and Community Medicine, Bristol, United Kingdom
+AB  - Inference about the causal structure that induces correlations between two traits can be achieved by combining genetic associations with a mediation-based approach, as is done in the causal inference test (CIT). However, we show that measurement error in the phenotypes can lead to the CIT inferring the wrong causal direction, and that increasing sample sizes has the adverse effect of increasing confidence in the wrong answer. This problem is likely to be general to other mediation-based approaches. Here we introduce an extension to Mendelian randomisation, a method that uses genetic associations in an instrumentation framework, that enables inference of the causal direction between traits, with some advantages. First, it can be performed using only summary level data from genome-wide association studies; second, it is less susceptible to bias in the presence of measurement error or unmeasured confounding. We apply the method to infer the causal direction between DNA methylation and gene expression levels. Our results demonstrate that, in general, DNA methylation is more likely to be the causal factor, but this result is highly susceptible to bias induced by systematic differences in measurement error between the platforms, and by horizontal pleiotropy. We emphasise that, where possible, implementing MR and appropriate sensitivity analyses alongside other approaches such as CIT is important to triangulate reliable conclusions about causality. © 2017 Hemani et al.
+KW  - Bias
+KW  - DNA Methylation
+KW  - Gene Expression Regulation
+KW  - Genetic Association Studies
+KW  - Genome-Wide Association Study
+KW  - Mendelian Randomization Analysis
+KW  - Phenotype
+KW  - Sample Size
+KW  - DNA
+KW  - Article
+KW  - causal inference test
+KW  - causal modeling
+KW  - controlled study
+KW  - DNA methylation
+KW  - gene expression
+KW  - genetic association
+KW  - genome-wide association study
+KW  - measurement error
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - single nucleotide polymorphism
+KW  - gene expression regulation
+KW  - genetic association study
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - phenotype
+KW  - procedures
+KW  - sample size
+KW  - statistical bias
+PB  - Public Library of Science
+SN  - 15537390 (ISSN)
+C2  - 29149188
+LA  - English
+J2  - PLoS Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1416; Correspondence Address: G. Hemani; MRC Integrative Epidemiology Unit (IEU) at the University of Bristol, School of Social and Community Medicine, Bristol, United Kingdom; email: g.hemani@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Yavorska, O.O.
+AU  - Burgess, S.
+TI  - MendelianRandomization: An R package for performing Mendelian randomization analyses using summarized data
+PY  - 2017
+T2  - International Journal of Epidemiology
+VL  - 46
+IS  - 6
+SP  - 1734
+EP  - 1739
+DO  - 10.1093/ije/dyx034
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85039543207&doi=10.1093%2fije%2fdyx034&partnerID=40&md5=9d7f2e44271be436c11a5f5aa95dcc01
+AD  - Newnham College, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AB  - MendelianRandomization is a software package for the R open-source software environment that performs Mendelian randomization analyses using summarized data. The core functionality is to implement the inverse-variance weighted, MR-Egger and weighted median methods for multiple genetic variants. Several options are available to the user, such as the use of robust regression, fixed- or random-effects models and the penalization of weights for genetic variants with heterogeneous causal estimates. Extensions to these methods, such as allowing for variants to be correlated, can be chosen if appropriate. Graphical commands allow summarized data to be displayed in an interactive graph, or the plotting of causal estimates from multiple methods, for comparison. Although the main method of data entry is directly by the user, there is also an option for allowing summarized data to be incorporated from the PhenoScanner database of genotype- phenotype associations. We hope to develop this feature in future versions of the package. The R software environment is available for download from [https://www.rproject.org/]. The MendelianRandomization package can be downloaded from the Comprehensive R Archive Network (CRAN) within R, or directly from [https://cran.r-project.org/web/packages/MendelianRandomization/]. Both R and the MendelianRand omization package are released under GNU General Public Licenses (GPL-2jGPL-3). © The Author 2017.
+KW  - Causal inference
+KW  - Data parasite
+KW  - Instrumental variable
+KW  - Mendelian randomization
+KW  - Summarized data
+KW  - Two-sample
+KW  - Causality
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Software
+KW  - data
+KW  - data processing
+KW  - database
+KW  - epidemiology
+KW  - genetic variation
+KW  - genotype
+KW  - graphical method
+KW  - numerical method
+KW  - numerical model
+KW  - phenotype
+KW  - software
+KW  - Article
+KW  - data base
+KW  - genetic variability
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - phenotype
+KW  - priority journal
+KW  - software
+KW  - causality
+KW  - genetic variation
+KW  - Mendelian randomization analysis
+KW  - procedures
+KW  - software
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 28398548
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1285; Correspondence Address: S. Burgess; Strangeways Research Laboratory, Cambridge, 2 Worts Causeway, CB1 8RN, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Bowden, J.
+AU  - Del Greco M, F.
+AU  - Minelli, C.
+AU  - Davey Smith, G.
+AU  - Sheehan, N.
+AU  - Thompson, J.
+TI  - A framework for the investigation of pleiotropy in two-sample summary data Mendelian randomization
+PY  - 2017
+T2  - Statistics in Medicine
+VL  - 36
+IS  - 11
+SP  - 1783
+EP  - 1802
+DO  - 10.1002/sim.7221
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85010911865&doi=10.1002%2fsim.7221&partnerID=40&md5=dec193e8b461808be2d0bb84c0772f5e
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, United Kingdom
+AD  - Center for Biomedicine, EURAC research, Bolzano, Italy
+AD  - Population Health and Occupational Disease, NHLI, Imperial College, London, United Kingdom
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AB  - Mendelian randomization (MR) uses genetic data to probe questions of causality in epidemiological research, by invoking the Instrumental Variable (IV) assumptions. In recent years, it has become commonplace to attempt MR analyses by synthesising summary data estimates of genetic association gleaned from large and independent study populations. This is referred to as two-sample summary data MR. Unfortunately, due to the sheer number of variants that can be easily included into summary data MR analyses, it is increasingly likely that some do not meet the IV assumptions due to pleiotropy. There is a pressing need to develop methods that can both detect and correct for pleiotropy, in order to preserve the validity of the MR approach in this context. In this paper, we aim to clarify how established methods of meta-regression and random effects modelling from mainstream meta-analysis are being adapted to perform this task. Specifically, we focus on two contrastin g approaches: the Inverse Variance Weighted (IVW) method which assumes in its simplest form that all genetic variants are valid IVs, and the method of MR-Egger regression that allows all variants to violate the IV assumptions, albeit in a specific way. We investigate the ability of two popular random effects models to provide robustness to pleiotropy under the IVW approach, and propose statistics to quantify the relative goodness-of-fit of the IVW approach over MR-Egger regression. © 2017 The Authors. Statistics in Medicine Published by JohnWiley & Sons Ltd. © 2017 The Authors. Statistics in Medicine Published by JohnWiley & Sons Ltd
+KW  - instrumental variables
+KW  - Mendelian randomization
+KW  - meta-analysis
+KW  - MR-Egger regression
+KW  - pleiotropy
+KW  - Data Interpretation, Statistical
+KW  - Genetic Pleiotropy
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Meta-Analysis as Topic
+KW  - Models, Statistical
+KW  - controlled clinical trial
+KW  - controlled study
+KW  - genetic variability
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - model
+KW  - pleiotropy
+KW  - quantitative study
+KW  - randomized controlled trial
+KW  - statistics
+KW  - validity
+KW  - meta analysis (topic)
+KW  - statistical analysis
+KW  - statistical model
+PB  - John Wiley and Sons Ltd
+SN  - 02776715 (ISSN)
+C2  - 28114746
+LA  - English
+J2  - Stat. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1143; Correspondence Address: J. Bowden; MRC Integrative Epidemiology Unit, University of Bristol, United Kingdom; email: jack.bowden@bristol.ac.uk; CODEN: SMEDD
+ER  -
+
+TY  - JOUR
+AU  - Verbanck, M.
+AU  - Chen, C.-Y.
+AU  - Neale, B.
+AU  - Do, R.
+TI  - Detection of widespread horizontal pleiotropy in causal relationships inferred from Mendelian randomization between complex traits and diseases
+PY  - 2018
+T2  - Nature Genetics
+VL  - 50
+IS  - 5
+SP  - 693
+EP  - 698
+DO  - 10.1038/s41588-018-0099-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85045854182&doi=10.1038%2fs41588-018-0099-7&partnerID=40&md5=8080054a1005c3b74514a1a80ccaf1a1
+AD  - Charles Bronfman Institute for Personalized Medicine, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Icahn Institute for Genomics and Multiscale Biology, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Analytic and Translational Genetics Unit, Massachusetts General Hospital, Boston, MA, United States
+AD  - Program in Medical and Population Genetics, Broad Institute, Cambridge, MA, United States
+AD  - Stanley Center for Psychiatric Research, Broad Institute, Cambridge, MA, United States
+AB  - Horizontal pleiotropy occurs when the variant has an effect on disease outside of its effect on the exposure in Mendelian randomization (MR). Violation of the 'no horizontal pleiotropy' assumption can cause severe bias in MR. We developed the Mendelian randomization pleiotropy residual sum and outlier (MR-PRESSO) test to identify horizontal pleiotropic outliers in multi-instrument summary-level MR testing. We showed using simulations that the MR-PRESSO test is best suited when horizontal pleiotropy occurs in <50% of instruments. Next we applied the MR-PRESSO test, along with several other MR tests, to complex traits and diseases and found that horizontal pleiotropy (i) was detectable in over 48% of significant causal relationships in MR; (ii) introduced distortions in the causal estimates in MR that ranged on average from -131% to 201%; (iii) induced false-positive causal relationships in up to 10% of relationships; and (iv) could be corrected in some but not all instances. © 2018 The Author(s).
+KW  - Disease
+KW  - Genetic Pleiotropy
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Humans
+KW  - Article
+KW  - causal attribution
+KW  - diseases
+KW  - false positive result
+KW  - genetic trait
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - priority journal
+KW  - simulation
+KW  - diseases
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - genetics
+KW  - human
+KW  - pleiotropy
+PB  - Nature Publishing Group
+SN  - 10614036 (ISSN)
+C2  - 29686387
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 5038; Correspondence Address: B. Neale; Charles Bronfman Institute for Personalized Medicine, Icahn School of Medicine at Mount Sinai, New York, United States; email: bneale@broadinstitute.org; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Bowden, J.
+AU  - Fall, T.
+AU  - Ingelsson, E.
+AU  - Thompson, S.G.
+TI  - Sensitivity analyses for robust causal inference from mendelian randomization analyses with multiple genetic variants
+PY  - 2017
+T2  - Epidemiology
+VL  - 28
+IS  - 1
+SP  - 30
+EP  - 42
+DO  - 10.1097/EDE.0000000000000559
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84991449483&doi=10.1097%2fEDE.0000000000000559&partnerID=40&md5=29301a84d5f7f34573e057fdc6f84a75
+AD  - Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, 2 Worts Causeway, Cambridge, CB1 8RN, United Kingdom
+AD  - Medical Research Council Integrative Epidemiology Unit, School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Department of Medical Sciences, Molecular Epidemiology, Uppsala University, Uppsala, Sweden
+AB  - Mendelian randomization investigations are becoming more powerful and simpler to perform, due to the increasing size and coverage of genome-wide association studies and the increasing availability of summarized data on genetic associations with risk factors and disease outcomes. However, when using multiple genetic variants from different gene regions in a Mendelian randomization analysis, it is highly implausible that all the genetic variants satisfy the instrumental variable assumptions. This means that a simple instrumental variable analysis alone should not be relied on to give a causal conclusion. In this article, we discuss a range of sensitivity analyses that will either support or question the validity of causal inference from a Mendelian randomization analysis with multiple genetic variants. We focus on sensitivity analyses of greatest practical relevance for ensuring robust causal inferences, and those that can be undertaken using summarized data. Aside from cases in which the justification of the instrumental variable assumptions is supported by strong biological understanding, a Mendelian randomization analysis in which no assessment of the robustness of the findings to violations of the instrumental variable assumptions has been made should be viewed as speculative and incomplete. In particular, Mendelian randomization investigations with large numbers of genetic variants without such sensitivity analyses should be treated with skepticism. © 2016 Wolters Kluwer Health, Inc.
+KW  - C-Reactive Protein
+KW  - Causality
+KW  - Coronary Artery Disease
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Odds Ratio
+KW  - Reproducibility of Results
+KW  - C reactive protein
+KW  - C reactive protein
+KW  - causality
+KW  - coronary artery disease
+KW  - covariance
+KW  - genetic association
+KW  - genetic variability
+KW  - genotype environment interaction
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - plots and curves
+KW  - priority journal
+KW  - regression analysis
+KW  - Review
+KW  - sensitivity analysis
+KW  - validity
+KW  - variance
+KW  - genetic variation
+KW  - genetics
+KW  - genome-wide association study
+KW  - odds ratio
+KW  - reproducibility
+PB  - Lippincott Williams and Wilkins
+SN  - 10443983 (ISSN)
+C2  - 27749700
+LA  - English
+J2  - Epidemiology
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1195; Correspondence Address: S. Burgess; Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, 2 Worts Causeway, CB1 8RN, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: EPIDE
+ER  -
+

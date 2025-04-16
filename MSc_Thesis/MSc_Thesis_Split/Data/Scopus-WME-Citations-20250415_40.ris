@@ -1,0 +1,1811 @@
+﻿TY  - JOUR
+AU  - Dashti, H.S.
+AU  - Jones, S.E.
+AU  - Wood, A.R.
+AU  - Lane, J.M.
+AU  - van Hees, V.T.
+AU  - Wang, H.
+AU  - Rhodes, J.A.
+AU  - Song, Y.
+AU  - Patel, K.
+AU  - Anderson, S.G.
+AU  - Beaumont, R.N.
+AU  - Bechtold, D.A.
+AU  - Bowden, J.
+AU  - Cade, B.E.
+AU  - Garaulet, M.
+AU  - Kyle, S.D.
+AU  - Little, M.A.
+AU  - Loudon, A.S.
+AU  - Luik, A.I.
+AU  - Scheer, F.A.J.L.
+AU  - Spiegelhalder, K.
+AU  - Tyrrell, J.
+AU  - Gottlieb, D.J.
+AU  - Tiemeier, H.
+AU  - Ray, D.W.
+AU  - Purcell, S.M.
+AU  - Frayling, T.M.
+AU  - Redline, S.
+AU  - Lawlor, D.A.
+AU  - Rutter, M.K.
+AU  - Weedon, M.N.
+AU  - Saxena, R.
+TI  - Genome-wide association study identifies genetic loci for self-reported habitual sleep duration supported by accelerometer-derived estimates
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 1100
+DO  - 10.1038/s41467-019-08917-4
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85062583459&doi=10.1038%2fs41467-019-08917-4&partnerID=40&md5=9e808559eecb0d062b49d8ed403ab1a8
+AD  - Center for Genomic Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, 02114, MA, United States
+AD  - Broad Institute, Cambridge, 02142, MA, United States
+AD  - Genetics of Complex Traits, University of Exeter Medical School, Exeter, EX2 5DW, United Kingdom
+AD  - Department of Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, 02114, MA, United States
+AD  - Netherlands eScience Center, Amsterdam, 1098 XG, Netherlands
+AD  - Division of Sleep and Circadian Disorders, Department of Medicine, Brigham and Women’s Hospital, Boston, 02115, MA, United States
+AD  - Division of Sleep Medicine, Harvard Medical School, Boston, 02115, MA, United States
+AD  - Northeastern University College of Science, 176 Mugar Life Sciences, 360 Huntington Avenue, Boston, 02015, MA, United States
+AD  - Division of Cardiovascular Sciences, School of Medical Sciences, Faculty of Biology, Medicine and Health, The University of Manchester, Manchester, M13 9PL, United Kingdom
+AD  - Division of Endocrinology, Diabetes & Gastroenterology, School of Medical Sciences, Faculty of Biology, Medicine and Health, University of Manchester, Manchester, M13 9PL, United Kingdom
+AD  - MRC Integrative Epidemiology Unit at the University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Department of Physiology, University of Murcia, Murcia, 30100, Spain
+AD  - IMIB-Arrixaca, Murcia, 30120, Spain
+AD  - Sleep and Circadian Neuroscience Institute, Nuffield Department of Clinical Neurosciences, University of Oxford, Oxford, OX3 7LF, United Kingdom
+AD  - Department of Mathematics, Aston University, Birmingham, B4 7ET, United Kingdom
+AD  - Media Lab, Massachusetts Institute of Technology, Cambridge, 02139, MA, United States
+AD  - Medical Chronobiology Program, Division of Sleep and Circadian Disorders, Departments of Medicine and Neurology, Brigham and Women’s Hospital, Boston, 02115, MA, United States
+AD  - Clinic for Psychiatry and Psychotherapy, Medical Centre - University of Freiburg, Faculty of Medicine, University of Freiburg, Freiburg, 79106, Germany
+AD  - VA Boston Healthcare System, Boston, 02132, MA, United States
+AD  - Deprtment of Social and Behavioral Science, Harvard TH Chan School of Public Health, Boston, 02115, MA, United States
+AD  - Department of Epidemiology, Erasmus Medical Center, Rotterdam, 3015, Netherlands
+AD  - Department of Psychiatry, Brigham & Women’s Hospital, Harvard Medical School, 02115, Boston, MA, United States
+AD  - Departments of Medicine, Brigham and Women’s Hospital and Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, 02115, MA, United States
+AD  - Manchester Diabetes Centre, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre, Manchester, M13 9PL, United Kingdom
+AB  -                              Sleep is an essential state of decreased activity and alertness but molecular factors regulating sleep duration remain unknown. Through genome-wide association analysis in 446,118 adults of European ancestry from the UK Biobank, we identify 78 loci for self-reported habitual sleep duration (p < 5 × 10                             −8                             ; 43 loci at p < 6 × 10                             −9                             ). Replication is observed for PAX8, VRK2, and FBXL12/UBL5/PIN1 loci in the CHARGE study (n = 47,180; p < 6.3 × 10                             −4                             ), and 55 signals show sign-concordant effects. The 78 loci further associate with accelerometer-derived sleep duration, daytime inactivity, sleep efficiency and number of sleep bouts in secondary analysis (n = 85,499). Loci are enriched for pathways including striatum and subpallium development, mechanosensory response, dopamine binding, synaptic neurotransmission and plasticity, among others. Genetic correlation indicates shared links with anthropometric, cognitive, metabolic, and psychiatric traits and two-sample Mendelian randomization highlights a bidirectional causal link with schizophrenia. This work provides insights into the genetic basis for inter-individual variation in sleep duration implicating multiple biological pathways.                          © 2019, The Author(s).
+KW  - Accelerometry
+KW  - Adult
+KW  - Aged
+KW  - European Continental Ancestry Group
+KW  - Female
+KW  - Genetic Loci
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Linkage Disequilibrium
+KW  - Male
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Schizophrenia
+KW  - Self Report
+KW  - Sleep
+KW  - United Kingdom
+KW  - United Kingdom
+KW  - 4 aminobutyric acid
+KW  - acyl coenzyme A desaturase 1
+KW  - catecholamine
+KW  - dat1 protein
+KW  - dopamine
+KW  - dopamine 2 receptor
+KW  - dopamine transporter
+KW  - epidermal growth factor receptor 4
+KW  - gabrr1 protein
+KW  - gnao1 protein
+KW  - ksr2 protein
+KW  - mitogen activated protein kinase
+KW  - nova1 protein
+KW  - orexin 2 receptor
+KW  - pde4b protein
+KW  - pde4d protein
+KW  - phosphoprotein
+KW  - protein
+KW  - semaphorin 3F
+KW  - synaptobrevin 2
+KW  - transcription factor PAX8
+KW  - transcription factor Pitx3
+KW  - transcriptome
+KW  - unclassified drug
+KW  - unsaturated fatty acid
+KW  - vrk2 protein
+KW  - accelerometer
+KW  - ancestry
+KW  - estimation method
+KW  - genetic algorithm
+KW  - genetic analysis
+KW  - genome
+KW  - identification method
+KW  - instrumentation
+KW  - sleep
+KW  - accelerometry
+KW  - adult
+KW  - aged
+KW  - anthropometry
+KW  - Article
+KW  - biobank
+KW  - brain cortex
+KW  - brain development
+KW  - cognition
+KW  - corpus striatum
+KW  - European
+KW  - female
+KW  - gene expression
+KW  - gene locus
+KW  - genetic correlation
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - habit
+KW  - human
+KW  - insomnia
+KW  - major clinical study
+KW  - male
+KW  - mechanotransduction
+KW  - nerve cell plasticity
+KW  - polysomnography
+KW  - prospective study
+KW  - schizophrenia
+KW  - self report
+KW  - single nucleotide polymorphism
+KW  - sleep quality
+KW  - sleep time
+KW  - synaptic transmission
+KW  - accelerometry
+KW  - Caucasian
+KW  - gene linkage disequilibrium
+KW  - genetics
+KW  - genome-wide association study
+KW  - middle aged
+KW  - pathophysiology
+KW  - physiology
+KW  - self report
+KW  - sleep
+KW  - United Kingdom
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 30846698
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 372; Correspondence Address: R. Saxena; Center for Genomic Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, 02114, United States; email: rsaxena@partners.org
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Foley, C.N.
+AU  - Allara, E.
+AU  - Staley, J.R.
+AU  - Howson, J.M.M.
+TI  - A robust and efficient method for Mendelian randomization with hundreds of genetic variants
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 376
+DO  - 10.1038/s41467-019-14156-4
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85078003336&doi=10.1038%2fs41467-019-14156-4&partnerID=40&md5=3f0f163ed32480b748e4be89a35ebfea
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - BHF Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - NIHR Blood and Transplant Research Unit in Donor Health and Genomics, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - National Institute for Health Research Cambridge Biomedical Research Centre, University of Cambridge and Cambridge University Hospitals, Cambridge, United Kingdom
+AD  - Novo Nordisk Research Centre Oxford, Innovation Building - Old Road Campus, Roosevelt Drive, Oxford, United Kingdom
+AB  - Mendelian randomization (MR) is an epidemiological technique that uses genetic variants to distinguish correlation from causation in observational data. The reliability of a MR investigation depends on the validity of the genetic variants as instrumental variables (IVs). We develop the contamination mixture method, a method for MR with two modalities. First, it identifies groups of genetic variants with similar causal estimates, which may represent distinct mechanisms by which the risk factor influences the outcome. Second, it performs MR robustly and efficiently in the presence of invalid IVs. Compared to other robust methods, it has the lowest mean squared error across a range of realistic scenarios. The method identifies 11 variants associated with increased high-density lipoprotein-cholesterol, decreased triglyceride levels, and decreased coronary heart disease risk that have the same directions of associations with various blood cell traits, suggesting a shared mechanism linking lipids and coronary heart disease risk mediated via platelet aggregation. © 2020, The Author(s).
+KW  - Body Mass Index
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Coronary Disease
+KW  - Diabetes Mellitus, Type 2
+KW  - Genetic Association Studies
+KW  - Genetic Pleiotropy
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Models, Genetic
+KW  - Molecular Epidemiology
+KW  - Phenotype
+KW  - Reproducibility of Results
+KW  - Research Design
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - hemoglobin A1c
+KW  - high density lipoprotein cholesterol
+KW  - hydroxymethylglutaryl coenzyme A reductase inhibitor
+KW  - triacylglycerol
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - epidemiology
+KW  - genetic variation
+KW  - instrumentation
+KW  - methodology
+KW  - risk factor
+KW  - Article
+KW  - body mass
+KW  - cardiovascular risk
+KW  - diabetes mellitus
+KW  - gene frequency
+KW  - gene location
+KW  - genetic association
+KW  - genetic variability
+KW  - Gensini score
+KW  - health disparity
+KW  - high birth weight
+KW  - human
+KW  - ischemic heart disease
+KW  - mean corpuscular hemoglobin
+KW  - Mendelian randomization analysis
+KW  - platelet distribution width
+KW  - pleiotropy
+KW  - risk factor
+KW  - RNA sequence
+KW  - sensitivity analysis
+KW  - simulation
+KW  - single nucleotide polymorphism
+KW  - thrombocyte aggregation
+KW  - biological model
+KW  - blood
+KW  - coronary artery disease
+KW  - genetic association study
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - methodology
+KW  - molecular epidemiology
+KW  - non insulin dependent diabetes mellitus
+KW  - phenotype
+KW  - procedures
+KW  - reproducibility
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 31953392
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 374; Correspondence Address: S. Burgess; MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Papadimitriou, N.
+AU  - Dimou, N.
+AU  - Tsilidis, K.K.
+AU  - Banbury, B.
+AU  - Martin, R.M.
+AU  - Lewis, S.J.
+AU  - Kazmi, N.
+AU  - Robinson, T.M.
+AU  - Albanes, D.
+AU  - Aleksandrova, K.
+AU  - Berndt, S.I.
+AU  - Timothy Bishop, D.
+AU  - Brenner, H.
+AU  - Buchanan, D.D.
+AU  - Bueno-de-Mesquita, B.
+AU  - Campbell, P.T.
+AU  - Castellví-Bel, S.
+AU  - Chan, A.T.
+AU  - Chang-Claude, J.
+AU  - Ellingjord-Dale, M.
+AU  - Figueiredo, J.C.
+AU  - Gallinger, S.J.
+AU  - Giles, G.G.
+AU  - Giovannucci, E.
+AU  - Gruber, S.B.
+AU  - Gsur, A.
+AU  - Hampe, J.
+AU  - Hampel, H.
+AU  - Harlid, S.
+AU  - Harrison, T.A.
+AU  - Hoffmeister, M.
+AU  - Hopper, J.L.
+AU  - Hsu, L.
+AU  - María Huerta, J.
+AU  - Huyghe, J.R.
+AU  - Jenkins, M.A.
+AU  - Keku, T.O.
+AU  - Kühn, T.
+AU  - La Vecchia, C.
+AU  - Le Marchand, L.
+AU  - Li, C.I.
+AU  - Li, L.
+AU  - Lindblom, A.
+AU  - Lindor, N.M.
+AU  - Lynch, B.
+AU  - Markowitz, S.D.
+AU  - Masala, G.
+AU  - May, A.M.
+AU  - Milne, R.
+AU  - Monninkhof, E.
+AU  - Moreno, L.
+AU  - Moreno, V.
+AU  - Newcomb, P.A.
+AU  - Offit, K.
+AU  - Perduca, V.
+AU  - Pharoah, P.D.P.
+AU  - Platz, E.A.
+AU  - Potter, J.D.
+AU  - Rennert, G.
+AU  - Riboli, E.
+AU  - Sánchez, M.-J.
+AU  - Schmit, S.L.
+AU  - Schoen, R.E.
+AU  - Severi, G.
+AU  - Sieri, S.
+AU  - Slattery, M.L.
+AU  - Song, M.
+AU  - Tangen, C.M.
+AU  - Thibodeau, S.N.
+AU  - Travis, R.C.
+AU  - Trichopoulou, A.
+AU  - Ulrich, C.M.
+AU  - van Duijnhoven, F.J.B.
+AU  - Van Guelpen, B.
+AU  - Vodicka, P.
+AU  - White, E.
+AU  - Wolk, A.
+AU  - Woods, M.O.
+AU  - Wu, A.H.
+AU  - Peters, U.
+AU  - Gunter, M.J.
+AU  - Murphy, N.
+TI  - Physical activity and risks of breast and colorectal cancer: a Mendelian randomisation analysis
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 597
+DO  - 10.1038/s41467-020-14389-8
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85078709648&doi=10.1038%2fs41467-020-14389-8&partnerID=40&md5=fb409f3cb36e91f3446888a2d49e2756
+AD  - Section of Nutrition and Metabolism, International Agency for Research on Cancer, Lyon, France
+AD  - Department of Hygiene and Epidemiology, University of Ioannina School of Medicine, Ioannina, Greece
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Public Health Sciences Division, Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Bristol Medical School, Department of Population Health Sciences, University of Bristol, Bristol, United Kingdom
+AD  - National Institute for Health Research (NIHR) Bristol Biomedical Research Centre, University Hospitals Bristol NHS Foundation Trust and the University of Bristol, Bristol, United Kingdom
+AD  - Division of Cancer Epidemiology and Genetics, National Cancer Institute, National Institutes of Health, Bethesda, MA, United States
+AD  - German Institute of Human Nutrition Potsdam-Rehbruecke (DIfE), Arthur-Scheunert-Allee 114-116, Nuthetal, 14558, Germany
+AD  - Leeds Institute of Cancer and Pathology, University of Leeds, Leeds, United Kingdom
+AD  - Division of Clinical Epidemiology and Aging Research, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Division of Preventive Oncology, German Cancer Research Center (DKFZ) and National Center for Tumor Diseases (NCT), Heidelberg, Germany
+AD  - German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health, The University of Melbourne, Melbourne, VIC, Australia
+AD  - Colorectal Oncogenomics Group, Genetic Epidemiology Laboratory, Department of Pathology, The University of Melbourne, Parkville, VIC, Australia
+AD  - Genetic Medicine and Family Cancer Clinic, The Royal Melbourne Hospital, Parkville, VIC, Australia
+AD  - Former senior scientist, Dept. for Determinants of Chronic Diseases (DCD), National Institute for Public Health and the Environment (RIVM), PO Box 1, Bilthoven, 3720 BA, Netherlands
+AD  - Former associate professor, Department of Gastroenterology and Hepatology, University Medical Centre, Utrecht, Netherlands
+AD  - Former visiting professor, Dept. of Epidemiology and Biostatistics, The School of Public Health, Imperial College London, St Mary’s Campus, Norfolk Place, London, London, W2 1PG, United Kingdom
+AD  - Former academic Icon / visiting professor, Dept. of Social & Preventive Medicine, Faculty of Medicine, University of Malaya, Pantai Valley, Kuala Lumpur, 50603, Malaysia
+AD  - Behavioral and Epidemiology Research Group, American Cancer Society, Atlanta, GA, United States
+AD  - Gastroenterology Department, Hospital Clínic, Institut d’Investigacions Biomèdiques August Pi i Sunyer (IDIBAPS), Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBEREHD), University of Barcelona, Barcelona, Spain
+AD  - Division of Gastroenterology, Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Clinical and Translational Epidemiology Unit, Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Division of Cancer Epidemiology, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - University Medical Centre Hamburg-Eppendorf, University Cancer Centre Hamburg (UCCH), Hamburg, Germany
+AD  - Department of Medicine, Samuel Oschin Comprehensive Cancer Institute, Cedars-Sinai Medical Center, Los Angeles, CA, United States
+AD  - Department of Preventive Medicine, Keck School of Medicine, University of Southern California, Los Angeles, CA, United States
+AD  - Lunenfeld Tanenbaum Research Institute, Mount Sinai Hospital, University of Toronto, Toronto, ON, Canada
+AD  - Cancer Epidemiology and Intelligence Division, Cancer Council Victoria, Melbourne, VIC, Australia
+AD  - Department of Epidemiology, Harvard T.H. Chan School of Public Health, Harvard University, Boston, MA, United States
+AD  - Department of Nutrition, T.H. H, Chan School of Public Health, Boston, MA, United States
+AD  - Channing Division of Network Medicine, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Department of Preventive Medicine, USC Norris Comprehensive Cancer Center, Keck School of Medicine, University of Southern California, Los Angeles, CA, United States
+AD  - Institute of Cancer Research, Department of Medicine I, Medical University Vienna, Vienna, Austria
+AD  - Department of Medicine I, University Hospital Dresden, Technische Universität Dresden (TU Dresden), Dresden, Germany
+AD  - Division of Human Genetics, Department of Internal Medicine, The Ohio State University Comprehensive Cancer Center, Columbus, OH, United States
+AD  - Department of Radiation Sciences, Oncology, Umea University, Umea, 901 87, Sweden
+AD  - Department of Epidemiology, School of Public Health and Institute of Health and Environment, Seoul National University, Seoul, South Korea
+AD  - Department of Biostatistics, University of Washington, Seattle, WA, United States
+AD  - CIBER de Epidemiología y Salud Pública (CIBERESP), Madrid, Spain
+AD  - Department of Epidemiology, Murcia Regional Health Council, IMIB-Arrixaca, Murcia, Spain
+AD  - Center for Gastrointestinal Biology and Disease, University of North Carolina, Chapel Hill, NC, United States
+AD  - Hellenic Health Foundation, Athens, Greece
+AD  - Dept. of Clinical Sciences and Community Health, Università degli Studi di Milano, Milano, Italy
+AD  - University of Hawaii Cancer Center, Honolulu, HI, United States
+AD  - Department of Family Medicine, University of Virginia, Charlottesville, VA, United States
+AD  - Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden
+AD  - Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden
+AD  - Department of Health Science Research, Mayo Clinic, Scottsdale, AZ, United States
+AD  - Physical Activity Laboratory, Baker Heart and Diabetes Institute, Melbourne, VIC, Australia
+AD  - Departments of Medicine and Genetics, Case Comprehensive Cancer Center, Case Western Reserve University, and University Hospitals of Cleveland, Cleveland, OH, United States
+AD  - Cancer Risk Factors and Life-Style Epidemiology Unit, Institute for Cancer Research, Prevention and Clinical Network - ISPRO, Florence, Italy
+AD  - Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht, Utrecht University, P.O. Box 85500, UTRECHT, 3508 GA, Netherlands
+AD  - Genetic Epidemiology Laboratory, Department of Pathology, The University of Melbourne, Parkville, VIC, Australia
+AD  - Cancer Prevention and Control Program, Catalan Institute of Oncology-IDIBELL, L’Hospitalet de Llobregat, Barcelona, Spain
+AD  - Department of Clinical Sciences, Faculty of Medicine, University of Barcelona, Barcelona, Spain
+AD  - School of Public Health, University of Washington, Seattle, WA, United States
+AD  - Clinical Genetics Service, Department of Medicine, Memorial Sloan-Kettering Cancer Center, New York, NY, United States
+AD  - Department of Medicine, Weill Cornell Medical College, New York, NY, United States
+AD  - CESP, Fac. de médecine - Univ. Paris-Sud, Fac. de médecine - UVSQ I, Université Paris-Saclay, Villejuif, 94805, France
+AD  - Gustave Roussy, Villejuif, F-94805, France
+AD  - Laboratoire de Mathématiques Appliquées MAP5 (UMR CNRS 8145), Université Paris Descartes, Paris, France
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, United States
+AD  - Department of Community Medicine and Epidemiology, Lady Davis Carmel Medical Center, Haifa, Israel
+AD  - Ruth and Bruce Rappaport Faculty of Medicine, Technion-Israel Institute of Technology, Haifa, Israel
+AD  - Clalit National Cancer Control Center, Haifa, Israel
+AD  - Andalusian School of Public Health, Biomedical Research Institute ibs.GRANADA, University of Granada, Granada, Spain
+AD  - Department of Cancer Epidemiology, H. Lee Moffitt Cancer Center and Research Institute, Tampa, FL, United States
+AD  - Department of Medicine and Epidemiology, University of Pittsburgh Medical Center, Pittsburgh, PA, United States
+AD  - Epidemiology and Prevention Unit, Fondazione IRCCS Istituto Nazionale dei Tumori, Milan, Italy
+AD  - Department of Internal Medicine, University of Utah, Salt Lake City, UT, United States
+AD  - SWOG Statistical Center, Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - Division of Laboratory Genetics, Department of Laboratory Medicine and Pathology, Mayo Clinic, Rochester, MN, United States
+AD  - Cancer Epidemiology Unit, Nuffield Department of Population Health, University of Oxford, Oxford, OX3 7LF, United Kingdom
+AD  - Huntsman Cancer Institute and Department of Population Health Sciences, University of Utah, Salt Lake City, UT, United States
+AD  - Division of Human Nutrition, Wageningen University and Research, Wageningen, Netherlands
+AD  - Department of Radiation Sciences, Oncology Unit, Umeå University, Umeå, Sweden
+AD  - Wallenberg Centre for Molecular Medicine, Umeå University, Umeå, Sweden
+AD  - Department of Molecular Biology of Cancer, Institute of Experimental Medicine of the Czech Academy of Sciences, Prague, Czech Republic
+AD  - Faculty of Medicine and Biomedical Center in Pilsen, Charles University, Pilsen, Czech Republic
+AD  - Institute of Biology and Medical Genetics, First Faculty of Medicine, Charles University, Prague, Czech Republic
+AD  - Department of Epidemiology, University of Washington, Seattle, WA, United States
+AD  - Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Memorial University of Newfoundland, Discipline of Genetics, St. John’s, Canada
+AD  - University of Southern California, Preventative Medicine, Los Angeles, CA, United States
+AB  - Physical activity has been associated with lower risks of breast and colorectal cancer in epidemiological studies; however, it is unknown if these associations are causal or confounded. In two-sample Mendelian randomisation analyses, using summary genetic data from the UK Biobank and GWA consortia, we found that a one standard deviation increment in average acceleration was associated with lower risks of breast cancer (odds ratio [OR]: 0.51, 95% confidence interval [CI]: 0.27 to 0.98, P-value = 0.04) and colorectal cancer (OR: 0.66, 95% CI: 0.48 to 0.90, P-value = 0.01). We found similar magnitude inverse associations for estrogen positive (ER+ve) breast cancer and for colon cancer. Our results support a potentially causal relationship between higher physical activity levels and lower risks of breast cancer and colorectal cancer. Based on these data, the promotion of physical activity is probably an effective strategy in the primary prevention of these commonly diagnosed cancers. © 2020, The Author(s).
+KW  - Accelerometry
+KW  - Breast Neoplasms
+KW  - Colorectal Neoplasms
+KW  - Exercise
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Odds Ratio
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - adenine
+KW  - cytosine
+KW  - estrogen receptor
+KW  - guanine
+KW  - thymine
+KW  - cancer
+KW  - confidence interval
+KW  - database
+KW  - epidemiology
+KW  - health risk
+KW  - physical activity
+KW  - Article
+KW  - biobank
+KW  - breast cancer
+KW  - cancer risk
+KW  - clinical effectiveness
+KW  - colorectal cancer
+KW  - confidence interval
+KW  - estrogen receptor positive breast cancer
+KW  - genetic heterogeneity
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - odds ratio
+KW  - physical activity
+KW  - primary prevention
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - United Kingdom
+KW  - accelerometry
+KW  - breast tumor
+KW  - colorectal tumor
+KW  - exercise
+KW  - female
+KW  - genetic predisposition
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - risk factor
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 32001714
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 376; Correspondence Address: N. Murphy; Section of Nutrition and Metabolism, International Agency for Research on Cancer, Lyon, France; email: MurphyN@iarc.fr
+ER  -
+
+TY  - JOUR
+AU  - Haycock, P.C.
+AU  - Burgess, S.
+AU  - Nounu, A.
+AU  - Zheng, J.
+AU  - Okoli, G.N.
+AU  - Bowden, J.
+AU  - Wade, K.H.
+AU  - Timpson, N.J.
+AU  - Evans, D.M.
+AU  - Willeit, P.
+AU  - Aviv, A.
+AU  - Gaunt, T.R.
+AU  - Hemani, G.
+AU  - Mangino, M.
+AU  - Ellis, H.P.
+AU  - Kurian, K.M.
+AU  - Pooley, K.A.
+AU  - Eeles, R.A.
+AU  - Lee, J.E.
+AU  - Fang, S.
+AU  - Chen, W.V.
+AU  - Law, M.H.
+AU  - Bowdler, L.M.
+AU  - Iles, M.M.
+AU  - Yang, Q.
+AU  - Worrall, B.B.
+AU  - Markus, H.S.
+AU  - Hung, R.J.
+AU  - Amos, C.I.
+AU  - Spurdle, A.B.
+AU  - Thompson, D.J.
+AU  - O'Mara, T.A.
+AU  - Wolpin, B.
+AU  - Amundadottir, L.
+AU  - Stolzenberg-Solomon, R.
+AU  - Trichopoulou, A.
+AU  - Onland-Moret, N.C.
+AU  - Lund, E.
+AU  - Duell, E.J.
+AU  - Canzian, F.
+AU  - Severi, G.
+AU  - Overvad, K.
+AU  - Gunter, M.J.
+AU  - Tumino, R.
+AU  - Svenson, U.
+AU  - Van Rij, A.
+AU  - Baas, A.F.
+AU  - Bown, M.J.
+AU  - Samani, N.J.
+AU  - Van t'Hof, F.N.G.
+AU  - Tromp, G.
+AU  - Jones, G.T.
+AU  - Kuivaniemi, H.
+AU  - Elmore, J.R.
+AU  - Johansson, M.
+AU  - Mckay, J.
+AU  - Scelo, G.
+AU  - Carreras-Torres, R.
+AU  - Gaborieau, V.
+AU  - Brennan, P.
+AU  - Bracci, P.M.
+AU  - Neale, R.E.
+AU  - Olson, S.H.
+AU  - Gallinger, S.
+AU  - Li, D.
+AU  - Petersen, G.M.
+AU  - Risch, H.A.
+AU  - Klein, A.P.
+AU  - Han, J.
+AU  - Abnet, C.C.
+AU  - Freedman, N.D.
+AU  - Taylor, P.R.
+AU  - Maris, J.M.
+AU  - Aben, K.K.
+AU  - Kiemeney, L.A.
+AU  - Vermeulen, S.H.
+AU  - Wiencke, J.K.
+AU  - Walsh, K.M.
+AU  - Wrensch, M.
+AU  - Rice, T.
+AU  - Turnbull, C.
+AU  - Litchfield, K.
+AU  - Paternoster, L.
+AU  - Standl, M.
+AU  - Abecasis, G.R.
+AU  - SanGiovanni, J.P.
+AU  - Li, Y.
+AU  - Mijatovic, V.
+AU  - Sapkota, Y.
+AU  - Low, S.-K.
+AU  - Zondervan, K.T.
+AU  - Montgomery, G.W.
+AU  - Nyholt, D.R.
+AU  - Van Heel, D.A.
+AU  - Hunt, K.
+AU  - Arking, D.E.
+AU  - Ashar, F.N.
+AU  - Sotoodehnia, N.
+AU  - Woo, D.
+AU  - Rosand, J.
+AU  - Comeau, M.E.
+AU  - Brown, W.M.
+AU  - Silverman, E.K.
+AU  - Hokanson, J.E.
+AU  - Cho, M.H.
+AU  - Hui, J.
+AU  - Ferreira, M.A.
+AU  - Thompson, P.J.
+AU  - Morrison, A.C.
+AU  - Felix, J.F.
+AU  - Smith, N.L.
+AU  - Christiano, A.M.
+AU  - Petukhova, L.
+AU  - Betz, R.C.
+AU  - Fan, X.
+AU  - Zhang, X.
+AU  - Zhu, C.
+AU  - Langefeld, C.D.
+AU  - Thompson, S.D.
+AU  - Wang, F.
+AU  - Lin, X.
+AU  - Schwartz, D.A.
+AU  - Fingerlin, T.
+AU  - Rotter, J.I.
+AU  - Cotch, M.F.
+AU  - Jensen, R.A.
+AU  - Munz, M.
+AU  - Dommisch, H.
+AU  - Schaefer, A.S.
+AU  - Han, F.
+AU  - Ollila, H.M.
+AU  - Hillary, R.P.
+AU  - Albagha, O.
+AU  - Ralston, S.H.
+AU  - Zeng, C.
+AU  - Zheng, W.
+AU  - Shu, X.-O.
+AU  - Reis, A.
+AU  - Uebe, S.
+AU  - Hüffmeier, U.
+AU  - Kawamura, Y.
+AU  - Otowa, T.
+AU  - Sasaki, T.
+AU  - Hibberd, M.L.
+AU  - Davila, S.
+AU  - Xie, G.
+AU  - Siminovitch, K.
+AU  - Bei, J.-X.
+AU  - Zeng, Y.-X.
+AU  - Försti, A.
+AU  - Chen, B.
+AU  - Landi, S.
+AU  - Franke, A.
+AU  - Fischer, A.
+AU  - Ellinghaus, D.
+AU  - Flores, C.
+AU  - Noth, I.
+AU  - Ma, S.-F.
+AU  - Foo, J.N.
+AU  - Liu, J.
+AU  - Kim, J.-W.
+AU  - Cox, D.G.
+AU  - Delattre, O.
+AU  - Mirabeau, O.
+AU  - Skibola, C.F.
+AU  - Tang, C.S.
+AU  - Garcia-Barcelo, M.
+AU  - Chang, K.-P.
+AU  - Su, W.-H.
+AU  - Chang, Y.-S.
+AU  - Martin, N.G.
+AU  - Gordon, S.
+AU  - Wade, T.D.
+AU  - Lee, C.
+AU  - Kubo, M.
+AU  - Cha, P.-C.
+AU  - Nakamura, Y.
+AU  - Levy, D.
+AU  - Kimura, M.
+AU  - Hwang, S.-J.
+AU  - Hunt, S.
+AU  - Spector, T.
+AU  - Soranzo, N.
+AU  - Manichaikul, A.W.
+AU  - Barr, R.G.
+AU  - Kahali, B.
+AU  - Speliotes, E.
+AU  - Yerges-Armstrong, L.M.
+AU  - Cheng, C.-Y.
+AU  - Jonas, J.B.
+AU  - Wong, T.Y.
+AU  - Fogh, I.
+AU  - Lin, K.
+AU  - Powell, J.F.
+AU  - Rice, K.
+AU  - Relton, C.L.
+AU  - Martin, R.M.
+AU  - Davey Smith, G.
+TI  - Association between telomere length and risk of cancer and non-neoplastic diseases a mendelian randomization study
+PY  - 2017
+T2  - JAMA Oncology
+VL  - 3
+IS  - 5
+SP  - 636
+EP  - 651
+DO  - 10.1001/jamaoncol.2016.5945
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85019502119&doi=10.1001%2fjamaoncol.2016.5945&partnerID=40&md5=4a6ec6fc274b11fb5d91f23bafa607c5
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - University of Queensland Diamantina Institute, Translational Research Institute, Brisbane, QLD, Australia
+AD  - Department of Neurology, Innsbruck Medical University, Austria
+AD  - Center of Human Development and Aging, Department of Pediatrics, New Jersey Medical School, Rutgers, The State University of New Jersey, United States
+AD  - Department of Twin Research and Genetic Epidemiology, King's College London, London, United Kingdom
+AD  - NIHR Biomedical Research Centre, Guy's and St. Thomas' Foundation Trust, London, United Kingdom
+AD  - Brain Tumour Research Group, Institute of Clinical Neuroscience, Southmead Hospital, University of Bristol, Learning and Research Building, United Kingdom
+AD  - Centre for Cancer Genetic Epidemiology, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Institute of Cancer Research, Royal Marsden NHS Foundation Trust, London, United Kingdom
+AD  - Department of Surgical Oncology, University of Texas MD Anderson Cancer Center, Houston, TX, United States
+AD  - Department of Clinical Applications and Support, University of Texas MD Anderson Cancer Center, Houston, TX, United States
+AD  - Statistical Genetics, QIMR Berghofer Medical Research Institute, Brisbane, Australia
+AD  - QIMR Berghofer Medical Research Institute, Brisbane, Australia
+AD  - Section of Epidemiology and Biostatistics, Leeds Institute of Cancer and Pathology, University of Leeds, Leeds, United Kingdom
+AD  - Department of Biostatistics, Boston University School of Public Health, Boston, MA, United States
+AD  - Departments of Neurology and Public Health Sciences, University of Virginia, Charlottesville, VA, United States
+AD  - Department of Clinical Neurosciences, University of Cambridge, United Kingdom
+AD  - Lunenfeld-Tanenbaum Research Institute of Mount Sinai Hospital, Toronto, ON, Canada
+AD  - Division of Epidemiology, Dalla Lana School of Public Health, University of Toronto, Toronto, ON, Canada
+AD  - Geisel School of Medicine, Dartmouth College, Hanover, NH, United States
+AD  - Genetics and Computational Biology Division, QIMR Berghofer Medical Research Institute, Brisbane, Australia
+AD  - Dana-Farber Cancer Institute, Boston, MA, United States
+AD  - Laboratory of Translational Genomics, Division of Cancer Epidemiology and Genetics, National Cancer Institute, National Institutes of Health, Bethesda, MD, United States
+AD  - Metabolic Epidemiology Branch, Division of Cancer Epidemiology and Genetics, National Cancer Institute, Rockville, MD, United States
+AD  - Hellenic Health Foundation, Athens, Greece
+AD  - WHO Collaborating Center for Nutrition and Health, Unit of Nutritional Epidemiology and Nutrition in Public Health, Department of Hygiene, Epidemiology and Medical Statistics, University of Athens Medical School, Athens, Greece
+AD  - Department of Epidemiology, Julius Center for Health Sciences and Primary Care, University Medical Center, Utrecht, Netherlands
+AD  - Institute of Community Medicine, UiT The Arctic University of Norway, Tromso, Norway
+AD  - Unit of Nutrition and Cancer, Cancer Epidemiology Research Program, Bellvitge Biomedical Research Institute (IDIBELL), Catalan Institute of Oncology (ICO), L'Hospitalet de Llobregat, Barcelona, Spain
+AD  - Genomic Epidemiology Group, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Université Paris-Saclay, Université Paris-Sud, UVSQ, CESP, INSERM, Villejuif, France
+AD  - Institut Gustave Roussy, Villejuif, France
+AD  - Human Genetics Foundation (HuGeF), Torino, Italy
+AD  - Cancer Council Victoria, University of Melbourne, Melbourne, Australia
+AD  - Department of Public Health, Section for Epidemiology, Aarhus University, Aarhus, Denmark
+AD  - School of Public Health, Imperial College London, London, United Kingdom
+AD  - Cancer Registry, Azienda Ospedaliera Civile M.P. Arezzo, Ragusa, Italy
+AD  - Department of Medical Biosciences, Umea University, Umea, Sweden
+AD  - Surgery Department, University of Otago, Dunedin, New Zealand
+AD  - Department of Genetics, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Department of Cardiovascular Sciences and the NIHR Leicester, Cardiovascular Biomedical Research Unit, University of Leicester, Glenfield Hospital, Leicester, United Kingdom
+AD  - Department of Neurology and Neurosurgery, Brain Center Rudolf Magnus, University Medical Center Utrecht, Netherlands
+AD  - Division of Molecular Biology and Human Genetics, Department of Biomedical Sciences, Faculty of Medicine and Health Sciences, Stellenbosch University, Tygerberg, South Africa
+AD  - Sigfried and Janet Weis Center for Research, Geisinger Health System, Danville, PA, United States
+AD  - Department of Vascular and Endovascular Surgery, Geisinger Health System, Danville, PA, United States
+AD  - Genetic Epidemiology Group, International Agency for Research on Cancer, Lyon, France
+AD  - Genetic Cancer Susceptibility Group, International Agency for Research on Cancer, Lyon, France
+AD  - Department of Epidemiology and Biostatistics, University of California San Francisco, United States
+AD  - Department of Epidemiology and Biostatistics, Memorial Sloan Kettering Cancer Center, New York, NY, United States
+AD  - Department of Gastrointestinal Medical Oncology, University of Texas MD Anderson Cancer Center, Houston, TX, United States
+AD  - Department of Health Sciences Research, Mayo Clinic College of Medicine, Rochester, MN, United States
+AD  - Yale School of Public Health, Yale School of Medicine, Yale Cancer Center, New Haven, CT, United States
+AD  - Departments of Oncology, Pathology and Epidemiology, Johns Hopkins School of Medicine, Baltimore, MD, United States
+AD  - Department of Epidemiology, Fairbanks School of Public Health, Indiana University, Indianapolis, IN, United States
+AD  - Indiana University Melvin and Bren Simon Cancer Center, Indianapolis, IN, United States
+AD  - Division of Cancer Epidemiology and Genetics, National Cancer Institute, Rockville, MD, United States
+AD  - Children's Hospital of Philadelphia, Perelman School of Medicine, University of Pennsylvania, United States
+AD  - Radboud University Medical Center, Radboud Institute for Health Sciences, Nijmegen, Netherlands
+AD  - Netherlands Comprehensive Cancer Organization, Utrecht, Netherlands
+AD  - Department of Neurological Surgery, University of California, San Francisco, San Francisco, CA, United States
+AD  - Institute of Human Genetics, University of California, San Francisco, San Francisco, CA, United States
+AD  - William Harvey Research Institute, Queen Mary University, London, United Kingdom
+AD  - Division of Genetics and Epidemiology, Institute of Cancer Research, London, United Kingdom
+AD  - Institute of Epidemiology I, Helmholtz Zentrum München, German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Department of Biostatistics, University of Michigan, Ann Arbor, MI, United States
+AD  - National Institute of Alcohol Abuse and Alcoholism, Laboratory of Membrane Biophysics and Biochemistry, Section on Nutritional Neuroscience, Bethesda, MD, United States
+AD  - Department of Biochemistry and Molecular and Cellular Biology, Georgetown School of Medicine, Washington, DC, United States
+AD  - Division of Genetic Epidemiology, Institute for Medical Biometry and Statistics, Faculty of Medicine, Medical Centre, University of Freiburg, Freiburg, Germany
+AD  - Department of Life and Reproduction Sciences, University of Verona, Verona, Italy
+AD  - Laboratory of Statistical Analysis, Centre for Integrative Medical Sciences, Institute of Physical and Chemical Research (RIKEN), Yokohama, Japan
+AD  - Genetic and Genomic Epidemiology Unit, Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - Nuffield Department of Obstetrics and Gynecology, University of Oxford, John Radcliffe Hospital, Oxford, United Kingdom
+AD  - Institute of Health and Biomedical Innovation, Queensland University of Technology, Brisbane, QLD, Australia
+AD  - Blizard Institute, Barts and The London School of Medicine and Dentistry, Queen Mary University of London, London, E1 2AT, United Kingdom
+AD  - McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University School of Medicine, Baltimore, MD, United States
+AD  - Division of Cardiology, Cardiovascular Health Research Unit, Department of Medicine, University of Washington, Seattle, WA, United States
+AD  - University of Cincinnati College of Medicine, Department of Neurology, Cincinnati, OH, United States
+AD  - Massachusetts General Hospital, Neurology, Center for Human Genetic Research, Boston, MA, United States
+AD  - Center for Public Health Genomics, Department of Biostatistical Sciences, Division of Public Health Sciences, Wake Forest School of Medicine, Winston-Salem, NC, United States
+AD  - Channing Division of Network Medicine, Brigham and Women's Hospital, Boston, MA, United States
+AD  - Department of Epidemiology, University of Colorado Anschutz Medical Campus, Aurora, CO, United States
+AD  - Busselton Population Medical Research Institute Inc., Sir Charles Gairdner Hospital, Perth, WA, Australia
+AD  - PathWest Laboratory Medicine of Western Australia, Perth, WA, Australia
+AD  - School of Pathology and Laboratory Medicine, University of Western Australia, Perth, WA, Australia
+AD  - School of Population Health, University of WA, Perth, WA, Australia
+AD  - Lung Health Clinic and Institute for Respiratory Health, University of Western Australia, Perth, WA, Australia
+AD  - Department of Epidemiology, Human Genetics, and Environmental Sciences, University of Texas Health Science Center at Houston, Houston, TX, United States
+AD  - Department of Epidemiology, Erasmus MC, University Medical Center Rotterdam, Rotterdam, Netherlands
+AD  - Department of Epidemiology, University of Washington, Seattle, WA, United States
+AD  - Departments of Dermatology and Genetics and Development, Columbia University, New York, NY, United States
+AD  - Departments of Dermatology and Epidemiology, Columbia University, New York, NY, United States
+AD  - Institute of Human Genetics, University of Bonn, Bonn, Germany
+AD  - Institute of Dermatology, Department of Dermatology, Anhui Medical University, Hefei, Anhui, China
+AD  - Center for Autoimmune Genomics and Etiology, Cincinnati Children's Hospital Medical Center, Department of Pediatrics, University of Cincinnati College of Medicine, Cincinnati, OH, United States
+AD  - Key Laboratory of Nutrition and Metabolism, Institute for Nutritional Sciences, Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences, University of Chinese Academy of Sciences, Shanghai, China
+AD  - Department of Medicine, School of Medicine, University of Colorado, Aurora, CO, United States
+AD  - Department of Biomedical Research, National Jewish Health Hospital, Denver, CO, United States
+AD  - Institute for Translational Genomics and Population Sciences, Los Angeles Biomedical Research Institute, Harbor- UCLA Medical Center, Torrance, CA, United States
+AD  - Departments of Pediatrics and Medicine, Harbor-UCLA Medical Center, Torrance, CA, United States
+AD  - Epidemiology Branch, Division of Epidemiology and Clinical Applications, Intramural Research Program, National Eye Institute, National Institutes of Health, Clinical Research Center, Bethesda, MD, United States
+AD  - Cardiovascular Health Research Unit, University of Washington, Seattle, WA, United States
+AD  - Department of Medicine, University of Washington, Seattle, WA, United States
+AD  - Department of Periodontology and Synoptic Dentistry, Center for Dental and Craniofacial Sciences, Charité - University Medicine Berlin, Berlin, Germany
+AD  - Institute for Integrative and Experimental Genomics, University of Lübeck, Lübeck, Germany
+AD  - Department of Pulmonary Medicine, Peking University People's Hospital, Beijing, China
+AD  - Stanford University, Center for Sleep Sciences, Palo Alto, CA, United States
+AD  - Qatar Biomedical Research Institute, Hamad Bin Khalifa University, Doha, Qatar
+AD  - Centre for Genomic and Experimental Medicine, Institute of Genetics and Molecular Medicine, University of Edinburgh, Western General Hospital, Edinburgh, United Kingdom
+AD  - Division of Epidemiology, Department of Medicine, Vanderbilt Epidemiology Center, Vanderbilt-Ingram Cancer Center, Vanderbilt University Medical Center, Nashville, TN, United States
+AD  - Institute of Human Genetics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany
+AD  - Department of Psychiatry, Shonan Kamakura General Hospital, Kanagawa, Japan
+AD  - Department of Neuropsychiatry, Graduate School of Medicine, University of Tokyo, Tokyo, Japan
+AD  - Graduate School of Clinical Psychology, Teikyo Heisei University Major of Professional Clinical Psychology, Tokyo, Japan
+AD  - Department of Physical and Health Education, Graduate School of Education, University of Tokyo, Tokyo, Japan
+AD  - Infectious Diseases, Genome Institute of Singapore, Singapore, Singapore
+AD  - Human Genetics, Genome Institute of Singapore, Singapore, Singapore
+AD  - Departments of Medicine, Immunology, Molecular Genetics, University of Toronto, Toronto, ON, Canada
+AD  - Sun Yat-sen University Cancer Center, State Key Laboratory of Oncology in South China, Collaborative Innovation Center for Cancer Medicine, Guangzhou, China
+AD  - Peking Union Medical College, Beijing, China
+AD  - Molecular Genetic Epidemiology, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Center for Primary Health Care Research, Clinical Research Center, Lund University, Malmö, Sweden
+AD  - Department of Biology, University of Pisa, Pisa, Italy
+AD  - University Hospital Schleswig-Holstein, Kiel, Germany
+AD  - Institute of Clinical Molecular Biology, Kiel University, Kiel, Germany
+AD  - Research Unit, Hospital Universitario N.S. de Candelaria, Universidad de La Laguna, Tenerife, Spain
+AD  - CIBER de Enfermedades Respiratorias, Instituto de Salud Carlos III, Madrid, Spain
+AD  - Section of Pulmonary and Critical Care Medicine, University of Chicago, Chicago, IL, United States
+AD  - Human Genetics, Genome Institute of Singapore, A STAR, Singapore, Singapore
+AD  - Department of Laboratory Medicine and Genetics, Samsung Medical Center, Sungkyunkwan, University School of Medicine, Gangnam-gu, Seoul, South Korea
+AD  - Cancer Research Center of Lyon, INSERM U1052, Lyon, France
+AD  - Inserm U830, Institut Curie, PSL University, Paris, France
+AD  - Department of Epidemiology, University of Alabama at Birmingham, United States
+AD  - Department of Surgery, Li Ka Shing Faculty of Medicine, University of Hong Kong, Hong Kong, Hong Kong
+AD  - Department of Otolaryngology- Head and Neck Surgery, Chang Gung Memorial Hospital at Lin-Kou, Taoyuan, Taiwan
+AD  - Department of Biomedical Sciences, Graduate Institute of Biomedical Sciences, College of Medicine, Molecular Medicine Research Center, Chang Gung University, Taoyuan, Taiwan
+AD  - Molecular Medicine Research Center, Chang Gung University, Taoyuan, Taiwan
+AD  - School of Psychology, Flinders University, Adelaide, SA, Australia
+AD  - School of Systems Biomedical Science, Soongsil University, Dongjak-gu, Seoul, South Korea
+AD  - RIKEN Center for Integrative Medical Science, Suehiro-cho, Tsurumi-ku, Yokohama, Kanagawa, Japan
+AD  - Division of Molecular Brain Science, Kobe University Graduate School of Medicine, Kusunoki-chou, Chuo-ku, Kobe, Japan
+AD  - Center for Personalized Therapeutics, University of Chicago, Chicago, IL, United States
+AD  - NHLBI's Framingham Heart Study, Framingham, MA, United States
+AD  - Population Sciences Branch, National Heart, Lung, and Blood Institute, Bethesda, MD, United States
+AD  - Department of Genetic Medicine, Weill Cornell Medicine in Qatar, Doha, Qatar
+AD  - Human Genetics, Wellcome Trust Sanger Institute, Genome Campus, Hinxton Cambridge, United Kingdom
+AD  - Center for Public Health Genomics, Department of Public Health Sciences, University of Virginia, Charlottesville, VA, United States
+AD  - Department of Medicine, Department of Epidemiology, Columbia University Medical Center, New York, NY, United States
+AD  - Department of Internal Medicine, Division of Gastroenterology, Department of Computational Medicine and Bioinformatics, University of Michigan, Ann Arbor, MI, United States
+AD  - Department of Medicine, University of Maryland, Baltimore, MD, United States
+AD  - Singapore Eye Research Institute, Singapore National Eye Center, Singapore, Singapore
+AD  - Department of Ophthalmology, National University of Singapore, National University Health System, Singapore, Singapore
+AD  - Duke-NUS Medical School, Singapore, Singapore
+AD  - Beijing Institute of Ophthalmology, Beijing Tongren Eye Center, Beijing Tongren Hospital, Capital Medical University, Beijing Ophthalmology and Visual Science Key Laboratory, Beijing, China
+AD  - Department of Ophthalmology, Medical Faculty Mannheim of the Ruprecht-Karls-University Heidelberg, Mannheim, Germany
+AD  - Department of Basic and Clinical Neuroscience, Maurice Wohl Clinical Neuroscience Institute, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, United Kingdom
+AD  - Department of Biostatistics, University of Washington, Seattle, WA, United States
+AD  - University of Bristol, University Hospitals Bristol NHS Foundation Trust, National Institute for Health Research Bristol Nutrition Biomedical Research Unit, Bristol, United Kingdom
+AB  - IMPORTANCE: The causal direction and magnitude of the association between telomere length and incidence of cancer and non-neoplastic diseases is uncertain owing to the susceptibility of observational studies to confounding and reverse causation. OBJECTIVE: To conduct a Mendelian randomization study, using germline genetic variants as instrumental variables, to appraise the causal relevance of telomere length for risk of cancer and non-neoplastic diseases. DATA SOURCES: Genomewide association studies (GWAS) published up to January 15, 2015. STUDY SELECTION: GWAS of noncommunicable diseases that assayed germline genetic variation and did not select cohort or control participants on the basis of preexisting diseases. Of 163 GWAS of noncommunicable diseases identified, summary data from 103 were available. DATA EXTRACTION AND SYNTHESIS: Summary association statistics for single nucleotide polymorphisms (SNPs) that are strongly associated with telomere length in the general population. MAIN OUTCOMES AND MEASURES: Odds ratios (ORs) and 95% confidence intervals (CIs) for disease per standard deviation (SD) higher telomere length due to germline genetic variation. RESULTS: Summary data were available for 35 cancers and 48 non-neoplastic diseases, corresponding to 420 081 cases (median cases, 2526 per disease) and 1 093 105 controls (median, 6789 per disease). Increased telomere length due to germline genetic variation was generally associated with increased risk for site-specific cancers. The strongest associations (ORs [95% CIs] per 1-SD change in genetically increased telomere length) were observed for glioma, 5.27 (3.15-8.81); serous low-malignant-potential ovarian cancer, 4.35 (2.39-7.94); lung adenocarcinoma, 3.19 (2.40-4.22); neuroblastoma, 2.98 (1.92-4.62); bladder cancer, 2.19 (1.32-3.66); melanoma, 1.87 (1.55-2.26); testicular cancer, 1.76 (1.02-3.04); kidney cancer, 1.55 (1.08-2.23); and endometrial cancer, 1.31 (1.07-1.61). Associations were stronger for rarer cancers and at tissue sites with lower rates of stem cell division. There was generally little evidence of association between genetically increased telomere length and risk of psychiatric, autoimmune, inflammatory, diabetic, and other non-neoplastic diseases, except for coronary heart disease (OR, 0.78 [95% CI, 0.67-0.90]), abdominal aortic aneurysm (OR, 0.63 [95% CI, 0.49-0.81]), celiac disease (OR, 0.42 [95% CI, 0.28-0.61]) and interstitial lung disease (OR, 0.09 [95% CI, 0.05-0.15]). CONCLUSIONS AND RELEVANCE: It is likely that longer telomeres increase risk for several cancers but reduce risk for some non-neoplastic diseases, including cardiovascular diseases. Copyright 2017 American Medical Association. All rights reserved.
+KW  - Adult
+KW  - Aged
+KW  - Aged, 80 and over
+KW  - Cardiovascular Diseases
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Germ-Line Mutation
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Neoplasms
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Assessment
+KW  - Telomere
+KW  - Telomere Homeostasis
+KW  - adult
+KW  - aged
+KW  - cardiovascular disease
+KW  - female
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - germline mutation
+KW  - human
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - neoplasm
+KW  - procedures
+KW  - risk assessment
+KW  - single nucleotide polymorphism
+KW  - telomere
+KW  - telomere homeostasis
+KW  - very elderly
+PB  - American Medical Association
+SN  - 23742437 (ISSN)
+C2  - 28241208
+LA  - English
+J2  - JAMA Oncol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 406; Correspondence Address: P.C. Haycock; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: philip.haycock@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Slob, E.A.W.
+AU  - Burgess, S.
+TI  - A comparison of robust Mendelian randomization methods using summary data
+PY  - 2020
+T2  - Genetic Epidemiology
+VL  - 44
+IS  - 4
+SP  - 313
+EP  - 329
+DO  - 10.1002/gepi.22295
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85083066495&doi=10.1002%2fgepi.22295&partnerID=40&md5=912326fafcd13c71722b20ed7212973c
+AD  - Erasmus School of Economics, Erasmus University Rotterdam, Rotterdam, Netherlands
+AD  - Erasmus University Rotterdam Institute for Behavior and Biology, Rotterdam, Netherlands
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AB  - The number of Mendelian randomization (MR) analyses including large numbers of genetic variants is rapidly increasing. This is due to the proliferation of genome-wide association studies, and the desire to obtain more precise estimates of causal effects. Since it is unlikely that all genetic variants will be valid instrumental variables, several robust methods have been proposed. We compare nine robust methods for MR based on summary data that can be implemented using standard statistical software. Methods were compared in three ways: by reviewing their theoretical properties, in an extensive simulation study, and in an empirical example. In the simulation study, the best method, judged by mean squared error was the contamination mixture method. This method had well-controlled Type 1 error rates with up to 50% invalid instruments across a range of scenarios. Other methods performed well according to different metrics. Outlier-robust methods had the narrowest confidence intervals in the empirical example. With isolated exceptions, all methods performed badly when over 50% of the variants were invalid instruments. Our recommendation for investigators is to perform a variety of robust methods that operate in different ways and rely on different assumptions for valid inferences to assess the reliability of MR analyses. © 2020 The Authors. Genetic Epidemiology published by Wiley Periodicals, Inc.
+KW  - causal inference
+KW  - Mendelian randomization
+KW  - pleiotropy
+KW  - robust estimation
+KW  - summary statistics
+KW  - Body Mass Index
+KW  - Coronary Artery Disease
+KW  - Genetic Association Studies
+KW  - Genetic Pleiotropy
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Odds Ratio
+KW  - Risk Factors
+KW  - article
+KW  - cell proliferation
+KW  - contamination
+KW  - controlled study
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - intermethod comparison
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - randomized controlled trial
+KW  - reliability
+KW  - simulation
+KW  - software
+KW  - theoretical study
+KW  - body mass
+KW  - coronary artery disease
+KW  - genetic association study
+KW  - Mendelian randomization analysis
+KW  - odds ratio
+KW  - pathology
+KW  - pleiotropy
+KW  - procedures
+KW  - risk factor
+PB  - Wiley-Liss Inc.
+SN  - 07410395 (ISSN)
+C2  - 32249995
+LA  - English
+J2  - Genet. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 378; Correspondence Address: E.A.W. Slob; Erasmus School of Economics, Erasmus University Rotterdam, Rotterdam, Netherlands; email: e.a.w.slob@ese.eur.nl; CODEN: GENYE
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Labrecque, J.A.
+TI  - Mendelian randomization with a binary exposure variable: interpretation and presentation of causal estimates
+PY  - 2018
+T2  - European Journal of Epidemiology
+VL  - 33
+IS  - 10
+SP  - 947
+EP  - 952
+DO  - 10.1007/s10654-018-0424-6
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85050517030&doi=10.1007%2fs10654-018-0424-6&partnerID=40&md5=a7e3e76eded4843bb0f89f8a1561dc39
+AD  - MRC Biostatistics Unit, Cambridge Institute of Public Health, University of Cambridge, Robinson Way, Cambridge, CB2 0SR, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Epidemiology, Erasmus MC, Rotterdam, Netherlands
+AB  - Mendelian randomization uses genetic variants to make causal inferences about a modifiable exposure. Subject to a genetic variant satisfying the instrumental variable assumptions, an association between the variant and outcome implies a causal effect of the exposure on the outcome. Complications arise with a binary exposure that is a dichotomization of a continuous risk factor (for example, hypertension is a dichotomization of blood pressure). This can lead to violation of the exclusion restriction assumption: the genetic variant can influence the outcome via the continuous risk factor even if the binary exposure does not change. Provided the instrumental variable assumptions are satisfied for the underlying continuous risk factor, causal inferences for the binary exposure are valid for the continuous risk factor. Causal estimates for the binary exposure assume the causal effect is a stepwise function at the point of dichotomization. Even then, estimation requires further parametric assumptions. Under monotonicity, the causal estimate represents the average causal effect in ‘compliers’, individuals for whom the binary exposure would be present if they have the genetic variant and absent otherwise. Unlike in randomized trials, genetic compliers are unlikely to be a large or representative subgroup of the population. Under homogeneity, the causal effect of the exposure on the outcome is assumed constant in all individuals; rarely a plausible assumption. We here provide methods for causal estimation with a binary exposure (although subject to all the above caveats). Mendelian randomization investigations with a dichotomized binary exposure should be conceptualized in terms of an underlying continuous variable. © 2018, The Author(s).
+KW  - Causal inference
+KW  - Effect estimation
+KW  - Genetic epidemiology
+KW  - Instrumental variable
+KW  - Mendelian randomization
+KW  - Blood Pressure
+KW  - Genetic Variation
+KW  - Humans
+KW  - Hypertension
+KW  - Likelihood Functions
+KW  - Mendelian Randomization Analysis
+KW  - Models, Genetic
+KW  - Models, Statistical
+KW  - Random Allocation
+KW  - Risk Factors
+KW  - Article
+KW  - causality
+KW  - exposure variable
+KW  - genetic variability
+KW  - instrumental variable analysis
+KW  - Mendelian randomization analysis
+KW  - outcome variable
+KW  - parametric test
+KW  - risk factor
+KW  - biological model
+KW  - blood pressure
+KW  - genetic variation
+KW  - human
+KW  - hypertension
+KW  - Mendelian randomization analysis
+KW  - procedures
+KW  - randomization
+KW  - statistical model
+PB  - Springer Netherlands
+SN  - 03932990 (ISSN)
+C2  - 30039250
+LA  - English
+J2  - Eur. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 350; Correspondence Address: S. Burgess; Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: EJEPE
+ER  -
+
+TY  - JOUR
+AU  - Pasman, J.A.
+AU  - Verweij, K.J.H.
+AU  - Gerring, Z.
+AU  - Stringer, S.
+AU  - Sanchez-Roige, S.
+AU  - Treur, J.L.
+AU  - Abdellaoui, A.
+AU  - Nivard, M.G.
+AU  - Baselmans, B.M.L.
+AU  - Ong, J.-S.
+AU  - Ip, H.F.
+AU  - van der Zee, M.D.
+AU  - Bartels, M.
+AU  - Day, F.R.
+AU  - Fontanillas, P.
+AU  - Elson, S.L.
+AU  - de Wit, H.
+AU  - Davis, L.K.
+AU  - MacKillop, J.
+AU  - Derringer, J.L.
+AU  - Branje, S.J.T.
+AU  - Hartman, C.A.
+AU  - Heath, A.C.
+AU  - van Lier, P.A.C.
+AU  - Madden, P.A.F.
+AU  - Mägi, R.
+AU  - Meeus, W.
+AU  - Montgomery, G.W.
+AU  - Oldehinkel, A.J.
+AU  - Pausova, Z.
+AU  - Ramos-Quiroga, J.A.
+AU  - Paus, T.
+AU  - Ribases, M.
+AU  - Kaprio, J.
+AU  - Boks, M.P.M.
+AU  - Bell, J.T.
+AU  - Spector, T.D.
+AU  - Gelernter, J.
+AU  - Boomsma, D.I.
+AU  - Martin, N.G.
+AU  - MacGregor, S.
+AU  - Perry, J.R.B.
+AU  - Palmer, A.A.
+AU  - Posthuma, D.
+AU  - Munafò, M.R.
+AU  - Gillespie, N.A.
+AU  - Derks, E.M.
+AU  - Vink, J.M.
+TI  - GWAS of lifetime cannabis use reveals new risk loci, genetic overlap with psychiatric traits, and a causal influence of schizophrenia
+PY  - 2018
+T2  - Nature Neuroscience
+VL  - 21
+IS  - 9
+SP  - 1161
+EP  - 1170
+DO  - 10.1038/s41593-018-0206-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85052700617&doi=10.1038%2fs41593-018-0206-1&partnerID=40&md5=44a87c7bcfd4a2742211d5151f8fdea7
+AD  - Behavioural Science Institute, Radboud University, Nijmegen, Netherlands
+AD  - Amsterdam UMC, University of Amsterdam, Department of Psychiatry, Amsterdam, Netherlands
+AD  - Genetic Epidemiology, Statistical Genetics, and Translational Neurogenomics Laboratories, QIMR Berghofer Medical Research Institute, Brisbane, QLD, Australia
+AD  - Department of Complex Trait Genetics, Center for Neurogenomics and Cognitive Research, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Department of Psychiatry, University of California San Diego, La Jolla, CA, United States
+AD  - MRC Integrative Epidemiology Unit (IEU), University of Bristol, Bristol, United Kingdom
+AD  - Department of Biological Psychology/Netherlands Twin Register, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - MRC Epidemiology Unit, University of Cambridge School of Clinical Medicine, Institute of Metabolic Science, Cambridge Biomedical Campus, Cambridge, United Kingdom
+AD  - 23andMe, Inc., Mountain View, CA, United States
+AD  - Department of Psychiatry and Behavioral Neuroscience, University of Chicago, Chicago, IL, United States
+AD  - Vanderbilt Genetics Institute; Division of Genetic Medicine, Department of Medicine, Vanderbilt University, Nashville, TN, United States
+AD  - Peter Boris Centre for Addictions Research and Michael G. DeGroote Centre for Medicinal Cannabis Research, McMaster University/St. Joseph’s Healthcare Hamilton, Hamilton, ON, Canada
+AD  - Department of Psychology, University of Illinois Urbana-Champaign, Champaign, IL, United States
+AD  - Department of Youth and Family, Utrecht University, Utrecht, Netherlands
+AD  - Department of Psychiatry, Interdisciplinary Center Psychopathology and Emotion Regulation, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - Department of Psychiatry, Washington University School of Medicine, St. Louis, MO, United States
+AD  - Department of Developmental Psychology and EMGO Institute for Health and Care Research, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Estonian Genome Center, University of Tartu, Tartu, Estonia
+AD  - Institute for Molecular Bioscience, The University of Queensland, Brisbane, QLD, Australia
+AD  - Hospital for Sick Children, Toronto, ON, Canada
+AD  - Psychiatric Genetics Unit, Group of Psychiatry, Mental Health and Addiction, Vall d’Hebron Research Institute (VHIR), Universitat Autònoma de Barcelona, Barcelona, Spain
+AD  - Department of Psychiatry, Hospital Universitari Vall d’Hebron, Barcelona, Spain
+AD  - Biomedical Network Research Centre on Mental Health (CIBERSAM), Instituto de Salud Carlos III, Barcelona, Spain
+AD  - Department of Psychiatry and Legal Medicine, Universitat Autònoma de Barcelona, Barcelona, Spain
+AD  - Rotman Research Institute, Baycrest, Toronto, ON, Canada
+AD  - Departments of Psychology and Psychiatry, University of Toronto, Toronto, ON, Canada
+AD  - Institute for Molecular Medicine Finland FIMM, HiLIFE Unit, University of Helsinki, Helsinki, Finland
+AD  - Brain Center Rudolf Magnus, Department of Psychiatry, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Department of Twin Research and Genetic Epidemiology, King’s College London, London, United Kingdom
+AD  - Department of Psychiatry, Yale University School of Medicine, New Haven, CT, United States
+AD  - Institute for Genomic Medicine, University of California San Diego, La Jolla, CA, United States
+AD  - UK Centre for Tobacco and Alcohol Studies and School of Experimental Psychology, University of Bristol, Bristol, United Kingdom
+AD  - Department of Psychiatry, Virginia Institute for Psychiatric and Behavior Genetics, Virginia Commonwealth University, Richmond, VA, United States
+AB  - Cannabis use is a heritable trait that has been associated with adverse mental health outcomes. In the largest genome-wide association study (GWAS) for lifetime cannabis use to date (N = 184,765), we identified eight genome-wide significant independent single nucleotide polymorphisms in six regions. All measured genetic variants combined explained 11% of the variance. Gene-based tests revealed 35 significant genes in 16 regions, and S-PrediXcan analyses showed that 21 genes had different expression levels for cannabis users versus nonusers. The strongest finding across the different analyses was CADM2, which has been associated with substance use and risk-taking. Significant genetic correlations were found with 14 of 25 tested substance use and mental health–related traits, including smoking, alcohol use, schizophrenia and risk-taking. Mendelian randomization analysis showed evidence for a causal positive influence of schizophrenia risk on cannabis use. Overall, our study provides new insights into the etiology of cannabis use and its relation with mental health. © 2018, The Author(s).
+KW  - Adolescent
+KW  - Adult
+KW  - Aged
+KW  - Aged, 80 and over
+KW  - Cell Adhesion Molecules
+KW  - Databases, Genetic
+KW  - Female
+KW  - Gene Expression Regulation
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Genotype
+KW  - Humans
+KW  - Male
+KW  - Marijuana Abuse
+KW  - Mendelian Randomization Analysis
+KW  - Mental Health
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk-Taking
+KW  - Schizophrenia
+KW  - Young Adult
+KW  - CADM2 protein, human
+KW  - cell adhesion molecule
+KW  - adolescent
+KW  - adult
+KW  - aged
+KW  - alcohol consumption
+KW  - Article
+KW  - attention deficit disorder
+KW  - biological trait
+KW  - CADM2 gene
+KW  - cannabis addiction
+KW  - cannabis use
+KW  - causal attribution
+KW  - controlled study
+KW  - disease association
+KW  - female
+KW  - gene
+KW  - gene expression level
+KW  - gene locus
+KW  - genetic analysis
+KW  - genetic association
+KW  - genetic correlation
+KW  - genetic risk
+KW  - genetic trait
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - heritability
+KW  - high risk behavior
+KW  - human
+KW  - human tissue
+KW  - lifespan
+KW  - major clinical study
+KW  - male
+KW  - mental health
+KW  - NCAM1 gene
+KW  - overlapping gene
+KW  - personality
+KW  - priority journal
+KW  - risk assessment
+KW  - risk factor
+KW  - schizophrenia
+KW  - single nucleotide polymorphism
+KW  - smoking
+KW  - cannabis addiction
+KW  - chemically induced
+KW  - gene expression regulation
+KW  - genetic database
+KW  - genetic predisposition
+KW  - genetics
+KW  - genotype
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - psychology
+KW  - schizophrenia
+KW  - single nucleotide polymorphism
+KW  - very elderly
+KW  - young adult
+PB  - Nature Publishing Group
+SN  - 10976256 (ISSN)
+C2  - 30150663
+LA  - English
+J2  - Nat. Neurosci.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 328; Correspondence Address: J.M. Vink; Behavioural Science Institute, Radboud University, Nijmegen, Netherlands; email: j.vink@bsi.ru.nl; CODEN: NANEF
+ER  -
+
+TY  - JOUR
+AU  - Warrington, N.M.
+AU  - Beaumont, R.N.
+AU  - Horikoshi, M.
+AU  - Day, F.R.
+AU  - Helgeland, Ø.
+AU  - Laurin, C.
+AU  - Bacelis, J.
+AU  - Peng, S.
+AU  - Hao, K.
+AU  - Feenstra, B.
+AU  - Wood, A.R.
+AU  - Mahajan, A.
+AU  - Tyrrell, J.
+AU  - Robertson, N.R.
+AU  - Rayner, N.W.
+AU  - Qiao, Z.
+AU  - Moen, G.-H.
+AU  - Vaudel, M.
+AU  - Marsit, C.J.
+AU  - Chen, J.
+AU  - Nodzenski, M.
+AU  - Schnurr, T.M.
+AU  - Zafarmand, M.H.
+AU  - Bradfield, J.P.
+AU  - Grarup, N.
+AU  - Kooijman, M.N.
+AU  - Li-Gao, R.
+AU  - Geller, F.
+AU  - Ahluwalia, T.S.
+AU  - Paternoster, L.
+AU  - Rueedi, R.
+AU  - Huikari, V.
+AU  - Hottenga, J.-J.
+AU  - Lyytikäinen, L.-P.
+AU  - Cavadino, A.
+AU  - Metrustry, S.
+AU  - Cousminer, D.L.
+AU  - Wu, Y.
+AU  - Thiering, E.
+AU  - Wang, C.A.
+AU  - Have, C.T.
+AU  - Vilor-Tejedor, N.
+AU  - Joshi, P.K.
+AU  - Painter, J.N.
+AU  - Ntalla, I.
+AU  - Myhre, R.
+AU  - Pitkänen, N.
+AU  - van Leeuwen, E.M.
+AU  - Joro, R.
+AU  - Lagou, V.
+AU  - Richmond, R.C.
+AU  - Espinosa, A.
+AU  - Barton, S.J.
+AU  - Inskip, H.M.
+AU  - Holloway, J.W.
+AU  - Santa-Marina, L.
+AU  - Estivill, X.
+AU  - Ang, W.
+AU  - Marsh, J.A.
+AU  - Reichetzeder, C.
+AU  - Marullo, L.
+AU  - Hocher, B.
+AU  - Lunetta, K.L.
+AU  - Murabito, J.M.
+AU  - Relton, C.L.
+AU  - Kogevinas, M.
+AU  - Chatzi, L.
+AU  - Allard, C.
+AU  - Bouchard, L.
+AU  - Hivert, M.-F.
+AU  - Zhang, G.
+AU  - Muglia, L.J.
+AU  - Heikkinen, J.
+AU  - Morgen, C.S.
+AU  - van Kampen, A.H.C.
+AU  - van Schaik, B.D.C.
+AU  - Mentch, F.D.
+AU  - Langenberg, C.
+AU  - Luan, J.
+AU  - Scott, R.A.
+AU  - Zhao, J.H.
+AU  - Hemani, G.
+AU  - Ring, S.M.
+AU  - Bennett, A.J.
+AU  - Gaulton, K.J.
+AU  - Fernandez-Tajes, J.
+AU  - van Zuydam, N.R.
+AU  - Medina-Gomez, C.
+AU  - de Haan, H.G.
+AU  - Rosendaal, F.R.
+AU  - Kutalik, Z.
+AU  - Marques-Vidal, P.
+AU  - Das, S.
+AU  - Willemsen, G.
+AU  - Mbarek, H.
+AU  - Müller-Nurasyid, M.
+AU  - Standl, M.
+AU  - Appel, E.V.R.
+AU  - Fonvig, C.E.
+AU  - Trier, C.
+AU  - van Beijsterveldt, C.E.M.
+AU  - Murcia, M.
+AU  - Bustamante, M.
+AU  - Bonas-Guarch, S.
+AU  - Hougaard, D.M.
+AU  - Mercader, J.M.
+AU  - Linneberg, A.
+AU  - Schraut, K.E.
+AU  - Lind, P.A.
+AU  - Medland, S.E.
+AU  - Shields, B.M.
+AU  - Knight, B.A.
+AU  - Chai, J.-F.
+AU  - Panoutsopoulou, K.
+AU  - Bartels, M.
+AU  - Sánchez, F.
+AU  - Stokholm, J.
+AU  - Torrents, D.
+AU  - Vinding, R.K.
+AU  - Willems, S.M.
+AU  - Atalay, M.
+AU  - Chawes, B.L.
+AU  - Kovacs, P.
+AU  - Prokopenko, I.
+AU  - Tuke, M.A.
+AU  - Yaghootkar, H.
+AU  - Ruth, K.S.
+AU  - Jones, S.E.
+AU  - Loh, P.-R.
+AU  - Murray, A.
+AU  - Weedon, M.N.
+AU  - Tönjes, A.
+AU  - Stumvoll, M.
+AU  - Michaelsen, K.F.
+AU  - Eloranta, A.-M.
+AU  - Lakka, T.A.
+AU  - van Duijn, C.M.
+AU  - Kiess, W.
+AU  - Körner, A.
+AU  - Niinikoski, H.
+AU  - Pahkala, K.
+AU  - Raitakari, O.T.
+AU  - Jacobsson, B.
+AU  - Zeggini, E.
+AU  - Dedoussis, G.V.
+AU  - Teo, Y.-Y.
+AU  - Saw, S.-M.
+AU  - Montgomery, G.W.
+AU  - Campbell, H.
+AU  - Wilson, J.F.
+AU  - Vrijkotte, T.G.M.
+AU  - Vrijheid, M.
+AU  - de Geus, E.J.C.N.
+AU  - Hayes, M.G.
+AU  - Kadarmideen, H.N.
+AU  - Holm, J.-C.
+AU  - Beilin, L.J.
+AU  - Pennell, C.E.
+AU  - Heinrich, J.
+AU  - Adair, L.S.
+AU  - Borja, J.B.
+AU  - Mohlke, K.L.
+AU  - Eriksson, J.G.
+AU  - Widén, E.E.
+AU  - Hattersley, A.T.
+AU  - Spector, T.D.
+AU  - Kähönen, M.
+AU  - Viikari, J.S.
+AU  - Lehtimäki, T.
+AU  - Boomsma, D.I.
+AU  - Sebert, S.
+AU  - Vollenweider, P.
+AU  - Sørensen, T.I.A.
+AU  - Bisgaard, H.
+AU  - Bønnelykke, K.
+AU  - Murray, J.C.
+AU  - Melbye, M.
+AU  - Nohr, E.A.
+AU  - Mook-Kanamori, D.O.
+AU  - Rivadeneira, F.
+AU  - Hofman, A.
+AU  - Felix, J.F.
+AU  - Jaddoe, V.W.V.
+AU  - Hansen, T.
+AU  - Pisinger, C.
+AU  - Vaag, A.A.
+AU  - Pedersen, O.
+AU  - Uitterlinden, A.G.
+AU  - Järvelin, M.-R.
+AU  - Power, C.
+AU  - Hyppönen, E.
+AU  - Scholtens, D.M.
+AU  - Lowe, W.L.
+AU  - Davey Smith, G.
+AU  - Timpson, N.J.
+AU  - Morris, A.P.
+AU  - Wareham, N.J.
+AU  - Hakonarson, H.
+AU  - Grant, S.F.A.
+AU  - Frayling, T.M.
+AU  - Lawlor, D.A.
+AU  - Njølstad, P.R.
+AU  - Johansson, S.
+AU  - Ong, K.K.
+AU  - McCarthy, M.I.
+AU  - Perry, J.R.B.
+AU  - Evans, D.M.
+AU  - Freathy, R.M.
+TI  - Maternal and fetal genetic effects on birth weight and their relevance to cardio-metabolic risk factors
+PY  - 2019
+T2  - Nature Genetics
+VL  - 51
+IS  - 5
+SP  - 804
+EP  - 814
+DO  - 10.1038/s41588-019-0403-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065213720&doi=10.1038%2fs41588-019-0403-1&partnerID=40&md5=c26deebe79e1bdd43e4ae149550a1cb1
+AD  - University of Queensland Diamantina Institute, Translational Research Institute, Brisbane, QLD, Australia
+AD  - Institute of Biomedical and Clinical Science, College of Medicine and Health, University of Exeter, Royal Devon and Exeter Hospital, Exeter, United Kingdom
+AD  - RIKEN Centre for Integrative Medical Sciences, Laboratory for Endocrinology, Metabolism and Kidney Diseases, Yokohama, Japan
+AD  - Wellcome Centre for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - Oxford Centre for Diabetes, Endocrinology and Metabolism, University of Oxford, Oxford, United Kingdom
+AD  - MRC Epidemiology Unit, University of Cambridge School of Clinical Medicine, Cambridge, United Kingdom
+AD  - KG Jebsen Center for Diabetes Research, Department of Clinical Science, University of Bergen, Bergen, Norway
+AD  - Department of Pediatrics, Haukeland University Hospital, Bergen, Norway
+AD  - Department of Genetics and Bioinformatics, Domain of Health Data and Digitalisation, Norwegian Institute of Public Health, Oslo, Norway
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Obstetrics and Gynecology, Sahlgrenska University Hospital Östra, Gothenburg, Sweden
+AD  - Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Icahn Institute for Genomics and Multiscale Biology, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Department of Epidemiology Research, Statens Serum Institute, Copenhagen, Denmark
+AD  - European Centre for Environment and Human Health, University of Exeter, Truro, United Kingdom
+AD  - Wellcome Sanger Institute, Hinxton, United Kingdom
+AD  - Department of Endocrinology, Morbid Obesity and Preventive Medicine, Oslo University Hospital, Oslo, Norway
+AD  - Institute of Clinical Medicine, Faculty of Medicine, University of Oslo, Oslo, Norway
+AD  - Department of Environmental Health, Rollins School of Public Health, Emory University, Atlanta, GA, United States
+AD  - Department of Environmental Medicine and Public Health, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Department of Preventive Medicine, Division of Biostatistics, Feinberg School of Medicine, Northwestern University, Chicago, IL, United States
+AD  - Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - Department of Public Health, Amsterdam Public Health Research Institute, Amsterdam UMC, Academic Medical Center, University of Amsterdam, Amsterdam, Netherlands
+AD  - Department of Clinical Epidemiology, Biostatistics and Bioinformatics, Amsterdam Public Health Research Institute, Amsterdam UMC, Academic Medical Center, University of Amsterdam, Amsterdam, Netherlands
+AD  - Center for Applied Genomics, Children’s Hospital of Philadelphia, Philadelphia, PA, United States
+AD  - Quantinuum Research, San Diego, CA, United States
+AD  - The Generation R Study Group, Erasmus MC, University Medical Center Rotterdam, Rotterdam, Netherlands
+AD  - Department of Epidemiology, Erasmus MC, University Medical Center Rotterdam, Rotterdam, Netherlands
+AD  - Department of Pediatrics, Erasmus MC, University Medical Center Rotterdam, Rotterdam, Netherlands
+AD  - Department of Clinical Epidemiology, Leiden University Medical Center, Leiden, Netherlands
+AD  - Copenhagen Prospective Studies on Asthma in Childhood, Herlev and Gentofte Hospital, University of Copenhagen, Copenhagen, Denmark
+AD  - Steno Diabetes Center Copenhagen, Gentofte, Denmark
+AD  - Department of Computational Biology, University of Lausanne, Lausanne, Switzerland
+AD  - Swiss Institute of Bioinformatics, Lausanne, Switzerland
+AD  - Center for Life Course Health Research, Faculty of Medicine, University of Oulu, Oulu, Finland
+AD  - Department of Biological Psychology, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Netherlands Twin Register, Department of Biological Psychology, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Amsterdam Public Health, Amsterdam, Netherlands
+AD  - Department of Clinical Chemistry, Fimlab Laboratories, Tampere, Finland
+AD  - Department of Clinical Chemistry, Finnish Cardiovascular Research Center–Tampere, Faculty of Medicine and Health Technology, Tampere University, Tampere, Finland
+AD  - Section of Epidemiology and Biostatistics, School of Population Health, University of Auckland, Auckland, New Zealand
+AD  - Population, Policy and Practice, UCL Great Ormond Street Institute of Child Health, University College London, London, United Kingdom
+AD  - Department of Twin Research, King’s College London, St. Thomas’ Hospital, London, United Kingdom
+AD  - Division of Human Genetics, Children’s Hospital of Philadelphia, Philadelphia, PA, United States
+AD  - Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, United States
+AD  - Department of Genetics, University of North Carolina, Chapel Hill, NC, United States
+AD  - Institute of Epidemiology, Helmholtz Zentrum München German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Division of Metabolic and Nutritional Medicine, Dr. von Hauner Children’s Hospital, University of Munich Medical Center, Munich, Germany
+AD  - School of Medicine and Public Health, Faculty of Medicine and Health, The University of Newcastle, Newcastle, NSW, Australia
+AD  - Center for Genomic Regulation, Barcelona Institute of Science and Technology, Barcelona, Spain
+AD  - Barcelonabeta Brain Research Center, Pasqual Maragall Foundation, Barcelona, Spain
+AD  - Usher Institute for Population Health Sciences and Informatics, University of Edinburgh, Edinburgh, United Kingdom
+AD  - QIMR Berghofer Medical Research Institute, Royal Brisbane Hospital, Brisbane, QLD, Australia
+AD  - William Harvey Research Institute, Barts and the London School of Medicine and Dentistry, Queen Mary University of London, London, United Kingdom
+AD  - Department of Genes and Environment, Division of Epidemiology, Norwegian Institute of Public Health, Oslo, Norway
+AD  - Research Centre of Applied and Preventive Cardiovascular Medicine, University of Turku, Turku, Finland
+AD  - Institute of Biomedicine, School of Medicine, University of Eastern Finland, Kuopio, Finland
+AD  - Department of Neuroscience, Katholieke Universiteit Leuven, Leuven, Belgium
+AD  - VIB Center for Brain and Disease Research, Leuven, Belgium
+AD  - ISGlobal, Barcelona Institute for Global Health, Barcelona, Spain
+AD  - Universitat Pompeu Fabra, Barcelona, Spain
+AD  - CIBER de Epidemiología y Salud Pública, Madrid, Spain
+AD  - Hospital del Mar Medical Research Institute, Barcelona, Spain
+AD  - Medical Research Council Lifecourse Epidemiology Unit, University of Southampton, Southampton, United Kingdom
+AD  - NIHR Southampton Biomedical Research Centre, University of Southampton and University Hospital Southampton NHS Foundation Trust, Southampton, United Kingdom
+AD  - Human Development and Health, Faculty of Medicine, University of Southampton, Southampton, United Kingdom
+AD  - Subdirección de Salud Pública y Adicciones de Gipuzkoa, San Sebastián, Spain
+AD  - Instituto de Investigación Sanitaria Biodonostia, San Sebastián, Spain
+AD  - Sidra Medicine Research Department, Sidra Medicine, Doha, Qatar
+AD  - Genomics Unit, Dexeus Woman’s Health, Barcelona, Spain
+AD  - Division of Obstetrics and Gynaecology, The University of Western Australia, Perth, WA, Australia
+AD  - Institute of Nutritional Science, University of Potsdam, Nuthetal, Germany
+AD  - Department of Life Sciences and Biotechnology, Genetic Section, University of Ferrara, Ferrara, Italy
+AD  - Fifth Department of Medicine, University Medical Centre Mannheim, University of Heidelberg, Heidelberg, Germany
+AD  - Reproductive and Genetic Hospital of CITIC-Xiangya, Changsha, China
+AD  - Department of Biostatistics, Boston University School of Public Health, Boston, MA, United States
+AD  - Framingham Heart Study, Framingham, MA, United States
+AD  - Section of General Internal Medicine, Department of Medicine, Boston University School of Medicine, Boston, MA, United States
+AD  - Department of Preventive Medicine, Keck School of Medicine, University of Southern California, Los Angeles, United States
+AD  - Centre de recherche, Centre Hospitalier Universitaire de Sherbrooke, Sherbrooke, QC, Canada
+AD  - ECOGENE-21 and Lipid Clinic, Chicoutimi Hospital, Saguenay, QC, Canada
+AD  - Department of Biochemistry, Université de Sherbrooke, Sherbrooke, QC, Canada
+AD  - Department of Population Medicine, Harvard Pilgrim Health Care Institute, Harvard Medical School, Boston, MA, United States
+AD  - Diabetes Center, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Medicine, Universite de Sherbrooke, Sherbooke, QC, Canada
+AD  - Human Genetics Division, Cincinnati Children’s Hospital Medical Center, Cincinnati, OH, United States
+AD  - Center for Prevention of Preterm Birth, Perinatal Institute, Cincinnati Children’s Hospital Medical Center, Department of Pediatrics, University of Cincinnati College of Medicine, Cincinnati, OH, United States
+AD  - March of Dimes Prematurity Research Center Ohio Collaborative, Cincinnati, OH, United States
+AD  - Institute for Molecular Medicine Finland, University of Helsinki, Helsinki, Finland
+AD  - Department of Public Health, Section of Epidemiology, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - Bioinformatics Laboratory, Clinical Epidemiology, Biostatistics and Bioinformatics, Amsterdam Public Health Research Institute, Academic Medical Center, University of Amsterdam, Amsterdam, Netherlands
+AD  - Biosystems Data Analysis, Swammerdam Institute for Life Sciences, University of Amsterdam, Amsterdam, Netherlands
+AD  - Department of Pediatrics, University of California San Diego, La Jolla, CA, United States
+AD  - Department of Internal Medicine, Erasmus MC, University Medical Center Rotterdam, Rotterdam, Netherlands
+AD  - Institute of Social and Preventive Medicine, Lausanne University Hospital, Lausanne, Switzerland
+AD  - Department of Medicine, Internal Medicine, Lausanne University Hospital, Lausanne, Switzerland
+AD  - Medical Research Council Unit for Lifelong Health and Ageing at UCL, Institute of Cardiovascular Sciences, University College London, London, United Kingdom
+AD  - Amsterdam Reproduction and Development, Amsterdam, Netherlands
+AD  - Institute of Genetic Epidemiology, Helmholtz Zentrum München German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Department of Internal Medicine I (Cardiology), Hospital of the Ludwig-Maximilians-University Munich, Munich, Germany
+AD  - Division of Genetic Epidemiology, Institute for Medical Information Processing, Biometry and Epidemiology, Faculty of Medicine, Ludwig-Maximilians-University Munich, Munich, Germany
+AD  - Children’s Obesity Clinic, Department of Pediatrics, Copenhagen University Hospital Holbæk, Holbæk, Denmark
+AD  - Hans Christian Andersen Children’s Hospital, Odense University Hospital, Odense, Denmark
+AD  - FISABIO–Universitat Jaume I–Universitat de València, Joint Research Unit of Epidemiology and Environmental Health, Valencia, Spain
+AD  - Joint BSC–CGR–IRB Research Program in Computational Biology, Barcelona Supercomputing Center, Barcelona, Spain
+AD  - Danish Center for Neonatal Screening, Department for Congenital Disorders, Statens Serum Institut, Copenhagen, Denmark
+AD  - Programs in Metabolism and Medical and Population Genetics, Broad Institute of Harvard and MIT, Cambridge, MA, United States
+AD  - Diabetes Unit and Center for Genomic Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Clinical Medicine, Faculty of Health and Medical Sciences, Copenhagen University, Copenhagen, Denmark
+AD  - Center for Clinical Research and Prevention, Bispebjerg and Frederiksberg Hospital, Frederiksberg, Denmark
+AD  - NIHR Exeter Clinical Research Facility, University of Exeter College of Medicine and Health and Royal Devon and Exeter NHS Foundation Trust, Exeter, United Kingdom
+AD  - Saw Swee Hock School of Public Health, National University of Singapore, National University Health System, Singapore, Singapore
+AD  - Computer Sciences Department, Barcelona Supercomputing Center, Barcelona, Spain
+AD  - Institució Catalana de Recerca i Estudis Avançats, Barcelona, Spain
+AD  - IFB Adiposity Diseases, University of Leipzig, Leipzig, Germany
+AD  - Section of Genomics of Common Disease, Department of Medicine, Imperial College London, London, United Kingdom
+AD  - Program in Medical and Population Genetics, Broad Institute of Harvard and MIT, Cambridge, MA, United States
+AD  - Division of Genetics, Department of Medicine, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Medical Department, University of Leipzig, Leipzig, Germany
+AD  - Department of Nutrition, Exercise and Sports, Faculty of Science, University of Copenhagen, Copenhagen, Denmark
+AD  - Department of Clinical Physiology and Nuclear Medicine, Kuopio University Hospital, Kuopio, Finland
+AD  - Kuopio Research Institute of Exercise Medicine, Kuopio, Finland
+AD  - Pediatric Research Center, Department of Women’s andChild Health, University of Leipzig, Leipzig, Germany
+AD  - Department of Pediatrics, Turku University Hospital, Turku, Finland
+AD  - Department of Physiology, University of Turku, Turku, Finland
+AD  - Paavo Nurmi Centre, Sports and Exercise Medicine Unit, Department of Physical Activity and Health, University of Turku, Turku, Finland
+AD  - Department of Clinical Physiology and Nuclear Medicine, Turku University Hospital, Turku, Finland
+AD  - Institute of Translational Genomics, Helmholtz Zentrum München German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Department of Nutrition and Dietetics, School of Health Science and Education, Harokopio University, Athens, Greece
+AD  - Department of Statistics and Applied Probability, National University of Singapore, Singapore, Singapore
+AD  - Life Sciences Institute, National University of Singapore, Singapore, Singapore
+AD  - Singapore Eye Research Institute, Singapore, Singapore
+AD  - MRC Human Genetics Unit, Institute of Genetics and Molecular Medicine, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Department of Medicine, Division of Endocrinology, Metabolism, and Molecular Medicine, Feinberg School of Medicine, Northwestern University, Chicago, IL, United States
+AD  - Quantitative and Systems Genomics Group, Department of Bio and Health Informatics, Technical University of Denmark, Lyngby, Denmark
+AD  - School of Medicine, Royal Perth Hospital, University of Western Australia, Perth, WA, Australia
+AD  - Institute and Outpatient Clinic for Occupational Social and Environmental Medicine, Inner City Clinic, University Hospital Munich, Ludwig-Maximilians-University Munich, Munich, Germany
+AD  - Department of Nutrition, University of North Carolina, Chapel Hill, NC, United States
+AD  - USC-Office of Population Studies Foundation, University of San Carlos, Cebu City, Philippines
+AD  - Department of Nutrition and Dietetics, University of San Carlos, Cebu City, Philippines
+AD  - National Institute for Health and Welfare, Helsinki, Finland
+AD  - Department of General Practice and Primary Health Care, University of Helsinki and Helsinki University Hospital, Helsinki, Finland
+AD  - Folkhälsan Research Center, Helsinki, Finland
+AD  - Department of Clinical Physiology, Tampere University Hospital, Tampere, Finland
+AD  - Department of Clinical Physiology, Finnish Cardiovascular Research Center–Tampere, Faculty of Medicine and Health Technology, Tampere University, Tampere, Finland
+AD  - Division of Medicine, Turku University Hospital, Turku, Finland
+AD  - Department of Medicine, University of Turku, Turku, Finland
+AD  - Department of Epidemiology and Biostatistics, MRC-PHE Centre for Environment and Health, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Biocenter Oulu, University of Oulu, Oulu, Finland
+AD  - Department of Genomics of Complex Diseases, Imperial College London, London, United Kingdom
+AD  - Department of Pediatrics, University of Iowa, Iowa City, IA, United States
+AD  - Department of Medicine, Stanford School of Medicine, Stanford, CA, United States
+AD  - Research Unit for Gynaecology and Obstetrics, Institute of Clinical Research, University of Southern Denmark, Odense, Denmark
+AD  - Department of Public Health and Primary Care, Leiden University Medical Center, Leiden, Netherlands
+AD  - Research Center for Prevention and Health, Center for Sundhed, Rigshospitalet Glostrup, Copenhagen University, Glostrup, Denmark
+AD  - Cardiovascular, Renal and Metabolism, Translational Medicine Unit, Early Clinical Development, IMED Biotech Unit, AstraZeneca, Gothenburg, Sweden
+AD  - Unit of Primary Health Care, Oulu University Hospital, Oulu, Finland
+AD  - Department of Life Sciences, College of Health and Life Sciences, Brunel University London, London, United Kingdom
+AD  - Australian Centre for Precision Health, University of South Australia Cancer Research Institute, Adelaide, SA, Australia
+AD  - South Australian Health and Medical Research Institute, Adelaide, SA, Australia
+AD  - NIHR Bristol Biomedical Research Centre, Bristol, United Kingdom
+AD  - Department of Biostatistics, University of Liverpool, Liverpool, United Kingdom
+AD  - Estonian Genome Center, University of Tartu, Tartu, Estonia
+AD  - Department of Pediatrics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, United States
+AD  - Department of Medical Genetics, Haukeland University Hospital, Bergen, Norway
+AD  - Department of Paediatrics, University of Cambridge, Cambridge, United Kingdom
+AD  - NIHR Oxford Biomedical Research Centre, Oxford University Hospitals NHS Foundation Trust, John Radcliffe Hospital, Oxford, United Kingdom
+AB  - Birth weight variation is influenced by fetal and maternal genetic and non-genetic factors, and has been reproducibly associated with future cardio-metabolic health outcomes. In expanded genome-wide association analyses of own birth weight (n = 321,223) and offspring birth weight (n = 230,069 mothers), we identified 190 independent association signals (129 of which are novel). We used structural equation modeling to decompose the contributions of direct fetal and indirect maternal genetic effects, then applied Mendelian randomization to illuminate causal pathways. For example, both indirect maternal and direct fetal genetic effects drive the observational relationship between lower birth weight and higher later blood pressure: maternal blood pressure-raising alleles reduce offspring birth weight, but only direct fetal effects of these alleles, once inherited, increase later offspring blood pressure. Using maternal birth weight-lowering genotypes to proxy for an adverse intrauterine environment provided no evidence that it causally raises offspring blood pressure, indicating that the inverse birth weight–blood pressure association is attributable to genetic effects, and not to intrauterine programming. © 2019, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Adult
+KW  - Birth Weight
+KW  - Blood Pressure
+KW  - Body Height
+KW  - Diabetes Mellitus, Type 2
+KW  - Female
+KW  - Fetal Development
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Heart Diseases
+KW  - Humans
+KW  - Infant, Newborn
+KW  - Male
+KW  - Maternal Inheritance
+KW  - Maternal-Fetal Exchange
+KW  - Metabolic Diseases
+KW  - Models, Genetic
+KW  - Polymorphism, Single Nucleotide
+KW  - Pregnancy
+KW  - Risk Factors
+KW  - allele
+KW  - article
+KW  - birth weight
+KW  - blood pressure monitoring
+KW  - cardiometabolic risk
+KW  - controlled study
+KW  - decomposition
+KW  - female
+KW  - fetus
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - major clinical study
+KW  - maternal blood
+KW  - Mendelian randomization analysis
+KW  - progeny
+KW  - randomized controlled trial
+KW  - structural equation modeling
+KW  - uterus
+KW  - adult
+KW  - biological model
+KW  - birth weight
+KW  - blood pressure
+KW  - body height
+KW  - fetomaternal transfusion
+KW  - fetus development
+KW  - genetic predisposition
+KW  - genetics
+KW  - heart disease
+KW  - male
+KW  - maternal inheritance
+KW  - meta analysis
+KW  - metabolic disorder
+KW  - newborn
+KW  - non insulin dependent diabetes mellitus
+KW  - pregnancy
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Nature Publishing Group
+SN  - 10614036 (ISSN)
+C2  - 31043758
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 368; Correspondence Address: D.M. Evans; University of Queensland Diamantina Institute, Translational Research Institute, Brisbane, Australia; email: d.evans1@uq.edu.au; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Wootton, R.E.
+AU  - Richmond, R.C.
+AU  - Stuijfzand, B.G.
+AU  - Lawn, R.B.
+AU  - Sallis, H.M.
+AU  - Taylor, G.M.J.
+AU  - Hemani, G.
+AU  - Jones, H.J.
+AU  - Zammit, S.
+AU  - Davey Smith, G.
+AU  - Munafò, M.R.
+TI  - Evidence for causal effects of lifetime smoking on risk for depression and schizophrenia: A Mendelian randomisation study
+PY  - 2020
+T2  - Psychological Medicine
+VL  - 50
+IS  - 14
+SP  - 2435
+EP  - 2443
+DO  - 10.1017/S0033291719002678
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85095461386&doi=10.1017%2fS0033291719002678&partnerID=40&md5=4b4d8618a00a46b4cde536f5ed3595f2
+AD  - School of Experimental Psychology, University of Bristol, Bristol, BS8 1TU, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, BS8 2PR, United Kingdom
+AD  - NIHR Biomedical Research Centre, University Hospitals Bristol NHS Foundation Trust, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Department of Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 2PR, United Kingdom
+AD  - Jean Golding Institute, Royal Fort House, University of Bristol, Bristol, BS8 1UH, United Kingdom
+AD  - Department of Psychology, Addiction and Mental Health Group (AIM), University of Bath, Bath, BA2 7AY, United Kingdom
+AD  - Division of Psychological Medicine and Clinical Neurosciences, MRC Centre for Neuropsychiatric Genetics and Genomics, Cardiff University, Cardiff, CF24 4HQ, United Kingdom
+AD  - UK Centre for Tobacco and Alcohol Studies, University of Bristol, Bristol, BS8 1TU, United Kingdom
+AB  - Background Smoking prevalence is higher amongst individuals with schizophrenia and depression compared with the general population. Mendelian randomisation (MR) can examine whether this association is causal using genetic variants identified in genome-wide association studies (GWAS). Methods We conducted two-sample MR to explore the bi-directional effects of smoking on schizophrenia and depression. For smoking behaviour, we used (1) smoking initiation GWAS from the GSCAN consortium and (2) we conducted our own GWAS of lifetime smoking behaviour (which captures smoking duration, heaviness and cessation) in a sample of 462690 individuals from the UK Biobank. We validated this instrument using positive control outcomes (e.g. lung cancer). For schizophrenia and depression we used GWAS from the PGC consortium. Results There was strong evidence to suggest smoking is a risk factor for both schizophrenia (odds ratio (OR) 2.27, 95% confidence interval (CI) 1.67-3.08, p < 0.001) and depression (OR 1.99, 95% CI 1.71-2.32, p < 0.001). Results were consistent across both lifetime smoking and smoking initiation. We found some evidence that genetic liability to depression increases smoking (β = 0.091, 95% CI 0.027-0.155, p = 0.005) but evidence was mixed for schizophrenia (β = 0.022, 95% CI 0.005-0.038, p = 0.009) with very weak evidence for an effect on smoking initiation. Conclusions These findings suggest that the association between smoking, schizophrenia and depression is due, at least in part, to a causal effect of smoking, providing further evidence for the detrimental consequences of smoking on mental health.  Copyright © The Author(s) 2019.
+KW  - ALSPAC
+KW  - depression
+KW  - Mendelian randomisation
+KW  - schizophrenia
+KW  - smoking
+KW  - tobacco
+KW  - UK Biobank
+KW  - Biological Specimen Banks
+KW  - Causality
+KW  - Depression
+KW  - European Continental Ancestry Group
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Risk Factors
+KW  - Schizophrenia
+KW  - Smoking
+KW  - United Kingdom
+KW  - biobank
+KW  - Caucasian
+KW  - causality
+KW  - depression
+KW  - female
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - procedures
+KW  - risk factor
+KW  - schizophrenia
+KW  - smoking
+KW  - United Kingdom
+PB  - Cambridge University Press
+SN  - 00332917 (ISSN)
+C2  - 31689377
+LA  - English
+J2  - Psychol. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 349; Correspondence Address: R.E. Wootton; School of Experimental Psychology, University of Bristol, Bristol, BS8 1TU, United Kingdom; email: robyn.wootton@bristol.ac.uk; CODEN: PSMDC
+ER  -
+
+TY  - JOUR
+AU  - Morrison, J.
+AU  - Knoblauch, N.
+AU  - Marcus, J.H.
+AU  - Stephens, M.
+AU  - He, X.
+TI  - Mendelian randomization accounting for correlated and uncorrelated pleiotropic effects using genome-wide summary statistics
+PY  - 2020
+T2  - Nature Genetics
+VL  - 52
+IS  - 7
+SP  - 740
+EP  - 747
+DO  - 10.1038/s41588-020-0631-4
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85085297166&doi=10.1038%2fs41588-020-0631-4&partnerID=40&md5=4d31157df72992c14bec56d5fe25688c
+AD  - Department of Human Genetics, University of Chicago, Chicago, IL, United States
+AD  - Department of Statistics, University of Chicago, Chicago, IL, United States
+AB  - Mendelian randomization (MR) is a valuable tool for detecting causal effects by using genetic variant associations. Opportunities to apply MR are growing rapidly with the increasing number of genome-wide association studies (GWAS). However, existing MR methods rely on strong assumptions that are often violated, leading to false positives. Correlated horizontal pleiotropy, which arises when variants affect both traits through a heritable shared factor, remains a particularly challenging problem. We propose a new MR method, Causal Analysis Using Summary Effect estimates (CAUSE), that accounts for correlated and uncorrelated horizontal pleiotropic effects. We demonstrate, in simulations, that CAUSE avoids more false positives induced by correlated horizontal pleiotropy than other methods. Applied to traits studied in recent GWAS studies, we find that CAUSE detects causal relationships that have strong literature support and avoids identifying most unlikely relationships. Our results suggest that shared heritable factors are common and may lead to many false positives using alternative methods. © 2020, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Causality
+KW  - Computer Simulation
+KW  - Disease
+KW  - False Positive Reactions
+KW  - Genetic Pleiotropy
+KW  - Genome
+KW  - Mendelian Randomization Analysis
+KW  - Models, Statistical
+KW  - Risk Factors
+KW  - article
+KW  - controlled study
+KW  - false positive result
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - randomized controlled trial
+KW  - simulation
+KW  - causality
+KW  - computer simulation
+KW  - diseases
+KW  - genome
+KW  - Mendelian randomization analysis
+KW  - procedures
+KW  - risk factor
+KW  - statistical model
+PB  - Nature Research
+SN  - 10614036 (ISSN)
+C2  - 32451458
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 347; Correspondence Address: X. He; Department of Human Genetics, University of Chicago, Chicago, United States; email: xinhe@uchicago.edu; CODEN: NGENE
+ER  -
+

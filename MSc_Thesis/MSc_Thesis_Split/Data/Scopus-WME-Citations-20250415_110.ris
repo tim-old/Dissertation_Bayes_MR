@@ -1,0 +1,1117 @@
+﻿TY  - JOUR
+AU  - Zuber, V.
+AU  - Colijn, J.M.
+AU  - Klaver, C.
+AU  - Burgess, S.
+TI  - Selecting likely causal risk factors from high-throughput experiments using multivariable Mendelian randomization
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 29
+DO  - 10.1038/s41467-019-13870-3
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85077558695&doi=10.1038%2fs41467-019-13870-3&partnerID=40&md5=c27cd3436f4807da7dde912b2038de62
+AD  - MRC Biostatistics Unit, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Epidemiology and Biostatistics, Imperial College London, London, United Kingdom
+AD  - Department of Epidemiology, Erasmus University Medical Center, Rotterdam, Netherlands
+AD  - Department of Ophthalmology, Erasmus University Medical Center, Rotterdam, Netherlands
+AD  - Department of Ophthalmology, Radboud University Medical Center, Nijmegen, Netherlands
+AD  - MRC/BHF Cardiovascular Epidemiology Unit, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom
+AB  - Modern high-throughput experiments provide a rich resource to investigate causal determinants of disease risk. Mendelian randomization (MR) is the use of genetic variants as instrumental variables to infer the causal effect of a specific risk factor on an outcome. Multivariable MR is an extension of the standard MR framework to consider multiple potential risk factors in a single model. However, current implementations of multivariable MR use standard linear regression and hence perform poorly with many risk factors. Here, we propose a two-sample multivariable MR approach based on Bayesian model averaging (MR-BMA) that scales to high-throughput experiments. In a realistic simulation study, we show that MR-BMA can detect true causal risk factors even when the candidate risk factors are highly correlated. We illustrate MR-BMA by analysing publicly-available summarized data on metabolites to prioritise likely causal biomarkers for age-related macular degeneration. © 2020, The Author(s).
+KW  - Bayes Theorem
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Models, Genetic
+KW  - Risk Factors
+KW  - cholesterol
+KW  - high density lipoprotein
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - biomarker
+KW  - multivariate analysis
+KW  - regression analysis
+KW  - risk factor
+KW  - simulation
+KW  - age related macular degeneration
+KW  - Article
+KW  - genetic association
+KW  - genetic trait
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - high throughput analysis
+KW  - Mendelian randomization analysis
+KW  - metabolite
+KW  - nuclear magnetic resonance
+KW  - receiver operating characteristic
+KW  - risk factor
+KW  - simulation
+KW  - single nucleotide polymorphism
+KW  - Bayes theorem
+KW  - biological model
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - procedures
+KW  - risk factor
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 31911605
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 135; Correspondence Address: S. Burgess; MRC Biostatistics Unit, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - McCartney, D.L.
+AU  - Min, J.L.
+AU  - Richmond, R.C.
+AU  - Lu, A.T.
+AU  - Sobczyk, M.K.
+AU  - Davies, G.
+AU  - Broer, L.
+AU  - Guo, X.
+AU  - Jeong, A.
+AU  - Jung, J.
+AU  - Kasela, S.
+AU  - Katrinli, S.
+AU  - Kuo, P.-L.
+AU  - Matias-Garcia, P.R.
+AU  - Mishra, P.P.
+AU  - Nygaard, M.
+AU  - Palviainen, T.
+AU  - Patki, A.
+AU  - Raffield, L.M.
+AU  - Ratliff, S.M.
+AU  - Richardson, T.G.
+AU  - Robinson, O.
+AU  - Soerensen, M.
+AU  - Sun, D.
+AU  - Tsai, P.-C.
+AU  - van der Zee, M.D.
+AU  - Walker, R.M.
+AU  - Wang, X.
+AU  - Wang, Y.
+AU  - Xia, R.
+AU  - Xu, Z.
+AU  - Yao, J.
+AU  - Zhao, W.
+AU  - Correa, A.
+AU  - Boerwinkle, E.
+AU  - Dugué, P.-A.
+AU  - Durda, P.
+AU  - Elliott, H.R.
+AU  - Gieger, C.
+AU  - de Geus, E.J.C.
+AU  - Harris, S.E.
+AU  - Hemani, G.
+AU  - Imboden, M.
+AU  - Kähönen, M.
+AU  - Kardia, S.L.R.
+AU  - Kresovich, J.K.
+AU  - Li, S.
+AU  - Lunetta, K.L.
+AU  - Mangino, M.
+AU  - Mason, D.
+AU  - McIntosh, A.M.
+AU  - Mengel-From, J.
+AU  - Moore, A.Z.
+AU  - Murabito, J.M.
+AU  - Ollikainen, M.
+AU  - Pankow, J.S.
+AU  - Pedersen, N.L.
+AU  - Peters, A.
+AU  - Polidoro, S.
+AU  - Porteous, D.J.
+AU  - Raitakari, O.
+AU  - Rich, S.S.
+AU  - Sandler, D.P.
+AU  - Sillanpää, E.
+AU  - Smith, A.K.
+AU  - Southey, M.C.
+AU  - Strauch, K.
+AU  - Tiwari, H.
+AU  - Tanaka, T.
+AU  - Tillin, T.
+AU  - Uitterlinden, A.G.
+AU  - Van Den Berg, D.J.
+AU  - van Dongen, J.
+AU  - Wilson, J.G.
+AU  - Wright, J.
+AU  - Yet, I.
+AU  - Arnett, D.
+AU  - Bandinelli, S.
+AU  - Bell, J.T.
+AU  - Binder, A.M.
+AU  - Boomsma, D.I.
+AU  - Chen, W.
+AU  - Christensen, K.
+AU  - Conneely, K.N.
+AU  - Elliott, P.
+AU  - Ferrucci, L.
+AU  - Fornage, M.
+AU  - Hägg, S.
+AU  - Hayward, C.
+AU  - Irvin, M.
+AU  - Kaprio, J.
+AU  - Lawlor, D.A.
+AU  - Lehtimäki, T.
+AU  - Lohoff, F.W.
+AU  - Milani, L.
+AU  - Milne, R.L.
+AU  - Probst-Hensch, N.
+AU  - Reiner, A.P.
+AU  - Ritz, B.
+AU  - Rotter, J.I.
+AU  - Smith, J.A.
+AU  - Taylor, J.A.
+AU  - van Meurs, J.B.J.
+AU  - Vineis, P.
+AU  - Waldenberger, M.
+AU  - Deary, I.J.
+AU  - Relton, C.L.
+AU  - Horvath, S.
+AU  - Marioni, R.E.
+TI  - Genome-wide association studies identify 137 genetic loci for DNA methylation biomarkers of aging
+PY  - 2021
+T2  - Genome Biology
+VL  - 22
+IS  - 1
+C7  - 194
+DO  - 10.1186/s13059-021-02398-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85109008239&doi=10.1186%2fs13059-021-02398-9&partnerID=40&md5=5734d83f5711b10e9aa98b3ba4b0d3af
+AD  - Centre for Genomic and Experimental Medicine, Institute of Genetics and Cancer, University of Edinburgh, Crewe Road South, Edinburgh, EH4 2XU, United Kingdom
+AD  - MRC Integrative Epidemiology Unit University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Human Genetics, David Geffen School of Medicine, University of California Los Angeles, Los Angeles, 90095, CA, United States
+AD  - Lothian Birth Cohorts, Department of Psychology, University of Edinburgh, Edinburgh, EH8 9JZ, United Kingdom
+AD  - Department of Internal Medicine, Erasmus MC, Rotterdam, Netherlands
+AD  - The Institute for Translational Genomics and Population Sciences, Department of Pediatrics, The Lundquist Institute for Biomedical Innovation at Harbor-UCLA Medical Center, Torrance, CA, United States
+AD  - Swiss Tropical and Public Health Institute, Basel, Switzerland
+AD  - University of Basel, Basel, Switzerland
+AD  - National Institute on Alcohol Abuse and Alcoholism, National Institutes of Health, Bethesda, United States
+AD  - Estonian Genome Centre, Institute of Genomics, University of Tartu, Tartu, Estonia
+AD  - Department of Gynecology and Obstetrics, Emory University School of Medicine, Atlanta, GA, United States
+AD  - Longitudinal Study Section, Translational Gerontology Branch, National Institute on Aging, Baltimore, MD, United States
+AD  - Research Unit Molecular Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health, Neuherberg, 85764, Bavaria, Germany
+AD  - Institute of Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health, Neuherberg, 85764, Bavaria, Germany
+AD  - TUM School of Medicine, Technical University of Munich, Munich, Germany
+AD  - Department of Clinical Chemistry, Fimlab Laboratories, and Finnish Cardiovascular Research Center - Tampere, Faculty of Medicine and Health Technology, Tampere University, Tampere, 33520, Finland
+AD  - Epidemiology, Biostatistics and Biodemography, Department of Public Health, University of Southern Denmark, Odense, Denmark
+AD  - Department of Clinical Genetics, Odense University Hospital, Odense, Denmark
+AD  - Institute for Molecular Medicine Finland, FIMM, HiLIFE, University of Helsinki, Helsinki, Finland
+AD  - Department of Biostatistics, University of Alabama at Birmingham, Birmingham, United States
+AD  - Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, NC, United States
+AD  - Department of Epidemiology, School of Public Health, University of Michigan, Ann Arbor, United States
+AD  - MRC Centre for Environment and Health, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Department of Clinical Biochemistry and Pharmacology, Odense University Hospital, Odense, Denmark
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Peking University Health Science Center, Beijing, China
+AD  - Department of Twin Research and Genetic Epidemiology, King’s College London, London, United Kingdom
+AD  - Department of Biomedical Sciences, Chang Gung University, Taoyuan, Taiwan
+AD  - Division of Pediatric Infectious Diseases, Department of Pediatrics, Chang Gung Memorial Hospital, Taoyuan City, Taiwan
+AD  - Department of Biological Psychology, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Amsterdam Public Health Research Institute, Amsterdam, Netherlands
+AD  - Cancer Epidemiology Division, Cancer Council Victoria, 615 St Kilda Road, Melbourne, 3004, VIC, Australia
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Solna, Sweden
+AD  - Brown Foundation Institute of Molecular Medicine, McGovern Medical School, University of Texas Health Science Center at Houston, Houston, TX, United States
+AD  - National Institute of Environmental Health Sciences, Research Triangle Park, 27709, NC, United States
+AD  - The Institute for Translational Genomics and Population Sciences, Department of Pediatrics, The Lundquist Institute for Biomedical Innovation at Harbor-UCLA Medical Center, Torrance, CA, United States
+AD  - Department of Medicine, University of Mississippi Medical Center, Jackson, MS, United States
+AD  - School of Public Health, University of Texas Health Science Center at Houston, Houston, TX, United States
+AD  - Precision Medicine, School of Clinical Sciences at Monash Health, Monash University, Clayton, 3168, VIC, Australia
+AD  - Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health, The University of Melbourne, 207 Bouverie Street, Melbourne, 3010, VIC, Australia
+AD  - Department of Pathology & Laboratory Medicine, Larner College of Medicine, University of Vermont, Burlington, 05446, VT, United States
+AD  - Department of Clinical Physiology, Tampere University Hospital, and Finnish Cardiovascular Research Center - Tampere, Faculty of Medicine and Health Technology, Tampere University, Tampere, 33521, Finland
+AD  - Children’s Minnesota Research Institute, Children’s Minnesota, Minneapolis, 55404, MN, United States
+AD  - Department of Biostatistics, Boston University School of Public Health, Boston, United States
+AD  - NIHR Biomedical Research Centre at Guy’s and St Thomas’ Foundation Trust, London, SE1 9RT, United Kingdom
+AD  - Bradford Institute for Health Research, Bradford Teaching Hospitals NHS Foundation Trust, Bradford, United Kingdom
+AD  - Division of Psychiatry, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Section of General Internal Medicine, Department of Medicine, Boston University School of Medicine, Boston, MA, United States
+AD  - Division of Epidemiology and Community Health, University of Minnesota, Minneapolis, MN, United States
+AD  - German Center for Cardiovascular Research (DZHK), Partner Site Munich Heart Alliance, Munich, Germany
+AD  - Centre for Population Health Research, University of Turku and Turku University Hospital, Turku, Finland
+AD  - Research Centre of Applied and Preventive Cardiovascular Medicine, University of Turku, Turku, Finland
+AD  - Department of Clinical Physiology and Nuclear Medicine, Turku University Hospital, Turku, Finland
+AD  - Department of Public Health Sciences, Center for Public Health Genomics, University of Virginia, Charlottesville, 22908, VA, United States
+AD  - Gerontology Research Center, Faculty of Sport and Health Sciences, University of Jyväskylä, Jyväskylä, Finland
+AD  - Department of Psychiatry and Behavioral Sciences, Emory University School of Medicine, Atlanta, GA, United States
+AD  - Institute of Genetic Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health, Neuherberg, 85764, Bavaria, Germany
+AD  - Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI), University Medical Center, Johannes Gutenberg University, Mainz, 55101, Germany
+AD  - Chair of Genetic Epidemiology, Institute for Medical Information Processing, Biometry, and Epidemiology, Faculty of Medicine, Ludwig-Maximilians-Universität München, Munich, Germany
+AD  - MRC Unit for Lifelong Health and Ageing at UCL, London, United Kingdom
+AD  - Department of Epidemiology, Erasmus MC, Rotterdam, Netherlands
+AD  - Center for Genetic Epidemiology, Department of Preventive Medicine, Keck School of Medicine of USC, University of Southern California, Los Angeles, CA, United States
+AD  - Division of Cardiology, Beth Israel Deaconess Medical Center, Boston, MA, United States
+AD  - Department of Physiology and Biophysics, University of Mississippi Medical Center, Jackson, MS, United States
+AD  - Department of Bioinformatics, Institute of Health Sciences, Hacettepe University, Ankara, 06100, Turkey
+AD  - Deans Office, College of Public Health, University of Kentucky, Lexington, United Kingdom
+AD  - Geriatric Unit, Azienda Sanitaria Toscana Centro, Florence, Italy
+AD  - Department of Epidemiology, Fielding School of Public Health, University of California, Los Angeles, CA, United States
+AD  - Population Sciences in the Pacific Program (Cancer Epidemiology), University of Hawaiʻi Cancer Center, University of Hawaiʻi, Honolulu, HI, United States
+AD  - Department of Epidemiology, School of Public Health and Tropical Medicine, Tulane University, New Orleans, 70112, LA, United States
+AD  - Department of Human Genetics, Emory University School of Medicine, Atlanta, GA, United States
+AD  - MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Crewe Rd. South, Edinburgh, EH4 2XU, United Kingdom
+AD  - Dept of Epidemiology, University of Alabama at Birmingham, Birmingham, United States
+AD  - Department of Public Health, University of Helsinki, Helsinki, Finland
+AD  - Bristol NIHR Biomedical Research Centre, Bristol, United Kingdom
+AD  - Department of Epidemiology, University of Washington, Seattle, WA, United States
+AD  - Department of Biostatistics, Fielding School of Public Health, University of California Los Angeles, Los Angeles, 90095, CA, United States
+AD  - Genetics of DNA methylation Consortium, Bristol, United Kingdom
+AD  - TOPMed Data Coordinating Center, Genetic Analysis Center, Department of Biostatistics, University of Washington, Seattle, United States
+AB  - Background: Biological aging estimators derived from DNA methylation data are heritable and correlate with morbidity and mortality. Consequently, identification of genetic and environmental contributors to the variation in these measures in populations has become a major goal in the field. Results: Leveraging DNA methylation and SNP data from more than 40,000 individuals, we identify 137 genome-wide significant loci, of which 113 are novel, from genome-wide association study (GWAS) meta-analyses of four epigenetic clocks and epigenetic surrogate markers for granulocyte proportions and plasminogen activator inhibitor 1 levels, respectively. We find evidence for shared genetic loci associated with the Horvath clock and expression of transcripts encoding genes linked to lipid metabolism and immune function. Notably, these loci are independent of those reported to regulate DNA methylation levels at constituent clock CpGs. A polygenic score for GrimAge acceleration showed strong associations with adiposity-related traits, educational attainment, parental longevity, and C-reactive protein levels. Conclusion: This study illuminates the genetic architecture underlying epigenetic aging and its shared genetic contributions with lifestyle factors and longevity. © 2021, The Author(s).
+KW  - DNA methylation
+KW  - Epigenetic clock
+KW  - GWAS
+KW  - Adiposity
+KW  - Aging
+KW  - Biomarkers
+KW  - C-Reactive Protein
+KW  - CpG Islands
+KW  - DNA Methylation
+KW  - Educational Status
+KW  - Epigenesis, Genetic
+KW  - Genetic Loci
+KW  - Genetic Markers
+KW  - Genome, Human
+KW  - Genome-Wide Association Study
+KW  - Granulocytes
+KW  - Humans
+KW  - Immunity, Innate
+KW  - Lipid Metabolism
+KW  - Multifactorial Inheritance
+KW  - Plasminogen Activator Inhibitor 1
+KW  - biological marker
+KW  - plasminogen activator inhibitor 1
+KW  - telomerase
+KW  - transcription factor
+KW  - biological marker
+KW  - C reactive protein
+KW  - SERPINE1 protein, human
+KW  - aging
+KW  - all cause mortality
+KW  - Article
+KW  - blood cell count
+KW  - disease marker
+KW  - DNA methylation
+KW  - epigenetic clock
+KW  - epigenetics
+KW  - functional enrichment analysis
+KW  - gene expression
+KW  - gene locus
+KW  - genetic analysis
+KW  - genetic association
+KW  - genetic correlation
+KW  - genetic marker
+KW  - genetic risk
+KW  - genetic risk score
+KW  - genetic susceptibility
+KW  - genetic trait
+KW  - genetic transcription
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - granulocyte
+KW  - health status
+KW  - heritability
+KW  - histone modification
+KW  - human
+KW  - immune response
+KW  - immune system
+KW  - lifestyle
+KW  - lipid metabolism
+KW  - longevity
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - monogenic disorder
+KW  - morbidity
+KW  - mortality risk
+KW  - multiple cancer
+KW  - pathway enrichment analysis
+KW  - single nucleotide polymorphism
+KW  - aging
+KW  - CpG island
+KW  - cytology
+KW  - educational status
+KW  - genetic epigenesis
+KW  - genetics
+KW  - genome-wide association study
+KW  - human genome
+KW  - immunology
+KW  - innate immunity
+KW  - metabolism
+KW  - multifactorial inheritance
+KW  - obesity
+PB  - BioMed Central Ltd
+SN  - 14747596 (ISSN)
+C2  - 34187551
+LA  - English
+J2  - Genome Biol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 136; Correspondence Address: R.E. Marioni; Centre for Genomic and Experimental Medicine, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, Crewe Road South, EH4 2XU, United Kingdom; email: riccardo.marioni@ed.ac.uk; S. Horvath; Department of Human Genetics, David Geffen School of Medicine, University of California Los Angeles, Los Angeles, 90095, United States; email: shorvath@mednet.ucla.edu; CODEN: GNBLF
+ER  -
+
+TY  - JOUR
+AU  - Dashti, H.S.
+AU  - Daghlas, I.
+AU  - Lane, J.M.
+AU  - Huang, Y.
+AU  - Udler, M.S.
+AU  - Wang, H.
+AU  - Ollila, H.M.
+AU  - Jones, S.E.
+AU  - Kim, J.
+AU  - Wood, A.R.
+AU  - Agee, M.
+AU  - Auton, A.
+AU  - Bell, R.K.
+AU  - Bryc, K.
+AU  - Clark, S.K.
+AU  - Elson, S.L.
+AU  - Fletez-Brant, K.
+AU  - Fontanillas, P.
+AU  - Furlotte, N.A.
+AU  - Gandhi, P.M.
+AU  - Heilbron, K.
+AU  - Hicks, B.
+AU  - Hinds, D.A.
+AU  - Huber, K.E.
+AU  - Jewett, E.M.
+AU  - Jiang, Y.
+AU  - Kleinman, A.
+AU  - Lin, K.-H.
+AU  - Litterman, N.K.
+AU  - Luff, M.K.
+AU  - McCreight, J.C.
+AU  - McIntyre, M.H.
+AU  - McManus, K.F.
+AU  - Mountain, J.L.
+AU  - Mozaffari, S.V.
+AU  - Nandakumar, P.
+AU  - Noblin, E.S.
+AU  - Northover, C.A.M.
+AU  - O’Connell, J.
+AU  - Petrakovitz, A.A.
+AU  - Pitts, S.J.
+AU  - Poznik, G.D.
+AU  - Sathirapongsasuti, J.F.
+AU  - Shastri, A.J.
+AU  - Shelton, J.F.
+AU  - Shringarpure, S.
+AU  - Tian, C.
+AU  - Tung, J.Y.
+AU  - Tunney, R.J.
+AU  - Vacic, V.
+AU  - Wang, X.
+AU  - Zare, A.S.
+AU  - Weedon, M.N.
+AU  - Aslibekyan, S.
+AU  - Garaulet, M.
+AU  - Saxena, R.
+TI  - Genetic determinants of daytime napping and effects on cardiometabolic health
+PY  - 2021
+T2  - Nature Communications
+VL  - 12
+IS  - 1
+C7  - 900
+DO  - 10.1038/s41467-020-20585-3
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85101163565&doi=10.1038%2fs41467-020-20585-3&partnerID=40&md5=7389e8a0a3063e534ccaf5e90dbc1009
+AD  - Center for Genomic Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Broad Institute, Cambridge, MA, United States
+AD  - Department of Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - 23andMe, Inc., Sunnyvale, CA, United States
+AD  - Diabetes Unit, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Medicine, Harvard Medical School, Boston, MA, United States
+AD  - Division of Sleep and Circadian Disorders, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Institute for Molecular Medicine FIMM, HiLIFE, University of Helsinki, Helsinki, Finland
+AD  - Department of Psychiatry and Behavioral Sciences, Stanford University, Stanford, CA, United States
+AD  - Genetics of Complex Traits, University of Exeter Medical School, Exeter, United Kingdom
+AD  - GlaxoSmithKline, Waltham, MA, United States
+AD  - Department of Physiology, University of Murcia, Murcia, Spain
+AD  - IMIB-Arrixaca, Murcia, Spain
+AB  - Daytime napping is a common, heritable behavior, but its genetic basis and causal relationship with cardiometabolic health remain unclear. Here, we perform a genome-wide association study of self-reported daytime napping in the UK Biobank (n = 452,633) and identify 123 loci of which 61 replicate in the 23andMe research cohort (n = 541,333). Findings include missense variants in established drug targets for sleep disorders (HCRTR1, HCRTR2), genes with roles in arousal (TRPC6, PNOC), and genes suggesting an obesity-hypersomnolence pathway (PNOC, PATJ). Association signals are concordant with accelerometer-measured daytime inactivity duration and 33 loci colocalize with loci for other sleep phenotypes. Cluster analysis identifies three distinct clusters of nap-promoting mechanisms with heterogeneous associations with cardiometabolic outcomes. Mendelian randomization shows potential causal links between more frequent daytime napping and higher blood pressure and waist circumference. © 2021, The Author(s).
+KW  - Adult
+KW  - Aged
+KW  - Blood Pressure
+KW  - Cardiometabolic Risk Factors
+KW  - Cohort Studies
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Middle Aged
+KW  - Myocytes, Cardiac
+KW  - Sleep
+KW  - TRPC6 Cation Channel
+KW  - United Kingdom
+KW  - Waist Circumference
+KW  - 4 aminobutyric acid receptor
+KW  - orexin
+KW  - orexin receptor antagonist
+KW  - transient receptor potential channel 6
+KW  - transient receptor potential channel 6
+KW  - TRPC6 protein, human
+KW  - blood
+KW  - cardiovascular disease
+KW  - drug development
+KW  - phenotype
+KW  - sleep
+KW  - adult
+KW  - aged
+KW  - arousal
+KW  - Article
+KW  - biobank
+KW  - cardiometabolic risk
+KW  - cluster analysis
+KW  - cohort analysis
+KW  - daytime somnolence
+KW  - elevated blood pressure
+KW  - female
+KW  - gene locus
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - hcrtr1 gene
+KW  - hcrtr2 gene
+KW  - heart disease
+KW  - human
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - metabolic disorder
+KW  - missense mutation
+KW  - obesity
+KW  - patj gene
+KW  - phenotype
+KW  - pnoc gene
+KW  - signal transduction
+KW  - sleep
+KW  - sleep time
+KW  - somnolence
+KW  - United Kingdom
+KW  - waist circumference
+KW  - blood pressure
+KW  - cardiac muscle cell
+KW  - genetics
+KW  - genome-wide association study
+KW  - metabolism
+KW  - middle aged
+KW  - sleep
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 33568662
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 129; Correspondence Address: R. Saxena; Center for Genomic Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, United States; email: rsaxena@mgh.harvard.edu; M. Garaulet; Division of Sleep and Circadian Disorders, Brigham and Women’s Hospital and Harvard Medical School, Boston, United States; email: garaulet@um.es
+ER  -
+
+TY  - JOUR
+AU  - Jia, J.
+AU  - Dou, P.
+AU  - Gao, M.
+AU  - Kong, X.
+AU  - Li, C.
+AU  - Liu, Z.
+AU  - Huang, T.
+TI  - Assessment of causal direction between gut microbiota- dependent metabolites and cardiometabolic health: A bidirectional mendelian randomization analysis
+PY  - 2019
+T2  - Diabetes
+VL  - 68
+IS  - 9
+SP  - 1747
+EP  - 1755
+DO  - 10.2337/db19-0153
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85071426193&doi=10.2337%2fdb19-0153&partnerID=40&md5=77696c18fbcf384907ed69a1c9d2bc66
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Peking University, Beijing, China
+AD  - Department of Biostatistics, School of Public Health, Peking University, Beijing, China
+AD  - Department of Clinical Nutrition, Peking University First Hospital, Beijing, China
+AD  - Martinos Center, Massachusetts General Hospital, Charleston, MA, United States
+AD  - Department of Epidemiology and Biostatistics, University of Georgia, Athens, GA, United States
+AD  - Department of Statistics and Actuarial Science, University of Hong Kong, Hong Kong
+AD  - Department of Global Health, School of Public Health, Peking University, Beijing, China
+AD  - Key Laboratory of Molecular Cardiovascular Sciences, Peking University, Ministry of Education, Beijing, China
+AB  - We examined the causal direction between gut microbiota-dependent metabolite trimethylamine N-oxide (TMAO) or its predecessors and cardiometabolic diseases, such as risk of type 2 diabetes mellitus (T2DM), coronary artery disease (CAD), myocardial infarction (MI), stroke, atrial fibrillation (AF), and chronic kidney disease (CKD). We used genetic variants as instruments to test the causal associations. Genetically predicted higher TMAO and carnitine were not associated with higher odds of T2DM, AF, CAD, MI, stroke, and CKD after Bonferroni correction (P ≤ 0.0005). However, we observed that genetically increased choline showed a suggestive association with higher risk of T2DM (odds ratio 1.84 [95% CI 1.00-3.42] per 10 units, P = 0.05). In contrast, genetically predicted higher betaine (0.68 [0.48-0.95] per 10 units, P = 0.023) was suggestively associated with a lower risk of T2DM. We observed a suggestive association of genetically increased choline with a lower level of body fat percentage (β ± SE 20.28 ± 0.11, P = 0.013) but a higher estimated glomerular filtration rate (0.10 ± 0.05, P = 0.034). We further found that T2DM (0.130 ± 0.036, P < 0.0001) and CKD (0.483 ± 0.168, P = 0.004) were causally associated with higher TMAO levels. Our Mendelian randomization findings support that T2DM and kidney disease increase TMAO levels and that observational evidence for cardiovascular diseases may be due to confounding or reverse causality. © 2019 by the American Diabetes Association.
+KW  - Adiposity
+KW  - Biomarkers
+KW  - Body Mass Index
+KW  - Cardiovascular Diseases
+KW  - Gastrointestinal Microbiome
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Metabolic Diseases
+KW  - betaine
+KW  - carnitine
+KW  - choline
+KW  - cystatin C
+KW  - hemoglobin A1c
+KW  - high density lipoprotein
+KW  - leptin
+KW  - low density lipoprotein
+KW  - proinsulin
+KW  - triacylglycerol
+KW  - trimethylamine oxide
+KW  - biological marker
+KW  - acute coronary syndrome
+KW  - Article
+KW  - atrial fibrillation
+KW  - body fat
+KW  - cardiometabolic risk
+KW  - causality
+KW  - cerebrovascular accident
+KW  - chronic kidney failure
+KW  - coronary artery disease
+KW  - coronary artery obstruction
+KW  - gene linkage disequilibrium
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - heart infarction
+KW  - human
+KW  - intestine flora
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - pleiotropy
+KW  - priority journal
+KW  - stable angina pectoris
+KW  - body mass
+KW  - cardiovascular disease
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - metabolic disorder
+KW  - metabolism
+KW  - obesity
+KW  - physiology
+PB  - American Diabetes Association Inc.
+SN  - 00121797 (ISSN)
+C2  - 31167879
+LA  - English
+J2  - Diabetes
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 138; Correspondence Address: Z. Liu; Department of Statistics and Actuarial Science, University of Hong Kong, Hong Kong; email: zhhliu@hku.hk; CODEN: DIAEA
+ER  -
+
+TY  - JOUR
+AU  - Tillmann, T.
+AU  - Vaucher, J.
+AU  - Okbay, A.
+AU  - Pikhart, H.
+AU  - Peasey, A.
+AU  - Kubinova, R.
+AU  - Pajak, A.
+AU  - Tamosiunas, A.
+AU  - Malyutina, S.
+AU  - Hartwig, F.P.
+AU  - Fischer, K.
+AU  - Veronesi, G.
+AU  - Palmer, T.
+AU  - Bowden, J.
+AU  - Davey Smith, G.
+AU  - Bobak, M.
+AU  - Holmes, M.V.
+TI  - Education and coronary heart disease: Mendelian randomisation study
+PY  - 2017
+T2  - BMJ (Online)
+VL  - 358
+C7  - j3542
+DO  - 10.1136/bmj.j3542
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85029164186&doi=10.1136%2fbmj.j3542&partnerID=40&md5=8c5353be3420c4dcd15b27c03dcc831c
+AD  - Department of Epidemiology and Public Health, University College London, London, United Kingdom
+AD  - Department of Internal Medicine, Lausanne University Hospital, Lausanne, Switzerland
+AD  - Department of Complex Trait Genetics, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Centre for Environmental Health Monitoring, National Institute of Public Health, Prague, Czech Republic
+AD  - Department of Epidemiology and Population Studies, Institute of Public Health, Faculrty of Health Sciences, Jagiellonian University Medical College, Krakow, Poland
+AD  - Institute of Cardiology, Lithuanian University of Health Sciences, Kaunas, Lithuania
+AD  - Research Institute of Internal and Preventive Medicine, Branch of the Institute of Cytology and Genetics, SB RAS, Novosibirsk, Russian Federation
+AD  - Novosibirsk State Medical University, Novosibirsk, Russian Federation
+AD  - Postgraduate Programme in Epidemiology, Federal University of Pelotas, Pelotas, Brazil
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Estonian Genome Center, University of Tartu, Tartu, Estonia
+AD  - Research Center in Epidemiology and Preventive Medicine, University of Insubria, Varese, Italy
+AD  - Department of Mathematics and Statistics, Lancaster University, Lancaster, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, Big Data Institute, University of Oxford, Oxford, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, Oxford, United Kingdom
+AD  - National Institute for Health Research Oxford Biomedical Research Centre, Oxford University Hospital, Oxford, United Kingdom
+AB  - Objective To determine whether educational attainment is a causal risk factor in the development of coronary heart disease. Design Mendelian randomisation study, using genetic data as proxies for education to minimise confounding. Setting The main analysis used genetic data from two large consortia (CARDIoGRAMplusC4D and SSGAC), comprising 112 studies from predominantly high income countries. Findings from mendelian randomisation analyses were then compared against results from traditional observational studies (164 170 participants). Finally, genetic data from six additional consortia were analysed to investigate whether longer education can causally alter the common cardiovascular risk factors. Participants The main analysis was of 543 733 men and women (from CARDIoGRAMplusC4D and SSGAC), predominantly of European origin. Exposure A one standard deviation increase in the genetic predisposition towards higher education (3.6 years of additional schooling), measured by 162 genetic variants that have been previously associated with education. Main outcome measure Combined fatal and non-fatal coronary heart disease (63 746 events in CARDIoGRAMplusC4D). Results Genetic predisposition towards 3.6 years of additional education was associated with a one third lower risk of coronary heart disease (odds ratio 0.67, 95% confidence interval 0.59 to 0.77; P=3×10-8). This was comparable to findings from traditional observational studies (prevalence odds ratio 0.73, 0.68 to 0.78; incidence odds ratio 0.80, 0.76 to 0.83). Sensitivity analyses were consistent with a causal interpretation in which major bias from genetic pleiotropy was unlikely, although this remains an untestable possibility. Genetic predisposition towards longer education was additionally associated with less smoking, lower body mass index, and a favourable blood lipid profile. Conclusions This mendelian randomisation study found support for the hypothesis that low education is a causal risk factor in the development of coronary heart disease. Potential mechanisms could include smoking, body mass index, and blood lipids. In conjunction with the results from studies with other designs, these findings suggest that increasing education may result in substantial health benefits.
+KW  - Coronary Disease
+KW  - Educational Status
+KW  - Europe
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Health Knowledge, Attitudes, Practice
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Observational Studies as Topic
+KW  - Risk Factors
+KW  - Social Class
+KW  - lipid
+KW  - Article
+KW  - body mass
+KW  - cardiovascular risk
+KW  - controlled study
+KW  - educational status
+KW  - European
+KW  - female
+KW  - genetic database
+KW  - genetic predisposition
+KW  - genetic variability
+KW  - human
+KW  - ischemic heart disease
+KW  - lipid blood level
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - observational study
+KW  - pleiotropy
+KW  - priority journal
+KW  - smoking
+KW  - attitude to health
+KW  - Coronary Disease
+KW  - ethnology
+KW  - Europe
+KW  - genetics
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - risk factor
+KW  - social class
+PB  - BMJ Publishing Group
+SN  - 09598146 (ISSN)
+C2  - 28855160
+LA  - English
+J2  - BMJ (Online)
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 132; Correspondence Address: T. Tillmann; Department of Epidemiology and Public Health, University College London, London, United Kingdom; email: t.tillmann@ucl.ac.uk; CODEN: BMJOA
+ER  -
+
+TY  - JOUR
+AU  - Wu, Y.
+AU  - Murray, G.K.
+AU  - Byrne, E.M.
+AU  - Sidorenko, J.
+AU  - Visscher, P.M.
+AU  - Wray, N.R.
+TI  - GWAS of peptic ulcer disease implicates Helicobacter pylori infection, other gastrointestinal disorders and depression
+PY  - 2021
+T2  - Nature Communications
+VL  - 12
+IS  - 1
+C7  - 1146
+DO  - 10.1038/s41467-021-21280-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85101192268&doi=10.1038%2fs41467-021-21280-7&partnerID=40&md5=f30ce7156b02061f0774654a8269472e
+AD  - Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia
+AD  - Department of Psychiatry, University of Cambridge, Cambridge, United Kingdom
+AD  - Behavioural and Clinical Neuroscience Institute, University of Cambridge, Cambridge, United Kingdom
+AD  - Cambridgeshire and Peterborough NHS Foundation Trust, Cambridge, United Kingdom
+AD  - Queensland Brain Institute, The University of Queensland, Brisbane, Australia
+AB  - Genetic factors are recognized to contribute to peptic ulcer disease (PUD) and other gastrointestinal diseases, such as gastro-oesophageal reflux disease (GORD), irritable bowel syndrome (IBS) and inflammatory bowel disease (IBD). Here, genome-wide association study (GWAS) analyses based on 456,327 UK Biobank (UKB) individuals identify 8 independent and significant loci for PUD at, or near, genes MUC1, MUC6, FUT2, PSCA, ABO, CDX2, GAST and CCKBR. There are previously established roles in susceptibility to Helicobacter pylori infection, response to counteract infection-related damage, gastric acid secretion or gastrointestinal motility for these genes. Only two associations have been previously reported for duodenal ulcer, here replicated trans-ancestrally. The results highlight the role of host genetic susceptibility to infection. Post-GWAS analyses for PUD, GORD, IBS and IBD add insights into relationships between these gastrointestinal diseases and their relationships with depression, a commonly comorbid disorder. © 2021, The Author(s).
+KW  - ABO Blood-Group System
+KW  - Antigens, Neoplasm
+KW  - CDX2 Transcription Factor
+KW  - Depression
+KW  - Duodenal Ulcer
+KW  - Female
+KW  - Fucosyltransferases
+KW  - Galactosyltransferases
+KW  - Gastroesophageal Reflux
+KW  - Gastrointestinal Diseases
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - GPI-Linked Proteins
+KW  - Helicobacter Infections
+KW  - Helicobacter pylori
+KW  - Humans
+KW  - Inflammatory Bowel Diseases
+KW  - Male
+KW  - Mucin-1
+KW  - Mucin-6
+KW  - Neoplasm Proteins
+KW  - Peptic Ulcer
+KW  - Helicobacter pylori
+KW  - cholecystokinin B receptor
+KW  - mucin 1
+KW  - mucin 6
+KW  - prostate stem cell antigen
+KW  - transcription factor Cdx2
+KW  - ABO protein, human
+KW  - CDX2 protein, human
+KW  - fucosyltransferase
+KW  - galactoside 2-alpha-L-fucosyltransferase
+KW  - galactosyltransferase
+KW  - glycosylphosphatidylinositol anchored protein
+KW  - MUC1 protein, human
+KW  - MUC6 protein, human
+KW  - mucin 1
+KW  - mucin 6
+KW  - PSCA protein, human
+KW  - transcription factor Cdx2
+KW  - tumor antigen
+KW  - tumor protein
+KW  - bacterial disease
+KW  - digestive system
+KW  - gastroenteritis
+KW  - gene expression
+KW  - genetic analysis
+KW  - immune response
+KW  - infectivity
+KW  - injury
+KW  - motility
+KW  - Article
+KW  - biobank
+KW  - comorbidity
+KW  - controlled study
+KW  - Crohn disease
+KW  - depression
+KW  - disease predisposition
+KW  - duodenum ulcer
+KW  - female
+KW  - gastroesophageal reflux
+KW  - genetic similarity
+KW  - genetic susceptibility
+KW  - genome-wide association study
+KW  - Helicobacter infection
+KW  - host
+KW  - human
+KW  - irritable colon
+KW  - jejunum ulcer
+KW  - major clinical study
+KW  - major depression
+KW  - male
+KW  - peptic ulcer
+KW  - single nucleotide polymorphism
+KW  - stomach acid secretion
+KW  - stomach motility
+KW  - stomach ulcer
+KW  - ulcerative colitis
+KW  - United Kingdom
+KW  - blood group ABO system
+KW  - complication
+KW  - gastrointestinal disease
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - Helicobacter infection
+KW  - Helicobacter pylori
+KW  - inflammatory bowel disease
+KW  - peptic ulcer
+KW  - procedures
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 33608531
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 133; Correspondence Address: Y. Wu; Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia; email: yeda.wu@uq.edu.au; N.R. Wray; Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia; email: naomi.wray@uq.edu.au
+ER  -
+
+TY  - JOUR
+AU  - Clift, A.K.
+AU  - von Ende, A.
+AU  - Tan, P.S.
+AU  - Sallis, H.M.
+AU  - Lindson, N.
+AU  - Coupland, C.A.C.
+AU  - Munafò, M.R.
+AU  - Aveyard, P.
+AU  - Hippisley-Cox, J.
+AU  - Hopewell, J.C.
+TI  - Smoking and COVID-19 outcomes: an observational and Mendelian randomisation study using the UK Biobank cohort
+PY  - 2022
+T2  - Thorax
+VL  - 77
+IS  - 1
+SP  - 65
+EP  - 73
+DO  - 10.1136/thoraxjnl-2021-217080
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85117222334&doi=10.1136%2fthoraxjnl-2021-217080&partnerID=40&md5=b42e8245c7dc24a5dd8e8d241687cd26
+AD  - Nuffield Department of Primary Care Health Sciences, University of Oxford, Oxford, United Kingdom
+AD  - Cancer Research UK Oxford Centre, Department of Oncology, University of Oxford, Oxford, United Kingdom
+AD  - Clinical Trial Service Unit, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - School of Psychological Science, University of Bristol, Bristol, United Kingdom
+AD  - NIHR Bristol Biomedical Research Centre, University Hospitals Bristol NHS Foundation Trust, University of Bristol, Bristol, United Kingdom
+AD  - Division of Primary Care, University of Nottingham, Nottingham, United Kingdom
+AB  - Background Conflicting evidence has emerged regarding the relevance of smoking on risk of COVID-19 and its severity. Methods We undertook large-scale observational and Mendelian randomisation (MR) analyses using UK Biobank. Most recent smoking status was determined from primary care records (70.8%) and UK Biobank questionnaire data (29.2%). COVID-19 outcomes were derived from Public Health England SARS-CoV-2 testing data, hospital admissions data, and death certificates (until 18 August 2020). Logistic regression was used to estimate associations between smoking status and confirmed SARS-CoV-2 infection, COVID-19-related hospitalisation, and COVID-19-related death. Inverse variance-weighted MR analyses using established genetic instruments for smoking initiation and smoking heaviness were undertaken (reported per SD increase). Results There were 421 469 eligible participants, 1649 confirmed infections, 968 COVID-19-related hospitalisations and 444 COVID-19-related deaths. Compared with never-smokers, current smokers had higher risks of hospitalisation (OR 1.80, 95% CI 1.26 to 2.29) and mortality (smoking 1–9/day: OR 2.14, 95% CI 0.87 to 5.24; 10–19/day: OR 5.91, 95% CI 3.66 to 9.54; 20+/day: OR 6.11, 95% CI 3.59 to 10.42). In MR analyses of 281 105 White British participants, genetically predicted propensity to initiate smoking was associated with higher risks of infection (OR 1.45, 95% CI 1.10 to 1.91) and hospitalisation (OR 1.60, 95% CI 1.13 to 2.27). Genetically predicted higher number of cigarettes smoked per day was associated with higher risks of all outcomes (infection OR 2.51, 95% CI 1.20 to 5.24; hospitalisation OR 5.08, 95% CI 2.04 to 12.66; and death OR 10.02, 95% CI 2.53 to 39.72). Interpretation Congruent results from two analytical approaches support a causal effect of smoking on risk of severe COVID-19. © Author(s) (or their employer(s)) 2022. Re-use permitted under CC BY. Published by BMJ.
+KW  - Biological Specimen Banks
+KW  - COVID-19
+KW  - COVID-19 Testing
+KW  - England
+KW  - Humans
+KW  - SARS-CoV-2
+KW  - Smoking
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - biobank
+KW  - cigarette smoking
+KW  - clinical outcome
+KW  - clinical significance
+KW  - cohort analysis
+KW  - controlled study
+KW  - coronavirus disease 2019
+KW  - COVID-19 testing
+KW  - current smoker
+KW  - death certificate
+KW  - disease severity
+KW  - England
+KW  - female
+KW  - genetic variability
+KW  - hospitalization
+KW  - human
+KW  - infection risk
+KW  - logistic regression analysis
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - mortality rate
+KW  - never smoker
+KW  - observational study
+KW  - people by smoking status
+KW  - prediction
+KW  - primary medical care
+KW  - propensity score
+KW  - public health
+KW  - questionnaire
+KW  - variance
+KW  - very elderly
+KW  - adverse event
+KW  - smoking
+PB  - BMJ Publishing Group
+SN  - 00406376 (ISSN)
+C2  - 34580193
+LA  - English
+J2  - Thorax
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 129; Correspondence Address: A.K. Clift; Nuffield Department of Primary Care Health Sciences, University of Oxford, Oxford, United Kingdom; email: ashley.clift@phc.ox.ac.uk; CODEN: THORA
+ER  -
+
+TY  - JOUR
+AU  - Nowak, C.
+AU  - Ärnlöv, J.
+TI  - A Mendelian randomization study of the effects of blood lipids on breast cancer risk
+PY  - 2018
+T2  - Nature Communications
+VL  - 9
+IS  - 1
+C7  - 3957
+DO  - 10.1038/s41467-018-06467-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85054088248&doi=10.1038%2fs41467-018-06467-9&partnerID=40&md5=fba2cd4ea253a8acdb5c32ce5df16e9b
+AD  - Division of Family Medicine and Primary Care, Department of Neurobiology, Care Sciences and Society (NVS), Karolinska Institutet, Alfred Nobels Allé 23, Huddinge, SE-14152, Sweden
+AD  - School of Health and Social Studies, Dalarna University (Högskola Dalarna), Falun, SE-79188, Sweden
+AB  - Observational studies have reported inconsistent associations between circulating lipids and breast cancer risk. Using results from >400,000 participants in two-sample Mendelian randomization, we show that genetically raised LDL-cholesterol is associated with higher risk of breast cancer (odds ratio, OR, per standard deviation, 1.09, 95% confidence interval, 1.02–1.18, P = 0.020) and estrogen receptor (ER)-positive breast cancer (OR 1.14 [1.05–1.24] P = 0.004). Genetically raised HDL-cholesterol is associated with higher risk of ER-positive breast cancer (OR 1.13 [1.01–1.26] P = 0.037). HDL-cholesterol-raising variants in the gene encoding the target of CETP inhibitors are associated with higher risk of breast cancer (OR 1.07 [1.03–1.11] P = 0.001) and ER-positive breast cancer (OR 1.08 [1.03–1.13] P = 0.001). LDL-cholesterol-lowering variants mimicking PCSK9 inhibitors are associated (P = 0.014) with lower breast cancer risk. We find no effects related to the statin and ezetimibe target genes. The possible risk-promoting effects of raised LDL-cholesterol and CETP-mediated raised HDL-cholesterol have implications for breast cancer prevention and clinical trials. © 2018, The Author(s).
+KW  - Breast Neoplasms
+KW  - Clinical Trials as Topic
+KW  - Female
+KW  - Genetic Variation
+KW  - Humans
+KW  - Lipids
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - Treatment Outcome
+KW  - cholesterol ester transfer protein inhibitor
+KW  - ezetimibe
+KW  - high density lipoprotein cholesterol
+KW  - hydroxymethylglutaryl coenzyme A reductase inhibitor
+KW  - lipid
+KW  - low density lipoprotein cholesterol
+KW  - proprotein convertase 9
+KW  - triacylglycerol
+KW  - lipid
+KW  - blood
+KW  - cancer
+KW  - genetic analysis
+KW  - health risk
+KW  - inhibition
+KW  - inhibitor
+KW  - lipid
+KW  - Article
+KW  - breast cancer
+KW  - cancer risk
+KW  - CETP gene
+KW  - cholesterol blood level
+KW  - estrogen receptor negative breast cancer
+KW  - estrogen receptor positive breast cancer
+KW  - female
+KW  - gene
+KW  - genetic variability
+KW  - high risk patient
+KW  - HMGCR gene
+KW  - human
+KW  - LDLR gene
+KW  - lipid blood level
+KW  - Mendelian randomization analysis
+KW  - NPC1L1 gene
+KW  - PCSK9 gene
+KW  - triacylglycerol blood level
+KW  - blood
+KW  - breast tumor
+KW  - clinical trial (topic)
+KW  - genetic variation
+KW  - genetics
+KW  - risk factor
+KW  - treatment outcome
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 30262900
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 137; Correspondence Address: C. Nowak; Division of Family Medicine and Primary Care, Department of Neurobiology, Care Sciences and Society (NVS), Karolinska Institutet, Huddinge, Alfred Nobels Allé 23, SE-14152, Sweden; email: christoph.nowak@ki.se
+ER  -
+
+TY  - JOUR
+AU  - Murphy, N.
+AU  - Jenab, M.
+AU  - Gunter, M.J.
+TI  - Adiposity and gastrointestinal cancers: epidemiology, mechanisms and future directions
+PY  - 2018
+T2  - Nature Reviews Gastroenterology and Hepatology
+VL  - 15
+IS  - 11
+SP  - 659
+EP  - 670
+DO  - 10.1038/s41575-018-0038-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85049598703&doi=10.1038%2fs41575-018-0038-1&partnerID=40&md5=ed9d2549ef5aa0aa7083b281f7dce56a
+AD  - Section of Nutrition and Metabolism, International Agency for Research on Cancer, Lyon, France
+AB  - Excess adiposity is a risk factor for several cancers of the gastrointestinal system, specifically oesophageal adenocarcinoma and colorectal, small intestine, pancreatic, liver, gallbladder and stomach cancers. With the increasing prevalence of obesity in nearly all regions of the world, this relationship could represent a growing source of cancers of the digestive system. Experimental and molecular epidemiological studies indicate important roles for alterations in insulin signalling, adipose tissue-derived inflammation and sex hormone pathways in mediating the association between adiposity and gastrointestinal cancer. The intestinal microbiome, gut hormones and non alcoholic fatty liver disease (NAFLD) also have possible roles. However, important gaps remain in our knowledge. For instance, our understanding of how adiposity throughout the life course is related to the risk of gastrointestinal cancer development and of how obesity influences gastrointestinal cancer prognosis and survival is limited. Nonetheless, the increasing use of state-of-the-art analytical methods (such as omics technologies, Mendelian randomization and MRI) in large-scale epidemiological studies offers exciting opportunities to advance our understanding of the complex relationship between adiposity and gastrointestinal cancers. Here, we examine the epidemiology of associations between obesity and gastrointestinal cancer, explore potential mechanisms underlying these relationships and highlight important unanswered research questions. © 2018, Macmillan Publishers Ltd., part of Springer Nature.
+KW  - Adiposity
+KW  - Biomedical Research
+KW  - Forecasting
+KW  - Gastrointestinal Neoplasms
+KW  - Humans
+KW  - Obesity
+KW  - gastrointestinal hormone
+KW  - sex hormone
+KW  - adipose tissue
+KW  - biochemical analysis
+KW  - cancer prognosis
+KW  - cancer research
+KW  - cancer risk
+KW  - cancer survival
+KW  - colorectal cancer
+KW  - digestive system cancer
+KW  - disease association
+KW  - esophageal adenocarcinoma
+KW  - gallbladder cancer
+KW  - gastroesophageal reflux
+KW  - human
+KW  - inflammation
+KW  - insulin signaling
+KW  - intestine flora
+KW  - liver cancer
+KW  - Mendelian randomization analysis
+KW  - nonalcoholic fatty liver
+KW  - nonhuman
+KW  - nuclear magnetic resonance imaging
+KW  - obesity
+KW  - pancreas cancer
+KW  - priority journal
+KW  - Review
+KW  - small intestine cancer
+KW  - stomach cancer
+KW  - complication
+KW  - forecasting
+KW  - gastrointestinal tumor
+KW  - medical research
+KW  - obesity
+KW  - pathophysiology
+KW  - physiology
+PB  - Nature Publishing Group
+SN  - 17595045 (ISSN)
+C2  - 29970888
+LA  - English
+J2  - Nat. Rev. Gastroenterol. Hepatol.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 135; Correspondence Address: M.J. Gunter; Section of Nutrition and Metabolism, International Agency for Research on Cancer, Lyon, France; email: gunterm@iarc.fr
+ER  -
+
+TY  - JOUR
+AU  - Richardson, T.G.
+AU  - Harrison, S.
+AU  - Hemani, G.
+AU  - Smith, G.D.
+TI  - An atlas of polygenic risk score associations to highlight putative causal relationships across the human phenome
+PY  - 2019
+T2  - eLife
+VL  - 8
+C7  - e43657
+DO  - 10.7554/eLife.43657
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85062403821&doi=10.7554%2feLife.43657&partnerID=40&md5=ea29a72e706a6ec93f24d4197846054f
+AD  - MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AB  - The age of large-scale genome-wide association studies (GWAS) has provided us with an unprecedented opportunity to evaluate the genetic liability of complex disease using polygenic risk scores (PRS). In this study, we have analysed 162 PRS (p<5x10-05) derived from GWAS and 551 heritable traits from the UK Biobank study (N = 334,398). Findings can be investigated using a web application (http://mrcieu.mrsoftware.org/PRS_atlas/), which we envisage will help uncover both known and novel mechanisms which contribute towards disease susceptibility. To demonstrate this, we have investigated the results from a phenome-wide evaluation of schizophrenia genetic liability. Amongst findings were inverse associations with measures of cognitive function which extensive follow-up analyses using Mendelian randomization (MR) provided evidence of a causal relationship. We have also investigated the effect of multiple risk factors on disease using mediation and multivariable MR frameworks. Our atlas provides a resource for future endeavours seeking to unravel the causal determinants of complex disease. © Richardson et al.
+KW  - Databases, Genetic
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Multifactorial Inheritance
+KW  - Risk Assessment
+KW  - Schizophrenia
+KW  - United Kingdom
+KW  - ac 1202
+KW  - lipid
+KW  - low density lipoprotein
+KW  - triacylglycerol
+KW  - Alzheimer disease
+KW  - anxiety
+KW  - area under the curve
+KW  - Article
+KW  - body mass
+KW  - cognition
+KW  - depression
+KW  - disease association
+KW  - disease predisposition
+KW  - follow up
+KW  - gene
+KW  - gene expression
+KW  - gene locus
+KW  - genetic predisposition
+KW  - genome
+KW  - genome-wide association study
+KW  - genotype
+KW  - gout
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - multifactorial inheritance
+KW  - neurosis
+KW  - outcome assessment
+KW  - phenotype
+KW  - pleiotropy
+KW  - receiver operating characteristic
+KW  - risk assessment
+KW  - risk factor
+KW  - schizophrenia
+KW  - sensitivity analysis
+KW  - sensitivity and specificity
+KW  - simulation
+KW  - single nucleotide polymorphism
+KW  - sleep time
+KW  - tension
+KW  - ulcerative colitis
+KW  - genetic database
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - risk assessment
+KW  - United Kingdom
+PB  - eLife Sciences Publications Ltd
+SN  - 2050084X (ISSN)
+C2  - 30835202
+LA  - English
+J2  - eLife
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 129; Correspondence Address: T.G. Richardson; MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom; email: Tom.G.Richardson@bristol.ac.uk
+ER  -
+

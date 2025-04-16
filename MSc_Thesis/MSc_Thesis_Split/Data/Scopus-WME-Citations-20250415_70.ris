@@ -1,0 +1,951 @@
+﻿TY  - JOUR
+AU  - Mokry, L.E.
+AU  - Ross, S.
+AU  - Timpson, N.J.
+AU  - Sawcer, S.
+AU  - Davey Smith, G.
+AU  - Richards, J.B.
+TI  - Obesity and Multiple Sclerosis: A Mendelian Randomization Study
+PY  - 2016
+T2  - PLoS Medicine
+VL  - 13
+IS  - 6
+C7  - e1002053
+DO  - 10.1371/journal.pmed.1002053
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84978173207&doi=10.1371%2fjournal.pmed.1002053&partnerID=40&md5=1359a9c1315b9d528a9d2db4c8e7c38d
+AD  - Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, QC, Canada
+AD  - Centre for Clinical Epidemiology, Department of Epidemiology, Lady Davis Institute for Medical Research, Jewish General Hospital, McGill University, Montreal, QC, Canada
+AD  - MRC Integrative Epidemiology Unit, School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Department of Clinical Neurosciences, Cambridge Biomedical Campus, Cambridge, United Kingdom
+AD  - Department of Medicine, McGill University, Montreal, QC, Canada
+AD  - Department of Human Genetics, McGill University, Montreal, QC, Canada
+AD  - Department of Twin Research and Genetic Epidemiology, King's College London, London, United Kingdom
+AB  - Background: Observational studies have reported an association between obesity, as measured by elevated body mass index (BMI), in early adulthood and risk of multiple sclerosis (MS). However, bias potentially introduced by confounding and reverse causation may have influenced these findings. Therefore, we elected to perform Mendelian randomization (MR) analyses to evaluate whether genetically increased BMI is associated with an increased risk of MS. Methods and Findings: Employing a two-sample MR approach, we used summary statistics from the Genetic Investigation of Anthropometric Traits (GIANT) consortium and the International MS Genetics Consortium (IMSGC), the largest genome-wide association studies for BMI and MS, respectively (GIANT: n = 322,105; IMSGC: n = 14,498 cases and 24,091 controls). Seventy single nucleotide polymorphisms (SNPs) were genome-wide significant (p < 5 x 10−8) for BMI in GIANT (n = 322,105) and were investigated for their association with MS risk in the IMSGC. The effect of each SNP on MS was weighted by its effect on BMI, and estimates were pooled to provide a summary measure for the effect of increased BMI upon risk of MS. Our results suggest that increased BMI influences MS susceptibility, where a 1 standard deviation increase in genetically determined BMI (kg/m2) increased odds of MS by 41% (odds ratio [OR]: 1.41, 95% CI 1.20–1.66, p = 2.7 x 10−5, I2 = 0%, 95% CI 0–29). Sensitivity analyses, including MR-Egger regression, and the weighted median approach provided no evidence of pleiotropic effects. The main study limitations are that, while these sensitivity analyses reduce the possibility that pleiotropy influenced our results, residual pleiotropy is difficult to exclude entirely. Conclusion: Genetically elevated BMI is associated with risk of MS, providing evidence for a causal role for obesity in MS etiology. While obesity has been associated with many late-life outcomes, these findings suggest an important consequence of childhood and/or early adulthood obesity. © 2016 Mokry et al.
+KW  - Body Mass Index
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Multiple Sclerosis
+KW  - Obesity
+KW  - Odds Ratio
+KW  - Polymorphism, Single Nucleotide
+KW  - Article
+KW  - body mass
+KW  - gene frequency
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - multiple sclerosis
+KW  - obesity
+KW  - pleiotropy
+KW  - prevalence
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - complication
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - multiple sclerosis
+KW  - obesity
+KW  - odds ratio
+PB  - Public Library of Science
+SN  - 15491277 (ISSN)
+C2  - 27351487
+LA  - English
+J2  - PLoS Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 199; Correspondence Address: J.B. Richards; Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Canada; email: brent.richards@mcgill.ca
+ER  -
+
+TY  - JOUR
+AU  - Codd, V.
+AU  - Wang, Q.
+AU  - Allara, E.
+AU  - Musicha, C.
+AU  - Kaptoge, S.
+AU  - Stoma, S.
+AU  - Jiang, T.
+AU  - Hamby, S.E.
+AU  - Braund, P.S.
+AU  - Bountziouka, V.
+AU  - Budgeon, C.A.
+AU  - Denniff, M.
+AU  - Swinfield, C.
+AU  - Papakonstantinou, M.
+AU  - Sheth, S.
+AU  - Nanus, D.E.
+AU  - Warner, S.C.
+AU  - Wang, M.
+AU  - Khera, A.V.
+AU  - Eales, J.
+AU  - Ouwehand, W.H.
+AU  - Thompson, J.R.
+AU  - Di Angelantonio, E.
+AU  - Wood, A.M.
+AU  - Butterworth, A.S.
+AU  - Danesh, J.N.
+AU  - Nelson, C.P.
+AU  - Samani, N.J.
+TI  - Polygenic basis and biomedical consequences of telomere length variation
+PY  - 2021
+T2  - Nature Genetics
+VL  - 53
+IS  - 10
+SP  - 1425
+EP  - 1433
+DO  - 10.1038/s41588-021-00944-6
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85116331468&doi=10.1038%2fs41588-021-00944-6&partnerID=40&md5=eb40924bbf999c9ac5eabd672519c043
+AD  - Department of Cardiovascular Sciences, University of Leicester, Leicester, United Kingdom
+AD  - NIHR Leicester Biomedical Research Centre, Glenfield Hospital, Leicester, United Kingdom
+AD  - British Heart Foundation Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - National Institute for Health Research Blood and Transplant Research Unit in Donor Health and Genomics, University of Cambridge, Cambridge, United Kingdom
+AD  - British Heart Foundation Centre of Research Excellence, University of Cambridge, Cambridge, United Kingdom
+AD  - School of Population and Global Health, University of Western Australia, Perth, WA, Australia
+AD  - Program in Medical and Population Genetics, Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Medicine, Harvard Medical School, Boston, MA, United States
+AD  - Cardiology Division, Department of Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Division of Cardiovascular Sciences, University of Manchester, Manchester, United Kingdom
+AD  - Department of Haematology, University of Cambridge, Cambridge, United Kingdom
+AD  - NHS Blood and Transplant, Cambridge, United Kingdom
+AD  - University College London Hospitals NHS Foundation Trust, London, United Kingdom
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AD  - Health Data Research UK Cambridge, Wellcome Sanger Institute, EMBL-European Bioinformatics Institute and University of Cambridge, Cambridge, United Kingdom
+AD  - The Alan Turing Institute, London, United Kingdom
+AD  - Department of Human Genetics, Wellcome Sanger Institute, Hinxton, United Kingdom
+AB  - Telomeres, the end fragments of chromosomes, play key roles in cellular proliferation and senescence. Here we characterize the genetic architecture of naturally occurring variation in leukocyte telomere length (LTL) and identify causal links between LTL and biomedical phenotypes in 472,174 well-characterized UK Biobank participants. We identified 197 independent sentinel variants associated with LTL at 138 genomic loci (108 new). Genetically determined differences in LTL were associated with multiple biological traits, ranging from height to bone marrow function, as well as several diseases spanning neoplastic, vascular and inflammatory pathologies. Finally, we estimated that, at the age of 40 years, people with an LTL >1 s.d. shorter than the population mean had a 2.5-year-lower life expectancy compared with the group with ≥1 s.d. longer LDL. Overall, we furnish new insights into the genetic regulation of LTL, reveal wide-ranging influences of LTL on physiological traits, diseases and longevity, and provide a powerful resource available to the global research community. © 2021, The Author(s).
+KW  - Genome, Human
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Multifactorial Inheritance
+KW  - Quantitative Trait Loci
+KW  - Telomere Homeostasis
+KW  - adult
+KW  - Article
+KW  - biobank
+KW  - biological trait
+KW  - bone marrow
+KW  - genetic analysis
+KW  - genetic regulation
+KW  - genetic susceptibility
+KW  - human
+KW  - leukocyte telomere length
+KW  - life expectancy
+KW  - longevity
+KW  - neoplasm
+KW  - phenotype
+KW  - United Kingdom
+KW  - vascular disease
+KW  - genetics
+KW  - genome-wide association study
+KW  - human genome
+KW  - Mendelian randomization analysis
+KW  - multifactorial inheritance
+KW  - quantitative trait locus
+KW  - telomere homeostasis
+PB  - Nature Research
+SN  - 10614036 (ISSN)
+C2  - 34611362
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 199; Correspondence Address: V. Codd; Department of Cardiovascular Sciences, University of Leicester, Leicester, United Kingdom; email: vc15@le.ac.uk; N.J. Samani; Department of Cardiovascular Sciences, University of Leicester, Leicester, United Kingdom; email: njs@le.ac.uk; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Jones, S.E.
+AU  - van Hees, V.T.
+AU  - Mazzotti, D.R.
+AU  - Marques-Vidal, P.
+AU  - Sabia, S.
+AU  - van der Spek, A.
+AU  - Dashti, H.S.
+AU  - Engmann, J.
+AU  - Kocevska, D.
+AU  - Tyrrell, J.
+AU  - Beaumont, R.N.
+AU  - Hillsdon, M.
+AU  - Ruth, K.S.
+AU  - Tuke, M.A.
+AU  - Yaghootkar, H.
+AU  - Sharp, S.A.
+AU  - Ji, Y.
+AU  - Harrison, J.W.
+AU  - Freathy, R.M.
+AU  - Murray, A.
+AU  - Luik, A.I.
+AU  - Amin, N.
+AU  - Lane, J.M.
+AU  - Saxena, R.
+AU  - Rutter, M.K.
+AU  - Tiemeier, H.
+AU  - Kutalik, Z.
+AU  - Kumari, M.
+AU  - Frayling, T.M.
+AU  - Weedon, M.N.
+AU  - Gehrman, P.R.
+AU  - Wood, A.R.
+TI  - Genetic studies of accelerometer-based sleep measures yield new insights into human sleep behaviour
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 1585
+DO  - 10.1038/s41467-019-09576-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064000172&doi=10.1038%2fs41467-019-09576-1&partnerID=40&md5=58b21a62f37cfb774cb71fcf3ee68a8d
+AD  - Genetics of Complex Traits, College of Medicine and Health, University of Exeter, Exeter, EX2 5DW, United Kingdom
+AD  - Netherlands eScience Center, Amsterdam, 1098 XG, Netherlands
+AD  - Center for Sleep and Circadian Neurobiology, University of Pennsylvania, Philadelphia, 19104, PA, United States
+AD  - Perelman School of Medicine of the University of Pennsylvania, Philadelphia, 19104, PA, United States
+AD  - Department of Medicine, Internal Medicine, Lausanne University Hospital, Lausanne, 1011, Switzerland
+AD  - Research Department of Epidemiology and Public Health, University College London, London, WC1E 6BT, United Kingdom
+AD  - INSERM, U1153, Epidemiology of Ageing and Neurodegenerative diseases, Université de Paris, Paris, 75010, France
+AD  - Department of Epidemiology, Erasmus MC University Medical Center, Rotterdam, 3000 CA, Netherlands
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Boston, 02114, MA, United States
+AD  - Broad Institute of MIT and Harvard, Cambridge, 02142, MA, United States
+AD  - UCL Institute of Cardiovascular Science, Research department of Population Science and Experimental Medicine, Centre for Translational Genomics, 222 Euston Road, London, NW1 2DA, United Kingdom
+AD  - Department of Child and Adolescent Psychiatry, Erasmus Medical Center, Rotterdam, 3000 CA, Netherlands
+AD  - Sport and Health Sciences, College of Life and Environmental Sciences, University of Exeter, Exeter, EX1 2LU, United Kingdom
+AD  - Department of Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, 02111, MA, United States
+AD  - Departments of Medicine, Brigham and Women’s Hospital and Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, 02115, MA, United States
+AD  - Division of Diabetes, Endocrinology and Gastroenterology, Faculty of Medicine, Biology and Health, University of Manchester, Manchester, M13 9PL, United Kingdom
+AD  - Manchester Diabetes Centre, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre, Oxford Road, 193 Hathersage Road, Manchester, M13 0JE, United Kingdom
+AD  - Department of Social and Behavioral Science, Harvard TH Chan School of Public Health, Boston, 02115, MA, United States
+AD  - Institute of Social and Preventive Medicine (IUMSP), Lausanne University Hospital, Lausanne, 1010, Switzerland
+AD  - Swiss Institute of Bioinformatics, Lausanne, 1015, Switzerland
+AD  - ISER, University of Essex, Colchester, Essex, CO4 3SQ, United Kingdom
+AB  -                              Sleep is an essential human function but its regulation is poorly understood. Using accelerometer data from 85,670 UK Biobank participants, we perform a genome-wide association study of 8 derived sleep traits representing sleep quality, quantity and timing, and validate our findings in 5,819 individuals. We identify 47 genetic associations at P < 5 × 10                             −8                             , of which 20 reach a stricter threshold of P < 8 × 10                             −10                             . These include 26 novel associations with measures of sleep quality and 10 with nocturnal sleep duration. The majority of identified variants associate with a single sleep trait, except for variants previously associated with restless legs syndrome. For sleep duration we identify a missense variant (p.Tyr727Cys) in PDE11A as the likely causal variant. As a group, sleep quality loci are enriched for serotonin processing genes. Although accelerometer-derived measures of sleep are imperfect and may be affected by restless legs syndrome, these findings provide new biological insights into sleep compared to previous efforts based on self-report sleep measures.                          © 2019, The Author(s).
+KW  - Accelerometry
+KW  - Circadian Rhythm
+KW  - Humans
+KW  - Polymorphism, Single Nucleotide
+KW  - Polysomnography
+KW  - Serotonin
+KW  - Sleep
+KW  - Sleep Wake Disorders
+KW  - Waist-Hip Ratio
+KW  - United Kingdom
+KW  - serotonin
+KW  - transcription factor PAX8
+KW  - serotonin
+KW  - accelerometer
+KW  - behavioral response
+KW  - gene expression
+KW  - genetic analysis
+KW  - model validation
+KW  - nocturnal activity
+KW  - physiological response
+KW  - sleep
+KW  - accelerometry
+KW  - adult
+KW  - allele
+KW  - Alzheimer disease
+KW  - Article
+KW  - body mass
+KW  - depression
+KW  - female
+KW  - gene expression
+KW  - gene locus
+KW  - gene replication
+KW  - genetic association
+KW  - genetic variation
+KW  - genetics
+KW  - genome
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - insomnia
+KW  - lifestyle
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - phylogeny
+KW  - physical inactivity
+KW  - principal component analysis
+KW  - restless legs syndrome
+KW  - self report
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - sleep disorder
+KW  - sleep pattern
+KW  - sleep quality
+KW  - sleep time
+KW  - somnolence
+KW  - waist hip ratio
+KW  - wakefulness
+KW  - accelerometry
+KW  - circadian rhythm
+KW  - genetics
+KW  - metabolism
+KW  - polysomnography
+KW  - procedures
+KW  - sleep
+KW  - sleep disorder
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 30952852
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 194; Correspondence Address: M.N. Weedon; Genetics of Complex Traits, College of Medicine and Health, University of Exeter, Exeter, EX2 5DW, United Kingdom; email: m.n.weedon@exeter.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Thompson, D.J.
+AU  - Genovese, G.
+AU  - Halvardson, J.
+AU  - Ulirsch, J.C.
+AU  - Wright, D.J.
+AU  - Terao, C.
+AU  - Davidsson, O.B.
+AU  - Day, F.R.
+AU  - Sulem, P.
+AU  - Jiang, Y.
+AU  - Danielsson, M.
+AU  - Davies, H.
+AU  - Dennis, J.
+AU  - Dunlop, M.G.
+AU  - Easton, D.F.
+AU  - Fisher, V.A.
+AU  - Zink, F.
+AU  - Houlston, R.S.
+AU  - Ingelsson, M.
+AU  - Kar, S.
+AU  - Kerrison, N.D.
+AU  - Kinnersley, B.
+AU  - Kristjansson, R.P.
+AU  - Law, P.J.
+AU  - Li, R.
+AU  - Loveday, C.
+AU  - Mattisson, J.
+AU  - McCarroll, S.A.
+AU  - Murakami, Y.
+AU  - Murray, A.
+AU  - Olszewski, P.
+AU  - Rychlicka-Buniowska, E.
+AU  - Scott, R.A.
+AU  - Thorsteinsdottir, U.
+AU  - Tomlinson, I.
+AU  - Moghadam, B.T.
+AU  - Turnbull, C.
+AU  - Wareham, N.J.
+AU  - Gudbjartsson, D.F.
+AU  - Kamatani, Y.
+AU  - Hoffmann, E.R.
+AU  - Jackson, S.P.
+AU  - Stefansson, K.
+AU  - Auton, A.
+AU  - Ong, K.K.
+AU  - Machiela, M.J.
+AU  - Loh, P.-R.
+AU  - Dumanski, J.P.
+AU  - Chanock, S.J.
+AU  - Forsberg, L.A.
+AU  - Perry, J.R.B.
+TI  - Genetic predisposition to mosaic Y chromosome loss in blood
+PY  - 2019
+T2  - Nature
+VL  - 575
+IS  - 7784
+SP  - 652
+EP  - 657
+DO  - 10.1038/s41586-019-1765-3
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075358367&doi=10.1038%2fs41586-019-1765-3&partnerID=40&md5=310739c9ebc07a89913e0e0446915199
+AD  - Centre for Cancer Genetic Epidemiology, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Genetics, Harvard Medical School, Boston, MA, United States
+AD  - Program in Medical and Population Genetics, Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - Department of Immunology, Genetics and Pathology and Science for Life Laboratory, Uppsala University, Uppsala, Sweden
+AD  - Program in Biological and Biomedical Sciences, Harvard Medical School, Boston, MA, United States
+AD  - MRC Epidemiology Unit, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom
+AD  - Open Targets Core Genetics, Wellcome Sanger Institute, Hinxton, United Kingdom
+AD  - Laboratory for Statistical Analysis, RIKEN Center for Integrative Medical Sciences, Kanagawa, Japan
+AD  - Clinical Research Center, Shizuoka General Hospital, Shizuoka, Japan
+AD  - Department of Applied Genetics, School of Pharmaceutical Sciences, University of Shizuoka, Shizuoka, Japan
+AD  - Laboratory for Statistical and Translational Genetics, RIKEN Center for Integrative Medical Sciences, Kanagawa, Japan
+AD  - deCODE Genetics, Amgen, Reykjavík, Iceland
+AD  - Department of Internal Medicine, Erasmus MC, University Medical Center Rotterdam, Rotterdam, Netherlands
+AD  - 23andMe, Mountain View, CA, United States
+AD  - Colon Cancer Genetics Group, Medical Research Council Human Genetics Unit and CRUK Cancer Research Centre, Institute of Genetics and Molecular Medicine, University of Edinburgh, Western General Hospital, Edinburgh, United Kingdom
+AD  - Division of Cancer Epidemiology and Genetics, National Cancer Institute, Rockville, MD, United States
+AD  - Division of Genetics and Epidemiology, The Institute of Cancer Research, London, United Kingdom
+AD  - Geriatrics Research Group, Department of Public Health and Caring Sciences, Uppsala University, Uppsala, Sweden
+AD  - Centre for Cancer Genetic Epidemiology, Department of Oncology, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Cell Biology, Johns Hopkins University School of Medicine, Baltimore, MD, United States
+AD  - Division of Molecular Pathology, Institute of Medical Science, University of Tokyo, Tokyo, Japan
+AD  - Genetics of Complex Traits, University of Exeter Medical School, University of Exeter, Exeter, United Kingdom
+AD  - Faculty of Pharmacy, Medical University of Gdansk, Gdansk, Poland
+AD  - Faculty of Medicine, University of Iceland, Reykjavík, Iceland
+AD  - Cancer Genetics and Evolution Laboratory, Institute of Cancer and Genomic Sciences, University of Birmingham, Birmingham, United Kingdom
+AD  - William Harvey Research Institute, Queen Mary University, London, United Kingdom
+AD  - School of Engineering and Natural Sciences, University of Iceland, Reykjavík, Iceland
+AD  - Kyoto-McGill International Collaborative School in Genomic Medicine, Kyoto University Graduate School of Medicine, Kyoto, Japan
+AD  - DNRF Center for Chromosome Stability, Department of Cellular and Molecular Medicine, Faculty of Health Sciences, University of Copenhagen, Copenhagen, Denmark
+AD  - Department of Biochemistry, University of Cambridge, Cambridge, United Kingdom
+AD  - Wellcome Trust and Cancer Research UK Gurdon Institute, University of Cambridge, Cambridge, United Kingdom
+AD  - Division of Genetics, Department of Medicine, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Beijer Laboratory of Genome Research, Uppsala University, Uppsala, Sweden
+AB  - Mosaic loss of chromosome Y (LOY) in circulating white blood cells is the most common form of clonal mosaicism1–5, yet our knowledge of the causes and consequences of this is limited. Here, using a computational approach, we estimate that 20% of the male population represented in the UK Biobank study (n = 205,011) has detectable LOY. We identify 156 autosomal genetic determinants of LOY, which we replicate in 757,114 men of European and Japanese ancestry. These loci highlight genes that are involved in cell-cycle regulation and cancer susceptibility, as well as somatic drivers of tumour growth and targets of cancer therapy. We demonstrate that genetic susceptibility to LOY is associated with non-haematological effects on health in both men and women, which supports the hypothesis that clonal haematopoiesis is a biomarker of genomic instability in other tissues. Single-cell RNA sequencing identifies dysregulated expression of autosomal genes in leukocytes with LOY and provides insights into why clonal expansion of these cells may occur. Collectively, these data highlight the value of studying clonal mosaicism to uncover fundamental mechanisms that underlie cancer and other ageing-related diseases. © 2019, The Author(s), under exclusive licence to Springer Nature Limited.
+KW  - Adult
+KW  - Aged
+KW  - Chromosome Deletion
+KW  - Chromosomes, Human, Y
+KW  - Computational Biology
+KW  - Databases, Genetic
+KW  - Female
+KW  - Genetic Markers
+KW  - Genetic Predisposition to Disease
+KW  - Genomic Instability
+KW  - Humans
+KW  - Leukocytes
+KW  - Male
+KW  - Middle Aged
+KW  - Mosaicism
+KW  - Neoplasms
+KW  - United Kingdom
+KW  - RNA
+KW  - ancestry
+KW  - blood
+KW  - cancer
+KW  - cell
+KW  - chromosome
+KW  - gene expression
+KW  - genetic analysis
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - blood
+KW  - cancer susceptibility
+KW  - cancer therapy
+KW  - cell cycle regulation
+KW  - chromosome loss
+KW  - computer simulation
+KW  - controlled study
+KW  - European
+KW  - female
+KW  - gene expression
+KW  - genetic association
+KW  - genetic predisposition
+KW  - genomic instability
+KW  - hematopoiesis
+KW  - human
+KW  - human cell
+KW  - Japanese (people)
+KW  - leukocyte
+KW  - male
+KW  - priority journal
+KW  - RNA sequence
+KW  - tumor growth
+KW  - Y chromosome
+KW  - biology
+KW  - chromosome deletion
+KW  - genetic database
+KW  - genetic marker
+KW  - genetic predisposition
+KW  - genetics
+KW  - middle aged
+KW  - mosaicism
+KW  - neoplasm
+KW  - pathology
+KW  - United Kingdom
+KW  - Y chromosome
+PB  - Nature Research
+SN  - 00280836 (ISSN)
+C2  - 31748747
+LA  - English
+J2  - Nature
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 196; Correspondence Address: J.R.B. Perry; MRC Epidemiology Unit, School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom; email: john.perry@mrc-epid.cam.ac.uk; CODEN: NATUA
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Foley, C.N.
+AU  - Zuber, V.
+TI  - Inferring causal relationships between risk factors and outcomes from genome-wide association study data
+PY  - 2018
+T2  - Annual Review of Genomics and Human Genetics
+VL  - 19
+SP  - 303
+EP  - 327
+DO  - 10.1146/annurev-genom-083117-021731
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85053434858&doi=10.1146%2fannurev-genom-083117-021731&partnerID=40&md5=26ed80dfb91ea53a2d82b6f5e8e70a21
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, CB2 0SR, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, CB1 8RN, United Kingdom
+AB  - An observational correlation between a suspected risk factor and an outcome does not necessarily imply that interventions on levels of the risk factor will have a causal impact on the outcome (correlation is not causation). If genetic variants associated with the risk factor are also associated with the outcome, then this increases the plausibility that the risk factor is a causal determinant of the outcome. However, if the genetic variants in the analysis do not have a specific biological link to the risk factor, then causal claims can be spurious. We review the Mendelian randomization paradigm for making causal inferences using genetic variants. We consider monogenic analysis, in which genetic variants are taken from a single gene region, and polygenic analysis, which includes variants from multiple regions. We focus on answering two questions: When can Mendelian randomization be used to make reliable causal inferences, and when can it be used to make relevant causal inferences? Copyright © 2018 Stephen Burgess et al.
+KW  - causal inference
+KW  - drug discovery
+KW  - genetic epidemiology
+KW  - instrumental variable
+KW  - target validation
+KW  - Causality
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - C reactive protein
+KW  - low density lipoprotein cholesterol
+KW  - coronary risk
+KW  - gene linkage disequilibrium
+KW  - genetic heterogeneity
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - ischemic heart disease
+KW  - outcome assessment
+KW  - pleiotropy
+KW  - Review
+KW  - risk factor
+KW  - causality
+KW  - Mendelian randomization analysis
+KW  - risk factor
+PB  - Annual Reviews Inc.
+SN  - 15278204 (ISSN)
+C2  - 29709202
+LA  - English
+J2  - Annu. Rev. Genomics Hum. Genet.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 189; CODEN: ARGHC
+ER  -
+
+TY  - JOUR
+AU  - Carter, A.R.
+AU  - Gill, D.
+AU  - Davies, N.M.
+AU  - Taylor, A.E.
+AU  - Tillmann, T.
+AU  - Vaucher, J.
+AU  - Wootton, R.E.
+AU  - Munafò, M.R.
+AU  - Hemani, G.
+AU  - Malik, R.
+AU  - Seshadri, S.
+AU  - Woo, D.
+AU  - Burgess, S.
+AU  - Davey Smith, G.
+AU  - Holmes, M.V.
+AU  - Tzoulaki, I.
+AU  - Howe, L.D.
+AU  - Dehghan, A.
+TI  - Understanding the consequences of education inequality on cardiovascular disease: Mendelian randomisation study
+PY  - 2019
+T2  - The BMJ
+VL  - 365
+C7  - l1855
+DO  - 10.1136/bmj.l1855
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85066035290&doi=10.1136%2fbmj.l1855&partnerID=40&md5=2de759827ddafc11a715ae9ac6188a1c
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Oakfield House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AD  - Department of Biostatistics and Epidemiology, School of Public Health, Imperial College London, London, United Kingdom
+AD  - National Institute for Health Research Biomedical Research Centre, University Hospitals Bristol NHS Foundation Trust, University of Bristol, Bristol, United Kingdom
+AD  - Institute for Global Health, University College London, London, United Kingdom
+AD  - Lausanne University Hospital, Lausanne, Switzerland
+AD  - Faculty of Biology and Medicine, University of Lausanne, Lausanne, Switzerland
+AD  - School of Experimental Psychology, University of Bristol, Bristol, United Kingdom
+AD  - UK Centre for Tobacco and Alcohol Studies, School of Psychological Science, University of Bristol, Bristol, United Kingdom
+AD  - Institute for Stroke and Dementia Research, University Hospital of Ludwig-Maximilians University, Munich, Germany
+AD  - Glenn Biggs Institute for Alzheimer's and Neurodegenerative Diseases, University of Texas Health Sciences Centre, San Antonio, TX, United States
+AD  - University of Texas Health Sciences Center, San Antonio, TX, United States
+AD  - Department of Neurology, Boston University School of Medicine, Boston, MA, United States
+AD  - Framingham Heart Study, Framingham, MA, United States
+AD  - Department of Neurology and Rehabilitation Medicine, University of Cincinnati College of Medicine, Cincinnati, OH, United States
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, UK, United Kingdom
+AD  - MRC Population Health Research Unit, University of Oxford, Oxford, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - National Institute for Health Research, Oxford Biomedical Research Centre, Oxford University Hospital, Oxford, United Kingdom
+AD  - MRC-PHE Centre for Environment, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Department of Hygiene and Epidemiology, University of Ioannina Medical School, Ioannina, Greece
+AB  - Objectives To investigate the role of body mass index (BMI), systolic blood pressure, and smoking behaviour in explaining the effect of education on the risk of cardiovascular disease outcomes. Design Mendelian randomisation study. Setting UK Biobank and international genome-wide association study data. Participants Predominantly participants of European ancestry. Exposure Educational attainment, BMI, systolic blood pressure, and smoking behaviour in observational analysis, and randomly allocated genetic variants to instrument these traits in mendelian randomisation. Main outcomes measure The risk of coronary heart disease, stroke, myocardial infarction, and cardiovascular disease (all subtypes; all measured in odds ratio), and the degree to which this is mediated through BMI, systolic blood pressure, and smoking behaviour respectively. Results Each additional standard deviation of education (3.6 years) was associated with a 13% lower risk of coronary heart disease (odds ratio 0.86, 95% confidence interval 0.84 to 0.89) in observational analysis and a 37% lower risk (0.63, 0.60 to 0.67) in mendelian randomisation analysis. As a proportion of the total risk reduction, BMI was estimated to mediate 15% (95% confidence interval 13% to 17%) and 18% (14% to 23%) in the observational and mendelian randomisation estimates, respectively. Corresponding estimates were 11% (9% to 13%) and 21% (15% to 27%) for systolic blood pressure and 19% (15% to 22%) and 34% (17% to 50%) for smoking behaviour. All three risk factors combined were estimated to mediate 42% (36% to 48%) and 36% (5% to 68%) of the effect of education on coronary heart disease in observational and mendelian randomisation analyses, respectively. Similar results were obtained when investigating the risk of stroke, myocardial infarction, and cardiovascular disease. Conclusions BMI, systolic blood pressure, and smoking behaviour mediate a substantial proportion of the protective effect of education on the risk of cardiovascular outcomes and intervening on these would lead to reductions in cases of cardiovascular disease attributable to lower levels of education. However, more than half of the protective effect of education remains unexplained and requires further investigation. © 2019 BMJ Publishing Group Limited. No commercial re-use. See rights and permissions. Published by BMJ.
+KW  - Adult
+KW  - Aged
+KW  - Blood Pressure
+KW  - Body Mass Index
+KW  - Cardiovascular Diseases
+KW  - Educational Status
+KW  - Female
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Multivariate Analysis
+KW  - Odds Ratio
+KW  - Risk Factors
+KW  - Smoking
+KW  - Socioeconomic Factors
+KW  - United Kingdom
+KW  - Article
+KW  - body mass
+KW  - cardiovascular disease
+KW  - cardiovascular risk
+KW  - cerebrovascular accident
+KW  - cohort analysis
+KW  - controlled study
+KW  - educational status
+KW  - European
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - heart infarction
+KW  - human
+KW  - ischemic heart disease
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - observational study
+KW  - patient education
+KW  - priority journal
+KW  - randomized controlled trial
+KW  - risk reduction
+KW  - single nucleotide polymorphism
+KW  - smoking habit
+KW  - social status
+KW  - systolic blood pressure
+KW  - adult
+KW  - aged
+KW  - blood pressure
+KW  - cardiovascular disease
+KW  - female
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - multivariate analysis
+KW  - odds ratio
+KW  - risk factor
+KW  - smoking
+KW  - socioeconomics
+KW  - United Kingdom
+PB  - BMJ Publishing Group
+SN  - 09598146 (ISSN)
+C2  - 31122926
+LA  - English
+J2  - BMJ
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 199; Correspondence Address: A.R. Carter; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: alice.carter@bristol.ac.uk; CODEN: BMJOA
+ER  -
+
+TY  - JOUR
+AU  - Liu, X.
+AU  - Tong, X.
+AU  - Zou, Y.
+AU  - Lin, X.
+AU  - Zhao, H.
+AU  - Tian, L.
+AU  - Jie, Z.
+AU  - Wang, Q.
+AU  - Zhang, Z.
+AU  - Lu, H.
+AU  - Xiao, L.
+AU  - Qiu, X.
+AU  - Zi, J.
+AU  - Wang, R.
+AU  - Xu, X.
+AU  - Yang, H.
+AU  - Wang, J.
+AU  - Zong, Y.
+AU  - Liu, W.
+AU  - Hou, Y.
+AU  - Zhu, S.
+AU  - Jia, H.
+AU  - Zhang, T.
+TI  - Mendelian randomization analyses support causal relationships between blood metabolites and the gut microbiome
+PY  - 2022
+T2  - Nature Genetics
+VL  - 54
+IS  - 1
+SP  - 52
+EP  - 61
+DO  - 10.1038/s41588-021-00968-y
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85120896673&doi=10.1038%2fs41588-021-00968-y&partnerID=40&md5=ddd01ba16b3f8ed9beb74b1605f8b22d
+AD  - BGI-Shenzhen, Shenzhen, China
+AD  - College of Life Sciences, University of Chinese Academy of Sciences, Beijing, China
+AD  - China National Genebank, BGI-Shenzhen, Shenzhen, China
+AD  - Shenzhen Engineering Laboratory of Detection and Intervention of Human Intestinal Microbiome, BGI-Shenzhen, Shenzhen, China
+AD  - BGI-Qingdao, BGI-Shenzhen, Qingdao, China
+AD  - James D. Watson Institute of Genome Sciences, Hangzhou, China
+AD  - Shenzhen Key Laboratory of Human Commensal Microorganisms and Health Research, BGI-Shenzhen, Shenzhen, China
+AB  - The gut microbiome has been implicated in a variety of physiological states, but controversy over causality remains unresolved. Here, we performed bidirectional Mendelian randomization analyses on 3,432 Chinese individuals with whole-genome, whole-metagenome, anthropometric and blood metabolic trait data. We identified 58 causal relationships between the gut microbiome and blood metabolites, and replicated 43 of them. Increased relative abundances of fecal Oscillibacter and Alistipes were causally linked to decreased triglyceride concentration. Conversely, blood metabolites such as glutamic acid appeared to decrease fecal Oxalobacter, and members of Proteobacteria were influenced by metabolites such as 5-methyltetrahydrofolic acid, alanine, glutamate and selenium. Two-sample Mendelian randomization with data from Biobank Japan partly corroborated results with triglyceride and with uric acid, and also provided causal support for published fecal bacterial markers for cancer and cardiovascular diseases. This study illustrates the value of human genetic information to help prioritize gut microbial features for mechanistic and clinical studies. © 2022, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Blood
+KW  - Cohort Studies
+KW  - Feces
+KW  - Gastrointestinal Microbiome
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - Glutamic Acid
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Metagenome
+KW  - Triglycerides
+KW  - 5 methyltetrahydrofolic acid
+KW  - alanine
+KW  - glutamic acid
+KW  - selenium
+KW  - triacylglycerol
+KW  - uric acid
+KW  - glutamic acid
+KW  - triacylglycerol
+KW  - adult
+KW  - Alistipes
+KW  - Article
+KW  - Chinese
+KW  - human
+KW  - intestine flora
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - metabolite
+KW  - nonhuman
+KW  - Oscillibacter
+KW  - Oxalobacter
+KW  - Proteobacteria
+KW  - blood
+KW  - cohort analysis
+KW  - feces
+KW  - genetic variation
+KW  - genetics
+KW  - genome-wide association study
+KW  - intestine flora
+KW  - Mendelian randomization analysis
+KW  - metabolism
+KW  - metagenome
+KW  - microbiology
+PB  - Nature Research
+SN  - 10614036 (ISSN)
+C2  - 34980918
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 200; Correspondence Address: H. Jia; BGI-Shenzhen, Shenzhen, China; email: jiahuijue@genomics.cn; T. Zhang; BGI-Shenzhen, Shenzhen, China; email: tao.zhang@genomics.cn; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Carreras-Torres, R.
+AU  - Johansson, M.
+AU  - Gaborieau, V.
+AU  - Haycock, P.C.
+AU  - Wade, K.H.
+AU  - Relton, C.L.
+AU  - Martin, R.M.
+AU  - Smith, G.D.
+AU  - Brennan, P.
+TI  - The Role of Obesity, Type 2 Diabetes, and Metabolic Factors in Pancreatic Cancer: A Mendelian Randomization Study
+PY  - 2017
+T2  - Journal of the National Cancer Institute
+VL  - 109
+IS  - 9
+C7  - djx012
+DO  - 10.1093/jnci/djx012
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85020432786&doi=10.1093%2fjnci%2fdjx012&partnerID=40&md5=e3e180575076f1dbc9ac3e5d73cee84e
+AD  - Section of Genetics, International Agency for Research on Cancer (IARC), Lyon, France
+AD  - MRC Integrative Epidemiology Unit, School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - National Institute for Health Research Biomedical, Research Unit in Nutrition, Diet and Lifestyle, University Hospitals Bristol NHS Foundation Trust, The University of Bristol, Bristol, United Kingdom
+AB  - Background: Risk factors for pancreatic cancer include a cluster of metabolic conditions such as obesity, hypertension, dyslipidemia, insulin resistance, and type 2 diabetes. Given that these risk factors are correlated, separating out causal from confounded effects is challenging. Mendelian randomization (MR), or the use of genetic instrumental variables, may facilitate the identification of the metabolic drivers of pancreatic cancer. Methods: We identified genetic instruments for obesity, body shape, dyslipidemia, insulin resistance, and type 2 diabetes in order to evaluate their causal role in pancreatic cancer etiology. These instruments were analyzed in relation to risk using a likelihood-based MR approach within a series of 7110 pancreatic cancer patients and 7264 control subjects using genome-wide data from the Pancreatic Cancer Cohort Consortium (PanScan) and the Pancreatic Cancer Case-Control Consortium (PanC4). Potential unknown pleiotropic effects were assessed using a weighted median approach and MR-Egger sensitivity analyses. Results: Results indicated a robust causal association of increasing body mass index (BMI) with pancreatic cancer risk (odds ratio [OR] = 1.34, 95% confidence interval [CI] = 1.09 to 1.65, for each standard deviation increase in BMI [4.6 kg/m2]). There was also evidence that genetically increased fasting insulin levels were causally associated with an increased risk of pancreatic cancer (OR = 1.66, 95% CI = 1.05 to 2.63, per SD [44.4 pmol/L]). Notably, no evidence of a causal relationship was observed for type 2 diabetes, nor for dyslipidemia. Sensitivity analyses did not indicate that pleiotropy was an important source of bias. Conclusions: Our results suggest a causal role of BMI and fasting insulin in pancreatic cancer etiology. © The Author 2017.
+KW  - Body Mass Index
+KW  - Case-Control Studies
+KW  - Diabetes Mellitus, Type 2
+KW  - Energy Metabolism
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Insulin
+KW  - Insulin Resistance
+KW  - Likelihood Functions
+KW  - Male
+KW  - Obesity
+KW  - Odds Ratio
+KW  - Pancreatic Neoplasms
+KW  - Polymorphism, Single Nucleotide
+KW  - Population Surveillance
+KW  - Quantitative Trait, Heritable
+KW  - Risk Factors
+KW  - glucose
+KW  - high density lipoprotein cholesterol
+KW  - insulin
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - insulin
+KW  - Article
+KW  - body mass
+KW  - cholesterol blood level
+KW  - controlled study
+KW  - dyslipidemia
+KW  - female
+KW  - genome-wide association study
+KW  - human
+KW  - insulin resistance
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - metabolic rate
+KW  - non insulin dependent diabetes mellitus
+KW  - obesity
+KW  - pancreas cancer
+KW  - pleiotropy
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - waist hip ratio
+KW  - case control study
+KW  - complication
+KW  - energy metabolism
+KW  - genetic predisposition
+KW  - health survey
+KW  - meta analysis
+KW  - metabolism
+KW  - non insulin dependent diabetes mellitus
+KW  - obesity
+KW  - odds ratio
+KW  - Pancreatic Neoplasms
+KW  - quantitative trait
+KW  - statistical model
+PB  - Oxford University Press
+SN  - 00278874 (ISSN)
+C2  - 28954281
+LA  - English
+J2  - J. Natl. Cancer Inst.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 200; Correspondence Address: P. Brennan; Section of Genetics, International Agency for Research on Cancer (IARC), Lyon, 150 Cours Albert Thomas, Cedex 08, 69372, France; email: gep@iarc.fr; CODEN: JNCIA
+ER  -
+
+TY  - JOUR
+AU  - Xue, H.
+AU  - Shen, X.
+AU  - Pan, W.
+TI  - Constrained maximum likelihood-based Mendelian randomization robust to both correlated and uncorrelated pleiotropic effects
+PY  - 2021
+T2  - American Journal of Human Genetics
+VL  - 108
+IS  - 7
+SP  - 1251
+EP  - 1269
+DO  - 10.1016/j.ajhg.2021.05.014
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85108897645&doi=10.1016%2fj.ajhg.2021.05.014&partnerID=40&md5=89aeed341f7e6363bce4b7f011be7203
+AD  - School of Statistics, University of Minnesota, Minneapolis, 55455, MN, United States
+AD  - Division of Biostatistics, School of Public Health, University of Minnesota, Minneapolis, 55455, MN, United States
+AB  - With the increasing availability of large-scale GWAS summary data on various complex traits and diseases, there have been tremendous interests in applications of Mendelian randomization (MR) to investigate causal relationships between pairs of traits using SNPs as instrumental variables (IVs) based on observational data. In spite of the potential significance of such applications, the validity of their causal conclusions critically depends on some strong modeling assumptions required by MR, which may be violated due to the widespread (horizontal) pleiotropy. Although many MR methods have been proposed recently to relax the assumptions by mainly dealing with uncorrelated pleiotropy, only a few can handle correlated pleiotropy, in which some SNPs/IVs may be associated with hidden confounders, such as some heritable factors shared by both traits. Here we propose a simple and effective approach based on constrained maximum likelihood and model averaging, called cML-MA, applicable to GWAS summary data. To deal with more challenging situations with many invalid IVs with only weak pleiotropic effects, we modify and improve it with data perturbation. Extensive simulations demonstrated that the proposed methods could control the type I error rate better while achieving higher power than other competitors. Applications to 48 risk factor-disease pairs based on large-scale GWAS summary data of 3 cardio-metabolic diseases (coronary artery disease, stroke, and type 2 diabetes), asthma, and 12 risk factors confirmed its superior performance. © 2021 American Society of Human Genetics
+KW  - causal inference
+KW  - data perturbation
+KW  - goodness-of-fit test
+KW  - GWAS
+KW  - instrumental variable
+KW  - Algorithms
+KW  - Asthma
+KW  - Cardiovascular Diseases
+KW  - Causality
+KW  - Computer Simulation
+KW  - Diabetes Mellitus, Type 2
+KW  - Genetic Pleiotropy
+KW  - Humans
+KW  - Likelihood Functions
+KW  - Mendelian Randomization Analysis
+KW  - Models, Statistical
+KW  - Risk Factors
+KW  - Article
+KW  - cerebrovascular accident
+KW  - controlled study
+KW  - coronary artery disease
+KW  - correlational study
+KW  - genome-wide association study
+KW  - human
+KW  - maximum likelihood method
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - pleiotropy
+KW  - risk factor
+KW  - simulation
+KW  - algorithm
+KW  - asthma
+KW  - cardiovascular disease
+KW  - causality
+KW  - comparative study
+KW  - computer simulation
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - procedures
+KW  - statistical model
+PB  - Cell Press
+SN  - 00029297 (ISSN)
+C2  - 34214446
+LA  - English
+J2  - Am. J. Hum. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 197; Correspondence Address: W. Pan; Division of Biostatistics, School of Public Health, University of Minnesota, Minneapolis, 55455, United States; email: panxx014@umn.edu; CODEN: AJHGA
+ER  -
+
+TY  - JOUR
+AU  - Minelli, C.
+AU  - Del Greco, F.M.
+AU  - Van Der Plaat, D.A.
+AU  - Bowden, J.
+AU  - Sheehan, N.A.
+AU  - Thompson, J.
+TI  - The use of two-sample methods for Mendelian randomization analyses on single large datasets
+PY  - 2021
+T2  - International Journal of Epidemiology
+VL  - 50
+IS  - 5
+SP  - 1651
+EP  - 1659
+DO  - 10.1093/ije/dyab084
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85112662680&doi=10.1093%2fije%2fdyab084&partnerID=40&md5=c741f3f071ea02ed331993570fe77e86
+AD  - National Heart and Lung Institute, Imperial College London, London, United Kingdom
+AD  - Institute for Biomedicine, Eurac Research, Bolzano, Italy
+AD  - Medical School, University of Exeter, Exeter, United Kingdom
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AB  - Background: With genome-wide association data for many exposures and outcomes now available from large biobanks, one-sample Mendelian randomization (MR) is increasingly used to investigate causal relationships. Many robust MR methods are available to address pleiotropy, but these assume independence between the gene-exposure and gene-outcome association estimates. Unlike in two-sample MR, in one-sample MR the two estimates are obtained from the same individuals, and the assumption of independence does not hold in the presence of confounding. Methods: With simulations mimicking a typical study in UK Biobank, we assessed the performance, in terms of bias and precision of the MR estimate, of the fixed-effect and (multiplicative) random-effects meta-analysis method, weighted median estimator, weighted mode estimator and MR-Egger regression, used in both one-sample and two-sample data. We considered scenarios differing by the: presence/absence of a true causal effect; amount of confounding; and presence and type of pleiotropy (none, balanced or directional). Results: Even in the presence of substantial correlation due to confounding, all two-sample methods used in one-sample MR performed similarly to when used in two-sample MR, except for MR-Egger which resulted in bias reflecting direction and magnitude of the confounding. Such bias was much reduced in the presence of very high variability in instrument strength across variants (IGX2 of 97%). Conclusions: Two-sample MR methods can be safely used for one-sample MR performed within large biobanks, expect for MR-Egger. MR-Egger is not recommended for one-sample MR unless the correlation between the gene-exposure and gene-outcome estimates due to confounding can be kept low, or the variability in instrument strength is very high. © 2021 The Author(s) 2021. Published by Oxford University Press on behalf of the International Epidemiological Association.
+KW  - Inverse-variance weighted estimator
+KW  - MR-Egger regression
+KW  - One-sample Mendelian randomization
+KW  - Two-sample Mendelian randomization
+KW  - Two-stage least square estimator
+KW  - UK Biobank
+KW  - Weighted median estimator
+KW  - Weighted mode estimator
+KW  - Bias
+KW  - Causality
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Research Design
+KW  - correlation
+KW  - data set
+KW  - gene
+KW  - magnitude
+KW  - meta-analysis
+KW  - pleiotropy
+KW  - precision
+KW  - article
+KW  - biobank
+KW  - human
+KW  - human tissue
+KW  - least square analysis
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - pleiotropy
+KW  - randomized controlled trial (topic)
+KW  - simulation
+KW  - causality
+KW  - genome-wide association study
+KW  - methodology
+KW  - single nucleotide polymorphism
+KW  - statistical bias
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 33899104
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 199; Correspondence Address: C. Minelli; National Heart and Lung Institute, Imperial College London, Emmanuel Kaye Building, London, 1B Manresa Road, SW3 6LR, United Kingdom; email: cosetta.minelli1@imperial.ac.uk; CODEN: IJEPB
+ER  -
+

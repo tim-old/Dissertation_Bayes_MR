@@ -1,0 +1,642 @@
+﻿TY  - JOUR
+AU  - Sanna, S.
+AU  - van Zuydam, N.R.
+AU  - Mahajan, A.
+AU  - Kurilshikov, A.
+AU  - Vich Vila, A.
+AU  - Võsa, U.
+AU  - Mujagic, Z.
+AU  - Masclee, A.A.M.
+AU  - Jonkers, D.M.A.E.
+AU  - Oosting, M.
+AU  - Joosten, L.A.B.
+AU  - Netea, M.G.
+AU  - Franke, L.
+AU  - Zhernakova, A.
+AU  - Fu, J.
+AU  - Wijmenga, C.
+AU  - McCarthy, M.I.
+TI  - Causal relationships among the gut microbiome, short-chain fatty acids and metabolic diseases
+PY  - 2019
+T2  - Nature Genetics
+VL  - 51
+IS  - 4
+SP  - 600
+EP  - 605
+DO  - 10.1038/s41588-019-0350-x
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85061738433&doi=10.1038%2fs41588-019-0350-x&partnerID=40&md5=8a46965b3300a3d8c4a0763b2cd3cca2
+AD  - Department of Genetics, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - Wellcome Centre for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - Oxford Centre for Diabetes Endocrinology and Metabolism, Churchill Hospital, University of Oxford, Oxford, United Kingdom
+AD  - Department of Gastroenterology and Hepatology, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - Maastricht University Medical Center, Division Gastroenterology-Hepatology, NUTRIM School for Nutrition, and Translational Research in Metabolism, Maastricht, Netherlands
+AD  - Department of Internal Medicine, Radboud Institute of Molecular Life Sciences (RIMLS) and Radboud Center for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, Netherlands
+AD  - Department of Pediatrics, Groningen, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - K.G. Jebsen Coeliac Disease Research Centre, Department of Immunology, University of Oslo, Oslo, Norway
+AD  - Oxford NIHR Biomedical Research Centre, Oxford University Hospitals NHS Foundation Trust, John Radcliffe Hospital, Oxford, United Kingdom
+AB  -                              Microbiome-wide association studies on large population cohorts have highlighted associations between the gut microbiome and complex traits, including type 2 diabetes (T2D) and obesity                             1                             . However, the causal relationships remain largely unresolved. We leveraged information from 952 normoglycemic individuals for whom genome-wide genotyping, gut metagenomic sequence and fecal short-chain fatty acid (SCFA) levels were available                             2                             , then combined this information with genome-wide-association summary statistics for 17 metabolic and anthropometric traits. Using bidirectional Mendelian randomization (MR) analyses to assess causality                             3                             , we found that the host-genetic-driven increase in gut production of the SCFA butyrate was associated with improved insulin response after an oral glucose-tolerance test (P = 9.8 × 10                             −5                             ), whereas abnormalities in the production or absorption of another SCFA, propionate, were causally related to an increased risk of T2D (P = 0.004). These data provide evidence of a causal effect of the gut microbiome on metabolic traits and support the use of MR as a means to elucidate causal relationships from microbiome-wide association findings.                          © 2019, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Adolescent
+KW  - Adult
+KW  - Aged
+KW  - Aged, 80 and over
+KW  - Diabetes Mellitus, Type 2
+KW  - Fatty Acids, Volatile
+KW  - Female
+KW  - Gastrointestinal Microbiome
+KW  - Genotype
+KW  - Glucose Tolerance Test
+KW  - Humans
+KW  - Male
+KW  - Metabolic Diseases
+KW  - Middle Aged
+KW  - Netherlands
+KW  - Young Adult
+KW  - butyric acid
+KW  - propionic acid
+KW  - short chain fatty acid
+KW  - volatile fatty acid
+KW  - absorption
+KW  - adult
+KW  - aged
+KW  - female
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - insulin response
+KW  - intestine flora
+KW  - Letter
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - metabolic disorder
+KW  - metagenomics
+KW  - non insulin dependent diabetes mellitus
+KW  - nonhuman
+KW  - oral glucose tolerance test
+KW  - priority journal
+KW  - risk assessment
+KW  - adolescent
+KW  - genetics
+KW  - glucose tolerance test
+KW  - intestine flora
+KW  - metabolic disorder
+KW  - middle aged
+KW  - Netherlands
+KW  - procedures
+KW  - very elderly
+KW  - young adult
+PB  - Nature Publishing Group
+SN  - 10614036 (ISSN)
+C2  - 30778224
+LA  - English
+J2  - Nat. Genet.
+M3  - Letter
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1073; Correspondence Address: S. Sanna; Department of Genetics, University of Groningen, University Medical Center Groningen, Groningen, Netherlands; email: s.sanna@umcg.nl; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Davey Smith, G.
+AU  - Davies, N.M.
+AU  - Dudbridge, F.
+AU  - Gill, D.
+AU  - Glymour, M.M.
+AU  - Hartwig, F.P.
+AU  - Holmes, M.V.
+AU  - Minelli, C.
+AU  - Relton, C.L.
+AU  - Theodoratou, E.
+TI  - Guidelines for performing Mendelian randomization investigations
+PY  - 2020
+T2  - Wellcome Open Research
+VL  - 4
+C7  - 186
+DO  - 10.12688/wellcomeopenres.15555.2
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85089770182&doi=10.12688%2fwellcomeopenres.15555.2&partnerID=40&md5=892627a48b904127c799b6d1dc6b82de
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Department of Epidemiology and Biostatistics, University of California, San Francisco, San Francisco, CA, United States
+AD  - Postgraduate Program in Epidemiology, Federal University of Pelotas, Pelotas, Brazil
+AD  - MRC Population Health Research Unit at the University of Oxford, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - National Heart and Lung Institute, Imperial College London, London, United Kingdom
+AD  - Centre for Global Health, Usher Institute, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Edinburgh Cancer Research Centre, Institute of Genetics and Molecular Medicine, University of Edinburgh, Edinburgh, United Kingdom
+AB  - This paper provides guidelines for performing Mendelian randomization investigations. It is aimed at practitioners seeking to undertake analyses and write up their findings, and at journal editors and reviewers seeking to assess Mendelian randomization manuscripts. The guidelines are divided into nine sections: motivation and scope, data sources, choice of genetic variants, variant harmonization, primary analysis, supplementary and sensitivity analyses (one section on robust statistical methods and one on other approaches), data presentation, and interpretation. These guidelines will be updated based on feedback from the community and advances in the field. Updates will be made periodically as needed, and at least every 18 months. © 2020 Burgess S et al.
+KW  - Causal inference
+KW  - Genetic epidemiology
+KW  - Guidelines
+KW  - Mendelian randomization
+PB  - F1000 Research Ltd
+SN  - 2398502X (ISSN)
+LA  - English
+J2  - Wellcome Open Res.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 977; Correspondence Address: S. Burgess; MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Lawlor, D.A.
+AU  - Tilling, K.
+AU  - Smith, G.D.
+TI  - Triangulation in aetiological epidemiology
+PY  - 2016
+T2  - International Journal of Epidemiology
+VL  - 45
+IS  - 6
+SP  - 1866
+EP  - 1886
+DO  - 10.1093/ije/dyw314
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85017184849&doi=10.1093%2fije%2fdyw314&partnerID=40&md5=a9f46e4b45f67b4dffa5f8d1118e1b2e
+AD  - MRC Integrative Epidemiology Unit, The University of Bristol, Bristol, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AB  - Triangulation is the practice of obtaining more reliable answers to research questions through integrating results from several different approaches, where each approach has different key sources of potential bias that are unrelated to each other. With respect to causal questions in aetiological epidemiology, if the results of different approaches all point to the same conclusion, this strengthens confidence in the finding. This is particularly the case when the key sources of bias of some of the approaches would predict that findings would point in opposite directions if they were due to such biases. Where there are inconsistencies, understanding the key sources of bias of each approach can help to identify what further research is required to address the causal question. The aim of this paper is to illustrate how triangulation might be used to improve causal inference in aetiological epidemiology. We propose a minimum set of criteria for use in triangulation in aetiological epidemiology, summarize the key sources of bias of several approaches and describe how these might be integrated within a triangulation framework. We emphasize the importance of being explicit about the expected direction of bias within each approach, whenever this is possible, and seeking to identify approaches that would be expected to bias the true causal effect in different directions. We also note the importance, when comparing results, of taking account of differences in the duration and timing of exposures. We provide three examples to illustrate these points. © The Author 2017.
+KW  -  Negative control studies
+KW  - Aetiological epidemiology
+KW  - Causality
+KW  - Instrumental variables
+KW  - Mendelian randomization
+KW  - Natural experiments
+KW  - RCTs
+KW  - Triangulation
+KW  - Within-sibships studies
+KW  - Bias
+KW  - Causality
+KW  - Data Collection
+KW  - Epidemiology
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Research Design
+KW  - glucose
+KW  - epidemiology
+KW  - etiology
+KW  - experimental study
+KW  - Granger causality test
+KW  - instrumentation
+KW  - triangulation
+KW  - aetiological epidemiology
+KW  - Article
+KW  - birth weight
+KW  - body mass
+KW  - breast feeding
+KW  - causality
+KW  - comparative study
+KW  - epidemiology
+KW  - glucose blood level
+KW  - human
+KW  - instrumental variable analysis
+KW  - ischemic heart disease
+KW  - maternal blood
+KW  - priority journal
+KW  - progeny
+KW  - statistical bias
+KW  - systolic blood pressure
+KW  - triangulation
+KW  - causality
+KW  - epidemiology
+KW  - information processing
+KW  - Mendelian randomization analysis
+KW  - methodology
+KW  - procedures
+KW  - standards
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 28108528
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 758; Correspondence Address: D.A. Lawlor; MRC IEU, University of Bristol, Bristol, Oakfield House, Oakfield Grove, BS8 2BN, United Kingdom; email: d.a.lawlor@bristol.ac.uk; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Carter, A.R.
+AU  - Sanderson, E.
+AU  - Hammerton, G.
+AU  - Richmond, R.C.
+AU  - Davey Smith, G.
+AU  - Heron, J.
+AU  - Taylor, A.E.
+AU  - Davies, N.M.
+AU  - Howe, L.D.
+TI  - Mendelian randomisation for mediation analysis: current methods and challenges for implementation
+PY  - 2021
+T2  - European Journal of Epidemiology
+VL  - 36
+IS  - 5
+SP  - 465
+EP  - 478
+DO  - 10.1007/s10654-021-00757-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85105743682&doi=10.1007%2fs10654-021-00757-1&partnerID=40&md5=1ff9540aad3d0aa285fd14d4df596da4
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Oakfield House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AD  - Centre for Academic Mental Health, University of Bristol, Bristol, United Kingdom
+AD  - National Institute for Health Research Biomedical Research Centre At the University Hospitals Bristol NHS Foundation Trust and the University of Bristol, Bristol, United Kingdom
+AD  - K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AB  - Mediation analysis seeks to explain the pathway(s) through which an exposure affects an outcome. Traditional, non-instrumental variable methods for mediation analysis experience a number of methodological difficulties, including bias due to confounding between an exposure, mediator and outcome and measurement error. Mendelian randomisation (MR) can be used to improve causal inference for mediation analysis. We describe two approaches that can be used for estimating mediation analysis with MR: multivariable MR (MVMR) and two-step MR. We outline the approaches and provide code to demonstrate how they can be used in mediation analysis. We review issues that can affect analyses, including confounding, measurement error, weak instrument bias, interactions between exposures and mediators and analysis of multiple mediators. Description of the methods is supplemented by simulated and real data examples. Although MR relies on large sample sizes and strong assumptions, such as having strong instruments and no horizontally pleiotropic pathways, our simulations demonstrate that these methods are unaffected by confounders of the exposure or mediator and the outcome and non-differential measurement error of the exposure or mediator. Both MVMR and two-step MR can be implemented in both individual-level MR and summary data MR. MR mediation methods require different assumptions to be made, compared with non-instrumental variable mediation methods. Where these assumptions are more plausible, MR can be used to improve causal inference in mediation analysis. © 2021, The Author(s).
+KW  - Mediation analysis
+KW  - Mendelian randomisation
+KW  - Multivariable Mendelian randomisation
+KW  - Two-step Mendelian randomisation
+KW  - Bias
+KW  - Causality
+KW  - Genetic Pleiotropy
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mediation Analysis
+KW  - Mendelian Randomization Analysis
+KW  - article
+KW  - confounding variable
+KW  - human
+KW  - measurement error
+KW  - mediation analysis
+KW  - Mendelian randomization analysis
+KW  - outcome assessment
+KW  - sample size
+KW  - simulation
+KW  - causality
+KW  - genetic variation
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - procedures
+KW  - statistical bias
+PB  - Springer Science and Business Media B.V.
+SN  - 03932990 (ISSN)
+C2  - 33961203
+LA  - English
+J2  - Eur. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 559; Correspondence Address: A.R. Carter; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: alice.carter@bristol.ac.uk; CODEN: EJEPE
+ER  -
+
+TY  - JOUR
+AU  - Bowden, J.
+AU  - Holmes, M.V.
+TI  - Meta-analysis and Mendelian randomization: A review
+PY  - 2019
+T2  - Research Synthesis Methods
+VL  - 10
+IS  - 4
+SP  - 486
+EP  - 496
+DO  - 10.1002/jrsm.1346
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075392797&doi=10.1002%2fjrsm.1346&partnerID=40&md5=dcd33601ae4467cce3aa1be469a5feb3
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, Oxford, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - National Institute for Health Research Oxford Biomedical Research Centre, Oxford University Hospital, Oxford, United Kingdom
+AB  - Mendelian randomization (MR) uses genetic variants as instrumental variables to infer whether a risk factor causally affects a health outcome. Meta-analysis has been used historically in MR to combine results from separate epidemiological studies, with each study using a small but select group of genetic variants. In recent years, it has been used to combine genome-wide association study (GWAS) summary data for large numbers of genetic variants. Heterogeneity among the causal estimates obtained from multiple genetic variants points to a possible violation of the necessary instrumental variable assumptions. In this article, we provide a basic introduction to MR and the instrumental variable theory that it relies upon. We then describe how random effects models, meta-regression, and robust regression are being used to test and adjust for heterogeneity in order to improve the rigor of the MR approach. © 2019 The Authors Research Synthesis Methods Published by John Wiley & Sons Ltd.
+KW  - Mendelian randomization
+KW  - meta-analysis
+KW  - pleiotropy
+KW  - two-sample summary data MR
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Internet
+KW  - Mendelian Randomization Analysis
+KW  - Meta-Analysis as Topic
+KW  - Observational Studies as Topic
+KW  - Polymorphism, Single Nucleotide
+KW  - Regression Analysis
+KW  - Research Design
+KW  - Risk Factors
+KW  - Software
+KW  - genetic variation
+KW  - genome-wide association study
+KW  - human
+KW  - Internet
+KW  - Mendelian randomization analysis
+KW  - meta analysis (topic)
+KW  - methodology
+KW  - observational study
+KW  - procedures
+KW  - regression analysis
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - software
+PB  - John Wiley and Sons Ltd
+SN  - 17592887 (ISSN)
+C2  - 30861319
+LA  - English
+J2  - Res. Synth. Methods
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 929; Correspondence Address: J. Bowden; Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: jack.bowden@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Bowden, J.
+AU  - Fabiola Del Greco, M.
+AU  - Minelli, C.
+AU  - Smith, G.D.
+AU  - Sheehan, N.A.
+AU  - Thompson, J.R.
+TI  - Assessing the suitability of summary data for two-sample mendelian randomization analyses using MR-Egger regression: The role of the I 2 statistic
+PY  - 2016
+T2  - International Journal of Epidemiology
+VL  - 45
+IS  - 6
+C7  - dyw220
+SP  - 1961
+EP  - 1974
+DO  - 10.1093/ije/dyw220
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85017096444&doi=10.1093%2fije%2fdyw220&partnerID=40&md5=f3780ef1a0e36f4f8b7d28408ce0a1fe
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - MRC Biostatistics Unit, Cambridge, United Kingdom
+AD  - Center for Biomedicine, EURAC research, Bolzano, Italy
+AD  - Respiratory Epidemiology, Occupational Medicine and Public Health, Imperial College London, London, United Kingdom
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AB  - MR-Egger regression has recently been proposed as a method for Mendelian randomization (MR) analyses incorporating summary data estimates of causal effect from multiple individual variants, which is robust to invalid instruments. It can be used to test for directional pleiotropy and provides an estimate of the causal effect adjusted for its presence. MR-Egger regression provides a useful additional sensitivity analysis to the standard inverse variance weighted (IVW) approach that assumes all variants are valid instruments. Both methods use weights that consider the single nucleotide polymorphism (SNP)-exposure associations to be known, rather than estimated. We call this the NO Measurement Error' (NOME) assumption. Causal effect estimates from the IVW approach exhibit weak instrument bias whenever the genetic variants utilized violate the NOME assumption, which can be reliably measured using the F-statistic. The effect of NOME violation on MR-Egger regression has yet to be studied. Methods: An adaptation of the I2 statistic from the field of meta-analysis is proposed to quantify the strength of NOME violation for MR-Egger. It lies between 0 and 1, and indicates the expected relative bias (or dilution) of the MR-Egger causal estimate in the twosample MR context. We call it I2 GX . The method of simulation extrapolation is also explored to counteract the dilution. Their joint utility is evaluated using simulated data and applied to a real MR example. Results: In simulated two-sample MR analyses we show that, when a causal effect exists, the MR-Egger estimate of causal effect is biased towards the null when NOME is violated, and the stronger the violation (as indicated by lower values of I2 GX ), the stronger the dilution. When additionally all genetic variants are valid instruments, the type I error rate of the MR-Egger test for pleiotropy is inflated and the causal effect underestimated. Simulation extrapolation is shown to substantially mitigate these adverse effects. We demonstrate our proposed approach for a two-sample summary data MR analysis to estimate the causal effect of low-density lipoprotein on heart disease risk. A high value of I2 GX close to 1 indicates that dilution does not materially affect the standard MR-Egger analyses for these data. Conclusions: Care must be taken to assess the NOME assumption via the I2 GX statistic before implementing standard MR-Egger regression in the two-sample summary data context. If I2 GX is sufficiently low (less than 90%), inferences from the method should be interpreted with caution and adjustment methods considered. © The Author 2016.
+KW  - I<sup>2</sup> statistic
+KW  - Measurement error
+KW  - Mendelian randomization
+KW  - MR-Egger regression
+KW  - Simulation extrapolation
+KW  - Bias
+KW  - Data Interpretation, Statistical
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Regression Analysis
+KW  - low density lipoprotein
+KW  - genetic variation
+KW  - health care
+KW  - health impact
+KW  - health risk
+KW  - instrumentation
+KW  - meta-analysis
+KW  - pleiotropy
+KW  - polymorphism
+KW  - regression analysis
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - analytic method
+KW  - Article
+KW  - cardiovascular risk
+KW  - causality
+KW  - epidemiological data
+KW  - genetic variability
+KW  - heart disease
+KW  - human
+KW  - inverse variance weighted
+KW  - measurement error
+KW  - Mendelian randomization analysis
+KW  - Mendelian randomization egger analysis
+KW  - pleiotropy
+KW  - priority journal
+KW  - regression analysis
+KW  - sensitivity analysis
+KW  - simulation
+KW  - single nucleotide polymorphism
+KW  - summary data
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - statistical analysis
+KW  - statistical bias
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 27616674
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1131; Correspondence Address: J. Bowden; School of Social and Community Medicine, University of Bristol, Oakfield Grove, Bristol, BS8 2BN, United Kingdom; email: jack.bowden@bristol.ac.uk; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Davies, N.M.
+AU  - Thompson, S.G.
+TI  - Bias due to participant overlap in two-sample Mendelian randomization
+PY  - 2016
+T2  - Genetic Epidemiology
+VL  - 40
+IS  - 7
+SP  - 597
+EP  - 608
+DO  - 10.1002/gepi.21998
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84991619426&doi=10.1002%2fgepi.21998&partnerID=40&md5=0c923b91ecaa053c9157a44151089840
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AB  - Mendelian randomization analyses are often performed using summarized data. The causal estimate from a one-sample analysis (in which data are taken from a single data source) with weak instrumental variables is biased in the direction of the observational association between the risk factor and outcome, whereas the estimate from a two-sample analysis (in which data on the risk factor and outcome are taken from non-overlapping datasets) is less biased and any bias is in the direction of the null. When using genetic consortia that have partially overlapping sets of participants, the direction and extent of bias are uncertain. In this paper, we perform simulation studies to investigate the magnitude of bias and Type 1 error rate inflation arising from sample overlap. We consider both a continuous outcome and a case-control setting with a binary outcome. For a continuous outcome, bias due to sample overlap is a linear function of the proportion of overlap between the samples. So, in the case of a null causal effect, if the relative bias of the one-sample instrumental variable estimate is 10% (corresponding to an F parameter of 10), then the relative bias with 50% sample overlap is 5%, and with 30% sample overlap is 3%. In a case-control setting, if risk factor measurements are only included for the control participants, unbiased estimates are obtained even in a one-sample setting. However, if risk factor data on both control and case participants are used, then bias is similar with a binary outcome as with a continuous outcome. Consortia releasing publicly available data on the associations of genetic variants with continuous risk factors should provide estimates that exclude case participants from case-control samples. © 2016 The Authors Genetic Epidemiology Published by Wiley Periodicals, Inc.
+KW  - aggregated data
+KW  - instrumental variables
+KW  - Mendelian randomization
+KW  - summarized data
+KW  - weak instrument bias
+KW  - Bias (Epidemiology)
+KW  - Case-Control Studies
+KW  - Genetic Variation
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Models, Genetic
+KW  - Risk Factors
+KW  - controlled clinical trial
+KW  - controlled study
+KW  - genetic variability
+KW  - human
+KW  - human tissue
+KW  - Mendelian randomization analysis
+KW  - normal human
+KW  - population based case control study
+KW  - randomized controlled trial
+KW  - risk factor
+KW  - biological model
+KW  - case control study
+KW  - genetic variation
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - statistical bias
+PB  - Wiley-Liss Inc.
+SN  - 07410395 (ISSN)
+C2  - 27625185
+LA  - English
+J2  - Genet. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 1062; Correspondence Address: S. Burgess; Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: GENYE
+ER  -
+
+TY  - JOUR
+AU  - Hemani, G.
+AU  - Bowden, J.
+AU  - Davey Smith, G.
+TI  - Evaluating the potential role of pleiotropy in Mendelian randomization studies
+PY  - 2018
+T2  - Human Molecular Genetics
+VL  - 27
+IS  - R2
+SP  - R195
+EP  - R208
+DO  - 10.1093/hmg/ddy163
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85049776873&doi=10.1093%2fhmg%2fddy163&partnerID=40&md5=f250da6a0dcabf886e1703dc8cc79515
+AD  - Mrc Integrative Epidemiology Unit, Population Health Sciences, University of Bristol, United Kingdom
+AB  - Pleiotropy, the phenomenon of a single genetic variant influencing multiple traits, is likely widespread in the human genome. If pleiotropy arises because the single nucleotide polymorphism (SNP) influences one trait, which in turn influences another ('vertical pleiotropy'), then Mendelian randomization (MR) can be used to estimate the causal influence between the traits. Of prime focus among the many limitations to MR is the unprovable assumption that apparent pleiotropic associations are mediated by the exposure (i.e. reflect vertical pleiotropy), and do not arise due to SNPs influencing the two traits through independent pathways ('horizontal pleiotropy'). The burgeoning treasure trove of genetic associations yielded through genome wide association studies makes for a tantalizing prospect of phenome-wide causal inference. Recent years have seen substantial attention devoted to the problem of horizontal pleiotropy, and in this review we outline how newly developed methods can be used together to improve the reliability of MR. © 2018 The Author(s) 2018. Published by Oxford University Press.
+KW  - Animals
+KW  - Genetic Pleiotropy
+KW  - Genetic Variation
+KW  - Genome, Human
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Reproducibility of Results
+KW  - attention
+KW  - controlled study
+KW  - genetic association
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - randomized controlled trial
+KW  - reliability
+KW  - review
+KW  - single nucleotide polymorphism
+KW  - animal
+KW  - genetic variation
+KW  - genetics
+KW  - human genome
+KW  - Mendelian randomization analysis
+KW  - phenotype
+KW  - physiology
+KW  - pleiotropy
+KW  - procedures
+KW  - reproducibility
+PB  - Oxford University Press
+SN  - 09646906 (ISSN)
+C2  - 29771313
+LA  - English
+J2  - Hum. Mol. Genet.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 919; Correspondence Address: G. Hemani; Mrc Integrative Epidemiology Unit, Population Health Sciences, University of Bristol, United Kingdom; email: g.hemani@bristol.ac.uk; CODEN: HMGEE
+ER  -
+
+TY  - JOUR
+AU  - Sanderson, E.
+AU  - Glymour, M.M.
+AU  - Holmes, M.V.
+AU  - Kang, H.
+AU  - Morrison, J.
+AU  - Munafò, M.R.
+AU  - Palmer, T.
+AU  - Schooling, C.M.
+AU  - Wallace, C.
+AU  - Zhao, Q.
+AU  - Davey Smith, G.
+TI  - Mendelian randomization
+PY  - 2022
+T2  - Nature Reviews Methods Primers
+VL  - 2
+IS  - 1
+C7  - 6
+DO  - 10.1038/s43586-021-00092-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85127260920&doi=10.1038%2fs43586-021-00092-5&partnerID=40&md5=15f39f3ed5df0a1dab900718a6a01463
+AD  - Medical Research Council (MRC) Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Epidemiology and Biostatistics, University of California, San Francisco, CA, United States
+AD  - MRC Population Health Research Unit, University of Oxford, Oxford, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - Department of Statistics, University of Wisconsin-Madison, Madison, WI, United States
+AD  - Department of Biostatistics, University of Michigan, Ann Arbor, MI, United States
+AD  - School of Psychological Science, University of Bristol, Bristol, United Kingdom
+AD  - National Institute for Health Research (NIHR), Biomedical Research Centre, University of Bristol, Bristol, United Kingdom
+AD  - School of Public Health, Li Ka Shing, Faculty of Medicine, The University of Hong Kong, Hong Kong
+AD  - School of Public Health, City University of New York, New York, NY, United States
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Cambridge Institute of Therapeutic Immunology & Infectious Disease (CITIID), University of Cambridge, Cambridge, United Kingdom
+AD  - Statistical Laboratory, University of Cambridge, Cambridge, United Kingdom
+AB  - Mendelian randomization (MR) is a term that applies to the use of genetic variation to address causal questions about how modifiable exposures influence different outcomes. The principles of MR are based on Mendel’s laws of inheritance and instrumental variable estimation methods, which enable the inference of causal effects in the presence of unobserved confounding. In this Primer, we outline the principles of MR, the instrumental variable conditions underlying MR estimation and some of the methods used for estimation. We go on to discuss how the assumptions underlying an MR study can be assessed and describe methods of estimation that are robust to certain violations of these assumptions. We give examples of a range of studies in which MR has been applied, the limitations of current methods of analysis and the outlook for MR in the future. The differences between the assumptions required for MR analysis and other forms of epidemiological studies means that MR can be used as part of a triangulation across multiple sources of evidence for causal inference. © 2022, Springer Nature Limited.
+PB  - Springer Nature
+SN  - 26628449 (ISSN)
+LA  - English
+J2  - Nat. Rev. Method. Prim.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 598; Correspondence Address: E. Sanderson; Medical Research Council (MRC) Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: eleanor.sanderson@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Skrivankova, V.W.
+AU  - Richmond, R.C.
+AU  - Woolf, B.A.R.
+AU  - Davies, N.M.
+AU  - Swanson, S.A.
+AU  - Vanderweele, T.J.
+AU  - Timpson, N.J.
+AU  - Higgins, J.P.T.
+AU  - Dimou, N.
+AU  - Langenberg, C.
+AU  - Loder, E.W.
+AU  - Golub, R.M.
+AU  - Egger, M.
+AU  - Smith, G.D.
+AU  - Richards, J.B.
+TI  - Strengthening the reporting of observational studies in epidemiology using mendelian randomisation (STROBE-MR): Explanation and elaboration
+PY  - 2021
+T2  - The BMJ
+VL  - 375
+C7  - n2233
+DO  - 10.1136/bmj.n2233
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85118463856&doi=10.1136%2fbmj.n2233&partnerID=40&md5=d4dab857668663f6e08d6f5d4981cca9
+AD  - Institute of Social and Preventive Medicine, University of Bern, Bern, Switzerland
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Department of Psychological Science, University of Bristol, Bristol, United Kingdom
+AD  - K G Jebsen Centre for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Department of Epidemiology, Erasmus MC, Rotterdam, Netherlands
+AD  - Department of Epidemiology, Harvard T H Chan School of Public Health, Boston, MA, United States
+AD  - NIHR Bristol Biomedical Research Centre, Bristol, United Kingdom
+AD  - Nutrition and Metabolism Branch, International Agency for Research on Cancer, Lyon, France
+AD  - Berlin Institute of Health, Charité-Universitätsmedizin Berlin, Berlin, Germany
+AD  - MRC Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Harvard Medical School, Boston, MA, United States
+AD  - BMJ, London, United Kingdom
+AD  - JAMA, Chicago, IL, United States
+AD  - Department of Medicine, Northwestern University, Feinberg School of Medicine, Chicago, IL, United States
+AD  - Centre for Infectious Disease Epidemiology and Research, University of Cape Town, Cape Town, South Africa
+AD  - Departments of Medicine, Human Genetics, Epidemiology and Biostatistics, Lady Davis Institute, Jewish General Hospital, McGill University, Montreal, QC, Canada
+AD  - Department of Twin Research and Genetic Epidemiology, King's College London, University of London, London, United Kingdom
+AB  - Mendelian randomisation (MR) studies allow a better understanding of the causal effects of modifiable exposures on health outcomes, but the published evidence is often hampered by inadequate reporting. Reporting guidelines help authors effectively communicate all critical information about what was done and what was found. STROBE-MR (strengthening the reporting of observational studies in epidemiology using mendelian randomisation) assists authors in reporting their MR research clearly and transparently. Adopting STROBE-MR should help readers, reviewers, and journal editors evaluate the quality of published MR studies. This article explains the 20 items of the STROBE-MR checklist, along with their meaning and rationale, using terms defined in a glossary. Examples of transparent reporting are used for each item to illustrate best practices.  © 
+KW  - Epidemiologic Research Design
+KW  - Guidelines as Topic
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Observational Studies as Topic
+KW  - article
+KW  - checklist
+KW  - editor
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - observational study
+KW  - practice guideline
+KW  - epidemiology
+KW  - Mendelian randomization analysis
+KW  - observational study
+KW  - practice guideline
+KW  - procedures
+PB  - BMJ Publishing Group
+SN  - 09598146 (ISSN)
+C2  - 34702754
+LA  - English
+J2  - BMJ
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 853; Correspondence Address: J.B. Richards; Departments of Medicine, Human Genetics, Epidemiology and Biostatistics, Lady Davis Institute, Jewish General Hospital, McGill University, Montreal, Canada; email: contact@strobe-mr.org; CODEN: BMJOA
+ER  -
+

@@ -18,4 +18,36 @@ knit: (function(inputFile, encoding) {
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Citation Search
+
+The Scopus search platform [@] was used on 15/04/2025 to retrieve all articles citing the original weighted median estimator exposition paper [@bowden_consistent_2016]. The articles returned were sorted by the number of times the article itself have been cited, and the resulting list was saved to RIS format in blocks of ten articles for upload into the Covidence evidence synthesis platform. Abstracts were screened by a single reviewer (B233241), starting with the most cited article and proceeding in descending order of citation count, against the following inclusion and exclusion criteria:
+
+Inclusion criteria:
+
+- Original two-sample MR study
+
+- Able to determine samples’ ancestry, including presence and degree of participant overlap between groups
+
+- Reporting $\ge$ 20 human genetic instruments relating to exposure
+
+- Reports details of effect/non-effect alleles
+
+- Regression coefficients and standard errors and/or confidence intervals available
+  
+- Uses Weighted Median Estimator
+
+Exclusion criteria: 
+
+- Methodology paper, review article, editorial or letter
+
+- English full-text not accessible
+
+
+Where eligibility could not be determined from abstract screening alone, full texts were retrieved and screened against the same criteria. Screening of abstracts and full texts was undertaken in blocks of ten articles, until the target of ten included studies for reanalysis had been reached. 
+
+Where one article reported on multiple exposure:outcome associations, data were only extracted for the association with the highest number of genetic instruments available. Data were extracted from full texts of included studies using a standardised data collection template, which included publication details, citation count, primary study question, degree of participant overlap between groups, number/details of genetic instruments used, effect estimates/standard errors calculated, and conclusion regarding causality as determined by the weighted median estimator method. 
+
+
+(***5417 articles***)
+
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_3_Methods.Rmd"))`

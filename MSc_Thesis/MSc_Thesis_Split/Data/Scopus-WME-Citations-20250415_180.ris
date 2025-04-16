@@ -1,0 +1,875 @@
+﻿TY  - JOUR
+AU  - Yao, S.
+AU  - Zhang, M.
+AU  - Dong, S.-S.
+AU  - Wang, J.-H.
+AU  - Zhang, K.
+AU  - Guo, J.
+AU  - Guo, Y.
+AU  - Yang, T.-L.
+TI  - Bidirectional two-sample Mendelian randomization analysis identifies causal associations between relative carbohydrate intake and depression
+PY  - 2022
+T2  - Nature Human Behaviour
+VL  - 6
+IS  - 11
+SP  - 1569
+EP  - 1576
+DO  - 10.1038/s41562-022-01412-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85134498806&doi=10.1038%2fs41562-022-01412-9&partnerID=40&md5=3587ec74b3bf62150082993e5fff2991
+AD  - National and Local Joint Engineering Research Center of Biodiagnosis and Biotherapy, the Second Affiliated Hospital, Xi’an Jiaotong University, Xi’an, China
+AD  - Key Laboratory of Biomedical Information Engineering of Ministry of Education, Biomedical Informatics & Genomics Center, School of Life Science and Technology, Xi’an Jiaotong University, Xi’an, China
+AB  - Growing evidence suggests that relative carbohydrate intake affects depression; however, the association between carbohydrates and depression remains controversial. To test this, we performed a two-sample bidirectional Mendelian randomization (MR) analysis using genetic variants associated with relative carbohydrate intake (N = 268,922) and major depressive disorder (N = 143,265) from the largest available genome-wide association studies. MR evidence suggested a causal relationship between higher relative carbohydrate intake and lower depression risk (odds ratio, 0.42 for depression per one-standard-deviation increment in relative carbohydrate intake; 95% confidence interval, 0.28 to 0.62; P = 1.49 × 10−5). Multivariable MR indicated that the protective effect of relative carbohydrate intake on depression persisted after conditioning on other diet compositions. The mediation analysis via two-step MR showed that this effect was partly mediated by body mass index, with a mediated proportion of 15.4% (95% confidence interval, 6.7% to 24.1%). These findings may inform prevention strategies and interventions directed towards relative carbohydrate intake and depression. © 2022, The Author(s), under exclusive licence to Springer Nature Limited.
+KW  - Carbohydrates
+KW  - Depression
+KW  - Depressive Disorder, Major
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - carbohydrate
+KW  - depression
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - major depression
+KW  - Mendelian randomization analysis
+PB  - Nature Research
+SN  - 23973374 (ISSN)
+C2  - 35851841
+LA  - English
+J2  - Nat. Hum. Behav.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 88; Correspondence Address: T.-L. Yang; National and Local Joint Engineering Research Center of Biodiagnosis and Biotherapy, the Second Affiliated Hospital, Xi’an Jiaotong University, Xi’an, China; email: yangtielin@xjtu.edu.cn; Y. Guo; Key Laboratory of Biomedical Information Engineering of Ministry of Education, Biomedical Informatics & Genomics Center, School of Life Science and Technology, Xi’an Jiaotong University, Xi’an, China; email: guoyan253@xjtu.edu.cn
+ER  -
+
+TY  - JOUR
+AU  - Yuan, S.
+AU  - Mason, A.M.
+AU  - Carter, P.
+AU  - Burgess, S.
+AU  - Larsson, S.C.
+TI  - Homocysteine, B vitamins, and cardiovascular disease: a Mendelian randomization study
+PY  - 2021
+T2  - BMC Medicine
+VL  - 19
+IS  - 1
+C7  - 97
+DO  - 10.1186/s12916-021-01977-8
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85104690854&doi=10.1186%2fs12916-021-01977-8&partnerID=40&md5=4aad71a45b755905b2e174c6ba3c3f1a
+AD  - Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Nobelsväg 13, Stockholm, 17177, Sweden
+AD  - British Heart Foundation Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - National Institute for Health Research Cambridge Biomedical Research Centre, University of Cambridge and Cambridge University Hospitals, Cambridge, United Kingdom
+AD  - Department of Medicine, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Unit of Medical Epidemiology, Department of Surgical Sciences, Uppsala University, Uppsala, Sweden
+AB  - Background: Whether a modestly elevated homocysteine level is causally associated with an increased risk of cardiovascular disease remains unestablished. We conducted a Mendelian randomization study to assess the associations of circulating total homocysteine (tHcy) and B vitamin levels with cardiovascular diseases in the general population. Methods: Independent single nucleotide polymorphisms associated with tHcy (n = 14), folate (n = 2), vitamin B6 (n = 1), and vitamin B12 (n = 14) at the genome-wide significance level were selected as instrumental variables. Summary-level data for 12 cardiovascular endpoints were obtained from genetic consortia, the UK Biobank study, and the FinnGen consortium. Results: Higher genetically predicted circulating tHcy levels were associated with an increased risk of stroke. For each one standard deviation (SD) increase in genetically predicted tHcy levels, the odds ratio (OR) was 1.11 (95% confidence interval (CI), 1.03, 1.21; p = 0.008) for any stroke, 1.26 (95% CI, 1.05, 1.51; p = 0.013) for subarachnoid hemorrhage, and 1.11 (95% CI, 1.03, 1.21; p = 0.011) for ischemic stroke. Higher genetically predicted folate levels were associated with decreased risk of coronary artery disease (ORSD, 0.88; 95% CI, 0.78, 1.00, p = 0.049) and any stroke (ORSD, 0.86; 95% CI, 0.76, 0.97, p = 0.012). Genetically predicted increased vitamin B6 levels were associated with a reduced risk of ischemic stroke (ORSD, 0.88; 95% CI, 0.81, 0.97, p = 0.009). None of these associations persisted after multiple testing correction. There was no association between genetically predicted vitamin B12 and cardiovascular disease. Conclusions: This study reveals suggestive evidence that B vitamin therapy and lowering of tHcy may reduce the risk of stroke, particularly subarachnoid hemorrhage and ischemic stroke. © 2021, The Author(s).
+KW  - B vitamins
+KW  - Cardiovascular disease
+KW  - Homocysteine
+KW  - Mendelian randomization
+KW  - Cardiovascular Diseases
+KW  - Folic Acid
+KW  - Homocysteine
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - Vitamin B 12
+KW  - Vitamin B Complex
+KW  - cyanocobalamin
+KW  - folic acid
+KW  - homocysteine
+KW  - pyridoxine
+KW  - vitamin B group
+KW  - cyanocobalamin
+KW  - folic acid
+KW  - homocysteine
+KW  - vitamin B complex
+KW  - amino acid blood level
+KW  - Article
+KW  - cardiovascular disease
+KW  - cardiovascular risk factor
+KW  - coronary artery disease
+KW  - coronary risk
+KW  - disease association
+KW  - folic acid blood level
+KW  - genetic association
+KW  - genetic risk
+KW  - genome-wide association study
+KW  - human
+KW  - ischemic stroke
+KW  - Mendelian randomization analysis
+KW  - prediction
+KW  - risk reduction
+KW  - single nucleotide polymorphism
+KW  - subarachnoid hemorrhage
+KW  - vitamin blood level
+KW  - cardiovascular disease
+KW  - genetics
+KW  - risk factor
+PB  - BioMed Central Ltd
+SN  - 17417015 (ISSN)
+C2  - 33888102
+LA  - English
+J2  - BMC Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 88; Correspondence Address: S.C. Larsson; Unit of Medical Epidemiology, Department of Surgical Sciences, Uppsala University, Uppsala, Sweden; email: susanna.larsson@ki.se
+ER  -
+
+TY  - JOUR
+AU  - Yin, X.
+AU  - Chan, L.S.
+AU  - Bose, D.
+AU  - Jackson, A.U.
+AU  - VandeHaar, P.
+AU  - Locke, A.E.
+AU  - Fuchsberger, C.
+AU  - Stringham, H.M.
+AU  - Welch, R.
+AU  - Yu, K.
+AU  - Fernandes Silva, L.
+AU  - Service, S.K.
+AU  - Zhang, D.
+AU  - Hector, E.C.
+AU  - Young, E.
+AU  - Ganel, L.
+AU  - Das, I.
+AU  - Abel, H.
+AU  - Erdos, M.R.
+AU  - Bonnycastle, L.L.
+AU  - Kuusisto, J.
+AU  - Stitziel, N.O.
+AU  - Hall, I.M.
+AU  - Wagner, G.R.
+AU  - Ripatti, S.
+AU  - Palotie, A.
+AU  - Kang, J.
+AU  - Morrison, J.
+AU  - Burant, C.F.
+AU  - Collins, F.S.
+AU  - Freimer, N.B.
+AU  - Mohlke, K.L.
+AU  - Scott, L.J.
+AU  - Wen, X.
+AU  - Fauman, E.B.
+AU  - Laakso, M.
+AU  - Boehnke, M.
+TI  - Genome-wide association studies of metabolites in Finnish men identify disease-relevant loci
+PY  - 2022
+T2  - Nature Communications
+VL  - 13
+IS  - 1
+C7  - 1644
+DO  - 10.1038/s41467-022-29143-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85127222926&doi=10.1038%2fs41467-022-29143-5&partnerID=40&md5=fb89e65387a5f663bb652f3caf775663
+AD  - Department of Biostatistics and Center for Statistical Genetics, University of Michigan School of Public Health, Ann Arbor, 48109, MI, United States
+AD  - McDonnell Genome Institute, Washington University School of Medicine, St Louis, 63108, MO, United States
+AD  - Institute for Biomedicine, Eurac Research, Bolzano, 39100, Italy
+AD  - Institute of Clinical Medicine, Internal Medicine, University of Eastern Finland, Kuopio, 70210, Finland
+AD  - Center for Neurobehavioral Genetics, Jane and Terry Semel Institute for Neuroscience and Human Behavior, University of California Los Angeles, Los Angeles, 90024, CA, United States
+AD  - Department of Biostatistics, Epidemiology and Informatics, University of Pennsylvania Perelman School of Medicine, Philadelphia, 19104, PA, United States
+AD  - Department of Statistics, North Carolina State University, Raleigh, 27695, NC, United States
+AD  - Cardiovascular Division, Department of Medicine, Washington University School of Medicine, St Louis, 63110, MO, United States
+AD  - Department of Medicine, Washington University School of Medicine, St. Louis, 63110, MO, United States
+AD  - Molecular Genetics Section, Center for Precision Health Research, National Human Genome Research Institute, National Institutes of Health, Bethesda, 20892, MD, United States
+AD  - Center for Medicine and Clinical Research, Kuopio University Hospital, Kuopio, 70210, Finland
+AD  - Department of Genetics, Washington University School of Medicine, St Louis, 63110, MO, United States
+AD  - Center for Genomic Health, Department of Genetics, Yale University, New Haven, 06510, CT, United States
+AD  - Metabolon, Inc., Morrisville, 27560, NC, United States
+AD  - Department of Internal Medicine, University of Michigan, Ann Arbor, 48109, MI, United States
+AD  - Institute for Molecular Medicine Finland, FIMM, HiLIFE, University of Helsinki, Helsinki, 00290, Finland
+AD  - Department of Public Health, University of Helsinki, Helsinki, 00014, Finland
+AD  - Broad Institute of MIT & Harvard, Cambridge, 02142, MA, United States
+AD  - Analytic and Translational Genetics Unit, Department of Medicine, Department of Neurology, and Department of Psychiatry, Massachusetts General Hospital, Boston, 02114, MA, United States
+AD  - Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, 27599, NC, United States
+AD  - Internal Medicine Research Unit, Pfizer Worldwide Research, Development and Medical, Cambridge, 02139, MA, United States
+AB  - Few studies have explored the impact of rare variants (minor allele frequency < 1%) on highly heritable plasma metabolites identified in metabolomic screens. The Finnish population provides an ideal opportunity for such explorations, given the multiple bottlenecks and expansions that have shaped its history, and the enrichment for many otherwise rare alleles that has resulted. Here, we report genetic associations for 1391 plasma metabolites in 6136 men from the late-settlement region of Finland. We identify 303 novel association signals, more than one third at variants rare or enriched in Finns. Many of these signals identify genes not previously implicated in metabolite genome-wide association studies and suggest mechanisms for diseases and disease-related traits. © 2022, The Author(s).
+KW  - Alleles
+KW  - Finland
+KW  - Gene Frequency
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Finland
+KW  - amino acid
+KW  - campesterol
+KW  - carbohydrate
+KW  - dopamine beta monooxygenase
+KW  - lipid
+KW  - nucleotide
+KW  - peptide
+KW  - unclassified drug
+KW  - vanillylmandelate
+KW  - vitamin
+KW  - xenobiotic agent
+KW  - allele
+KW  - genome
+KW  - metabolite
+KW  - plasma
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - diseases
+KW  - Finland
+KW  - Finn (people)
+KW  - gallstone
+KW  - gene identification
+KW  - gene locus
+KW  - gene mapping
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - genotyping
+KW  - human
+KW  - hypertension
+KW  - major clinical study
+KW  - male
+KW  - metabolite
+KW  - metabolomics
+KW  - whole exome sequencing
+KW  - allele
+KW  - gene frequency
+KW  - genetic predisposition
+KW  - phenotype
+KW  - procedures
+KW  - single nucleotide polymorphism
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 35347128
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 87; Correspondence Address: M. Boehnke; Department of Biostatistics and Center for Statistical Genetics, University of Michigan School of Public Health, Ann Arbor, 48109, United States; email: boehnke@umich.edu; M. Laakso; Institute of Clinical Medicine, Internal Medicine, University of Eastern Finland, Kuopio, 70210, Finland; email: markku.laakso@uef.fi; E.B. Fauman; Internal Medicine Research Unit, Pfizer Worldwide Research, Development and Medical, Cambridge, 02139, United States; email: Eric.Fauman@pfizer.com
+ER  -
+
+TY  - JOUR
+AU  - Park, S.
+AU  - Lee, S.
+AU  - Kim, Y.
+AU  - Lee, Y.
+AU  - Kang, M.W.
+AU  - Kim, K.
+AU  - Kim, Y.C.
+AU  - Han, S.S.
+AU  - Lee, H.
+AU  - Lee, J.P.
+AU  - Joo, K.W.
+AU  - Lim, C.S.
+AU  - Kim, Y.S.
+AU  - Kim, D.K.
+TI  - Short or long sleep duration and CKD: A mendelian randomization study
+PY  - 2020
+T2  - Journal of the American Society of Nephrology
+VL  - 31
+IS  - 12
+SP  - 2937
+EP  - 2947
+DO  - 10.1681/ASN.2020050666
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096884810&doi=10.1681%2fASN.2020050666&partnerID=40&md5=4c7cc9b086a88a520f9048104934b34a
+AD  - Department of Biomedical Sciences, Seoul National University College of Medicine, Seoul, South Korea
+AD  - Department of Internal Medicine, Armed Forces Capital Hospital, Gyeonggi-do, South Korea
+AD  - Department of Internal Medicine, Seoul National University Hospital, Seoul, South Korea
+AD  - Department of Internal Medicine, Seoul National University College of Medicine, Seoul, South Korea
+AD  - Department of Internal Medicine, Keimyung University School of Medicine, Daegu, South Korea
+AD  - Biomedical Research Institute, Seoul National University Hospital, Seoul, South Korea
+AD  - Kidney Research Institute, Seoul National University, Seoul, South Korea
+AD  - Department of Internal Medicine, Seoul National University Boramae Medical Center, Seoul, South Korea
+AB  - Background Studies have found sleeping behaviors, such as sleep duration, to be associated with kidney function and cardiovascular disease risk. However, whether short or long sleep duration is a causative factor for kidney function impairment has been rarely studied. Methods We studied data from participants aged 40–69 years in the UK Biobank prospective cohort, including 25,605 self-reporting short-duration sleep (,6 hours per 24 hours), 404,550 reporting intermediate-duration sleep (6–8 hours), and 35,659 reporting long-duration sleep ($9 hours) in the clinical analysis. Using logistic regression analysis, we investigated the observational association between the sleep duration group and prevalent CKD stages 3–5, analyzed by logistic regression analysis. We performed Mendelian randomization (MR) analysis involving 321,260 White British individuals using genetic instruments (genetic variants linked with short- or long-duration sleep behavior as instrumental variables). We performed genetic risk score analysis as a one-sample MR and extended the finding with a two-sample MR analysis with CKD outcome information from the independent CKDGen Consortium genome-wide association study meta-analysis. Results Short or long sleep duration clinically associated with higher prevalence of CKD compared with intermediate duration. The genetic risk score for short (but not long) sleep was significantly related to CKD (per unit reflecting a two-fold increase in the odds of the phenotype; adjusted odds ratio, 1.80; 95% confidence interval, 1.25 to 2.60). Two-sample MR analysis demonstrated causal effects of short sleep duration on CKD by the inverse variance weighted method, supported by causal estimates from MR-Egger regression. Conclusions These findings support an adverse effect of a short sleep duration on kidney function. Clinicians may encourage patients to avoid short-duration sleeping behavior to reduce CKD risk. Copyright © 2020 by the American Society of Nephrology.
+KW  - Adult
+KW  - Aged
+KW  - Cohort Studies
+KW  - Female
+KW  - Humans
+KW  - Logistic Models
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Odds Ratio
+KW  - Prevalence
+KW  - Renal Insufficiency, Chronic
+KW  - Sleep
+KW  - Time Factors
+KW  - United Kingdom
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - cardiovascular disease
+KW  - chronic kidney failure
+KW  - cohort analysis
+KW  - current smoker
+KW  - diabetes mellitus
+KW  - end stage renal disease
+KW  - female
+KW  - genetic analysis
+KW  - genetic risk score
+KW  - genome-wide association study
+KW  - human
+KW  - hypertension
+KW  - kidney function
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - obesity
+KW  - observational study
+KW  - physical activity
+KW  - pleiotropy
+KW  - prevalence
+KW  - priority journal
+KW  - prospective study
+KW  - self report
+KW  - sex difference
+KW  - single nucleotide polymorphism
+KW  - sleep deprivation
+KW  - sleep time
+KW  - survival rate
+KW  - chronic kidney failure
+KW  - middle aged
+KW  - odds ratio
+KW  - sleep
+KW  - statistical model
+KW  - time factor
+KW  - United Kingdom
+PB  - American Society of Nephrology
+SN  - 10466673 (ISSN)
+C2  - 33004418
+LA  - English
+J2  - J. Am. Soc. Nephrol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 87; Correspondence Address: D.K. Kim; Department of Internal Medicine, Seoul National University College of Medicine, Seoul, 101 Daehak-ro, Jongno-gu, 03080, South Korea; email: dkkim73@gmail.com; CODEN: JASNE
+ER  -
+
+TY  - JOUR
+AU  - Bell, J.A.
+AU  - Carslake, D.
+AU  - Wade, K.H.
+AU  - Richmond, R.C.
+AU  - Langdon, R.J.
+AU  - Vincent, E.E.
+AU  - Holmes, M.V.
+AU  - Timpson, N.J.
+AU  - Davey Smith, G.
+TI  - Influence of puberty timing on adiposity and cardiometabolic traits: A Mendelian randomisation study
+PY  - 2018
+T2  - PLoS Medicine
+VL  - 15
+IS  - 8
+C7  - e1002641
+DO  - 10.1371/journal.pmed.1002641
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85053236279&doi=10.1371%2fjournal.pmed.1002641&partnerID=40&md5=c9cb0bbea638bf350d77afe1162d706b
+AD  - Medical Research Council Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - School of Cellular and Molecular Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Clinical Trial Service Unit & Epidemiological Studies Unit, Department of Population Health, University of Oxford, Nuffield, Oxford, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, Oxford, United Kingdom
+AD  - National Institute for Health Research Oxford Biomedical Research Centre, Oxford University Hospital, Oxford, United Kingdom
+AB  -                              Background: Earlier puberty is widely linked with future obesity and cardiometabolic disease. We examined whether age at puberty onset likely influences adiposity and cardiometabolic traits independent of childhood adiposity. Methods and findings: One-sample Mendelian randomisation (MR) analyses were conducted on up to 3,611 white-European female and male offspring from the Avon Longitudinal Study of Parents and Children (ALSPAC) cohort recruited at birth via mothers between 1 April 1991 and 31 December 1992. Time-sensitive exposures were age at menarche and age at voice breaking. Outcomes measured at age 18 y were body mass index (BMI), dual-energy X-ray absorptiometry–based fat and lean mass indices, blood pressure, and 230 cardiometabolic traits derived from targeted metabolomics (150 concentrations plus 80 ratios from nuclear magnetic resonance [NMR] spectroscopy covering lipoprotein subclasses of cholesterol and triglycerides, amino acids, inflammatory glycoproteins, and others). Adjustment was made for pre-pubertal BMI measured at age 8 y. For negative control MR analyses, BMI and cardiometabolic trait measures taken at age 8 y (before puberty, and which therefore cannot be an outcome of puberty itself) were used. For replication analyses, 2-sample MR was conducted using summary genome-wide association study data on up to 322,154 adults for post-pubertal BMI, 24,925 adults for post-pubertal NMR cardiometabolic traits, and 13,848 children for pre-pubertal obesity (negative control). Like observational estimates, 1-sample MR estimates in ALSPAC using 351 polymorphisms for age at menarche (explaining 10.6% of variance) among 2,053 females suggested that later age at menarche (per year) was associated with −1.38 kg/m                             2                             of BMI at age 18 y (or −0.34 SD units, 95% CI −0.46, −0.23; P = 9.77 × 10                             −09                             ). This coefficient attenuated 10-fold upon adjustment for BMI at age 8 y, to −0.12 kg/m                             2                             (or −0.03 SDs, 95% CI −0.13, 0.07; P = 0.55). Associations with blood pressure were similar, but associations across other traits were small and inconsistent. In negative control MR analyses, later age at menarche was associated with −0.77 kg/m                             2                             of pre-pubertal BMI measured at age 8 y (or −0.39 SDs, 95% CI −0.50, −0.29; P = 6.28 × 10                             −13                             ), indicating that variants influencing menarche also influence BMI before menarche. Cardiometabolic trait associations were weaker and less consistent among males and both sexes combined. Higher BMI at age 8 y (per 1 kg/m                             2                             using 95 polymorphisms for BMI explaining 3.4% of variance) was associated with earlier menarche among 2,648 females (by −0.26 y, 95% CI −0.37, −0.16; P = 1.16 × 10                             −06                             ), likewise among males and both sexes combined. In 2-sample MR analyses using 234 polymorphisms and inverse variance weighted (IVW) regression, each year later age at menarche was associated with −0.81 kg/m                             2                             of adult BMI (or −0.17 SD units, 95% CI −0.21, −0.12; P = 4.00 × 10                             −15                             ). Associations were weaker with cardiometabolic traits. Using 202 polymorphisms, later menarche was associated with lower odds of childhood obesity (IVW-based odds ratio = 0.52 per year later, 95% CI 0.48, 0.57; P = 6.64 × 10                             −15                             ). Study limitations include modest sample sizes for 1-sample MR, lack of inference to non-white-European populations, potential selection bias through modest completion rates of puberty questionnaires, and likely disproportionate measurement error of exposures by sex. The cardiometabolic traits examined were heavily lipid-focused and did not include hormone-related traits such as insulin and insulin-like growth factors. Conclusions: Our results suggest that puberty timing has a small influence on adiposity and cardiometabolic traits and that preventive interventions should instead focus on reducing childhood adiposity.                          © 2018 Bell et al. http://creativecommons.org/licenses/by/4.0/.
+KW  - Absorptiometry, Photon
+KW  - Adiposity
+KW  - Adolescent
+KW  - Age Factors
+KW  - Amino Acids
+KW  - Blood Pressure
+KW  - Body Composition
+KW  - Body Mass Index
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Cohort Studies
+KW  - England
+KW  - European Continental Ancestry Group
+KW  - Fatty Acids
+KW  - Female
+KW  - Humans
+KW  - Ketones
+KW  - Magnetic Resonance Spectroscopy
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Metabolomics
+KW  - Pediatric Obesity
+KW  - Phenotype
+KW  - Puberty
+KW  - glucose
+KW  - glycoprotein
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - amino acid
+KW  - fatty acid
+KW  - high density lipoprotein cholesterol
+KW  - ketone
+KW  - low density lipoprotein cholesterol
+KW  - adolescent
+KW  - adult
+KW  - Article
+KW  - body height
+KW  - body mass
+KW  - body weight
+KW  - cardiometabolic risk
+KW  - child
+KW  - childhood obesity
+KW  - cohort analysis
+KW  - controlled study
+KW  - diastolic blood pressure
+KW  - dual energy X ray absorptiometry
+KW  - fat mass
+KW  - female
+KW  - genetic association
+KW  - genetic susceptibility
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - metabolomics
+KW  - nuclear magnetic resonance spectroscopy
+KW  - outcome assessment
+KW  - pregnant woman
+KW  - puberty
+KW  - single nucleotide polymorphism
+KW  - systolic blood pressure
+KW  - young adult
+KW  - age
+KW  - blood pressure
+KW  - body composition
+KW  - Caucasian
+KW  - childhood obesity
+KW  - England
+KW  - metabolism
+KW  - obesity
+KW  - phenotype
+KW  - photon absorptiometry
+PB  - Public Library of Science
+SN  - 15491277 (ISSN)
+C2  - 30153260
+LA  - English
+J2  - PLoS Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 86; Correspondence Address: J.A. Bell; Medical Research Council Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom; email: j.bell@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Cornish, A.J.
+AU  - Law, P.J.
+AU  - Timofeeva, M.
+AU  - Palin, K.
+AU  - Farrington, S.M.
+AU  - Palles, C.
+AU  - Jenkins, M.A.
+AU  - Casey, G.
+AU  - Brenner, H.
+AU  - Chang-Claude, J.
+AU  - Hoffmeister, M.
+AU  - Kirac, I.
+AU  - Maughan, T.
+AU  - Brezina, S.
+AU  - Gsur, A.
+AU  - Cheadle, J.P.
+AU  - Aaltonen, L.A.
+AU  - Tomlinson, I.
+AU  - Dunlop, M.G.
+AU  - Houlston, R.S.
+TI  - Modifiable pathways for colorectal cancer: a mendelian randomisation analysis
+PY  - 2020
+T2  - The Lancet Gastroenterology and Hepatology
+VL  - 5
+IS  - 1
+SP  - 55
+EP  - 62
+DO  - 10.1016/S2468-1253(19)30294-8
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85076102832&doi=10.1016%2fS2468-1253%2819%2930294-8&partnerID=40&md5=3537c02bc2d6c5903f37be551123cdf2
+AD  - Division of Genetics and Epidemiology, Institute of Cancer Research, London, United Kingdom
+AD  - Cancer Research UK Edinburgh Centre and Medical Research Council Human Genetics Unit, Institute of Genetics and Molecular Medicine, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Edinburgh Cancer Research Centre, Institute of Genetics and Molecular Medicine, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Medicum and Genome-Scale Biology Research Program, Research Programs Unit, Department of Medical and Clinical Genetics, University of Helsinki, Helsinki, Finland
+AD  - Gastrointestinal Cancer Genetics Laboratory, Institute of Cancer and Genomic Sciences, University of Birmingham, Birmingham, United Kingdom
+AD  - Centre for Epidemiology and Biostatistics, University of Melbourne, Melbourne, VIC, Australia
+AD  - Center for Public Health Genomics, University of Virginia, Virginia, VA, United States
+AD  - Division of Clinical Epidemiology and Aging Research, German Cancer Research Center, Heidelberg, Germany
+AD  - German Cancer Consortium, German Cancer Research Center, Heidelberg, Germany
+AD  - Division of Preventive Oncology, German Cancer Research Center, Heidelberg, Germany
+AD  - Unit of Genetic Epidemiology, German Cancer Research Center, Heidelberg, Germany
+AD  - Division of Preventive Oncology, National Center for Tumor Diseases, Heidelberg, Germany
+AD  - Cancer Epidemiology Group, University Medical Center Hamburg-Eppendorf, University Cancer Center Hamburg, Hamburg, Germany
+AD  - Department of Surgical Oncology, University Hospital for Tumours, Sestre milosrdnice University Hospital Centre, Zagreb, Croatia
+AD  - Department of Oncology, University of Oxford, Oxford, United Kingdom
+AD  - Institute of Cancer Research, Department of Medicine I, Medical University of Vienna, Vienna, Austria
+AD  - Institute of Medical Genetics, School of Medicine, Cardiff University, Cardiff, United Kingdom
+AB  - Background: Epidemiological studies have linked lifestyle, cardiometabolic, reproductive, developmental, and inflammatory factors to the risk of colorectal cancer. However, which specific factors affect risk and the strength of these effects are unknown. We aimed to examine the relationship between potentially modifiable risk factors and colorectal cancer. Methods: We used a random-effects model to examine the relationship between 39 potentially modifiable risk factors and colorectal cancer in 26 397 patients with colorectal cancer and 41 481 controls (ie, people without colorectal cancer). These population data came from a genome-wide association study of people of European ancestry, which was amended to exclude UK BioBank data. In the model, we used genetic variants as instruments via two-sample mendelian randomisation to limit bias from confounding and reverse causation. We calculated odds ratios per genetically predicted SD unit increase in each putative risk factor (ORSD) for colorectal cancer risk. We did mendelian randomisation Egger regressions to identify evidence of potential violations of mendelian randomisation assumptions. A Bonferroni-corrected threshold of p=1·3 × 10−3 was considered significant, and p values less than 0·05 were considered to be suggestive of an association. Findings: No putative risk factors were significantly associated with colorectal cancer risk after correction for multiple testing. However, suggestive associations with increased risk were noted for genetically predicted body fat percentage (ORSD 1·14 [95% CI 1·03–1·25]; p=0·0086), body-mass index (1·09 [1·01–1·17]; p=0·023), waist circumference (1·13 [1·02–1·26]; p=0·018), basal metabolic rate (1·10 [1·03–1·18]; p=0·0079), and concentrations of LDL cholesterol (1·14 [1·04–1·25]; p=0·0056), total cholesterol (1·09 [1·01–1·18]; p=0·025), circulating serum iron (1·17 [1·00–1·36]; p=0·049), and serum vitamin B12 (1·21 [1·04–1·42]; p=0·016), although potential pleiotropy among genetic variants used as instruments for vitamin B12 constrains the finding. A suggestive association was also noted between adult height and increased risk of colorectal cancer (ORSD 1·04 [95% CI 1·00–1·08]; p=0·032). Low blood selenium concentration had a suggestive association with decreased risk of colorectal cancer (ORSD 0·85 [95% CI 0·75–0·96]; p=0·0078) based on a single variant, as did plasma concentrations of interleukin-6 receptor subunit α (also based on a single variant; 0·98 [0·96–1·00]; p=0·035). Risk of colorectal cancer was not associated with any sex hormone or reproductive factor, serum calcium, or circulating 25-hydroxyvitamin D concentrations. Interpretation: This analysis identified several modifiable targets for primary prevention of colorectal cancer, including lifestyle, obesity, and cardiometabolic factors, that should inform public health policy. Funding: Cancer Research UK, UK Medical Research Council Human Genetics Unit Centre, DJ Fielding Medical Research Trust, EU COST Action, and the US National Cancer Institute. © 2020 The Author(s). Published by Elsevier Ltd. This is an Open Access article under the CC BY 4.0 license
+KW  - Biomarkers, Tumor
+KW  - Colorectal Neoplasms
+KW  - DNA, Neoplasm
+KW  - Europe
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Incidence
+KW  - Life Style
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Retrospective Studies
+KW  - Risk Assessment
+KW  - Risk Factors
+KW  - 25 hydroxyvitamin D
+KW  - calcium
+KW  - cyanocobalamin
+KW  - estradiol
+KW  - interleukin 6 receptor alpha
+KW  - iron
+KW  - low density lipoprotein cholesterol
+KW  - progesterone
+KW  - selenium
+KW  - DNA
+KW  - tumor marker
+KW  - adult
+KW  - Article
+KW  - basal metabolic rate
+KW  - body fat
+KW  - body height
+KW  - body mass
+KW  - calcium blood level
+KW  - cancer patient
+KW  - cancer prevention
+KW  - cancer risk
+KW  - cardiometabolic risk
+KW  - Caucasian
+KW  - cholesterol blood level
+KW  - colorectal cancer
+KW  - confounding variable
+KW  - controlled study
+KW  - female
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - instrumental variable analysis
+KW  - iron blood level
+KW  - lifestyle
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - obesity
+KW  - primary prevention
+KW  - priority journal
+KW  - reproduction
+KW  - risk factor
+KW  - risk reduction
+KW  - selenium blood level
+KW  - single nucleotide polymorphism
+KW  - statistical bias
+KW  - vitamin blood level
+KW  - waist circumference
+KW  - colorectal tumor
+KW  - Europe
+KW  - genetics
+KW  - genome-wide association study
+KW  - incidence
+KW  - Mendelian randomization analysis
+KW  - metabolism
+KW  - procedures
+KW  - retrospective study
+KW  - risk assessment
+PB  - Elsevier Ltd
+SN  - 24681253 (ISSN)
+C2  - 31668584
+LA  - English
+J2  - Lancet Gastroenterol.  Hepatol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 87; Correspondence Address: A.J. Cornish; Division of Genetics and Epidemiology, Institute of Cancer Research, London, SM2 5NG, United Kingdom; email: alex.cornish@icr.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Liu, B.
+AU  - Ye, D.
+AU  - Yang, H.
+AU  - Song, J.
+AU  - Sun, X.
+AU  - Mao, Y.
+AU  - He, Z.
+TI  - Two-Sample Mendelian Randomization Analysis Investigates Causal Associations Between Gut Microbial Genera and Inflammatory Bowel Disease, and Specificity Causal Associations in Ulcerative Colitis or Crohn’s Disease
+PY  - 2022
+T2  - Frontiers in Immunology
+VL  - 13
+C7  - 921546
+DO  - 10.3389/fimmu.2022.921546
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85134504361&doi=10.3389%2ffimmu.2022.921546&partnerID=40&md5=b922d2fd2e5fcec0740d8b7a1948f555
+AD  - Department of Epidemiology, School of Public Health, Zhejiang Chinese Medical University, Hangzhou, China
+AB  - Background: Intestinal dysbiosis is associated with inflammatory bowel disease (IBD). Ulcerative colitis (UC) and Crohn’s disease (CD), two subtypes of IBD, are characterized by unique microbial signatures, respectively. However, it is unclear whether UC or CD has a specific causal relationship with gut microbiota. Objective: To investigate the potential causal associations between gut microbial genera and IBD, UC, or CD, two-sample Mendelian randomization (MR) analyses were conducted. Materials and Methods: We obtained genome-wide association study (GWAS) summary statistics of gut microbiota and IBD, UC, or CD from published GWASs. Two-sample MR analyses were performed to identify potential causal gut microbial genera for IBD, UC, and CD using the inverse-variance weighted (IVW) method. Sensitivity analyses were also conducted to validate the robustness of the primary results of the MR analyses. Finally, a reverse MR analysis was performed to evaluate the possibility of reverse causation. Results: Combining the results from the primary and sensitivity analyses, six bacterial genera were associated with the risk of IBD, UC, or CD in the IVW method. Briefly, Eubacterium ventriosum group was associated with a lower risk of IBD (P=0.011) and UC (P=1.00×10-4), whereas Coprococcus 2 was associated with a higher risk of IBD (P=0.022) and UC (P=0.007). In addition, we found a positive association between Oxalobacter with IBD (P=0.001) and CD (P=0.002), and Ruminococcaceae UCG014 with IBD (P=0.005) and CD (P=0.007). We also noticed a negative association between Enterorhabdus (P=0.044) and IBD, and between Lachnospiraceae UCG001 (P=0.023) and CD. We did not find causal effects of IBD, UC, or CD on these bacterial genera in the reverse MR analysis. Conclusion: This study expanded gut microbial genera that were causally associated with the risk of IBD, and also revealed specificity-gut microbial genera for UC or CD. Copyright © 2022 Liu, Ye, Yang, Song, Sun, Mao and He.
+KW  - Crohn’s disease
+KW  - gut microbial genera
+KW  - inflammatory bowel disease
+KW  - Mendelian randomization
+KW  - ulcerative colitis
+KW  - Colitis, Ulcerative
+KW  - Crohn Disease
+KW  - Gastrointestinal Microbiome
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inflammatory Bowel Diseases
+KW  - Mendelian Randomization Analysis
+KW  - Article
+KW  - cell specificity
+KW  - Crohn disease
+KW  - genome-wide association study
+KW  - human
+KW  - inflammatory bowel disease
+KW  - intestine flora
+KW  - meta analysis
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - ulcerative colitis
+KW  - genetics
+KW  - inflammatory bowel disease
+KW  - Mendelian randomization analysis
+KW  - microbiology
+PB  - Frontiers Media S.A.
+SN  - 16643224 (ISSN)
+C2  - 35860271
+LA  - English
+J2  - Front. Immunol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 86; Correspondence Address: Y. Mao; Department of Epidemiology, School of Public Health, Zhejiang Chinese Medical University, Hangzhou, China; email: myy@zcmu.edu.cn; Z. He; email: hzx2015@zcmu.edu.cn
+ER  -
+
+TY  - JOUR
+AU  - Grant, A.J.
+AU  - Burgess, S.
+TI  - Pleiotropy robust methods for multivariable Mendelian randomization
+PY  - 2021
+T2  - Statistics in Medicine
+VL  - 40
+IS  - 26
+SP  - 5813
+EP  - 5830
+DO  - 10.1002/sim.9156
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85111895243&doi=10.1002%2fsim.9156&partnerID=40&md5=d553615cf78b4eb765a060b73dde2c2a
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AB  - Mendelian randomization is a powerful tool for inferring the presence, or otherwise, of causal effects from observational data. However, the nature of genetic variants is such that pleiotropy remains a barrier to valid causal effect estimation. There are many options in the literature for pleiotropy robust methods when studying the effects of a single risk factor on an outcome. However, there are few pleiotropy robust methods in the multivariable setting, that is, when there are multiple risk factors of interest. In this article we introduce three methods which build on common approaches in the univariable setting: MVMR-Robust; MVMR-Median; and MVMR-Lasso. We discuss the properties of each of these methods and examine their performance in comparison to existing approaches in a simulation study. MVMR-Robust is shown to outperform existing outlier robust approaches when there are low levels of pleiotropy. MVMR-Lasso provides the best estimation in terms of mean squared error for moderate to high levels of pleiotropy, and can provide valid inference in a three sample setting. MVMR-Median performs well in terms of estimation across all scenarios considered, and provides valid inference up to a moderate level of pleiotropy. We demonstrate the methods in an applied example looking at the effects of intelligence, education and household income on the risk of Alzheimer's disease. © 2021 The Authors. Statistics in Medicine published by John Wiley & Sons Ltd.
+KW  - Mendelian randomization
+KW  - multivariable
+KW  - pleiotropy
+KW  - robust estimation
+KW  - Causality
+KW  - Computer Simulation
+KW  - Genetic Pleiotropy
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - Alzheimer disease
+KW  - Article
+KW  - calculation
+KW  - educational status
+KW  - genetic variability
+KW  - income
+KW  - mathematical analysis
+KW  - mean squared error
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - risk assessment
+KW  - risk factor
+KW  - simulation
+KW  - causality
+KW  - computer simulation
+KW  - human
+PB  - John Wiley and Sons Ltd
+SN  - 02776715 (ISSN)
+C2  - 34342032
+LA  - English
+J2  - Stat. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 86; Correspondence Address: A.J. Grant; MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom; email: andrew.grant@mrc-bsu.cam.ac.uk; CODEN: SMEDD
+ER  -
+
+TY  - JOUR
+AU  - Haas, M.E.
+AU  - Aragam, K.G.
+AU  - Emdin, C.A.
+AU  - Bick, A.G.
+AU  - Hemani, G.
+AU  - Davey Smith, G.
+AU  - Kathiresan, S.
+TI  - Genetic Association of Albuminuria with Cardiometabolic Disease and Blood Pressure
+PY  - 2018
+T2  - American Journal of Human Genetics
+VL  - 103
+IS  - 4
+SP  - 461
+EP  - 473
+DO  - 10.1016/j.ajhg.2018.08.004
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85054446030&doi=10.1016%2fj.ajhg.2018.08.004&partnerID=40&md5=3ec158803fc225a424e9053bde70d5fc
+AD  - Program in Medical and Population Genetics, Broad Institute of Harvard and MIT, Cambridge, 02139, MA, United States
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Boston, 02114, MA, United States
+AD  - Cardiovascular Research Center, Massachusetts General Hospital, Boston, 02114, MA, United States
+AD  - Department of Medicine, Harvard Medical School, Boston, 02114, MA, United States
+AD  - Medical Research Council Integrative Epidemiology Unit, Population Health Sciences, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AB  - Excretion of albumin in urine, or albuminuria, is associated with the development of multiple cardiovascular and metabolic diseases. However, whether pathways leading to albuminuria are causal for cardiometabolic diseases is unclear. We addressed this question using a Mendelian randomization framework in the UK Biobank, a large population-based cohort. We first performed a genome-wide association study for albuminuria in 382,500 individuals and identified 32 new albuminuria loci. We constructed albuminuria genetic risk scores and tested for association with cardiometabolic diseases. Genetically elevated albuminuria was strongly associated with increased risk of hypertension (1.38 OR; 95% CI, 1.27–1.50 per 1 SD predicted increase in albuminuria, p = 7.01 × 10−14). We then examined bidirectional associations of albuminuria with blood pressure which suggested that genetically elevated albuminuria led to higher blood pressure (2.16 mmHg systolic blood pressure; 95% CI, 1.51–2.82 per 1 SD predicted increase in albuminuria, p = 1.22 × 10−10) and that genetically elevated blood pressure led to more albuminuria (0.005 SD; 95% CI 0.004–0.006 per 1 mmHg predicted increase in systolic blood pressure, p = 2.45 × 10−13). These results support the existence of a feed-forward loop between albuminuria and blood pressure and imply that albuminuria could increase risk of cardiovascular disease through blood pressure. Moreover, they suggest therapies that target albuminuria-increasing processes could have antihypertensive effects that are amplified through inhibition of this feed-forward loop. © 2018
+KW  - albuminuria
+KW  - blood pressure
+KW  - cardiometabolic disease
+KW  - cardiovascular disease
+KW  - genetic risk score
+KW  - genome-wide association study
+KW  - hypertension
+KW  - Mendelian randomization
+KW  - polygenic risk score
+KW  - urine albumin excretion
+KW  - urine albumin:creatinine ratio
+KW  - Albuminuria
+KW  - Blood Pressure
+KW  - Cardiovascular Diseases
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Hypertension
+KW  - Male
+KW  - Metabolic Diseases
+KW  - Middle Aged
+KW  - Risk Factors
+KW  - antihypertensive agent
+KW  - adult
+KW  - albuminuria
+KW  - antihypertensive therapy
+KW  - Article
+KW  - biobank
+KW  - blood pressure
+KW  - cardiovascular disease
+KW  - cardiovascular risk
+KW  - cohort analysis
+KW  - controlled study
+KW  - disease association
+KW  - feedback system
+KW  - female
+KW  - gene locus
+KW  - genetic association
+KW  - genetic risk
+KW  - genome-wide association study
+KW  - human
+KW  - hypertension
+KW  - longitudinal study
+KW  - major clinical study
+KW  - male
+KW  - metabolic disorder
+KW  - middle aged
+KW  - observational study
+KW  - prediction
+KW  - priority journal
+KW  - systolic blood pressure
+KW  - United Kingdom
+KW  - albuminuria
+KW  - blood pressure
+KW  - cardiovascular disease
+KW  - genetics
+KW  - hypertension
+KW  - metabolic disorder
+KW  - procedures
+KW  - risk factor
+PB  - Cell Press
+SN  - 00029297 (ISSN)
+C2  - 30220432
+LA  - English
+J2  - Am. J. Hum. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 87; Correspondence Address: S. Kathiresan; Program in Medical and Population Genetics, Broad Institute of Harvard and MIT, Cambridge, 02139, United States; email: skathiresan1@mgh.harvard.edu; CODEN: AJHGA
+ER  -
+
+TY  - JOUR
+AU  - Arvanitis, M.
+AU  - Qi, G.
+AU  - Bhatt, D.L.
+AU  - Post, W.S.
+AU  - Chatterjee, N.
+AU  - Battle, A.
+AU  - McEvoy, J.W.
+TI  - Linear and Nonlinear Mendelian Randomization Analyses of the Association between Diastolic Blood Pressure and Cardiovascular Events: The J-Curve Revisited
+PY  - 2021
+T2  - Circulation
+VL  - 143
+IS  - 9
+SP  - 895
+EP  - 906
+DO  - 10.1161/CIRCULATIONAHA.120.049819
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85102538765&doi=10.1161%2fCIRCULATIONAHA.120.049819&partnerID=40&md5=0393d0b8dd0c00c989d687796e590029
+AD  - Department of Medicine, Division of Cardiology, Johns Hopkins University, Baltimore, MD, United States
+AD  - Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, United States
+AD  - Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, United States
+AD  - Department of Medicine, Division of Cardiology, Harvard Medical School, Boston, MA, United States
+AD  - National Institute for Prevention and Cardiovascular Health, National University of Ireland Galway School of Medicine
+AB  - Background: Recent clinical guidelines support intensive blood pressure treatment targets. However, observational data suggest that excessive diastolic blood pressure (DBP) lowering might increase the risk of myocardial infarction (MI), reflecting a J- or U-shaped relationship. Methods: We analyzed 47 407 participants from 5 cohorts (median age, 60 years). First, to corroborate previous observational analyses, we used traditional statistical methods to test the shape of association between DBP and cardiovascular disease (CVD). Second, we created polygenic risk scores of DBP and systolic blood pressure and generated linear Mendelian randomization (MR) estimates for the effect of DBP on CVD. Third, using novel nonlinear MR approaches, we evaluated for nonlinearity in the genetic relationship between DBP and CVD events. Comprehensive MR interrogation of DBP required us to also model systolic blood pressure, given that the 2 are strongly correlated. Results: Traditional observational analysis of our cohorts suggested a J-shaped association between DBP and MI. By contrast, linear MR analyses demonstrated an adverse effect of increasing DBP increments on CVD outcomes, including MI (MI hazard ratio, 1.07 per unit mm Hg increase in DBP; P<0.001). Furthermore, nonlinear MR analyses found no evidence for a J-shaped relationship; instead confirming that MI risk decreases consistently per unit decrease in DBP, even among individuals with low values of baseline DBP. Conclusions: In this analysis of the genetic effect of DBP, we found no evidence for a nonlinear J- or U-shaped relationship between DBP and adverse CVD outcomes; including MI. © 2021 Lippincott Williams and Wilkins. All rights reserved.
+KW  - blood pressure
+KW  - diastole
+KW  - Mendelian randomization analysis
+KW  - Aged
+KW  - Blood Pressure
+KW  - Cardiovascular Diseases
+KW  - Databases, Factual
+KW  - Female
+KW  - Genotype
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Odds Ratio
+KW  - Proportional Hazards Models
+KW  - Risk Factors
+KW  - adult
+KW  - aged
+KW  - all cause mortality
+KW  - Article
+KW  - body mass
+KW  - cardiovascular disease
+KW  - cardiovascular risk
+KW  - data analysis
+KW  - data base
+KW  - diastolic blood pressure
+KW  - DNA polymorphism
+KW  - female
+KW  - follow up
+KW  - genetic analysis
+KW  - genetic association
+KW  - genetic risk score
+KW  - genome-wide association study
+KW  - genotype
+KW  - heart failure
+KW  - heart infarction
+KW  - heart muscle revascularization
+KW  - heart rate
+KW  - hospitalization
+KW  - human
+KW  - ischemic stroke
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - nonlinear system
+KW  - phenotype
+KW  - systolic blood pressure
+KW  - blood pressure
+KW  - cardiovascular disease
+KW  - factual database
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - odds ratio
+KW  - pathology
+KW  - physiology
+KW  - proportional hazards model
+KW  - risk factor
+PB  - Lippincott Williams and Wilkins
+SN  - 00097322 (ISSN)
+C2  - 33249881
+LA  - English
+J2  - Circulation
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 87; Correspondence Address: A. Battle; Department of Biomedical Engineering, Johns Hopkins University, Baltimore, 3400 North Charles Street, Malone Hall 327, 21287, United States; email: ajbattle@jhu.edu; CODEN: CIRCA
+ER  -
+

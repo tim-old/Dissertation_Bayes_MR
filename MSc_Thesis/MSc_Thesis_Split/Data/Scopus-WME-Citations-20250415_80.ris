@@ -1,0 +1,1115 @@
+﻿TY  - JOUR
+AU  - Budu-Aggrey, A.
+AU  - Brumpton, B.
+AU  - Tyrrell, J.
+AU  - Watkins, S.
+AU  - Modalsli, E.H.
+AU  - Celis-Morales, C.
+AU  - Ferguson, L.D.
+AU  - Vie, G.Å.
+AU  - Palmer, T.
+AU  - Fritsche, L.G.
+AU  - Løset, M.
+AU  - Nielsen, J.B.
+AU  - Zhou, W.
+AU  - Tsoi, L.C.
+AU  - Wood, A.R.
+AU  - Jones, S.E.
+AU  - Beaumont, R.
+AU  - Saunes, M.
+AU  - Romundstad, P.R.
+AU  - Siebert, S.
+AU  - McInnes, I.B.
+AU  - Elder, J.T.
+AU  - Davey Smith, G.
+AU  - Frayling, T.M.
+AU  - Åsvold, B.O.
+AU  - Brown, S.J.
+AU  - Sattar, N.
+AU  - Paternoster, L.
+TI  - Evidence of a causal relationship between body mass index and psoriasis: A mendelian randomization study
+PY  - 2019
+T2  - PLoS Medicine
+VL  - 16
+IS  - 1
+C7  - e1002739
+DO  - 10.1371/journal.pmed.1002739
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85060952703&doi=10.1371%2fjournal.pmed.1002739&partnerID=40&md5=007a6bb1a94c3840b38e328cd7a20228
+AD  - Medical Research Council (MRC) Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Bristol Medical School, Population Health Sciences, University of Bristol, Bristol, United Kingdom
+AD  - K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Department of Thoracic Medicine, St. Olavs Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - Genetics of Complex Traits, Institute of Biomedical and Clinical Science, University of Exeter Medical School, Royal Devon and Exeter Hospital, Exeter, United Kingdom
+AD  - European Centre for Environment and Human Health, University of Exeter Medical School, The Knowledge Spa, Truro, United Kingdom
+AD  - Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Department of Dermatology, St. Olav’s Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - Institute of Cardiovascular and Medical Sciences, University of Glasgow, Glasgow, United Kingdom
+AD  - Department of Mathematics and Statistics, Lancaster University, Lancaster, United Kingdom
+AD  - Department of Internal Medicine, Division of Cardiology, University of Michigan Medical School, Ann Arbor, MI, United States
+AD  - Department of Computational Medicine and Bioinformatics, University of Michigan, Ann Arbor, MI, United States
+AD  - Department of Dermatology, University of Michigan, Ann Arbor, MI, United States
+AD  - Department of Biostatistics, Center for Statistical Genetics, University of Michigan, Ann Arbor, MI, United States
+AD  - Department of Clinical and Molecular Medicine, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Institute of Infection, Immunity and Inflammation, University of Glasgow, Glasgow, United Kingdom
+AD  - Ann Arbor Veterans Affairs Hospital, Ann Arbor, MI, United States
+AD  - Department of Endocrinology, St. Olav’s Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - Skin Research Group, School of Medicine, University of Dundee, Dundee, United Kingdom
+AD  - Department of Dermatology, Ninewells Hospital and Medical School, Dundee, United Kingdom
+AB  -                              Background: Psoriasis is a common inflammatory skin disease that has been reported to be associated with obesity. We aimed to investigate a possible causal relationship between body mass index (BMI) and psoriasis. Methods and findings: Following a review of published epidemiological evidence of the association between obesity and psoriasis, mendelian randomization (MR) was used to test for a causal relationship with BMI. We used a genetic instrument comprising 97 single-nucleotide polymorphisms (SNPs) associated with BMI as a proxy for BMI (expected to be much less confounded than measured BMI). One-sample MR was conducted using individual-level data (396,495 individuals) from the UK Biobank and the Nord-Trøndelag Health Study (HUNT), Norway. Two-sample MR was performed with summary-level data (356,926 individuals) from published BMI and psoriasis genome-wide association studies (GWASs). The one-sample and two-sample MR estimates were meta-analysed using a fixed-effect model. To test for a potential reverse causal effect, MR analysis with genetic instruments comprising variants from recent genome-wide analyses for psoriasis were used to test whether genetic risk for this skin disease has a causal effect on BMI. Published observational data showed an association of higher BMI with psoriasis. A mean difference in BMI of 1.26 kg/m                             2                              (95% CI 1.02-1.51) between psoriasis cases and controls was observed in adults, while a 1.55 kg/m                             2                              mean difference (95% CI 1.13-1.98) was observed in children. The observational association was confirmed in UK Biobank and HUNT data sets. Overall, a 1 kg/m                             2                              increase in BMI was associated with 4% higher odds of psoriasis (meta-analysis odds ratio [OR] = 1.04; 95% CI 1.03-1.04; P = 1.73 × 10                             −60                             ). MR analyses provided evidence that higher BMI causally increases the odds of psoriasis (by 9% per 1 unit increase in BMI; OR = 1.09 (1.06-1.12) per 1 kg/m                             2                             ; P = 4.67 × 10                             −9                             ). In contrast, MR estimates gave little support to a possible causal effect of psoriasis genetic risk on BMI (0.004 kg/m                             2                              change in BMI per doubling odds of psoriasis (−0.003 to 0.011). Limitations of our study include possible misreporting of psoriasis by patients, as well as potential misdiagnosis by clinicians. In addition, there is also limited ethnic variation in the cohorts studied. Conclusions: Our study, using genetic variants as instrumental variables for BMI, provides evidence that higher BMI leads to a higher risk of psoriasis. This supports the prioritization of therapies and lifestyle interventions aimed at controlling weight for the prevention or treatment of this common skin disease. Mechanistic studies are required to improve understanding of this relationship.                          © 2019 Budu-Aggrey et al.
+KW  - Adolescent
+KW  - Adult
+KW  - Aged
+KW  - Body Mass Index
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Obesity
+KW  - Polymorphism, Single Nucleotide
+KW  - Psoriasis
+KW  - Risk Factors
+KW  - Young Adult
+KW  - interleukin 6
+KW  - Article
+KW  - body mass
+KW  - case control study
+KW  - clinical outcome
+KW  - controlled study
+KW  - diabetes mellitus
+KW  - genetic risk
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - hypertension
+KW  - major clinical study
+KW  - meta analysis
+KW  - obesity
+KW  - observational study
+KW  - prevalence
+KW  - psoriasis
+KW  - questionnaire
+KW  - randomized controlled trial
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - adolescent
+KW  - adult
+KW  - aged
+KW  - body mass
+KW  - complication
+KW  - female
+KW  - genetics
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - psoriasis
+KW  - young adult
+PB  - Public Library of Science
+SN  - 15491277 (ISSN)
+C2  - 30703100
+LA  - English
+J2  - PLoS Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 182; Correspondence Address: A. Budu-Aggrey; Medical Research Council (MRC) Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: ashley.budu-aggrey@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Khandaker, G.M.
+AU  - Zuber, V.
+AU  - Rees, J.M.B.
+AU  - Carvalho, L.
+AU  - Mason, A.M.
+AU  - Foley, C.N.
+AU  - Gkatzionis, A.
+AU  - Jones, P.B.
+AU  - Burgess, S.
+TI  - Shared mechanisms between coronary heart disease and depression: findings from a large UK general population-based cohort
+PY  - 2020
+T2  - Molecular Psychiatry
+VL  - 25
+IS  - 7
+SP  - 1477
+EP  - 1486
+DO  - 10.1038/s41380-019-0395-3
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85066812253&doi=10.1038%2fs41380-019-0395-3&partnerID=40&md5=0567d26b843f2188dcfdaea09e2967e1
+AD  - Department of Psychiatry, University of Cambridge, Cambridge, United Kingdom
+AD  - Cambridgeshire and Peterborough NHS Foundation Trust, Cambridge, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Clinical Pharmacology, Queen Mary University of London, London, United Kingdom
+AB  - While comorbidity between coronary heart disease (CHD) and depression is evident, it is unclear whether the two diseases have shared underlying mechanisms. We performed a range of analyses in 367,703 unrelated middle-aged participants of European ancestry from UK Biobank, a population-based cohort study, to assess whether comorbidity is primarily due to genetic or environmental factors, and to test whether cardiovascular risk factors and CHD are likely to be causally related to depression using Mendelian randomization. We showed family history of heart disease was associated with a 20% increase in depression risk (95% confidence interval [CI] 16–24%, p < 0.0001), but a genetic risk score that is strongly associated with CHD risk was not associated with depression. An increase of 1 standard deviation in the CHD genetic risk score was associated with 71% higher CHD risk, but 1% higher depression risk (95% CI 0–3%; p = 0.11). Mendelian randomization analyses suggested that triglycerides, interleukin-6 (IL-6), and C-reactive protein (CRP) are likely causal risk factors for depression. The odds ratio for depression per standard deviation increase in genetically-predicted triglycerides was 1.18 (95% CI 1.09–1.27; p = 2 × 10−5); per unit increase in genetically-predicted log-transformed IL-6 was 0.74 (95% CI 0.62–0.89; p = 0.0012); and per unit increase in genetically-predicted log-transformed CRP was 1.18 (95% CI 1.07–1.29; p = 0.0009). Our analyses suggest that comorbidity between depression and CHD arises largely from shared environmental factors. IL-6, CRP and triglycerides are likely to be causally linked with depression, so could be targets for treatment and prevention of depression. © 2019, The Author(s).
+KW  - Adult
+KW  - Aged
+KW  - C-Reactive Protein
+KW  - Cohort Studies
+KW  - Coronary Disease
+KW  - Depression
+KW  - Female
+KW  - Humans
+KW  - Interleukin-6
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Odds Ratio
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - United Kingdom
+KW  - C reactive protein
+KW  - interleukin 6
+KW  - triacylglycerol
+KW  - C reactive protein
+KW  - interleukin 6
+KW  - triacylglycerol
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - biobank
+KW  - cardiovascular risk
+KW  - cohort analysis
+KW  - comorbidity
+KW  - controlled study
+KW  - depression
+KW  - disease association
+KW  - environmental factor
+KW  - European
+KW  - family history
+KW  - female
+KW  - genetic predisposition
+KW  - genetic risk score
+KW  - heredity
+KW  - high risk population
+KW  - human
+KW  - ischemic heart disease
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - pathogenesis
+KW  - population research
+KW  - prediction
+KW  - priority journal
+KW  - risk factor
+KW  - United Kingdom
+KW  - blood
+KW  - coronary artery disease
+KW  - depression
+KW  - genetics
+KW  - odds ratio
+KW  - single nucleotide polymorphism
+PB  - Springer Nature
+SN  - 13594184 (ISSN)
+C2  - 30886334
+LA  - English
+J2  - Mol. Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 174; Correspondence Address: S. Burgess; MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: MOPSF
+ER  -
+
+TY  - JOUR
+AU  - Xu, Q.
+AU  - Ni, J.-J.
+AU  - Han, B.-X.
+AU  - Yan, S.-S.
+AU  - Wei, X.-T.
+AU  - Feng, G.-J.
+AU  - Zhang, H.
+AU  - Zhang, L.
+AU  - Li, B.
+AU  - Pei, Y.-F.
+TI  - Causal Relationship Between Gut Microbiota and Autoimmune Diseases: A Two-Sample Mendelian Randomization Study
+PY  - 2022
+T2  - Frontiers in Immunology
+VL  - 12
+C7  - 746998
+DO  - 10.3389/fimmu.2021.746998
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85124208435&doi=10.3389%2ffimmu.2021.746998&partnerID=40&md5=d124f642b3a97b93ed3524fc8056258b
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Medical College of Soochow University, Suzhou, China
+AD  - Jiangsu Key Laboratory of Preventive and Translational Medicine for Geriatric Diseases, Medical College of Soochow University, Suzhou, China
+AD  - Center for Genetic Epidemiology and Genomics, School of Public Health, Medical College of Soochow University, Suzhou, China
+AD  - Department of General Surgery, Suzhou Ninth Hospital Affiliated to Soochow University, Affiliated Wujiang Hospital of Nantong University, Suzhou, China
+AB  - Background: Growing evidence has shown that alterations in gut microbiota composition are associated with multiple autoimmune diseases (ADs). However, it is unclear whether these associations reflect a causal relationship. Objective: To reveal the causal association between gut microbiota and AD, we conducted a two-sample Mendelian randomization (MR) analysis. Materials and Methods: We assessed genome-wide association study (GWAS) summary statistics for gut microbiota and six common ADs, namely, systemic lupus erythematosus, rheumatoid arthritis, inflammatory bowel disease, multiple sclerosis, type 1 diabetes (T1D), and celiac disease (CeD), from published GWASs. Two-sample MR analyses were first performed to identify causal bacterial taxa for ADs in discovery samples. Significant bacterial taxa were further replicated in independent replication outcome samples. A series of sensitivity analyses was performed to validate the robustness of the results. Finally, a reverse MR analysis was performed to evaluate the possibility of reverse causation. Results: Combining the results from the discovery and replication stages, we identified one causal bacterial genus, Bifidobacterium. A higher relative abundance of the Bifidobacterium genus was associated with a higher risk of T1D [odds ratio (OR): 1.605; 95% CI, 1.339–1.922; PFDR = 4.19 × 10−7] and CeD (OR: 1.401; 95% CI, 1.139–1.722; PFDR = 2.03 × 10−3), respectively. Further sensitivity analyses validated the robustness of the above associations. The results of reverse MR analysis showed no evidence of reverse causality from T1D and CeD to the Bifidobacterium genus. Conclusion: This study implied a causal relationship between the Bifidobacterium genus and T1D and CeD, thus providing novel insights into the gut microbiota-mediated development mechanism of ADs. Copyright © 2022 Xu, Ni, Han, Yan, Wei, Feng, Zhang, Zhang, Li and Pei.
+KW  - autoimmune disease (AD)
+KW  - celiac disease
+KW  - gut microbiota
+KW  - Mendelian randomization
+KW  - type 1 diabetes
+KW  - Adult
+KW  - Aged
+KW  - Arthritis, Rheumatoid
+KW  - Autoimmune Diseases
+KW  - Causality
+KW  - Celiac Disease
+KW  - Diabetes Mellitus, Type 1
+KW  - Gastrointestinal Microbiome
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inflammatory Bowel Diseases
+KW  - Lupus Erythematosus, Systemic
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Multiple Sclerosis
+KW  - Polymorphism, Single Nucleotide
+KW  - Prospective Studies
+KW  - antibiotic agent
+KW  - biological marker
+KW  - RNA 16S
+KW  - Article
+KW  - autoimmune disease
+KW  - celiac disease
+KW  - gene silencing
+KW  - genetic association
+KW  - genome-wide association study
+KW  - human
+KW  - inflammatory bowel disease
+KW  - insulin dependent diabetes mellitus
+KW  - intestine flora
+KW  - Mendelian randomization analysis
+KW  - metagenomics
+KW  - microbial community
+KW  - microbiome
+KW  - nonhuman
+KW  - pleiotropy
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - systemic lupus erythematosus
+KW  - taxonomy
+KW  - adult
+KW  - aged
+KW  - autoimmune disease
+KW  - causality
+KW  - immunology
+KW  - intestine flora
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - microbiology
+KW  - middle aged
+KW  - multiple sclerosis
+KW  - procedures
+KW  - prospective study
+KW  - rheumatoid arthritis
+PB  - Frontiers Media S.A.
+SN  - 16643224 (ISSN)
+C2  - 35140703
+LA  - English
+J2  - Front. Immunol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 183; Correspondence Address: Y.-F. Pei; Department of Epidemiology and Biostatistics, School of Public Health, Medical College of Soochow University, Suzhou, China; email: ypei@suda.edu.cn; L. Zhang; Jiangsu Key Laboratory of Preventive and Translational Medicine for Geriatric Diseases, Medical College of Soochow University, Suzhou, China; email: lzhang6@suda.edu.cn; B. Li; Department of General Surgery, Suzhou Ninth Hospital Affiliated to Soochow University, Affiliated Wujiang Hospital of Nantong University, Suzhou, China; email: bli4004@suda.edu.cn
+ER  -
+
+TY  - JOUR
+AU  - Vaucher, J.
+AU  - Keating, B.J.
+AU  - Lasserre, A.M.
+AU  - Gan, W.
+AU  - Lyall, D.M.
+AU  - Ward, J.
+AU  - Smith, D.J.
+AU  - Pell, J.P.
+AU  - Sattar, N.
+AU  - Paré, G.
+AU  - Holmes, M.V.
+TI  - Cannabis use and risk of schizophrenia: A Mendelian randomization study
+PY  - 2018
+T2  - Molecular Psychiatry
+VL  - 23
+IS  - 5
+SP  - 1287
+EP  - 1292
+DO  - 10.1038/mp.2016.252
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85010886820&doi=10.1038%2fmp.2016.252&partnerID=40&md5=77965aea8f7e33b2c1dc9f41a6a2216a
+AD  - Department of Internal Medicine, University Hospital of Lausanne, 46, Rue du Bugnon, Lausanne, 1011, Switzerland
+AD  - Department of Surgery, University of Pennsylvania, Philadelphia, PA, United States
+AD  - Centre for Psychiatric Epidemiology and Psychopathology (CEPP), University Hospital of Lausanne, Prilly, Switzerland
+AD  - Oxford Centre for Diabetes, Endocrinology, and Metabolism, Churchill Hospital Campus, University of Oxford, Oxford, United Kingdom
+AD  - Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - Institute of Health and Wellbeing, University of Glasgow, Glasgow, United Kingdom
+AD  - Institute of Cardiovascular and Medical Science, University of Glasgow, Glasgow, United Kingdom
+AD  - Population Health Research Institute, Hamilton Health Sciences, Department of Clinical Epidemiology and Biostatistics, McMaster University, Hamilton, ON, Canada
+AD  - Population Genomics Program, Chanchlani Research Centre, McMaster University, Hamilton, ON, Canada
+AD  - Department of Pathology and Molecular Medicine, McMaster University, Hamilton, ON, Canada
+AD  - Thrombosis and Atherosclerosis Research Institute, McMaster University, Hamilton, ON, Canada
+AD  - Clinical Trial Service Unit, Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, Clinical Trial Service Unit, Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford, Richard Doll Building, Old Rd Campus, Roosevelt Drive, Oxford, OX3 7LF, United Kingdom
+AB  - Cannabis use is observationally associated with an increased risk of schizophrenia, but whether the relationship is causal is not known. Using a genetic approach, we took 10 independent genetic variants previously identified to associate with cannabis use in 32 330 individuals to determine the nature of the association between cannabis use and risk of schizophrenia. Genetic variants were employed as instruments to recapitulate a randomized controlled trial involving two groups (cannabis users vs nonusers) to estimate the causal effect of cannabis use on risk of schizophrenia in 34 241 cases and 45 604 controls from predominantly European descent. Genetically-derived estimates were compared with a meta-analysis of observational studies reporting ever use of cannabis and risk of schizophrenia or related disorders. Based on the genetic approach, use of cannabis was associated with increased risk of schizophrenia (odds ratio (OR) of schizophrenia for users vs nonusers of cannabis: 1.37; 95% confidence interval (CI), 1.09-1.67; P-value=0.007). The corresponding estimate from observational analysis was 1.43 (95% CI, 1.19-1.67; P-value for heterogeneity =0.76). The genetic markers did not show evidence of pleiotropic effects and accounting for tobacco exposure did not alter the association (OR of schizophrenia for users vs nonusers of cannabis, adjusted for ever vs never smoker: 1.41; 95% CI, 1.09-1.83). This adds to the substantial evidence base that has previously identified cannabis use to associate with increased risk of schizophrenia, by suggesting that the relationship is causal. Such robust evidence may inform public health messages about cannabis use, especially regarding its potential mental health consequences. © The Author(s) 2018.
+KW  - Adult
+KW  - Cannabis
+KW  - Case-Control Studies
+KW  - European Continental Ancestry Group
+KW  - Female
+KW  - Genetic Variation
+KW  - Humans
+KW  - Male
+KW  - Marijuana Abuse
+KW  - Marijuana Smoking
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Random Allocation
+KW  - Risk Factors
+KW  - Schizophrenia
+KW  - Smokers
+KW  - cannabis
+KW  - Article
+KW  - cannabis use
+KW  - causal attribution
+KW  - controlled study
+KW  - disease association
+KW  - genetic marker
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - mental health
+KW  - observational study
+KW  - pleiotropy
+KW  - priority journal
+KW  - public health
+KW  - randomized controlled trial
+KW  - risk factor
+KW  - schizophrenia
+KW  - single nucleotide polymorphism
+KW  - smoking
+KW  - adult
+KW  - cannabis addiction
+KW  - cannabis smoking
+KW  - case control study
+KW  - Caucasian
+KW  - female
+KW  - genetic variation
+KW  - genetics
+KW  - male
+KW  - metabolism
+KW  - middle aged
+KW  - psychology
+KW  - randomization
+KW  - risk factor
+KW  - schizophrenia
+PB  - Nature Publishing Group
+SN  - 13594184 (ISSN)
+C2  - 28115737
+LA  - English
+J2  - Mol. Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 183; Correspondence Address: J. Vaucher; Department of Internal Medicine, University Hospital of Lausanne, Lausanne, 46, Rue du Bugnon, 1011, Switzerland; email: julien.vaucher@chuv.ch; CODEN: MOPSF
+ER  -
+
+TY  - JOUR
+AU  - Daghlas, I.
+AU  - Dashti, H.S.
+AU  - Lane, J.
+AU  - Aragam, K.G.
+AU  - Rutter, M.K.
+AU  - Saxena, R.
+AU  - Vetter, C.
+TI  - Sleep Duration and Myocardial Infarction
+PY  - 2019
+T2  - Journal of the American College of Cardiology
+VL  - 74
+IS  - 10
+SP  - 1304
+EP  - 1314
+DO  - 10.1016/j.jacc.2019.07.022
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85071005423&doi=10.1016%2fj.jacc.2019.07.022&partnerID=40&md5=98e157a5e18e45586bbf4e3b9ca95024
+AD  - Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Cardiology Division, Massachusetts General Hospital, Boston, MA, United States
+AD  - Division of Endocrinology, Diabetes and Gastroenterology, Faculty of Biology, Medicine and Health, School of Medical Sciences, University of Manchester, Manchester, United Kingdom
+AD  - Manchester Diabetes Centre, Central Manchester University Hospitals NHS Foundation Trust, Manchester Academic Health Science Centre, Manchester, United Kingdom
+AD  - Department of Integrative Physiology, University of Colorado at Boulder, Boulder, CO, United States
+AB  - Background: Observational studies suggest associations between extremes of sleep duration and myocardial infarction (MI), but the causal contribution of sleep to MI and its potential to mitigate genetic predisposition to coronary disease is unclear. Objectives: This study sought to investigate associations between sleep duration and incident MI, accounting for joint effects with other sleep traits and genetic risk of coronary artery disease, and to assess causality using Mendelian randomization (MR). Methods: In 461,347 UK Biobank (UKB) participants free of relevant cardiovascular disease, the authors estimated multivariable adjusted hazard ratios (HR) for MI (5,128 incident cases) across habitual self-reported short (<6 h) and long (>9 h) sleep duration, and examined joint effects with sleep disturbance traits and a coronary artery disease genetic risk score. The authors conducted 2-sample MR for short (24 single nucleotide polymorphisms) and continuous (71 single nucleotide polymorphisms) sleep duration with MI (n = 43,676 cases/128,199 controls), and replicated results in UKB (n = 12,111/325,421). Results: Compared with sleeping 6 to 9 h/night, short sleepers had a 20% higher multivariable-adjusted risk of incident MI (HR: 1.20; 95% confidence interval [CI]: 1.07 to 1.33), and long sleepers had a 34% higher risk (HR: 1.34; 95% CI: 1.13 to 1.58); associations were independent of other sleep traits. Healthy sleep duration mitigated MI risk even among individuals with high genetic liability (HR: 0.82; 95% CI: 0.68 to 0.998). MR was consistent with a causal effect of short sleep duration on MI in CARDIoGRAMplusC4D (Coronary ARtery DIsease Genome wide Replication and Meta-analysis plus Coronary Artery Disease Genetics Consortium) (HR: 1.19; 95% CI: 1.09 to 1.29) and UKB (HR: 1.21; 95% CI: 1.08 to 1.37). Conclusions: Prospective observational and MR analyses support short sleep duration as a potentially causal risk factor for MI. Investigation of sleep extension to prevent MI may be warranted. © 2019 American College of Cardiology Foundation
+KW  - coronary artery disease
+KW  - genetic risk score
+KW  - Mendelian randomization
+KW  - myocardial infarction
+KW  - sleep duration
+KW  - UK Biobank
+KW  - Coronary Disease
+KW  - Genetic Predisposition to Disease
+KW  - Humans
+KW  - Incidence
+KW  - Mendelian Randomization Analysis
+KW  - Myocardial Infarction
+KW  - Polymorphism, Single Nucleotide
+KW  - Population Surveillance
+KW  - Risk Factors
+KW  - Sleep Wake Disorders
+KW  - Time Factors
+KW  - United Kingdom
+KW  - Article
+KW  - biobank
+KW  - cardiovascular risk
+KW  - coronary artery disease
+KW  - disease association
+KW  - genetic association
+KW  - genetic risk
+KW  - heart infarction
+KW  - human
+KW  - major clinical study
+KW  - priority journal
+KW  - risk factor
+KW  - self report
+KW  - single nucleotide polymorphism
+KW  - sleep quality
+KW  - sleep time
+KW  - United Kingdom
+KW  - genetic predisposition
+KW  - genetics
+KW  - health survey
+KW  - heart infarction
+KW  - incidence
+KW  - Mendelian randomization analysis
+KW  - sleep disorder
+KW  - time factor
+PB  - Elsevier USA
+SN  - 07351097 (ISSN)
+C2  - 31488267
+LA  - English
+J2  - J. Am. Coll. Cardiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 181; Correspondence Address: C. Vetter; Department of Integrative Physiology, University of Colorado at Boulder, Boulder, 1725 Pleasant Street, Ramaley N368, 354 UCB, 80309-0354, United States; email: celine.vetter@colorado.edu; CODEN: JACCD
+ER  -
+
+TY  - JOUR
+AU  - Tadros, R.
+AU  - Francis, C.
+AU  - Xu, X.
+AU  - Vermeer, A.M.C.
+AU  - Harper, A.R.
+AU  - Huurman, R.
+AU  - Kelu Bisabu, K.
+AU  - Walsh, R.
+AU  - Hoorntje, E.T.
+AU  - te Rijdt, W.P.
+AU  - Buchan, R.J.
+AU  - van Velzen, H.G.
+AU  - van Slegtenhorst, M.A.
+AU  - Vermeulen, J.M.
+AU  - Offerhaus, J.A.
+AU  - Bai, W.
+AU  - de Marvao, A.
+AU  - Lahrouchi, N.
+AU  - Beekman, L.
+AU  - Karper, J.C.
+AU  - Veldink, J.H.
+AU  - Kayvanpour, E.
+AU  - Pantazis, A.
+AU  - Baksi, A.J.
+AU  - Whiffin, N.
+AU  - Mazzarotto, F.
+AU  - Sloane, G.
+AU  - Suzuki, H.
+AU  - Schneider-Luftman, D.
+AU  - Elliott, P.
+AU  - Richard, P.
+AU  - Ader, F.
+AU  - Villard, E.
+AU  - Lichtner, P.
+AU  - Meitinger, T.
+AU  - Tanck, M.W.T.
+AU  - van Tintelen, J.P.
+AU  - Thain, A.
+AU  - McCarty, D.
+AU  - Hegele, R.A.
+AU  - Roberts, J.D.
+AU  - Amyot, J.
+AU  - Dubé, M.-P.
+AU  - Cadrin-Tourigny, J.
+AU  - Giraldeau, G.
+AU  - L’Allier, P.L.
+AU  - Garceau, P.
+AU  - Tardif, J.-C.
+AU  - Boekholdt, S.M.
+AU  - Lumbers, R.T.
+AU  - Asselbergs, F.W.
+AU  - Barton, P.J.R.
+AU  - Cook, S.A.
+AU  - Prasad, S.K.
+AU  - O’Regan, D.P.
+AU  - van der Velden, J.
+AU  - Verweij, K.J.H.
+AU  - Talajic, M.
+AU  - Lettre, G.
+AU  - Pinto, Y.M.
+AU  - Meder, B.
+AU  - Charron, P.
+AU  - de Boer, R.A.
+AU  - Christiaans, I.
+AU  - Michels, M.
+AU  - Wilde, A.A.M.
+AU  - Watkins, H.
+AU  - Matthews, P.M.
+AU  - Ware, J.S.
+AU  - Bezzina, C.R.
+TI  - Shared genetic pathways contribute to risk of hypertrophic and dilated cardiomyopathies with opposite directions of effect
+PY  - 2021
+T2  - Nature Genetics
+VL  - 53
+IS  - 2
+SP  - 128
+EP  - 134
+DO  - 10.1038/s41588-020-00762-2
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85099759270&doi=10.1038%2fs41588-020-00762-2&partnerID=40&md5=d35756dc4732e57af5b350d0eb0192a8
+AD  - Cardiovascular Genetics Center, Montreal Heart Institute, Faculty of Medicine, Université de Montréal, Montreal, QC, Canada
+AD  - Department of Clinical and Experimental Cardiology, Heart Center, Amsterdam Cardiovascular Sciences, University of Amsterdam, Amsterdam UMC, Amsterdam, Netherlands
+AD  - Cardiovascular Research Centre, Royal Brompton and Harefield National Health Service Foundation Trust, London, United Kingdom
+AD  - National Heart and Lung Institute, Imperial College London, London, United Kingdom
+AD  - MRC London Institute of Medical Sciences, Imperial College London, London, United Kingdom
+AD  - Department of Clinical Genetics, University of Amsterdam, Amsterdam UMC, Amsterdam, Netherlands
+AD  - European Reference Network for Rare and Low Prevalence Complex Diseases of the Heart (ERN GUARD-HEART), France
+AD  - Division of Cardiovascular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom
+AD  - Wellcome Centre for Human Genetics, Oxford, United Kingdom
+AD  - Department of Cardiology, Thoraxcenter, Erasmus University Medical Center, Rotterdam, Netherlands
+AD  - Department of Genetics, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - Netherlands Heart Institute, Utrecht, Netherlands
+AD  - Department of Clinical Genetics, Thoraxcenter, Erasmus University Medical Center, Rotterdam, Netherlands
+AD  - Department of Psychiatry, University of Amsterdam, Amsterdam UMC, Amsterdam, Netherlands
+AD  - Data Science Institute, Imperial College London, London, United Kingdom
+AD  - Department of Brain Sciences and UK Dementia Research Institute at Imperial College London, Hammersmith Hospital, Imperial College London, London, United Kingdom
+AD  - Department of Cardiology, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - Department of Neurology, UMC Utrecht Brain Center, University Medical Center Utrecht, Utrecht University, Utrecht, Netherlands
+AD  - Institute for Cardiomyopathies, Heidelberg Heart Center, University of Heidelberg, Heidelberg, Germany
+AD  - DZHK (German Center for Cardiovascular Research), Berlin, Germany
+AD  - Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy
+AD  - Cardiomyopathy Unit, Careggi University Hospital, Florence, Italy
+AD  - Department of Cardiovascular Medicine, Tohoku University Hospital, Seiryo, Aoba, Sendai, Japan
+AD  - Tohoku Medical Megabank Organization, Tohoku University, Seiryo, Aoba, Sendai, Japan
+AD  - The Francis Crick Institute, London, United Kingdom
+AD  - Department of Epidemiology and Biostatistics, Imperial College London, London, United Kingdom
+AD  - Service de biochimie métabolique, UF de cardiogénétique et myogénétique moléculaire et cellulaire, APHP, Hôpital Pitié-Salpêtrière, Paris, France
+AD  - INSERM, UMR_S 1166 and ICAN Institute for Cardiometabolism and Nutrition, Faculté de Médecine, Sorbonne Université, Paris, France
+AD  - Faculté de Pharmacie, Université de Paris, Paris, France
+AD  - Institute of Human Genetics, Helmholtz Zentrum Muenchen, Neuherberg, Germany
+AD  - Klinikum rechts der Isar der TU Muenchen School of Medicine, Institute of Human Genetics, Munich, Germany
+AD  - DZHK (German Center for Cardiovascular Research), partner site Munich Heart Alliance, Munich, Germany
+AD  - Department of Clinical Epidemiology, Biostatistics and Bioinformatics, University of Amsterdam, Amsterdam Public Health (APH), Amsterdam UMC, Amsterdam, Netherlands
+AD  - Department of Genetics, University Medical Center Utrecht, Utrecht University, Utrecht, Netherlands
+AD  - Department of Medicine and Robarts Research Institute, Schulich School of Medicine and Dentistry, Western University, London, ON, Canada
+AD  - Montreal Heart Institute Research Center, Faculty of Medicine, Université de Montréal, Montreal, QC, Canada
+AD  - Department of Cardiology, University of Amsterdam, Heartcenter, Amsterdam UMC, Amsterdam, Netherlands
+AD  - Institute of Health Informatics, University College London, London, United Kingdom
+AD  - Health Data Research UK, Gibbs Building, London, United Kingdom
+AD  - Barts Heart Centre, Saint Bartholomew’s Hospital, London, United Kingdom
+AD  - Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, Utrecht University, Utrecht, Netherlands
+AD  - Institute of Cardiovascular Science and Institute of Health Informatics, Faculty of Population Health Sciences, University College London, London, United Kingdom
+AD  - National Heart Research Institute Singapore, National Heart Center Singapore, Singapore, Singapore
+AD  - Cardiovascular and Metabolic Disorders Program, Duke‐National University of Singapore Medical School, Singapore, Singapore
+AD  - Department of Physiology, Amsterdam Cardiovascular Sciences, Amsterdam UMC, Amsterdam, Netherlands
+AD  - Département de Génétique, Centre de référence des maladies cardiaques héréditaires ou rares, APHP, Hôpital Pitié-Salpêtrière, Paris, France
+AB  - The heart muscle diseases hypertrophic (HCM) and dilated (DCM) cardiomyopathies are leading causes of sudden death and heart failure in young, otherwise healthy, individuals. We conducted genome-wide association studies and multi-trait analyses in HCM (1,733 cases), DCM (5,521 cases) and nine left ventricular (LV) traits (19,260 UK Biobank participants with structurally normal hearts). We identified 16 loci associated with HCM, 13 with DCM and 23 with LV traits. We show strong genetic correlations between LV traits and cardiomyopathies, with opposing effects in HCM and DCM. Two-sample Mendelian randomization supports a causal association linking increased LV contractility with HCM risk. A polygenic risk score explains a significant portion of phenotypic variability in carriers of HCM-causing rare variants. Our findings thus provide evidence that polygenic risk score may account for variability in Mendelian diseases. More broadly, we provide insights into how genetic pathways may lead to distinct disorders through opposing genetic effects. © 2021, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Cardiomyopathy, Dilated
+KW  - Cardiomyopathy, Hypertrophic
+KW  - Case-Control Studies
+KW  - Gene Frequency
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Heart Ventricles
+KW  - Humans
+KW  - Kaplan-Meier Estimate
+KW  - Linkage Disequilibrium
+KW  - Polymorphism, Single Nucleotide
+KW  - Quantitative Trait Loci
+KW  - Ventricular Function, Left
+KW  - Article
+KW  - biobank
+KW  - congestive cardiomyopathy
+KW  - genetic correlation
+KW  - genetic risk score
+KW  - genetic susceptibility
+KW  - genetics
+KW  - genome-wide association study
+KW  - heart left ventricle contractility
+KW  - human
+KW  - hypertrophic cardiomyopathy
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - monogenic disorder
+KW  - priority journal
+KW  - single nucleotide polymorphism
+KW  - case control study
+KW  - congestive cardiomyopathy
+KW  - gene frequency
+KW  - gene linkage disequilibrium
+KW  - genetic predisposition
+KW  - heart left ventricle function
+KW  - heart ventricle
+KW  - hypertrophic cardiomyopathy
+KW  - Kaplan Meier method
+KW  - meta analysis
+KW  - mortality
+KW  - pathophysiology
+KW  - quantitative trait locus
+PB  - Nature Research
+SN  - 10614036 (ISSN)
+C2  - 33495596
+LA  - English
+J2  - Nat. Genet.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 180; Correspondence Address: R. Tadros; Cardiovascular Genetics Center, Montreal Heart Institute, Faculty of Medicine, Université de Montréal, Montreal, Canada; email: rafik.tadros@umontreal.ca; C.R. Bezzina; Department of Clinical and Experimental Cardiology, Heart Center, Amsterdam Cardiovascular Sciences, University of Amsterdam, Amsterdam UMC, Amsterdam, Netherlands; email: c.r.bezzina@amsterdamumc.nl; J.S. Ware; Cardiovascular Research Centre, Royal Brompton and Harefield National Health Service Foundation Trust, London, United Kingdom; email: j.ware@imperial.ac.uk; CODEN: NGENE
+ER  -
+
+TY  - JOUR
+AU  - Georgakis, M.K.
+AU  - Gill, D.
+AU  - Rannikmäe, K.
+AU  - Traylor, M.
+AU  - Anderson, C.D.
+AU  - Lee, J.-M.
+AU  - Kamatani, Y.
+AU  - Hopewell, J.C.
+AU  - Worrall, B.B.
+AU  - Bernhagen, J.
+AU  - Sudlow, C.L.M.
+AU  - Malik, R.
+AU  - Dichgans, M.
+TI  - Genetically Determined Levels of Circulating Cytokines and Risk of Stroke: Role of Monocyte Chemoattractant Protein-1
+PY  - 2019
+T2  - Circulation
+VL  - 139
+IS  - 2
+SP  - 256
+EP  - 268
+DO  - 10.1161/CIRCULATIONAHA.118.035905
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85059927370&doi=10.1161%2fCIRCULATIONAHA.118.035905&partnerID=40&md5=3c3126f646a4f5326cf1030171f8c721
+AD  - Institute for Stroke and Dementia Research, University Hospital of Ludwig-Maximilians-University, Feodor-Lynen-Str 17, Munich, 81377, Germany
+AD  - Graduate School for Systemic Neurosciences, Ludwig-Maximilians-University, Munich, Germany
+AD  - Department of Biostatistics and Epidemiology, School of Public Health, Imperial College London, United Kingdom
+AD  - Centre for Clinical Brain Sciences, University of Edinburgh, United Kingdom
+AD  - Stroke Research Group, Department of Clinical Neurosciences, University of Cambridge, United Kingdom
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Division of Neurocritical Care and Emergency Neurology, Department of Neurology, Massachusetts General Hospital, Boston, MA, United States
+AD  - Program in Medical and Population Genetics, Broad Institute, Cambridge, MA, United States
+AD  - Department of Neurology, Radiology, and Biomedical Engineering, Washington University School of Medicine, St Louis, MO, United States
+AD  - Laboratory for Statistical Analysis, RIKEN Center for Integrative Medical Sciences, Yokohama, Japan
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford, United Kingdom
+AD  - Departments of Neurology and Public Health Sciences, University of Virginia School of Medicine, Charlottesville, VA, United States
+AD  - Munich Cluster for Systems Neurology (SyNergy), Munich, Germany
+AD  - Institute for Genetics and Molecular Medicine, University of Edinburgh, United Kingdom
+AD  - German Centre for Neurodegenerative Diseases, Munich, Germany
+AB  - Background: Cytokines and growth factors have been implicated in the initiation and propagation of vascular disease. Observational studies have shown associations of their circulating levels with stroke. Our objective was to explore whether genetically determined circulating levels of cytokines and growth factors are associated with stroke and its etiologic subtypes by conducting a 2-sample Mendelian randomization (MR) study. Methods: Genetic instruments for 41 cytokines and growth factors were obtained from a genome-wide association study of 8293 healthy adults. Their associations with stroke and stroke subtypes were evaluated in the MEGASTROKE genome-wide association study data set (67 162 cases; 454 450 controls) applying inverse variance-weighted meta-analysis, weighted-median analysis, Mendelian randomization-Egger regression, and multivariable Mendelian randomization. The UK Biobank cohort was used as an independent validation sample (4985 cases; 364 434 controls). Genetic instruments for monocyte chemoattractant protein-1 (MCP-1/CCL2) were further tested for association with etiologically related vascular traits by using publicly available genome-wide association study data. Results: Genetic predisposition to higher MCP-1 levels was associated with higher risk of any stroke (odds ratio [OR] per 1 SD increase, 1.06; 95% CI, 1.02-1.09; P=0.0009), any ischemic stroke (OR, 1.06; 95% CI, 1.02-1.10; P=0.002), large-artery stroke (OR, 1.19; 95% CI, 1.09-1.30; P=0.0002), and cardioembolic stroke (OR, 1.14; 95% CI, 1.06-1.23; P=0.0004), but not with small-vessel stroke or intracerebral hemorrhage. The results were stable in sensitivity analyses and remained significant after adjustment for cardiovascular risk factors. Analyses in the UK Biobank showed similar associations for available phenotypes (any stroke: OR, 1.08; 95% CI, 0.99-1.17; P=0.09; any ischemic stroke: OR, 1.07; 95% CI, 0.97-1.18; P=0.17). Genetically determined higher MCP-1 levels were further associated with coronary artery disease (OR, 1.04; 95% CI, 1.00-1.08; P=0.04) and myocardial infarction (OR, 1.05; 95% CI, 1.01-1.09; P=0.02), but not with atrial fibrillation. A meta-analysis of observational studies showed higher circulating MCP-1 levels in patients with stroke in comparison with controls. Conclusions: Genetic predisposition to elevated circulating levels of MCP-1 is associated with higher risk of stroke, in particular with large-artery stroke and cardioembolic stroke. Whether targeting MCP-1 or its receptors can lower stroke incidence requires further study. © 2019 American Heart Association, Inc.
+KW  - atherosclerosis
+KW  - chemokine CCL2
+KW  - cytokines
+KW  - human genetics
+KW  - inflammation
+KW  - Mendelian randomization analysis
+KW  - stroke
+KW  - Case-Control Studies
+KW  - Chemokine CCL2
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Observational Studies as Topic
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Assessment
+KW  - Risk Factors
+KW  - Stroke
+KW  - cytokine
+KW  - growth factor
+KW  - monocyte chemotactic protein 1
+KW  - CCL2 protein, human
+KW  - monocyte chemotactic protein 1
+KW  - Article
+KW  - atrial fibrillation
+KW  - brain hemorrhage
+KW  - brain ischemia
+KW  - cardioembolic stroke
+KW  - cardiovascular disease
+KW  - cardiovascular risk
+KW  - cerebrovascular accident
+KW  - controlled study
+KW  - genetic predisposition
+KW  - genome-wide association study
+KW  - heart infarction
+KW  - human
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - observational study
+KW  - priority journal
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - blood
+KW  - case control study
+KW  - cerebrovascular accident
+KW  - genetics
+KW  - phenotype
+KW  - risk assessment
+KW  - single nucleotide polymorphism
+PB  - Lippincott Williams and Wilkins
+SN  - 00097322 (ISSN)
+C2  - 30586705
+LA  - English
+J2  - Circulation
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 173; Correspondence Address: M. Dichgans; Institute for Stroke and Dementia Research, University Hospital of Ludwig-Maximilians-University, Munich, Feodor-Lynen-Str 17, 81377, Germany; email: martin.dichgans@med.uni-muenchen.de; CODEN: CIRCA
+ER  -
+
+TY  - JOUR
+AU  - Boehm, F.J.
+AU  - Zhou, X.
+TI  - Statistical methods for Mendelian randomization in genome-wide association studies: A review
+PY  - 2022
+T2  - Computational and Structural Biotechnology Journal
+VL  - 20
+SP  - 2338
+EP  - 2351
+DO  - 10.1016/j.csbj.2022.05.015
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85130080156&doi=10.1016%2fj.csbj.2022.05.015&partnerID=40&md5=15a596b8b8a61b7ee79bbd891e9bf14a
+AD  - Department of Biostatistics, University of Michigan, Ann Arbor, 48109, MI, United States
+AD  - Center for Statistical Genetics, University of Michigan, Ann Arbor, 48109, MI, United States
+AB  - Genome-wide association studies have yielded thousands of associations for many common diseases and disease-related complex traits. The identified associations made it possible to identify the causal risk factors underlying diseases and investigate the causal relationships among complex traits through Mendelian randomization. Mendelian randomization is a form of instrumental variable analysis that uses SNP associations from genome-wide association studies as instruments to study and uncover causal relationships between complex traits. By leveraging SNP genotypes as instrumental variables, or proxies, for the exposure complex trait, investigators can tease out causal effects from observational data, provided that necessary assumptions are satisfied. We discuss below the development of Mendelian randomization methods in parallel with the growth of genome-wide association studies. We argue that the recent availability of GWAS summary statistics for diverse complex traits has motivated new Mendelian randomization methods with relaxed causality assumptions and that this area continues to offer opportunities for robust biological discoveries. © 2022 The Author(s)
+KW  - Causal inference
+KW  - Confounding
+KW  - Genome-wide association study
+KW  - Genomics
+KW  - Horizontal pleiotropy
+KW  - Mendelian randomization
+KW  - Genes
+KW  - Random processes
+KW  - Causal inferences
+KW  - Causal relationships
+KW  - Complex traits
+KW  - Confounding
+KW  - Genome-wide association studies
+KW  - Genomics
+KW  - Horizontal pleiotropy
+KW  - Instrumental variables
+KW  - Mendelian randomization
+KW  - Randomisation
+KW  - biobank
+KW  - causality
+KW  - decision tree
+KW  - genetic marker
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - Review
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - statistical model
+KW  - Genome
+PB  - Elsevier B.V.
+SN  - 20010370 (ISSN)
+LA  - English
+J2  - Comput. Struct. Biotechnol. J.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 172; Correspondence Address: X. Zhou; Department of Biostatistics, University of Michigan, Ann Arbor, 48109, United States; email: xzhousph@umich.edu
+ER  -
+
+TY  - JOUR
+AU  - Porcu, E.
+AU  - Rüeger, S.
+AU  - Lepik, K.
+AU  - Agbessi, M.
+AU  - Ahsan, H.
+AU  - Alves, I.
+AU  - Andiappan, A.
+AU  - Arindrarto, W.
+AU  - Awadalla, P.
+AU  - Battle, A.
+AU  - Beutner, F.
+AU  - Bonder, M.J.
+AU  - Boomsma, D.I.
+AU  - Christiansen, M.
+AU  - Claringbould, A.
+AU  - Deelen, P.
+AU  - Esko, T.
+AU  - Favé, M.-J.
+AU  - Franke, L.
+AU  - Frayling, T.
+AU  - Gharib, S.A.
+AU  - Gibson, G.
+AU  - Heijmans, B.T.
+AU  - Hemani, G.
+AU  - Jansen, R.
+AU  - Kähönen, M.
+AU  - Kalnapenkis, A.
+AU  - Kasela, S.
+AU  - Kettunen, J.
+AU  - Kim, Y.
+AU  - Kirsten, H.
+AU  - Kovacs, P.
+AU  - Krohn, K.
+AU  - Kronberg-Guzman, J.
+AU  - Kukushkina, V.
+AU  - Lee, B.
+AU  - Lehtimäki, T.
+AU  - Loeffler, M.
+AU  - Marigorta, U.M.
+AU  - Mei, H.
+AU  - Milani, L.
+AU  - Montgomery, G.W.
+AU  - Müller-Nurasyid, M.
+AU  - Nauck, M.
+AU  - Nivard, M.
+AU  - Penninx, B.
+AU  - Perola, M.
+AU  - Pervjakova, N.
+AU  - Pierce, B.L.
+AU  - Powell, J.
+AU  - Prokisch, H.
+AU  - Psaty, B.M.
+AU  - Raitakari, O.T.
+AU  - Ripatti, S.
+AU  - Rotzschke, O.
+AU  - Saha, A.
+AU  - Scholz, M.
+AU  - Schramm, K.
+AU  - Seppälä, I.
+AU  - Slagboom, E.P.
+AU  - Stehouwer, C.D.A.
+AU  - Stumvoll, M.
+AU  - Sullivan, P.
+AU  - ‘t Hoen, P.A.C.
+AU  - Teumer, A.
+AU  - Thiery, J.
+AU  - Tong, L.
+AU  - Tönjes, A.
+AU  - van Dongen, J.
+AU  - van Iterson, M.
+AU  - van Meurs, J.
+AU  - Veldink, J.H.
+AU  - Verlouw, J.
+AU  - Visscher, P.M.
+AU  - Völker, U.
+AU  - Võsa, U.
+AU  - Westra, H.-J.
+AU  - Wijmenga, C.
+AU  - Yaghootkar, H.
+AU  - Yang, J.
+AU  - Zeng, B.
+AU  - Zhang, F.
+AU  - Beekman, M.
+AU  - Bot, J.
+AU  - Deelen, J.
+AU  - Hofman, B.A.
+AU  - Hottenga, J.J.
+AU  - Isaacs, A.
+AU  - Jhamai, P.M.
+AU  - Kielbasa, S.M.
+AU  - Lakenberg, N.
+AU  - Luijk, R.
+AU  - Mei, H.
+AU  - Moed, M.
+AU  - Nooren, I.
+AU  - Pool, R.
+AU  - Schalkwijk, C.G.
+AU  - Stehouwer, C.D.A.
+AU  - Suchiman, H.E.D.
+AU  - Swertz, M.A.
+AU  - Tigchelaar, E.F.
+AU  - Uitterlinden, A.G.
+AU  - van den Berg, L.H.
+AU  - van der Breggen, R.
+AU  - van der Kallen, C.J.H.
+AU  - van Dijk, F.
+AU  - van Dongen, J.
+AU  - van Duijn, C.M.
+AU  - van Galen, M.
+AU  - van Greevenbroek, M.M.J.
+AU  - van Heemst, D.
+AU  - van Rooij, J.
+AU  - van’t Hof, P.
+AU  - van Zwet, E.W.
+AU  - Vermaat, M.
+AU  - Verbiest, M.
+AU  - Verkerk, M.
+AU  - Zhernakova, D.V.
+AU  - Zhernakova, S.
+AU  - Santoni, F.A.
+AU  - Reymond, A.
+AU  - Kutalik, Z.
+TI  - Mendelian randomization integrating GWAS and eQTL data reveals genetic determinants of complex and clinical traits
+PY  - 2019
+T2  - Nature Communications 
+VL  - 10
+IS  - 1
+C7  - 3300
+DO  - 10.1038/s41467-019-10936-0
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85069729041&doi=10.1038%2fs41467-019-10936-0&partnerID=40&md5=7d524f3d173a883e9f363ccf8175ac5c
+AD  - Center for Integrative Genomics, University of Lausanne, Lausanne, Switzerland
+AD  - Swiss Institute of Bioinformatics, Lausanne, Switzerland
+AD  - University Center for Primary Care and Public Health, University of Lausanne, Switzerland, Lausanne, Switzerland
+AD  - Institute of Computer Science, University of Tartu, Tartu, Estonia
+AD  - Endocrine, Diabetes, and Metabolism Service, CHUV and University of Lausanne, Lausanne, Switzerland
+AD  - Computational Biology, Ontario Institute for Cancer Research, Toronto, ON, Canada
+AD  - Department of Public Health Sciences, University of Chicago, Chicago, IL, United States
+AD  - Singapore Immunology Network, Agency for Science, Technology and Research, Singapore, Singapore
+AD  - Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, United States
+AD  - Department of Computer Science, Johns Hopkins University, Baltimore, MD, United States
+AD  - Heart Center Leipzig, Universität Leipzig, Leipzig, Germany
+AD  - Department of Genetics, University Medical Centre Groningen, Groningen, Netherlands
+AD  - European Molecular Biology Laboratory, European Bioinformatics Institute, Wellcome Genome Campus, Hinxton, United Kingdom
+AD  - Genome Biology Unit, European Molecular Biology Laboratory, Heidelberg, Germany
+AD  - Department of Biological Psychology, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Cardiovascular Health Research Unit, University of Washington, Seattle, WA, United States
+AD  - Genomics Coordination Center, University Medical Centre Groningen, Groningen, Netherlands
+AD  - Estonian Genome Center, Institute of Genomics, University of Tartu, Tartu, 51010, Estonia
+AD  - Exeter Medical School, University of Exeter, Exeter, EX2 5DW, United Kingdom
+AD  - Department of Medicine, University of Washington, Seattle, WA, United States
+AD  - School of Biological Sciences, Georgia Tech, Atlanta, GA, United States
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Department of Psychiatry and Amsterdam Neuroscience, Amsterdam UMC, Vrije Universiteit, Amsterdam, Netherlands
+AD  - Department of Clinical Physiology, Tampere University Hospital and Faculty of Medicine and Health Technology, Tampere University, Tampere, Finland
+AD  - Centre for Life Course Health Research, University of Oulu, Oulu, Finland
+AD  - Genetics and Genomic Science Department, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Institut für Medizinische Informatik, Statistik und Epidemiologie, LIFE – Leipzig Research Center for Civilization Diseases, Universität Leipzig, Leipzig, Germany
+AD  - IFB Adiposity Diseases, Universität Leipzig, Leipzig, Germany
+AD  - Interdisciplinary Center for Clinical Research, Faculty of Medicine, Universität Leipzig, Leipzig, Germany
+AD  - Department of Clinical Chemistry, Fimlab Laboratories and Finnish Cardiovascular Research Center-Tampere, Faculty of Medicine and Health Technology, Tampere University, Tampere, Finland
+AD  - Institute for Molecular Bioscience, University of Queensland, Brisbane, QLD, Australia
+AD  - Institute of Genetic Epidemiology, Helmholtz Zentrum München - German Research Center for Environmental Health, Neuherberg, Germany
+AD  - Department of Medicine I, University Hospital Munich, Ludwig Maximilian’s University, München, Germany
+AD  - DZHK (German Centre for Cardiovascular Research), partner site Munich Heart Alliance, Munich, Germany
+AD  - Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Greifswald, Greifswald, Germany
+AD  - National Institute for Health and Welfare, University of Helsinki, Helsinki, Finland
+AD  - Garvan Institute of Medical Research, Garvan-Weizmann Centre for Cellular Genomics, Sydney, Australia
+AD  - Institute of Human Genetics, Helmholtz Zentrum München, Neuherberg, Germany
+AD  - Institute of Human Genetics, Technical University Munich, Munich, Germany
+AD  - Departments of Epidemiology, Medicine, and Health Services, University of Washington, Seattle, WA, United States
+AD  - Kaiser Permanente Washington Health Research Institute, Seattle, WA, United States
+AD  - Centre for Population Health Research, Department of Clinical Physiology and Nuclear Medicine, Turku University Hospital and University of Turku, Turku, Finland
+AD  - Statistical and Translational Genetics, University of Helsinki, Helsinki, Finland
+AD  - Department of Internal Medicine, Maastricht University Medical Centre, Maastricht, Netherlands
+AD  - Department of Medicine, Universität Leipzig, Leipzig, Germany
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - Center for Molecular and Biomolecular Informatics, Radboud Institute for Molecular Life Sciences, Radboud University Medical Center Nijmegen, Nijmegen, Netherlands
+AD  - Institute for Community Medicine, University Medicine Greifswald, Greifswald, Germany
+AD  - Institute for Laboratory Medicine, LIFE – Leipzig Research Center for Civilization Diseases, Universität Leipzig, Leipzig, Germany
+AD  - Department of Internal Medicine, Erasmus Medical Centre, Rotterdam, Netherlands
+AD  - Department of Neurology, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Interfaculty Institute for Genetics and Functional Genomics, University Medicine Greifswald, Greifswald, Germany
+AD  - Institute for Advanced Research, Wenzhou Medical University, Wenzhou, Zhejiang, 325027, China
+AD  - Sequence Analysis Support Core, Leiden University Medical Center, Leiden, Netherlands
+AD  - Molecular Epidemiology Section, Department of Medical Statistics and Bioinformatics, Leiden University Medical Center, Leiden, 2333 ZA, Netherlands
+AD  - SURFsara, Amsterdam, Netherlands
+AD  - Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Epidemiology, ErasmusMC, Rotterdam, Netherlands
+AD  - Department of Genetic Epidemiology, ErasmusMC, Rotterdam, Netherlands
+AD  - Medical Statistics Section, Department of Medical Statistics and Bioinformatics, Leiden University Medical Center, Leiden, Netherlands
+AD  - Sequence Analysis Support Core, Leiden University Medical Center, Leiden, Netherlands
+AD  - Department of Internal Medicine and School for Cardiovascular Diseases (CARIM), Maastricht University Medical Center, Maastricht, Netherlands
+AD  - Department of Gerontology and Geriatrics, Leiden University Medical Center, Leiden, Netherlands
+AB  - Genome-wide association studies (GWAS) have identified thousands of variants associated with complex traits, but their biological interpretation often remains unclear. Most of these variants overlap with expression QTLs, indicating their potential involvement in regulation of gene expression. Here, we propose a transcriptome-wide summary statistics-based Mendelian Randomization approach (TWMR) that uses multiple SNPs as instruments and multiple gene expression traits as exposures, simultaneously. Applied to 43 human phenotypes, it uncovers 3,913 putatively causal gene–trait associations, 36% of which have no genome-wide significant SNP nearby in previous GWAS. Using independent association summary statistics, we find that the majority of these loci were missed by GWAS due to power issues. Noteworthy among these links is educational attainment-associated BSCL2, known to carry mutations leading to a Mendelian form of encephalopathy. We also find pleiotropic causal effects suggestive of mechanistic connections. TWMR better accounts for pleiotropy and has the potential to identify biological mechanisms underlying complex traits. © 2019, The Author(s).
+KW  - Brain Diseases
+KW  - Gene Expression Profiling
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - GTP-Binding Protein gamma Subunits
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Quantitative Trait Loci
+KW  - Transcriptome
+KW  - transcriptome
+KW  - BSCL2 protein, human
+KW  - guanine nucleotide binding protein gamma subunit
+KW  - transcriptome
+KW  - data set
+KW  - gene expression
+KW  - genetic analysis
+KW  - genetic marker
+KW  - genome
+KW  - phenotype
+KW  - pleiotropy
+KW  - Article
+KW  - expression quantitative trait locus
+KW  - gene expression regulation
+KW  - gene mutation
+KW  - genetic trait
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - single nucleotide polymorphism
+KW  - transcriptomics
+KW  - brain disease
+KW  - gene expression profiling
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - genetics
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - phenotype
+KW  - quantitative trait locus
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 31341166
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 180; Correspondence Address: E. Porcu; Center for Integrative Genomics, University of Lausanne, Lausanne, Switzerland; email: eleonora.porcu@unil.ch
+ER  -
+
+TY  - JOUR
+AU  - Abdellaoui, A.
+AU  - Yengo, L.
+AU  - Verweij, K.J.H.
+AU  - Visscher, P.M.
+TI  - 15 years of GWAS discovery: Realizing the promise
+PY  - 2023
+T2  - American Journal of Human Genetics
+VL  - 110
+IS  - 2
+SP  - 179
+EP  - 194
+DO  - 10.1016/j.ajhg.2022.12.011
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85146899276&doi=10.1016%2fj.ajhg.2022.12.011&partnerID=40&md5=5f5400906da120f2699dc7debee73218
+AD  - Department of Psychiatry, Amsterdam UMC, University of Amsterdam, Amsterdam, Netherlands
+AD  - Institute for Molecular Bioscience, University of Queensland, Brisbane, QLD, Australia
+AB  - It has been 15 years since the advent of the genome-wide association study (GWAS) era. Here, we review how this experimental design has realized its promise by facilitating an impressive range of discoveries with remarkable impact on multiple fields, including population genetics, complex trait genetics, epidemiology, social science, and medicine. We predict that the emergence of large-scale biobanks will continue to expand to more diverse populations and capture more of the allele frequency spectrum through whole-genome sequencing, which will further improve our ability to investigate the causes and consequences of human genetic variation for complex traits and diseases. © 2022 American Society of Human Genetics
+KW  - Gene Frequency
+KW  - Genetics, Population
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Multifactorial Inheritance
+KW  - Polymorphism, Single Nucleotide
+KW  - biobank
+KW  - coronavirus disease 2019
+KW  - drug repositioning
+KW  - gene editing
+KW  - genetic risk score
+KW  - genetic variation
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - medicine
+KW  - Review
+KW  - sociology
+KW  - whole genome sequencing
+KW  - gene frequency
+KW  - multifactorial inheritance
+KW  - population genetics
+KW  - single nucleotide polymorphism
+PB  - Cell Press
+SN  - 00029297 (ISSN)
+C2  - 36634672
+LA  - English
+J2  - Am. J. Hum. Genet.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 181; Correspondence Address: A. Abdellaoui; Department of Psychiatry, Amsterdam UMC, University of Amsterdam, Amsterdam, Netherlands; email: a.abdellaoui@amsterdamumc.nl; CODEN: AJHGA
+ER  -
+

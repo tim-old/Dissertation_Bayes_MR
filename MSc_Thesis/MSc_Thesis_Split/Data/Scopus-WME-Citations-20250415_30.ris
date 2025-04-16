@@ -1,0 +1,1102 @@
+﻿TY  - JOUR
+AU  - Richmond, R.C.
+AU  - Smith, G.D.
+TI  - Mendelian Randomization: Concepts and Scope
+PY  - 2022
+T2  - Cold Spring Harbor Perspectives in Medicine
+VL  - 12
+IS  - 1
+C7  - a040501
+DO  - 10.1101/cshperspect.a040501
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85122265505&doi=10.1101%2fcshperspect.a040501&partnerID=40&md5=82dd0d774482cf7b81bced006cb6a441
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - NIHR Bristol Biomedical Research Centre, University Hospitals Bristol NHS Foundation Trust and University of Bristol, Bristol, BS1 3NU, United Kingdom
+AB  - Mendelian randomization (MR) is a method of studying the causal effects of modifiable exposures (i.e., potential risk factors) on health, social, and economic outcomes using genetic variants associated with the specific exposures of interest. MR provides a more robust understanding of the influence of these exposures on outcomes because germline genetic variants are randomly inherited from parents to offspring and, as a result, should not be related to potential confounding factors that influence exposure–outcome associations. The genetic variant can therefore be used as a tool to link the proposed risk factor and outcome, and to estimate this effect with less confounding and bias than conventional epidemiological approaches. We describe the scope of MR, highlighting the range of applications being made possible as genetic data sets and resources become larger and more freely available. We outline the MR approach in detail, covering concepts, assumptions, and estimation methods. We cover some common misconceptions, provide strategies for overcoming violation of assumptions, and discuss future prospects for extending the clinical applicability, methodological innovations, robustness, and generalizability of MR findings. © 2022 Cold Spring Harbor Laboratory Press; all rights reserved.
+KW  - Causality
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - article
+KW  - controlled study
+KW  - human
+KW  - human cell
+KW  - Mendelian randomization analysis
+KW  - randomized controlled trial
+KW  - causality
+KW  - risk factor
+PB  - Cold Spring Harbor Laboratory Press
+SN  - 21571422 (ISSN)
+C2  - 34426474
+LA  - English
+J2  - Cold Spring Harbor Perspect. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 450; Correspondence Address: R.C. Richmond; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, BS8 2BN, United Kingdom; email: Rebecca.Richmond@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Jones, S.E.
+AU  - Lane, J.M.
+AU  - Wood, A.R.
+AU  - van Hees, V.T.
+AU  - Tyrrell, J.
+AU  - Beaumont, R.N.
+AU  - Jeffries, A.R.
+AU  - Dashti, H.S.
+AU  - Hillsdon, M.
+AU  - Ruth, K.S.
+AU  - Tuke, M.A.
+AU  - Yaghootkar, H.
+AU  - Sharp, S.A.
+AU  - Jie, Y.
+AU  - Thompson, W.D.
+AU  - Harrison, J.W.
+AU  - Dawes, A.
+AU  - Byrne, E.M.
+AU  - Tiemeier, H.
+AU  - Allebrandt, K.V.
+AU  - Bowden, J.
+AU  - Ray, D.W.
+AU  - Freathy, R.M.
+AU  - Murray, A.
+AU  - Mazzotti, D.R.
+AU  - Gehrman, P.R.
+AU  - Lawlor, D.A.
+AU  - Frayling, T.M.
+AU  - Rutter, M.K.
+AU  - Hinds, D.A.
+AU  - Saxena, R.
+AU  - Weedon, M.N.
+TI  - Genome-wide association analyses of chronotype in 697,828 individuals provides insights into circadian rhythms
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 343
+DO  - 10.1038/s41467-018-08259-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85060800167&doi=10.1038%2fs41467-018-08259-7&partnerID=40&md5=69432232789a927e1aafe6832fed3c49
+AD  - Genetics of Complex Traits, University of Exeter Medical School, Royal Devon & Exeter Hospital, Exeter, EX2 5DW, United Kingdom
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Boston, 02114, MA, United States
+AD  - Department of Anesthesia, Critical Care and Pain Medicine, Massachusetts General Hospital and Harvard Medical School, Boston, 02114, MA, United States
+AD  - Broad Institute, Cambridge, 02142, MA, United States
+AD  - Netherlands eScience Center, Amsterdam, 1098, XG, Netherlands
+AD  - Sport and Health Sciences, College of Life and Environmental Sciences, University of Exeter, Exeter, EX1 2LU, United Kingdom
+AD  - The University of Queensland, Institute for Molecular Bioscience, Brisbane, 4072, QLD, Australia
+AD  - Department of Epidemiology, Erasmus Medical Center, Rotterdam, 3015, GE, Netherlands
+AD  - Department of Psychiatry, Erasmus Medical Center, Rotterdam, 3015, GD, Netherlands
+AD  - Department of Translational Informatics, Translational Medicine Early Development, Sanofi-Aventis Deutschland GmbH, Industriepark Höchst, Frankfurt, 65926, Germany
+AD  - MRC Integrative Epidemiology Unit at the University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Faculty of Biology, Medicine and Health, University of Manchester, Manchester, M13 9PL, United Kingdom
+AD  - Division of Endocrinology, Diabetes & Gastroenterology, School of Medical Sciences, Faculty of Biology, Medicine and Health, University of Manchester, Manchester, M13 9PL, United Kingdom
+AD  - Center for Sleep and Circadian Neurobiology, University of Pennsylvania, Philadelphia, 19104, PA, United States
+AD  - Perelman School of Medicine of the University of Pennsylvania, Philadelphia, 19104, PA, United States
+AD  - Manchester Diabetes Centre, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre, Manchester, M13 0JE, United Kingdom
+AD  - 23andMe Inc., 899W. Evelyn Avenue, Mountain View, 94041, CA, United States
+AD  - Departments of Medicine, Brigham and Women’s Hospital and Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, 02115, United States
+AB  - Being a morning person is a behavioural indicator of a person’s underlying circadian rhythm. Using genome-wide data from 697,828 UK Biobank and 23andMe participants we increase the number of genetic loci associated with being a morning person from 24 to 351. Using data from 85,760 individuals with activity-monitor derived measures of sleep timing we find that the chronotype loci associate with sleep timing: the mean sleep timing of the 5% of individuals carrying the most morningness alleles is 25 min earlier than the 5% carrying the fewest. The loci are enriched for genes involved in circadian regulation, cAMP, glutamate and insulin signalling pathways, and those expressed in the retina, hindbrain, hypothalamus, and pituitary. Using Mendelian Randomisation, we show that being a morning person is causally associated with better mental health but does not affect BMI or risk of Type 2 diabetes. This study offers insights into circadian biology and its links to disease in humans. © 2019, The Author(s).
+KW  - Adult
+KW  - Aged
+KW  - Circadian Rhythm
+KW  - Cyclic AMP
+KW  - European Continental Ancestry Group
+KW  - Female
+KW  - Genetic Loci
+KW  - Genome-Wide Association Study
+KW  - Glutamic Acid
+KW  - Humans
+KW  - Male
+KW  - Middle Aged
+KW  - Sleep
+KW  - United Kingdom
+KW  - cyclic AMP
+KW  - glutamic acid
+KW  - insulin
+KW  - cyclic AMP
+KW  - glutamic acid
+KW  - adult
+KW  - allele
+KW  - Article
+KW  - biobank
+KW  - biological rhythm
+KW  - body mass
+KW  - chronotype
+KW  - circadian rhythm
+KW  - cohort analysis
+KW  - controlled study
+KW  - correlation analysis
+KW  - female
+KW  - gene expression
+KW  - gene locus
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - human experiment
+KW  - human tissue
+KW  - hypophysis
+KW  - hypothalamus
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - mental disease
+KW  - mental health
+KW  - middle aged
+KW  - non insulin dependent diabetes mellitus
+KW  - phenotype
+KW  - regulatory mechanism
+KW  - retina
+KW  - rhombencephalon
+KW  - signal transduction
+KW  - sleep time
+KW  - suprachiasmatic nucleus
+KW  - United Kingdom
+KW  - aged
+KW  - Caucasian
+KW  - genetics
+KW  - metabolism
+KW  - sleep
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 30696823
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 436; Correspondence Address: M.N. Weedon; Genetics of Complex Traits, University of Exeter Medical School, Royal Devon & Exeter Hospital, Exeter, EX2 5DW, United Kingdom; email: M.N.Weedon@exeter.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Ruth, K.S.
+AU  - Day, F.R.
+AU  - Tyrrell, J.
+AU  - Thompson, D.J.
+AU  - Wood, A.R.
+AU  - Mahajan, A.
+AU  - Beaumont, R.N.
+AU  - Wittemans, L.
+AU  - Martin, S.
+AU  - Busch, A.S.
+AU  - Erzurumluoglu, A.M.
+AU  - Hollis, B.
+AU  - O’Mara, T.A.
+AU  - McCarthy, M.I.
+AU  - Langenberg, C.
+AU  - Easton, D.F.
+AU  - Wareham, N.J.
+AU  - Burgess, S.
+AU  - Murray, A.
+AU  - Ong, K.K.
+AU  - Frayling, T.M.
+AU  - Perry, J.R.B.
+TI  - Using human genetics to understand the disease impacts of testosterone in men and women
+PY  - 2020
+T2  - Nature Medicine
+VL  - 26
+IS  - 2
+SP  - 252
+EP  - 258
+DO  - 10.1038/s41591-020-0751-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079323434&doi=10.1038%2fs41591-020-0751-5&partnerID=40&md5=74d9d85fdeff1f0141f0f194b3f45f4a
+AD  - University of Exeter Medical School, University of Exeter, Exeter, United Kingdom
+AD  - Medical Research Council (MRC) Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Centre for Cancer Genetic Epidemiology, University of Cambridge, Cambridge, United Kingdom
+AD  - Wellcome Centre for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - International Center for Research and Research Training in Endocrine Disruption of Male Reproduction and Child Health, University of Copenhagen, Copenhagen, Denmark
+AD  - Department of Growth and Reproduction, University of Copenhagen, Copenhagen, Denmark
+AD  - Department of Genetics, QIMR Berghofer Medical Research Institute, Brisbane, QLD, Australia
+AD  - Oxford Centre for Diabetes, University of Oxford, Oxford, United Kingdom
+AD  - Oxford NIHR Biomedical Research Centre, Oxford University Hospitals NHS Foundation Trust, John Radcliffe Hospital, Oxford, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - BHF Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Paediatrics, University of Cambridge, Cambridge, United Kingdom
+AD  - Genentech, San Francisco, CA, United States
+AB  - Testosterone supplementation is commonly used for its effects on sexual function, bone health and body composition, yet its effects on disease outcomes are unknown. To better understand this, we identified genetic determinants of testosterone levels and related sex hormone traits in 425,097 UK Biobank study participants. Using 2,571 genome-wide significant associations, we demonstrate that the genetic determinants of testosterone levels are substantially different between sexes and that genetically higher testosterone is harmful for metabolic diseases in women but beneficial in men. For example, a genetically determined 1 s.d. higher testosterone increases the risks of type 2 diabetes (odds ratio (OR) = 1.37 (95% confidence interval (95% CI): 1.22–1.53)) and polycystic ovary syndrome (OR = 1.51 (95% CI: 1.33–1.72)) in women, but reduces type 2 diabetes risk in men (OR = 0.86 (95% CI: 0.76–0.98)). We also show adverse effects of higher testosterone on breast and endometrial cancers in women and prostate cancer in men. Our findings provide insights into the disease impacts of testosterone and highlight the importance of sex-specific genetic analyses. © 2020, The Author(s), under exclusive licence to Springer Nature America, Inc.
+KW  - Biological Specimen Banks
+KW  - Biomarkers
+KW  - Body Composition
+KW  - Breast Neoplasms
+KW  - Cluster Analysis
+KW  - Diabetes Mellitus, Type 2
+KW  - Endometrial Neoplasms
+KW  - Estradiol
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Genotype
+KW  - Haplotypes
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Odds Ratio
+KW  - Phenotype
+KW  - Polycystic Ovary Syndrome
+KW  - Polymorphism, Single Nucleotide
+KW  - Prostatic Neoplasms
+KW  - Sex Factors
+KW  - Software
+KW  - Testosterone
+KW  - United Kingdom
+KW  - biological marker
+KW  - estradiol
+KW  - testosterone
+KW  - biobank
+KW  - blood
+KW  - body composition
+KW  - breast tumor
+KW  - cluster analysis
+KW  - complication
+KW  - endometrium tumor
+KW  - female
+KW  - genetics
+KW  - genome-wide association study
+KW  - genotype
+KW  - haplotype
+KW  - human
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - odds ratio
+KW  - ovary polycystic disease
+KW  - phenotype
+KW  - prostate tumor
+KW  - sex factor
+KW  - single nucleotide polymorphism
+KW  - software
+KW  - United Kingdom
+PB  - Nature Research
+SN  - 10788956 (ISSN)
+C2  - 32042192
+LA  - English
+J2  - Nat. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 430; Correspondence Address: T.M. Frayling; University of Exeter Medical School, University of Exeter, Exeter, United Kingdom; email: T.M.Frayling@exeter.ac.uk; CODEN: NAMEF
+ER  -
+
+TY  - JOUR
+AU  - Bowden, J.
+AU  - Del Greco M, F.
+AU  - Minelli, C.
+AU  - Zhao, Q.
+AU  - Lawlor, D.A.
+AU  - Sheehan, N.A.
+AU  - Thompson, J.
+AU  - Davey Smith, G.
+TI  - Improving the accuracy of two-sample summary-data Mendelian randomization: Moving beyond the NOME assumption
+PY  - 2019
+T2  - International Journal of Epidemiology
+VL  - 48
+IS  - 3
+SP  - 728
+EP  - 742
+DO  - 10.1093/ije/dyy258
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85070515768&doi=10.1093%2fije%2fdyy258&partnerID=40&md5=d9dd165f360247e03a137884457af54f
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Oakfield House, Bristol, BS8 2BN, United Kingdom
+AD  - Population Health Sciences, University of Bristol, Bristol, United Kingdom
+AD  - Institute for Biomedicine, Eurac Research, Bolzano, Italy
+AD  - Population Health and Occupational Disease, NHLI, Imperial College, London, United Kingdom
+AD  - Department of Statistics, Wharton School, University of Pennsylvania, Philadelphia, PA, United States
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AB  - Background: Two-sample summary-data Mendelian randomization (MR) incorporating multiple genetic variants within a meta-analysis framework is a popular technique for assessing causality in epidemiology. If all genetic variants satisfy the instrumental variable (IV) and necessary modelling assumptions, then their individual ratio estimates of causal effect should be homogeneous. Observed heterogeneity signals that one or more of these assumptions could have been violated. Methods: Causal estimation and heterogeneity assessment in MR require an approximation for the variance, or equivalently the inverse-variance weight, of each ratio estimate. We show that the most popular 'first-order' weights can lead to an inflation in the chances of detecting heterogeneity when in fact it is not present. Conversely, ostensibly more accurate 'second-order' weights can dramatically increase the chances of failing to detect heterogeneity when it is truly present. We derive modified weights to mitigate both of these adverse effects. Results: Using Monte Carlo simulations, we show that the modified weights outperform first- and second-order weights in terms of heterogeneity quantification. Modified weights are also shown to remove the phenomenon of regression dilution bias in MR estimates obtained from weak instruments, unlike those obtained using first- and second-order weights. However, with small numbers of weak instruments, this comes at the cost of a reduction in estimate precision and power to detect a causal effect compared with first-order weighting. Moreover, first-order weights always furnish unbiased estimates and preserve the type I error rate under the causal null. We illustrate the utility of the new method using data from a recent two-sample summary-data MR analysis to assess the causal role of systolic blood pressure on coronary heart disease risk. Conclusions: We propose the use of modified weights within two-sample summary-data MR studies for accurately quantifying heterogeneity and detecting outliers in the presence of weak instruments. Modified weights also have an important role to play in terms of causal estimation (in tandem with first-order weights) but further research is required to understand their strengths and weaknesses in specific settings. © 2018 The Author(s) 2018. Published by Oxford University Press on behalf of the International Epidemiological Association.
+KW  - Cochran's Q statistic
+KW  - inverse-variance weighted estimate
+KW  - outlier detection
+KW  - Two-sample summary-data Mendelian randomization
+KW  - Blood Pressure
+KW  - Coronary Disease
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Monte Carlo Method
+KW  - Polymorphism, Single Nucleotide
+KW  - accuracy assessment
+KW  - cardiovascular disease
+KW  - detection method
+KW  - epidemiology
+KW  - estimation method
+KW  - genetic variation
+KW  - heterogeneity
+KW  - meta-analysis
+KW  - sampling
+KW  - statistical analysis
+KW  - Article
+KW  - genetic variability
+KW  - human
+KW  - instrumental variable analysis
+KW  - Mendelian randomization analysis
+KW  - Monte Carlo method
+KW  - pleiotropy
+KW  - priority journal
+KW  - single nucleotide polymorphism
+KW  - variance
+KW  - blood pressure
+KW  - coronary artery disease
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - procedures
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 30561657
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 546; Correspondence Address: J. Bowden; MRC Integrative Epidemiology Unit, University of Bristol, Oakfield House, Bristol, BS8 2BN, United Kingdom; email: jack.bowden@bristol.ac.uk; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Holmes, M.V.
+AU  - Ala-Korpela, M.
+AU  - Smith, G.D.
+TI  - Mendelian randomization in cardiometabolic disease: Challenges in evaluating causality
+PY  - 2017
+T2  - Nature Reviews Cardiology
+VL  - 14
+IS  - 10
+SP  - 577
+EP  - 599
+DO  - 10.1038/nrcardio.2017.78
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85027694919&doi=10.1038%2fnrcardio.2017.78&partnerID=40&md5=fd3117a8d909333dbaa1790850b05de6
+AD  - Medical Research Council Population Health Research Unit, University of Oxford, Nuffield Department of Population Health, Richard Doll Building, Roosevelt Drive, Oxford, OX3 7LF, United Kingdom
+AD  - Clinical Trial Service Unit, Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford, Big Data Institute Building, Roosevelt Drive, Oxford, OX3 7BN, United Kingdom
+AD  - National Institute for Health Research, Oxford Biomedical Research Centre, Oxford University Hospital, Old Road, Oxford, OX3 7LE, United Kingdom
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Oakfield House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AD  - Computational Medicine, Faculty of Medicine, University of Oulu, Biocenter Oulu, Aapistie 5A, Oulu, 90014, Finland
+AD  - School of Social and Community Medicine, University of Bristol, Oakfield House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AB  - Mendelian randomization (MR) is a burgeoning field that involves the use of genetic variants to assess causal relationships between exposures and outcomes. MR studies can be straightforward; for example, genetic variants within or near the encoding locus that is associated with protein concentrations can help to assess their causal role in disease. However, a more complex relationship between the genetic variants and an exposure can make findings from MR more difficult to interpret. In this Review, we describe some of these challenges in interpreting MR analyses, including those from studies using genetic variants to assess causality of multiple traits (such as branched-chain amino acids and risk of diabetes mellitus); studies describing pleiotropic variants (for example, C-reactive protein and its contribution to coronary heart disease); and those investigating variants that disrupt normal function of an exposure (for example, HDL cholesterol or IL-6 and coronary heart disease). Furthermore, MR studies on variants that encode enzymes responsible for the metabolism of an exposure (such as alcohol) are discussed, in addition to those assessing the effects of variants on time-dependent exposures (extracellular superoxide dismutase), cumulative exposures (LDL cholesterol), and overlapping exposures (triglycerides and non-HDL cholesterol). We elaborate on the molecular features of each relationship, and provide explanations for the likely causal associations. In doing so, we hope to contribute towards more reliable evaluations of MR findings. © 2017 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+KW  - Biomarkers
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Coronary Disease
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Multifactorial Inheritance
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - apolipoprotein E
+KW  - C reactive protein
+KW  - extracellular superoxide dismutase
+KW  - high density lipoprotein cholesterol
+KW  - interleukin 6
+KW  - interleukin 6 receptor
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - biological marker
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - alcohol consumption
+KW  - ALDH2 gene
+KW  - APOE gene
+KW  - CRP gene
+KW  - diabetes mellitus
+KW  - ECSOD gene
+KW  - esophagus carcinoma
+KW  - gene
+KW  - gene linkage disequilibrium
+KW  - gene locus
+KW  - gene sequence
+KW  - genetic risk
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - hypertension
+KW  - IL6R gene
+KW  - ischemic heart disease
+KW  - limit of quantitation
+KW  - Mendelian randomization analysis
+KW  - phenotype
+KW  - PPM1K gene
+KW  - priority journal
+KW  - reliability
+KW  - Review
+KW  - SCARB1 gene
+KW  - single nucleotide polymorphism
+KW  - blood
+KW  - coronary artery disease
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - multifactorial inheritance
+KW  - procedures
+KW  - risk factor
+PB  - Nature Publishing Group
+SN  - 17595002 (ISSN)
+C2  - 28569269
+LA  - English
+J2  - Nat. Rev. Cardiol.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 466; Correspondence Address: M.V. Holmes; Medical Research Council Population Health Research Unit, University of Oxford, Nuffield Department of Population Health, Richard Doll Building, Oxford, Roosevelt Drive, OX3 7LF, United Kingdom; email: michael.holmes@ndph.ox.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Zhao, Q.
+AU  - Wang, J.
+AU  - Hemani, G.
+AU  - Bowden, J.
+AU  - Small, D.S.
+TI  - Statistical inference in two-sample summary-data Mendelian randomization using robust adjusted profile score
+PY  - 2020
+T2  - Annals of Statistics
+VL  - 48
+IS  - 3
+SP  - 1742
+EP  - 1769
+DO  - 10.1214/19-AOS1866
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85090304676&doi=10.1214%2f19-AOS1866&partnerID=40&md5=7a80a16dcfc69918d08d2e83b7782f1b
+AD  - Statistical Laboratory, University of Cambridge, United Kingdom
+AD  - Department of Statistics, University of Chicago, United States
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, United Kingdom
+AD  - University of Exeter Medical School, United Kingdom
+AD  - Department of Statistics, Wharton School, University of Pennsylvania, United States
+AB  - Mendelian randomization (MR) is a method of exploiting genetic variation to unbiasedly estimate a causal effect in presence of unmeasured confounding. MR is being widely used in epidemiology and other related areas of population science. In this paper, we study statistical inference in the increasingly popular two-sample summary-data MR design. We show a linear model for the observed associations approximately holds in a wide variety of settings when all the genetic variants satisfy the exclusion restriction assumption, or in genetic terms, when there is no pleiotropy. In this scenario, we derive a maximum profile likelihood estimator with provable consistency and asymptotic normality. However, through analyzing real datasets, we find strong evidence of both systematic and idiosyncratic pleiotropy in MR, echoing the omnigenic model of complex traits that is recently proposed in genetics. We model the systematic pleiotropy by a random effects model, where no genetic variant satisfies the exclusion restriction condition exactly. In this case, we propose a consistent and asymptotically normal estimator by adjusting the profile score. We then tackle the idiosyncratic pleiotropy by robustifying the adjusted profile score. We demonstrate the robustness and efficiency of the proposed methods using several simulated and real datasets. © Institute of Mathematical Statistics, 2020.
+KW  - Causal inference
+KW  - Errors in variables
+KW  - Limited information maximum likelihood
+KW  - Path analysis
+KW  - Pleiotropy effects
+KW  - Weak instruments
+PB  - Institute of Mathematical Statistics
+SN  - 00905364 (ISSN)
+LA  - English
+J2  - Ann. Stat.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 441
+ER  -
+
+TY  - JOUR
+AU  - Haycock, P.C.
+AU  - Burgess, S.
+AU  - Wade, K.H.
+AU  - Bowden, J.
+AU  - Relton, C.
+AU  - Smith, G.D.
+TI  - Best (but oft-forgotten) practices: The design, analysis, and interpretation of Mendelian randomization studies
+PY  - 2016
+T2  - American Journal of Clinical Nutrition
+VL  - 103
+IS  - 4
+SP  - 965
+EP  - 978
+DO  - 10.3945/ajcn.115.118216
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84962675367&doi=10.3945%2fajcn.115.118216&partnerID=40&md5=b3247b06c387b0c8670cb785431f1ce4
+AD  - Medical Research Council (MRC) Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Department of Public Health and Primary Care, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, United Kingdom
+AB  - Mendelian randomization (MR) is an increasingly important tool for appraising causality in observational epidemiology. The technique exploits the principle that genotypes are not generally susceptible to reverse causation bias and confounding, reflecting their fixed nature and Mendel's first and second laws of inheritance. The approach is, however, subject to important limitations and assumptions that, if unaddressed or compounded by poor study design, can lead to erroneous conclusions. Nevertheless, the advent of 2-sample approaches (in which exposure and outcome are measured in separate samples) and the increasing availability of open-access data from large consortia of genome-wide association studies and population biobanks mean that the approach is likely to become routine practice in evidence synthesis and causal inference research. In this article we provide an overview of the design, analysis, and interpretation of MR studies, with a special emphasis on assumptions and limitations. We also consider different analytic strategies for strengthening causal inference. Although impossible to prove causality with any single approach, MR is a highly cost-effective strategy for prioritizing intervention targets for disease prevention and for strengthening the evidence base for public health policy. © 2016 American Society for Nutrition.
+KW  - Causality
+KW  - Confounding
+KW  - Evidence synthesis
+KW  - Mendelian randomization
+KW  - Observational epidemiology
+KW  - Reverse causation
+KW  - Coronary Artery Disease
+KW  - Cost-Benefit Analysis
+KW  - Databases, Genetic
+KW  - Genetic Association Studies
+KW  - Genotype
+KW  - Humans
+KW  - Interleukin-6
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Receptors, Interleukin-6
+KW  - Reproducibility of Results
+KW  - Research Design
+KW  - Risk Factors
+KW  - interleukin 6
+KW  - interleukin 6 receptor
+KW  - cost effectiveness analysis
+KW  - epidemiology
+KW  - genetic association
+KW  - genetic polymorphism
+KW  - genetic variability
+KW  - genotype
+KW  - health care policy
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - prophylaxis
+KW  - public health
+KW  - Review
+KW  - coronary artery disease
+KW  - cost benefit analysis
+KW  - genetic association study
+KW  - genetic database
+KW  - genetics
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - metabolism
+KW  - methodology
+KW  - procedures
+KW  - reproducibility
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - American Society for Nutrition
+SN  - 00029165 (ISSN)
+C2  - 26961927
+LA  - English
+J2  - Am. J. Clin. Nutr.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 418; Correspondence Address: P.C. Haycock; Medical Research Council (MRC) Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: philip.haycock@Bristol.ac.uk; CODEN: AJCNA
+ER  -
+
+TY  - JOUR
+AU  - Choi, K.W.
+AU  - Chen, C.-Y.
+AU  - Stein, M.B.
+AU  - Klimentidis, Y.C.
+AU  - Wang, M.-J.
+AU  - Koenen, K.C.
+AU  - Smoller, J.W.
+AU  - Wray, N.R.
+AU  - Ripke, S.
+AU  - Mattheisen, M.
+AU  - Trzaskowski, M.
+AU  - Byrne, E.M.
+AU  - Abdellaoui, A.
+AU  - Adams, M.J.
+AU  - Agerbo, E.
+AU  - Air, T.M.
+AU  - Andlauer, T.F.M.
+AU  - Bacanu, S.-A.
+AU  - Bækvad-Hansen, M.
+AU  - Beekman, A.T.F.
+AU  - Bigdeli, T.B.
+AU  - Binder, E.B.
+AU  - Blackwood, D.H.R.
+AU  - Bryois, J.
+AU  - Buttenschøn, H.N.
+AU  - Bybjerg-Grauholm, J.
+AU  - Cai, N.
+AU  - Castelao, E.
+AU  - Christensen, J.H.
+AU  - Clarke, T.-K.
+AU  - Coleman, J.R.I.
+AU  - Colodro-Conde, L.
+AU  - Couvy-Duchesne, B.
+AU  - Craddock, N.
+AU  - Crawford, G.E.
+AU  - Davies, G.
+AU  - Deary, I.J.
+AU  - Degenhardt, F.
+AU  - Derks, E.M.
+AU  - Direk, N.
+AU  - Dolan, C.V.
+AU  - Dunn, E.C.
+AU  - Eley, T.C.
+AU  - Escott-Price, V.
+AU  - Kiadeh, F.F.H.
+AU  - Finucane, H.K.
+AU  - Forstner, A.J.
+AU  - Frank, J.
+AU  - Gaspar, H.A.
+AU  - Gill, M.
+AU  - Goes, F.S.
+AU  - Gordon, S.D.
+AU  - Grove, J.
+AU  - Hall, L.S.
+AU  - Hansen, C.S.
+AU  - Hansen, T.F.
+AU  - Herms, S.
+AU  - Hickie, I.B.
+AU  - Hoffmann, P.
+AU  - Homuth, G.
+AU  - Horn, C.
+AU  - Hottenga, J.-J.
+AU  - Hougaard, D.M.
+AU  - Ising, M.
+AU  - Jansen, R.
+AU  - Jorgenson, E.
+AU  - Knowles, J.A.
+AU  - Kohane, I.S.
+AU  - Kraft, J.
+AU  - Kretzschmar, W.W.
+AU  - Krogh, J.
+AU  - Kutalik, Z.
+AU  - Li, Y.
+AU  - Lind, P.A.
+AU  - MacIntyre, D.J.
+AU  - MacKinnon, D.F.
+AU  - Maier, R.M.
+AU  - Maier, W.
+AU  - Marchini, J.
+AU  - Mbarek, H.
+AU  - McGrath, P.
+AU  - McGuffin, P.
+AU  - Medland, S.E.
+AU  - Mehta, D.
+AU  - Middeldorp, C.M.
+AU  - Mihailov, E.
+AU  - Milaneschi, Y.
+AU  - Milani, L.
+AU  - Mondimore, F.M.
+AU  - Montgomery, G.W.
+AU  - Mostafavi, S.
+AU  - Mullins, N.
+AU  - Nauck, M.
+AU  - Ng, B.
+AU  - Nivard, M.G.
+AU  - Nyholt, D.R.
+AU  - O'Reilly, P.F.
+AU  - Oskarsson, H.
+AU  - Owen, M.J.
+AU  - Painter, J.N.
+AU  - Pedersen, C.B.
+AU  - Pedersen, M.G.
+AU  - Peterson, R.E.
+AU  - Pettersson, E.
+AU  - Peyrot, W.J.
+AU  - Pistis, G.
+AU  - Posthuma, D.
+AU  - Quiroz, J.A.
+AU  - Qvist, P.
+AU  - Rice, J.P.
+AU  - Riley, B.P.
+AU  - Rivera, M.
+AU  - Mirza, S.S.
+AU  - Schoevers, R.
+AU  - Schulte, E.C.
+AU  - Shen, L.
+AU  - Shi, J.
+AU  - Shyn, S.I.
+AU  - Sigurdsson, E.
+AU  - Sinnamon, G.C.B.
+AU  - Smit, J.H.
+AU  - Smith, D.J.
+AU  - Stefansson, H.
+AU  - Steinberg, S.
+AU  - Streit, F.
+AU  - Strohmaier, J.
+AU  - Tansey, K.E.
+AU  - Teismann, H.
+AU  - Teumer, A.
+AU  - Thompson, W.
+AU  - Thomson, P.A.
+AU  - Thorgeirsson, T.E.
+AU  - Traylor, M.
+AU  - Treutlein, J.
+AU  - Trubetskoy, V.
+AU  - Uitterlinden, A.G.
+AU  - Umbricht, D.
+AU  - van der Auwera, S.
+AU  - van Hemert, A.M.
+AU  - Viktorin, A.
+AU  - Visscher, P.M.
+AU  - Wang, Y.
+AU  - Webb, B.T.
+AU  - Weinsheimer, S.M.
+AU  - Wellmann, J.
+AU  - Willemsen, G.
+AU  - Witt, S.H.
+AU  - Wu, Y.
+AU  - Xi, H.S.
+AU  - Yang, J.
+AU  - Zhang, F.
+AU  - Arolt, V.
+AU  - Baune, B.T.
+AU  - Berger, K.
+AU  - Boomsma, D.I.
+AU  - Cichon, S.
+AU  - Dannlowski, U.
+AU  - de Geus, E.J.C.
+AU  - Raymond DePaulo, J.
+AU  - Domenici, E.
+AU  - Domschke, K.
+AU  - Esko, T.
+AU  - Grabe, H.J.
+AU  - Hamilton, S.P.
+AU  - Hayward, C.
+AU  - Heath, A.C.
+AU  - Kendler, K.S.
+AU  - Kloiber, S.
+AU  - Lewis, G.
+AU  - Li, Q.S.
+AU  - Lucae, S.
+AU  - Madden, P.A.F.
+AU  - Magnusson, P.K.
+AU  - Martin, N.G.
+AU  - McIntosh, A.M.
+AU  - Metspalu, A.
+AU  - Mors, O.
+AU  - Mortensen, P.B.
+AU  - Müller-Myhsok, B.
+AU  - Nordentoft, M.
+AU  - Nöthen, M.M.
+AU  - O'Donovan, M.C.
+AU  - Paciga, S.A.
+AU  - Pedersen, N.L.
+AU  - Penninx, B.W.J.H.
+AU  - Perlis, R.H.
+AU  - Porteous, D.J.
+AU  - Potash, J.B.
+AU  - Preisig, M.
+AU  - Rietschel, M.
+AU  - Schaefer, C.
+AU  - Schulze, T.G.
+AU  - Stefansson, K.
+AU  - Tiemeier, H.
+AU  - Uher, R.
+AU  - Völzke, H.
+AU  - Weissman, M.M.
+AU  - Werge, T.
+AU  - Lewis, C.M.
+AU  - Levinson, D.F.
+AU  - Breen, G.
+AU  - Børglum, A.D.
+AU  - Sullivan, P.F.
+TI  - Assessment of bidirectional relationships between physical activity and depression among adults a 2-sample Mendelian randomization study
+PY  - 2019
+T2  - JAMA Psychiatry
+VL  - 76
+IS  - 4
+SP  - 399
+EP  - 408
+DO  - 10.1001/jamapsychiatry.2018.4175
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85060636707&doi=10.1001%2fjamapsychiatry.2018.4175&partnerID=40&md5=bddd751b2b286982134461d15fb9643a
+AD  - Psychiatric and Neurodevelopmental Genetics Unit, Center for Genomic Medicine, Massachusetts General Hospital, 185 Cambridge St, Boston, 02114, MA, United States
+AD  - Department of Psychiatry, Massachusetts General Hospital, Boston, United States
+AD  - Department of Epidemiology, Harvard T. H. Chan School of Public Health, Boston, MA, United States
+AD  - Psychiatric and Neurodevelopmental Genetics Unit, Center for Genomic Medicine, Massachusetts General Hospital, Boston, United States
+AD  - Stanley Center for Psychiatric Research, Broad Institute, Boston, MA, United States
+AD  - Analytic and Translational Genetics Unit, Center for Genomic Medicine, Massachusetts General Hospital, Boston, United States
+AD  - Department of Psychiatry, University of California, San Diego, San diego, United States
+AD  - Veterans Affairs Psychiatry Service, San Diego Healthcare System, San Diego, CA, United States
+AD  - Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, University of Arizona, Tucson, United States
+AD  - BIO5 Institute, University of Arizona, Tucson, United States
+AD  - Institute for Molecular Bioscience and Queensland Brain Institute, University of Queensland, Brisbane, Australia
+AD  - Department of Psychiatry and Psychotherapy, Universitätsmedizin Berlin Campus Charité Mitte, Berlin, Germany
+AD  - Medical and Population Genetics, Broad Institute, Cambridge, United Kingdom
+AD  - Centre for Psychiatry Research, Department of Clinical Neuroscience, Karolinska Institutet, Stockholm, Sweden
+AD  - Department of Biomedicine, iSEQ, Centre for Integrative Sequencing, Aarhus University, Aarhus, Denmark
+AD  - iPSYCH, Lundbeck Foundation Initiative for Integrative Psychiatric Research, Denmark
+AD  - Institute for Molecular Bioscience, University of Queensland, Australia
+AD  - Department of Biological Psychology, EMGO+ Institute for Health and Care Research, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - Division of Psychiatry, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Centre for Integrated Register-based Research and, National Centre for Register-Based Research, Aarhus University, Denmark
+AD  - Discipline of Psychiatry, University of Adelaide, Adelaide, Australia
+AD  - Department of Translational Research in Psychiatry, Max Planck Institute of Psychiatry, Munich Cluster for Systems Neurology(SyNergy), Munich, Germany
+AD  - Department of Psychiatry, Virginia Commonwealth University, Richmond, United States
+AD  - Center for Neonatal Screening, Department for Congenital Disorders, Statens Serum Institut, Copenhagen, Denmark
+AD  - Department of Psychiatry, Vrije Universiteit Medical Center and GGZ in Geest, Amsterdam, Netherlands
+AD  - Virginia Institute for Psychiatric and Behavior Genetics, Richmond, United States
+AD  - Department of Psychiatry and Behavioral Sciences, Emory University, School of Medicine, Atlanta, GA, United States
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Sweden
+AD  - Department of Clinical Medicine, Translational Neuropsychiatry Unit, Aarhus University, Denmark
+AD  - Human Genetics, Wellcome Trust Sanger Institute, Cambridge, United Kingdom
+AD  - Statistical Genomics and Systems Genetics, European Bioinformatics Institute, Cambridge, United Kingdom
+AD  - Department of Psychiatry, University Hospital of Lausanne, Prilly, Switzerland
+AD  - MRC Social Genetic and Developmental Psychiatry Centre, King's College London, London, United Kingdom
+AD  - Geneticsand Computational Biology, QIMR Berghofer Medical Research Institute, Herston, Australia
+AD  - Centre for Advanced Imaging and Queensland Brain Institute, University of Queensland, Saint-Lucia, Australia
+AD  - Psychological Medicine, Cardiff University, Cardiff, United Kingdom
+AD  - Center for Genomic and Computational Biology, Department of Pediatrics, Division of Medical Genetics, Duke University, Durham, NC, United States
+AD  - Centre for Cognitive Ageing and Cognitive Epidemiology, University of Edinburgh, United Kingdom
+AD  - Institute of Human Genetics and Life&Brain Center, Department of Genomics, Universityof Bonn, Bonn, Germany
+AD  - Department of Genetics and Computational Biology, QIMR Berghofer Medical Research Institute, Australia
+AD  - Departmentof Epidemiology, Erasmus MC, Rotterdam, Netherlands
+AD  - Department of Psychiatry and Psychiatric and Neurodevelopmental Genetics Unit, Massachusetts General Hospital, Boston, United States
+AD  - Neuroscience and Mental Health, Cardiff University, United Kingdom
+AD  - Bioinformatics, University of British Columbia, Vancouver, BC, Canada
+AD  - Department of Mathematics, Massachusetts Institute of Technology, Cambridge, United States
+AD  - Department of Psychiatry, Human Genomics Research Group
+AD  - Department of Biomedicine, University of Basel, Basel, Switzerland
+AD  - Department of Genetic Epidemiology in Psychiatry, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University, Mannheim, Germany
+AD  - Department of Psychiatry, Trinity College Dublin, Dublin, Ireland
+AD  - Department of Psychiatry and Behavioral Sciences, Johns Hopkins University, Baltimore, MD, United States
+AD  - Department of Biomedicine, iSEQ, Centre for Integrative Sequencing, Bioinformatics Research Centre, Aarhus University, Denmark
+AD  - Institute of Genetic Medicine, Newcastle University, Newcastle upon Tyne, United Kingdom
+AD  - Danish Headache Centre, Department of Neurology, Rigshospitalet, Glostrup, Denmark
+AD  - Institute of Biological Psychiatry, Mental Health Center Sct. Hans, Mental Health Services Capital Region of Denmark, Copenhagen, Denmark
+AD  - University of Basel, Switzerland
+AD  - Brain and Mind Centre, University of Sydney, Sydney, Australia
+AD  - Interfaculty Institute for Genetics and Functional Genomics, Department of Functional Genomics, University Medicine
+AD  - Ernst Moritz Arndt University Greifswald, Greifswald, Germany
+AD  - Roche Pharmaceutical Research and Early Development, Pharmaceutical Sciences, Roche Innovation Center Basel, F. Hoffmann-La Roche Ltd, Basel, Switzerland
+AD  - Max Planck Institute of Psychiatry
+AD  - Division of Research, Kaiser Permanente Northern California, Oakland, United States
+AD  - Psychiatry and The Behavioral Sciences, University of Southern California, Los Angeles, United States
+AD  - Department of Biomedical Informatics, Harvard Medical School, Department of Medicine, Brigham and Women's Hospital, United States
+AD  - Informatics Program, Boston Children's Hospital, Boston, MA, United States
+AD  - Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - Department of Endocrinology, Herlev University Hospital, University of Copenhagen, Denmark
+AD  - Institute of Social and Preventive Medicine, University Hospital of Lausanne, Switzerland
+AD  - Swiss Institute of Bioinformatics, Lausanne, Switzerland
+AD  - Division of Psychiatry, Centre for Clinical Brain Sciences
+AD  - Department of Psychiatry and Psychotherapy, University of Bonn, Germany
+AD  - Queensland Brain Institute, University of Queensland, Australia
+AD  - Department of Statistics, University of Oxford, United Kingdom
+AD  - Department of Psychiatry, Columbia University College of Physicians and Surgeons, New York, NY, United States
+AD  - School of Psychology and Counseling, Queensland University of Technology, Brisbane, Australia
+AD  - Child and Youth Mental Health Service, Children's Health Queensland Hospital and Health Service, South Brisbane, Australia
+AD  - Child Health Research Centre, University of Queensland, Australia
+AD  - Estonian Genome Center, University of Tartu, Tartu, Estonia
+AD  - Medical Genetics and Statistics, University of British Columbia, Canada
+AD  - German Centre for Cardiovascular Research, Partner Site Greifswald, Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Greifswald, Greifswald, Germany
+AD  - Department of Statistics, University of British Columbia, Canada
+AD  - Institute of Health and Biomedical Innovation, Queensland University of Technology, Brisbane, Australia
+AD  - Humus, Reykjavik, Iceland
+AD  - MRC Centre for Neuropsychiatric Genetics and Genomics, Cardiff University, United Kingdom
+AD  - Department of Psychiatry and, Virginia Institute for Psychiatric and Behavioral Genetics, Virginia Commonwealth University, United States
+AD  - Clinical Genetics and Complex Trait Genetics, Vrije Universiteit Medical Center, Amsterdam, Netherlands
+AD  - Solid Biosciences, Boston, United States
+AD  - Department of Psychiatry, Washington University in Saint Louis, School of Medicine, Saint Louis, MO, United States
+AD  - Department of Biochemistry and Molecular Biology II, Institute of Neurosciences, Center for Biomedical Research, University of Granada, Granada, Spain
+AD  - Department of Epidemiology, Erasmus MC
+AD  - Department of Psychiatry, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - Department of Psychiatry and Psychotherapy, Institute of Psychiatric Phenomicsand Genomics, Medical Centerof the University of Munich, Campus Innenstadt, Munich, Germany
+AD  - Division of Cancer Epidemiology and Genetics, National Cancer Institute, Bethesda, MD, United States
+AD  - Behavioral Health Services, Kaiser Permanente Washington, Seattle, United States
+AD  - Faculty of Medicine, Department of Psychiatry, University of Iceland, Reykjavik, Iceland
+AD  - School of Medicine and Dentistry, James Cook University, Townsville, Australia
+AD  - Institute of Health and Wellbeing, University of Glasgow, Glasgow, United Kingdom
+AD  - deCODE Genetics/Amgen, Reykjavik, Iceland
+AD  - College of Biomedical and Life Sciences, Cardiff University, United Kingdom
+AD  - Institute of Epidemiology and Social Medicine, University of Münster, Münster, Germany
+AD  - Institute for Community Medicine, University Medicine Greifswald, Germany
+AD  - KG Jebsen Centre for Psychosis Research, Norway Division of Mental Health and Addiction, Oslo University Hospital, Oslo, Norway
+AD  - Medical Genetics Section, Centre for Genomics and Experimental Medicine, Institute of Genetics and Molecular Medicine, University of Edinburgh, United Kingdom
+AD  - Clinical Neurosciences, University of Cambridge, Cambridge, United Kingdom
+AD  - Internal Medicine, Erasmus MC
+AD  - Roche Pharmaceutical Research and Early Development, Neuroscience, Ophthalmology and Rare Diseases Discovery and Translational Medicine Area, Roche Innovation Center Basel, F. Hoffmann-La Roche Ltd
+AD  - Departmentof Psychiatry and Psychotherapy, University Medicine Greifswald, Germany
+AD  - Department of Psychiatry, Leiden University Medical Center, Leiden, Netherlands
+AD  - Virginia Institute of Psychiatric and Behavioral Genetics, Virginia Commonwealth University, United States
+AD  - Computational Sciences Center of Emphasis Pfizer Global Research and Development, Cambridge, MA, United States
+AD  - Department of Psychiatry, University of Münster, Germany
+AD  - Institute of Human Genetics, University of Bonn, Germany
+AD  - Institute of Medical Genetics and Pathology, University Hospital Basel, University of Basel, Switzerland
+AD  - Institute of Neuroscience and Medicine, Research Center Juelich, Denmark
+AD  - Amsterdam Public Health Institute, Vrije Universiteit Medical Center, Amsterdam, Netherlands
+AD  - Department of Psychiatryand Behavioral Sciences, Johns Hopkins University, United States
+AD  - Centre for Integrative Biology, Università degli Studi di Trento, Trento, Italy
+AD  - Department of Psychiatry and Psychotherapy, Medical Center, Faculty of Medicine, University of Freiburg, Freiburg, Germany
+AD  - Department of Psychiatry and Psychotherapy, University Medicine Greifswald, Germany
+AD  - Psychiatry, Kaiser Permanente Northern California, San Francisco, United States
+AD  - Medical Research Council Human Genetics Unit, Institute of Genetics and Molecular Medicine, University of Edinburgh, United Kingdom
+AD  - Max Planck Institute of Psychiatry, Department of Psychiatry, University of Toronto, Canada
+AD  - Centre for Addiction and Mental Health, Toronto, ON, Canada
+AD  - Division of Psychiatry, University College London, United Kingdom
+AD  - Neuroscience Therapeutic Area, Janssen Research and Development, LLC, Titusville, NJ, United States
+AD  - Departmentof Psychiatry, Washington University in Saint Louis, School of Medicine, United States
+AD  - Division of Psychiatry, Centre for Cognitive Ageing and Cognitive Epidemiology, University of Edinburgh, United Kingdom
+AD  - Estonian Genome Center, Institute of Molecular and Cell Biology, University of Tartu, Estonia
+AD  - Psychosis Research Unit, Aarhus University Hospital, Denmark
+AD  - Department of Translational Research in Psychiatry, Max Planck Institute of Psychiatry, Munich Cluster for Systems Neurology (SyNergy), University of Liverpool, Liverpool, United Kingdom
+AD  - Mental Health Center Copenhagen, Copenhagen University Hospital, Denmark
+AD  - Human Genetics and Computational Biomedicine, Pfizer Global Research and Development, Groton, CT, United States
+AD  - Department of Psychiatry, Massachusetts General Hospital, United States
+AD  - Department of Psychiatry, Harvard Medical School, United States
+AD  - Department of Psychiatry, University of Iowa, Iowa City, United States
+AD  - Institute of Psychiatric Phenomics and Genomics, Medical Center of the University of Munich, Campus Innenstadt, Munich, Germany
+AD  - Department of Psychiatry and Psychotherapy, University Medical Center Göttingen, Germany
+AD  - Human Genetics Branch, National Institute of Mental Health, Division of Intramural Research Programs, Bethesda, United States
+AD  - Faculty of Medicine, University of Iceland, Iceland
+AD  - Epidemiology and Child and Adolescent Psychiatry and Psychiatry, Erasmus MC
+AD  - Psychiatry, Dalhousie University, Halifax, NS, Canada
+AD  - Division of Epidemiology, New York State Psychiatric Institute, New York, United States
+AD  - Department of Clinical Medicine, University of Copenhagen, Denmark
+AD  - Department of Medical and Molecular Genetics, King's College London, United Kingdom
+AD  - Psychiatry and Behavioral Sciences, Stanford University, Stanford, CA, United States
+AD  - MRC Social Genetic and Developmental Psychiatry Centre, NIHR BRC for Mental Health, King's College London, United Kingdom
+AD  - Department of Genetics and Psychiatry, University of North Carolina, Chapel Hill, United States
+AB  - IMPORTANCE Increasing evidence shows that physical activity is associated with reduced risk for depression, pointing to a potential modifiable target for prevention. However, the causality and direction of this association are not clear; physical activity may protect against depression, and/or depression may result in decreased physical activity. OBJECTIVE To examine bidirectional relationships between physical activity and depression using a genetically informed method for assessing potential causal inference. DESIGN, SETTING, AND PARTICIPANTS This 2-sample mendelian randomization (MR) used independent top genetic variants associated with 2 physical activity phenotypes-self-reported (n = 377 234) and objective accelerometer-based (n = 91 084)-and with major depressive disorder (MDD) (n = 143 265) as genetic instruments from the largest available, nonoverlapping genome-wide association studies (GWAS). GWAS were previously conducted in diverse observational cohorts, including the UK Biobank (for physical activity) and participating studies in the Psychiatric Genomics Consortium (for MDD) among adults of European ancestry. Mendelian randomization estimates from each genetic instrument were combined using inverse variance weighted meta-analysis, with alternate methods (eg, weighted median, MR Egger, MR-Pleiotropy Residual Sum and Outlier [PRESSO]) and multiple sensitivity analyses to assess horizontal pleiotropy and remove outliers. Data were analyzed from May 10 through July 31, 2018. MAIN OUTCOMES AND MEASURES MDD and physical activity. RESULTS GWAS summary data were available for a combined sample size of 611 583 adult participants. Mendelian randomization evidence suggested a protective relationship between accelerometer-based activity and MDD (odds ratio [OR], 0.74 for MDD per 1-SD increase in mean acceleration; 95% CI, 0.59-0.92; P =.006). In contrast, there was no statistically significant relationship between MDD and accelerometer-based activity (β = −0.08 in mean acceleration per MDD vs control status; 95% CI, −0.47 to 0.32; P =.70). Furthermore, there was no significant relationship between self-reported activity and MDD (OR, 1.28 for MDD per 1-SD increase in metabolic-equivalent minutes of reported moderate-to-vigorous activity; 95% CI, 0.57-3.37; P =.48), or between MDD and self-reported activity (β = 0.02 per MDD in standardized metabolic-equivalent minutes of reported moderate-to-vigorous activity per MDD vs control status; 95% CI, −0.008 to 0.05; P =.15). CONCLUSIONS AND RELEVANCE Using genetic instruments identified from large-scale GWAS, robust evidence supports a protective relationship between objectively assessed-but not self-reported-physical activity and the risk for MDD. Findings point to the importance of objective measurement of physical activity in epidemiologic studies of mental health and support the hypothesis that enhancing physical activity may be an effective prevention strategy for depression. © 2019 American Medical Association. All rights reserved.
+KW  - Accelerometry
+KW  - Adult
+KW  - Case-Control Studies
+KW  - Depressive Disorder, Major
+KW  - Exercise
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Protective Factors
+KW  - Self Report
+KW  - acceleration
+KW  - adult
+KW  - Article
+KW  - biobank
+KW  - causality
+KW  - controlled study
+KW  - depression
+KW  - disease association
+KW  - European
+KW  - evidence based practice
+KW  - genetic association
+KW  - genetic risk
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - high risk population
+KW  - human
+KW  - independent variable
+KW  - major clinical study
+KW  - major depression
+KW  - Mendelian randomization analysis
+KW  - mental patient
+KW  - metabolic equivalent
+KW  - phenotype
+KW  - physical activity
+KW  - pleiotropy
+KW  - self report
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - United Kingdom
+KW  - accelerometry
+KW  - case control study
+KW  - exercise
+KW  - genetics
+KW  - meta analysis
+KW  - pathophysiology
+KW  - physiology
+KW  - protection
+PB  - American Medical Association
+SN  - 2168622X (ISSN)
+C2  - 30673066
+LA  - English
+J2  - JAMA Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 492
+ER  -
+
+TY  - JOUR
+AU  - Richardson, T.G.
+AU  - Sanderson, E.
+AU  - Palmerid, T.M.
+AU  - Korpelaid, M.A.
+AU  - Ference, B.A.
+AU  - Smith, G.D.
+AU  - Holmes, M.V.
+TI  - Evaluating the relationship between circulating lipoprotein lipids and apolipoproteins with risk of coronary heart disease: A multivariable Mendelian randomisation analysis
+PY  - 2020
+T2  - PLoS Medicine
+VL  - 17
+IS  - 3
+C7  - e1003062
+DO  - 10.1371/JOURNAL.PMED.1003062
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85082281133&doi=10.1371%2fJOURNAL.PMED.1003062&partnerID=40&md5=00a45cd97322ac156e71eda1aed0eb50
+AD  - Medical Research Council Integrative Epidemiology Unit, United Kingdom, University of Bristol, Bristol, United Kingdom
+AD  - United Kingdom, Barley House, University of Bristol, Population Health Sciences, Oakfield Grove, Bristol, United Kingdom
+AD  - Baker Heart and Diabetes Institute, Systems Epidemiology, Melbourne, Australia
+AD  - Faculty of Medicine, University of Oulu and Biocenter Oulu, Computational Medicine, Oulu, Finland
+AD  - Nmr Metabolomics Laboratory, School of Pharmacy, University of Eastern Finland, Kuopio, Finland
+AD  - Department of Epidemiology and Preventive Medicine, Monash University, Alfred Hospital, Nursing and Health Sciences, Melbourne, Australia
+AD  - Centre for Naturally Randomized Trials, United Kingdom, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Public Health and Primary Care, MRC/BHF Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, United Kingdom, University of Oxford, Oxford, United Kingdom
+AD  - Nuffield Department of Population Health, United Kingdom, University of Oxford, Oxford, United Kingdom
+AB  - Circulating lipoprotein lipids cause coronary heart disease (CHD). However, the precise way in which one or more lipoprotein lipid-related entities account for this relationship remains unclear. Using genetic instruments for lipoprotein lipid traits implemented through multivariable Mendelian randomisation (MR), we sought to compare their causal roles in the aetiology of CHD. Methods and findings We conducted a genome-wide association study (GWAS) of circulating non-fasted lipoprotein lipid traits in the UK Biobank (UKBB) for low-density lipoprotein (LDL) cholesterol, triglycerides, and apolipoprotein B to identify lipid-associated single nucleotide polymorphisms (SNPs). Using data from CARDIoGRAMplusC4D for CHD (consisting of 60,801 cases and 123,504 controls), we performed univariable and multivariable MR analyses. Similar GWAS and MR analyses were conducted for high-density lipoprotein (HDL) cholesterol and apolipoprotein A-I. The GWAS of lipids and apolipoproteins in the UKBB included between 393,193 and 441,016 individuals in whom the mean age was 56.9 y (range 39-73 y) and of whom 54.2% were women. The mean (standard deviation) lipid concentrations were LDL cholesterol 3.57 (0.87) mmol/L and HDL cholesterol 1.45 (0.38) mmol/L, and the median triglycerides was 1.50 (IQR = 1.11) mmol/L. The mean (standard deviation) values for apolipoproteins B and A-I were 1.03 (0.24) g/L and 1.54 (0.27) g/L, respectively. The GWAS identified multiple independent SNPs associated at P < 5 × 10-8 for LDL cholesterol (220), apolipoprotein B (n = 255), triglycerides (440), HDL cholesterol (534), and apolipoprotein A-I (440). Between 56%-93% of SNPs identified for each lipid trait had not been previously reported in large-scale GWASs. Almost half (46%) of these SNPs were associated at P < 5 × 10-8 with more than one lipid-related trait. Assessed individually using MR, LDL cholesterol (odds ratio [OR] 1.66 per 1-standard-deviation-higher trait; 95% CI: 1.49-1.86; P < 0.001), triglycerides (OR 1.34; 95% CI: 1.25-1.44; P < 0.001) and apolipoprotein B (OR 1.73; 95% CI: 1.56-1.91; P < 0.001) had effect estimates consistent with a higher risk of CHD. In multivariable MR, only apolipoprotein B (OR 1.92; 95% CI: 1.31-2.81; P < 0.001) retained a robust effect, with the estimate for LDL cholesterol (OR 0.85; 95% CI: 0.57-1.27; P = 0.44) reversing and that of triglycerides (OR 1.12; 95% CI: 1.02-1.23; P = 0.01) becoming weaker. Individual MR analyses showed a 1-standard-deviation-higher HDL cholesterol (OR 0.80; 95% CI: 0.75-0.86; P < 0.001) and apolipoprotein A-I (OR 0.83; 95% CI: 0.77-0.89; P < 0.001) to lower the risk of CHD, but these effect estimates attenuated substantially to the null on accounting for apolipoprotein B. A limitation is that, owing to the nature of lipoprotein metabolism, measures related to the composition of lipoprotein particles are highly correlated, creating a challenge in making exclusive interpretations on causation of individual components. Conclusions These findings suggest that apolipoprotein B is the predominant trait that accounts for the aetiological relationship of lipoprotein lipids with risk of CHD. © 2020 Richardson et al.
+KW  - Adult
+KW  - Aged
+KW  - Apolipoprotein A-I
+KW  - Apolipoprotein B-100
+KW  - Biomarkers
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Coronary Disease
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Multivariate Analysis
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Assessment
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - apolipoprotein
+KW  - apolipoprotein A1
+KW  - apolipoprotein B
+KW  - high density lipoprotein cholesterol
+KW  - lipoprotein
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - APOA1 protein, human
+KW  - APOB protein, human
+KW  - apolipoprotein A1
+KW  - apolipoprotein B100
+KW  - biological marker
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - female
+KW  - gene frequency
+KW  - genetic analysis
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - ischemic heart disease
+KW  - lipoprotein metabolism
+KW  - phenotype
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - blood
+KW  - coronary artery disease
+KW  - genetic predisposition
+KW  - genetics
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - multivariate analysis
+KW  - risk assessment
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Public Library of Science
+SN  - 15491277 (ISSN)
+C2  - 32203549
+LA  - English
+J2  - PLoS Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 531
+ER  -
+
+TY  - JOUR
+AU  - Sanderson, E.
+TI  - Multivariable mendelian randomization and mediation
+PY  - 2021
+T2  - Cold Spring Harbor Perspectives in Medicine
+VL  - 11
+IS  - 2
+C7  - a038984
+SP  - 1
+EP  - 12
+DO  - 10.1101/cshperspect.a038984
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85099841326&doi=10.1101%2fcshperspect.a038984&partnerID=40&md5=6148554fe0238c795a8d82c3aa6ae998
+AD  - MRC Integrative Epidemiology Unit, Population Health Sciences, University of Bristol, Clifton, BS8 2BN, United Kingdom
+AB  - Mendelian randomization (MR) is the use of genetic variants associated with an exposure to estimate the causal effect of that exposure on an outcome. Mediation analysis is the method of decomposing the effects of an exposure on an outcome, which act directly, and those that act via mediating variables. These effects are decomposed through the use of multivariable analysis to estimate the causal effects between three types of variables: exposures, mediators, and an outcome. Multivariable MR (MVMR) is a recent extension to MR that uses genetic variants associated with multiple, potentially related exposures to estimate the effect of each exposure on a single outcome. MVMR allows for equivalent analysis to mediation within the MR framework and therefore can also be used to estimate mediation effects. This approach retains the benefits of using genetic instruments for causal inference, such as avoiding bias due to confounding, while allowing for estimation of the different effects required for mediation analysis. This review explains MVMR, what is estimated when one exposure is a mediator of another in an MVMR estimation, and how MR and MVMR can therefore be used to estimate mediated effects. This review then goes on to consider the advantages and limita-tions of using MR and MVMR to conduct mediation analysis. © 2021 Cold Spring Harbor Laboratory Press; all rights reserved;.
+KW  - Causality
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mediation Analysis
+KW  - Mendelian Randomization Analysis
+KW  - article
+KW  - controlled study
+KW  - decomposition
+KW  - genetic variability
+KW  - human
+KW  - mediation analysis
+KW  - Mendelian randomization analysis
+KW  - randomized controlled trial
+KW  - causality
+KW  - genetic variation
+KW  - Mendelian randomization analysis
+KW  - procedures
+PB  - Cold Spring Harbor Laboratory Press
+SN  - 21571422 (ISSN)
+C2  - 32341063
+LA  - English
+J2  - Cold Spring Harbor Perspect. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 443; Correspondence Address: E. Sanderson; MRC Integrative Epidemiology Unit, Population Health Sciences, University of Bristol, Clifton, BS8 2BN, United Kingdom; email: Eleanor.sanderson@bristol.ac.uk
+ER  -
+

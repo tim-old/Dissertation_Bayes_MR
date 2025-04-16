@@ -1,0 +1,762 @@
+﻿TY  - JOUR
+AU  - Lai, F.Y.
+AU  - Nath, M.
+AU  - Hamby, S.E.
+AU  - Thompson, J.R.
+AU  - Nelson, C.P.
+AU  - Samani, N.J.
+TI  - Adult height and risk of 50 diseases: A combined epidemiological and genetic analysis
+PY  - 2018
+T2  - BMC Medicine
+VL  - 16
+IS  - 1
+C7  - 187
+DO  - 10.1186/s12916-018-1175-7
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85055462786&doi=10.1186%2fs12916-018-1175-7&partnerID=40&md5=6815ed2cb668a469a8ba0dc968a5f680
+AD  - Department of Cardiovascular Sciences, University of Leicester, Leicester, United Kingdom
+AD  - NIHR Leicester Biomedical Research Centre, Glenfield Hospital, Leicester, United Kingdom
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AB  - Background: Adult height is associated with risk of several diseases, but the breadth of such associations and whether these associations are primary or due to confounding are unclear. We examined the association of adult height with 50 diseases spanning multiple body systems using both epidemiological and genetic approaches, the latter to identify un-confounded associations and possible underlying mechanisms. Methods: We examined the associations for adult height (using logistic regression adjusted for potential confounders) and genetically determined height (using a two-sample Mendelian randomisation approach with height-associated genetic variants as instrumental variables) in 417,434 individuals of white ethnic background participating in the UK Biobank. We undertook pathway analysis of height-associated genes to identify biological processes that could link height and specific diseases. Results: Height was associated with 32 diseases and genetically determined height associated with 12 diseases. Of these, 11 diseases showed a concordant association in both analyses, with taller height associated with reduced risks of coronary artery disease (odds ratio per standard deviation (SD) increase in height ORepi = 0.80, 95% CI 0.78-0.81; OR per SD increase in genetically determined height ORgen = 0.86, 95% CI 0.82-0.90), hypertension (ORepi = 0.83, 95% CI 0.82-0.84; ORgen = 0.88, 95% CI 0.85-0.91), gastro-oesophageal reflux disease (ORepi = 0.85, 95% CI 0.84-0.86; ORgen = 0.94, 95% CI 0.92-0.97), diaphragmatic hernia (ORepi = 0.81, 95% CI 0.79-0.82; ORgen = 0.91, 95% CI 0.88-0.94), but increased risks of atrial fibrillation (ORepi = 1.42, 95% CI 1.38-1.45; ORgen = 1.33, 95% CI 1.26-1.40), venous thromboembolism (ORepi = 1.18, 95% CI 1.16-1.21; ORgen = 1.15, 95% CI 1.11-1.19), intervertebral disc disorder (ORepi = 1.15, 95% CI 1.13-1.18; ORgen = 1.14, 95% CI 1.09-1.20), hip fracture (ORepi = 1.19, 95% CI 1.12-1.26; ORgen = 1.27, 95% CI 1.17-1.39), vasculitis (ORepi = 1.15, 95% CI 1.11-1.19; ORgen = 1.20, 95% CI 1.14-1.28), cancer overall (ORepi = 1.09, 95% CI 1.08-1.11; ORgen = 1.06, 95% CI 1.04-1.08) and breast cancer (ORepi = 1.08, 95% CI 1.06-1.10; ORgen = 1.07, 95% CI 1.03-1.11). Pathway analysis showed multiple height-associated pathways associating with individual diseases. Conclusions: Adult height is associated with risk of a range of diseases. We confirmed previously reported height associations for coronary artery disease, atrial fibrillation, venous thromboembolism, intervertebral disc disorder, hip fracture and cancer and identified potential novel associations for gastro-oesophageal reflux disease, diaphragmatic hernia and vasculitis. Multiple biological mechanisms affecting height may affect the risks of these diseases. © 2018 The Author(s).
+KW  - Adult height
+KW  - Disease risk
+KW  - Genetically determined height
+KW  - Instrumental variables
+KW  - Mendelian randomisation
+KW  - Adult
+KW  - Aged
+KW  - Body Height
+KW  - Disease
+KW  - Female
+KW  - Genetic Testing
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Risk Factors
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - atrial fibrillation
+KW  - body height
+KW  - breast cancer
+KW  - Caucasian
+KW  - controlled study
+KW  - coronary artery disease
+KW  - diaphragm hernia
+KW  - disease association
+KW  - female
+KW  - gastroesophageal reflux
+KW  - genetic association
+KW  - genetic variability
+KW  - hip fracture
+KW  - human
+KW  - intervertebral disk disease
+KW  - major clinical study
+KW  - male
+KW  - malignant neoplasm
+KW  - risk reduction
+KW  - United Kingdom
+KW  - vasculitis
+KW  - venous thromboembolism
+KW  - body height
+KW  - diseases
+KW  - genetic screening
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - procedures
+KW  - risk factor
+PB  - BioMed Central Ltd.
+SN  - 17417015 (ISSN)
+C2  - 30355295
+LA  - English
+J2  - BMC Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 73; Correspondence Address: N.J. Samani; Department of Cardiovascular Sciences, University of Leicester, Leicester, United Kingdom; email: njs@le.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Gormley, M.
+AU  - Dudding, T.
+AU  - Sanderson, E.
+AU  - Martin, R.M.
+AU  - Thomas, S.
+AU  - Tyrrell, J.
+AU  - Ness, A.R.
+AU  - Brennan, P.
+AU  - Munafò, M.
+AU  - Pring, M.
+AU  - Boccia, S.
+AU  - Olshan, A.F.
+AU  - Diergaarde, B.
+AU  - Hung, R.J.
+AU  - Liu, G.
+AU  - Davey Smith, G.
+AU  - Richmond, R.C.
+TI  - A multivariable Mendelian randomization analysis investigating smoking and alcohol consumption in oral and oropharyngeal cancer
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 6071
+DO  - 10.1038/s41467-020-19822-6
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096776478&doi=10.1038%2fs41467-020-19822-6&partnerID=40&md5=bf6b75f059531afd822a5e8bc71fc348
+AD  - MRC Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 1TL, United Kingdom
+AD  - Bristol Dental Hospital and School, University of Bristol, Bristol, BS1 2LY, United Kingdom
+AD  - Department of Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 1TL, United Kingdom
+AD  - University Hospitals Bristol and Weston NHS Foundation Trust National Institute for Health Research Bristol Biomedical Research Centre, University of Bristol, Bristol, BS1 3NU, United Kingdom
+AD  - RD&E Hospital, University of Exeter Medical School, RILD Building, Exeter, United Kingdom
+AD  - Genetic Epidemiology Group, World Health Organization, International Agency for Research on Cancer, Lyon, France
+AD  - School of Psychological Science, Faculty of Life Sciences, University of Bristol, Bristol, BS8 1TL, United Kingdom
+AD  - Section of Hygiene, University Department of Life Sciences and Public Health, Università Cattolica del Sacro Cuore, Roma, Italy
+AD  - Department of Woman and Child Health and Public Health-Public Health Area, Fondazione Policlinico Universitario A. Gemelli IRCCS, Roma, Italy
+AD  - Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina, Chapel Hill, 27599, NC, United States
+AD  - Department of Human Genetics, Graduate School of Public Health, University of Pittsburgh, and UPMC Hillman Cancer Center, Pittsburgh, 15260, PA, United States
+AD  - Prosserman Centre for Population Health Research, Lunenfeld-Tanenbaum Research Institute, Sinai Health System, Toronto, Canada
+AD  - Dalla Lana School of Public Health, University of Toronto, Toronto, Canada
+AD  - Princess Margaret Cancer Centre, Toronto, Canada
+AB  - The independent effects of smoking and alcohol in head and neck cancer are not clear, given the strong association between these risk factors. Their apparent synergistic effect reported in previous observational studies may also underestimate independent effects. Here we report multivariable Mendelian randomization performed in a two-sample approach using summary data on 6,034 oral/oropharyngeal cases and 6,585 controls from a recent genome-wide association study. Our results demonstrate strong evidence for an independent causal effect of smoking on oral/oropharyngeal cancer (IVW OR 2.6, 95% CI = 1.7, 3.9 per standard deviation increase in lifetime smoking behaviour) and an independent causal effect of alcohol consumption when controlling for smoking (IVW OR 2.1, 95% CI = 1.1, 3.8 per standard deviation increase in drinks consumed per week). This suggests the possibility that the causal effect of alcohol may have been underestimated. However, the extent to which alcohol is modified by smoking requires further investigation. © 2020, The Author(s).
+KW  - Alcohol Drinking
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Mouth Neoplasms
+KW  - Multivariate Analysis
+KW  - Oropharyngeal Neoplasms
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Sexual Partners
+KW  - Smoking
+KW  - alcohol consumption
+KW  - cancer
+KW  - correlation
+KW  - disease incidence
+KW  - genetic analysis
+KW  - genome
+KW  - smoking
+KW  - alcohol consumption
+KW  - Article
+KW  - cancer risk
+KW  - controlled study
+KW  - genome-wide association study
+KW  - high risk behavior
+KW  - human
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - mouth cancer
+KW  - observational study
+KW  - oropharynx cancer
+KW  - sexuality
+KW  - single nucleotide polymorphism
+KW  - smoking
+KW  - drinking behavior
+KW  - genetic predisposition
+KW  - genetics
+KW  - mouth tumor
+KW  - multivariate analysis
+KW  - oropharynx tumor
+KW  - risk factor
+KW  - smoking
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 33247085
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 71; Correspondence Address: M. Gormley; MRC Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 1TL, United Kingdom; email: mark.gormley@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Rosoff, D.B.
+AU  - Clarke, T.-K.
+AU  - Adams, M.J.
+AU  - McIntosh, A.M.
+AU  - Davey Smith, G.
+AU  - Jung, J.
+AU  - Lohoff, F.W.
+TI  - Educational attainment impacts drinking behaviors and risk for alcohol dependence: results from a two-sample Mendelian randomization study with ~780,000 participants
+PY  - 2021
+T2  - Molecular Psychiatry
+VL  - 26
+IS  - 4
+SP  - 1119
+EP  - 1132
+DO  - 10.1038/s41380-019-0535-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074584909&doi=10.1038%2fs41380-019-0535-9&partnerID=40&md5=4369b848ee59d1eb71145e155f329134
+AD  - Section on Clinical Genomics and Experimental Therapeutics, National Institute on Alcohol Abuse and Alcoholism, National Institutes of Health, Bethesda, MD, United States
+AD  - Division of Psychiatry, University of Edinburgh, Royal Edinburgh Hospital, Edinburgh, United Kingdom
+AD  - MRC Integrative Epidemiology Unit at the University of Bristol, Bristol, United Kingdom
+AB  - Observational studies suggest that lower educational attainment (EA) may be associated with risky alcohol use behaviors; however, these findings may be biased by confounding and reverse causality. We performed two-sample Mendelian randomization (MR) using summary statistics from recent genome-wide association studies (GWAS) with >780,000 participants to assess the causal effects of EA on alcohol use behaviors and alcohol dependence (AD). Fifty-three independent genome-wide significant SNPs previously associated with EA were tested for association with alcohol use behaviors. We show that while genetic instruments associated with increased EA are not associated with total amount of weekly drinks, they are associated with reduced frequency of binge drinking ≥6 drinks (ßIVW = −0.198, 95% CI, −0.297 to –0.099, PIVW = 9.14 × 10−5), reduced total drinks consumed per drinking day (ßIVW = −0.207, 95% CI, −0.293 to –0.120, PIVW = 2.87 × 10−6), as well as lower weekly distilled spirits intake (ßIVW = −0.148, 95% CI, −0.188 to –0.107, PIVW = 6.24 × 10−13). Conversely, genetic instruments for increased EA were associated with increased alcohol intake frequency (ßIVW = 0.331, 95% CI, 0.267–0.396, PIVW = 4.62 × 10−24), and increased weekly white wine (ßIVW = 0.199, 95% CI, 0.159–0.238, PIVW = 7.96 × 10−23) and red wine intake (ßIVW = 0.204, 95% CI, 0.161–0.248, PIVW = 6.67 × 10−20). Genetic instruments associated with increased EA reduced AD risk: an additional 3.61 years schooling reduced the risk by ~50% (ORIVW = 0.508, 95% CI, 0.315–0.819, PIVW = 5.52 × 10−3). Consistency of results across complementary MR methods accommodating different assumptions about genetic pleiotropy strengthened causal inference. Our findings suggest EA may have important effects on alcohol consumption patterns and may provide potential mechanisms explaining reported associations between EA and adverse health outcomes. © 2019, This is a U.S. government work and not under copyright protection in the U.S.; foreign copyright protection may apply.
+KW  - Alcohol Drinking
+KW  - Alcoholism
+KW  - Educational Status
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - alcoholism
+KW  - drinking behavior
+KW  - educational status
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - single nucleotide polymorphism
+PB  - Springer Nature
+SN  - 13594184 (ISSN)
+C2  - 31649322
+LA  - English
+J2  - Mol. Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 72; Correspondence Address: F.W. Lohoff; Section on Clinical Genomics and Experimental Therapeutics, National Institute on Alcohol Abuse and Alcoholism, National Institutes of Health, Bethesda, United States; email: falk.lohoff@nih.gov; CODEN: MOPSF
+ER  -
+
+TY  - JOUR
+AU  - Yuan, S.
+AU  - Larsson, S.C.
+TI  - Coffee and Caffeine Consumption and Risk of Kidney Stones: A Mendelian Randomization Study
+PY  - 2022
+T2  - American Journal of Kidney Diseases
+VL  - 79
+IS  - 1
+SP  - 9
+EP  - 14.e1
+DO  - 10.1053/j.ajkd.2021.04.018
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85120737037&doi=10.1053%2fj.ajkd.2021.04.018&partnerID=40&md5=38d96e8cf1d78ecff02bfcc7f2265325
+AD  - Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Unit of Medical Epidemiology, Department of Surgical Sciences, Uppsala University, Uppsala, Sweden
+AB  - Rationale & Objective: Coffee and caffeine consumption have been associated with a lower risk of kidney stones in observational studies. We conducted a Mendelian randomization study to assess the causal nature of these associations. Study Design: Mendelian randomization analysis. Setting & Participants: Independent genetic variants associated with coffee and caffeine consumption at the genome-wide significance level were selected from previously published meta-analyses as instrumental variables. Summary-level data for kidney stones were obtained from the UK Biobank study (6,536 cases and 388,508 noncases) and the FinnGen consortium (3,856 cases and 172,757 noncases). Exposure: Genetically predicted coffee and caffeine consumption. Outcome: Clinically diagnosed kidney stones. Analytical Approach: Mendelian randomization methods were used to calculate causal estimates. Estimates from the 2 sources were combined using the fixed-effects meta-analysis methods. Results: Genetically predicted coffee and caffeine consumption was associated with a lower risk of kidney stones in the UK Biobank study, and the associations were directionally similar in the FinnGen consortium. The combined odds ratio of kidney stones was 0.60 (95% CI, 0.46-0.79; P < 0.001) per a genetically predicted 50% increase in coffee consumption and 0.81 (95% CI, 0.69-0.94; P = 0.005) per a genetically predicted 80-mg increase in caffeine consumption. Limitations: Genetic influence on kidney stone risk via pathways not involving coffee or caffeine. Conclusions: Using genetic data, this study provides evidence that higher coffee and caffeine consumption may cause a reduction in kidney stones. © 2021 The Authors
+KW  - Caffeine
+KW  - caffeine intake
+KW  - causal inference
+KW  - coffee
+KW  - dietary habit
+KW  - genetically predicted coffee consumption
+KW  - kidney and ureteral stones
+KW  - Mendelian randomization (MR)
+KW  - modifiable risk factor
+KW  - nephrolithiasis
+KW  - renal calculi
+KW  - urolithiasis
+KW  - Caffeine
+KW  - Coffee
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Kidney Calculi
+KW  - Mendelian Randomization Analysis
+KW  - Risk Factors
+KW  - caffeine
+KW  - Article
+KW  - caffeine intake
+KW  - genetic database
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - low risk patient
+KW  - meta analysis
+KW  - nephrolithiasis
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - adverse event
+KW  - coffee
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - nephrolithiasis
+KW  - risk factor
+PB  - W.B. Saunders
+SN  - 02726386 (ISSN)
+C2  - 34690004
+LA  - English
+J2  - Am. J. Kidney Dis.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 71; Correspondence Address: S.C. Larsson; Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Nobelsväg 13, 17177, Sweden; email: susanna.larsson@ki.se; CODEN: AJKDD
+ER  -
+
+TY  - JOUR
+AU  - Sun, J.
+AU  - Zhao, J.
+AU  - Jiang, F.
+AU  - Wang, L.
+AU  - Xiao, Q.
+AU  - Han, F.
+AU  - Chen, J.
+AU  - Yuan, S.
+AU  - Wei, J.
+AU  - Larsson, S.C.
+AU  - Zhang, H.
+AU  - Dunlop, M.G.
+AU  - Farrington, S.M.
+AU  - Ding, K.
+AU  - Theodoratou, E.
+AU  - Li, X.
+TI  - Identification of novel protein biomarkers and drug targets for colorectal cancer by integrating human plasma proteome with genome
+PY  - 2023
+T2  - Genome Medicine
+VL  - 15
+IS  - 1
+C7  - 75
+DO  - 10.1186/s13073-023-01229-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85171650715&doi=10.1186%2fs13073-023-01229-9&partnerID=40&md5=0f6892c478a5206c3c8cafb0f32072f8
+AD  - Department of Big Data in Health Science School of Public Health, and Center of Clinical Big Data and Analytics of The Second Affiliated Hospital, Zhejiang University School of Medicine, Zhejiang, Hangzhou, China
+AD  - Centre for Global Health, Usher Institute, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Colorectal Surgery and Oncology, Key Laboratory of Cancer Prevention and Intervention, Ministry of Education, The Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China
+AD  - Department of Pathology and Women’s Hospital, Zhejiang University School of Medicine, Zhejiang, Hangzhou, China
+AD  - Unit of Cardiovascular and Nutritional Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Unit of Medical Epidemiology, Department of Surgical Sciences, Uppsala University, Uppsala, Sweden
+AD  - Cancer Research UK Edinburgh Centre, Medical Research Council Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Colon Cancer Genetics Group, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, United Kingdom
+AB  - Background: The proteome is a major source of therapeutic targets. We conducted a proteome-wide Mendelian randomization (MR) study to identify candidate protein markers and therapeutic targets for colorectal cancer (CRC). Methods: Protein quantitative trait loci (pQTLs) were derived from seven published genome-wide association studies (GWASs) on plasma proteome, and summary-level data were extracted for 4853 circulating protein markers. Genetic associations with CRC were obtained from a large-scale GWAS meta-analysis (16,871 cases and 26,328 controls), the FinnGen cohort (4957 cases and 304,197 controls), and the UK Biobank (9276 cases and 477,069 controls). Colocalization and summary-data-based MR (SMR) analyses were performed sequentially to verify the causal role of candidate proteins. Single cell-type expression analysis, protein-protein interaction (PPI), and druggability evaluation were further conducted to detect the specific cell type with enrichment expression and prioritize potential therapeutic targets. Results: Collectively, genetically predicted levels of 13 proteins were associated with CRC risk. Elevated levels of two proteins (GREM1, CHRDL2) and decreased levels of 11 proteins were associated with an increased risk of CRC, among which four (GREM1, CLSTN3, CSF2RA, CD86) were prioritized with the most convincing evidence. These protein-coding genes are mainly expressed in tissue stem cells, epithelial cells, and monocytes in colon tumor tissue. Two interactive pairs of proteins (GREM1 and CHRDL2; MMP2 and TIMP2) were identified to be involved in osteoclast differentiation and tumorigenesis pathways; four proteins (POLR2F, CSF2RA, CD86, MMP2) have been targeted for drug development on autoimmune diseases and other cancers, with the potentials of being repurposed as therapeutic targets for CRC. Conclusions: This study identified several protein biomarkers to be associated with CRC risk and provided new insights into the etiology and promising targets for the development of screening biomarkers and therapeutic drugs for CRC. © 2023, BioMed Central Ltd., part of Springer Nature.
+KW  - Biomarker
+KW  - Colorectal cancer
+KW  - Drug target
+KW  - Protein
+KW  - Proteome-wide Mendelian randomization
+KW  - Biomarkers
+KW  - Calcium-Binding Proteins
+KW  - Colorectal Neoplasms
+KW  - Extracellular Matrix Proteins
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Matrix Metalloproteinase 2
+KW  - Membrane Proteins
+KW  - Proteome
+KW  - 3 galactosyl n acetylglucosaminide 4 alpha levo fucosyltransferase 3
+KW  - ADP dependent glucokinase
+KW  - calsyntenin 3
+KW  - CD86 antigen
+KW  - chondrosarcoma associated gene 1 protein
+KW  - chordin
+KW  - chordin like protein 2
+KW  - coxsackie virus and adenovirus receptor
+KW  - DNA directed RNA polymerase
+KW  - fucosyltransferase
+KW  - gelatinase A
+KW  - glucokinase
+KW  - granulocyte macrophage colony stimulating factor receptor
+KW  - granulocyte macrophage colony stimulating factor receptor subunit alpha
+KW  - gremlin 1
+KW  - proteome
+KW  - syntaxin
+KW  - syntaxin binding protein 6
+KW  - tissue inhibitor of metalloproteinase 2
+KW  - tumor marker
+KW  - tumor protein
+KW  - unclassified drug
+KW  - biological marker
+KW  - calcium binding protein
+KW  - CHRDL2 protein, human
+KW  - CLSTN3 protein, human
+KW  - gelatinase A
+KW  - membrane protein
+KW  - proteome
+KW  - scleroprotein
+KW  - Article
+KW  - autoimmune disease
+KW  - cancer risk
+KW  - cancer stem cell
+KW  - cancer tissue
+KW  - carcinogenesis
+KW  - colorectal cancer
+KW  - controlled study
+KW  - epithelium cell
+KW  - gene expression
+KW  - gene location
+KW  - genetic association
+KW  - genome-wide association study
+KW  - human
+KW  - human genome
+KW  - human tissue
+KW  - Mendelian randomization analysis
+KW  - monocyte
+KW  - osteoclastogenesis
+KW  - pathogenesis
+KW  - protein analysis
+KW  - protein blood level
+KW  - protein expression
+KW  - protein localization
+KW  - protein protein interaction
+KW  - proteomics
+KW  - quantitative trait locus
+KW  - single cell analysis
+KW  - single nucleotide polymorphism
+KW  - colorectal tumor
+KW  - genetics
+KW  - meta analysis
+PB  - BioMed Central Ltd
+SN  - 1756994X (ISSN)
+C2  - 37726845
+LA  - English
+J2  - Genome Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 70; Correspondence Address: X. Li; Department of Big Data in Health Science School of Public Health, and Center of Clinical Big Data and Analytics of The Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, Zhejiang, China; email: xueli157@zju.edu.cn
+ER  -
+
+TY  - JOUR
+AU  - Ye, T.
+AU  - Shao, J.
+AU  - Kang, H.
+TI  - Debiased inverse-variance weighted estimator in two-sample summary-data mendelian randomization
+PY  - 2021
+T2  - Annals of Statistics
+VL  - 49
+IS  - 4
+SP  - 2079
+EP  - 2100
+DO  - 10.1214/20-AOS2027
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85114446065&doi=10.1214%2f20-AOS2027&partnerID=40&md5=13d0708d656e0cc27c52fb6ea36ad005
+AD  - Department of Statistics, University of Pennsylvania, United States
+AD  - School of Statistics, East China Normal University, China
+AD  - Department of Statistics, University of Wisconsin-Madison, United States
+AB  - Mendelian randomization (MR) has become a popular approach to study the effect of a modifiable exposure on an outcome by using genetic variants as instrumental variables. A challenge in MR is that each genetic variant explains a relatively small proportion of variance in the exposure and there are many such variants, a setting known as many weak instruments. To this end, we provide a theoretical characterization of the statistical properties of two popular estimators in MR: the inverse-variance weighted (IVW) estimator and the IVW estimator with screened instruments using an independent selection dataset, under many weak instruments. We then propose a debiased IVW estimator, a simple modification of the IVW estimator, that is robust to many weak instruments and does not require screening. Additionally, we present two instrument selection methods to improve the efficiency of the new estimator when a selection dataset is available. An extension of the debiased IVW estimator to handle balanced horizontal pleiotropy is also discussed. We conclude by demonstrating our results in simulated and real datasets. © Institute of Mathematical Statistics, 2021
+KW  - Causal inference
+KW  - Inverse variance weighted estimator
+KW  - Many weak instruments
+KW  - Mendelian randomization
+KW  - Summary data
+PB  - Institute of Mathematical Statistics
+SN  - 00905364 (ISSN)
+LA  - English
+J2  - Ann. Stat.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 73; Correspondence Address: J. Shao; School of Statistics, East China Normal University, China; email: shao@stat.wisc.edu
+ER  -
+
+TY  - JOUR
+AU  - Xu, K.
+AU  - Li, B.
+AU  - McGinnis, K.A.
+AU  - Vickers-Smith, R.
+AU  - Dao, C.
+AU  - Sun, N.
+AU  - Kember, R.L.
+AU  - Zhou, H.
+AU  - Becker, W.C.
+AU  - Gelernter, J.
+AU  - Kranzler, H.R.
+AU  - Zhao, H.
+AU  - Justice, A.C.
+TI  - Genome-wide association study of smoking trajectory and meta-analysis of smoking status in 842,000 individuals
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 5302
+DO  - 10.1038/s41467-020-18489-3
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85092943292&doi=10.1038%2fs41467-020-18489-3&partnerID=40&md5=33c4014131e10678e4c29ccdd5d9fc05
+AD  - Yale School of Medicine, New Haven, 06511, CT, United States
+AD  - VA Connecticut Healthcare System, West Haven, 06516, CT, United States
+AD  - Yale School of Public Health, New Haven, 06511, CT, United States
+AD  - University of Kentucky College of Public Health, Lexington, 40536, KY, United States
+AD  - University of Pennsylvania Perelman School of Medicine, Philadelphia, 19104, PA, United States
+AD  - Crescenz Veterans Affairs Medical Center, Philadelphia, 19104, PA, United States
+AB  - Here we report a large genome-wide association study (GWAS) for longitudinal smoking phenotypes in 286,118 individuals from the Million Veteran Program (MVP) where we identified 18 loci for smoking trajectory of current versus never in European Americans, one locus in African Americans, and one in Hispanic Americans. Functional annotations prioritized several dozen genes where significant loci co-localized with either expression quantitative trait loci or chromatin interactions. The smoking trajectories were genetically correlated with 209 complex traits, for 33 of which smoking was either a causal or a consequential factor. We also performed European-ancestry meta-analyses for smoking status in the MVP and GWAS & Sequencing Consortium of Alcohol and Nicotine use (GSCAN) (Ntotal = 842,717) and identified 99 loci for smoking initiation and 13 loci for smoking cessation. Overall, this large GWAS of longitudinal smoking phenotype in multiple populations, combined with a meta-GWAS for smoking status, adds new insights into the genetic vulnerability for smoking behavior. © 2020, This is a U.S. government work and not under copyright protection in the U.S.; foreign copyright protection may apply.
+KW  - African Americans
+KW  - Cohort Studies
+KW  - European Continental Ancestry Group
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Hispanic Americans
+KW  - Humans
+KW  - Longitudinal Studies
+KW  - Male
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Quantitative Trait Loci
+KW  - Smoking
+KW  - nicotine
+KW  - African American
+KW  - chromosome
+KW  - gene expression
+KW  - genome
+KW  - meta-analysis
+KW  - phenotype
+KW  - trajectory
+KW  - vulnerability
+KW  - African American
+KW  - Article
+KW  - Caucasian
+KW  - chromatin
+KW  - gene expression
+KW  - gene interaction
+KW  - gene location
+KW  - gene locus
+KW  - genetic correlation
+KW  - genome-wide association study
+KW  - Hispanic
+KW  - human
+KW  - illness trajectory
+KW  - meta analysis
+KW  - people by smoking status
+KW  - phenotype
+KW  - quantitative trait locus
+KW  - smoking
+KW  - smoking cessation
+KW  - vulnerable population
+KW  - cohort analysis
+KW  - female
+KW  - genetics
+KW  - longitudinal study
+KW  - male
+KW  - middle aged
+KW  - psychology
+KW  - single nucleotide polymorphism
+KW  - smoking
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 33082346
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 73; Correspondence Address: A.C. Justice; Yale School of Medicine, New Haven, 06511, United States; email: amy.justice@yale.edu
+ER  -
+
+TY  - JOUR
+AU  - Williams, D.M.
+AU  - Finan, C.
+AU  - Schmidt, A.F.
+AU  - Burgess, S.
+AU  - Hingorani, A.D.
+TI  - Lipid lowering and Alzheimer disease risk: A mendelian randomization study
+PY  - 2020
+T2  - Annals of Neurology
+VL  - 87
+IS  - 1
+SP  - 30
+EP  - 39
+DO  - 10.1002/ana.25642
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85076446790&doi=10.1002%2fana.25642&partnerID=40&md5=0d78a720b30ec8044ff731eca5f1ac2f
+AD  - Medical Research Council Unit for Lifelong Health and Ageing at University College London, University College London, London, United Kingdom
+AD  - Department of Medical Epidemiology & Biostatistics, Karolinska Institute, Stockholm, Sweden
+AD  - Institute of Cardiovascular Science, Faculty of Population Health, University College London, London, United Kingdom
+AD  - Health Data Research UK, London, United Kingdom
+AD  - British Heart Foundation University College London Research Accelerator, London, United Kingdom
+AD  - Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Medical Research Council Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AB  - Objective: To examine whether genetic variation affecting the expression or function of lipid-lowering drug targets is associated with Alzheimer disease (AD) risk, to evaluate the potential impact of long-term exposure to corresponding therapeutics. Methods: We conducted Mendelian randomization analyses using variants in genes that encode the protein targets of several approved lipid-lowering drug classes: HMGCR (encoding the target for statins), PCSK9 (encoding the target for PCSK9 inhibitors, eg, evolocumab and alirocumab), NPC1L1 (encoding the target for ezetimibe), and APOB (encoding the target of mipomersen). Variants were weighted by associations with low-density lipoprotein cholesterol (LDL-C) using data from lipid genetics consortia (n up to 295,826). We meta-analyzed Mendelian randomization estimates for regional variants weighted by LDL-C on AD risk from 2 large samples (total n = 24,718 cases, 56,685 controls). Results: Models for HMGCR, APOB, and NPC1L1 did not suggest that the use of related lipid-lowering drug classes would affect AD risk. In contrast, genetically instrumented exposure to PCSK9 inhibitors was predicted to increase AD risk in both of the AD samples (combined odds ratio per standard deviation lower LDL-C inducible by the drug target = 1.45, 95% confidence interval = 1.23–1.69). This risk increase was opposite to, although more modest than, the degree of protection from coronary artery disease predicted by these same methods for PCSK9 inhibition. Interpretation: We did not identify genetic support for the repurposing of statins, ezetimibe, or mipomersen for AD prevention. Notwithstanding caveats to this genetic evidence, pharmacovigilance for AD risk among users of PCSK9 inhibitors may be warranted. ANN NEUROL 2020;87:30–39. © 2019 The Authors. Annals of Neurology published by Wiley Periodicals, Inc. on behalf of American Neurological Association.
+KW  - Aged
+KW  - Alzheimer Disease
+KW  - Apolipoprotein B-100
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Humans
+KW  - Hydroxymethylglutaryl CoA Reductases
+KW  - Male
+KW  - Membrane Transport Proteins
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Models, Genetic
+KW  - Polymorphism, Single Nucleotide
+KW  - Proprotein Convertase 9
+KW  - alirocumab
+KW  - antilipemic agent
+KW  - apolipoprotein B
+KW  - evolocumab
+KW  - ezetimibe
+KW  - hydroxymethylglutaryl coenzyme A reductase
+KW  - hydroxymethylglutaryl coenzyme A reductase inhibitor
+KW  - low density lipoprotein cholesterol
+KW  - membrane protein
+KW  - mipomersen
+KW  - npc1 like intracellular cholesterol transporter 1
+KW  - proprotein convertase 9
+KW  - unclassified drug
+KW  - APOB protein, human
+KW  - apolipoprotein B100
+KW  - carrier protein
+KW  - HMGCR protein, human
+KW  - hydroxymethylglutaryl coenzyme A reductase
+KW  - NPC1L1 protein, human
+KW  - PCSK9 protein, human
+KW  - proprotein convertase 9
+KW  - adult
+KW  - aged
+KW  - Alzheimer disease
+KW  - Article
+KW  - controlled study
+KW  - coronary artery disease
+KW  - drug targeting
+KW  - enzyme inhibition
+KW  - female
+KW  - genetic association
+KW  - genetic risk
+KW  - heart protection
+KW  - human
+KW  - long term exposure
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - neuroprotection
+KW  - pharmacovigilance
+KW  - priority journal
+KW  - risk assessment
+KW  - single nucleotide polymorphism
+KW  - Alzheimer disease
+KW  - biological model
+KW  - genetic predisposition
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - middle aged
+KW  - single nucleotide polymorphism
+PB  - John Wiley and Sons Inc.
+SN  - 03645134 (ISSN)
+C2  - 31714636
+LA  - English
+J2  - Ann. Neurol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 74; Correspondence Address: D.M. Williams; Medical Research Council Unit for Lifelong Health and Ageing at University College London, University College London, London, United Kingdom; email: dylan.williams@ucl.ac.uk; CODEN: ANNED
+ER  -
+
+TY  - JOUR
+AU  - Van Kippersluis, H.
+AU  - Rietveld, C.A.
+TI  - Pleiotropy-robust Mendelian randomization
+PY  - 2018
+T2  - International Journal of Epidemiology
+VL  - 47
+IS  - 4
+SP  - 1279
+EP  - 1288
+DO  - 10.1093/ije/dyx002
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85053425116&doi=10.1093%2fije%2fdyx002&partnerID=40&md5=f12a7a7ce1c5af30a732e09971b6fd17
+AD  - Erasmus School of Economics, Erasmus University, Rotterdam, Netherlands
+AD  - Department of Economics, Chinese University of Hong Kong, Hong Kong, Hong Kong
+AD  - Tinbergen Institute, Amsterdam, Netherlands
+AD  - Erasmus University Rotterdam, Institute for Behavior and Biology, Erasmus University, Rotterdam, Netherlands
+AB  - Background: The potential of Mendelian randomization studies is rapidly expanding due to: (i) the growing power of genome-wide association study (GWAS) meta-analyses to detect genetic variants associated with several exposures; and (ii) the increasing availability of these genetic variants in large-scale surveys. However, without a proper biological understanding of the pleiotropic working of genetic variants, a fundamental assumption of Mendelian randomization (the exclusion restriction) can always be contested. Methods: We build upon and synthesize recent advances in the literature on instrumental variables (IVs) estimation that test and relax the exclusion restriction. Our pleiotropy-robust Mendelian randomization (PRMR) method first estimates the degree of pleiotropy, and in turn corrects for it. If (i) a subsample exists for which the genetic variants do not affect the exposure; (ii) the selection into this subsample is not a joint consequence of the IV and the outcome; (iii) pleiotropic effects are homogeneous, PRMR obtains unbiased estimates of causal effects. Results: Simulations show that existing MR methods produce biased estimators for realistic forms of pleiotropy. Under the aforementioned assumptions, PRMR produces unbiased estimators. We illustrate the practical use of PRMR by estimating the causal effect of: (i) tobacco exposure on body mass index (BMI); (ii) prostate cancer on self-reported health; and (iii) educational attainment on BMI in the UK Biobank data. Conclusions: PRMR allows for instrumental variables that violate the exclusion restriction due to pleiotropy, and it corrects for pleiotropy in the estimation of the causal effect. If the degree of pleiotropy is unknown, PRMR can still be used as a sensitivity analysis. © The Author 2017.
+KW  - Mendelian randomization
+KW  - Plausibly exogenous
+KW  - Pleiotropy
+KW  - Disease
+KW  - Genetic Pleiotropy
+KW  - Genetic Predisposition to Disease
+KW  - Genetic Variation
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Nicotiana tabacum
+KW  - body mass
+KW  - cancer
+KW  - educational attainment
+KW  - genetic variation
+KW  - pleiotropy
+KW  - public health
+KW  - tobacco
+KW  - Article
+KW  - biobank
+KW  - body mass
+KW  - female
+KW  - genetic variability
+KW  - human
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - mental capacity
+KW  - pleiotropy
+KW  - priority journal
+KW  - prostate cancer
+KW  - self report
+KW  - tobacco
+KW  - United Kingdom
+KW  - diseases
+KW  - genetic predisposition
+KW  - genetic variation
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - procedures
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 28338774
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 74; Correspondence Address: C.A. Rietveld; Department of Applied Economics, Erasmus School of Economics, Erasmus University Rotterdam, Rotterdam, Burgemeester Oudlaan 50, 3062 PA, Netherlands; email: nrietveld@ese.eur.nl; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Yang, Y.
+AU  - Musco, H.
+AU  - Simpson-Yap, S.
+AU  - Zhu, Z.
+AU  - Wang, Y.
+AU  - Lin, X.
+AU  - Zhang, J.
+AU  - Taylor, B.
+AU  - Gratten, J.
+AU  - Zhou, Y.
+TI  - Investigating the shared genetic architecture between multiple sclerosis and inflammatory bowel diseases
+PY  - 2021
+T2  - Nature Communications
+VL  - 12
+IS  - 1
+C7  - 5641
+DO  - 10.1038/s41467-021-25768-0
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85115713676&doi=10.1038%2fs41467-021-25768-0&partnerID=40&md5=e9b7b26402f815a85070ed0329896486
+AD  - Mater Research, Translational Research Institute, Brisbane, QLD, Australia
+AD  - Institute for Molecular Bioscience, The University of Queensland, Brisbane, QLD, Australia
+AD  - Menzies Institute for Medical Research, University of Tasmania, Hobart, TAS, Australia
+AD  - Neuroepidemiology Unit, Melbourne School of Population & Global Health, The University of Melbourne, Melbourne, VIC, Australia
+AD  - National Centre for Register-based Research, Aarhus University, Aarhus, Denmark
+AD  - Department of General Surgery, the First Affiliated Hospital of Anhui Medical University, Hefei, China
+AB  - An epidemiological association between multiple sclerosis (MS) and inflammatory bowel disease (IBD) is well established, but whether this reflects a shared genetic aetiology, and whether consistent genetic relationships exist between MS and the two predominant IBD subtypes, ulcerative colitis (UC) and Crohn’s disease (CD), remains unclear. Here, we use large-scale genome-wide association study summary data to investigate the shared genetic architecture between MS and IBD overall and UC and CD independently. We find a significantly greater genetic correlation between MS and UC than between MS and CD, and identify three SNPs shared between MS and IBD (rs13428812), UC (rs116555563) and CD (rs13428812, rs9977672) in cross-trait meta-analyses. We find suggestive evidence for a causal effect of MS on UC and IBD using Mendelian randomization, but no or weak and inconsistent evidence for a causal effect of IBD or UC on MS. We observe largely consistent patterns of tissue-specific heritability enrichment for MS and IBDs in lung, spleen, whole blood and small intestine, and identify cell-type-specific enrichment for MS and IBDs in CD4+ T cells in lung and CD8+ cytotoxic T cells in lung and spleen. Our study sheds light on the biological basis of comorbidity between MS and IBD. © 2021, The Author(s).
+KW  - Colitis, Ulcerative
+KW  - Crohn Disease
+KW  - Genetic Predisposition to Disease
+KW  - Genome, Human
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Linkage Disequilibrium
+KW  - Multiple Sclerosis
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - blood
+KW  - disease prevalence
+KW  - genetic analysis
+KW  - heritability
+KW  - Article
+KW  - blood
+KW  - CD4+ T lymphocyte
+KW  - CD8+ T lymphocyte
+KW  - comorbidity
+KW  - controlled study
+KW  - cytotoxic T lymphocyte
+KW  - genetic correlation
+KW  - genome-wide association study
+KW  - human
+KW  - human tissue
+KW  - inflammatory bowel disease
+KW  - lung
+KW  - Mendelian randomization analysis
+KW  - multiple sclerosis
+KW  - single nucleotide polymorphism
+KW  - small intestine
+KW  - spleen
+KW  - ulcerative colitis
+KW  - Crohn disease
+KW  - gene linkage disequilibrium
+KW  - genetic predisposition
+KW  - genetics
+KW  - human genome
+KW  - multiple sclerosis
+KW  - procedures
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 34561436
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 70; Correspondence Address: J. Gratten; Mater Research, Translational Research Institute, Brisbane, Australia; email: jacob.gratten@mater.uq.edu.au; B. Taylor; Menzies Institute for Medical Research, University of Tasmania, Hobart, Australia; email: bruce.taylor@utas.edu.au; Y. Zhou; Menzies Institute for Medical Research, University of Tasmania, Hobart, Australia; email: yuan.zhou@utas.edu.au
+ER  -
+

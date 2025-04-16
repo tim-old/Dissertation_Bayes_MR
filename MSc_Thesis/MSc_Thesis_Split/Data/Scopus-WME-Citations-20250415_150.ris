@@ -1,0 +1,1090 @@
+﻿TY  - JOUR
+AU  - Marini, S.
+AU  - Merino, J.
+AU  - Montgomery, B.E.
+AU  - Malik, R.
+AU  - Sudlow, C.L.
+AU  - Dichgans, M.
+AU  - Florez, J.C.
+AU  - Rosand, J.
+AU  - Gill, D.
+AU  - Anderson, C.D.
+TI  - Mendelian Randomization Study of Obesity and Cerebrovascular Disease
+PY  - 2020
+T2  - Annals of Neurology
+VL  - 87
+IS  - 4
+SP  - 516
+EP  - 524
+DO  - 10.1002/ana.25686
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079861004&doi=10.1002%2fana.25686&partnerID=40&md5=5bc008f4586789b77f56ece7e9c22cde
+AD  - Center for Genomic Medicine, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Neurology, Boston University Medical Center, Boston, MA, United States
+AD  - Diabetes Unit, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Medicine, Harvard Medical School, Boston, MA, United States
+AD  - Vascular Medicine and Metabolism Unit, Research Unit on Lipids and Atherosclerosis, Sant Joan University Hospital, Rovira i Virgili University, Pere Virgili Health Research Institute, Spanish Biomedical Research Network in Diabetes and Associated Metabolic Disorders, Reus, Spain
+AD  - Institute for Stroke and Dementia Research, University Hospital of Ludwig Maximilian University, Munich, Germany
+AD  - Center for Medical Informatics, Usher Institute of Population Health Sciences and Informatics, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Munich Cluster for Systems Neurology, Munich, Germany
+AD  - German Center for Neurodegenerative Diseases, Munich, Germany
+AD  - Programs in Metabolism and Medical and Population Genetics, Broad Institute of Harvard and Massachusetts Institute of Technology, Cambridge, MA, United States
+AD  - Department of Neurology, Massachusetts General Hospital, Boston, MA, United States
+AD  - Henry and Allison McCance Center for Brain Health, Massachusetts General Hospital, Boston, MA, United States
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AB  - Objective: To systematically investigate causal relationships between obesity and cerebrovascular disease and the extent to which hypertension and hyperglycemia mediate the effect of obesity on cerebrovascular disease. Methods: We used summary statistics from genome-wide association studies for body mass index (BMI), waist-to-hip ratio (WHR), and multiple cerebrovascular disease phenotypes. We explored causal associations with 2-sample Mendelian randomization (MR) accounting for genetic covariation between BMI and WHR, and we assessed what proportion of the association between obesity and cerebrovascular disease was mediated by systolic blood pressure (SBP) and blood glucose levels, respectively. Results: Genetic predisposition to higher BMI did not increase the risk of cerebrovascular disease. In contrast, for each 10% increase in WHR there was a 75% increase (95% confidence interval [CI] = 44–113%) in risk for large artery ischemic stroke, a 57% (95% CI = 29–91%) increase in risk for small vessel ischemic stroke, a 197% increase (95% CI = 59–457%) in risk of intracerebral hemorrhage, and an increase in white matter hyperintensity volume (β = 0.11, 95% CI = 0.01–0.21). These WHR associations persisted after adjusting for genetic determinants of BMI. Approximately one-tenth of the observed effect of WHR was mediated by SBP for ischemic stroke (proportion mediated: 12%, 95% CI = 4–20%), but no evidence of mediation was found for average blood glucose. Interpretation: Abdominal adiposity may trigger causal pathological processes, partially independent from blood pressure and totally independent from glucose levels, that lead to cerebrovascular disease. Potential targets of these pathological processes could represent novel therapeutic opportunities for stroke. ANN NEUROL 2020;87:516–524. © 2020 American Neurological Association
+KW  - Blood Glucose
+KW  - Blood Pressure
+KW  - Body Mass Index
+KW  - Cerebral Hemorrhage
+KW  - Cerebral Small Vessel Diseases
+KW  - Cerebrovascular Disorders
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Obesity
+KW  - Stroke
+KW  - Waist-Hip Ratio
+KW  - White Matter
+KW  - glucose
+KW  - hemoglobin A1c
+KW  - abdominal obesity
+KW  - Article
+KW  - body mass
+KW  - brain hemorrhage
+KW  - brain ischemia
+KW  - brain size
+KW  - clinical outcome
+KW  - genetic susceptibility
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - glucose blood level
+KW  - hyperglycemia
+KW  - hypertension
+KW  - Mendelian randomization analysis
+KW  - neuroimaging
+KW  - nuclear magnetic resonance
+KW  - phenotype
+KW  - priority journal
+KW  - risk factor
+KW  - sensitivity analysis
+KW  - systolic blood pressure
+KW  - waist hip ratio
+KW  - white matter lesion
+KW  - blood pressure
+KW  - brain hemorrhage
+KW  - cerebrovascular accident
+KW  - cerebrovascular disease
+KW  - diagnostic imaging
+KW  - genetics
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - obesity
+KW  - white matter
+PB  - John Wiley and Sons Inc.
+SN  - 03645134 (ISSN)
+C2  - 31975536
+LA  - English
+J2  - Ann. Neurol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 101; Correspondence Address: S. Marini; Center for Genomic Medicine, Massachusetts General Hospital, Boston, United States; email: sandro.marini08@gmail.com; CODEN: ANNED
+ER  -
+
+TY  - JOUR
+AU  - Zheng, J.-S.
+AU  - Luan, J.
+AU  - Sofianopoulou, E.
+AU  - Imamura, F.
+AU  - Stewart, I.D.
+AU  - Day, F.R.
+AU  - Pietzner, M.
+AU  - Wheeler, E.
+AU  - Lotta, L.A.
+AU  - Gundersen, T.E.
+AU  - Amiano, P.
+AU  - Ardanaz, E.
+AU  - Chirlaque, M.-D.
+AU  - Fagherazzi, G.
+AU  - Franks, P.W.
+AU  - Kaaks, R.
+AU  - Laouali, N.
+AU  - Mancini, F.R.
+AU  - Nilsson, P.M.
+AU  - Charlotte Onland-Moret, N.
+AU  - Olsen, A.
+AU  - Overvad, K.
+AU  - Panico, S.
+AU  - Palli, D.
+AU  - Ricceri, F.
+AU  - Rolandsson, O.
+AU  - Spijkerman, A.M.W.
+AU  - Sánchez, M.-J.
+AU  - Schulze, M.B.
+AU  - Sala, N.
+AU  - Sieri, S.
+AU  - Tjønneland, A.
+AU  - Tumino, R.
+AU  - van der Schouw, Y.T.
+AU  - Weiderpass, E.
+AU  - Riboli, E.
+AU  - Danesh, J.
+AU  - Butterworth, A.S.
+AU  - Sharp, S.J.
+AU  - Langenberg, C.
+AU  - Forouhi, N.G.
+AU  - Wareham, N.J.
+TI  - Plasma Vitamin C and type 2 diabetes: Genome-wide association study and mendelian randomization analysis in European populations
+PY  - 2021
+T2  - Diabetes Care
+VL  - 44
+IS  - 1
+SP  - 98
+EP  - 106
+DO  - 10.2337/dc20-1328
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85099121347&doi=10.2337%2fdc20-1328&partnerID=40&md5=c69f82e4b6426ad8be247651bfce6946
+AD  - Medical Research Council Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Key Laboratory of Growth Regulation and Translational Research of Zhejiang Province, School of Life Sciences, Westlake University, Hangzhou, China
+AD  - British Heart Foundation Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cam-bridge, United Kingdom
+AD  - Vitas Ltd, Oslo, Norway
+AD  - Ministry of Health of the Basque Government, Public Health Division of Gipuzkoa, Biodonostia Health Research Institute, Donostia-San Sebas-tian, Spain
+AD  - Navarra Public Health Institute, Pamplona, Spain
+AD  - IdiSNA, Navarra Institute for Health Research, Pamplona, Spain
+AD  - CIBER in Epidemiology and Public Health (CI-BERESP), Madrid, Spain
+AD  - Department of Epidemiology, Regional Health Council, Instituto Murciano de Investigatión Bio-sanitaria (IMIB)-Arrixaca, Murcia University, Mur-cia, Spain
+AD  - Digital Epidemiology and e-Health Research Hub, Department of Population Health, Luxembourg Institute of Health, Strassen, Luxembourg, France
+AD  - Center of Epidemiology and Population Health, UMR 1018, INSERM, Paris South-Paris Saclay University, Gustave Roussy Institute, Villejuif, France
+AD  - Department of Clinical Sciences, Lund Univer-sity, Malmö, Sweden
+AD  - Division of Cancer Epidemiology, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht, Utrecht University, Utrecht, Netherlands
+AD  - Danish Cancer Society Research Center, Copen-hagen, Denmark
+AD  - Department of Public Health, Aarhus Univer-sity, Aarhus, Denmark
+AD  - Department of Cardiology, Aalborg University Hospital, Aarhus, Denmark
+AD  - Dipartimento di Medicina Clinica e Chirurgia, Federico II University, Naples, Italy
+AD  - Cancer Risk Factors and Life-Style Epidemiology Unit, Institute for Cancer Research, Prevention and Clinical Network-ISPRO, Florence, Italy
+AD  - Department of Clinical and Biological Sciences, University of Turin, Orbassano, Turin, Italy
+AD  - Unit of Epidemiology, Regional Health Service ASL TO3, Grugliasco, Turin, Italy
+AD  - Department of Public Health and Clinical Med-icine, Family Medicine, Umeå University, Umeå, Sweden
+AD  - National Institute for Public Health and the Environment (RIVM), Bilthoven, Netherlands
+AD  - Andalusian School of Public Health, Granada, Spain
+AD  - Department of Molecular Epidemiology, German Institute of Human Nutrition Potsdam-Rehbruecke, Nuthetal, Germany
+AD  - German Center for Diabetes Research (DZD), München-Neuherberg, Germany
+AD  - Institute of Nutrition Science, University of Potsdam, Nuthetal, Germany
+AD  - Unit of Nutrition and Cancer, Cancer Epidemiology Research Program and Translational Research Laboratory, Catalan Institute of Oncology-ICO, Group of Research on Nutrition and Cancer, Bellvitge Biomedical Research Institute (IDIBELL), L’Hospitalet of Llobregat, Barcelona, Spain
+AD  - Epidemiology and Prevention Unit, Fondazione Istituto di Ricovero e Cura a Carattere Scientifico (IRCCS) Istituto Nazionale dei Tumori di Milano Via Venezian, Milan, Italy
+AD  - Institute of Public Health, University of Copen-hagen, Copenhagen, Denmark
+AD  - Cancer Registry and Histopathology Depart-ment, Azienda Sanitaria Provinciale (ASP), Ra-gusa, Italy
+AD  - International Agency for Research on Cancer, Lyon, France
+AD  - School of Public Health, Imperial College, London, United Kingdom
+AD  - National Institute for Health Research Blood and Transplant Research Unit in Donor Health and Genomics, University of Cambridge, Cambridge, United Kingdom
+AD  - British Heart Foundation Center of Research Excellence, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Human Genetics, Wellcome Sanger Institute, Hinxton, United Kingdom
+AD  - National Institute for Health Research Cambridge Biomedical Research Center, University of Cambridge and Cambridge University Hospitals, Cambridge, United Kingdom
+AD  - Health Data Research UK Cambridge, Well-come Genome Campus and University of Cam-bridge, Cambridge, United Kingdom
+AB  - OBJECTIVE Higher plasma vitamin C levels are associated with lower type 2 diabetes risk, but whether this association is causal is uncertain. To investigate this, we studied the association of genetically predicted plasma vitamin C with type 2 diabetes. RESEARCH DESIGN AND METHODS We conducted genome-wide association studies of plasma vitamin C among 52,018 individuals of European ancestry to discover novel genetic variants. We performed Mendelian randomization analyses to estimate the association of genetically predicted differences in plasma vitamin C with type 2 diabetes in up to 80,983 case participants and 842,909 noncase participants. We compared this estimate with the observational association between plasma vitamin C and incident type 2 diabetes, including 8,133 case participants and 11,073 noncase participants. RESULTS We identified 11 genomic regions associated with plasma vitamin C (P < 5 ☓ 10-8), with the strongest signal at SLC23A1, and 10 novel genetic loci including SLC23A3, CHPT1, BCAS3, SNRPF, RER1, MAF, GSTA5, RGS14, AKT1, and FADS1. Plasma vitamin C was inversely associated with type 2 diabetes (hazard ratio per SD 0.88; 95% CI 0.82, 0.94), but there was no association between genetically predicted plasma vitamin C (excluding FADS1 variant due to its apparent pleiotropic effect) and type 2 diabetes (1.03; 95% CI 0.96, 1.10). CONCLUSIONS These findings indicate discordance between biochemically measured and genetically predicted plasma vitamin C levels in the association with type 2 diabetes among European populations. The null Mendelian randomization findings provide no strong evidence to suggest the use of vitamin C supplementation for type 2 diabetes prevention. © 2020 by the American Diabetes Association.
+KW  - Ascorbic Acid
+KW  - Diabetes Mellitus, Type 2
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - snRNP Core Proteins
+KW  - acyl coenzyme A desaturase 1
+KW  - ascorbic acid
+KW  - glutathione transferase A5
+KW  - lipid
+KW  - transcription factor Maf
+KW  - ascorbic acid
+KW  - small nuclear ribonucleoprotein
+KW  - SNRPF protein, human
+KW  - adult
+KW  - aged
+KW  - AKT1 gene
+KW  - anthropometry
+KW  - Article
+KW  - BCAS3 gene
+KW  - case control study
+KW  - CHPT1 gene
+KW  - cohort analysis
+KW  - controlled study
+KW  - dietary intake
+KW  - disease association
+KW  - educational status
+KW  - employment status
+KW  - European
+KW  - FADS1 gene
+KW  - female
+KW  - gene
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - GSTA5 gene
+KW  - human
+KW  - lifestyle
+KW  - MAF gene
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - people by smoking status
+KW  - physical activity
+KW  - RER1 gene
+KW  - RGS14 gene
+KW  - SLC23A3 gene
+KW  - SNRPF gene
+KW  - vitamin blood level
+KW  - genetics
+KW  - non insulin dependent diabetes mellitus
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - American Diabetes Association Inc.
+SN  - 01495992 (ISSN)
+C2  - 33203707
+LA  - English
+J2  - Diabetes Care
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 102; Correspondence Address: N.G. Forouhi; Medical Research Council Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom; email: forouhi@mrc-epid.cam.ac.uk; N.J. Wareham; Medical Research Council Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom; email: nick.wareham@mrc-epid.cam.ac.uk; CODEN: DICAD
+ER  -
+
+TY  - JOUR
+AU  - Bull, C.J.
+AU  - Bell, J.A.
+AU  - Murphy, N.
+AU  - Sanderson, E.
+AU  - Davey Smith, G.
+AU  - Timpson, N.J.
+AU  - Banbury, B.L.
+AU  - Albanes, D.
+AU  - Berndt, S.I.
+AU  - Bézieau, S.
+AU  - Bishop, D.T.
+AU  - Brenner, H.
+AU  - Buchanan, D.D.
+AU  - Burnett-Hartman, A.
+AU  - Casey, G.
+AU  - Castellví-Bel, S.
+AU  - Chan, A.T.
+AU  - Chang-Claude, J.
+AU  - Cross, A.J.
+AU  - de la Chapelle, A.
+AU  - Figueiredo, J.C.
+AU  - Gallinger, S.J.
+AU  - Gapstur, S.M.
+AU  - Giles, G.G.
+AU  - Gruber, S.B.
+AU  - Gsur, A.
+AU  - Hampe, J.
+AU  - Hampel, H.
+AU  - Harrison, T.A.
+AU  - Hoffmeister, M.
+AU  - Hsu, L.
+AU  - Huang, W.-Y.
+AU  - Huyghe, J.R.
+AU  - Jenkins, M.A.
+AU  - Joshu, C.E.
+AU  - Keku, T.O.
+AU  - Kühn, T.
+AU  - Kweon, S.-S.
+AU  - Le Marchand, L.
+AU  - Li, C.I.
+AU  - Li, L.
+AU  - Lindblom, A.
+AU  - Martín, V.
+AU  - May, A.M.
+AU  - Milne, R.L.
+AU  - Moreno, V.
+AU  - Newcomb, P.A.
+AU  - Offit, K.
+AU  - Ogino, S.
+AU  - Phipps, A.I.
+AU  - Platz, E.A.
+AU  - Potter, J.D.
+AU  - Qu, C.
+AU  - Quirós, J.R.
+AU  - Rennert, G.
+AU  - Riboli, E.
+AU  - Sakoda, L.C.
+AU  - Schafmayer, C.
+AU  - Schoen, R.E.
+AU  - Slattery, M.L.
+AU  - Tangen, C.M.
+AU  - Tsilidis, K.K.
+AU  - Ulrich, C.M.
+AU  - van Duijnhoven, F.J.B.
+AU  - van Guelpen, B.
+AU  - Visvanathan, K.
+AU  - Vodicka, P.
+AU  - Vodickova, L.
+AU  - Wang, H.
+AU  - White, E.
+AU  - Wolk, A.
+AU  - Woods, M.O.
+AU  - Wu, A.H.
+AU  - Campbell, P.T.
+AU  - Zheng, W.
+AU  - Peters, U.
+AU  - Vincent, E.E.
+AU  - Gunter, M.J.
+TI  - Adiposity, metabolites, and colorectal cancer risk: Mendelian randomization study
+PY  - 2020
+T2  - BMC Medicine
+VL  - 18
+IS  - 1
+C7  - 396
+DO  - 10.1186/s12916-020-01855-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85097610675&doi=10.1186%2fs12916-020-01855-9&partnerID=40&md5=09c802846b12e18249c07468667887ec
+AD  - MRC Integrative Epidemiology Unit at the University of Bristol, Oakfield House, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - School of Cellular and Molecular Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Nutrition and Metabolism Section, International Agency for Research on Cancer, World Health Organization, Lyon, France
+AD  - Public Health Sciences Division, Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - Division of Cancer Epidemiology and Genetics, National Cancer Institute, National Institutes of Health, Bethesda, MD, United States
+AD  - Service de Génétique Médicale, Centre Hospitalier Universitaire (CHU) Nantes, Nantes, France
+AD  - Leeds Institute of Cancer and Pathology, University of Leeds, Leeds, United Kingdom
+AD  - Division of Clinical Epidemiology and Aging Research, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Division of Preventive Oncology, German Cancer Research Center (DKFZ) and National Center for Tumor Diseases (NCT), Heidelberg, Germany
+AD  - German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - Colorectal Oncogenomics Group, Department of Clinical Pathology, The University of Melbourne, Parkville, VIC, Australia
+AD  - Victorian Comprehensive Cancer Centre, University of Melbourne Centre for Cancer Research, Parkville, VIC, Australia
+AD  - Genomic Medicine and Family Cancer Clinic, The Royal Melbourne Hospital, Parkville, VIC, Australia
+AD  - Institute for Health Research, Kaiser Permanente Colorado, Denver, CO, United States
+AD  - Center for Public Health Genomics, University of Virginia, Charlottesville, VA, United States
+AD  - Gastroenterology Department, Hospital Clínic, Institut d’Investigacions Biomèdiques August Pi i Sunyer (IDIBAPS), Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBEREHD), University of Barcelona, Barcelona, Spain
+AD  - Division of Gastroenterology, Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Channing Division of Network Medicine, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Clinical and Translational Epidemiology Unit, Massachusetts General Hospital and Harvard Medical School, Boston, MA, United States
+AD  - Broad Institute of Harvard and MIT, Cambridge, MA, United States
+AD  - Division of Cancer Epidemiology, German Cancer Research Center (DKFZ), Heidelberg, Germany
+AD  - University Cancer Centre Hamburg (UCCH), University Medical Centre Hamburg-Eppendorf, Hamburg, Germany
+AD  - Department of Epidemiology and Biostatistics, Imperial College London, Norfolk Place, London, United Kingdom
+AD  - Department of Cancer Biology and Genetics and the Comprehensive Cancer Center, The Ohio State University, Columbus, OH, United States
+AD  - Department of Medicine, Samuel Oschin Comprehensive Cancer Institute, Cedars-Sinai Medical Center, Los Angeles, CA, United States
+AD  - Department of Preventive Medicine, Keck School of Medicine, University of Southern California, Los Angeles, CA, United States
+AD  - Lunenfeld Tanenbaum Research Institute, Mount Sinai Hospital, University of Toronto, Toronto, ON, Canada
+AD  - Epidemiology Research Program, American Cancer Society, Atlanta, GA, United States
+AD  - Cancer Epidemiology Division, Cancer Council Victoria, Melbourne, VIC, Australia
+AD  - Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health, The University of Melbourne, Melbourne, VIC, Australia
+AD  - Precision Medicine, School of Clinical Sciences at Monash Health, Monash University, Clayton, VIC, Australia
+AD  - Department of Preventive Medicine & USC Norris Comprehensive Cancer Center, Keck School of Medicine, University of Southern California, Los Angeles, CA, United States
+AD  - Institute of Cancer Research, Department of Medicine I, Medical University Vienna, Vienna, Austria
+AD  - Department of Medicine I, University Hospital Dresden, Technische Universität Dresden (TU Dresden), Dresden, Germany
+AD  - Division of Human Genetics, Department of Internal Medicine, The Ohio State University Comprehensive Cancer Center, Columbus, OH, United States
+AD  - Department of Biostatistics, University of Washington, Seattle, WA, United States
+AD  - Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, United States
+AD  - Center for Gastrointestinal Biology and Disease, University of North Carolina, Chapel Hill, NC, United States
+AD  - Department of Preventive Medicine, Chonnam National University Medical School, Gwangju, South Korea
+AD  - Jeonnam Regional Cancer Center, Chonnam National University Hwasun Hospital, Hwasun, South Korea
+AD  - University of Hawaii Cancer Center, Honolulu, HI, United States
+AD  - Department of Family Medicine, University of Virginia, Charlottesville, VA, United States
+AD  - Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden
+AD  - Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden
+AD  - CIBER Epidemiología y Salud Pública (CIBERESP), Madrid, Spain
+AD  - Biomedicine Institute (IBIOMED), University of León, León, Spain
+AD  - Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht, Utrecht University, Utrecht, Netherlands
+AD  - Oncology Data Analytics Program, Catalan Institute of Oncology-IDIBELL, L’Hospitalet de Llobregat, Barcelona, Spain
+AD  - Department of Clinical Sciences, Faculty of Medicine, University of Barcelona, Barcelona, Spain
+AD  - ONCOBEL Program, Bellvitge Biomedical Research Institute (IDIBELL), L’Hospitalet de Llobregat, Barcelona, Spain
+AD  - School of Public Health, University of Washington, Seattle, WA, United States
+AD  - Clinical Genetics Service, Department of Medicine, Memorial Sloan-Kettering Cancer Center, New York, NY, United States
+AD  - Department of Medicine, Weill Cornell Medical College, New York, NY, United States
+AD  - Program in MPE Molecular Pathological Epidemiology, Department of Pathology, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA, United States
+AD  - Department of Epidemiology, Harvard T.H. Chan School of Public Health, Boston, MA, United States
+AD  - Cancer Immunology and Cancer Epidemiology Programs, Dana-Farber Harvard Cancer Center, Boston, MA, United States
+AD  - Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - Department of Epidemiology, University of Washington, Seattle, WA, United States
+AD  - University of Washington, Seattle, WA, United States
+AD  - Centre for Public Health Research, Massey University, Wellington, New Zealand
+AD  - Health Sciences Centre, University of Canterbury, Christchurch, New Zealand
+AD  - Public Health Directorate, Asturias, Spain
+AD  - Department of Community Medicine and Epidemiology, Lady Davis Carmel Medical Center, Haifa, Israel
+AD  - Ruth and Bruce Rappaport Faculty of Medicine, Technion-Israel Institute of Technology, Haifa, Israel
+AD  - Clalit National Cancer Control Center, Haifa, Israel
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Division of Research, Kaiser Permanente Northern California, Oakland, CA, United States
+AD  - Department of General Surgery, University Hospital Rostock, Rostock, Germany
+AD  - Department of Medicine and Epidemiology, University of Pittsburgh Medical Center, Pittsburgh, PA, United States
+AD  - Department of Internal Medicine, University of Utah, Salt Lake City, UT, United States
+AD  - SWOG Statistical Center, Fred Hutchinson Cancer Research Center, Seattle, WA, United States
+AD  - Department of Hygiene and Epidemiology, University of Ioannina School of Medicine, Ioannina, Greece
+AD  - Huntsman Cancer Institute and Department of Population Health Sciences, University of Utah, Salt Lake City, UT, United States
+AD  - Division of Human Nutrition and Health, Wageningen University & Research, Wageningen, Netherlands
+AD  - Department of Radiation Sciences, Oncology Unit, Umeå University, Umeå, Sweden
+AD  - Wallenberg Centre for Molecular Medicine, Umeå University, Umeå, Sweden
+AD  - Department of Molecular Biology of Cancer, Institute of Experimental Medicine of the Czech Academy of Sciences, Prague, Czech Republic
+AD  - Institute of Biology and Medical Genetics, First Faculty of Medicine, Charles University, Prague, Czech Republic
+AD  - Faculty of Medicine and Biomedical Center in Pilsen, Charles University, Pilsen, Czech Republic
+AD  - Department of Epidemiology, University of Washington School of Public Health, Seattle, WA, United States
+AD  - Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Discipline of Genetics, Memorial University of Newfoundland, St John’s, Canada
+AD  - University of Southern California, Preventative Medicine, Los Angeles, CA, United States
+AD  - Behavioral and Epidemiology Research Group, American Cancer Society, Atlanta, GA, United States
+AD  - Division of Epidemiology, Department of Medicine, Vanderbilt-Ingram Cancer Center, Vanderbilt Epidemiology Center, Vanderbilt University School of Medicine, Nashville, TN, United States
+AB  - Background: Higher adiposity increases the risk of colorectal cancer (CRC), but whether this relationship varies by anatomical sub-site or by sex is unclear. Further, the metabolic alterations mediating the effects of adiposity on CRC are not fully understood. Methods: We examined sex- and site-specific associations of adiposity with CRC risk and whether adiposity-associated metabolites explain the associations of adiposity with CRC. Genetic variants from genome-wide association studies of body mass index (BMI) and waist-to-hip ratio (WHR, unadjusted for BMI; N = 806,810), and 123 metabolites from targeted nuclear magnetic resonance metabolomics (N = 24,925), were used as instruments. Sex-combined and sex-specific Mendelian randomization (MR) was conducted for BMI and WHR with CRC risk (58,221 cases and 67,694 controls in the Genetics and Epidemiology of Colorectal Cancer Consortium, Colorectal Cancer Transdisciplinary Study, and Colon Cancer Family Registry). Sex-combined MR was conducted for BMI and WHR with metabolites, for metabolites with CRC, and for BMI and WHR with CRC adjusted for metabolite classes in multivariable models. Results: In sex-specific MR analyses, higher BMI (per 4.2 kg/m2) was associated with 1.23 (95% confidence interval (CI) = 1.08, 1.38) times higher CRC odds among men (inverse-variance-weighted (IVW) model); among women, higher BMI (per 5.2 kg/m2) was associated with 1.09 (95% CI = 0.97, 1.22) times higher CRC odds. WHR (per 0.07 higher) was more strongly associated with CRC risk among women (IVW OR = 1.25, 95% CI = 1.08, 1.43) than men (IVW OR = 1.05, 95% CI = 0.81, 1.36). BMI or WHR was associated with 104/123 metabolites at false discovery rate-corrected P ≤ 0.05; several metabolites were associated with CRC, but not in directions that were consistent with the mediation of positive adiposity-CRC relations. In multivariable MR analyses, associations of BMI and WHR with CRC were not attenuated following adjustment for representative metabolite classes, e.g., the univariable IVW OR for BMI with CRC was 1.12 (95% CI = 1.00, 1.26), and this became 1.11 (95% CI = 0.99, 1.26) when adjusting for cholesterol in low-density lipoprotein particles. Conclusions: Our results suggest that higher BMI more greatly raises CRC risk among men, whereas higher WHR more greatly raises CRC risk among women. Adiposity was associated with numerous metabolic alterations, but none of these explained associations between adiposity and CRC. More detailed metabolomic measures are likely needed to clarify the mechanistic pathways. © 2020, The Author(s).
+KW  - Body mass index
+KW  - CCFR
+KW  - Colorectal cancer
+KW  - CORECT
+KW  - Epidemiology
+KW  - GECCO
+KW  - Mendelian randomization
+KW  - Metabolism
+KW  - NMR
+KW  - Waist-to-hip ratio
+KW  - Adiposity
+KW  - Adult
+KW  - Body Mass Index
+KW  - Case-Control Studies
+KW  - Colorectal Neoplasms
+KW  - Europe
+KW  - Female
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Metabolome
+KW  - Middle Aged
+KW  - Obesity
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Sex Factors
+KW  - Waist-Hip Ratio
+KW  - cholesterol
+KW  - low density lipoprotein
+KW  - adult
+KW  - Article
+KW  - body mass
+KW  - cancer risk
+KW  - case control study
+KW  - colorectal cancer
+KW  - controlled study
+KW  - female
+KW  - gender
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - major clinical study
+KW  - male
+KW  - metabolite
+KW  - metabolomics
+KW  - nuclear magnetic resonance
+KW  - obesity
+KW  - waist hip ratio
+KW  - colorectal tumor
+KW  - complication
+KW  - Europe
+KW  - genetic predisposition
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - metabolism
+KW  - metabolome
+KW  - middle aged
+KW  - obesity
+KW  - risk factor
+KW  - sex factor
+KW  - single nucleotide polymorphism
+PB  - BioMed Central Ltd
+SN  - 17417015 (ISSN)
+C2  - 33327948
+LA  - English
+J2  - BMC Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 100; Correspondence Address: C.J. Bull; MRC Integrative Epidemiology Unit at the University of Bristol, Bristol, Oakfield House, United Kingdom; email: caroline.bull@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Harrison, S.C.
+AU  - Holmes, M.V.
+AU  - Burgess, S.
+AU  - Asselbergs, F.W.
+AU  - Jones, G.T.
+AU  - Baas, A.F.
+AU  - Van't Hof, F.N.
+AU  - De Bakker, P.I.W.
+AU  - Blankensteijn, J.D.
+AU  - Powell, J.T.
+AU  - Saratzis, A.
+AU  - De Borst, G.J.
+AU  - Swerdlow, D.I.
+AU  - Van Der Graaf, Y.
+AU  - Van Rij, A.M.
+AU  - Carey, D.J.
+AU  - Elmore, J.R.
+AU  - Tromp, G.
+AU  - Kuivaniemi, H.
+AU  - Sayers, R.D.
+AU  - Samani, N.J.
+AU  - Bown, M.J.
+AU  - Humphries, S.E.
+TI  - Genetic association of lipids and lipid drug targets with abdominal aortic aneurysm ameta-Analysis
+PY  - 2018
+T2  - JAMA Cardiology
+VL  - 3
+IS  - 1
+SP  - 26
+EP  - 33
+DO  - 10.1001/jamacardio.2017.4293
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85041475144&doi=10.1001%2fjamacardio.2017.4293&partnerID=40&md5=d2c4434f011fc791bbb0324aca893ec3
+AD  - Addenbrookes Hospital, Cambridge, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, Hills Road, Cambridge, CB2 0QQ, United Kingdom
+AD  - Clinical Trial Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - Medical Research Council Population Health Research Unit, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - National Institute for Health Research, Oxford Biomedical Research Centre, Oxford University Hospital, Oxford, United Kingdom
+AD  - Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Department of Medical Genetics, Centre for Molecular Medicine, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Farr Institute of Health Informatics Research and Institute of Health Informatics, University College London, London, United Kingdom
+AD  - Department of Surgery, University of Otago, Dunedin, New Zealand
+AD  - Brain Center Rudolf Magnus, Department of Neurology and Neurosurgery, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Department of Surgery, VU University Medical Center, Amsterdam, Netherlands
+AD  - Vascular Surgery Research Group, Imperial College Charing Cross Hospital, London, United Kingdom
+AD  - National Institute for Health, Research Leicester Cardiovascular Biomedical, University of Leicester, Leicester, United Kingdom
+AD  - Vascular Surgery, University Medical Center Utrecht, Utrecht, Netherlands
+AD  - Institute of Cardiovascular Science, University College London, London, United Kingdom
+AD  - Department of Medicine, Imperial College London, Hammersmith Hospital, London, United Kingdom
+AD  - Sigfried and Janet Weis Center for Research, Geisinger Health System, Danville, PA, United States
+AD  - Department of Vascular and Endovascular Surgery, Geisinger Health System, Danville, PA, United States
+AD  - Division of Molecular Biology and Human Genetics, Department of Biomedical Sciences, Stellenbosch University, Tygerberg, South Africa
+AD  - Department of Cardiovascular Genetics, Institute of Cardiovascular Science, University College London, London, United Kingdom
+AB  - IMPORTANCE Risk factors for abdominal aortic aneurysm (AAA) are largely unknown, which has hampered the development of nonsurgical treatments to alter the natural history of disease. OBJECTIVE To investigate the association between lipid-Associated single-nucleotide polymorphisms (SNPs) and AAA risk. DESIGN, SETTING, AND PARTICIPANTS Genetic risk scores, composed of lipid trait-associated SNPs, were constructed and tested for their association with AAA using conventional (inverse-variance weighted) mendelian randomization (MR) and data from international AAA genome-wide association studies. Sensitivity analyses to account for potential genetic pleiotropy included MR-Egger and weighted median MR, and multivariable MR method was used to test the independent association of lipids with AAA risk. The association between AAA and SNPs in loci that can act as proxies for drug targets was also assessed. Data collection took place between January 9, 2015, and January 4, 2016. Data analysis was conducted between January 4, 2015, and December 31, 2016. EXPOSURES Genetic elevation of low-density lipoprotein cholesterol (LDL-C), high-density lipoprotein cholesterol (HDL-C), and triglycerides (TG). MAIN OUTCOMES AND MEASURES The association between genetic risk scores of lipid-Associated SNPs and AAA risk, as well as the association between SNPs in lipid drug targets (HMGCR, CETP, and PCSK9) and AAA risk. RESULTS Up to 4914 cases and 48 002 controls were included in our analysis. A 1-SD genetic elevation of LDL-C was associated with increased AAA risk (odds ratio [OR], 1.66; 95%CI, 1.41-1.96; P = 1.1 × 10-9). For HDL-C, a 1-SD increase was associated with reduced AAA risk (OR, 0.67; 95%CI, 0.55-0.82; P = 8.3 × 10-5), whereas a 1-SD increase in triglycerides was associated with increased AAA risk (OR, 1.69; 95%CI, 1.38-2.07; P = 5.2 × 10-7). In multivariable MR analysis and both MR-Egger and weighted median MR methods, the association of each lipid fraction with AAA risk remained largely unchanged. The LDL-C-reducing allele of rs12916 in HMGCR was associated with AAA risk (OR, 0.93; 95%CI, 0.89-0.98; P = .009). The HDL-C-raising allele of rs3764261 in CETP was associated with lower AAA risk (OR, 0.89; 95%CI, 0.85-0.94; P = 3.7 × 10-7). Finally, the LDL-C-lowering allele of rs11206510 in PCSK9 was weakly associated with a lower AAA risk (OR, 0.94; 95%CI, 0.88-1.00; P = .04), but a second independent LDL-C-lowering variant in PCSK9 (rs2479409) was not associated with AAA risk (OR, 0.97; 95%CI, 0.92-1.02; P = .28). CONCLUSIONS AND RELEVANCE TheMR analyses in this study lend support to the hypothesis that lipids play an important role in the etiology of AAA. Analyses of individual genetic variants used as proxies for drug targets support LDL-C lowering as a potential effective treatment strategy for preventing and managing AAA. © 2017 American Medical Association. All rights reserved.
+KW  - Aortic Aneurysm, Abdominal
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Hypolipidemic Agents
+KW  - Lipid Metabolism
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - cholesterol ester transfer protein
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - proprotein convertase 9
+KW  - triacylglycerol
+KW  - antilipemic agent
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - abdominal aortic aneurysm
+KW  - Article
+KW  - cardiovascular risk
+KW  - CETP gene
+KW  - gene frequency
+KW  - gene linkage disequilibrium
+KW  - genetic analysis
+KW  - genetic association
+KW  - genetic risk
+KW  - genetic variability
+KW  - HMGCR gene
+KW  - human
+KW  - pathogenesis
+KW  - PCSK9 gene
+KW  - pleiotropy
+KW  - prevalence
+KW  - priority journal
+KW  - risk reduction
+KW  - single nucleotide polymorphism
+KW  - abdominal aortic aneurysm
+KW  - genetics
+KW  - genome-wide association study
+KW  - lipid metabolism
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - metabolism
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - American Medical Association
+SN  - 23806583 (ISSN)
+C2  - 29188294
+LA  - English
+J2  - JAMA Cardiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 99; Correspondence Address: S.C. Harrison; Addenbrookes Hospital, Cambridge, United Kingdom; email: sh888@medschl.cam.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Davies, N.M.
+AU  - Hill, W.D.
+AU  - Anderson, E.L.
+AU  - Sanderson, E.
+AU  - Deary, I.J.
+AU  - Smith, G.D.
+TI  - Multivariable two-sample mendelian randomization estimates of the effects of intelligence and education on health
+PY  - 2019
+T2  - eLife
+VL  - 8
+C7  - e43990
+DO  - 10.7554/eLife.43990
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85072292460&doi=10.7554%2feLife.43990&partnerID=40&md5=1f6af5f935a2d9724f7f28525cbd61a4
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Centre for Cognitive Ageing and Cognitive Epidemiology, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Department of Psychology, University of Edinburgh, Edinburgh, United Kingdom
+AB  - Intelligence and education are predictive of better physical and mental health, socioeconomic position (SEP), and longevity. However, these associations are insufficient to prove that intelligence and/or education cause these outcomes. Intelligence and education are phenotypically and genetically correlated, which makes it difficult to elucidate causal relationships. We used univariate and multivariable Mendelian randomization to estimate the total and direct effects of intelligence and educational attainment on mental and physical health, measures of socioeconomic position, and longevity. Both intelligence and education had beneficial total effects. Higher intelligence had positive direct effects on income and alcohol consumption, and negative direct effects on moderate and vigorous physical activity. Higher educational attainment had positive direct effects on income, alcohol consumption, and vigorous physical activity, and negative direct effects on smoking, BMI and sedentary behaviour. If the Mendelian randomization assumptions hold, these findings suggest that both intelligence and education affect health. © Davies et al.
+KW  - Adult
+KW  - Aged
+KW  - Biostatistics
+KW  - Education
+KW  - Female
+KW  - Health
+KW  - Health Knowledge, Attitudes, Practice
+KW  - Humans
+KW  - Intelligence
+KW  - Male
+KW  - Middle Aged
+KW  - United Kingdom
+KW  - alcohol consumption
+KW  - article
+KW  - body mass
+KW  - controlled study
+KW  - education
+KW  - health
+KW  - human
+KW  - intelligence
+KW  - longevity
+KW  - Mendelian randomization analysis
+KW  - physical activity
+KW  - randomized controlled trial
+KW  - sedentary lifestyle
+KW  - smoking
+KW  - adult
+KW  - aged
+KW  - attitude to health
+KW  - biostatistics
+KW  - female
+KW  - male
+KW  - middle aged
+KW  - United Kingdom
+PB  - eLife Sciences Publications Ltd
+SN  - 2050084X (ISSN)
+C2  - 31526476
+LA  - English
+J2  - eLife
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 99; Correspondence Address: N.M. Davies; Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: neil.davies@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Yang, J.
+AU  - Yan, B.
+AU  - Zhao, B.
+AU  - Fan, Y.
+AU  - He, X.
+AU  - Yang, L.
+AU  - Ma, Q.
+AU  - Zheng, J.
+AU  - Wang, W.
+AU  - Bai, L.
+AU  - Zhu, F.
+AU  - Ma, X.
+TI  - Assessing the causal effects of human serum metabolites on 5 major psychiatric disorders
+PY  - 2020
+T2  - Schizophrenia Bulletin
+VL  - 46
+IS  - 4
+SP  - 804
+EP  - 813
+DO  - 10.1093/schbul/sbz138
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85085510841&doi=10.1093%2fschbul%2fsbz138&partnerID=40&md5=f0e6c7b7030fe7874e4c8d1729e6fb6f
+AD  - Clinical Research Center, First Affiliated Hospital of Xi'an Jiaotong University, Xi'an, China
+AD  - Department of Psychiatry, First Affiliated Hospital of Xi'an Jiaotong University, Xi'an, China
+AD  - Center for Translational Medicine, First Affiliated Hospital of Xi'an Jiaotong University, Xi'an, China
+AB  - Psychiatric disorders are the leading cause of disability worldwide while the pathogenesis remains unclear. Genome-wide association studies (GWASs) have made great achievements in detecting disease-related genetic variants. However, functional information on the underlying biological processes is often lacking. Current reports propose the use of metabolic traits as functional intermediate phenotypes (the so-called genetically determined metabotypes or GDMs) to reveal the biological mechanisms of genetics in human diseases. Here we conducted a two-sample Mendelian randomization analysis that uses GDMs to assess the causal effects of 486 human serum metabolites on 5 major psychiatric disorders, which respectively were schizophrenia (SCZ), major depression (MDD), bipolar disorder (BIP), autism spectrum disorder (ASD), and attention-deficit/hyperactivity disorder (ADHD). Using genetic variants as proxies, our study has identified 137 metabolites linked to the risk of psychiatric disorders, including 2-methoxyacetaminophen sulfate, which affects SCZ (P = 1.7 × 10-5) and 1-docosahexaenoylglycerophosp hocholine, which affects ADHD (P = 5.6 × 10-5). Fourteen significant metabolic pathways involved in the 5 psychiatric disorders assessed were also detected, such as glycine, serine, and threonine metabolism for SCZ (P = .0238), Aminoacyl-tRNA biosynthesis for both MDD (P = .0144) and ADHD (P = .0029). Our study provided novel insights into integrating metabolomics with genomics in order to understand the mechanisms underlying the pathogenesis of human diseases.  © The Author(s) 2020.
+KW  - 1-docosahexaenoylglyce rophosphocholine
+KW  - 2- methoxyacetaminophen sulfate
+KW  - Mendelian randomization
+KW  - Metabolic pathway
+KW  - Psychiatric disorder
+KW  - Serum metabolite
+KW  - Attention Deficit Disorder with Hyperactivity
+KW  - Autism Spectrum Disorder
+KW  - Bipolar Disorder
+KW  - Depressive Disorder, Major
+KW  - Genome-Wide Association Study
+KW  - Germany
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Metabolic Networks and Pathways
+KW  - Metabolome
+KW  - Schizophrenia
+KW  - United Kingdom
+KW  - 1 docosahexaenoylglycerophosphocholine
+KW  - 2 methoxyacetaminophen sulfate
+KW  - 2 oxoisocaproic acid
+KW  - adrenic acid
+KW  - aminoacyl transfer RNA
+KW  - arginine
+KW  - asparagine
+KW  - betaine
+KW  - drug metabolite
+KW  - glycine
+KW  - glycocholic acid
+KW  - icosapentaenoic acid
+KW  - leucine
+KW  - phenylalanine
+KW  - phosphate
+KW  - proline
+KW  - pyroglutamic acid
+KW  - pyruvic acid
+KW  - serine
+KW  - stearidonate
+KW  - threonine
+KW  - tyrosine
+KW  - unclassified drug
+KW  - adult
+KW  - Article
+KW  - attention deficit disorder
+KW  - autism
+KW  - biosynthesis
+KW  - bipolar disorder
+KW  - clinical article
+KW  - controlled study
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - genomics
+KW  - human
+KW  - major depression
+KW  - Mendelian randomization analysis
+KW  - metabolic phenotype
+KW  - metabolite
+KW  - metabolomics
+KW  - priority journal
+KW  - schizophrenia
+KW  - attention deficit disorder
+KW  - autism
+KW  - bipolar disorder
+KW  - blood
+KW  - genetics
+KW  - Germany
+KW  - major depression
+KW  - metabolism
+KW  - metabolome
+KW  - physiology
+KW  - schizophrenia
+KW  - twin study
+KW  - United Kingdom
+PB  - Oxford University Press
+SN  - 05867614 (ISSN)
+C2  - 31919502
+LA  - English
+J2  - Schizophr. Bull.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 101; Correspondence Address: X. Ma; First Affiliated Hospital of Xi'an Jiaotong University, Xi'an, No. 277 Yanta West Road, 710061, China; email: maxiancang@163.com; CODEN: SCZBB
+ER  -
+
+TY  - JOUR
+AU  - Wang, X.
+AU  - Fang, X.
+AU  - Zheng, W.
+AU  - Zhou, J.
+AU  - Song, Z.
+AU  - Xu, M.
+AU  - Min, J.
+AU  - Wang, F.
+TI  - Genetic Support of A Causal Relationship between Iron Status and Type 2 Diabetes: A Mendelian Randomization Study
+PY  - 2021
+T2  - Journal of Clinical Endocrinology and Metabolism
+VL  - 106
+IS  - 11
+SP  - E4641
+EP  - E4651
+DO  - 10.1210/clinem/dgab454
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85119512451&doi=10.1210%2fclinem%2fdgab454&partnerID=40&md5=6dcad6a25d4c734eb4ef08ca1dc5add7
+AD  - The Fourth Affiliated Hospital, School of Public Health, Institute of Translational Medicine, Zhejiang University School of Medicine, Hangzhou, 310058, China
+AD  - Bio-X Institutes, Key Lab. for the Genetics of Developmental and Neuropsychiatric Disorders (Ministry of Education), Shanghai Jiao Tong University, Shanghai, 200030, China
+AB  - Context: Iron overload is a known risk factor for type 2 diabetes (T2D); however, iron overload and iron deficiency have both been associated with metabolic disorders in observational studies. Objective: Using mendelian randomization (MR), we assessed how genetically predicted systemic iron status affected T2D risk. Methods: A 2-sample MR analysis was used to obtain a causal estimate. We selected genetic variants strongly associated (P<5×10-8) with 4 biomarkers of systemic iron status from a study involving 48972 individuals performed by the Genetics of Iron Status consortium and applied these biomarkers to the T2D case-control study (74124 cases and 824006 controls) performed by the Diabetes Genetics Replication and Meta-analysis consortium. The simple median, weighted median, MR-Egger, MR analysis using mixture-model, weighted allele scores, and MR based on a Bayesian model averaging approaches were used for the sensitivity analysis. Results: Genetically instrumented serum iron (odds ratio [OR]: 1.07; 95% CI, 1.02-1.12), ferritin (OR: 1.19; 95% CI, 1.08-1.32), and transferrin saturation (OR: 1.06; 95% CI, 1.02-1.09) were positively associated with T2D. In contrast, genetically instrumented transferrin, a marker of reduced iron status, was inversely associated with T2D (OR: 0.91; 95% CI, 0.87-0.96). Conclusion: Genetic evidence supports a causal link between increased systemic iron status and increased T2D risk. Further studies involving various ethnic backgrounds based on individual-level data and studies regarding the underlying mechanism are warranted for reducing the risk of T2D.  © 2021 The Author(s). Published by Oxford University Press on behalf of the Endocrine Society.
+KW  - ferritin
+KW  - iron
+KW  - mendelian randomization
+KW  - transferrin
+KW  - type 2 diabetes
+KW  - Biomarkers
+KW  - Case-Control Studies
+KW  - Diabetes Mellitus, Type 2
+KW  - Female
+KW  - Follow-Up Studies
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Iron
+KW  - Iron Overload
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Prognosis
+KW  - Risk Factors
+KW  - biological marker
+KW  - iron
+KW  - transferrin
+KW  - biological marker
+KW  - iron
+KW  - Article
+KW  - Bayes theorem
+KW  - clinical evaluation
+KW  - disease association
+KW  - disease exacerbation
+KW  - ethnicity
+KW  - genetic predisposition
+KW  - genetic variability
+KW  - human
+KW  - iron blood level
+KW  - iron metabolism
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - pleiotropy
+KW  - risk factor
+KW  - risk reduction
+KW  - sensitivity analysis
+KW  - transferrin blood level
+KW  - case control study
+KW  - complication
+KW  - female
+KW  - follow up
+KW  - genetic predisposition
+KW  - genome-wide association study
+KW  - iron overload
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - metabolism
+KW  - non insulin dependent diabetes mellitus
+KW  - pathology
+KW  - prognosis
+KW  - single nucleotide polymorphism
+PB  - Endocrine Society
+SN  - 0021972X (ISSN)
+C2  - 34147035
+LA  - English
+J2  - J. Clin. Endocrinol. Metab.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 98; Correspondence Address: F. Wang; Hospital, School of Public Health, Zhejiang University School of Medicine, Hangzhou, 866 Yuhangtang Road, 310058, China; email: fwang@zju.edu.cn; J. Min; Hospital, School of Public Health, Zhejiang University School of Medicine, Hangzhou, 866 Yuhangtang Road, 310058, China; email: junxiamin@zju.edu.cn; M. Xu; Bio-X Institutes, Key Lab. for the Genetics of Developmental and Neuropsychiatric Disorders (Ministry of Education), Shanghai Jiao Tong University, Shanghai, 1954 Huashan Road, 200030, China; email: mingqingxu@gmail.com; CODEN: JCEMA
+ER  -
+
+TY  - JOUR
+AU  - Xu, F.
+AU  - Fu, Y.
+AU  - Sun, T.-Y.
+AU  - Jiang, Z.
+AU  - Miao, Z.
+AU  - Shuai, M.
+AU  - Gou, W.
+AU  - Ling, C.-W.
+AU  - Yang, J.
+AU  - Wang, J.
+AU  - Chen, Y.-M.
+AU  - Zheng, J.-S.
+TI  - The interplay between host genetics and the gut microbiome reveals common and distinct microbiome features for complex human diseases
+PY  - 2020
+T2  - Microbiome
+VL  - 8
+IS  - 1
+C7  - 145
+DO  - 10.1186/s40168-020-00923-9
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85092480000&doi=10.1186%2fs40168-020-00923-9&partnerID=40&md5=290bb91a5370c444598cd960207f861b
+AD  - Zhejiang Provincial Laboratory of Life Sciences and Biomedicine, Key Laboratory of Growth Regulation and Translational Research of Zhejiang Province, School of Life Sciences, Westlake University, Hangzhou, China
+AD  - Guangdong Provincial Key Laboratory of Food, Nutrition and Health, Department of Epidemiology, School of Public Health, Sun Yat-sen University, Guangzhou, China
+AD  - Institute of Basic Medical Sciences, Westlake Institute for Advanced Study, Hangzhou, China
+AD  - Institute for Molecular Bioscience, University of Queensland, Brisbane, QLD, Australia
+AD  - Institute for Advanced Research, Wenzhou Medical University, Wenzhou, Zhejiang, 325027, China
+AD  - Cas Key Laboratory for Pathogenic Microbiology and Immunology, Institute of Microbiology, Chinese Academy of Sciences, Beijing, China
+AD  - Mrc Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AB  - Background: Interest in the interplay between host genetics and the gut microbiome in complex human diseases is increasing, with prior evidence mainly being derived from animal models. In addition, the shared and distinct microbiome features among complex human diseases remain largely unclear. Results: This analysis was based on a Chinese population with 1475 participants. We estimated the SNP-based heritability, which suggested that Desulfovibrionaceae and Odoribacter had significant heritability estimates (0.456 and 0.476, respectively). We performed a microbiome genome-wide association study to identify host genetic variants associated with the gut microbiome. We then conducted bidirectional Mendelian randomization analyses to examine the potential causal associations between the gut microbiome and complex human diseases. We found that Saccharibacteria could potentially decrease the concentration of serum creatinine and increase the estimated glomerular filtration rate. On the other hand, atrial fibrillation, chronic kidney disease and prostate cancer, as predicted by host genetics, had potential causal effects on the abundance of some specific gut microbiota. For example, atrial fibrillation increased the abundance of Burkholderiales and Alcaligenaceae and decreased the abundance of Lachnobacterium, Bacteroides coprophilus, Barnesiellaceae, an undefined genus in the family Veillonellaceae and Mitsuokella. Further disease-microbiome feature analysis suggested that systemic lupus erythematosus and chronic myeloid leukaemia shared common gut microbiome features. Conclusions: These results suggest that different complex human diseases share common and distinct gut microbiome features, which may help reshape our understanding of disease aetiology in humans. [MediaObject not available: see fulltext.]  © 2020 The Author(s).
+KW  - Bidirectional Mendelian randomization analyses
+KW  - Disease-microbiome features
+KW  - Gut microbiome
+KW  - Host genetics
+KW  - Adult
+KW  - Aged
+KW  - Animals
+KW  - Case-Control Studies
+KW  - Disease
+KW  - Female
+KW  - Gastrointestinal Microbiome
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Leukemia, Myelogenous, Chronic, BCR-ABL Positive
+KW  - Lupus Erythematosus, Systemic
+KW  - Male
+KW  - Middle Aged
+KW  - cholesterol
+KW  - creatinine
+KW  - hemoglobin A1c
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - RNA 16S
+KW  - triacylglycerol
+KW  - adult
+KW  - aged
+KW  - Alcaligenaceae
+KW  - Article
+KW  - atrial fibrillation
+KW  - body mass
+KW  - Burkholderiales
+KW  - case control study
+KW  - Chinese
+KW  - chronic kidney failure
+KW  - chronic myeloid leukemia
+KW  - clustering algorithm
+KW  - controlled study
+KW  - Desulfovibrionaceae
+KW  - diastolic blood pressure
+KW  - disease association
+KW  - estimated glomerular filtration rate
+KW  - feces analysis
+KW  - follow up
+KW  - gene sequence
+KW  - genetic correlation
+KW  - genetic risk score
+KW  - genetic variability
+KW  - genetic variation
+KW  - genome-wide association study
+KW  - genotype
+KW  - glucose blood level
+KW  - heritability
+KW  - hip fracture
+KW  - human
+KW  - immune complex disease
+KW  - immune response
+KW  - intestine flora
+KW  - mathematical model
+KW  - Mendelian randomization analysis
+KW  - phylogeny
+KW  - polymerase chain reaction
+KW  - prostate cancer
+KW  - single nucleotide polymorphism
+KW  - systemic lupus erythematosus
+KW  - systolic blood pressure
+KW  - Veillonellaceae
+KW  - animal
+KW  - diseases
+KW  - female
+KW  - genetics
+KW  - intestine flora
+KW  - male
+KW  - microbiology
+KW  - middle aged
+PB  - BioMed Central Ltd
+SN  - 20492618 (ISSN)
+C2  - 33032658
+LA  - English
+J2  - Microbiome
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 100; Correspondence Address: J.-S. Zheng; Zhejiang Provincial Laboratory of Life Sciences and Biomedicine, Key Laboratory of Growth Regulation and Translational Research of Zhejiang Province, School of Life Sciences, Westlake University, Hangzhou, China; email: zhengjusheng@westlake.edu.cn; Y.-M. Chen; Guangdong Provincial Key Laboratory of Food, Nutrition and Health, Department of Epidemiology, School of Public Health, Sun Yat-sen University, Guangzhou, China; email: chenyum@mail.sysu.edu.cn; J. Wang; Cas Key Laboratory for Pathogenic Microbiology and Immunology, Institute of Microbiology, Chinese Academy of Sciences, Beijing, China; email: junwang@im.ac.cn
+ER  -
+
+TY  - JOUR
+AU  - Davies, N.M.
+AU  - Howe, L.J.
+AU  - Brumpton, B.
+AU  - Havdahl, A.
+AU  - Evans, D.M.
+AU  - Davey Smith, G.
+TI  - Within family Mendelian randomization studies
+PY  - 2019
+T2  - Human Molecular Genetics
+VL  - 28
+IS  - R2
+SP  - R170
+EP  - R179
+DO  - 10.1093/hmg/ddz204
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075812596&doi=10.1093%2fhmg%2fddz204&partnerID=40&md5=5455c32f7130572514a110005aa7b7bc
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AD  - K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Clinic of Thoracic and Occupational Medicine, St. Olavs Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - Nic Waals Institute, Lovisenberg Diaconal Hospital, Oslo, Norway
+AD  - Department of Mental Disorders, Norwegian Institute of Public Health, Oslo, Norway
+AD  - University of Queensland Diamantina Institute, University of Queensland, Brisbane, 4102, Australia
+AB  - Mendelian randomization (MR) is increasingly used to make causal inferences in a wide range of fields, from drug development to etiologic studies. Causal inference in MR is possible because of the process of genetic inheritance from parents to offspring. Specifically, at gamete formation and conception, meiosis ensures random allocation to the offspring of one allele from each parent at each locus, and these are unrelated to most of the other inherited genetic variants. To date, most MR studies have used data from unrelated individuals. These studies assume that genotypes are independent of the environment across a sample of unrelated individuals, conditional on covariates. Here we describe potential sources of bias, such as transmission ratio distortion, selection bias, population stratification, dynastic effects and assortative mating that can induce spurious or biased SNP-phenotype associations. We explain how studies of related individuals such as sibling pairs or parent-offspring trios can be used to overcome some of these sources of bias, to provide potentially more reliable evidence regarding causal processes. The increasing availability of data from related individuals in large cohort studies presents an opportunity to both overcome some of these biases and also to evaluate familial environmental effects. © 2019 The Author(s) 2019. Published by Oxford University Press. All rights reserved. For Permissions, please email: journals.permissions@oup.com.
+KW  - Family
+KW  - Family Characteristics
+KW  - Genetic Association Studies
+KW  - Genotype
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Population
+KW  - Reproduction
+KW  - Selection Bias
+KW  - Sociobiology
+KW  - assortative mating
+KW  - ecological genetics
+KW  - family
+KW  - genotype
+KW  - genotype phenotype correlation
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - priority journal
+KW  - Review
+KW  - selection bias
+KW  - sibling
+KW  - single nucleotide polymorphism
+KW  - triangulation
+KW  - education
+KW  - family
+KW  - family size
+KW  - genetic association study
+KW  - genetics
+KW  - population
+KW  - reproduction
+KW  - sociobiology
+PB  - Oxford University Press
+SN  - 09646906 (ISSN)
+C2  - 31647093
+LA  - English
+J2  - Hum. Mol. Genet.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 98; Correspondence Address: N.M. Davies; Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, BS8 2BN, United Kingdom; email: neil.davies@bristol.ac.uk; CODEN: HMGEE
+ER  -
+
+TY  - JOUR
+AU  - Richmond, R.C.
+AU  - Hemani, G.
+AU  - Tilling, K.
+AU  - Davey Smith, G.
+AU  - Relton, C.L.
+TI  - Challenges and novel approaches for investigating molecular mediation
+PY  - 2016
+T2  - Human Molecular Genetics
+VL  - 25
+IS  - R2
+SP  - R149
+EP  - R156
+DO  - 10.1093/hmg/ddw197
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84994115572&doi=10.1093%2fhmg%2fddw197&partnerID=40&md5=eed480fc46c2f9229f7af375711bbea1
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, United Kingdom
+AD  - School of Social and Community Medicine, University of Bristol, United Kingdom
+AB  - Understanding mediation is useful for identifying intermediates lying between an exposure and an outcome which, when intervened upon, will block (some or all of) the causal pathway between the exposure and outcome. Mediation approaches used in conventional epidemiology have been adapted to understanding the role of molecular intermediates in situations of high-dimensional omics data with varying degrees of success. In particular, the limitations of observational epidemiological study including confounding, reverse causation and measurement error can afflict conventional mediation approaches and may lead to incorrect conclusions regarding causal effects. Solutions to analysing mediation which overcome these problems include the use of instrumental variable methods such as Mendelian randomization, which may be applied to evaluate causality in increasingly complex networks of omics data. © The Author 2016. Published by Oxford University Press.
+KW  - causality
+KW  - DNA methylation
+KW  - genetic epidemiology
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - lung cancer
+KW  - mathematical parameters
+KW  - measurement error
+KW  - Mendelian randomization analysis
+KW  - methodology
+KW  - molecular mediation
+KW  - outcome assessment
+KW  - outcome variable
+KW  - pleiotropy
+KW  - priority journal
+KW  - quantitative trait locus
+KW  - Review
+PB  - Oxford University Press
+SN  - 09646906 (ISSN)
+LA  - English
+J2  - Hum. Mol. Genet.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 101; Correspondence Address: C.L. Relton; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, Oakfield House, Oakfield Grove, BS8 2BN, United Kingdom; email: caroline.relton@bristol.ac.uk; CODEN: HMGEE
+ER  -
+

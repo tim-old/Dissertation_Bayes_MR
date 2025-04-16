@@ -1,0 +1,825 @@
+﻿TY  - JOUR
+AU  - Hill, W.D.
+AU  - Davies, N.M.
+AU  - Ritchie, S.J.
+AU  - Skene, N.G.
+AU  - Bryois, J.
+AU  - Bell, S.
+AU  - Di Angelantonio, E.
+AU  - Roberts, D.J.
+AU  - Xueyi, S.
+AU  - Davies, G.
+AU  - Liewald, D.C.M.
+AU  - Porteous, D.J.
+AU  - Hayward, C.
+AU  - Butterworth, A.S.
+AU  - McIntosh, A.M.
+AU  - Gale, C.R.
+AU  - Deary, I.J.
+TI  - Genome-wide analysis identifies molecular systems and 149 genetic loci associated with income
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 5741
+DO  - 10.1038/s41467-019-13585-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85076619342&doi=10.1038%2fs41467-019-13585-5&partnerID=40&md5=7a9035d63d80d0b7559a633a8e880c4a
+AD  - Centre for Cognitive Ageing and Cognitive Epidemiology, University of Edinburgh, 7 George Square, Edinburgh, EH8 9JZ, United Kingdom
+AD  - Department of Psychology, University of Edinburgh, 7 George Square, Edinburgh, EH8 9JZ, United Kingdom
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Bristol Medical School, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Social, Genetic and Developmental Psychiatry Centre, King’s College London, London, United Kingdom
+AD  - Laboratory of Molecular Neurobiology, Department of Medical Biochemistry and Biophysics, Karolinska Institutet, Stockholm, Sweden
+AD  - UCL Institute of Neurology, Queen Square, London, United Kingdom
+AD  - Department of Medicine, Division of Brain Sciences, Imperial College, London, United Kingdom
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - The National Institute for Health Research Blood and Transplant Unit in Donor Health and Genomics at the University of Cambridge, University of Cambridge, Strangeways Research Laboratory, Wort’s Causeway, Cambridge, CB1 8RN, United Kingdom
+AD  - UK Medical Research Council/British Heart Foundation Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Strangeways Research Laboratory, Wort’s Causeway, Cambridge, CB1 8RN, United Kingdom
+AD  - British Heart Foundation Centre of Excellence, Division of Cardiovascular Medicine, Addenbrooke’s Hospital, Hills Road, Cambridge, CB2 0QQ, United Kingdom
+AD  - NHS Blood and Transplant, Cambridge, United Kingdom
+AD  - Cambridge Substantive Site, Health Data Research UK, Wellcome Genome Campus, Hinxton, United Kingdom
+AD  - BRC Haematology Theme and Radcliffe Department of Medicine, University of Oxford, Oxford, United Kingdom
+AD  - NHS Blood and Transplant – Oxford Centre, Oxford, United Kingdom
+AD  - Division of Psychiatry, University of Edinburgh, Edinburgh, EH10 5HF, United Kingdom
+AD  - Centre for Genomic and Experimental Medicine, Institute of Genetics and Molecular Medicine, University of Edinburgh, Western General Hospital, Edinburgh, EH4 2XU, United Kingdom
+AD  - MRC Human Genetics Unit, MRC Institute of Genetics and Molecular Medicine, University of Edinburgh, Western General Hospital, Edinburgh, EH4 2XU, United Kingdom
+AD  - MRC Lifecourse Epidemiology Unit, University of Southampton, Southampton, SO16 6YD, United Kingdom
+AB  - Socioeconomic position (SEP) is a multi-dimensional construct reflecting (and influencing) multiple socio-cultural, physical, and environmental factors. In a sample of 286,301 participants from UK Biobank, we identify 30 (29 previously unreported) independent-loci associated with income. Using a method to meta-analyze data from genetically-correlated traits, we identify an additional 120 income-associated loci. These loci show clear evidence of functionality, with transcriptional differences identified across multiple cortical tissues, and links to GABAergic and serotonergic neurotransmission. By combining our genome wide association study on income with data from eQTL studies and chromatin interactions, 24 genes are prioritized for follow up, 18 of which were previously associated with intelligence. We identify intelligence as one of the likely causal, partly-heritable phenotypes that might bridge the gap between molecular genetic inheritance and phenotypic consequence in terms of income differences. These results indicate that, in modern era Great Britain, genetic effects contribute towards some of the observed socioeconomic inequalities. © 2019, The Author(s).
+KW  - Adult
+KW  - Aged
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Genotype
+KW  - Humans
+KW  - Income
+KW  - Intelligence
+KW  - Male
+KW  - Middle Aged
+KW  - Polymorphism, Single Nucleotide
+KW  - Quantitative Trait Loci
+KW  - Social Class
+KW  - United Kingdom
+KW  - United Kingdom
+KW  - chromosome
+KW  - correlation
+KW  - genetic analysis
+KW  - genome
+KW  - income distribution
+KW  - molecular ecology
+KW  - adult
+KW  - article
+KW  - biobank
+KW  - chromatin
+KW  - female
+KW  - follow up
+KW  - gene locus
+KW  - genetic transcription
+KW  - genome-wide association study
+KW  - Great Britain
+KW  - human
+KW  - human experiment
+KW  - inheritance
+KW  - intelligence
+KW  - major clinical study
+KW  - male
+KW  - neurotransmission
+KW  - phenotype
+KW  - aged
+KW  - genetics
+KW  - genome-wide association study
+KW  - genotype
+KW  - income
+KW  - middle aged
+KW  - quantitative trait locus
+KW  - single nucleotide polymorphism
+KW  - social class
+KW  - United Kingdom
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 31844048
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 124; Correspondence Address: W.D. Hill; Centre for Cognitive Ageing and Cognitive Epidemiology, University of Edinburgh, Edinburgh, 7 George Square, EH8 9JZ, United Kingdom; email: David.Hill@ed.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Carreras-Torres, R.
+AU  - Johansson, M.
+AU  - Haycock, P.C.
+AU  - Relton, C.L.
+AU  - Davey Smith, G.
+AU  - Brennan, P.
+AU  - Martin, R.M.
+TI  - Role of obesity in smoking behaviour: Mendelian randomisation study in UK Biobank
+PY  - 2018
+T2  - BMJ (Online)
+VL  - 361
+C7  - 1767
+DO  - 10.1136/bmj.k1767
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85047252954&doi=10.1136%2fbmj.k1767&partnerID=40&md5=3f35b917da0f7ece2da81614db1363f2
+AD  - Section of Genetics, International Agency for Research on Cancer, Lyon, France
+AD  - Medical Research Council Integrative Epidemiology Unit, School of Social and Community Medicine, University of Bristol, Bristol, United Kingdom
+AD  - Department of Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - National Institute for Health Research Biomedical, Research Centre at University Hospitals Bristol NHS Foundation Trust and the University of Bristol, Bristol, United Kingdom
+AB  - OBJECTIVE To determine whether body mass index, body fat percentage, and waist circumference influence smoking status and intensity. DESIGN Mendelian randomisation study. SETTING UK Biobank, with replication of results from the Tobacco and Genetics (TAG) consortium. PARTICIPANTS European descent participants from the UK Biobank cohort (n=372 791) and the TAG consortium (n=74 035). MAIN OUTCOME MEASURES Risk of current and past smoking, number of cigarettes smoked per day, age of smoking initiation. RESULTS The Mendelian randomisation analysis indicated that each standard deviation increment in body mass index (4.6) increased the risk of being a smoker (odds ratio 1.18 (95% confidence interval 1.13 to 1.23), P<0.001). This association was replicated in the TAG consortium data (1.19 (1.06 to 1.33), P=0.003). Furthermore, each standard deviation increment in body mass index was estimated to increase smoking intensity by 0.88 cigarettes per day (95% confidence interval 0.50 to 1.26, P<0.001) in UK Biobank and 1.27 cigarettes per day in the TAG consortium (0.46 to 2.07, P=0.002). Similar results were also seen for body fat percentage and waist circumference in both UK Biobank and the TAG consortium data. CONCLUSIONS These results strongly suggest that higher adiposity influences smoking behaviour and could have implications for the implementation of public health interventions aiming to reduce the prevalence of these important risk factors. © 2018 BMJ Publishing Group. All rights reserved.
+KW  - Biological Specimen Banks
+KW  - Body Mass Index
+KW  - Female
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Obesity
+KW  - Odds Ratio
+KW  - Prevalence
+KW  - Risk Factors
+KW  - Smoking
+KW  - United Kingdom
+KW  - Waist Circumference
+KW  - adult
+KW  - age
+KW  - Article
+KW  - biobank
+KW  - body fat
+KW  - body height
+KW  - body mass
+KW  - body weight
+KW  - cohort analysis
+KW  - European
+KW  - female
+KW  - gene linkage disequilibrium
+KW  - genetic association
+KW  - genetic variability
+KW  - human
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - obesity
+KW  - pleiotropy
+KW  - priority journal
+KW  - risk assessment
+KW  - single nucleotide polymorphism
+KW  - smoking
+KW  - smoking habit
+KW  - social isolation
+KW  - United Kingdom
+KW  - waist circumference
+KW  - biobank
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - obesity
+KW  - odds ratio
+KW  - prevalence
+KW  - psychology
+KW  - risk factor
+KW  - smoking
+KW  - validation study
+PB  - BMJ Publishing Group
+SN  - 09598146 (ISSN)
+C2  - 29769355
+LA  - English
+J2  - BMJ (Online)
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 121; Correspondence Address: P. Brennan; Section of Genetics, International Agency for Research on Cancer, Lyon, France; email: gep@iarc.fr; CODEN: BMJOA
+ER  -
+
+TY  - JOUR
+AU  - Walker, V.M.
+AU  - Smith, G.D.
+AU  - Davies, N.M.
+AU  - Martin, R.M.
+TI  - Mendelian randomization: A novel approach for the prediction of adverse drug events and drug repurposing opportunities
+PY  - 2017
+T2  - International Journal of Epidemiology
+VL  - 46
+IS  - 6
+SP  - 2078
+EP  - 2089
+DO  - 10.1093/ije/dyx207
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85039556034&doi=10.1093%2fije%2fdyx207&partnerID=40&md5=cc6c56d6933cb0fed9abaa291ce0e435
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AB  - Identification of unintended drug effects, specifically drug repurposing opportunities and adverse drug events, maximizes the benefit of a drug and protects the health of patients. However, current observational research methods are subject to several biases. These include confounding by indication, reverse causality and missing data. We propose that Mendelian randomization (MR) offers a novel approach for the prediction of unintended drug effects. In particular, we advocate the synthesis of evidence from this method and other approaches, in the spirit of triangulation, to improve causal inferences concerning drug effects. MR addresses some of the limitations associated with the existing methods in this field. Furthermore, it can be applied either before or after approval of the drug, and could therefore prevent the potentially harmful exposure of patients in clinical trials and beyond. The potential of MR as a pharmacovigilance and drug repurposing tool is yet to be realized, and could both help prevent adverse drug events and identify novel indications for existing drugs in the future. © The Author 2017.
+KW  - Adverse drug events
+KW  - Drug repurposing
+KW  - Mendelian randomization
+KW  - Pharmacovigilance
+KW  - Drug Repositioning
+KW  - Drug-Related Side Effects and Adverse Reactions
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Pharmacovigilance
+KW  - Prognosis
+KW  - biological marker
+KW  - drug
+KW  - analytical method
+KW  - disease treatment
+KW  - drug
+KW  - health care
+KW  - observational method
+KW  - prediction
+KW  - research method
+KW  - triangulation
+KW  - adverse drug reaction
+KW  - Article
+KW  - disease course
+KW  - drug approval
+KW  - drug effect
+KW  - drug indication
+KW  - drug repositioning
+KW  - drug surveillance program
+KW  - genetic variability
+KW  - genomics
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - prediction
+KW  - priority journal
+KW  - adverse drug reaction
+KW  - drug surveillance program
+KW  - prognosis
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 29040597
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 128; Correspondence Address: V.M. Walker; Bristol Medical School, University of Bristol, Bristol, Oakfield House, Oakfield Grove, BS8 2BN, United Kingdom; email: venexia.walker@bristol.ac.uk; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Zhao, Q.
+AU  - Chen, Y.
+AU  - Wang, J.
+AU  - Small, D.S.
+TI  - Powerful three-sample genome-wide design and robust statistical inference in summary-data Mendelian randomization
+PY  - 2019
+T2  - International Journal of Epidemiology
+VL  - 48
+IS  - 5
+SP  - 1478
+EP  - 1492
+DO  - 10.1093/ije/dyz142
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85075089026&doi=10.1093%2fije%2fdyz142&partnerID=40&md5=f168a693508fb9783a3187097c90775d
+AD  - Department of Statistics, Wharton School, University of Pennsylvania, 400 Jon M. Huntsman Hall, 3730 Walnut Street, Philadelphia, 19104-6340, PA, United States
+AD  - Department of Statistics, University of Michigan, Ann Arbor, MI, United States
+AB  - Background: Summary-data Mendelian randomization (MR) has become a popular research design to estimate the causal effect of risk exposures. With the sample size of GWAS continuing to increase, it is now possible to use genetic instruments that are only weakly associated with the exposure. Development: We propose a three-sample genome-wide design where typically 1000 independent genetic instruments across the whole genome are used. We develop an empirical partially Bayes statistical analysis approach where instruments are weighted according to their strength; thus weak instruments bring less variation to the estimator. The estimator is highly efficient with many weak genetic instruments and is robust to balanced and/or sparse pleiotropy. Application: We apply our method to estimate the causal effect of body mass index (BMI) and major blood lipids on cardiovascular disease outcomes, and obtain substantially shorter confidence intervals (CIs). In particular, the estimated causal odds ratio of BMI on ischaemic stroke is 1.19 (95% CI: 1.07-1.32, P-value <0.001); the estimated causal odds ratio of high-density lipoprotein cholesterol (HDL-C) on coronary artery disease (CAD) is 0.78 (95% CI: 0.73-0.84, P-value <0.001). However, the estimated effect of HDL-C attenuates and become statistically non-significant when we only use strong instruments. Conclusions: A genome-wide design can greatly improve the statistical power of MR studies. Robust statistical methods may alleviate but not solve the problem of horizontal pleiotropy. Our empirical results suggest that the relationship between HDL-C and CAD is heterogeneous, and it may be too soon to completely dismiss the HDL hypothesis. © 2019 The Author(s) 2019; all rights reserved. Published by Oxford University Press on behalf of the International Epidemiological Association.
+KW  - Conditional score
+KW  - HDL hypothesis
+KW  - Partially Bayes
+KW  - Robust statistics
+KW  - Spike-and-slab prior
+KW  - Bayes Theorem
+KW  - Body Mass Index
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Coronary Artery Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Lipids
+KW  - Mendelian Randomization Analysis
+KW  - Models, Statistical
+KW  - Myocardial Infarction
+KW  - Odds Ratio
+KW  - Stroke
+KW  - high density lipoprotein cholesterol
+KW  - high density lipoprotein cholesterol
+KW  - lipid
+KW  - low density lipoprotein cholesterol
+KW  - Bayesian analysis
+KW  - blood
+KW  - body mass
+KW  - cardiovascular disease
+KW  - data set
+KW  - genetic analysis
+KW  - genome
+KW  - hypothesis testing
+KW  - pleiotropy
+KW  - stroke
+KW  - Article
+KW  - body mass
+KW  - brain ischemia
+KW  - cardiovascular disease
+KW  - coronary artery disease
+KW  - gene linkage disequilibrium
+KW  - genome analysis
+KW  - genome-wide association study
+KW  - genotype
+KW  - lipid blood level
+KW  - Mendelian randomization analysis
+KW  - nuclear magnetic resonance
+KW  - pleiotropy
+KW  - priority journal
+KW  - single nucleotide polymorphism
+KW  - statistical reasoning
+KW  - Bayes theorem
+KW  - blood
+KW  - body mass
+KW  - cerebrovascular accident
+KW  - coronary artery disease
+KW  - genetics
+KW  - genome-wide association study
+KW  - heart infarction
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - odds ratio
+KW  - procedures
+KW  - statistical model
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+C2  - 31298269
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 123; Correspondence Address: Q. Zhao; Department of Statistics, Wharton School, University of Pennsylvania, 400 Jon M. Huntsman Hall, Philadelphia, 3730 Walnut Street, 19104-6340, United States; email: qyzhao@wharton.upenn.edu; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Warrier, V.
+AU  - Kwong, A.S.F.
+AU  - Luo, M.
+AU  - Dalvie, S.
+AU  - Croft, J.
+AU  - Sallis, H.M.
+AU  - Baldwin, J.
+AU  - Munafò, M.R.
+AU  - Nievergelt, C.M.
+AU  - Grant, A.J.
+AU  - Burgess, S.
+AU  - Moore, T.M.
+AU  - Barzilay, R.
+AU  - McIntosh, A.
+AU  - van IJzendoorn, M.H.
+AU  - Cecil, C.A.M.
+TI  - Gene–environment correlations and causal effects of childhood maltreatment on physical and mental health: a genetically informed approach
+PY  - 2021
+T2  - The Lancet Psychiatry
+VL  - 8
+IS  - 5
+SP  - 373
+EP  - 386
+DO  - 10.1016/S2215-0366(20)30569-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85104309105&doi=10.1016%2fS2215-0366%2820%2930569-1&partnerID=40&md5=cfed5522d02b48eba0ce87de1601cf24
+AD  - Department of Psychiatry, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Integrative Epidemiology Unit at the University of Bristol, University of Bristol, Bristol, United Kingdom
+AD  - Department of Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - School of Psychological Science, University of Bristol, Bristol, United Kingdom
+AD  - Division of Psychiatry, Centre for Clinical Brain Sciences, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Department of Psychology, Education and Child Studies, Erasmus University Rotterdam, Rotterdam, Netherlands
+AD  - Generation R Study Group, Erasmus MC, University Medical Center Rotterdam, Rotterdam, Netherlands
+AD  - South Africa MRC Unit on Risk and Resilience in Mental Disorders, Department of Psychiatry and Neuroscience Institute, University of Cape Town, Cape Town, South Africa
+AD  - Department of Clinical, Educational and Health Psychology, Division of Psychology and Language Sciences, University College London, London, United Kingdom
+AD  - Social, Genetic and Developmental Psychiatry Centre, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, United Kingdom
+AD  - NIHR Biomedical Research Centre at the University Hospitals Bristol NHS Foundation Trust and the University of Bristol, Bristol, United Kingdom
+AD  - Department of Psychiatry, University of California San Diego, La Jolla, CA, United States
+AD  - Center of Excellence for Stress and Mental Health, Veterans Affairs San Diego Healthcare System, San Diego, CA, United States
+AD  - Research Service, Veterans Affairs San Diego Healthcare System, San Diego, CA, United States
+AD  - Veterans Affairs San Diego Healthcare System, San Diego, CA, United States
+AD  - Department of Psychiatry, University of Pennsylvania, Philadelphia, PA, United States
+AD  - Lifespan Brain Institute of the Children's Hospital of Philadelphia and University of Pennsylvania, Philadelphia, PA, United States
+AD  - Centre for Cognitive Ageing and Cognitive Epidemiology, School of Philosophy, Psychology and Language Sciences, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Department of Child and Adolescent Psychiatry, Erasmus MC, Rotterdam, Netherlands
+AD  - Department of Epidemiology, Erasmus MC, Rotterdam, Netherlands
+AD  - Molecular Epidemiology, Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, Netherlands
+AB  - Background: Childhood maltreatment is associated with poor mental and physical health. However, the mechanisms of gene–environment correlations and the potential causal effects of childhood maltreatment on health are unknown. Using genetics, we aimed to delineate the sources of gene–environment correlation for childhood maltreatment and the causal relationship between childhood maltreatment and health. Methods: We did a genome-wide association study meta-analysis of childhood maltreatment using data from the UK Biobank (n=143 473), Psychiatric Genomics Consortium (n=26 290), Avon Longitudinal Study of Parents and Children (n=8346), Adolescent Brain Cognitive Development Study (n=5400), and Generation R (n=1905). We included individuals who had phenotypic and genetic data available. We investigated single nucleotide polymorphism heritability and genetic correlations among different subtypes, operationalisations, and reports of childhood maltreatment. Family-based and population-based polygenic score analyses were done to elucidate gene–environment correlation mechanisms. We used genetic correlation and Mendelian randomisation analyses to identify shared genetics and test causal relationships between childhood maltreatment and mental and physical health conditions. Findings: Our meta-analysis of genome-wide association studies (N=185 414) identified 14 independent loci associated with childhood maltreatment (13 novel). We identified high genetic overlap (genetic correlations 0·24–1·00) among different maltreatment operationalisations, subtypes, and reporting methods. Within-family analyses provided some support for active and reactive gene–environment correlation but did not show the absence of passive gene–environment correlation. Robust Mendelian randomisation suggested a potential causal role of childhood maltreatment in depression (unidirectional), as well as both schizophrenia and ADHD (bidirectional), but not in physical health conditions (coronary artery disease, type 2 diabetes) or inflammation (C-reactive protein concentration). Interpretation: Childhood maltreatment has a heritable component, with substantial genetic correlations among different operationalisations, subtypes, and retrospective and prospective reports of childhood maltreatment. Family-based analyses point to a role of active and reactive gene–environment correlation, with equivocal support for passive correlation. Mendelian randomisation supports a (primarily bidirectional) causal role of childhood maltreatment on mental health, but not on physical health conditions. Our study identifies research avenues to inform the prevention of childhood maltreatment and its long-term effects. Funding: Wellcome Trust, UK Medical Research Council, Horizon 2020, National Institute of Mental Health, and National Institute for Health Research Biomedical Research Centre. © 2021 The Author(s). Published by Elsevier Ltd. This is an Open Access article under the CC BY 4.0 license
+KW  - Adolescent
+KW  - Adult
+KW  - Adult Survivors of Child Abuse
+KW  - Aged
+KW  - Aged, 80 and over
+KW  - Databases, Factual
+KW  - Europe
+KW  - Female
+KW  - Gene-Environment Interaction
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Longitudinal Studies
+KW  - Male
+KW  - Mental Disorders
+KW  - Mental Health
+KW  - Middle Aged
+KW  - Retrospective Studies
+KW  - United Kingdom
+KW  - Young Adult
+KW  - C reactive protein
+KW  - transcription factor FOXP2
+KW  - adolescent
+KW  - alcohol consumption
+KW  - Article
+KW  - attention deficit disorder
+KW  - child
+KW  - child abuse
+KW  - child sexual abuse
+KW  - controlled study
+KW  - coronary artery disease
+KW  - depression
+KW  - emotional abuse
+KW  - expression quantitative trait locus
+KW  - female
+KW  - FES gene
+KW  - gene
+KW  - gene identification
+KW  - gene linkage disequilibrium
+KW  - genetic correlation
+KW  - genetic risk score
+KW  - genome-wide association study
+KW  - genotype environment interaction
+KW  - health
+KW  - heritability
+KW  - human
+KW  - longitudinal study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - mental disease
+KW  - mental health
+KW  - meta analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - phenotype
+KW  - physical abuse
+KW  - priority journal
+KW  - SAMD5 gene
+KW  - schizophrenia
+KW  - second trimester pregnancy
+KW  - sex chromosome
+KW  - single nucleotide polymorphism
+KW  - smoking
+KW  - SORCS3 gene
+KW  - third trimester pregnancy
+KW  - United Kingdom
+KW  - adult
+KW  - aged
+KW  - child abuse survivor
+KW  - Europe
+KW  - factual database
+KW  - mental disease
+KW  - mental health
+KW  - middle aged
+KW  - procedures
+KW  - psychology
+KW  - retrospective study
+KW  - very elderly
+KW  - young adult
+PB  - Elsevier Ltd
+SN  - 22150366 (ISSN)
+C2  - 33740410
+LA  - English
+J2  - Lancet Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 127; Correspondence Address: V. Warrier; Department of Psychiatry, University of Cambridge, Cambridge, CB2 8AH, United Kingdom; email: vw260@medschl.cam.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Rosoff, D.B.
+AU  - Smith, G.D.
+AU  - Lohoff, F.W.
+TI  - Prescription Opioid Use and Risk for Major Depressive Disorder and Anxiety and Stress-Related Disorders: A Multivariable Mendelian Randomization Analysis
+PY  - 2021
+T2  - JAMA Psychiatry
+VL  - 78
+IS  - 2
+SP  - 151
+EP  - 160
+DO  - 10.1001/jamapsychiatry.2020.3554
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096199627&doi=10.1001%2fjamapsychiatry.2020.3554&partnerID=40&md5=b9cefc86d35048986dc4945538f04bc1
+AD  - Section on Clinical Genomics and Experimental Therapeutics, National Institute on Alcohol Abuse and Alcoholism, National Institutes of Health, 10 Center Dr (10CRC/2-2352), Bethesda, 20892, MD, United States
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AB  - Importance: Growing evidence suggests that prescription opioid use affects depression and anxiety disorders; however, observational studies are subject to confounding, making causal inference and determining the direction of these associations difficult. Objective: To investigate the potential bidirectional associations between the genetic liability for prescription opioid and other nonopioid pain medications and both major depressive disorder (MDD) and anxiety and stress-related disorders (ASRD) using genetically based methods. Design, Setting, and Participants: We performed 2-sample mendelian randomization (MR) using summary statistics from genome-wide association studies (GWAS) to assess potential associations of self-reported prescription opioid and nonopioid analgesics, including nonsteroidal anti-inflammatories (NSAIDs) and acetaminophen-like derivatives use with MDD and ASRD. The GWAS data were derived from participants of predominantly European ancestry included in observational cohorts. Data were analyzed February 20, 2020, to May 4, 2020. Main Outcomes and Measures: Major depressive disorder, ASRD, and self-reported pain medications (opioids, NSAIDs, anilides, and salicylic acid). Results: The GWAS data were derived from participants of predominantly European ancestry included in the population-based UK Biobank and Lundbeck Foundation Initiative for Integrative Psychiatric Research studies: approximately 54% of the initial UK Biobank sample and 55.6% of the Lundbeck Foundation Initiative for Integrative Psychiatric Research sample selected for the ASRD GWAS were women. In a combined sample size of 737473 study participants, single-variable MR showed that genetic liability for increased prescription opioid use was associated with increased risk of both MDD (odds ratio [OR] per unit increase in log odds opioid use, 1.14; 95% CI, 1.06-1.22; P <.001) and ASRD (OR, 1.24; 95% CI, 1.07-1.44; P =.004). Using multivariable MR, these opioid use estimates remained after accounting for other nonopioid pain medications (MDD OR, 1.14; 95% CI, 1.04-1.25; P =.005; ASRD OR, 1.30; 95% CI, 1.08-1.46; P =.006), and in separate models, accounting for comorbid pain conditions. Bidirectional analyses showed that genetic liability for MDD but not ASRD was associated with increased prescription opioid use risk (OR, 1.18; 95% CI, 1.08-1.30; P <.001). These estimates were generally consistent across single-variable and multivariable inverse variance-weighted (MV-IVW) and MR-Egger sensitivity analyses. Pleiotropy-robust methods did not indicate bias in any MV-IVW estimates. Conclusions and Relevance: The findings of this mendelian randomization analysis suggest evidence for potential causal associations between the genetic liability for increased prescription opioid use and the risk for MDD and ASRD. While replication studies are necessary, these findings may inform prevention and intervention strategies directed toward the opioid epidemic and depression. © 2021 American Medical Association. All rights reserved.
+KW  - Anxiety
+KW  - Depressive Disorder, Major
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Opioid-Related Disorders
+KW  - Polymorphism, Single Nucleotide
+KW  - Self Report
+KW  - Stress, Psychological
+KW  - Whites
+KW  - anxiety
+KW  - Caucasian
+KW  - complication
+KW  - ethnology
+KW  - genetics
+KW  - human
+KW  - major depression
+KW  - Mendelian randomization analysis
+KW  - mental stress
+KW  - opiate addiction
+KW  - psychology
+KW  - self report
+KW  - single nucleotide polymorphism
+PB  - American Medical Association
+SN  - 2168622X (ISSN)
+C2  - 33175090
+LA  - English
+J2  - JAMA Psychiatry
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 123; Correspondence Address: F.W. Lohoff; Section on Clinical Genomics and Experimental Therapeutics, National Institute on Alcohol Abuse and Alcoholism, National Institutes of Health, Bethesda, 10 Center Dr (10CRC/2-2352), 20892, United States; email: falk.lohoff@nih.gov
+ER  -
+
+TY  - JOUR
+AU  - Qi, G.
+AU  - Chatterjee, N.
+TI  - Mendelian randomization analysis using mixture models for robust and efficient estimation of causal effects
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 1941
+DO  - 10.1038/s41467-019-09432-2
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85064911760&doi=10.1038%2fs41467-019-09432-2&partnerID=40&md5=90e54e2922bbee5da817aa84d20e834e
+AD  - Department of Biostatistics, Bloomberg School of Public Health, Johns Hopkins University, Baltimore, 21205, MD, United States
+AD  - Department of Oncology, School of Medicine, Johns Hopkins University, Baltimore, 21205, MD, United States
+AB  - Mendelian randomization (MR) has emerged as a major tool for the investigation of causal relationship among traits, utilizing results from large-scale genome-wide association studies. Bias due to horizontal pleiotropy, however, remains a major concern. We propose a novel approach for robust and efficient MR analysis using large number of genetic instruments, based on a novel spike-detection algorithm under a normal-mixture model for underlying effect-size distributions. Simulations show that the new method, MRMix, provides nearly unbiased or/and less biased estimates of causal effects compared to alternative methods and can achieve higher efficiency than comparably robust estimators. Application of MRMix to publicly available datasets leads to notable observations, including identification of causal effects of BMI and age-at-menarche on the risk of breast cancer; no causal effect of HDL and triglycerides on the risk of coronary artery disease; a strong detrimental effect of BMI on the risk of major depressive disorder. © 2019, The Author(s).
+KW  - Age Factors
+KW  - Algorithms
+KW  - Body Mass Index
+KW  - Breast Neoplasms
+KW  - Cholesterol, HDL
+KW  - Coronary Artery Disease
+KW  - Datasets as Topic
+KW  - Depressive Disorder, Major
+KW  - Female
+KW  - Genome, Human
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Menarche
+KW  - Mendelian Randomization Analysis
+KW  - Quantitative Trait, Heritable
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - high density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - algorithm
+KW  - cancer
+KW  - detection method
+KW  - efficiency measurement
+KW  - estimation method
+KW  - genome
+KW  - identification method
+KW  - instrumentation
+KW  - mental disorder
+KW  - model
+KW  - pleiotropy
+KW  - simulation
+KW  - algorithm
+KW  - Article
+KW  - body mass
+KW  - breast cancer
+KW  - cardiovascular risk
+KW  - causal modeling
+KW  - clinical outcome
+KW  - computer model
+KW  - computer prediction
+KW  - computer simulation
+KW  - confidence interval
+KW  - coronary artery disease
+KW  - diastolic blood pressure
+KW  - genetic correlation
+KW  - heritability
+KW  - major depression
+KW  - maximum likelihood method
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - risk factor
+KW  - systolic blood pressure
+KW  - age
+KW  - algorithm
+KW  - blood
+KW  - breast tumor
+KW  - coronary artery disease
+KW  - female
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - human genome
+KW  - information processing
+KW  - major depression
+KW  - menarche
+KW  - Mendelian randomization analysis
+KW  - quantitative trait
+KW  - statistics and numerical data
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 31028273
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 126; Correspondence Address: N. Chatterjee; Department of Biostatistics, Bloomberg School of Public Health, Johns Hopkins University, Baltimore, 21205, United States; email: nilanjan@jhu.edu
+ER  -
+
+TY  - JOUR
+AU  - Day, F.R.
+AU  - Ong, K.K.
+AU  - Perry, J.R.B.
+TI  - Elucidating the genetic basis of social interaction and isolation
+PY  - 2018
+T2  - Nature Communications
+VL  - 9
+IS  - 1
+C7  - 2457
+DO  - 10.1038/s41467-018-04930-1
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85049523424&doi=10.1038%2fs41467-018-04930-1&partnerID=40&md5=5f7f32592364968decfaadfe13caa3e1
+AD  - MRC Epidemiology Unit, Institute of Metabolic Science, Cambridge Biomedical Campus, University of Cambridge School of Clinical Medicine, Box-285, Cambridge, CB2 0QQ, United Kingdom
+AB  - The negative impacts of social isolation and loneliness on health are well documented. However, little is known about their possible biological determinants. In up to 452,302 UK Biobank study participants, we perform genome-wide association study analyses for loneliness and regular participation in social activities. We identify 15 genomic loci (P < 5 × 10-8) for loneliness, and demonstrate a likely causal association between adiposity and increased susceptibility to loneliness and depressive symptoms. Further loci were identified for regular attendance at a sports club or gym (N = 6 loci), pub or social club (N = 13) or religious group (N = 18). Across these traits there was strong enrichment for genes expressed in brain regions that control emotional expression and behaviour. We demonstrate aetiological mechanisms specific to each trait, in addition to identifying loci that are pleiotropic across multiple complex traits. Further study of these traits may identify novel modifiable risk factors associated with social withdrawal and isolation. © 2018 The Author(s).
+KW  - Adult
+KW  - Depression
+KW  - Female
+KW  - Genome, Human
+KW  - Genome-Wide Association Study
+KW  - Genomics
+KW  - Humans
+KW  - Interpersonal Relations
+KW  - Loneliness
+KW  - Male
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - brain
+KW  - database
+KW  - etiology
+KW  - gene expression
+KW  - genome
+KW  - pleiotropy
+KW  - risk factor
+KW  - symptom
+KW  - Article
+KW  - brain region
+KW  - brain tissue
+KW  - depression
+KW  - gene expression
+KW  - genetic correlation
+KW  - genetic transcription
+KW  - genetic variation
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - loneliness
+KW  - neurosis
+KW  - pleiotropy
+KW  - religious group
+KW  - social interaction
+KW  - social isolation
+KW  - adult
+KW  - female
+KW  - genomics
+KW  - human genome
+KW  - human relation
+KW  - male
+KW  - psychology
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 29970889
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 125; Correspondence Address: J.R.B. Perry; MRC Epidemiology Unit, Institute of Metabolic Science, Cambridge Biomedical Campus, University of Cambridge School of Clinical Medicine, Cambridge, Box-285, CB2 0QQ, United Kingdom; email: John.Perry@mrc-epid.cam.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Corbin, L.J.
+AU  - Richmond, R.C.
+AU  - Wade, K.H.
+AU  - Burgess, S.
+AU  - Bowden, J.
+AU  - Smith, G.D.
+AU  - Timpson, N.J.
+TI  - BMI as a modifiable risk factor for type 2 diabetes: Refining and understanding causal estimates using mendelian randomization
+PY  - 2016
+T2  - Diabetes
+VL  - 65
+IS  - 10
+SP  - 3002
+EP  - 3007
+DO  - 10.2337/db16-0418
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-84989171924&doi=10.2337%2fdb16-0418&partnerID=40&md5=249897ae4f04c872896cbb2f9852fb8b
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Biostatistics Unit, Cambridge Institute of Public Health, Cambridge, United Kingdom
+AB  - This study focused on resolving the relationship between BMI and type 2 diabetes. The availability of multiple variants associated with BMI offers a new chance to resolve the true causal effect of BMI on type 2 diabetes; however, the properties of these associations and their validity as genetic instruments need to be considered alongside established and new methods for undertaking Mendelian randomization (MR). We explore the potential for pleiotropic genetic variants to generate bias, revise existing estimates, and illustrate value in new analysis methods. A two-sample MR approach with 96 genetic variants was used with three different analysis methods, two of which (MR-Egger and the weighted median) have been developed specifically to address problems of invalid instrumental variables. We estimate an odds ratio for type 2 diabetes per unit increase in BMI (kg/m2) of between 1.19 and 1.38, with the most stable estimate using all instruments and a weighted median approach (1.26 [95% CI 1.17, 1.34]). TCF7L2(rs7903146) was identified as a complex effect or pleiotropic instrument, and removal of this variant resulted in convergence of causal effect estimates from different causal analysis methods. This indicated the potential for pleiotropy to affect estimates and differences in performance of alternative analytical methods. In a real type 2 diabetes-focused example, this study demonstrates the potential impact of invalid instruments on causal effect estimates and the potential for new approaches to mitigate the bias caused. © 2016 by the American Diabetes Association.
+KW  - Body Mass Index
+KW  - Diabetes Mellitus, Type 2
+KW  - Genetic Pleiotropy
+KW  - Genetic Predisposition to Disease
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Odds Ratio
+KW  - Risk Factors
+KW  - Transcription Factor 7-Like 2 Protein
+KW  - TCF7L2 protein, human
+KW  - transcription factor 7 like 2
+KW  - Article
+KW  - body mass
+KW  - controlled study
+KW  - genetic variability
+KW  - human
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - pleiotropy
+KW  - priority journal
+KW  - single nucleotide polymorphism
+KW  - Diabetes Mellitus, Type 2
+KW  - genetic predisposition
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - odds ratio
+KW  - risk factor
+PB  - American Diabetes Association Inc.
+SN  - 00121797 (ISSN)
+C2  - 27402723
+LA  - English
+J2  - Diabetes
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 122; Correspondence Address: N.J. Timpson; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: n.j.timpson@bristol.ac.uk; CODEN: DIAEA
+ER  -
+
+TY  - JOUR
+AU  - Burgess, S.
+AU  - Davey Smith, G.
+TI  - Mendelian Randomization Implicates High-Density Lipoprotein Cholesterol–Associated Mechanisms in Etiology of Age-Related Macular Degeneration
+PY  - 2017
+T2  - Ophthalmology
+VL  - 124
+IS  - 8
+SP  - 1165
+EP  - 1174
+DO  - 10.1016/j.ophtha.2017.03.042
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85018678582&doi=10.1016%2fj.ophtha.2017.03.042&partnerID=40&md5=b25493c9957a1139c2460526c3e17334
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AB  - Purpose Undertake a systematic investigation into associations between genetic predictors of lipid fractions and age-related macular degeneration (AMD) risk. Design Two-sample Mendelian randomization investigation using published data. Participants A total of 33 526 individuals (16 144 cases, 17 832 controls) predominantly of European ancestry from the International Age-related Macular Degeneration Genomics Consortium. Methods We consider 185 variants previously demonstrated to be associated with at least 1 of low-density lipoprotein (LDL) cholesterol, high-density lipoprotein (HDL) cholesterol, or triglycerides at a genome-wide level of significance, and test their associations with AMD. We particularly focus on variants in gene regions that are proxies for specific pharmacologic agents for lipid therapy. We then conduct a 2-sample Mendelian randomization investigation to assess the causal roles of LDL-cholesterol, HDL-cholesterol, and triglycerides on AMD risk. We also conduct parallel investigations for coronary artery disease (CAD) (viewed as a positive control) and Alzheimer's disease (a negative control) for comparison. Main Outcome Measures Diagnosis of AMD. Results We find evidence that HDL-cholesterol is a causal risk factor for AMD, with an odds ratio (OR) estimate of 1.22 (95% confidence interval [CI], 1.03–1.44) per 1 standard deviation increase in HDL-cholesterol. No causal effect of LDL-cholesterol or triglycerides was found. Variants in the CETP gene region associated with increased circulating HDL-cholesterol also associate with increased AMD risk, although variants in the LIPC gene region that increase circulating HDL-cholesterol have the opposite direction of association with AMD risk. Parallel analyses suggest that lipids have a greater role for AMD compared with Alzheimer's disease, but a lesser role than for CAD. Conclusions Some genetic evidence suggests that HDL-cholesterol is a causal risk factor for AMD risk and that increasing HDL-cholesterol (particularly via CETP inhibition) will increase AMD risk. © 2017 American Academy of Ophthalmology
+KW  - Aged
+KW  - Cholesterol Ester Transfer Proteins
+KW  - Cholesterol, HDL
+KW  - Cholesterol, LDL
+KW  - Female
+KW  - Genetic Association Studies
+KW  - Genetic Variation
+KW  - Genotype
+KW  - Humans
+KW  - Macular Degeneration
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Odds Ratio
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Triglycerides
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - CETP protein, human
+KW  - cholesterol ester transfer protein
+KW  - high density lipoprotein cholesterol
+KW  - low density lipoprotein cholesterol
+KW  - triacylglycerol
+KW  - age related macular degeneration
+KW  - Alzheimer disease
+KW  - Article
+KW  - controlled study
+KW  - coronary artery disease
+KW  - human
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - pathogenesis
+KW  - priority journal
+KW  - aged
+KW  - blood
+KW  - female
+KW  - genetic association study
+KW  - genetic variation
+KW  - genetics
+KW  - genotype
+KW  - macular degeneration
+KW  - male
+KW  - middle aged
+KW  - odds ratio
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Elsevier Inc.
+SN  - 01616420 (ISSN)
+C2  - 28456421
+LA  - English
+J2  - Ophthalmology
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 121; Correspondence Address: S. Burgess; Cardiovascular Epidemiology Unit, University of Cambridge, Cambridge, 2 Worts Causeway, CB18RN, United Kingdom; email: sb452@medschl.cam.ac.uk; CODEN: OPHTD
+ER  -
+

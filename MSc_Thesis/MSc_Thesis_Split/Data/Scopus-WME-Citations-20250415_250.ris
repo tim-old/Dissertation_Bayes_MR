@@ -1,0 +1,836 @@
+﻿TY  - JOUR
+AU  - Guo, Z.
+AU  - Kang, H.
+AU  - Tony Cai, T.
+AU  - Small, D.S.
+TI  - Confidence intervals for causal effects with invalid instruments by using two-stage hard thresholding with voting
+PY  - 2018
+T2  - Journal of the Royal Statistical Society. Series B: Statistical Methodology
+VL  - 80
+IS  - 4
+SP  - 793
+EP  - 815
+DO  - 10.1111/rssb.12275
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85046413545&doi=10.1111%2frssb.12275&partnerID=40&md5=ac2257cd9988b403f74989e0fecb614a
+AD  - Rutgers University, Piscataway, United States
+AD  - University of Wisconsin—Madison, Madison, United States
+AD  - University of Pennsylvania, Philadelphia, United States
+AB  - A major challenge in instrumental variable (IV) analysis is to find instruments that are valid, or have no direct effect on the outcome and are ignorable. Typically one is unsure whether all of the putative IVs are in fact valid. We propose a general inference procedure in the presence of invalid IVs, called two-stage hard thresholding with voting. The procedure uses two hard thresholding steps to select strong instruments and to generate candidate sets of valid IVs. Voting takes the candidate sets and uses majority and plurality rules to determine the true set of valid IVs. In low dimensions with invalid instruments, our proposal correctly selects valid IVs, consistently estimates the causal effect, produces valid confidence intervals for the causal effect and has oracle optimal width, even if the so-called 50% rule or the majority rule is violated. In high dimensions, we establish nearly identical results without oracle optimality. In simulations, our proposal outperforms traditional and recent methods in the invalid IV literature. We also apply our method to reanalyse the causal effect of education on earnings. © 2018 Royal Statistical Society
+KW  - Exclusion restriction
+KW  - High dimensional covariates
+KW  - Invalid instruments
+KW  - Majority voting
+KW  - Plurality voting
+KW  - Treatment effect
+PB  - Blackwell Publishing Ltd
+SN  - 13697412 (ISSN)
+LA  - English
+J2  - J. R. Stat. Soc. Ser. B Stat. Methodol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 65; Correspondence Address: D.S. Small; University of Pennsylvania, Philadelphia, United States; email: dsmall@wharton.upenn.edu
+ER  -
+
+TY  - JOUR
+AU  - Laisk, T.
+AU  - Soares, A.L.G.
+AU  - Ferreira, T.
+AU  - Painter, J.N.
+AU  - Censin, J.C.
+AU  - Laber, S.
+AU  - Bacelis, J.
+AU  - Chen, C.-Y.
+AU  - Lepamets, M.
+AU  - Lin, K.
+AU  - Liu, S.
+AU  - Millwood, I.Y.
+AU  - Ramu, A.
+AU  - Southcombe, J.
+AU  - Andersen, M.S.
+AU  - Yang, L.
+AU  - Becker, C.M.
+AU  - Børglum, A.D.
+AU  - Gordon, S.D.
+AU  - Bybjerg-Grauholm, J.
+AU  - Helgeland, Ø.
+AU  - Hougaard, D.M.
+AU  - Jin, X.
+AU  - Johansson, S.
+AU  - Juodakis, J.
+AU  - Kartsonaki, C.
+AU  - Kukushkina, V.
+AU  - Lind, P.A.
+AU  - Metspalu, A.
+AU  - Montgomery, G.W.
+AU  - Morris, A.P.
+AU  - Mors, O.
+AU  - Mortensen, P.B.
+AU  - Njølstad, P.R.
+AU  - Nordentoft, M.
+AU  - Nyholt, D.R.
+AU  - Lippincott, M.
+AU  - Seminara, S.
+AU  - Salumets, A.
+AU  - Snieder, H.
+AU  - Zondervan, K.
+AU  - Werge, T.
+AU  - Chen, Z.
+AU  - Conrad, D.F.
+AU  - Jacobsson, B.
+AU  - Li, L.
+AU  - Martin, N.G.
+AU  - Neale, B.M.
+AU  - Nielsen, R.
+AU  - Walters, R.G.
+AU  - Granne, I.
+AU  - Medland, S.E.
+AU  - Mägi, R.
+AU  - Lawlor, D.A.
+AU  - Lindgren, C.M.
+TI  - The genetic architecture of sporadic and multiple consecutive miscarriage
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 5980
+DO  - 10.1038/s41467-020-19742-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096571156&doi=10.1038%2fs41467-020-19742-5&partnerID=40&md5=d4a4791e0824ace4a0cea1b1b46c23ff
+AD  - Department of Obstetrics and Gynecology, Institute of Clinical Medicine, University of Tartu, Tartu, Estonia
+AD  - Estonian Genome Center, Institute of Genomics, University of Tartu, Tartu, Estonia
+AD  - Competence Centre on Health Technologies, Tartu, Estonia
+AD  - MRC Integrated Epidemiology Unit at the University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, United Kingdom
+AD  - Big Data Institute, Li Ka Shing Center for Health for Health Information and Discovery, Oxford University, Oxford, United Kingdom
+AD  - QIMR Berghofer Medical Research Institute, Herston, QLD, Australia
+AD  - Wellcome Centre for Human Genetics, University of Oxford, Oxford, United Kingdom
+AD  - Department of Obstetrics and Gynecology, Sahlgrenska University Hospital Östra, Gothenburg, Sweden
+AD  - Analytic and Translational Genetics Unit, Massachusetts General Hospital, Boston, MA, United States
+AD  - Psychiatric and Neurodevelopmental Genetics Unit, Massachusetts General Hospital, Boston, MA, United States
+AD  - Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - Institute of Molecular and Cell Biology, University of Tartu, Tartu, Estonia
+AD  - Clinical Trial Service Unit & Epidemiological Studies Unit (CTSU), Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+AD  - BGI-Shenzhen, Shenzhen, Guangdong, 518083, China
+AD  - Bioinformatics Centre, Department of Biology, University of Copenhagen, Copenhagen, 2200, Denmark
+AD  - Medical Research Council Population Health Research Unit (PHRU), University of Oxford, Oxford, United Kingdom
+AD  - Department of Genetics, Washington University in St. Louis, Saint Louis, MO, United States
+AD  - Nuffield Department of Women’s and Reproductive Health, University of Oxford, Oxford, United Kingdom
+AD  - Department of Endocrinology, Odense University Hospital, Odense, Denmark
+AD  - iPSYCH, The Lundbeck Foundation Initiative for Integrative Psychiatric Research, Aarhus, Denmark
+AD  - Department of Biomedicine and Center for Integrative Sequencing, iSEQ, Aarhus University, Aarhus, Denmark
+AD  - Center for Genomics and Personalized Medicine, Aarhus University and University Hospital, Aarhus, Denmark
+AD  - Department for Congenital Disorders, Statens Serum Institut, Copenhagen, Denmark
+AD  - Department of Genetics and Bioinformatics, Health Data and Digitalisation, Norwegian Institute of Public Health, Oslo, Norway
+AD  - KG Jebsen Center for Diabetes Research, Department of Clinical Science, University of Bergen, Bergen, N-5020, Norway
+AD  - School of Medicine, South China University of Technology, Guangzhou, Guangdong, 510006, China
+AD  - Department of Medical Genetics, Haukeland University Hospital, Bergen, N-5021, Norway
+AD  - Department of Obstetrics and Gynecology, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden
+AD  - University of Queensland, St Lucia, QLD, Australia
+AD  - Department of Biostatistics, University of Liverpool, Liverpool, United Kingdom
+AD  - Psychosis Research Unit, Aarhus University Hospital – Psychiatry, Aarhus, Denmark
+AD  - National Centre for Register-Based Research, Aarhus University, Aarhus, Denmark
+AD  - Department of Pediatrics, Haukeland University Hospital, Bergen, Norway
+AD  - Copenhagen University Hospital, Mental Health Center Copenhagen, Mental Health Services in the Capital Region of Denmark, Copenhagen, Denmark
+AD  - School of Biomedical Sciences, Faculty of Health, Queensland University of Technology, Brisbane, QLD, Australia
+AD  - Reproductive Endocrine Unit, Massachusetts General Hospital, Boston, MA, United States
+AD  - Institute of Bio- and Translational Medicine, University of Tartu, Tartu, Estonia
+AD  - Department of Obstetrics and Gynecology, University of Helsinki and Helsinki University Hospital, Helsinki, Finland
+AD  - Department of Epidemiology, University of Groningen, University Medical Center Groningen, Groningen, Netherlands
+AD  - Institute of Biological Psychiatry, MHC Sct. Hans, Mental Health Services Copenhagen, Roskilde, Denmark
+AD  - Department of Clinical Medicine, University of Copenhagen, Copenhagen, Denmark
+AD  - Department of Epidemiology & Biostatistics, Peking University Health Science Centre, Peking University, Beijing, China
+AD  - Department of Integrative Biology, University of California Berkeley, Berkeley, CA, United States
+AD  - Centre for GeoGenetics, Natural History Museum of Denmark, University of Copenhagen, Copenhagen, Denmark
+AD  - Bristol National Institute of Health Research Biomedical Research Centre, Bristol, United Kingdom
+AD  - Program in Medical and Population Genetics, Broad Institute, Boston, MA, United States
+AB  - Miscarriage is a common, complex trait affecting ~15% of clinically confirmed pregnancies. Here we present the results of large-scale genetic association analyses with 69,054 cases from five different ancestries for sporadic miscarriage, 750 cases of European ancestry for multiple (≥3) consecutive miscarriage, and up to 359,469 female controls. We identify one genome-wide significant association (rs146350366, minor allele frequency (MAF) 1.2%, P = 3.2 × 10−8, odds ratio (OR) = 1.4) for sporadic miscarriage in our European ancestry meta-analysis and three genome-wide significant associations for multiple consecutive miscarriage (rs7859844, MAF = 6.4%, P = 1.3 × 10−8, OR = 1.7; rs143445068, MAF = 0.8%, P = 5.2 × 10−9, OR = 3.4; rs183453668, MAF = 0.5%, P = 2.8 × 10−8, OR = 3.8). We further investigate the genetic architecture of miscarriage with biobank-scale Mendelian randomization, heritability, and genetic correlation analyses. Our results show that miscarriage etiopathogenesis is partly driven by genetic variation potentially related to placental biology, and illustrate the utility of large-scale biobank data for understanding this pregnancy complication. © 2020, The Author(s).
+KW  - Abortion, Habitual
+KW  - Abortion, Spontaneous
+KW  - Adult
+KW  - Aged
+KW  - Case-Control Studies
+KW  - Datasets as Topic
+KW  - European Continental Ancestry Group
+KW  - Female
+KW  - Gene Frequency
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inheritance Patterns
+KW  - Medical History Taking
+KW  - Middle Aged
+KW  - Placenta
+KW  - Polymorphism, Single Nucleotide
+KW  - Pregnancy
+KW  - Young Adult
+KW  - allele
+KW  - ancestry
+KW  - complexity
+KW  - female
+KW  - genetic analysis
+KW  - genetic structure
+KW  - genome
+KW  - meta-analysis
+KW  - pregnancy
+KW  - adolescent
+KW  - ancestry group
+KW  - Article
+KW  - biobank
+KW  - cohort analysis
+KW  - controlled study
+KW  - descriptive research
+KW  - European
+KW  - female
+KW  - gene frequency
+KW  - genetic correlation
+KW  - genetic risk score
+KW  - genetic variation
+KW  - genome-wide association study
+KW  - genotype
+KW  - human
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - mouse
+KW  - multiple consecutive miscarriage
+KW  - nonhuman
+KW  - nuclear magnetic resonance imaging
+KW  - pathogenesis
+KW  - phenotype
+KW  - recurrent abortion
+KW  - spontaneous abortion
+KW  - sporadic miscarriage
+KW  - adult
+KW  - aged
+KW  - anamnesis
+KW  - case control study
+KW  - Caucasian
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - information processing
+KW  - inheritance
+KW  - meta analysis
+KW  - middle aged
+KW  - pathophysiology
+KW  - placenta
+KW  - pregnancy
+KW  - recurrent abortion
+KW  - single nucleotide polymorphism
+KW  - spontaneous abortion
+KW  - young adult
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 33239672
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 64; Correspondence Address: T. Laisk; Department of Obstetrics and Gynecology, Institute of Clinical Medicine, University of Tartu, Tartu, Estonia; email: triin.laisk@ut.ee; C.M. Lindgren; Big Data Institute, Li Ka Shing Center for Health for Health Information and Discovery, Oxford University, Oxford, United Kingdom; email: cecilia.lindgren@bdi.ox.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Kjaergaard, A.D.
+AU  - Marouli, E.
+AU  - Papadopoulou, A.
+AU  - Deloukas, P.
+AU  - Kuś, A.
+AU  - Sterenborg, R.
+AU  - Teumer, A.
+AU  - Burgess, S.
+AU  - Åsvold, B.O.
+AU  - Chasman, D.I.
+AU  - Medici, M.
+AU  - Ellervik, C.
+TI  - Thyroid function, sex hormones and sexual function: a Mendelian randomization study
+PY  - 2021
+T2  - European Journal of Epidemiology
+VL  - 36
+IS  - 3
+SP  - 335
+EP  - 344
+DO  - 10.1007/s10654-021-00721-z
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85100575662&doi=10.1007%2fs10654-021-00721-z&partnerID=40&md5=831c0e50eb8e20c061544d89da3a1eff
+AD  - Steno Diabetes Center Aarhus, Aarhus University Hospital, Hedeager 3, Aarhus, Denmark
+AD  - Barts and The London School of Medicine and Dentistry, William Harvey Research Institute, Queen Mary University of London, London, United Kingdom
+AD  - National Institute of Health Research Barts Biomedical Research Centre, Barts and The London School of Medicine and Dentistry, Queen Mary University of London, London, United Kingdom
+AD  - Princess Al-Jawhara Al-Brahim Centre of Excellence in Research of Hereditary Disorders (PACER-HD), King Abdulaziz University, Jeddah, Saudi Arabia
+AD  - Department of Internal Medicine, Academic Center for Thyroid Diseases, Erasmus Medical Center, Rotterdam, Netherlands
+AD  - Department of Epidemiology, Erasmus Medical Center, Rotterdam, Netherlands
+AD  - Department of Internal Medicine and Endocrinology, Medical University of Warsaw, Warsaw, Poland
+AD  - Department of Internal Medicine, Radboud Institute for Health Sciences, Radboud University Medical Center, Nijmegen, Netherlands
+AD  - Institute for Community Medicine, University Medicine Greifswald, Greifswald, Germany
+AD  - Partner site Greifswald, DZHK (German Center for Cardiovascular Research), Greifswald, Germany
+AD  - MRC Biostatistics Unit, University of Cambridge, Cambridge, United Kingdom
+AD  - Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge, Cambridge, United Kingdom
+AD  - Department of Public Health and Nursing, K.G. Jebsen Center for Genetic Epidemiology, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Department of Public Health and Nursing, HUNT Research Center, NTNU, Norwegian University of Science and Technology, Trondheim, Norway
+AD  - Department of Endocrinology, St. Olavs Hospital, Trondheim University Hospital, Trondheim, Norway
+AD  - Harvard Medical School, Boston, MA, United States
+AD  - Program in Medical and Population Genetics, The Broad Institute of MIT and Harvard, Cambridge, MA, United States
+AD  - Division of Preventive Medicine, Brigham and Women’s Hospital, Boston, MA, United States
+AD  - Department of Internal Medicine, Radboud University Medical Center, Nijmegen, Netherlands
+AD  - Department of Internal Medicine, Academic Center for Thyroid Diseases, Rotterdam, Netherlands
+AD  - Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, 2200, Denmark
+AD  - Department of Pathology, Harvard Medical School, Boston, 02215, MA, United States
+AB  - Hypothyroidism and hyperthyroidism are observationally associated with sex hormone concentrations and sexual dysfunction, but causality is unclear. We investigated whether TSH, fT4, hypo- and hyperthyroidism are causally associated with sex hormones and sexual function. We used publicly available summary statistics from genome-wide association studies on TSH and fT4 and hypo- and hyperthyroidism from the ThyroidOmics Consortium (N ≤ 54,288). Outcomes from UK Biobank (women ≤ 194,174/men ≤ 167,020) and ReproGen (women ≤ 252,514) were sex hormones (sex hormone binding globulin [SHBG], testosterone, estradiol, free androgen index [FAI]) and sexual function (ovulatory function in women: duration of menstrual period, age at menarche and menopause, reproductive lifespan, and erectile dysfunction in men). We performed two-sample Mendelian randomization (MR) analyses on summary level, and unweighted genetic risk score (GRS) analysis on individual level data. One SD increase in TSH was associated with a 1.332 nmol/L lower (95% CI: − 0.717,− 1.946; p = 2 × 10–5) SHBG and a 0.103 nmol/l lower (− 0.051,V0.154; p = 9 × 10–5) testosterone in two-sample MR, supported by the GRS approach. Genetic predisposition to hypothyroidism was associated with decreased and genetic predisposition to hyperthyroidism with increased SHBG and testosterone in both approaches. The GRS for fT4 was associated with increased testosterone and estradiol in women only. The GRS for TSH and hypothyroidism were associated with increased and the GRS for hyperthyroidism with decreased FAI in men only. While genetically predicted thyroid function was associated with sex hormones, we found no association with sexual function. © 2021, Springer Nature B.V.
+KW  - Erectile dysfunction
+KW  - Mendelian randomization
+KW  - Reproductive lifespan
+KW  - SHBG
+KW  - Testosterone
+KW  - Thyroid function
+KW  - Adult
+KW  - Erectile Dysfunction
+KW  - Estradiol
+KW  - Female
+KW  - Gonadal Steroid Hormones
+KW  - Humans
+KW  - Hyperthyroidism
+KW  - Hypothyroidism
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Sex Hormone-Binding Globulin
+KW  - Sexual Dysfunction, Physiological
+KW  - Sexual Dysfunctions, Psychological
+KW  - Testosterone
+KW  - Thyroid Gland
+KW  - Thyrotropin
+KW  - Thyroxine
+KW  - androgen
+KW  - estradiol
+KW  - sex hormone
+KW  - sex hormone binding globulin
+KW  - testosterone
+KW  - thyrotropin
+KW  - thyroxine
+KW  - estradiol
+KW  - sex hormone
+KW  - sex hormone binding globulin
+KW  - testosterone
+KW  - thyrotropin
+KW  - thyroxine
+KW  - adult
+KW  - Article
+KW  - erectile dysfunction
+KW  - female
+KW  - free thyroxine index
+KW  - genetic predisposition
+KW  - genetic risk score
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - hyperthyroidism
+KW  - hypothyroidism
+KW  - lifespan
+KW  - major clinical study
+KW  - male
+KW  - menarche
+KW  - Mendelian randomization analysis
+KW  - menopause
+KW  - menstrual cycle
+KW  - sexual function
+KW  - subclinical hyperthyroidism
+KW  - thyroid function
+KW  - United Kingdom
+KW  - blood
+KW  - complication
+KW  - erectile dysfunction
+KW  - hyperthyroidism
+KW  - hypothyroidism
+KW  - metabolism
+KW  - middle aged
+KW  - physiology
+KW  - procedures
+KW  - psychosexual disorder
+KW  - sexual dysfunction
+KW  - thyroid gland
+PB  - Springer Science and Business Media B.V.
+SN  - 03932990 (ISSN)
+C2  - 33548002
+LA  - English
+J2  - Eur. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 64; Correspondence Address: A.D. Kjaergaard; Steno Diabetes Center Aarhus, Aarhus University Hospital, Aarhus, Hedeager 3, Denmark; email: alisa.kjaergaard@auh.rm.dk; CODEN: EJEPE
+ER  -
+
+TY  - JOUR
+AU  - Xiao, M.-W.
+AU  - Lin, S.-X.
+AU  - Shen, Z.-H.
+AU  - Luo, W.-W.
+AU  - Wang, X.-Y.
+TI  - Systematic review with meta-analysis: The effects of probiotics in nonalcoholic fatty liver disease
+PY  - 2019
+T2  - Gastroenterology Research and Practice
+VL  - 2019
+C7  - 1484598
+DO  - 10.1155/2019/1484598
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85077841767&doi=10.1155%2f2019%2f1484598&partnerID=40&md5=81691034bdae087dd66952b54293c0ee
+AD  - Department of Gastroenterology, Third Xiangya Hospital, Central South University, Changsha, 410013, China
+AD  - Hunan Key Laboratory of Nonresolving Inflammation and Cancer, Changsha 410013, China
+AD  - Department of Gynecology and Obstetrics, Third Affiliated Hospital of Nanchang University, Nanchang, 330000, China
+AB  - Background and Aims. Probiotics was considered as a potential therapy for nonalcoholic fatty liver disease (NAFLD) without approval and comprehensive assessment in recent years, which call for a meta-analysis. Methods. We performed electronic and manual searches including English and Chinese databases published before April 2019, with the use of mesh term and free text of "nonalcoholic fatty liver disease" and "probiotics." Clinical trials evaluating the efficacy of probiotic therapy in NAFLD patients were included according to the eligibility criteria. With the use of random effects models, clinical outcomes were presented as weighted mean difference (WMD) with 95% confidence interval (CI), while heterogeneity and meta-regression were also assessed. Results. 28 clinical trials enrolling 1555 criterion proven NAFLD patients with the use of probiotics from 4 to 28 weeks were included. Overall, probiotic therapy had beneficial effects on body mass index (WMD: -1.46, 95% CI: [-2.44, -0.48]), alanine aminotransferase (WMD: -13.40, 95% CI: [-17.03, -9.77]), aspartate transaminase (WMD: -13.54, 95% CI: [-17.86, -9.22]), gamma-glutamyl transpeptidase (WMD: -9.88, 95% CI: [-17.77, -1.99]), insulin (WMD: -1.32, 95% CI: [-2.43, -0.21]), homeostasis model assessment-insulin resistance (WMD: -0.42, 95% CI: [-0.73, -0.12]), and total cholesterol (WMD: -15.38, 95% CI: [-26.50, -4.25]), but not in fasting blood sugar, lipid profiles, or tumor necrosis factor-alpha. Conclusion. The systematic review and meta-analysis support that probiotics are superior to placebo in NAFLD patients and could be utilized as a common complementary therapeutic approach. © 2019 Meng-Wei Xiao et al.
+KW  - alanine aminotransferase
+KW  - aspartate aminotransferase
+KW  - cholesterol
+KW  - gamma glutamyltransferase
+KW  - probiotic agent
+KW  - tumor necrosis factor
+KW  - body mass
+KW  - cholesterol blood level
+KW  - confidence interval
+KW  - glucose blood level
+KW  - homeostasis model assessment
+KW  - human
+KW  - lipid fingerprinting
+KW  - meta analysis
+KW  - nonalcoholic fatty liver
+KW  - Review
+KW  - systematic review
+PB  - Hindawi Limited
+SN  - 16876121 (ISSN)
+LA  - English
+J2  - Gastroenterol. Res. Pract.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 64; Correspondence Address: X.-Y. Wang; Department of Gastroenterology, Third Xiangya Hospital, Central South University, Changsha, 410013, China; email: wxy220011@163.com
+ER  -
+
+TY  - JOUR
+AU  - Yeung, S.L.A.
+AU  - Luo, S.
+AU  - Schooling, C.M.
+TI  - The impact of glycated hemoglobin (HbA1c) on cardiovascular disease risk: A mendelian randomization study using UK Biobank
+PY  - 2018
+T2  - Diabetes Care
+VL  - 41
+IS  - 9
+SP  - 1991
+EP  - 1997
+DO  - 10.2337/dc18-0289
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85054735067&doi=10.2337%2fdc18-0289&partnerID=40&md5=c42a36318a0badeb5577078be66d99f4
+AD  - School of Public Health, Li Ka Shing Faculty of Medicine, University of Hong Kong, Hong Kong Special Administrative Region, China
+AD  - Graduate School of Public Health and Health Policy, City University of New York, New York, NY, United States
+AB  - OBJECTIVE: Glycated hemoglobin (HbA1c) is positively associated with cardiovascular disease (CVD), although evidence is primarily observational. Mendelian randomization studies have only examined its relation with subtypes of CVD. We examined the relation of HbA1c with CVD and its subtypes in the UK Biobank using Mendelian randomization. RESEARCH DESIGN AND METHODS: We used 38 genetic variants strongly and independently related to HbA1c (n = 123, 665) applied to the UK Biobank (n = 392,038). We used inverse variance weighting (IVW) to obtain the associations of HbA1c with CVD, coronary artery disease (CAD), and stroke (overall and stroke subtypes). Sensitivity analyses included Mendelian randomization (MR)-Egger, a weighted median, and exclusion of potentially invalid single nucleotide polymorphisms (SNPs). We also applied the same genetic instruments to CARDIoGRAMplusC4D (Coronary ARtery DIsease Genome wide Replication and Meta-analysis [CARDIoGRAM] plus The Coronary Artery Disease [C4D] Genetics) 1000 Genomes-based genome-wide association study (n = 184, 305) as a validation for CAD. RESULTS: In the UK Biobank, HbA1c was not associated with CVD using IVW (odds ratio [OR] 1.11 per %, 95% CI 0.83-1.48). However, HbA1c was associated with increased CAD risk (OR 1.50 per %, 95% CI 1.08-2.11) with directionally consistent results from MR-Egger and weighted median. The positive association with CAD was more pronounced when we excluded potentially invalid SNPs (OR 2.24 per %, 95% CI 1.55-3.25). The positive association was replicated in CARDIoGRAM (OR 1.52 per %, 95% CI 1.03-2.26). The association of HbA1c with stroke and its subtypes was less clear given the low number of cases. CONCLUSIONS: HbA1c likely causes CAD. The underlying mechanisms remain to be elucidated. © 2018 by the American Diabetes Association.
+KW  - Adult
+KW  - Aged
+KW  - Biological Specimen Banks
+KW  - Cardiovascular Diseases
+KW  - Coronary Artery Disease
+KW  - Female
+KW  - Genome-Wide Association Study
+KW  - Glycated Hemoglobin A
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Odds Ratio
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Stroke
+KW  - United Kingdom
+KW  - hemoglobin A1c
+KW  - glycosylated hemoglobin
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - biobank
+KW  - cardiovascular disease
+KW  - cardiovascular risk
+KW  - cerebrovascular accident
+KW  - controlled study
+KW  - coronary artery disease
+KW  - disease association
+KW  - genetic association
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - inverse variance weighting
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - statistical analysis
+KW  - United Kingdom
+KW  - validation study
+KW  - blood
+KW  - cardiovascular disease
+KW  - cerebrovascular accident
+KW  - coronary artery disease
+KW  - female
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - odds ratio
+KW  - physiology
+KW  - procedures
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - American Diabetes Association Inc.
+SN  - 01495992 (ISSN)
+C2  - 29950300
+LA  - English
+J2  - Diabetes Care
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 65; Correspondence Address: S.L.A. Yeung; School of Public Health, Li Ka Shing Faculty of Medicine, University of Hong Kong, Hong Kong Special Administrative Region, China; email: ayslryan@hku.hk; CODEN: DICAD
+ER  -
+
+TY  - JOUR
+AU  - Huang, D.
+AU  - Lin, S.
+AU  - He, J.
+AU  - Wang, Q.
+AU  - Zhan, Y.
+TI  - Association between COVID-19 and telomere length: A bidirectional Mendelian randomization study
+PY  - 2022
+T2  - Journal of Medical Virology
+VL  - 94
+IS  - 11
+SP  - 5345
+EP  - 5353
+DO  - 10.1002/jmv.28008
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85135102898&doi=10.1002%2fjmv.28008&partnerID=40&md5=6164775271ff11233042f7dc99e55332
+AD  - Department of Epidemiology, School of Public Health (Shenzhen), Sun Yat-Sen University, Shenzhen, China
+AD  - Department of Epidemiology and Health Statistics, School of Public Health, Tongji Medical School, Huazhong University of Science and Technology, Wuhan, China
+AB  - Several traditional observational studies suggested an association between COVID-19 and leukocyte telomere length (LTL), a biomarker for biological age. However, whether there was a causal association between them remained unclear. We aimed to investigate whether genetically predicted COVID-19 is related to the risk of LTL, and vice versa. We performed bidirectional Mendelian randomization (MR) study using summary statistics from the genome-wide association studies of critically ill COVID-19 (n = 1 388 342) and LTL (n = 472 174) of European ancestry. The random-effects inverse-variance weighted estimation method was applied as the primary method with several other estimators as complementary methods. Using six single-nucleotide polymorphisms (SNPs) of genome-wide significance as instrumental variables for critically ill COVID-19, we did not find a significant association of COVID-19 on LTL (β = 0.0075, 95% confidence interval [CI]: −0.018 to 0.021, p = 0.733). Likewise, using 97 SNPs of genome-wide significance as instrumental variables for LTL, we did not find a significant association of LTL on COVID-19 (odds ratio = 1.00, 95% CI: 0.79–1.28, p = 0.973). Comparable results were obtained using MR-Egger regression, weighted median, and weighted mode approaches. We did not find evidence to support a causal association between COVID-19 and LTL in either direction. © 2022 Wiley Periodicals LLC.
+KW  - bidirectional two-sample Mendelian randomization
+KW  - COVID-19
+KW  - telomere length.
+KW  - COVID-19
+KW  - Critical Illness
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Telomere
+KW  - ancestry group
+KW  - Article
+KW  - bidirectional Mendelian randomization analysis
+KW  - causality
+KW  - cohort analysis
+KW  - confidence interval
+KW  - controlled study
+KW  - coronavirus disease 2019
+KW  - critically ill patient
+KW  - Egger regression
+KW  - European
+KW  - genetic association
+KW  - genome-wide association study
+KW  - human
+KW  - leukocyte telomere length
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - odds ratio
+KW  - prediction
+KW  - regression analysis
+KW  - single nucleotide polymorphism
+KW  - statistical analysis
+KW  - critical illness
+KW  - genetics
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - telomere
+PB  - John Wiley and Sons Inc
+SN  - 01466615 (ISSN)
+C2  - 35854470
+LA  - English
+J2  - J. Med. Virol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 64; Correspondence Address: Y. Zhan; Department of Epidemiology, School of Public Health (Shenzhen), Sun Yat-Sen University, Shenzhen, China; email: zhanyq8@mail.sysu.edu.cn; Q. Wang; Department of Epidemiology and Health Statistics, School of Public Health, Tongji Medical School, Huazhong University of Science and Technology, Wuhan, China; email: wangqi_tj@hust.edu.cn; CODEN: JMVID
+ER  -
+
+TY  - JOUR
+AU  - Fadista, J.
+AU  - Kraven, L.M.
+AU  - Karjalainen, J.
+AU  - Andrews, S.J.
+AU  - Geller, F.
+AU  - Baillie, J.K.
+AU  - Wain, L.V.
+AU  - Jenkins, R.G.
+AU  - Feenstra, B.
+TI  - Shared genetic etiology between idiopathic pulmonary fibrosis and COVID-19 severity
+PY  - 2021
+T2  - EBioMedicine
+VL  - 65
+C7  - 103277
+DO  - 10.1016/j.ebiom.2021.103277
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85103608467&doi=10.1016%2fj.ebiom.2021.103277&partnerID=40&md5=c515eedb03d2c21618d27fff58c69ff3
+AD  - Department of Epidemiology Research, Statens Serum Institut, Copenhagen, Denmark
+AD  - Department of Clinical Sciences, Lund University Diabetes Centre, Malmö, Sweden
+AD  - Institute for Molecular Medicine Finland (FIMM), University of Helsinki, Helsinki, Finland
+AD  - Department of Health Sciences, University of Leicester, Leicester, United Kingdom
+AD  - Massachusetts General Hospital, Boston, MA, United States
+AD  - Broad Institute of Harvard and MIT, Cambridge, MA, United States
+AD  - Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York, NY, United States
+AD  - Roslin Institute, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Intensive Care Unit, Royal Infirmary of Edinburgh, Edinburgh, United Kingdom
+AD  - NIHR, Leicester Respiratory, Biomedical Research Centre, Glenfield Hospital, Leicester, United Kingdom
+AD  - Nottingham University Hospitals NHS Trust, City Campus, Nottingham, United Kingdom
+AD  - NIHR Biomedical Research Centre, University of Nottingham, Nottingham, United Kingdom
+AB  - Background: Idiopathic pulmonary fibrosis (IPF) is a complex lung disease, characterized by progressive lung scarring. Severe COVID-19 is associated with substantial pneumonitis and has a number of shared major risk factors with IPF. This study aimed to determine the genetic correlation between IPF and severe COVID-19 and assess a potential causal role of genetically increased risk of IPF on COVID-19 severity. Methods: The genetic correlation between IPF and COVID-19 severity was estimated with linkage disequilibrium (LD) score regression. We performed a Mendelian randomization (MR) study for IPF causality in COVID-19. Genetic variants associated with IPF susceptibility (P<5 × 10−8) in previous genome-wide association studies (GWAS) were used as instrumental variables (IVs). Effect estimates of those IVs on COVID-19 severity were gathered from the GWAS meta-analysis by the COVID-19 Host Genetics Initiative (4,336 cases & 623,902 controls). Findings: We detected a positive genetic correlation of IPF with COVID-19 severity (rg=0·31 [95% CI 0·04–0·57], P = 0·023). The MR estimates for severe COVID-19 did not reveal any genetic association (OR 1·05, [95% CI 0·92–1·20], P = 0·43). However, outlier analysis revealed that the IPF risk allele rs35705950 at MUC5B had a different effect compared with the other variants. When rs35705950 was excluded, MR results provided evidence that genetically increased risk of IPF has a causal effect on COVID-19 severity (OR 1·21, [95% CI 1·06–1·38], P = 4·24 × 10−3). Furthermore, the IPF risk-allele at MUC5B showed an apparent protective effect against COVID-19 hospitalization only in older adults (OR 0·86, [95% CI 0·73–1·00], P = 2·99 × 10−2). Interpretation: The strongest genetic determinant of IPF, rs35705950 at MUC5B, seems to confer protection against COVID-19, whereas the combined effect of all other IPF risk loci seem to confer risk of COVID-19 severity. The observed effect of rs35705950 could either be due to protective effects of mucin over-production on the airways or a consequence of selection bias due to (1) a patient group that is heavily enriched for the rs35705950 T undertaking strict self-isolation and/or (2) due to survival bias of the rs35705950 non-IPF risk allele carriers. Due to the diverse impact of IPF causal variants on SARS-CoV-2 infection, with a possible selection bias as an explanation, further investigation is needed to address this apparent paradox between variance at MUC5B and other IPF genetic risk factors. Funding: Novo Nordisk Foundation and Oak Foundation. © 2021 The Author(s)
+KW  - Covid-19
+KW  - Idiopathic pulmonary fibrosis
+KW  - Mendelian randomization
+KW  - MUC5B
+KW  - Mucin
+KW  - COVID-19
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Idiopathic Pulmonary Fibrosis
+KW  - Lung
+KW  - Mucin-5B
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk
+KW  - SARS-CoV-2
+KW  - Severity of Illness Index
+KW  - mucin 5B
+KW  - MUC5B protein, human
+KW  - mucin 5B
+KW  - Article
+KW  - controlled study
+KW  - coronavirus disease 2019
+KW  - COVID-19 serological testing
+KW  - disease predisposition
+KW  - disease severity
+KW  - fibrosing alveolitis
+KW  - gene frequency
+KW  - gene linkage disequilibrium
+KW  - genetic association
+KW  - genetic correlation
+KW  - genetic risk
+KW  - genetic susceptibility
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - hospitalization
+KW  - human
+KW  - linkage disequilibrium score
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - real time polymerase chain reaction
+KW  - respiratory tract disease
+KW  - risk factor
+KW  - scoring system
+KW  - single nucleotide polymorphism
+KW  - whole exome sequencing
+KW  - fibrosing alveolitis
+KW  - genetic predisposition
+KW  - genetics
+KW  - lung
+KW  - pathology
+KW  - risk
+KW  - severity of illness index
+PB  - Elsevier B.V.
+SN  - 23523964 (ISSN)
+C2  - 33714028
+LA  - English
+J2  - EBioMedicine
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 63; Correspondence Address: J. Fadista; Department of Epidemiology Research, Statens Serum Institut, Copenhagen, Denmark; email: joaofadista@gmail.com
+ER  -
+
+TY  - JOUR
+AU  - Fang, F.
+AU  - Zhan, Y.
+AU  - Hammar, N.
+AU  - Shen, X.
+AU  - Wirdefeldt, K.
+AU  - Walldius, G.
+AU  - Mariosa, D.
+TI  - Lipids, Apolipoproteins, and the Risk of Parkinson Disease: A Prospective Cohort Study and a Mendelian Randomization Analysis
+PY  - 2019
+T2  - Circulation Research
+VL  - 125
+IS  - 6
+SP  - 643
+EP  - 652
+DO  - 10.1161/CIRCRESAHA.119.314929
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85071786835&doi=10.1161%2fCIRCRESAHA.119.314929&partnerID=40&md5=f60c89a48db36d7b2fe7357397f16f6f
+AD  - The Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - Unit of Epidemiology, Institute of Environmental Medicine, Karolinska Institutet, Stockholm, Sweden
+AD  - Center for Global Health Research, Usher Institute of Population Health Sciences and Informatics, Old Medical School, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Biostatistics Group, State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-sen University, Guangzhou, China
+AD  - Department of Clinical Neuroscience, Karolinska Institutet, Stockholm, Sweden
+AB  - RATIONALE: A complete picture of the associations of the most common lipid fractions, including total cholesterol (TC), LDL-C (low-density lipoprotein cholesterol), HDL-C (high-density lipoprotein cholesterol), triglycerides, and apolipoproteins, with the risk of Parkinson disease (PD), is lacking. OBJECTIVE: To assess the associations of lipids and apolipoproteins with the future risk of PD. METHODS AND RESULTS: In the AMORIS (Apolipoprotein-Related Mortality Risk) Study, we enrolled .600 000 participants during 1985 to 1996 in Stockholm, Sweden, with repeated measurements of TC, LDL-C, HDL-C, triglycerides, ApoB (apolipoprotein B), and ApoA-I (apolipoprotein A-I). The cohort was followed until the end of 2011, and incident cases of PD were identified through the Swedish Patient Register. We first used Cox models to estimate the associations of these biomarkers with later risk of PD. We further applied a Mendelian randomization analysis for TC, LDL-C, and triglycerides using the GWAS (Genome-wide association study) summary statistics from the public PD GWAS data and 23andMe PD cohorts with >800 000 individuals. One SD increase of TC was associated with a lower hazard of PD (hazard ratio, 0.90; 95% CI, 0.87.0.94). Similar associations were observed for LDL-C (hazard ratio, 0.93; 95% CI, 0.88.0.98), triglycerides (hazard ratio, 0.94; 95% CI, 0.90.0.97), and ApoB (hazard ratio, 0.91; 95% CI, 0.85.0.97). A clear dose-response relation was also noted when using these biomarkers as categorical variables. A causal inverse association of TC, LDL-C, and triglycerides with PD risk was further suggested by the Mendelian randomization analysis. CONCLUSIONS: Our findings reinforce that higher levels of TC, LDL-C, and triglycerides are associated with a lower future risk of PD and further suggest that these associations may be causal. The findings for ApoB in relation to PD risk are novel, and whether such association is causal needs to be examined.  © 2019 American Heart Association, Inc.
+KW  - biomarkers
+KW  - epidemiology
+KW  - Parkinson disease
+KW  - risk factors
+KW  - triglycerides
+KW  - Adult
+KW  - Apolipoproteins
+KW  - Case-Control Studies
+KW  - Cohort Studies
+KW  - Female
+KW  - Humans
+KW  - Lipids
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Parkinson Disease
+KW  - Prospective Studies
+KW  - Risk Factors
+KW  - Sweden
+KW  - apolipoprotein
+KW  - lipid
+KW  - adult
+KW  - blood
+KW  - case control study
+KW  - cohort analysis
+KW  - female
+KW  - genetics
+KW  - human
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - Parkinson disease
+KW  - procedures
+KW  - prospective study
+KW  - risk factor
+KW  - Sweden
+PB  - Lippincott Williams and Wilkins
+SN  - 00097330 (ISSN)
+C2  - 31382822
+LA  - English
+J2  - Circ. Res.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 63; Correspondence Address: F. Fang; Department of Medical Epidemiology and Biostatistics, Karolinska Institute, Stockholm, SE-171 77, Sweden; email: fang.fang@ki.se; Y. Zhan; Department of Medical Epidemiology and Biostatistics, Karolinska Institute, Stockholm, SE-171 77, Sweden; email: yiqiang.zhan@ki.se; CODEN: CIRUA
+ER  -
+
+TY  - JOUR
+AU  - Wade, K.H.
+AU  - Carslake, D.
+AU  - Sattar, N.
+AU  - Davey Smith, G.
+AU  - Timpson, N.J.
+TI  - BMI and Mortality in UK Biobank: Revised Estimates Using Mendelian Randomization
+PY  - 2018
+T2  - Obesity
+VL  - 26
+IS  - 11
+SP  - 1796
+EP  - 1806
+DO  - 10.1002/oby.22313
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85055337606&doi=10.1002%2foby.22313&partnerID=40&md5=ec58340e8b716e6aa7f1a3fa311921bd
+AD  - MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom
+AD  - Population Health Sciences, Bristol Medical School, Faculty of Health Sciences, University of Bristol, Bristol, United Kingdom
+AD  - Institute of Cardiovascular and Medical Sciences, British Heart Foundation Glasgow Cardiovascular Research Centre, University of Glasgow, Glasgow, United Kingdom
+AB  - Objective: The aim of this study was to obtain estimates of the causal relationship between BMI and mortality. Methods: Mendelian randomization (MR) with BMI-associated genotypic variation was used to test the causal effect of BMI on all-cause and cause-specific mortality in UK Biobank participants of White British ancestry. Results: MR analyses supported a causal association between higher BMI and greater risk of all-cause mortality (hazard ratio [HR] per 1 kg/m2: 1.03; 95% CI: 0.99-1.07) and mortality from cardiovascular diseases (HR: 1.10; 95% CI: 1.01-1.19), specifically coronary heart disease (HR: 1.12; 95% CI: 1.00-1.25) and those excluding coronary heart disease/stroke/aortic aneurysm (HR: 1.24; 95% CI: 1.03-1.48), stomach cancer (HR: 1.18; 95% CI: 0.87-1.62), and esophageal cancer (HR: 1.22; 95% CI: 0.98-1.53), and a decreased risk of lung cancer mortality (HR: 0.96; 95% CI: 0.85-1.08). Sex stratification supported the causal role of higher BMI increasing bladder cancer mortality risk (males) but decreasing respiratory disease mortality risk (males). The J-shaped observational association between BMI and mortality was visible with MR analyses, but the BMI at which mortality was minimized was lower and the association was flatter over a larger BMI range. Conclusions: Results support a causal role of higher BMI in increasing the risk of all-cause mortality and mortality from several specific causes. © 2018 The Obesity Society
+KW  - Biological Specimen Banks
+KW  - Body Mass Index
+KW  - Female
+KW  - Humans
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - Mortality
+KW  - United Kingdom
+KW  - adult
+KW  - aged
+KW  - all cause mortality
+KW  - aortic aneurysm
+KW  - Article
+KW  - biobank
+KW  - bladder cancer
+KW  - body mass
+KW  - cancer mortality
+KW  - cardiovascular mortality
+KW  - cerebrovascular accident
+KW  - controlled study
+KW  - esophagus cancer
+KW  - female
+KW  - genetic variability
+KW  - high risk patient
+KW  - human
+KW  - ischemic heart disease
+KW  - lung cancer
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - mortality
+KW  - risk assessment
+KW  - risk reduction
+KW  - sensitivity analysis
+KW  - stomach cancer
+KW  - United Kingdom
+KW  - biobank
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - mortality
+KW  - procedures
+PB  - Blackwell Publishing Inc.
+SN  - 19307381 (ISSN)
+C2  - 30358150
+LA  - English
+J2  - Obesity
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 64; Correspondence Address: K.H. Wade; MRC Integrative Epidemiology Unit, University of Bristol, Bristol, United Kingdom; email: kaitlin.wade@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Cai, J.
+AU  - He, L.
+AU  - Wang, H.
+AU  - Rong, X.
+AU  - Chen, M.
+AU  - Shen, Q.
+AU  - Li, X.
+AU  - Li, M.
+AU  - Peng, Y.
+TI  - Genetic liability for prescription opioid use and risk of cardiovascular diseases: a multivariable Mendelian randomization study
+PY  - 2022
+T2  - Addiction
+VL  - 117
+IS  - 5
+SP  - 1382
+EP  - 1391
+DO  - 10.1111/add.15767
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85121480683&doi=10.1111%2fadd.15767&partnerID=40&md5=7280441efe50ff3c00fd34dcc3b21268
+AD  - Department of Neurology, Sun Yat-sen Memorial Hospital, Sun Yat-sen University, Guangzhou, China
+AD  - Guangdong Provincial Key Laboratory of Malignant Tumor Epigenetics and Gene Regulation, Sun Yat-sen Memorial Hospital, Sun Yat-sen University, Guangzhou, China
+AB  - Background and aims: Observational studies have yielded conflicting results on the association of prescription opioid use (POU) with the risk of cardiovascular diseases (CVD). Residual confounding and potential reverse causality are inevitable in such conventional observational studies. This study used Mendelian randomization (MR) design to estimate the causal effect of POU on the risk of CVD, including coronary heart disease (CHD), myocardial infarction (MI) and ischemic stroke (IS), as well as their common risk factors. Design: We estimated the causal effect of genetic liability for POU on CVD in a two-sample MR framework. Complementary sensitivity analyses were conducted to test the robustness of our results. Setting: Genome-wide association studies (GWAS) that were based on predominantly European ancestry. Participants: The sample sizes of the GWAS used in this study ranged from 69 033 to 757 601 participants. Measurements: Genetic variants predictive of the POU and their corresponding summary-level information in the outcomes were retrieved and extracted from the respective GWAS. Findings: Using univariable MR, we found evidence for a causal effect of genetic liability for POU on an increased risk of CHD [odds ratio (OR) = 1.09; 95% confidence interval (CI) = 1.02–1.16; P = 0.008] and MI (OR = 1.13; 95% CI = 1.04–1.22; P = 0.002). In multivariable MR, the association remained after accounting for comorbid pain conditions, but was attenuated with adjustment for potential mediators, including body mass index (BMI), waist circumference (WC) and type 2 diabetes (T2D). Conclusion: Mendelian randomization estimates provide robust evidence for the causal effects of genetic liability for prescription opioid use on an increased risk of coronary heart disease and myocardial infarction, which might be mediated by obesity-related traits. © 2021 Society for the Study of Addiction.
+KW  - causality
+KW  - Coronary heart disease
+KW  - ischemic stroke
+KW  - Mendelian randomization
+KW  - myocardial infarction
+KW  - prescription opioid use
+KW  - Analgesics, Opioid
+KW  - Cardiovascular Diseases
+KW  - Diabetes Mellitus, Type 2
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - Prescriptions
+KW  - Risk Factors
+KW  - narcotic analgesic agent
+KW  - cardiovascular disease
+KW  - genetics
+KW  - genome-wide association study
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - non insulin dependent diabetes mellitus
+KW  - prescription
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - John Wiley and Sons Inc
+SN  - 09652140 (ISSN)
+C2  - 34859517
+LA  - English
+J2  - Addiction
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 63; Correspondence Address: Y. Peng; Department of Neurology, Sun Yat-sen Memorial Hospital, Sun Yat-sen University, Guangzhou, China; email: pengy2@mail.sysu.edu.cn; CODEN: ADICE
+ER  -
+

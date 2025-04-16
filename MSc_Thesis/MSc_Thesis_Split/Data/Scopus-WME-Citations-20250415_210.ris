@@ -1,0 +1,753 @@
+﻿TY  - JOUR
+AU  - Ren, Z.
+AU  - Simons, P.I.H.G.
+AU  - Wesselius, A.
+AU  - Stehouwer, C.D.A.
+AU  - Brouwers, M.C.G.J.
+TI  - Relationship between NAFLD and coronary artery disease: A Mendelian randomization study
+PY  - 2023
+T2  - Hepatology
+VL  - 77
+IS  - 1
+SP  - 230
+EP  - 238
+DO  - 10.1002/hep.32534
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85130258703&doi=10.1002%2fhep.32534&partnerID=40&md5=0e2bef346c2cf4cf3b0e9e5ee626cac1
+AD  - Division of Endocrinology and Metabolic Diseases, Department of Internal Medicine, Maastricht University, Medical Center, Maastricht, Netherlands
+AD  - 5211 Laboratory for Metabolism and Vascular Medicine, Maastricht University, Maastricht, Netherlands
+AD  - 5211 CARIM School for Cardiovascular Diseases, Maastricht University, Maastricht, Netherlands
+AD  - 5211 NUTRIM School for Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, Netherlands
+AD  - 5211 Department of Epidemiology, Maastricht University, Maastricht, Netherlands
+AD  - Division of General Internal Medicine, Department of Internal Medicine, Maastricht University, Medical Center, Maastricht, Netherlands
+AB  - Background and Aims: There is an ongoing debate on whether NAFLD is an active contributor or an innocent bystander in the pathogenesis of coronary artery disease (CAD). The aim of the present study was to assess the causal relationship between NAFLD and CAD. Approach and Results: We performed two-sample Mendelian randomization (MR) analyses using summary-level data to assess the association between genetically predicted NAFLD (i.e., chronically elevated serum alanine aminotransferase levels [cALT], imaging-based and biopsy-confirmed NAFLD) and risk of CAD. Analyses were repeated after exclusion of NAFLD susceptibility genes that are associated with impaired VLDL secretion. Inverse-variance weighted MR analyses showed a statistically significant association between genetically predicted cALT and risk of CAD (OR: 1.116, 95% CI: 1.039, 1.199), but not for the other NAFLD-related traits (OR: 1.046, 95% CI: 0.764, 1.433 and OR: 1.014, 95% CI: 0.968, 1.062 for imaging-based and biopsy-confirmed NAFLD, respectively). MR-Egger regression revealed a statistically significant intercept, indicative of directional pleiotropy, for all traits. Repeat analyses after exclusion of genes associated with impaired VLDL secretion showed consistent associations between genetically predicted NAFLD and CAD for all traits (i.e., cALT [OR: 1.203, 95% CI: 1.113, 1.300]), imaging-based (OR: 2.149, 95% CI: 1.276, 3.620) and biopsy-confirmed NAFLD (OR: 1.113, 95% CI: 1.041, 1.189), which persisted when more stringent biopsy-confirmed NAFLD criteria were used (OR: 1.154, 95% CI: 1.043, 1.278) or when more stringent MR methods were applied. MR-Egger regression did not show a statistically significant intercept. Conclusion: The two-sample MR analyses showed a robust association between genetically predicted NAFLD and CAD after exclusion of genetic variants that are implicated in impaired VLDL secretion. © 2023 John Wiley and Sons Inc.. All rights reserved.
+KW  - Causality
+KW  - Coronary Artery Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Non-alcoholic Fatty Liver Disease
+KW  - Polymorphism, Single Nucleotide
+KW  - alanine aminotransferase
+KW  - very low density lipoprotein
+KW  - alanine aminotransferase blood level
+KW  - Article
+KW  - cohort analysis
+KW  - controlled study
+KW  - coronary artery disease
+KW  - disease association
+KW  - genetic susceptibility
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - lipoprotein secretion
+KW  - liver biopsy
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - nonalcoholic fatty liver
+KW  - nuclear magnetic resonance imaging
+KW  - pleiotropy
+KW  - risk assessment
+KW  - single nucleotide polymorphism
+KW  - causality
+KW  - coronary artery disease
+KW  - genetics
+KW  - Mendelian randomization analysis
+KW  - nonalcoholic fatty liver
+KW  - procedures
+PB  - Wolters Kluwer Medknow Publications
+SN  - 02709139 (ISSN)
+C2  - 35441719
+LA  - English
+J2  - Hepatology
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 78; Correspondence Address: M.C.G.J. Brouwers; Department of Internal Medicine, Division of Endocrinology and Metabolic Diseases, Maastricht University, Medical Center, Maastricht, PO Box 5800, 6202 AZ, Netherlands; email: mcgj.brouwers@mumc.nl; CODEN: HPTLD
+ER  -
+
+TY  - JOUR
+AU  - Li, G.H.-Y.
+AU  - Cheung, C.-L.
+AU  - Chung, A.K.-K.
+AU  - Cheung, B.M.-Y.
+AU  - Wong, I.C.-K.
+AU  - Fok, M.L.Y.
+AU  - Au, P.C.-M.
+AU  - Sham, P.-C.
+TI  - Evaluation of bi-directional causal association between depression and cardiovascular diseases: a Mendelian randomization study
+PY  - 2022
+T2  - Psychological Medicine
+VL  - 52
+IS  - 9
+SP  - 1765
+EP  - 1776
+DO  - 10.1017/S0033291720003566
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85093535747&doi=10.1017%2fS0033291720003566&partnerID=40&md5=851d35be9c0c37b6a18a1301b05801ed
+AD  - Department of Pharmacology and Pharmacy, Li Ka Shing Faculty of Medicine, The University of Hong Kong, Hong Kong
+AD  - Department of Health Technology and Informatics, The Hong Kong Polytechnic University, Hong Kong
+AD  - Department of Psychiatry, Li Ka Shing Faculty of Medicine, The University of Hong Kong, Hong Kong
+AD  - Department of Medicine, Li Ka Shing Faculty of Medicine, The University of Hong Kong, Hong Kong
+AD  - Research Department of Practice and Policy, School of Pharmacy, University College London, London, United Kingdom
+AD  - Central and North West London Nhs Foundation Trust, London, United Kingdom
+AD  - Department of Psychological Medicine, Institute of Psychiatry, Psychology & Neuroscience, King's College London, London, United Kingdom
+AD  - State Key Laboratory of Brain and Cognitive Sciences, The University of Hong Kong, Hong Kong
+AB  - Background Depression and cardiovascular disease (CVD) are associated with each other but their relationship remains unclear. We aim to determine whether genetic predisposition to depression are causally linked to CVD [including coronary artery disease (CAD), myocardial infarction (MI), stroke and atrial fibrillation (AF)]. Methods Using summary statistics from the largest genome-wide association studies (GWAS) or GWAS meta-analysis of depression (primary analysis: n = 500 199), broad depression (help-seeking behavior for problems with nerves, anxiety, tension or depression; secondary analysis: n = 322 580), CAD (n = 184 305), MI (n = 171 875), stroke (n = 446 696) and AF (n = 1 030 836), genetic correlation was tested between two depression phenotypes and CVD [MI, stroke and AF (not CAD as its correlation was previously confirmed)]. Causality was inferred between correlated traits by Mendelian Randomization analyses. Results Both depression phenotypes were genetically correlated with MI (depression: rG = 0.169; p = 9.03 × 10-9; broad depression: rG = 0.123; p = 1 × 10-4) and AF (depression: rG = 0.112; p = 7.80 × 10-6; broad depression: rG = 0.126; p = 3.62 × 10-6). Genetically doubling the odds of depression was causally associated with increased risk of CAD (OR = 1.099; 95% CI 1.031-1.170; p = 0.004) and MI (OR = 1.146; 95% CI 1.070-1.228; p = 1.05 × 10-4). Adjustment for blood lipid levels/smoking status attenuated the causality between depression and CAD/MI. Null causal association was observed for CVD on depression. A similar pattern of results was observed in the secondary analysis for broad depression. Conclusions Genetic predisposition to depression may have positive causal roles on CAD/MI. Genetic susceptibility to self-awareness of mood problems may be a strong causal risk factor of CAD/MI. Blood lipid levels and smoking may potentially mediate the causal pathway. Prevention and early diagnosis of depression are important in the management of CAD/MI.  Copyright © The Author(s) 2020. Published by Cambridge University Press.
+KW  - Cardiovascular disease
+KW  - depression
+KW  - genetics
+KW  - Mendelian randomization
+KW  - Cardiovascular Diseases
+KW  - Coronary Artery Disease
+KW  - Depression
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Myocardial Infarction
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - Stroke
+KW  - cardiovascular disease
+KW  - cerebrovascular accident
+KW  - coronary artery disease
+KW  - depression
+KW  - genetic predisposition
+KW  - genetics
+KW  - genome-wide association study
+KW  - heart infarction
+KW  - human
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Cambridge University Press
+SN  - 00332917 (ISSN)
+C2  - 33032663
+LA  - English
+J2  - Psychol. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 76; Correspondence Address: C.-L. Cheung; Department of Pharmacology and Pharmacy, Li Ka Shing Faculty of Medicine, The University of Hong Kong, Hong Kong; email: lung1212@hku.hk; CODEN: PSMDC
+ER  -
+
+TY  - JOUR
+AU  - Said, S.
+AU  - Pazoki, R.
+AU  - Karhunen, V.
+AU  - Võsa, U.
+AU  - Ligthart, S.
+AU  - Bodinier, B.
+AU  - Koskeridis, F.
+AU  - Welsh, P.
+AU  - Alizadeh, B.Z.
+AU  - Chasman, D.I.
+AU  - Sattar, N.
+AU  - Chadeau-Hyam, M.
+AU  - Evangelou, E.
+AU  - Jarvelin, M.-R.
+AU  - Elliott, P.
+AU  - Tzoulaki, I.
+AU  - Dehghan, A.
+TI  - Genetic analysis of over half a million people characterises C-reactive protein loci
+PY  - 2022
+T2  - Nature Communications
+VL  - 13
+IS  - 1
+C7  - 2198
+DO  - 10.1038/s41467-022-29650-5
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85128741556&doi=10.1038%2fs41467-022-29650-5&partnerID=40&md5=fb0978d5bff73d418d722fb838745d72
+AD  - Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom
+AD  - Cardiovascular and Metabolic Research Group, Department of Life Sciences, Brunel University London, London, United Kingdom
+AD  - The Centre for Inflammation Research and Translational Medicine (CIRTM), Brunel University London, London, United Kingdom
+AD  - Centre for Health and Well-being Across the Life Course, Brunel University London, London, United Kingdom
+AD  - Centre for Life Course Health Research, University of Oulu, Oulu, Finland
+AD  - Research Unit of Mathematical Sciences, University of Oulu, Oulu, Finland
+AD  - Estonian Genome Centre, Institute of Genomics, University of Tartu, Tartu, Estonia
+AD  - Department of Intensive Care, University Hospital Antwerp, Antwerp, Belgium
+AD  - Department of Hygiene and Epidemiology, University of Ioannina Medical School, Ioannina, Greece
+AD  - Institute of Cardiovascular and Medical Sciences, University of Glasgow, Glasgow, G12 8TA, United Kingdom
+AD  - Department of Epidemiology, University of Groningen and University Medical Centre Groningen, Groningen, Netherlands
+AD  - Division of Preventive Medicine, Brigham & Women’s Hospital, Boston, 02115, MA, United States
+AD  - Department of Medicine, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA, United States
+AD  - MRC-PHE Centre for Environment and Health, School of Public Health, Imperial College London, London, W2 1PG, United Kingdom
+AD  - UK Dementia Research Institute at Imperial College London, Burlington Danes Building, Hammersmith Hospital, DuCane Road, London, W12 0NN, United Kingdom
+AD  - National Institute for Health Research Imperial Biomedical Research Centre, Imperial College London, London, W2 1PG, United Kingdom
+AB  - Chronic low-grade inflammation is linked to a multitude of chronic diseases. We report the largest genome-wide association study (GWAS) on C-reactive protein (CRP), a marker of systemic inflammation, in UK Biobank participants (N = 427,367, European descent) and the Cohorts for Heart and Aging Research in Genomic Epidemiology (CHARGE) Consortium (total N = 575,531 European descent). We identify 266 independent loci, of which 211 are not previously reported. Gene-set analysis highlighted 42 gene sets associated with CRP levels (p ≤ 3.2 ×10−6) and tissue expression analysis indicated a strong association of CRP related genes with liver and whole blood gene expression. Phenome-wide association study identified 27 clinical outcomes associated with genetically determined CRP and subsequent Mendelian randomisation analyses supported a causal association with schizophrenia, chronic airway obstruction and prostate cancer. Our findings identified genetic loci and functional properties of chronic low-grade inflammation and provided evidence for causal associations with a range of diseases. © 2022, The Author(s).
+KW  - C-Reactive Protein
+KW  - Genetic Loci
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Inflammation
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Phenomics
+KW  - Polymorphism, Single Nucleotide
+KW  - United Kingdom
+KW  - C reactive protein
+KW  - high density lipoprotein
+KW  - phenylalanine
+KW  - triacylglycerol
+KW  - C reactive protein
+KW  - blood
+KW  - gene expression
+KW  - genetic analysis
+KW  - genome
+KW  - protein
+KW  - adult
+KW  - Article
+KW  - chronic obstructive lung disease
+KW  - clinical outcome
+KW  - cohort analysis
+KW  - controlled study
+KW  - gene expression
+KW  - gene locus
+KW  - gene set analysis
+KW  - genetic analysis
+KW  - genetic risk score
+KW  - genetic variability
+KW  - genome-wide association study
+KW  - human
+KW  - human tissue
+KW  - macular degeneration
+KW  - major clinical study
+KW  - Mendelian randomization analysis
+KW  - molecular phylogeny
+KW  - prostate cancer
+KW  - retina degeneration
+KW  - schizophrenia
+KW  - single nucleotide polymorphism
+KW  - gene locus
+KW  - genetics
+KW  - inflammation
+KW  - male
+KW  - metabolism
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 35459240
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 80; Correspondence Address: A. Dehghan; Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London, London, United Kingdom; email: a.dehghan@imperial.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Cho, Y.
+AU  - Haycock, P.C.
+AU  - Sanderson, E.
+AU  - Gaunt, T.R.
+AU  - Zheng, J.
+AU  - Morris, A.P.
+AU  - Davey Smith, G.
+AU  - Hemani, G.
+TI  - Exploiting horizontal pleiotropy to search for causal pathways within a Mendelian randomization framework
+PY  - 2020
+T2  - Nature Communications
+VL  - 11
+IS  - 1
+C7  - 1010
+DO  - 10.1038/s41467-020-14452-4
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079792900&doi=10.1038%2fs41467-020-14452-4&partnerID=40&md5=ce6ebc708437192b37cf64ab66cd66ff
+AD  - MRC Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 2BN, United Kingdom
+AD  - Department of Biostatistics, University of Liverpool, Liverpool, L69 3GL, United Kingdom
+AD  - Division of Musculoskeletal and Dermatological Sciences, University of Manchester, Manchester, M13 9NT, United Kingdom
+AB  - In Mendelian randomization (MR) analysis, variants that exert horizontal pleiotropy are typically treated as a nuisance. However, they could be valuable in identifying alternative pathways to the traits under investigation. Here, we develop MR-TRYX, a framework that exploits horizontal pleiotropy to discover putative risk factors for disease. We begin by detecting outliers in a single exposure–outcome MR analysis, hypothesising they are due to horizontal pleiotropy. We search across hundreds of complete GWAS summary datasets to systematically identify other (candidate) traits that associate with the outliers. We develop a multi-trait pleiotropy model of the heterogeneity in the exposure–outcome analysis due to pathways through candidate traits. Through detailed investigation of several causal relationships, many pleiotropic pathways are uncovered with already established causal effects, validating the approach, but also alternative putative causal pathways. Adjustment for pleiotropic pathways reduces the heterogeneity across the analyses. © 2020, The Author(s).
+KW  - Causality
+KW  - Computer Simulation
+KW  - Databases, Genetic
+KW  - Disease
+KW  - Genetic Pleiotropy
+KW  - Genetic Variation
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Mendelian Randomization Analysis
+KW  - Models, Genetic
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Risk Factors
+KW  - genetic analysis
+KW  - model
+KW  - pleiotropy
+KW  - risk assessment
+KW  - Article
+KW  - causal attribution
+KW  - conceptual framework
+KW  - controlled study
+KW  - genome-wide association study
+KW  - horizontal pleiotropy
+KW  - Mendelian randomization analysis
+KW  - pleiotropy
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - validation process
+KW  - biological model
+KW  - causality
+KW  - computer simulation
+KW  - diseases
+KW  - genetic database
+KW  - genetic variation
+KW  - genetics
+KW  - human
+KW  - phenotype
+PB  - Nature Research
+SN  - 20411723 (ISSN)
+C2  - 32081875
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 78; Correspondence Address: G. Hemani; MRC Integrative Epidemiology Unit, Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, BS8 2BN, United Kingdom; email: g.hemani@bristol.ac.uk
+ER  -
+
+TY  - JOUR
+AU  - Goodarzi, M.O.
+AU  - Rotter, J.I.
+TI  - Genetics Insights in the Relationship between Type 2 Diabetes and Coronary Heart Disease
+PY  - 2020
+T2  - Circulation Research
+VL  - 126
+IS  - 11
+SP  - 1526
+EP  - 1548
+DO  - 10.1161/CIRCRESAHA.119.316065
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85085155789&doi=10.1161%2fCIRCRESAHA.119.316065&partnerID=40&md5=a2de1bcf89c5d08c24a374ff51c3b0c1
+AD  - Division of Endocrinology, Diabetes, and Metabolism, Department of Medicine, Cedars-Sinai Medical Center, Los Angeles, CA, United States
+AD  - Institute for Translational Genomics and Population Sciences, Department of Pediatrics, The Lundquist Institute for Biomedical Innovation, Harbor-UCLA Medical Center, Torrance, CA, United States
+AB  - Diabetes mellitus is a major risk factor for coronary heart disease (CHD). The major form of diabetes mellitus is type 2 diabetes mellitus (T2D), which is thus largely responsible for the CHD association in the general population. Recent years have seen major advances in the genetics of T2D, principally through ever-increasing large-scale genome-wide association studies. This article addresses the question of whether this expanding knowledge of the genomics of T2D provides insight into the etiologic relationship between T2D and CHD. We will investigate this relationship by reviewing the evidence for shared genetic loci between T2D and CHD; by examining the formal testing of this interaction (Mendelian randomization studies assessing whether T2D is causal for CHD); and then turn to the implications of this genetic relationship for therapies for CHD, for therapies for T2D, and for therapies that affect both. In conclusion, the growing knowledge of the genetic relationship between T2D and CHD is beginning to provide the promise for improved prevention and treatment of both disorders. © 2020 Lippincott Williams and Wilkins. All rights reserved.
+KW  - coronary artery disease
+KW  - diabetes mellitus
+KW  - glucose tolerance test
+KW  - insulin resistance
+KW  - risk factor
+KW  - Animals
+KW  - Coronary Disease
+KW  - Diabetes Mellitus, Type 2
+KW  - Diabetic Cardiomyopathies
+KW  - Genetic Heterogeneity
+KW  - Genetic Predisposition to Disease
+KW  - Humans
+KW  - animal
+KW  - complication
+KW  - coronary artery disease
+KW  - diabetic cardiomyopathy
+KW  - genetic heterogeneity
+KW  - genetic predisposition
+KW  - genetics
+KW  - human
+KW  - non insulin dependent diabetes mellitus
+PB  - Lippincott Williams and Wilkins
+SN  - 00097330 (ISSN)
+C2  - 32437307
+LA  - English
+J2  - Circ. Res.
+M3  - Review
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 77; Correspondence Address: M.O. Goodarzi; Cedars-Sinai Medical Center, Division of Endocrinology, Diabetes and Metabolism, Los Angeles, 8700 Beverly Blvd, Room B-131, 90048, United States; email: mark.goodarzi@cshs.org; CODEN: CIRUA
+ER  -
+
+TY  - JOUR
+AU  - Park, S.
+AU  - Lee, S.
+AU  - Kim, Y.
+AU  - Lee, Y.
+AU  - Kang, M.W.
+AU  - Kim, K.
+AU  - Kim, Y.C.
+AU  - Han, S.S.
+AU  - Lee, H.
+AU  - Lee, J.P.
+AU  - Joo, K.W.
+AU  - Lim, C.S.
+AU  - Kim, Y.S.
+AU  - Kim, D.K.
+TI  - Atrial fibrillation and kidney function: A bidirectional Mendelian randomization study
+PY  - 2021
+T2  - European Heart Journal
+VL  - 42
+IS  - 29
+SP  - 2816
+EP  - 2823
+DO  - 10.1093/eurheartj/ehab291
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85112157709&doi=10.1093%2feurheartj%2fehab291&partnerID=40&md5=ff271cb5a6f72255c665ba5567329ba8
+AD  - Department of Biomedical Sciences, Seoul National University College of Medicine, Seoul, 03080, South Korea
+AD  - Department of Internal Medicine, Armed Forces Capital Hospital, Gyeonggi-do, 13574, South Korea
+AD  - Department of Internal Medicine, Uijeongbu Eulji University Medical Center, Gyeonggi-do, 11759, South Korea
+AD  - Department of Internal Medicine, Keimyung University School of Medicine, Daegu, 42601, South Korea
+AD  - Department of Internal Medicine, Seoul National University Hospital, Seoul, 03080, South Korea
+AD  - Transdisciplinary Department of Medicine and Advanced Technology, Seoul National University Hospital, Seoul, 03080, South Korea
+AD  - Kidney Research Institute, Seoul National University, Seoul, South Korea
+AD  - Department of Internal Medicine, Seoul National University College of Medicine, Seoul, 03080, South Korea
+AD  - Department of Internal Medicine, SMG-SNU Boramae Medical Center, Seoul, 07061, South Korea
+AB  - Aims: The aim of this study was to investigate the causal effects between atrial fibrillation (AF) and kidney function. Methods and results: We performed a bidirectional summary-level Mendelian randomization (MR) analysis implementing the results from a large-scale genome-wide association study for estimated glomerular filtration rate (eGFR) by the CKDGen (N = 765 348) and AF (N = 588 190) to identify genetic instruments. The inverse variance weighted method was the main MR method used. For replication, an allele score-based MR was performed by individual-level data within a UK Biobank cohort of white British ancestry individuals (N = 337 138). A genetic predisposition to AF was significantly associated with decreased eGFR [for log-eGFR, beta -0.003 (standard error, 0.0005), P < 0.001] and increased risk of chronic kidney disease [beta 0.059 (0.0126), P < 0.001]. The significance remained in MR sensitivity analyses and the causal estimates were consistent when we limited the analysis to individuals of European ancestry. Genetically predicted eGFR did not show a significant association with the risk of AF [beta -0.366 (0.275), P = 0.183]. The results were similar in allele score-based MR, as allele score for AF was significantly associated with reduced eGFR [for continuous eGFR, beta -0.079 (0.021), P < 0.001], but allele score for eGFR did not show a significant association with risk of AF [beta -0.005 (0.008), P = 0.530]. Conclusions: Our study supports that AF is a causal risk factor for kidney function impairment. However, an effect of kidney function on AF was not identified in this study.  © 2021 Published on behalf of the European Society of Cardiology. All rights reserved. 
+KW  - Atrial fibrillation
+KW  - Chronic kidney disease
+KW  - Estimated glomerular filtration rate
+KW  - Mendelian randomization
+KW  - Atrial Fibrillation
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Kidney
+KW  - Mendelian Randomization Analysis
+KW  - Polymorphism, Single Nucleotide
+KW  - cystatin C
+KW  - adult
+KW  - aged
+KW  - Article
+KW  - atrial fibrillation
+KW  - Caucasian
+KW  - chronic kidney failure
+KW  - controlled study
+KW  - estimated glomerular filtration rate
+KW  - female
+KW  - genetic predisposition
+KW  - genome-wide association study
+KW  - human
+KW  - kidney disease
+KW  - major clinical study
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - sensitivity analysis
+KW  - single nucleotide polymorphism
+KW  - United Kingdom
+KW  - genetics
+KW  - kidney
+KW  - Mendelian randomization analysis
+PB  - Oxford University Press
+SN  - 0195668X (ISSN)
+C2  - 34023889
+LA  - English
+J2  - Eur. Heart J.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 75; Correspondence Address: D.K. Kim; Department of Internal Medicine, Seoul National University Hospital, Seoul, 03080, South Korea; email: dkkim73@gmail.com; CODEN: EHJOD
+ER  -
+
+TY  - JOUR
+AU  - Spiller, W.
+AU  - Davies, N.M.
+AU  - Palmer, T.M.
+TI  - Software application profile: Mrrobust - A tool for performing two-sample summary Mendelian randomization analyses
+PY  - 2019
+T2  - International Journal of Epidemiology
+VL  - 48
+IS  - 3
+SP  - 664
+EP  - 690
+DO  - 10.1093/ije/dyy195
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85072649072&doi=10.1093%2fije%2fdyy195&partnerID=40&md5=fdc87e15aa85999cdf2822dc6116dd9d
+AD  - MRC Integrative Epidemiology Unit, Population Health Institute, University of Bristol, Oakfield House, Oakfield Grove, Bristol, BS8 2BN, United Kingdom
+AD  - Department of Mathematics and Statistics, Lancaster University, Lancaster, United Kingdom
+AB  - Motivation: In recent years, Mendelian randomization analysis using summary data from genome-wide association studies has become a popular approach for investigating causal relationships in epidemiology. The mrrobust Stata package implements several of the recently developed methods. Implementation: mrrobust is freely available as a Stata package. General features: The package includes inverse variance weighted estimation, as well as a range of median, modal and MR-Egger estimation methods. Using mrrobust, plots can be constructed visualizing each estimate either individually or simultaneously. The package also provides statistics such as IGX2, which are useful in assessing attenuation bias in causal estimates. Availability: The software is freely available from GitHub [https://raw.github.com/remlapmot/mrrobust/master/]. © 2018 The Author(s) 2018. Published by Oxford University Press on behalf of the International Epidemiological Association.
+KW  - IVW
+KW  - Mendelian randomization
+KW  - MR-Egger
+KW  - Stata
+KW  - Summary MR
+KW  - weighted median
+KW  - estimation method
+KW  - genome
+KW  - sampling
+KW  - software
+KW  - article
+KW  - controlled study
+KW  - genome-wide association study
+KW  - Mendelian randomization analysis
+KW  - motivation
+KW  - randomized controlled trial
+KW  - software
+PB  - Oxford University Press
+SN  - 03005771 (ISSN)
+LA  - English
+J2  - Int. J. Epidemiol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 78; Correspondence Address: W. Spiller; MRC Integrative Epidemiology Unit, Population Health Institute, University of Bristol, Oakfield House, Bristol, Oakfield Grove, BS8 2BN, United Kingdom; email: wes.spiller@bristol.ac.uk; CODEN: IJEPB
+ER  -
+
+TY  - JOUR
+AU  - Gill, D.
+AU  - Del Greco, F.M.
+AU  - Walker, A.P.
+AU  - Srai, S.K.S.
+AU  - Laffan, M.A.
+AU  - Minelli, C.
+TI  - The Effect of Iron Status on Risk of Coronary Artery Disease: A Mendelian Randomization Study - Brief Report
+PY  - 2017
+T2  - Arteriosclerosis, Thrombosis, and Vascular Biology
+VL  - 37
+IS  - 9
+SP  - 1788
+EP  - 1792
+DO  - 10.1161/ATVBAHA.117.309757
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85022007039&doi=10.1161%2fATVBAHA.117.309757&partnerID=40&md5=168cea7d3dbf352eebca553d2b189756
+AD  - Imperial College Healthcare NHS Trust, Imperial College London, Postgraduate Centre, St Mary's Hospital, London, W2 1NY, United Kingdom
+AD  - Department of Clinical Pharmacology and Therapeutics, Imperial College London, United Kingdom
+AD  - Department of Haematology, Imperial College London, United Kingdom
+AD  - Department of Population Health and Occupational Disease, Imperial College London, United Kingdom
+AD  - Institute for Biomedicine, Eurac Research, Bolzano, Italy
+AD  - Centre for Cardiovascular Genetics, University College London, United Kingdom
+AD  - Division of Biosciences, University College London, United Kingdom
+AB  - Objective - Iron status is a modifiable trait that has been implicated in cardiovascular disease. This study uses the Mendelian randomization technique to investigate whether there is any causal effect of iron status on risk of coronary artery disease (CAD). Approach and Results - A 2-sample Mendelian randomization approach is used to estimate the effect of iron status on CAD risk. Three loci (rs1800562 and rs1799945 in the HFE gene and rs855791 in TMPRSS6) that are each associated with serum iron, transferrin saturation, ferritin, and transferrin in a pattern suggestive of an association with systemic iron status are used as instruments. SNP (single-nucleotide polymorphism)-iron status association estimates are based on a genome-wide association study meta-analysis of 48 972 individuals. SNP-CAD estimates are derived by combining the results of a genome-wide association study meta-analysis of 60 801 CAD cases and 123 504 controls with those of a meta-analysis of 63 746 CAD cases and 130 681 controls obtained from Metabochip and genome-wide association studies. Combined Mendelian randomization estimates are obtained for each marker by pooling results across the 3 instruments. We find evidence of a protective effect of higher iron status on CAD risk (iron odds ratio, 0.94 per SD unit increase; 95% confidence interval, 0.88-1.00; P=0.039; transferrin saturation odds ratio, 0.95 per SD unit increase; 95% confidence interval, 0.91-0.99; P=0.027; log-transformed ferritin odds ratio, 0.85 per SD unit increase; 95% confidence interval, 0.73-0.98; P=0.024; and transferrin odds ratio, 1.08 per SD unit increase; 95% confidence interval, 1.01-1.16; P=0.034). Conclusions - This Mendelian randomization study supports the hypothesis that higher iron status reduces CAD risk. These findings may highlight a therapeutic target. © 2017 American Heart Association, Inc.
+KW  - cardiovascular diseases
+KW  - coronary artery disease
+KW  - iron
+KW  - Case-Control Studies
+KW  - Coronary Artery Disease
+KW  - Databases, Genetic
+KW  - Ferritins
+KW  - Genetic Association Studies
+KW  - Genetic Predisposition to Disease
+KW  - Hemochromatosis Protein
+KW  - Humans
+KW  - Iron
+KW  - Iron Metabolism Disorders
+KW  - Membrane Proteins
+KW  - Mendelian Randomization Analysis
+KW  - Odds Ratio
+KW  - Phenotype
+KW  - Polymorphism, Single Nucleotide
+KW  - Protective Factors
+KW  - Risk Assessment
+KW  - Risk Factors
+KW  - Serine Endopeptidases
+KW  - Transferrin
+KW  - ferritin
+KW  - iron
+KW  - transferrin
+KW  - ferritin
+KW  - hemochromatosis protein
+KW  - HFE protein, human
+KW  - iron
+KW  - membrane protein
+KW  - serine proteinase
+KW  - TMPRSS6 protein, human
+KW  - transferrin
+KW  - Article
+KW  - cardiovascular risk
+KW  - controlled study
+KW  - coronary artery disease
+KW  - ferritin blood level
+KW  - gene locus
+KW  - human
+KW  - iron blood level
+KW  - Mendelian randomization analysis
+KW  - meta analysis
+KW  - priority journal
+KW  - randomized controlled trial
+KW  - risk assessment
+KW  - single nucleotide polymorphism
+KW  - transferrin blood level
+KW  - blood
+KW  - case control study
+KW  - coronary artery disease
+KW  - genetic association study
+KW  - genetic database
+KW  - genetic predisposition
+KW  - genetics
+KW  - iron metabolism disorder
+KW  - odds ratio
+KW  - phenotype
+KW  - protection
+KW  - risk factor
+KW  - single nucleotide polymorphism
+PB  - Lippincott Williams and Wilkins
+SN  - 10795642 (ISSN)
+C2  - 28684612
+LA  - English
+J2  - Arterioscler. Thromb. Vasc. Biol.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 76; Correspondence Address: D. Gill; Imperial College Healthcare NHS Trust, Imperial College London, Postgraduate Centre, St Mary's Hospital, London, W2 1NY, United Kingdom; email: dipender.gill@imperial.ac.uk; CODEN: ATVBF
+ER  -
+
+TY  - JOUR
+AU  - Polimanti, R.
+AU  - Peterson, R.E.
+AU  - Ong, J.-S.
+AU  - MacGregor, S.
+AU  - Edwards, A.C.
+AU  - Clarke, T.-K.
+AU  - Frank, J.
+AU  - Gerring, Z.
+AU  - Gillespie, N.A.
+AU  - Lind, P.A.
+AU  - Maes, H.H.
+AU  - Martin, N.G.
+AU  - Mbarek, H.
+AU  - Medland, S.E.
+AU  - Streit, F.
+AU  - Agrawal, A.
+AU  - Edenberg, H.J.
+AU  - Kendler, K.S.
+AU  - Lewis, C.M.
+AU  - Sullivan, P.F.
+AU  - Wray, N.R.
+AU  - Gelernter, J.
+AU  - Derks, E.M.
+TI  - Evidence of causal effect of major depression on alcohol dependence: Findings from the psychiatric genomics consortium
+PY  - 2019
+T2  - Psychological Medicine
+VL  - 49
+IS  - 7
+SP  - 1218
+EP  - 1226
+DO  - 10.1017/S0033291719000667
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85063776914&doi=10.1017%2fS0033291719000667&partnerID=40&md5=2f3214f3b5307fa9e3717ec4b4e233ce
+AD  - Department of Psychiatry, Yale University School of Medicine, VA CT Healthcare Center, West Haven, CT, United States
+AD  - Department of Psychiatry, Virginia Institute for Psychiatric and Behavioral Genetics, Virginia Commonwealth University, Richmond, VA, United States
+AD  - Statistical Genetics, QIMR Berghofer, Brisbane, Australia
+AD  - Division of Psychiatry, University of Edinburgh, Edinburgh, United Kingdom
+AD  - Department of Genetic Epidemiology in Psychiatry, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University, Mannheim, Baden-Württemberg, Germany
+AD  - Translational Neurogenomics, QIMR Berghofer, Brisbane, Australia
+AD  - Department of Human and Molecular Genetics, Massey Cancer Center, Virginia Commonwealth University, Richmond, VA, United States
+AD  - Psychiatric Genetics, QIMR Berghofer, Brisbane, Australia
+AD  - Genetic Epidemiology, QIMR Berghofer, Brisbane, Australia
+AD  - Department of Biological Psychology, EMGO + Institute for Health and Care Research, Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+AD  - 23andMe Inc., Mountain View, CA, United States
+AD  - Department of Psychiatry, Washington University School of Medicine, Saint Louis, MO, United States
+AD  - Department of Biochemistry and Molecular Biology, Indiana University School of Medicine, Indianapolis, IN, United States
+AD  - Social Genetic and Developmental Psychiatry Centre, Institute of Psychiatry, Psychology and Neuroscience, King's College London, United Kingdom
+AD  - Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden
+AD  - Department of Psychiatry, University of North Carolina at Chapel Hill, Chapel Hill, NC, United States
+AD  - Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, NC, United States
+AD  - Institute for Molecular Bioscience, University of Queensland, Brisbane, Australia
+AD  - Queensland Brain Institute, University of Queensland, Brisbane, Australia
+AD  - Departments of Genetics and Neuroscience, Yale University School of Medicine, New Haven, CT, United States
+AB  -                              Background Despite established clinical associations among major depression (MD), alcohol dependence (AD), and alcohol consumption (AC), the nature of the causal relationship between them is not completely understood. We leveraged genome-wide data from the Psychiatric Genomics Consortium (PGC) and UK Biobank to test for the presence of shared genetic mechanisms and causal relationships among MD, AD, and AC.Methods Linkage disequilibrium score regression and Mendelian randomization (MR) were performed using genome-wide data from the PGC (MD: 135 458 cases and 344 901 controls; AD: 10 206 cases and 28 480 controls) and UK Biobank (AC-frequency: 438 308 individuals; AC-quantity: 307 098 individuals).Results Positive genetic correlation was observed between MD and AD (rgMD-AD = + 0.47, P = 6.6 × 10                             -10                             ). AC-quantity showed positive genetic correlation with both AD (rgAD-AC quantity = + 0.75, P = 1.8 × 10                             -14                             ) and MD (rgMD-AC quantity = + 0.14, P = 2.9 × 10                             -7                             ), while there was negative correlation of AC-frequency with MD (rgMD-AC frequency =-0.17, P = 1.5 × 10                             -10                             ) and a non-significant result with AD. MR analyses confirmed the presence of pleiotropy among these four traits. However, the MD-AD results reflect a mediated-pleiotropy mechanism (i.e. causal relationship) with an effect of MD on AD (beta = 0.28, P = 1.29 × 10                             -6                             ). There was no evidence for reverse causation.Conclusion This study supports a causal role for genetic liability of MD on AD based on genetic datasets including thousands of individuals. Understanding mechanisms underlying MD-AD comorbidity addresses important public health concerns and has the potential to facilitate prevention and intervention efforts.                          © 2019 Cambridge University Press.
+KW  - Alcohol consumption
+KW  - alcohol dependence
+KW  - genetic correlation
+KW  - genome-wide association
+KW  - major depression
+KW  - Mendelian randomization
+KW  - Adult
+KW  - Aged
+KW  - Alcoholism
+KW  - Causality
+KW  - Cohort Studies
+KW  - Comorbidity
+KW  - Depressive Disorder, Major
+KW  - Female
+KW  - Genetic Association Studies
+KW  - Genome-Wide Association Study
+KW  - Genomics
+KW  - Humans
+KW  - Linkage Disequilibrium
+KW  - Male
+KW  - Mendelian Randomization Analysis
+KW  - Middle Aged
+KW  - United Kingdom
+KW  - adult
+KW  - aged
+KW  - alcoholism
+KW  - causality
+KW  - cohort analysis
+KW  - comorbidity
+KW  - female
+KW  - gene linkage disequilibrium
+KW  - genetic association study
+KW  - genetics
+KW  - genome-wide association study
+KW  - genomics
+KW  - human
+KW  - major depression
+KW  - male
+KW  - Mendelian randomization analysis
+KW  - middle aged
+KW  - psychology
+KW  - United Kingdom
+PB  - Cambridge University Press
+SN  - 00332917 (ISSN)
+C2  - 30929657
+LA  - English
+J2  - Psychol. Med.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 77; Correspondence Address: R. Polimanti; Department of Psychiatry, Yale University School of Medicine, VA CT Healthcare Center, West Haven, United States; email: renato.polimanti@yale.edu; CODEN: PSMDC
+ER  -
+
+TY  - JOUR
+AU  - Dudbridge, F.
+AU  - Allen, R.J.
+AU  - Sheehan, N.A.
+AU  - Schmidt, A.F.
+AU  - Lee, J.C.
+AU  - Jenkins, R.G.
+AU  - Wain, L.V.
+AU  - Hingorani, A.D.
+AU  - Patel, R.S.
+TI  - Adjustment for index event bias in genome-wide association studies of subsequent events
+PY  - 2019
+T2  - Nature Communications
+VL  - 10
+IS  - 1
+C7  - 1561
+DO  - 10.1038/s41467-019-09381-w
+UR  - https://www.scopus.com/inward/record.uri?eid=2-s2.0-85063992751&doi=10.1038%2fs41467-019-09381-w&partnerID=40&md5=f1cca6b7cdda3f32e83729a5d0e06f5e
+AD  - Department of Health Sciences, University of Leicester, Leicester, LE1 7RH, United Kingdom
+AD  - Groningen Research Institute of Pharmacy, University of Groningen, Groningen, 9700 AB, Netherlands
+AD  - Institute of Cardiovascular Science, Faculty of Population Health Sciences, University College London, London, WC1E 6BT, United Kingdom
+AD  - Department of Cardiology, University Medical Centre Utrecht, Utrecht, 3584 CX, Netherlands
+AD  - Department of Medicine, University of Cambridge School of Clinical Medicine, Cambridge, CB2 0SP, United Kingdom
+AD  - National Institute for Health Research, Nottingham Respiratory Biomedical Research Centre, City Campus, Nottingham, NG7 2RD, United Kingdom
+AD  - National Institute for Health Research, Leicester Respiratory Biomedical Research Centre, Glenfield Hospital, Leicester, LE3 9QP, United Kingdom
+AB  - Following numerous genome-wide association studies of disease susceptibility, there is increasing interest in genetic associations with prognosis, survival or other subsequent events. Such associations are vulnerable to index event bias, by which selection of subjects according to disease status creates biased associations if common causes of incidence and prognosis are not accounted for. We propose an adjustment for index event bias using the residuals from the regression of genetic effects on prognosis on genetic effects on incidence. Our approach eliminates this bias when direct genetic effects on incidence and prognosis are independent, and otherwise reduces bias in realistic situations. In a study of idiopathic pulmonary fibrosis, we reverse a paradoxical association of the strong susceptibility gene MUC5B with increased survival, suggesting instead a significant association with decreased survival. In re-analysis of a study of Crohn’s disease prognosis, four regions remain associated at genome-wide significance but with increased standard errors. © 2019, The Author(s).
+KW  - Computer Simulation
+KW  - Crohn Disease
+KW  - Genetic Predisposition to Disease
+KW  - Genome-Wide Association Study
+KW  - Humans
+KW  - Idiopathic Pulmonary Fibrosis
+KW  - Incidence
+KW  - Models, Genetic
+KW  - Mucin-5B
+KW  - Odds Ratio
+KW  - Polymorphism, Single Nucleotide
+KW  - Regression Analysis
+KW  - MUC5B protein, human
+KW  - mucin 5B
+KW  - detection method
+KW  - disease incidence
+KW  - gene expression
+KW  - genome
+KW  - genomics
+KW  - survival
+KW  - Article
+KW  - cancer prognosis
+KW  - cardiovascular disease
+KW  - Crohn disease
+KW  - disease predisposition
+KW  - fibrosing alveolitis
+KW  - gene frequency
+KW  - gene interaction
+KW  - genetic association
+KW  - genetic correlation
+KW  - genome-wide association study
+KW  - genotype
+KW  - heredity
+KW  - human
+KW  - incidence
+KW  - mathematical model
+KW  - nonhuman
+KW  - pleiotropy
+KW  - propensity score
+KW  - risk factor
+KW  - single nucleotide polymorphism
+KW  - sudden cardiac death
+KW  - biological model
+KW  - computer simulation
+KW  - Crohn disease
+KW  - fibrosing alveolitis
+KW  - genetic predisposition
+KW  - genetics
+KW  - odds ratio
+KW  - regression analysis
+PB  - Nature Publishing Group
+SN  - 20411723 (ISSN)
+C2  - 30952951
+LA  - English
+J2  - Nat. Commun.
+M3  - Article
+DB  - Scopus
+N1  - Export Date: 15 April 2025; Cited By: 76; Correspondence Address: F. Dudbridge; Department of Health Sciences, University of Leicester, Leicester, LE1 7RH, United Kingdom; email: frank.dudbridge@leicester.ac.uk
+ER  -
+
