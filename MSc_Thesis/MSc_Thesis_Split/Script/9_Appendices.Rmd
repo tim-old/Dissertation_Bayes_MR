@@ -1312,45 +1312,6 @@ test_tib_summ_MR_row
 
 
 
-```{r no-causal-tenk-point1-scen1, echo=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
-
-# set.seed(14101583)
-# no_causal_tenk_point1_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
-#                                                        n_instruments = 25,
-#                                                        n_datasets = 5,
-#                                                        prop_invalid = 0.1,
-#                                                        causal_effect = FALSE,
-#                                                        balanced_pleio = TRUE,
-#                                                        InSIDE_satisfied = TRUE)
-# 
-# no_causal_tenk_point1_scen1
-
-```
-
-```{r no-causal-tenk-point2-scen1, echo=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
-
-# set.seed(14101583)
-# no_causal_tenk_point2_scen1 <-  get_summary_MR_tib_row(n_participants = 1000,
-#                                                        n_instruments = 25,
-#                                                        n_datasets = 10,
-#                                                        prop_invalid = 0.5,
-#                                                        causal_effect = FALSE,
-#                                                        balanced_pleio = FALSE,
-#                                                        InSIDE_satisfied = FALSE)
-# 
-# no_causal_tenk_point2_scen1
-
-```
-
-
-```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
-
-# scen1_sim_summ_tib <- bind_rows(no_causal_tenk_point1_scen1, 
-#                                 no_causal_tenk_point2_scen1)
-# 
-# scen1_sim_summ_tib
-
-```
 
 
 \newpage
