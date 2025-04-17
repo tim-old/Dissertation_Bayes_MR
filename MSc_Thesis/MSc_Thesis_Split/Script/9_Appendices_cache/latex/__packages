@@ -13,3 +13,4 @@ StanHeaders
 rstan
 here
 cowplot
+kableExtra
