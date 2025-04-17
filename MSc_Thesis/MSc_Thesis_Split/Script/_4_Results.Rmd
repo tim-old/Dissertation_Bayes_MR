@@ -1,7 +1,5 @@
 ---
 title: "4. Results"
-author: "B233241"
-date: "2025-01-07"
 output:
   pdf_document:
     latex_engine: xelatex
@@ -15,7 +13,108 @@ knit: (function(inputFile, encoding) {
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE, 
+                      message = FALSE, 
+                      error = FALSE,
+                      cache = TRUE, 
+                      include = FALSE 
+                      #dev = "png", 
+                      #dpi = 500
+)
+
+# Load packages
+library(tidyverse)
+library(TwoSampleMR)
+library(rstan)
+library(here)
+library(cowplot)
+library(kableExtra)
+
+# Load University of Edinburgh colour palette
+source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
+
+# Load pre-formatted plot template - call to ggplot with UoE colours
+source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
+
+# Load function scripts
+source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
+
+# Compile model for MR-Hevo
+mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", 
+                                      "Script", 
+                                      "Hevo", 
+                                      "MRHevo_summarystats.stan"),
+                           model_name="MRHevo.summarystats", verbose=FALSE)
+
+
 ```
+
+
+
+```{r no-causal-tenk-scen1-data}
+
+set.seed(14101583)
+no_causal_tenk_point1_scen1_data <-  simulate_MR_data(n_participants = 10000,
+                                                      n_instruments = 25,
+                                                      n_datasets = 5,
+                                                      prop_invalid = 0.1,
+                                                      causal_effect = FALSE,
+                                                      balanced_pleio = TRUE,
+                                                      InSIDE_satisfied = TRUE)
+
+no_causal_tenk_point1_scen1_models <- extract_models(no_causal_tenk_point1_scen1_data)
+
+set.seed(14101583)
+no_causal_tenk_point2_scen1_data <-  simulate_MR_data(n_participants = 10000,
+                                                      n_instruments = 25,
+                                                      n_datasets = 5,
+                                                      prop_invalid = 0.2,
+                                                      causal_effect = FALSE,
+                                                      balanced_pleio = TRUE,
+                                                      InSIDE_satisfied = TRUE)
+
+no_causal_tenk_point2_scen1_models <- extract_models(no_causal_tenk_point2_scen1_data)
+
+```
+
+```{r no-causal-tenk-point1-scen1}
+
+no_causal_tenk_point1_scen1 <- get_summary_MR_tib_row(no_causal_tenk_point1_scen1_models)
+
+```
+
+```{r no-causal-tenk-point2-scen1}
+
+no_causal_tenk_point2_scen1 <- get_summary_MR_tib_row(no_causal_tenk_point2_scen1_models)
+
+```
+
+
+```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE}
+
+scen1_sim_summ_tib <- bind_rows(no_causal_tenk_point1_scen1,
+                                no_causal_tenk_point2_scen1)
+
+scen1_sim_summ_tib %>% 
+  mutate(WME = paste0(WME_Av, " (", WME_SE, ")"),
+         Hevo = paste0(Hevo_Av, " (", Hevo_SE, ")")) %>% 
+  select(N, Prop_Invalid, F_stat, R2_stat, WME, WME_Pos_Rate, Hevo, Hevo_Pos_Rate) %>% 
+  kable(col.names = c("N",
+                      "Proportion of Invalid IVs",
+                      "F",
+                      "R^2",
+                      "WME Mean Estimate (Mean SE)",
+                      "WME Causal Report Rate",
+                      "MR-Hevo Mean Estimate (Mean SE)",
+                      "MR-Hevo Causal Report Rate"
+                      ), 
+        escape = TRUE) %>% 
+  kable_styling()
+
+```
+
 
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_4_Results.Rmd"))`
