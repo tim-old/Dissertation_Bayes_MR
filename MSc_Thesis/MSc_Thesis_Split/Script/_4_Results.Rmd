@@ -42,9 +42,6 @@ source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
-# Load datasets
-all_sim_data_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "simulated_datasets_models.rds"))
-
 
 # Compile model for MR-Hevo
 mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split", 
@@ -60,26 +57,56 @@ mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
 
 ```{r no-causal-tenk-point1-scen1}
 
-foo <- all_sim_data_models$no_causal_10k_point1_scen1_models[1:5]
+# Load datasets
+no_causal_10k_point1_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point1_scen1_models.rds"))
+
+no_causal_10k_point1_scen1_subset <- no_causal_10k_point1_scen1_models[1:20]
 
 #no_causal_tenk_point1_scen1 <- get_summary_MR_tib_row(no_causal_tenk_point1_scen1_models)
-no_causal_tenk_point1_scen1 <- get_summary_MR_tib_row(foo)
+no_causal_10k_point1_scen1 <- get_summary_MR_tib_row(no_causal_10k_point1_scen1_subset)
 
-#no_causal_tenk_point1_scen1
+no_causal_10k_point1_scen1
 
 ```
 
 ```{r no-causal-tenk-point2-scen1}
 
-#no_causal_tenk_point2_scen1 <- get_summary_MR_tib_row(no_causal_tenk_point2_scen1_models)
+# Load datasets
+no_causal_10k_point2_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point2_scen1_models.rds"))
+
+no_causal_10k_point2_scen1_subset <- no_causal_10k_point2_scen1_models[1:20]
+
+no_causal_10k_point2_scen1 <- get_summary_MR_tib_row(no_causal_10k_point2_scen1_subset)
+
+no_causal_10k_point2_scen1
 
 ```
 
 
+```{r causal-tenk-point2-scen1}
+
+# Load datasets
+
+causal_10k_point2_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point2_scen1_models.rds"))
+
+causal_10k_point2_scen1_subset <- causal_10k_point2_scen1_models[1:20]
+
+causal_10k_point2_scen1 <- get_summary_MR_tib_row(causal_10k_point2_scen1_subset)
+
+causal_10k_point2_scen1
+
+```
+
+
+
+
+
 ```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, fig.width=10}
 
-scen1_sim_summ_tib <- bind_rows(no_causal_tenk_point1_scen1)#,
-                                #no_causal_tenk_point2_scen1)
+scen1_sim_summ_tib <- bind_rows(no_causal_10k_point1_scen1,
+                                no_causal_10k_point2_scen1,
+                                causal_10k_point2_scen1
+                                )
 
 scen1_sim_summ_tib %>%
   mutate(WME = paste0(WME_Av, " (", WME_SE, ")"),
@@ -87,8 +114,8 @@ scen1_sim_summ_tib %>%
   select(N, Prop_Invalid, F_stat, R2_stat, WME, WME_Pos_Rate, Hevo, Hevo_Pos_Rate) %>%
   kable(col.names = c("N",
                       "Proportion of Invalid IVs",
-                      "F",
-                      "R\U00B2",
+                      "$F$",
+                      "$R^2$", #"\U00B2$",
                       "WME Mean Estimate (Mean SE)",
                       "WME Causal Report Rate",
                       "MR-Hevo Mean Estimate (Mean SE)",
@@ -97,8 +124,8 @@ scen1_sim_summ_tib %>%
         escape = TRUE) %>%
   kable_styling() %>%
   column_spec(column = c(1:8),
-              width = c("0.5cm", "2cm", "0.75cm", "0.75cm", "3cm", "3cm", "3.5cm", "3cm"),
-              italic = c(FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE))
+              width = c("0.5cm", "2cm", "0.75cm", "0.75cm", "3cm", "3cm", "3.5cm", "3cm")) #%>% 
+  #row_spec(row = 0, italic = c(FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE))
 
 ```
 

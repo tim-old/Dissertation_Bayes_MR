@@ -244,22 +244,22 @@ simulate_MR_data <- function(n_participants = as.integer(),
     # Include inputs for reference/testing 
     n_participants_list[[n]] <- n_participants
     n_instruments_list[[n]] <- n_instruments
-    n_datasets_list[[n]] <- n_datasets
+    #n_datasets_list[[n]] <- n_datasets
     prop_invalid_list[[n]] <- prop_invalid
-    causal_effect_list[[n]] <- causal_effect
-    balanced_pleio_list[[n]] <- balanced_pleio
-    InSIDE_satisfied_list[[n]] <- InSIDE_satisfied
-    rand_error_list[[n]] <- rand_error
-    two_sample_list[[n]] <- two_sample
+    #causal_effect_list[[n]] <- causal_effect
+    #balanced_pleio_list[[n]] <- balanced_pleio
+    #InSIDE_satisfied_list[[n]] <- InSIDE_satisfied
+    #rand_error_list[[n]] <- rand_error
+    #two_sample_list[[n]] <- two_sample
     beta_val_list[[n]] <- beta_val
-    allele_freq_min_list[[n]] <- allele_freq_min
-    allele_freq_max_list[[n]] <- allele_freq_max
-    gamma_min_list[[n]] <- gamma_min
-    gamma_max_list[[n]] <- gamma_max
-    alpha_min_list[[n]] <- alpha_min
-    alpha_max_list[[n]] <- alpha_max
-    phi_min_list[[n]] <- phi_min
-    phi_max_list[[n]] <- phi_max
+    #allele_freq_min_list[[n]] <- allele_freq_min
+    #allele_freq_max_list[[n]] <- allele_freq_max
+    #gamma_min_list[[n]] <- gamma_min
+    #gamma_max_list[[n]] <- gamma_max
+    #alpha_min_list[[n]] <- alpha_min
+    #alpha_max_list[[n]] <- alpha_max
+    #phi_min_list[[n]] <- phi_min
+    #phi_max_list[[n]] <- phi_max
     
   }
   
@@ -284,22 +284,22 @@ simulate_MR_data <- function(n_participants = as.integer(),
                         
                         n_participants = n_participants_list, # Inputs
                         n_instruments = n_instruments_list,
-                        n_datasets = n_datasets_list,
+                        #n_datasets = n_datasets_list,
                         prop_invalid = prop_invalid_list,
-                        causal_effect = causal_effect_list,
-                        balanced_pleio = balanced_pleio_list,
-                        InSIDE_satisfied = InSIDE_satisfied_list,
-                        rand_error = rand_error_list,
-                        two_sample = two_sample_list,
-                        beta_val = beta_val_list,
-                        allele_freq_min = allele_freq_min_list,
-                        allele_freq_max = allele_freq_max_list,
-                        gamma_min = gamma_min_list,
-                        gamma_max = gamma_max_list,
-                        alpha_min = alpha_min_list,
-                        alpha_max = alpha_max_list,
-                        phi_min = phi_min_list,
-                        phi_max = phi_max_list
+                        #causal_effect = causal_effect_list,
+                        #balanced_pleio = balanced_pleio_list,
+                        #InSIDE_satisfied = InSIDE_satisfied_list,
+                        #rand_error = rand_error_list,
+                        #two_sample = two_sample_list,
+                        beta_val = beta_val_list#,
+                        #allele_freq_min = allele_freq_min_list,
+                        #allele_freq_max = allele_freq_max_list,
+                        #gamma_min = gamma_min_list,
+                        #gamma_max = gamma_max_list,
+                        #alpha_min = alpha_min_list,
+                        #alpha_max = alpha_max_list,
+                        #phi_min = phi_min_list,
+                        #phi_max = phi_max_list
   )
   
   return(combined_list)
@@ -472,7 +472,7 @@ get_summary_MR_tib_row <- function(model_list){
                                       se_exp = coeff_G_X_SE_vect,
                                       se_out = coeff_G_Y_SE_vect,
                                       parameters = list(nboot = 1000))
-    
+
     # Results from MR-Hevo method
     Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
                                      se.alpha_hat = coeff_G_X_SE_vect,
@@ -514,7 +514,7 @@ get_summary_MR_tib_row <- function(model_list){
   # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
   # https://mr-dictionary.mrcieu.ac.uk/term/r-squared/
   output_tib_row <- results_tib %>% 
-    summarise(N = n_datasets,
+    summarise(N = n_participants,
               Prop_Invalid = prop_invalid,
               F_stat = F_stat,
               R2_stat = R2_stat,
