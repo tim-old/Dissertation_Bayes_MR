@@ -43,8 +43,7 @@ source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
 # Load datasets
-load(here("MSc_Thesis_Split", "Data", "simulated_datasets_models.RData"))
-
+all_sim_data_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "simulated_datasets_models.rds"))
 
 
 # Compile model for MR-Hevo
@@ -61,12 +60,12 @@ mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
 
 ```{r no-causal-tenk-point1-scen1}
 
-foo <- no_causal_10k_point1_scen1_models[1:5]
+foo <- all_sim_data_models$no_causal_10k_point1_scen1_models[1:5]
 
 #no_causal_tenk_point1_scen1 <- get_summary_MR_tib_row(no_causal_tenk_point1_scen1_models)
 no_causal_tenk_point1_scen1 <- get_summary_MR_tib_row(foo)
 
-no_causal_tenk_point1_scen1
+#no_causal_tenk_point1_scen1
 
 ```
 
@@ -77,7 +76,7 @@ no_causal_tenk_point1_scen1
 ```
 
 
-```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE}
+```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, fig.width=10}
 
 scen1_sim_summ_tib <- bind_rows(no_causal_tenk_point1_scen1)#,
                                 #no_causal_tenk_point2_scen1)
@@ -96,9 +95,9 @@ scen1_sim_summ_tib %>%
                       "MR-Hevo Causal Report Rate"
                       ),
         escape = TRUE) %>%
-  kable_styling() %>% 
-  column_spec(column = c(1:8), 
-              width = c("0.5cm", "2cm", "0.75cm", "0.75cm", "3.5cm", "3cm", "3.5cm", "3cm"), 
+  kable_styling() %>%
+  column_spec(column = c(1:8),
+              width = c("0.5cm", "2cm", "0.75cm", "0.75cm", "3cm", "3cm", "3.5cm", "3cm"),
               italic = c(FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE))
 
 ```
