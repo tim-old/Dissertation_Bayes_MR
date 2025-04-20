@@ -27,7 +27,7 @@ no_causal_10k_point1_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point1_scen1_models <- extract_models(no_causal_10k_point1_scen1_data)
 
-saveRDS(no_causal_10k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point1_scen1.rds"))
+saveRDS(no_causal_10k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point1_scen1.rds"))
  
 # 20% Invalid
 set.seed(14101583)
@@ -41,7 +41,7 @@ no_causal_10k_point2_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point2_scen1_models <- extract_models(no_causal_10k_point2_scen1_data)
 
-saveRDS(no_causal_10k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point2_scen1.rds"))
+saveRDS(no_causal_10k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point2_scen1.rds"))
  
 # 30% Invalid
 set.seed(14101583)
@@ -55,7 +55,7 @@ no_causal_10k_point3_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point3_scen1_models <- extract_models(no_causal_10k_point3_scen1_data)
 
-saveRDS(no_causal_10k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point3_scen1.rds"))
+saveRDS(no_causal_10k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point3_scen1.rds"))
  
 
 
@@ -73,7 +73,7 @@ no_causal_20k_point1_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point1_scen1_models <- extract_models(no_causal_20k_point1_scen1_data)
 
-saveRDS(no_causal_20k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point1_scen1.rds"))
+saveRDS(no_causal_20k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point1_scen1.rds"))
  
 # 20% Invalid
 set.seed(14101583)
@@ -87,7 +87,7 @@ no_causal_20k_point2_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point2_scen1_models <- extract_models(no_causal_20k_point2_scen1_data)
 
-saveRDS(no_causal_20k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point2_scen1.rds"))
+saveRDS(no_causal_20k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point2_scen1.rds"))
  
 # 30% Invalid
 set.seed(14101583)
@@ -101,7 +101,7 @@ no_causal_20k_point3_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point3_scen1_models <- extract_models(no_causal_20k_point3_scen1_data)
 
-saveRDS(no_causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point3_scen1.rds"))
+saveRDS(no_causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point3_scen1.rds"))
  
 
 
@@ -122,7 +122,7 @@ no_causal_10k_point1_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point1_scen2_models <- extract_models(no_causal_10k_point1_scen2_data)
 
-saveRDS(no_causal_10k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point1_scen2.rds"))
+saveRDS(no_causal_10k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point1_scen2.rds"))
  
 # 20% Invalid
 set.seed(14101583)
@@ -136,7 +136,7 @@ no_causal_10k_point2_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point2_scen2_models <- extract_models(no_causal_10k_point2_scen2_data)
 
-saveRDS(no_causal_10k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point2_scen2.rds"))
+saveRDS(no_causal_10k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point2_scen2.rds"))
  
 # 30% Invalid
 set.seed(14101583)
@@ -150,7 +150,7 @@ no_causal_10k_point3_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point3_scen2_models <- extract_models(no_causal_10k_point3_scen2_data)
 
-saveRDS(no_causal_10k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point3_scen2.rds"))
+saveRDS(no_causal_10k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point3_scen2.rds"))
  
 
 
@@ -168,7 +168,7 @@ no_causal_20k_point1_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point1_scen2_models <- extract_models(no_causal_20k_point1_scen2_data)
 
-saveRDS(no_causal_20k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point1_scen2.rds"))
+saveRDS(no_causal_20k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point1_scen2.rds"))
  
 # 20% Invalid
 set.seed(14101583)
@@ -182,7 +182,7 @@ no_causal_20k_point2_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point2_scen2_models <- extract_models(no_causal_20k_point2_scen2_data)
 
-saveRDS(no_causal_20k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point2_scen2.rds"))
+saveRDS(no_causal_20k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point2_scen2.rds"))
  
 # 30% Invalid
 set.seed(14101583)
@@ -196,7 +196,7 @@ no_causal_20k_point3_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point3_scen2_models <- extract_models(no_causal_20k_point3_scen2_data)
 
-saveRDS(no_causal_20k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point3_scen2.rds"))
+saveRDS(no_causal_20k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point3_scen2.rds"))
  
 
 
@@ -217,7 +217,7 @@ no_causal_10k_point1_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point1_scen3_models <- extract_models(no_causal_10k_point1_scen3_data)
 
-saveRDS(no_causal_10k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point1_scen3.rds"))
+saveRDS(no_causal_10k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point1_scen3.rds"))
  
 # 20% Invalid
 set.seed(14101583)
@@ -231,7 +231,7 @@ no_causal_10k_point2_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point2_scen3_models <- extract_models(no_causal_10k_point2_scen3_data)
 
-saveRDS(no_causal_10k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point2_scen3.rds"))
+saveRDS(no_causal_10k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point2_scen3.rds"))
  
 # 30% Invalid
 set.seed(14101583)
@@ -245,7 +245,7 @@ no_causal_10k_point3_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_10k_point3_scen3_models <- extract_models(no_causal_10k_point3_scen3_data)
 
-saveRDS(no_causal_10k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "no_causal_10k_point3_scen3.rds"))
+saveRDS(no_causal_10k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point3_scen3.rds"))
  
 
 
@@ -263,7 +263,7 @@ no_causal_20k_point1_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point1_scen3_models <- extract_models(no_causal_20k_point1_scen3_data)
 
-saveRDS(no_causal_20k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point1_scen3.rds"))
+saveRDS(no_causal_20k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point1_scen3.rds"))
  
 # 20% Invalid
 set.seed(14101583)
@@ -277,7 +277,7 @@ no_causal_20k_point2_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point2_scen3_models <- extract_models(no_causal_20k_point2_scen3_data)
 
-saveRDS(no_causal_20k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point2_scen3.rds"))
+saveRDS(no_causal_20k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point2_scen3.rds"))
  
 # 30% Invalid
 set.seed(14101583)
@@ -291,7 +291,7 @@ no_causal_20k_point3_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 no_causal_20k_point3_scen3_models <- extract_models(no_causal_20k_point3_scen3_data)
 
-saveRDS(no_causal_20k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "no_causal_20k_point3_scen3.rds"))
+saveRDS(no_causal_20k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point3_scen3.rds"))
  
 
 ### ---------------------- Positive Causal Effect -------------------------- ###
@@ -314,7 +314,7 @@ causal_10k_point1_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point1_scen1_models <- extract_models(causal_10k_point1_scen1_data)
 
-saveRDS(causal_10k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point1_scen1.rds"))
+saveRDS(causal_10k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point1_scen1.rds"))
 
 # 20% Invalid
 set.seed(14101583)
@@ -329,7 +329,7 @@ causal_10k_point2_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point2_scen1_models <- extract_models(causal_10k_point2_scen1_data)
 
-saveRDS(causal_10k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point2_scen1.rds"))
+saveRDS(causal_10k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point2_scen1.rds"))
 
 # 30% Invalid
 set.seed(14101583)
@@ -344,7 +344,7 @@ causal_10k_point3_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point3_scen1_models <- extract_models(causal_10k_point3_scen1_data)
 
-saveRDS(causal_10k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point3_scen1.rds"))
+saveRDS(causal_10k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point3_scen1.rds"))
 
 
 
@@ -363,7 +363,7 @@ causal_20k_point1_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point1_scen1_models <- extract_models(causal_20k_point1_scen1_data)
 
-saveRDS(causal_20k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point1_scen1.rds"))
+saveRDS(causal_20k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point1_scen1.rds"))
 
 # 20% Invalid
 set.seed(14101583)
@@ -378,7 +378,7 @@ causal_20k_point2_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point2_scen1_models <- extract_models(causal_20k_point2_scen1_data)
 
-saveRDS(causal_20k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point2_scen1.rds"))
+saveRDS(causal_20k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point2_scen1.rds"))
 
 # 30% Invalid
 set.seed(14101583)
@@ -393,7 +393,7 @@ causal_20k_point3_scen1_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point3_scen1_models <- extract_models(causal_20k_point3_scen1_data)
 
-saveRDS(causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point3_scen1.rds"))
+saveRDS(causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point3_scen1.rds"))
 
 
 
@@ -415,7 +415,7 @@ causal_10k_point1_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point1_scen2_models <- extract_models(causal_10k_point1_scen2_data)
 
-saveRDS(causal_10k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point1_scen2.rds"))
+saveRDS(causal_10k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point1_scen2.rds"))
 
 # 20% Invalid
 set.seed(14101583)
@@ -430,7 +430,7 @@ causal_10k_point2_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point2_scen2_models <- extract_models(causal_10k_point2_scen2_data)
 
-saveRDS(causal_10k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point2_scen2.rds"))
+saveRDS(causal_10k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point2_scen2.rds"))
 
 # 30% Invalid
 set.seed(14101583)
@@ -445,7 +445,7 @@ causal_10k_point3_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point3_scen2_models <- extract_models(causal_10k_point3_scen2_data)
 
-saveRDS(causal_10k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point3_scen2.rds"))
+saveRDS(causal_10k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point3_scen2.rds"))
 
 
 
@@ -464,7 +464,7 @@ causal_20k_point1_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point1_scen2_models <- extract_models(causal_20k_point1_scen2_data)
 
-saveRDS(causal_20k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point1_scen2.rds"))
+saveRDS(causal_20k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point1_scen2.rds"))
 
 # 20% Invalid
 set.seed(14101583)
@@ -479,7 +479,7 @@ causal_20k_point2_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point2_scen2_models <- extract_models(causal_20k_point2_scen2_data)
 
-saveRDS(causal_20k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point2_scen2.rds"))
+saveRDS(causal_20k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point2_scen2.rds"))
 
 # 30% Invalid
 set.seed(14101583)
@@ -494,7 +494,7 @@ causal_20k_point3_scen2_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point3_scen2_models <- extract_models(causal_20k_point3_scen2_data)
 
-saveRDS(causal_20k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point3_scen2.rds"))
+saveRDS(causal_20k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point3_scen2.rds"))
 
 
 
@@ -516,7 +516,7 @@ causal_10k_point1_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point1_scen3_models <- extract_models(causal_10k_point1_scen3_data)
 
-saveRDS(causal_10k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point1_scen3.rds"))
+saveRDS(causal_10k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point1_scen3.rds"))
 
 # 20% Invalid
 set.seed(14101583)
@@ -531,7 +531,7 @@ causal_10k_point2_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point2_scen3_models <- extract_models(causal_10k_point2_scen3_data)
 
-saveRDS(causal_10k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point2_scen3.rds"))
+saveRDS(causal_10k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point2_scen3.rds"))
 
 # 30% Invalid
 set.seed(14101583)
@@ -546,7 +546,7 @@ causal_10k_point3_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_10k_point3_scen3_models <- extract_models(causal_10k_point3_scen3_data)
 
-saveRDS(causal_10k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "causal_10k_point3_scen3.rds"))
+saveRDS(causal_10k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point3_scen3.rds"))
 
 
 
@@ -565,7 +565,7 @@ causal_20k_point1_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point1_scen3_models <- extract_models(causal_20k_point1_scen3_data)
 
-saveRDS(causal_20k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point1_scen3.rds"))
+saveRDS(causal_20k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point1_scen3.rds"))
 
 # 20% Invalid
 set.seed(14101583)
@@ -580,7 +580,7 @@ causal_20k_point2_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point2_scen3_models <- extract_models(causal_20k_point2_scen3_data)
 
-saveRDS(causal_20k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point2_scen3.rds"))
+saveRDS(causal_20k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point2_scen3.rds"))
 
 # 30% Invalid
 set.seed(14101583)
@@ -595,4 +595,4 @@ causal_20k_point3_scen3_data <-  simulate_MR_data(n_participants = 10000,
 
 causal_20k_point3_scen3_models <- extract_models(causal_20k_point3_scen3_data)
 
-saveRDS(causal_20k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "causal_20k_point3_scen3.rds"))
+saveRDS(causal_20k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_20k_point3_scen3.rds"))
