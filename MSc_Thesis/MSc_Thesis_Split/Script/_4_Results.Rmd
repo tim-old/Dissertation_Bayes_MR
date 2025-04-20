@@ -2,8 +2,8 @@
 title: "4. Results"
 output:
   bookdown::pdf_document2:
-    latex_engine: xelatex
-    dev: cairo_pdf
+    latex_engine: lualatex
+    #dev: cairo_pdf
     fig_caption: TRUE
     number_sections: FALSE
     global_numbering: FALSE
@@ -90,7 +90,8 @@ causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data",
 
 A summary is shown in Table \@ref(tab:no-causal-sim-summ-tib) and \@ref(tab:causal-sim-summ-tib)
 
-```{r no-causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="no-causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2) = 0)}
+\newpage
+```{r no-causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="no-causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect", results='asis'}
 
 # Scenario 1
 no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib,
@@ -170,22 +171,22 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   
   hline(part = "header", i = 2, j = c(5:7, 9:11), border = fp_border(color = "black", width = 1)) |>
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
-  #add_footer_lines("Mean estimates, meand standar")
   autofit() |>
-  fit_to_width(max_width = 7.5) #|>
+  fit_to_width(max_width = 7.5) |>
+  add_footer_lines("IV: Instumental Variable, SE: Standard Error \nData from 1000 Simulated Mendelian Randomisation Studies \nPositive Causal Effect (\U03B2 = 0)")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)", 
 #             style = "Table Caption", 
 #             autonum = run_autonum(seq_id = "tab", 
 #                                   bkm = "no-causal-sim-summ-tib"))
 
-return(no_causal_sim_summ_tib_display)
+no_causal_sim_summ_tib_display
 
 
 ```
 
 
-
-```{r causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Positive Causal Effect (\U03B2 = 0.1)"}
+\newpage
+```{r causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Positive Causal Effect (\U03B2 = 0.1)", results='asis'}
 
 # Scenario 1
 causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib,
@@ -267,13 +268,14 @@ causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
   #add_footer_lines("Mean estimates, meand standar")
   autofit() |>
-  fit_to_width(max_width = 7.5) #|>
+  fit_to_width(max_width = 7.5) |>
+    add_footer_lines("IV: Instumental Variable, SE: Standard Error \nData from 1000 Simulated Mendelian Randomisation Studies \nPositive Causal Effect (\U03B2 = 0.1)")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)", 
 #             style = "Table Caption", 
 #             autonum = run_autonum(seq_id = "tab", 
 #                                   bkm = "no-causal-sim-summ-tib"))
 
-return(no_causal_sim_summ_tib_display)
+causal_sim_summ_tib_display
 
 
 ```
