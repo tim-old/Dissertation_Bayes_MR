@@ -416,7 +416,7 @@ get_summary_MR_tib_row <- function(model_list){
   
   n_datasets <- length(model_list)
   
-  output_tib_row$N <-  n_datasets
+  #output_tib_row$N <-  n_datasets
   
   # Create blank tibble to receive results of Weighted
   # Median Estimator function from MR-Base

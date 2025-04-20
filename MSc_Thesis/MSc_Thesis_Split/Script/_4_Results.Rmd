@@ -26,11 +26,15 @@ knitr::opts_chunk$set(echo = FALSE,
 
 # Load packages
 library(tidyverse)
-library(TwoSampleMR)
-library(rstan)
+#library(TwoSampleMR)
+#library(rstan)
 library(here)
 library(cowplot)
 library(kableExtra)
+library(tables)
+library(flextable)
+library(ftExtra)
+library(officer)
 
 # Load University of Edinburgh colour palette
 source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
@@ -39,61 +43,24 @@ source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
 source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 
 # Load function scripts
-source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
+#source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+#source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
 
-# Compile model for MR-Hevo
-mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split", 
-                                       "Script", 
-                                       "Hevo", 
-                                       "MRHevo_summarystats.stan"),
-                           model_name="MRHevo.summarystats", verbose=FALSE)
+# # Compile model for MR-Hevo
+# mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split", 
+#                                        "Script", 
+#                                        "Hevo", 
+#                                        "MRHevo_summarystats.stan"),
+#                            model_name="MRHevo.summarystats", verbose=FALSE)
 
 
-```
+# Load data
+no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen1_sim_summ_tib.rds"))
+no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
 
-
-
-```{r no-causal-tenk-point1-scen1}
-
-# Load datasets
-no_causal_10k_point1_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point1_scen1_models.rds"))
-
-no_causal_10k_point1_scen1_subset <- no_causal_10k_point1_scen1_models[1:20]
-
-#no_causal_tenk_point1_scen1 <- get_summary_MR_tib_row(no_causal_tenk_point1_scen1_models)
-no_causal_10k_point1_scen1 <- get_summary_MR_tib_row(no_causal_10k_point1_scen1_subset)
-
-no_causal_10k_point1_scen1
-
-```
-
-```{r no-causal-tenk-point2-scen1}
-
-# Load datasets
-no_causal_10k_point2_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point2_scen1_models.rds"))
-
-no_causal_10k_point2_scen1_subset <- no_causal_10k_point2_scen1_models[1:20]
-
-no_causal_10k_point2_scen1 <- get_summary_MR_tib_row(no_causal_10k_point2_scen1_subset)
-
-no_causal_10k_point2_scen1
-
-```
-
-
-```{r causal-tenk-point2-scen1}
-
-# Load datasets
-
-causal_10k_point2_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point2_scen1_models.rds"))
-
-causal_10k_point2_scen1_subset <- causal_10k_point2_scen1_models[1:20]
-
-causal_10k_point2_scen1 <- get_summary_MR_tib_row(causal_10k_point2_scen1_subset)
-
-causal_10k_point2_scen1
+no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen2_sim_summ_tib.rds"))
+no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
 
 ```
 
@@ -101,33 +68,89 @@ causal_10k_point2_scen1
 
 
 
-```{r scen1-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, fig.width=10}
+```{r no-causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, fig.width=10}
 
-scen1_sim_summ_tib <- bind_rows(no_causal_10k_point1_scen1,
-                                no_causal_10k_point2_scen1,
-                                causal_10k_point2_scen1
-                                )
+# Scenario 1
+no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib,
+                                          no_causal_20k_scen1_sim_summ_tib) %>% 
+  mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
 
-scen1_sim_summ_tib %>%
-  mutate(WME = paste0(WME_Av, " (", WME_SE, ")"),
-         Hevo = paste0(Hevo_Av, " (", Hevo_SE, ")")) %>%
-  select(N, Prop_Invalid, F_stat, R2_stat, WME, WME_Pos_Rate, Hevo, Hevo_Pos_Rate) %>%
-  kable(col.names = c("N",
-                      "Proportion of Invalid IVs",
-                      "$F$",
-                      "$R^2$", #"\U00B2$",
-                      "WME Mean Estimate (Mean SE)",
-                      "WME Causal Report Rate",
-                      "MR-Hevo Mean Estimate (Mean SE)",
-                      "MR-Hevo Causal Report Rate"
-                      ),
-        escape = TRUE) %>%
-  kable_styling() %>%
-  column_spec(column = c(1:8),
-              width = c("0.5cm", "2cm", "0.75cm", "0.75cm", "3cm", "3cm", "3.5cm", "3cm")) #%>% 
-  #row_spec(row = 0, italic = c(FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE))
+# Scenario 2
+no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib,
+                                          no_causal_20k_scen2_sim_summ_tib) %>% 
+  mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
+
+
+# Summary
+no_causal_sim_summ_tib <- bind_rows(no_causal_scen1_sim_summ_tib,
+                                    no_causal_scen2_sim_summ_tib)
+
+# Display
+no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>% 
+  # Change names for cleaner plotting
+  mutate(Invalid = Prop_Invalid,
+         F = round(F_stat, 1),
+         R2 = paste0(R2_stat *100, "%"),
+         Weighted_Median_Mean_Estimate = WME_Av,
+         Weighted_Median_Mean_SE = paste0("(", WME_SE, ")"),
+         Weighted_Median_Causality_Report_Rate = WME_Pos_Rate,
+         MR_Hevo_Mean_Estimate = Hevo_Av,
+         MR_Hevo_Mean_SE= paste0("(", Hevo_SE, ")"),
+         MR_Hevo_Causality_Report_Rate = Hevo_Pos_Rate) %>% 
+  # Drop old names
+  select(N,
+         Invalid,
+         F,
+         R2,
+         Weighted_Median_Mean_Estimate,
+         Weighted_Median_Mean_SE,
+         Weighted_Median_Causality_Report_Rate,
+         MR_Hevo_Mean_Estimate,
+         MR_Hevo_Mean_SE,
+         MR_Hevo_Causality_Report_Rate,
+         Scenario) %>% 
+  as_grouped_data(groups = c("Scenario")) %>% 
+  as_flextable(hide_grouplabel = TRUE, col_keys = c("N", 
+                                                   "Invalid", 
+                                                   "F", 
+                                                   "R2", 
+                                                   "Weighted_Median_Mean_Estimate", 
+                                                   "Weighted_Median_Mean_SE", 
+                                                   "Weighted_Median_Causality_Report_Rate",
+                                                   "blank_col",
+                                                   "MR_Hevo_Mean_Estimate",
+                                                   "MR_Hevo_Mean_SE",
+                                                   "MR_Hevo_Causality_Report_Rate", 
+                                                   "Scenario")) |>
+  # To separate WME/MR-Hevo
+  width(j = "blank_col", width = 0.2) |>
+  empty_blanks() |>
+  span_header() |>
+  align(part = "all", align = "center") |>
+  align(part = "body", j =c(5, 9),  align = "right") |>
+  align(part = "body", j =c(6, 10),  align = "left") |>
+  # Italicise N and F
+  italic(part = "header", i = 1, j = c(1,3) ) |>
+  # Fix name of invalid IVs
+  compose(part = "header", i = 1, j = 2, value = as_paragraph("Proportion of Invalid IVs")) |>
+  # Fix split headers
+  compose(part = "header", i = 3, j = c(5,9), value = as_paragraph("Mean Estimate")) |>
+  compose(part = "header", i = 4, j = c(5:6,9:10), value = as_paragraph("(Mean SE)")) |>
+  merge_h(part = "header", i = 4) |>
+  # Italicise/superscript R^2
+  compose(part = "header", i = 1, j = 4, value = as_paragraph(as_i("R"), as_sup(as_i(as.character(2))))) |>
+  
+  hline(part = "header", i = 2, j = c(5,9), border = fp_border(color = "black", width = 2)) |>
+  footnote(i = c(1,4), j = c(2, 5), part = "header", 
+           value = as_paragraph(c("IV: Instrumental Variable",
+                                  "SE: Standard Error")))
+  #add_footer_lines("Mean estimates, meand standar")
+  
+no_causal_sim_summ_tib_display
+
 
 ```
+
 
 
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_4_Results.Rmd"))`
