@@ -9,7 +9,7 @@ source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
 # Set number of datasets used
-n <- 3
+n <- 1000
 
 # Load data
 no_causal_10k_point1_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point1_scen1_models.rds"))
@@ -18,8 +18,13 @@ no_causal_10k_point3_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Da
 
 # Generate rows
 no_causal_10k_point1_scen1 <- get_summary_MR_tib_row(no_causal_10k_point1_scen1_models[1:n])
+saveRDS(no_causal_10k_point1_scen1, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_point1_scen1_row.rds"))
+
 no_causal_10k_point2_scen1 <- get_summary_MR_tib_row(no_causal_10k_point2_scen1_models[1:n])
+saveRDS(no_causal_10k_point2_scen1, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_point2_scen1_row.rds"))
+
 no_causal_10k_point3_scen1 <- get_summary_MR_tib_row(no_causal_10k_point3_scen1_models[1:n])
+saveRDS(no_causal_10k_point3_scen1, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_point3_scen1_row"))
 
 # Combine rows
 no_causal_10k_scen1_sim_summ_tib <- bind_rows(no_causal_10k_point1_scen1,
