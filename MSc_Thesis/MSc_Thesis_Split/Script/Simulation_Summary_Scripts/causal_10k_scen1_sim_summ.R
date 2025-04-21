@@ -28,8 +28,8 @@ saveRDS(causal_10k_point3_scen1, file = here("MSc_Thesis_Split", "Data", "Summar
 
 # Combine rows
 causal_10k_scen1_sim_summ_tib <- bind_rows(causal_10k_point1_scen1,
-                                              causal_10k_point2_scen1,
-                                              causal_10k_point3_scen1)
+                                           causal_10k_point2_scen1,
+                                           causal_10k_point3_scen1)
 
 # Save
 saveRDS(causal_10k_scen1_sim_summ_tib, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen1_sim_summ_tib.rds"))
