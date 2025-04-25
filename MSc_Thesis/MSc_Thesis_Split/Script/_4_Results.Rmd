@@ -65,24 +65,24 @@ source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 # Load data
 # No Causal:
 no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen1_sim_summ_tib.rds"))
-no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
+#no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
 
 no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen2_sim_summ_tib.rds"))
-no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
+#no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
 
-no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
-no_causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen3_sim_summ_tib.rds"))
+#no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
+#no_causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen3_sim_summ_tib.rds"))
 
 
 # Causal:
 causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen1_sim_summ_tib.rds"))
-causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen1_sim_summ_tib.rds"))
+#causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen1_sim_summ_tib.rds"))
 
 causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen2_sim_summ_tib.rds"))
-causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
+#causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
 
 causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen3_sim_summ_tib.rds"))
-causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
+#causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
 
 ```
 
@@ -94,25 +94,29 @@ A summary is shown in Table \@ref(tab:no-causal-sim-summ-tib) and \@ref(tab:caus
 ```{r no-causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="no-causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect", results='asis'}
 
 # Scenario 1
-no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib,
-                                          no_causal_20k_scen1_sim_summ_tib) %>% 
+no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib#,
+                                          #no_causal_20k_scen1_sim_summ_tib
+                                          ) %>% 
   mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 2
-no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib,
-                                          no_causal_20k_scen2_sim_summ_tib) %>% 
+no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib#,
+                                          #no_causal_20k_scen2_sim_summ_tib
+                                          ) %>% 
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 3
-no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib,
-                                          no_causal_20k_scen3_sim_summ_tib) %>% 
-  mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+# no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib,
+#                                           no_causal_20k_scen3_sim_summ_tib
+#                                           ) %>% 
+#   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
 
 
 # Summary
 no_causal_sim_summ_tib <- bind_rows(no_causal_scen1_sim_summ_tib,
-                                    no_causal_scen2_sim_summ_tib,
-                                    no_causal_scen3_sim_summ_tib)
+                                    no_causal_scen2_sim_summ_tib#,
+                                    #no_causal_scen3_sim_summ_tib
+                                    )
 
 # Display
 no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>% 
@@ -173,7 +177,7 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
   autofit() |>
   fit_to_width(max_width = 7.5) |>
-  add_footer_lines("IV: Instumental Variable, SE: Standard Error \nData from 1000 Simulated Mendelian Randomisation Studies \nPositive Causal Effect (\U03B2 = 0)")
+  add_footer_lines("IV: Instumental Variable, SE: Standard Error \nData from 1000 Simulated Mendelian Randomisation Studies \nNull Causal Effect (\U03B2 = 0)")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)", 
 #             style = "Table Caption", 
 #             autonum = run_autonum(seq_id = "tab", 
@@ -186,21 +190,24 @@ no_causal_sim_summ_tib_display
 
 
 \newpage
-```{r causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Positive Causal Effect (\U03B2 = 0.1)", results='asis'}
+```{r causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Positive Causal Effect", results='asis'}
 
 # Scenario 1
-causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib,
-                                       causal_20k_scen1_sim_summ_tib) %>% 
+causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib#,
+                                       #causal_20k_scen1_sim_summ_tib
+                                       ) %>% 
   mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 2
-causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib,
-                                       causal_20k_scen2_sim_summ_tib) %>% 
+causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib#,
+                                       #causal_20k_scen2_sim_summ_tib
+                                       ) %>% 
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 3
-causal_scen3_sim_summ_tib <- bind_rows(causal_10k_scen3_sim_summ_tib,
-                                       causal_20k_scen3_sim_summ_tib) %>% 
+causal_scen3_sim_summ_tib <- bind_rows(causal_10k_scen3_sim_summ_tib#,
+                                       #causal_20k_scen3_sim_summ_tib
+                                       ) %>% 
   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
 
 
@@ -210,7 +217,7 @@ causal_sim_summ_tib <- bind_rows(causal_scen1_sim_summ_tib,
                                  causal_scen3_sim_summ_tib)
 
 # Display
-causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>% 
+causal_sim_summ_tib_display <- causal_sim_summ_tib %>% 
   # Change names for cleaner plotting
   mutate(Invalid = Prop_Invalid,
          F = round(F_stat, 1),
