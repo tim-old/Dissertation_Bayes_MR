@@ -1,0 +1,1539 @@
+﻿Supplementary Table S28: Proxy variants included in genetic instruments with relevant weights.,,,,,,,,,,,,
+,,,,,,,,,,,,
+Trait,Sex,Signal,1KG_proxy,1KG_Trait_raising,1KG_Other_allele,1KG_Weight,1KG_SE_weight,HM_proxy,HM_Trait_raising,HM_Other_allele,HM_Weight,HM_SE_weight
+Bioavailable testosterone,Females,1:154580015_TC_T,rs10712198,TC,T,0.015,0.003,rs12125166,C,T,0.015,0.003
+Bioavailable testosterone,Females,rs199816133,rs11301122,C,CA,0.029,0.003,rs7047907,A,G,0.029,0.003
+Bioavailable testosterone,Females,rs35596561,rs11301327,CT,C,0.025,0.003,rs11870935,G,A,0.024,0.003
+Bioavailable testosterone,Females,15:53094375_TTTTG_T,rs142760249,T,TTTTG,0.030,0.004,rs8025128,T,C,0.029,0.004
+Bioavailable testosterone,Females,12:25412725_AATTATTGTGT_A,rs144766289,A,AATTATTGTGT,0.028,0.005,rs12320328,G,A,0.024,0.005
+Bioavailable testosterone,Females,4:69468698_ATAGAGGAAGGCCACTGTCTCCTGCCTGCCCCTGGGAACTGAATGTC_A,rs146290882,A,ATAGAGGAAGGCCACTGTCTCCTGCCTGCCCCTGGGAACTGAATGTC,0.023,0.003,rs4860985,C,T,0.016,0.003
+Bioavailable testosterone,Females,2:20421849_AACAC_A,rs150420836,A,AACAC,0.022,0.003,rs2002090,A,G,0.021,0.003
+Bioavailable testosterone,Females,18:3812373_AT_A,rs199630283,A,AT,0.019,0.003,rs3786434,A,T,0.015,0.003
+Bioavailable testosterone,Females,14:98567544_CAA_C,rs200382892,C,CAA,0.018,0.003,rs10145335,A,G,0.018,0.003
+Bioavailable testosterone,Females,8:25248334_GT_G,rs34014169,GT,G,0.014,0.003,rs1000798,G,T,0.014,0.003
+Bioavailable testosterone,Females,rs386705174,rs36135983,GT,G,0.039,0.003,rs2295709,T,C,0.039,0.003
+Bioavailable testosterone,Females,9:114826326_TG_T,rs374590100,TG,T,0.022,0.003,rs9695214,T,C,0.021,0.003
+Bioavailable testosterone,Females,rs746258907,rs3842247,AG,A,0.016,0.003,rs312023,G,A,0.015,0.003
+Bioavailable testosterone,Females,15:43674414_AAAAAAG_A,rs535287577,AAAAAAG,A,0.024,0.005,rs3213990,C,A,0.009,0.004
+Bioavailable testosterone,Females,10:65224458_CA_C,rs55739257,CA,C,0.032,0.003,rs6479905,G,A,0.030,0.003
+Bioavailable testosterone,Females,8:81418150_ATTTT_A,rs565764689,ATTTT,A,0.023,0.003,rs272617,T,C,0.022,0.003
+Bioavailable testosterone,Females,17:63685553_CA_C,rs5821582,C,CA,0.017,0.003,rs11079581,C,T,0.017,0.003
+Bioavailable testosterone,Females,rs67952556,rs5974638,G,A,0.012,0.003,NA,,,,
+Bioavailable testosterone,Females,13:22693754_TC_T,rs66467027,T,TC,0.019,0.003,rs12871430,T,C,0.018,0.003
+Bioavailable testosterone,Females,6:130386212_GGAGA_G,rs71822536,G,GGAGA,0.017,0.003,rs9375703,G,T,0.016,0.003
+Bioavailable testosterone,Females,rs764029425,rs77032872,T,TG,0.036,0.003,rs3779196,T,C,0.036,0.003
+Bioavailable testosterone,Females,rs112635299,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs113247979,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs114165349,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs114303452,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs11733695,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs12683780,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs140584594,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs149624078,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs17580,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs17853284,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs181255261,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs191780890,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs202200760,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs28641793,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs34931250,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs35008345,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs45446698,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs56196860,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs5855544,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs61755050,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs62025141,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs74652944,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs76895963,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs78058190,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs879619,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs9379084,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Females,rs13430258,Signal in 1KG,,,,,rs10202783,A,T,0.015,0.003
+Bioavailable testosterone,Females,rs2282248,Signal in 1KG,,,,,rs10857859,C,G,0.014,0.003
+Bioavailable testosterone,Females,rs11031005,Signal in 1KG,,,,,rs11031006,A,G,0.023,0.004
+Bioavailable testosterone,Females,rs6538437,Signal in 1KG,,,,,rs11107124,C,G,0.016,0.003
+Bioavailable testosterone,Females,rs8111359,Signal in 1KG,,,,,rs11673632,C,T,0.027,0.004
+Bioavailable testosterone,Females,rs35783704,Signal in 1KG,,,,,rs11774829,A,T,0.033,0.004
+Bioavailable testosterone,Females,rs13030651,Signal in 1KG,,,,,rs11897732,G,A,0.016,0.003
+Bioavailable testosterone,Females,rs77031559,Signal in 1KG,,,,,rs11927030,G,A,0.022,0.005
+Bioavailable testosterone,Females,rs1989147,Signal in 1KG,,,,,rs12130462,C,T,0.023,0.003
+Bioavailable testosterone,Females,rs12135478,Signal in 1KG,,,,,rs12142033,A,G,0.014,0.003
+Bioavailable testosterone,Females,rs4368453,Signal in 1KG,,,,,rs12487629,C,T,0.017,0.003
+Bioavailable testosterone,Females,rs71397837,Signal in 1KG,,,,,rs12900736,C,T,0.020,0.003
+Bioavailable testosterone,Females,rs34269793,Signal in 1KG,,,,,rs12999558,A,G,0.033,0.006
+Bioavailable testosterone,Females,rs71633359,Signal in 1KG,,,,,rs13130929,A,G,0.022,0.003
+Bioavailable testosterone,Females,rs17245822,Signal in 1KG,,,,,rs1337985,C,T,0.014,0.003
+Bioavailable testosterone,Females,rs7089122,Signal in 1KG,,,,,rs1538831,A,G,0.024,0.003
+Bioavailable testosterone,Females,rs34954997,Signal in 1KG,,,,,rs157582,C,T,0.015,0.003
+Bioavailable testosterone,Females,rs1640272,Signal in 1KG,,,,,rs1640271,C,T,0.021,0.003
+Bioavailable testosterone,Females,rs199746610,Signal in 1KG,,,,,rs16889714,A,T,0.034,0.007
+Bioavailable testosterone,Females,rs61856128,Signal in 1KG,,,,,rs17134158,C,T,0.032,0.003
+Bioavailable testosterone,Females,rs17287714,Signal in 1KG,,,,,rs17288007,A,G,0.019,0.005
+Bioavailable testosterone,Females,rs549035841,Signal in 1KG,,,,,rs17558745,C,T,0.015,0.003
+Bioavailable testosterone,Females,rs34255979,Signal in 1KG,,,,,rs17651629,C,T,0.019,0.004
+Bioavailable testosterone,Females,rs62396733,Signal in 1KG,,,,,rs17794619,A,G,0.021,0.004
+Bioavailable testosterone,Females,rs11235688,Signal in 1KG,,,,,rs1783596,T,C,0.015,0.003
+Bioavailable testosterone,Females,rs8178824,Signal in 1KG,,,,,rs1801689,C,A,0.057,0.007
+Bioavailable testosterone,Females,rs3832126,Signal in 1KG,,,,,rs1861398,C,G,0.032,0.003
+Bioavailable testosterone,Females,rs371347025,Signal in 1KG,,,,,rs1901825,A,T,0.014,0.003
+Bioavailable testosterone,Females,rs113172275,Signal in 1KG,,,,,rs1939768,T,G,0.049,0.005
+Bioavailable testosterone,Females,rs7780066,Signal in 1KG,,,,,rs2035647,G,A,0.023,0.003
+Bioavailable testosterone,Females,rs61237993,Signal in 1KG,,,,,rs2050789,G,A,0.016,0.004
+Bioavailable testosterone,Females,rs12645584,Signal in 1KG,,,,,rs2135509,A,G,0.017,0.003
+Bioavailable testosterone,Females,rs117327231,Signal in 1KG,,,,,rs2276273,C,T,0.075,0.008
+Bioavailable testosterone,Females,rs199787521,Signal in 1KG,,,,,rs2280861,G,A,0.016,0.003
+Bioavailable testosterone,Females,rs11879227,Signal in 1KG,,,,,rs2287019,C,T,0.020,0.003
+Bioavailable testosterone,Females,rs11621792,Signal in 1KG,,,,,rs2332328,T,C,0.022,0.003
+Bioavailable testosterone,Females,rs6684361,Signal in 1KG,,,,,rs2392239,T,C,0.040,0.003
+Bioavailable testosterone,Females,rs2954111,Signal in 1KG,,,,,rs2466145,T,C,0.015,0.003
+Bioavailable testosterone,Females,rs62223042,Signal in 1KG,,,,,rs2836961,C,A,0.015,0.003
+Bioavailable testosterone,Females,rs40270,Signal in 1KG,,,,,rs30000,A,G,0.017,0.003
+Bioavailable testosterone,Females,rs2391139,Signal in 1KG,,,,,rs3103180,G,A,0.024,0.003
+Bioavailable testosterone,Females,rs62263023,Signal in 1KG,,,,,rs3731544,A,C,0.028,0.005
+Bioavailable testosterone,Females,rs563306865,Signal in 1KG,,,,,rs3924462,G,T,0.015,0.003
+Bioavailable testosterone,Females,rs7418101,Signal in 1KG,,,,,rs4000699,T,C,0.015,0.003
+Bioavailable testosterone,Females,rs13153019,Signal in 1KG,,,,,rs4075958,A,G,0.015,0.003
+Bioavailable testosterone,Females,rs381194,Signal in 1KG,,,,,rs409952,G,A,0.011,0.003
+Bioavailable testosterone,Females,rs9636441,Signal in 1KG,,,,,rs4671416,A,G,0.017,0.003
+Bioavailable testosterone,Females,rs62231822,Signal in 1KG,,,,,rs4685148,T,C,0.017,0.004
+Bioavailable testosterone,Females,rs6772177,Signal in 1KG,,,,,rs4687612,G,A,0.018,0.004
+Bioavailable testosterone,Females,rs2397112,Signal in 1KG,,,,,rs4715353,C,T,0.016,0.003
+Bioavailable testosterone,Females,rs56205943,Signal in 1KG,,,,,rs4760355,G,A,0.020,0.003
+Bioavailable testosterone,Females,rs56731455,Signal in 1KG,,,,,rs4843291,G,A,0.014,0.003
+Bioavailable testosterone,Females,rs7239564,Signal in 1KG,,,,,rs4891540,G,A,0.030,0.004
+Bioavailable testosterone,Females,rs2374456,Signal in 1KG,,,,,rs4953716,T,A,0.015,0.003
+Bioavailable testosterone,Females,rs12543598,Signal in 1KG,,,,,rs5303,A,G,0.020,0.003
+Bioavailable testosterone,Females,rs182375344,Signal in 1KG,,,,,rs5942939,T,C,0.016,0.003
+Bioavailable testosterone,Females,rs5970442,Signal in 1KG,,,,,rs5970441,C,T,0.027,0.003
+Bioavailable testosterone,Females,rs590097,Signal in 1KG,,,,,rs604126,G,A,0.032,0.003
+Bioavailable testosterone,Females,rs6073431,Signal in 1KG,,,,,rs6073435,A,T,0.012,0.003
+Bioavailable testosterone,Females,rs629042,Signal in 1KG,,,,,rs629445,G,A,0.028,0.003
+Bioavailable testosterone,Females,rs113347955,Signal in 1KG,,,,,rs6468492,G,C,0.025,0.007
+Bioavailable testosterone,Females,rs71447853,Signal in 1KG,,,,,rs6494531,A,G,0.014,0.003
+Bioavailable testosterone,Females,rs62144584,Signal in 1KG,,,,,rs6761875,T,C,0.019,0.003
+Bioavailable testosterone,Females,rs13072623,Signal in 1KG,,,,,rs6804701,T,A,0.015,0.003
+Bioavailable testosterone,Females,rs111475133,Signal in 1KG,,,,,rs7163907,T,C,0.021,0.003
+Bioavailable testosterone,Females,rs112933999,Signal in 1KG,,,,,rs732310,T,G,0.014,0.003
+Bioavailable testosterone,Females,rs529143892,Signal in 1KG,,,,,rs7515597,C,T,0.018,0.003
+Bioavailable testosterone,Females,rs73350117,Signal in 1KG,,,,,rs7706547,C,T,0.021,0.003
+Bioavailable testosterone,Females,rs77491205,Signal in 1KG,,,,,rs7758037,G,C,0.018,0.003
+Bioavailable testosterone,Females,rs7139079,Signal in 1KG,,,,,rs7953249,G,A,0.021,0.003
+Bioavailable testosterone,Females,rs7301634,Signal in 1KG,,,,,rs7964231,T,C,0.015,0.003
+Bioavailable testosterone,Females,rs36019311,Signal in 1KG,,,,,rs799166,G,C,0.028,0.004
+Bioavailable testosterone,Females,rs56332871,Signal in 1KG,,,,,rs8023580,T,C,0.029,0.003
+Bioavailable testosterone,Females,rs10851395,Signal in 1KG,,,,,rs8040086,G,A,0.018,0.003
+Bioavailable testosterone,Females,rs11653686,Signal in 1KG,,,,,rs8076023,C,G,0.065,0.004
+Bioavailable testosterone,Females,rs850294,Signal in 1KG,,,,,rs850293,C,A,0.034,0.004
+Bioavailable testosterone,Females,rs58072681,Signal in 1KG,,,,,rs9319570,G,A,0.062,0.005
+Bioavailable testosterone,Females,rs10504255,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs10757893,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs10778215,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs11047261,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs11078597,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs1119208,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs11683361,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs1171617,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs11784903,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs1214759,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs12189146,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs12564492,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs12658172,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs13020003,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs13092573,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs1432679,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs1515098,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs168189,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs1688043,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs171021,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs17128091,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs2152318,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs2266782,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs2587507,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs34341,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs351370,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs3732218,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs3814707,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs388430,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs4135247,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs4149056,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs4690098,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs4712976,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs4793788,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs4869893,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs573833,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs6008259,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs6020423,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs6129778,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs6258,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs6486122,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs6788984,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs6792725,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs687339,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs7078330,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs7183977,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs7248104,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs727428,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs7291444,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs7314285,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs738409,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs7633673,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs8046391,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs9399469,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs9527,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Females,rs9987289,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs140498714,NA,,,,,,,,,
+Bioavailable testosterone,Males,rs147676232,NA,,,,,,,,,
+Bioavailable testosterone,Males,rs776715248,NA,,,,,,,,,
+Bioavailable testosterone,Males,6:100108564_TG_T,rs10706082,T,TG,0.029,0.003,NA,,,,
+Bioavailable testosterone,Males,9:140774721_T_C,rs10867084,C,T,0.023,0.003,rs10867084,C,T,0.023,0.003
+Bioavailable testosterone,Males,rs66956368,rs112765699,T,A,0.034,0.004,rs3821866,G,C,0.022,0.003
+Bioavailable testosterone,Males,3:88173922_GT_G,rs11287888,GT,G,0.032,0.004,rs4485742,T,A,0.031,0.004
+Bioavailable testosterone,Males,rs113017476,rs112881196,G,C,0.182,0.008,NA,,,,
+Bioavailable testosterone,Males,22:31358580_CA_C,rs11317522,C,CA,0.018,0.003,rs7284767,A,G,0.015,0.003
+Bioavailable testosterone,Males,16:53822169_AT_A,rs113935429,AT,A,0.018,0.003,rs7185735,A,G,0.015,0.003
+Bioavailable testosterone,Males,rs1178947,rs1178977,A,G,0.023,0.004,Signal in HM,,,,
+Bioavailable testosterone,Males,3:152149372_CTT_C,rs139570504,C,CTT,0.038,0.005,rs17371330,C,G,0.037,0.005
+Bioavailable testosterone,Males,X:135998134_CA_C,rs144354831,NA,NA,NA,NA,rs1190734,G,A,0.015,0.002
+Bioavailable testosterone,Males,rs12410063,rs145410110,C,T,0.026,0.003,rs9436746,A,C,0.024,0.003
+Bioavailable testosterone,Males,7:78482336_AG_A,rs200907201,AG,A,0.075,0.009,NA,,,,
+Bioavailable testosterone,Males,19:48369728_ATTT_A,rs212101,C,A,0.026,0.004,rs296381,T,C,0.026,0.004
+Bioavailable testosterone,Males,rs796177770,rs34632402,C,CA,0.019,0.003,rs7897089,G,A,0.018,0.003
+Bioavailable testosterone,Males,X:54424009_CT_C,rs35118847,NA,NA,NA,NA,NA,,,,
+Bioavailable testosterone,Males,rs116923389,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs11751920,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs12810788,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs146225865,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs17254118,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs190930099,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs41306249,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs528845403,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs532320857,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs56196860,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs61762319,Signal in 1KG,,,,,NA,,,,
+Bioavailable testosterone,Males,rs565931739,Signal in 1KG,,,,,rs10019555,G,A,0.046,0.004
+Bioavailable testosterone,Males,rs2327121,Signal in 1KG,,,,,rs1047381,C,T,0.018,0.003
+Bioavailable testosterone,Males,rs1272131,Signal in 1KG,,,,,rs10483727,T,C,0.025,0.003
+Bioavailable testosterone,Males,rs1812755,Signal in 1KG,,,,,rs10484012,T,C,0.026,0.003
+Bioavailable testosterone,Males,rs13028479,Signal in 1KG,,,,,rs10929759,G,C,0.030,0.003
+Bioavailable testosterone,Males,rs61932784,Signal in 1KG,,,,,rs11612012,C,T,0.020,0.004
+Bioavailable testosterone,Males,rs34138930,Signal in 1KG,,,,,rs11832487,G,A,0.003,0.004
+Bioavailable testosterone,Males,rs1799941,Signal in 1KG,,,,,rs12150660,G,T,0.032,0.004
+Bioavailable testosterone,Males,rs6718154,Signal in 1KG,,,,,rs12476520,C,T,0.032,0.003
+Bioavailable testosterone,Males,rs2594948,Signal in 1KG,,,,,rs12693096,C,G,0.017,0.003
+Bioavailable testosterone,Males,rs71519251,Signal in 1KG,,,,,rs12735385,A,T,0.022,0.004
+Bioavailable testosterone,Males,rs6616174,Signal in 1KG,,,,,rs12843846,C,T,0.016,0.002
+Bioavailable testosterone,Males,rs2764772,Signal in 1KG,,,,,rs12931939,T,C,0.028,0.004
+Bioavailable testosterone,Males,rs2668776,Signal in 1KG,,,,,rs1398217,G,C,0.027,0.003
+Bioavailable testosterone,Males,rs79310511,Signal in 1KG,,,,,rs16867808,C,T,0.030,0.006
+Bioavailable testosterone,Males,rs7265992,Signal in 1KG,,,,,rs17092148,G,T,0.030,0.004
+Bioavailable testosterone,Males,rs9986829,Signal in 1KG,,,,,rs17168570,C,A,0.052,0.003
+Bioavailable testosterone,Males,rs34192788,Signal in 1KG,,,,,rs17379883,G,A,0.019,0.003
+Bioavailable testosterone,Males,rs72774885,Signal in 1KG,,,,,rs17395416,T,G,0.025,0.004
+Bioavailable testosterone,Males,rs55765314,Signal in 1KG,,,,,rs184654,C,G,0.025,0.004
+Bioavailable testosterone,Males,rs6521,Signal in 1KG,,,,,rs1960072,T,C,0.019,0.003
+Bioavailable testosterone,Males,rs62041532,Signal in 1KG,,,,,rs1973619,A,C,0.017,0.004
+Bioavailable testosterone,Males,rs204995,Signal in 1KG,,,,,rs204994,C,T,0.027,0.003
+Bioavailable testosterone,Males,rs72664935,Signal in 1KG,,,,,rs2184202,A,C,0.018,0.003
+Bioavailable testosterone,Males,rs58879558,Signal in 1KG,,,,,rs2532288,T,C,0.021,0.004
+Bioavailable testosterone,Males,rs71753454,Signal in 1KG,,,,,rs2608954,G,T,0.020,0.004
+Bioavailable testosterone,Males,rs2631864,Signal in 1KG,,,,,rs2610965,T,A,0.029,0.005
+Bioavailable testosterone,Males,rs539017487,Signal in 1KG,,,,,rs2844702,A,G,0.037,0.003
+Bioavailable testosterone,Males,rs55795858,Signal in 1KG,,,,,rs2888335,C,T,0.016,0.003
+Bioavailable testosterone,Males,rs112714881,Signal in 1KG,,,,,rs3020411,A,G,0.018,0.003
+Bioavailable testosterone,Males,rs2011425,Signal in 1KG,,,,,rs3732218,G,A,0.048,0.006
+Bioavailable testosterone,Males,rs71529289,Signal in 1KG,,,,,rs4278125,G,A,0.036,0.003
+Bioavailable testosterone,Males,rs8076703,Signal in 1KG,,,,,rs4427867,A,G,0.024,0.003
+Bioavailable testosterone,Males,rs7454964,Signal in 1KG,,,,,rs4715353,T,C,0.017,0.003
+Bioavailable testosterone,Males,rs73221538,Signal in 1KG,,,,,rs4827379,C,T,0.054,0.003
+Bioavailable testosterone,Males,rs138271349,Signal in 1KG,,,,,rs4830450,T,C,0.028,0.005
+Bioavailable testosterone,Males,rs35737316,Signal in 1KG,,,,,rs4951318,C,G,0.040,0.004
+Bioavailable testosterone,Males,rs111386834,Signal in 1KG,,,,,rs5934505,C,T,0.131,0.002
+Bioavailable testosterone,Males,rs10218066,Signal in 1KG,,,,,rs5969987,T,C,0.012,0.002
+Bioavailable testosterone,Males,rs503542,Signal in 1KG,,,,,rs625735,A,G,0.018,0.003
+Bioavailable testosterone,Males,rs545206972,Signal in 1KG,,,,,rs6258,T,C,0.249,0.019
+Bioavailable testosterone,Males,rs34040779,Signal in 1KG,,,,,rs664595,T,C,0.020,0.004
+Bioavailable testosterone,Males,rs2438086,Signal in 1KG,,,,,rs6758290,C,T,0.021,0.003
+Bioavailable testosterone,Males,rs375286460,Signal in 1KG,,,,,rs6836994,C,A,0.019,0.003
+Bioavailable testosterone,Males,rs2038695,Signal in 1KG,,,,,rs7338818,C,T,0.022,0.003
+Bioavailable testosterone,Males,rs7912521,Signal in 1KG,,,,,rs7908228,G,T,0.061,0.003
+Bioavailable testosterone,Males,rs11389722,Signal in 1KG,,,,,rs7944852,T,A,0.018,0.003
+Bioavailable testosterone,Males,rs137969745,Signal in 1KG,,,,,rs7993373,G,A,0.032,0.005
+Bioavailable testosterone,Males,rs829593,Signal in 1KG,,,,,rs829596,A,C,0.018,0.003
+Bioavailable testosterone,Males,rs745486,Signal in 1KG,,,,,rs901992,G,C,0.021,0.003
+Bioavailable testosterone,Males,rs1611581,Signal in 1KG,,,,,rs9260599,C,A,0.014,0.003
+Bioavailable testosterone,Males,rs9322822,Signal in 1KG,,,,,rs9391253,A,T,0.049,0.003
+Bioavailable testosterone,Males,rs10137488,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs10279715,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs1034948,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs10510939,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs10738700,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs10892924,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs10982156,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs1112195,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs11703376,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs12796488,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs12907068,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs13065463,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs13835,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs1454836,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs17703883,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs2035837,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs2090409,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs2184968,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs243466,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs2961853,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs3733897,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs3821866,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs4274916,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs4483209,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs4503095,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs4562360,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs4678408,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs4872310,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs4919686,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs5905042,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs5913997,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs5915287,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs618888,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs6486542,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs6729954,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs7496293,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs757309,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs7679843,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs7872329,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs7915430,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs8061590,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs912202,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs950716,Signal in 1KG,,,,,Signal in HM,,,,
+Bioavailable testosterone,Males,rs9824196,Signal in 1KG,,,,,Signal in HM,,,,
+Estradiol,Males,rs188982745,NA,,,,,,,,,
+Estradiol,Males,rs559555,NA,,,,,,,,,
+Estradiol,Males,rs776715248,NA,,,,,,,,,
+Estradiol,Males,rs12850857,rs1385696,T,C,0.005,0.001,rs1385696,T,C,0.005,0.001
+Estradiol,Males,rs781858752,rs147250649,TG,T,0.008,0.001,NA,,,,
+Estradiol,Males,4:69958680_GA_G,rs57058697,GA,G,0.007,0.001,rs4587017,T,G,0.007,0.001
+Estradiol,Males,5:35983283_CA_C,rs78247641,C,CA,0.008,0.001,rs4869450,A,T,0.007,0.001
+Estradiol,Males,rs112881196,Signal in 1KG,,,,,NA,,,,
+Estradiol,Males,rs117826558,Signal in 1KG,,,,,NA,,,,
+Estradiol,Males,rs201687269,Signal in 1KG,,,,,NA,,,,
+Estradiol,Males,rs34019140,Signal in 1KG,,,,,NA,,,,
+Estradiol,Males,rs45446698,Signal in 1KG,,,,,NA,,,,
+Estradiol,Males,rs56196860,Signal in 1KG,,,,,NA,,,,
+Estradiol,Males,rs570754094,Signal in 1KG,,,,,NA,,,,
+Estradiol,Males,rs113047993,Signal in 1KG,,,,,rs11082219,G,A,0.006,0.001
+Estradiol,Males,rs10425629,Signal in 1KG,,,,,rs2547231,C,A,0.008,0.001
+Estradiol,Males,rs5933688,Signal in 1KG,,,,,rs5934505,C,T,0.008,0.001
+Estradiol,Males,rs7173595,Signal in 1KG,,,,,rs727479,A,C,0.016,0.001
+Estradiol,Males,rs1260326,Signal in 1KG,,,,,Signal in HM,,,,
+Estradiol,Males,rs3751591,Signal in 1KG,,,,,Signal in HM,,,,
+Estradiol,Males,rs657152,Signal in 1KG,,,,,Signal in HM,,,,
+Estradiol,Males,rs727428,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,15:43025006_CT_C,NA,,,,,,,,,
+SHBG,Females,rs560436873,NA,,,,,,,,,
+SHBG,Females,rs73519353,NA,,,,,,,,,
+SHBG,Females,17:48627860_CCT_C,rs10586811,C,CCT,0.009,0.002,rs1132414,G,A,0.009,0.002
+SHBG,Females,12:26614614_CAT_C,rs10599348,C,CAT,0.010,0.002,rs17395011,T,C,0.010,0.002
+SHBG,Females,15:51052455_CT_C,rs10717809,C,CT,0.008,0.002,rs12593469,T,C,0.008,0.001
+SHBG,Females,rs768159759,rs113165924,A,AG,0.014,0.003,NA,,,,
+SHBG,Females,1:93787087_TA_T,rs113348816,T,TA,0.009,0.002,rs2391251,T,C,0.009,0.002
+SHBG,Females,1:23747996_GA_G,rs11340914,G,GA,0.011,0.002,rs2077066,T,C,0.009,0.002
+SHBG,Females,rs390408,rs131658,G,C,0.014,0.002,rs140489,A,G,0.014,0.002
+SHBG,Females,rs11054861,rs1388046179,A,G,0.022,0.004,rs11054604,A,G,0.022,0.005
+SHBG,Females,rs771193934,rs139153780,AGGCATGCTGCCAAGAAT,A,0.010,0.002,NA,,,,
+SHBG,Females,rs770971500,rs140871704,C,CTTTT,0.010,0.002,rs12786104,G,T,0.009,0.002
+SHBG,Females,15:53094375_TTTTG_T,rs142760249,TTTTG,T,0.028,0.002,rs8025128,C,T,0.027,0.002
+SHBG,Females,10:65158772_AAAG_A,rs150036478,A,AAAG,0.047,0.001,rs7912893,A,T,0.046,0.001
+SHBG,Females,rs781996653,rs199649980,TTATTTTATTG,T,0.009,0.001,rs7801259,A,T,0.008,0.001
+SHBG,Females,rs201874554,rs200289656,A,ACC,0.015,0.003,rs9828746,C,T,0.015,0.003
+SHBG,Females,8:81457499_CA_C,rs200988859,C,CA,0.026,0.002,rs440837,G,A,0.026,0.002
+SHBG,Females,13:50565104_ACT_A,rs201736780,A,ACT,0.038,0.005,rs2812208,C,G,0.037,0.005
+SHBG,Females,8:59415339_TTG_T,rs201812242,T,TTG,0.011,0.001,rs8192870,G,T,0.010,0.001
+SHBG,Females,3:122361173_TTTTTC_T,rs2668335,C,T,0.010,0.002,rs2668332,C,T,0.009,0.002
+SHBG,Females,2:208469213_ATCTT_A,rs34171849,ATCTT,A,0.012,0.002,rs2551928,A,G,0.012,0.002
+SHBG,Females,2:191559843_GT_G,rs34400883,GT,G,0.011,0.002,rs10202868,T,C,0.010,0.002
+SHBG,Females,4:103877471_TA_T,rs35614802,T,TA,0.009,0.001,rs3974604,C,T,0.009,0.001
+SHBG,Females,rs10747689,rs4759319,T,G,0.006,0.001,Signal in HM,,,,
+SHBG,Females,19:7223973_TTTG_T,rs4804414,C,T,0.018,0.001,rs4804416,T,G,0.018,0.001
+SHBG,Females,7:130438531_CTTTTTT_C,rs559324308,C,CTTTTTT,0.010,0.001,rs13241538,C,G,0.009,0.001
+SHBG,Females,12:12562340_GT_G,rs56268462,G,GT,0.010,0.002,rs6488523,G,C,0.009,0.002
+SHBG,Females,1:57170378_AATC_A,rs5774298,A,AATC,0.011,0.002,rs2746347,T,C,0.011,0.002
+SHBG,Females,12:103483327_AT_A,rs5800562,AT,A,0.026,0.001,rs10745954,A,G,0.026,0.001
+SHBG,Females,9:127474886_CA_C,rs5900623,CA,C,0.007,0.001,rs722477,A,G,0.006,0.001
+SHBG,Females,rs202021413,rs61377352,TA,T,0.010,0.001,rs11240358,G,A,0.010,0.001
+SHBG,Females,1:155867257_CAA_C,rs66756214,C,CAA,0.009,0.002,rs12563627,C,T,0.008,0.002
+SHBG,Females,rs778571122,rs67805125,GTGTTTTTTTTGTTTTTGTTTT,G,0.011,0.001,rs1401454,C,T,0.011,0.001
+SHBG,Females,rs34184867,rs7147511,C,T,0.008,0.001,rs12897338,C,T,0.007,0.001
+SHBG,Females,6:130386212_GGAGA_G,rs71822536,GGAGA,G,0.009,0.002,rs9375703,T,G,0.009,0.002
+SHBG,Females,1:221048577_TGA_T,rs72353756,T,TGA,0.009,0.002,NA,,,,
+SHBG,Females,rs775181992,rs76976306,A,AGCCCT,0.014,0.002,NA,,,,
+SHBG,Females,rs764029425,rs77032872,TG,T,0.038,0.002,rs3779196,C,T,0.038,0.002
+SHBG,Females,rs1005421,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs114165349,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs114816312,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs114949263,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs115209326,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs11539938,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs116279971,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs11688682,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs117522510,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs140584594,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs143378550,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs144293483,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs148911629,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs17580,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs185044544,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs191591035,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs1962883,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs202200760,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs28925904,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs28929470,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs28929474,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs5117,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs528350911,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs60018147,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs61755050,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs61830291,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs62515079,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs6736913,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs72648854,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs72681869,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs72766607,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs76767219,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs76895963,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs7696472,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs78058190,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs79237700,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs79287178,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs79391862,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs9379084,Signal in 1KG,,,,,NA,,,,
+SHBG,Females,rs555234816,Signal in 1KG,,,,,rs10101067,G,C,0.017,0.003
+SHBG,Females,rs10095380,Signal in 1KG,,,,,rs10110651,T,C,0.010,0.002
+SHBG,Females,rs75077113,Signal in 1KG,,,,,rs1034528,C,G,0.010,0.002
+SHBG,Females,rs58489806,Signal in 1KG,,,,,rs10401969,T,C,0.010,0.003
+SHBG,Females,rs2288926,Signal in 1KG,,,,,rs10416529,C,T,0.005,0.002
+SHBG,Females,rs7252372,Signal in 1KG,,,,,rs10421262,T,G,0.006,0.001
+SHBG,Females,rs13150068,Signal in 1KG,,,,,rs10440319,C,G,0.017,0.001
+SHBG,Females,rs140312320,Signal in 1KG,,,,,rs1057050,G,A,0.016,0.003
+SHBG,Females,rs7481219,Signal in 1KG,,,,,rs1058900,T,C,0.007,0.001
+SHBG,Females,rs13042148,Signal in 1KG,,,,,rs1074683,C,G,0.007,0.002
+SHBG,Females,rs10815276,Signal in 1KG,,,,,rs10758706,G,C,0.008,0.001
+SHBG,Females,rs12543287,Signal in 1KG,,,,,rs10808961,A,G,0.010,0.002
+SHBG,Females,rs35233014,Signal in 1KG,,,,,rs10881583,C,T,0.014,0.002
+SHBG,Females,rs548235873,Signal in 1KG,,,,,rs10883795,C,T,0.006,0.002
+SHBG,Females,rs150584036,Signal in 1KG,,,,,rs10888695,T,C,0.009,0.002
+SHBG,Females,rs34331968,Signal in 1KG,,,,,rs10922096,T,C,0.012,0.001
+SHBG,Females,rs9366291,Signal in 1KG,,,,,rs10946313,T,C,0.007,0.001
+SHBG,Females,rs4837794,Signal in 1KG,,,,,rs10985009,T,C,0.011,0.002
+SHBG,Females,rs7298820,Signal in 1KG,,,,,rs11045237,C,A,0.013,0.002
+SHBG,Females,rs11188601,Signal in 1KG,,,,,rs11188604,G,T,0.010,0.001
+SHBG,Females,rs71468663,Signal in 1KG,,,,,rs11231698,C,T,0.011,0.003
+SHBG,Females,rs34311866,Signal in 1KG,,,,,rs11248059,C,G,0.010,0.002
+SHBG,Females,rs5791099,Signal in 1KG,,,,,rs11606433,T,C,0.005,0.002
+SHBG,Females,rs7484541,Signal in 1KG,,,,,rs11614506,C,T,0.014,0.002
+SHBG,Females,rs5813220,Signal in 1KG,,,,,rs11630468,A,G,0.013,0.001
+SHBG,Females,rs11637595,Signal in 1KG,,,,,rs11634257,T,A,0.009,0.002
+SHBG,Females,rs11641834,Signal in 1KG,,,,,rs11641548,A,C,0.011,0.001
+SHBG,Females,rs4122352,Signal in 1KG,,,,,rs11644601,C,T,0.011,0.002
+SHBG,Females,rs140302625,Signal in 1KG,,,,,rs11650087,A,T,0.067,0.002
+SHBG,Females,rs72844546,Signal in 1KG,,,,,rs11656524,G,A,0.009,0.001
+SHBG,Females,rs112966033,Signal in 1KG,,,,,rs11656665,A,G,0.014,0.001
+SHBG,Females,rs111288118,Signal in 1KG,,,,,rs11666281,C,T,0.013,0.002
+SHBG,Females,rs4804669,Signal in 1KG,,,,,rs11666603,T,C,0.009,0.002
+SHBG,Females,rs4077285,Signal in 1KG,,,,,rs11673628,G,C,0.013,0.002
+SHBG,Females,rs4871015,Signal in 1KG,,,,,rs11785664,T,C,0.006,0.001
+SHBG,Females,rs4264433,Signal in 1KG,,,,,rs11870935,A,G,0.018,0.001
+SHBG,Females,rs113408476,Signal in 1KG,,,,,rs1211184,T,C,0.011,0.002
+SHBG,Females,rs1223796,Signal in 1KG,,,,,rs1223792,T,C,0.013,0.002
+SHBG,Females,rs75130744,Signal in 1KG,,,,,rs12320328,A,G,0.022,0.003
+SHBG,Females,rs72782727,Signal in 1KG,,,,,rs12599036,A,G,0.009,0.002
+SHBG,Females,rs11738093,Signal in 1KG,,,,,rs12654393,G,T,0.012,0.002
+SHBG,Females,rs784504,Signal in 1KG,,,,,rs1274963,G,A,0.008,0.002
+SHBG,Females,rs6803518,Signal in 1KG,,,,,rs13085868,A,G,0.004,0.002
+SHBG,Females,rs28712547,Signal in 1KG,,,,,rs1364907,C,T,0.010,0.002
+SHBG,Females,rs138204164,Signal in 1KG,,,,,rs1511021,T,G,0.011,0.002
+SHBG,Females,rs146104952,Signal in 1KG,,,,,rs16832501,C,T,0.010,0.002
+SHBG,Females,rs68002561,Signal in 1KG,,,,,rs16835135,G,A,0.015,0.003
+SHBG,Females,rs921153,Signal in 1KG,,,,,rs17007989,C,T,0.008,0.002
+SHBG,Females,rs28459049,Signal in 1KG,,,,,rs17144574,T,C,0.006,0.002
+SHBG,Females,rs78890745,Signal in 1KG,,,,,rs17288007,G,A,0.018,0.003
+SHBG,Females,rs73036519,Signal in 1KG,,,,,rs17356664,C,T,0.011,0.002
+SHBG,Females,rs12138803,Signal in 1KG,,,,,rs17369123,C,T,0.008,0.002
+SHBG,Females,rs41280463,Signal in 1KG,,,,,rs17369400,A,G,0.009,0.002
+SHBG,Females,rs112332688,Signal in 1KG,,,,,rs17372936,T,C,0.008,0.002
+SHBG,Females,rs74090351,Signal in 1KG,,,,,rs17377267,G,T,0.016,0.003
+SHBG,Females,rs72836346,Signal in 1KG,,,,,rs17484848,C,T,0.011,0.002
+SHBG,Females,rs59837038,Signal in 1KG,,,,,rs17608660,A,G,0.008,0.002
+SHBG,Females,rs4709746,Signal in 1KG,,,,,rs17630640,G,A,0.008,0.002
+SHBG,Females,rs34255979,Signal in 1KG,,,,,rs17651629,T,C,0.024,0.002
+SHBG,Females,rs2009310,Signal in 1KG,,,,,rs17677199,C,G,0.004,0.001
+SHBG,Females,rs6860245,Signal in 1KG,,,,,rs17764730,T,C,0.011,0.002
+SHBG,Females,rs147153202,Signal in 1KG,,,,,rs17790453,G,C,0.013,0.002
+SHBG,Females,rs62580766,Signal in 1KG,,,,,rs17806063,G,A,0.011,0.002
+SHBG,Females,rs8178824,Signal in 1KG,,,,,rs1801689,A,C,0.041,0.004
+SHBG,Females,rs17887160,Signal in 1KG,,,,,rs1882551,G,C,0.009,0.002
+SHBG,Females,rs28636815,Signal in 1KG,,,,,rs1946959,A,G,0.011,0.001
+SHBG,Females,rs11376788,Signal in 1KG,,,,,rs194742,T,C,0.007,0.002
+SHBG,Females,rs183015141,Signal in 1KG,,,,,rs2051792,C,T,0.028,0.006
+SHBG,Females,rs80235628,Signal in 1KG,,,,,rs2130779,G,T,0.017,0.003
+SHBG,Females,rs13379043,Signal in 1KG,,,,,rs2159176,G,T,0.008,0.002
+SHBG,Females,rs111270317,Signal in 1KG,,,,,rs2241165,C,T,0.008,0.002
+SHBG,Females,rs1634791,Signal in 1KG,,,,,rs2249742,C,T,0.009,0.001
+SHBG,Females,rs2246223,Signal in 1KG,,,,,rs2251188,G,A,0.007,0.001
+SHBG,Females,rs34154818,Signal in 1KG,,,,,rs2276936,A,C,0.009,0.001
+SHBG,Females,rs549664712,Signal in 1KG,,,,,rs2291542,C,T,0.013,0.002
+SHBG,Females,rs11621792,Signal in 1KG,,,,,rs2332328,C,T,0.021,0.001
+SHBG,Females,rs35696875,Signal in 1KG,,,,,rs2394529,C,G,0.010,0.002
+SHBG,Females,rs6058067,Signal in 1KG,,,,,rs2424993,G,C,0.009,0.002
+SHBG,Females,rs6831257,Signal in 1KG,,,,,rs2602856,C,A,0.008,0.001
+SHBG,Females,rs1870927,Signal in 1KG,,,,,rs2615799,T,C,0.007,0.002
+SHBG,Females,rs71531849,Signal in 1KG,,,,,rs2718167,C,T,0.009,0.001
+SHBG,Females,rs2723555,Signal in 1KG,,,,,rs2723572,T,C,0.006,0.001
+SHBG,Females,rs550767741,Signal in 1KG,,,,,rs2741990,T,C,0.022,0.002
+SHBG,Females,rs696825,Signal in 1KG,,,,,rs2780103,T,C,0.025,0.002
+SHBG,Females,rs568656,Signal in 1KG,,,,,rs2791757,C,A,0.009,0.001
+SHBG,Females,rs13303359,Signal in 1KG,,,,,rs2821231,C,T,0.007,0.001
+SHBG,Females,rs9461793,Signal in 1KG,,,,,rs2858312,G,C,0.008,0.002
+SHBG,Females,rs59774409,Signal in 1KG,,,,,rs2878342,T,C,0.014,0.003
+SHBG,Females,rs62128735,Signal in 1KG,,,,,rs2974238,A,G,0.010,0.002
+SHBG,Females,rs2980858,Signal in 1KG,,,,,rs2980859,G,C,0.008,0.002
+SHBG,Females,rs40270,Signal in 1KG,,,,,rs30000,G,A,0.017,0.002
+SHBG,Females,rs528806375,Signal in 1KG,,,,,rs301033,T,C,0.008,0.001
+SHBG,Females,rs3018695,Signal in 1KG,,,,,rs3019748,G,A,0.006,0.001
+SHBG,Females,rs35475471,Signal in 1KG,,,,,rs3114652,C,T,0.009,0.002
+SHBG,Females,rs11103377,Signal in 1KG,,,,,rs3780190,G,A,0.007,0.001
+SHBG,Females,rs62303689,Signal in 1KG,,,,,rs3792603,A,G,0.005,0.002
+SHBG,Females,rs11664106,Signal in 1KG,,,,,rs3810068,C,T,0.006,0.001
+SHBG,Females,rs12797706,Signal in 1KG,,,,,rs3814707,A,G,0.014,0.002
+SHBG,Females,rs1684608,Signal in 1KG,,,,,rs3848375,T,C,0.009,0.002
+SHBG,Females,rs73670309,Signal in 1KG,,,,,rs4266553,C,G,0.009,0.002
+SHBG,Females,rs58321169,Signal in 1KG,,,,,rs4273712,A,G,0.008,0.002
+SHBG,Females,rs67651018,Signal in 1KG,,,,,rs4316741,G,A,0.008,0.002
+SHBG,Females,rs13200245,Signal in 1KG,,,,,rs4472353,C,T,0.008,0.002
+SHBG,Females,rs62486442,Signal in 1KG,,,,,rs4474021,G,T,0.006,0.002
+SHBG,Females,rs11130982,Signal in 1KG,,,,,rs4504165,C,T,0.006,0.002
+SHBG,Females,rs201468966,Signal in 1KG,,,,,rs4660808,C,T,0.016,0.002
+SHBG,Females,rs57158761,Signal in 1KG,,,,,rs4686683,T,G,0.004,0.001
+SHBG,Females,rs6772177,Signal in 1KG,,,,,rs4687612,A,G,0.009,0.002
+SHBG,Females,rs469721,Signal in 1KG,,,,,rs469772,C,T,0.013,0.002
+SHBG,Females,rs10939934,Signal in 1KG,,,,,rs4700486,A,G,0.007,0.001
+SHBG,Females,rs67890964,Signal in 1KG,,,,,rs4782568,G,C,0.009,0.001
+SHBG,Females,rs139974673,Signal in 1KG,,,,,rs481837,C,T,0.021,0.004
+SHBG,Females,rs150115323,Signal in 1KG,,,,,rs4946230,A,C,0.004,0.001
+SHBG,Females,rs2498786,Signal in 1KG,,,,,rs4983559,G,A,0.011,0.001
+SHBG,Females,rs4830411,Signal in 1KG,,,,,rs5741879,C,T,0.007,0.001
+SHBG,Females,rs5753111,Signal in 1KG,,,,,rs5749082,T,A,0.014,0.002
+SHBG,Females,rs35143646,Signal in 1KG,,,,,rs5982926,G,A,0.007,0.001
+SHBG,Females,rs12012896,Signal in 1KG,,,,,rs5985281,C,T,0.025,0.001
+SHBG,Females,rs6073431,Signal in 1KG,,,,,rs6073435,T,A,0.015,0.001
+SHBG,Females,rs16995626,Signal in 1KG,,,,,rs6091237,C,A,0.017,0.003
+SHBG,Females,rs12804411,Signal in 1KG,,,,,rs612611,G,A,0.013,0.002
+SHBG,Females,rs545206972,Signal in 1KG,,,,,rs6258,C,T,0.674,0.008
+SHBG,Females,rs199607859,Signal in 1KG,,,,,rs668459,T,C,0.010,0.001
+SHBG,Females,rs555754,Signal in 1KG,,,,,rs668871,T,C,0.016,0.001
+SHBG,Females,rs2364717,Signal in 1KG,,,,,rs6726395,G,A,0.007,0.001
+SHBG,Females,rs62186584,Signal in 1KG,,,,,rs6739772,G,A,0.006,0.002
+SHBG,Females,rs13108218,Signal in 1KG,,,,,rs6818397,T,G,0.016,0.001
+SHBG,Females,rs6879874,Signal in 1KG,,,,,rs6885410,A,C,0.007,0.002
+SHBG,Females,rs28360642,Signal in 1KG,,,,,rs6916515,G,A,0.020,0.002
+SHBG,Females,rs2438109,Signal in 1KG,,,,,rs710628,C,A,0.008,0.001
+SHBG,Females,rs5820605,Signal in 1KG,,,,,rs7225002,G,A,0.006,0.001
+SHBG,Females,rs34385891,Signal in 1KG,,,,,rs7240326,C,T,0.008,0.001
+SHBG,Females,rs858519,Signal in 1KG,,,,,rs727428,C,T,0.100,0.001
+SHBG,Females,rs5750131,Signal in 1KG,,,,,rs7293,C,T,0.005,0.001
+SHBG,Females,rs11830764,Signal in 1KG,,,,,rs7314285,G,T,0.040,0.003
+SHBG,Females,rs7250869,Signal in 1KG,,,,,rs731839,A,G,0.009,0.002
+SHBG,Females,rs7321688,Signal in 1KG,,,,,rs7324744,A,G,0.007,0.002
+SHBG,Females,rs10153315,Signal in 1KG,,,,,rs7342974,T,C,0.009,0.001
+SHBG,Females,rs3747207,Signal in 1KG,,,,,rs738408,T,C,0.019,0.002
+SHBG,Females,rs1047891,Signal in 1KG,,,,,rs7422339,NA,NA,NA,NA
+SHBG,Females,rs9426829,Signal in 1KG,,,,,rs7531982,T,A,0.014,0.001
+SHBG,Females,rs12624244,Signal in 1KG,,,,,rs7568216,C,T,0.021,0.003
+SHBG,Females,rs11720108,Signal in 1KG,,,,,rs7613951,T,C,0.007,0.002
+SHBG,Females,rs3733321,Signal in 1KG,,,,,rs7661888,G,A,0.007,0.001
+SHBG,Females,rs6531735,Signal in 1KG,,,,,rs7676961,T,C,0.006,0.001
+SHBG,Females,rs34499031,Signal in 1KG,,,,,rs7756992,A,G,0.009,0.002
+SHBG,Females,rs80126506,Signal in 1KG,,,,,rs7870251,G,A,0.008,0.001
+SHBG,Females,rs35198068,Signal in 1KG,,,,,rs7903146,C,T,0.008,0.002
+SHBG,Females,rs7475279,Signal in 1KG,,,,,rs7908297,G,A,0.021,0.002
+SHBG,Females,rs76491020,Signal in 1KG,,,,,rs7939376,T,G,0.014,0.003
+SHBG,Females,rs7139079,Signal in 1KG,,,,,rs7953249,A,G,0.013,0.001
+SHBG,Females,rs12311848,Signal in 1KG,,,,,rs7975482,G,A,0.011,0.002
+SHBG,Females,rs56332871,Signal in 1KG,,,,,rs8023580,C,T,0.037,0.002
+SHBG,Females,rs78057960,Signal in 1KG,,,,,rs8076052,C,A,0.009,0.002
+SHBG,Females,rs8176741,Signal in 1KG,,,,,rs8176743,C,T,0.016,0.003
+SHBG,Females,rs820504,Signal in 1KG,,,,,rs820506,G,A,0.011,0.002
+SHBG,Females,rs1418652,Signal in 1KG,,,,,rs823105,G,A,0.007,0.001
+SHBG,Females,rs848476,Signal in 1KG,,,,,rs848487,C,T,0.007,0.002
+SHBG,Females,rs10622246,Signal in 1KG,,,,,rs849142,C,T,0.009,0.001
+SHBG,Females,rs1738386,Signal in 1KG,,,,,rs851972,A,G,0.008,0.001
+SHBG,Females,rs10238028,Signal in 1KG,,,,,rs868564,T,C,0.018,0.003
+SHBG,Females,rs35568851,Signal in 1KG,,,,,rs873308,A,G,0.007,0.001
+SHBG,Females,rs11079685,Signal in 1KG,,,,,rs9303516,G,A,0.007,0.001
+SHBG,Females,rs10774095,Signal in 1KG,,,,,rs933420,T,C,0.007,0.002
+SHBG,Females,rs11047237,Signal in 1KG,,,,,rs9634098,C,T,0.028,0.004
+SHBG,Females,rs62271373,Signal in 1KG,,,,,rs9844972,G,C,0.021,0.003
+SHBG,Females,rs9872754,Signal in 1KG,,,,,rs9864898,C,T,0.009,0.002
+SHBG,Females,rs11967262,Signal in 1KG,,,,,rs998584,C,A,0.009,0.001
+SHBG,Females,rs10095930,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10108150,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10189479,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1033667,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1037169,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10461018,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10486782,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10489206,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10511002,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10857228,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10880868,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10883451,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10893876,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs10961205,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11021232,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11078597,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11186719,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1126161,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1128249,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11556924,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11601507,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11666245,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11668201,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11690748,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11774700,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11780978,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs11791747,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12280075,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1229498,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12438742,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12454712,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12593818,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1260326,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12613243,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12787996,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12864658,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs12906447,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs13018007,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs13237750,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1330307,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs13394092,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1433210,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1530439,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1650527,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs17128091,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs17202341,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1730862,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1741344,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs174537,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs17492269,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs17583875,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs17616365,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs17669311,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1782652,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1801282,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs1872992,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs198358,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2018519,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2057655,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2064074,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2068888,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2176040,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2207132,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2239222,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2299055,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2525570,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs267733,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs275177,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2915023,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2924808,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2925979,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2970871,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs2986669,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs3001032,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs34651,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs3747367,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs3749228,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs3751129,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs3768420,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs3782735,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4092465,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4149056,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4307773,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4327143,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4450871,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4530527,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4563785,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4810580,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4876993,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs4976033,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs5112,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs6088776,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs6129778,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs6546096,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs6706,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs6792725,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs687339,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs740516,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs740893,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs7567544,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs799157,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs8027064,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs8107967,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs868655,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs8756,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs892225,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs899865,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs925098,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs9556403,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs9644032,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs9697210,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs9834503,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Females,rs9987289,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs184640919,NA,,,,,,,,,
+SHBG,Males,rs186915841,NA,,,,,,,,,
+SHBG,Males,rs191884522,NA,,,,,,,,,
+SHBG,Males,rs771435780,rs10652572,G,GGA,0.012,0.001,rs663892,G,A,0.011,0.001
+SHBG,Males,1:93033928_CT_C,rs10708162,C,CT,0.013,0.001,rs1556562,T,G,0.013,0.001
+SHBG,Males,rs370654105,rs11071896,A,G,0.006,0.001,rs11071896,A,G,0.006,0.001
+SHBG,Males,16:1786202_TGTGTGACCATCC_T,rs111208278,A,G,0.009,0.002,rs11248888,G,C,0.009,0.002
+SHBG,Males,rs768159759,rs113165924,A,AG,0.013,0.002,NA,,,,
+SHBG,Males,1:23747996_GA_G,rs11340914,G,GA,0.008,0.001,rs2077066,T,C,0.006,0.001
+SHBG,Males,rs142740991,rs13026220,G,A,0.008,0.001,rs4972356,A,G,0.008,0.001
+SHBG,Males,rs771193934,rs139153780,AGGCATGCTGCCAAGAAT,A,0.006,0.001,NA,,,,
+SHBG,Males,rs754959778,rs139427260,CGT,C,0.005,0.001,rs12946718,C,A,0.004,0.001
+SHBG,Males,9:112204335_AT_A,rs143574276,AT,A,0.010,0.002,NA,,,,
+SHBG,Males,17:8567107_CA_C,rs145235154,CA,C,0.043,0.008,NA,,,,
+SHBG,Males,8:81430449_AT_A,rs149972150,A,AT,0.022,0.002,rs16907708,A,G,0.016,0.002
+SHBG,Males,1:1510035_GGC_G,rs150737039,G,GGC,0.010,0.001,rs7520996,C,T,0.009,0.001
+SHBG,Males,X:133611871_AT_A,rs17885587,A,AT,0.009,0.001,rs6634988,C,A,0.009,0.001
+SHBG,Males,rs202128511,rs1871269,C,T,0.012,0.001,rs1871269,C,T,0.012,0.001
+SHBG,Males,rs780309846,rs200092173,AAAAAAC,A,0.005,0.001,rs5934229,C,G,0.005,0.001
+SHBG,Males,5:36206855_GAT_G,rs200108309,G,GAT,0.020,0.004,NA,,,,
+SHBG,Males,8:81457499_CA_C,rs200988859,C,CA,0.014,0.002,rs440837,G,A,0.014,0.002
+SHBG,Males,1:196914907_AGT_A,rs201838824,AGT,A,0.010,0.001,rs4085749,C,T,0.010,0.001
+SHBG,Males,2:191559843_GT_G,rs34400883,GT,G,0.010,0.001,rs10202868,T,C,0.010,0.001
+SHBG,Males,rs749761903,rs34783163,A,AT,0.008,0.001,rs1890000,T,G,0.007,0.001
+SHBG,Males,6:28419903_GGT_G,rs34841551,G,GGT,0.007,0.001,rs916403,G,A,0.006,0.001
+SHBG,Males,6:27223966_CTCTA_C,rs35237909,C,CTCTA,0.013,0.002,rs13194491,T,C,0.012,0.002
+SHBG,Males,17:16062400_TA_T,rs35251798,T,TA,0.006,0.001,rs6416868,G,A,0.006,0.001
+SHBG,Males,rs769447487,rs35842744,T,TTA,0.011,0.001,rs2298058,T,C,0.011,0.001
+SHBG,Males,1:25827633_CT_C,rs36046328,CT,C,0.011,0.001,rs873308,A,G,0.010,0.001
+SHBG,Males,4:128987952_ATT_A,rs369613185,A,ATT,0.006,0.001,rs1975878,C,T,0.006,0.001
+SHBG,Males,7:74298343_TGAGA_T,rs370429728,T,TGAGA,0.008,0.001,rs2529273,C,T,0.006,0.001
+SHBG,Males,12:93632423_CA_C,rs373308981,CA,C,0.012,0.002,rs17790453,G,C,0.012,0.002
+SHBG,Males,2:111925731_CTTATGTT_C,rs3833441,CTTATGTT,C,0.016,0.003,rs3761706,G,A,0.016,0.003
+SHBG,Males,19:7223973_TTTG_T,rs4804414,C,T,0.011,0.001,rs4804416,T,G,0.011,0.001
+SHBG,Males,rs4860987,rs537034155,T,A,0.030,0.001,rs4860985,T,C,0.024,0.001
+SHBG,Males,9:123780856_AAAGGAAGG_A,rs541538591,AAAGGAAGG,A,0.008,0.001,rs7033790,T,C,0.006,0.001
+SHBG,Males,rs768651403,rs563720344,GT,G,0.008,0.001,rs11264422,A,T,0.006,0.001
+SHBG,Males,rs762450647,rs5848822,CT,C,0.007,0.001,rs9311403,T,C,0.005,0.001
+SHBG,Males,9:125949547_TA_T,rs5900565,TA,T,0.016,0.004,rs10985915,G,A,0.009,0.002
+SHBG,Males,rs41412647,rs62241124,C,A,0.010,0.001,rs2739330,T,C,0.010,0.001
+SHBG,Males,3:49562992_CT_C,rs66961854,CT,C,0.010,0.001,rs11130202,C,T,0.009,0.001
+SHBG,Males,1:167851935_TGTAGTGAGAGGTAGCCCAGC_T,rs67452660,T,TGTAGTGAGAGGTAGCCCAGC,0.007,0.001,rs203847,G,A,0.006,0.001
+SHBG,Males,11:65227616_CAAA_C,rs67493133,CAAA,C,0.007,0.001,rs1626021,A,G,0.007,0.001
+SHBG,Males,rs778571122,rs67805125,GTGTTTTTTTTGTTTTTGTTTT,G,0.010,0.001,rs1401454,C,T,0.010,0.001
+SHBG,Males,rs753645751,rs71148383,G,GA,0.009,0.002,rs1476099,A,G,0.009,0.002
+SHBG,Males,rs773816354,rs71464658,TAACAGGAGTTAAAAGTGTCG,T,0.012,0.001,rs12882639,T,C,0.011,0.001
+SHBG,Males,rs757253787,rs71470961,T,TC,0.008,0.001,rs12277928,T,G,0.007,0.001
+SHBG,Males,13:115013423_TTCTC_T,rs71666677,TTCTC,T,0.009,0.001,rs11617448,G,A,0.009,0.001
+SHBG,Males,14:25948829_AAC_A,rs71960108,AAC,A,0.012,0.001,rs10132280,A,C,0.011,0.001
+SHBG,Males,17:67080811_CT_C,rs72013736,C,CT,0.008,0.001,rs740517,C,A,0.008,0.001
+SHBG,Males,1:35734986_AAGTGCATCTTT_A,rs72327719,A,AAGTGCATCTTT,0.010,0.002,rs645886,G,A,0.010,0.002
+SHBG,Males,rs775181992,rs76976306,A,AGCCCT,0.010,0.001,NA,,,,
+SHBG,Males,9:19084633_CT_C,rs7860122,G,A,0.009,0.001,rs7860122,G,A,0.009,0.001
+SHBG,Males,rs997907,rs7920217,T,C,0.008,0.001,rs2273698,A,G,0.008,0.001
+SHBG,Males,rs1005421,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs111767734,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs111917063,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs114165349,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs114949263,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs11539938,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs116483731,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs11751920,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs1349852,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs138529890,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs140386498,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs140584594,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs148082013,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs148911629,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs149624078,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs149663666,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs149675684,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs180956060,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs185073832,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs187325356,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs191591035,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs199910997,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs2002094,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs200883214,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs202200760,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs28562483,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs28929474,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs35067979,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs3747647,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs41284816,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs4782568,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs528350911,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs549677458,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs56196860,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs565471584,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs60018147,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs61755050,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs62618693,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs6736913,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs67527887,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs6939861,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs72663907,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs72683923,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs72948115,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs73266316,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs7438888,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs76895963,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs78319058,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs78444298,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs79287178,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs9266184,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs9379084,Signal in 1KG,,,,,NA,,,,
+SHBG,Males,rs6831352,Signal in 1KG,,,,,rs10017466,C,T,0.020,0.001
+SHBG,Males,rs62442919,Signal in 1KG,,,,,rs10267825,G,C,0.006,0.001
+SHBG,Males,rs10411958,Signal in 1KG,,,,,rs10413329,G,A,0.007,0.001
+SHBG,Males,rs4645936,Signal in 1KG,,,,,rs1049728,G,C,0.013,0.003
+SHBG,Males,rs1570516,Signal in 1KG,,,,,rs10513272,C,T,0.006,0.001
+SHBG,Males,rs13042148,Signal in 1KG,,,,,rs1074683,C,G,0.005,0.001
+SHBG,Males,rs34771269,Signal in 1KG,,,,,rs10785870,T,C,0.011,0.001
+SHBG,Males,rs12543287,Signal in 1KG,,,,,rs10808961,A,G,0.009,0.001
+SHBG,Males,rs11111274,Signal in 1KG,,,,,rs10860865,T,G,0.007,0.001
+SHBG,Males,rs35234337,Signal in 1KG,,,,,rs10972554,G,A,0.005,0.001
+SHBG,Males,rs34006916,Signal in 1KG,,,,,rs1106583,C,T,0.018,0.003
+SHBG,Males,rs540730,Signal in 1KG,,,,,rs1106766,T,C,0.018,0.001
+SHBG,Males,rs12690320,Signal in 1KG,,,,,rs11091033,C,T,0.004,0.001
+SHBG,Males,rs3927496,Signal in 1KG,,,,,rs11190401,C,T,0.008,0.001
+SHBG,Males,rs56187480,Signal in 1KG,,,,,rs11630468,A,G,0.012,0.001
+SHBG,Males,rs11641834,Signal in 1KG,,,,,rs11641548,A,C,0.011,0.001
+SHBG,Males,rs45512696,Signal in 1KG,,,,,rs11671010,C,T,0.020,0.002
+SHBG,Males,rs4077285,Signal in 1KG,,,,,rs11673628,G,C,0.011,0.002
+SHBG,Males,rs7623513,Signal in 1KG,,,,,rs11709758,C,T,0.009,0.002
+SHBG,Males,rs13280055,Signal in 1KG,,,,,rs11786272,A,C,0.004,0.002
+SHBG,Males,rs17145750,Signal in 1KG,,,,,rs11974409,G,A,0.010,0.002
+SHBG,Males,rs116338429,Signal in 1KG,,,,,rs12019871,C,T,0.009,0.002
+SHBG,Males,rs141811210,Signal in 1KG,,,,,rs12094601,A,T,0.006,0.001
+SHBG,Males,rs1799941,Signal in 1KG,,,,,rs12150660,T,G,0.116,0.001
+SHBG,Males,rs75130744,Signal in 1KG,,,,,rs12320328,A,G,0.025,0.002
+SHBG,Males,rs10822153,Signal in 1KG,,,,,rs12355784,A,C,0.064,0.001
+SHBG,Males,rs61929307,Signal in 1KG,,,,,rs12367370,G,A,0.004,0.001
+SHBG,Males,rs56237852,Signal in 1KG,,,,,rs12380094,G,C,0.007,0.002
+SHBG,Males,rs142627977,Signal in 1KG,,,,,rs12452315,A,C,0.012,0.001
+SHBG,Males,rs35824797,Signal in 1KG,,,,,rs12463074,G,A,0.016,0.003
+SHBG,Males,rs55962409,Signal in 1KG,,,,,rs12599288,T,C,0.008,0.001
+SHBG,Males,rs79354983,Signal in 1KG,,,,,rs12657064,G,A,0.016,0.002
+SHBG,Males,rs34390319,Signal in 1KG,,,,,rs12769216,T,A,0.015,0.002
+SHBG,Males,rs12950562,Signal in 1KG,,,,,rs12943914,A,G,0.011,0.001
+SHBG,Males,rs36013981,Signal in 1KG,,,,,rs12946903,C,T,0.007,0.001
+SHBG,Males,rs144794875,Signal in 1KG,,,,,rs12979519,T,A,0.008,0.002
+SHBG,Males,rs144647926,Signal in 1KG,,,,,rs1320527,A,T,0.009,0.002
+SHBG,Males,rs4809604,Signal in 1KG,,,,,rs1412957,A,G,0.006,0.001
+SHBG,Males,rs36086195,Signal in 1KG,,,,,rs1497406,G,A,0.017,0.001
+SHBG,Males,rs7655064,Signal in 1KG,,,,,rs1511021,T,G,0.008,0.002
+SHBG,Males,rs6005840,Signal in 1KG,,,,,rs1547014,T,C,0.017,0.001
+SHBG,Males,rs62195072,Signal in 1KG,,,,,rs1550532,C,G,0.008,0.001
+SHBG,Males,rs200138078,Signal in 1KG,,,,,rs1575775,G,A,0.006,0.001
+SHBG,Males,rs72708162,Signal in 1KG,,,,,rs16836630,C,G,0.015,0.002
+SHBG,Males,rs10083137,Signal in 1KG,,,,,rs16927028,C,A,0.019,0.003
+SHBG,Males,rs2234694,Signal in 1KG,,,,,rs16988435,C,T,0.013,0.003
+SHBG,Males,rs17036326,Signal in 1KG,,,,,rs17036328,C,T,0.017,0.002
+SHBG,Males,rs75170914,Signal in 1KG,,,,,rs17128091,C,G,0.012,0.001
+SHBG,Males,rs79717793,Signal in 1KG,,,,,rs17134608,G,A,0.024,0.002
+SHBG,Males,rs78890745,Signal in 1KG,,,,,rs17288007,G,A,0.013,0.003
+SHBG,Males,rs1730865,Signal in 1KG,,,,,rs1730864,C,T,0.026,0.001
+SHBG,Males,rs565728741,Signal in 1KG,,,,,rs1732847,C,G,0.011,0.002
+SHBG,Males,rs72729610,Signal in 1KG,,,,,rs17369400,A,G,0.010,0.002
+SHBG,Males,rs143709973,Signal in 1KG,,,,,rs17511686,A,G,0.013,0.003
+SHBG,Males,rs11732763,Signal in 1KG,,,,,rs17628895,T,C,0.012,0.002
+SHBG,Males,rs11734408,Signal in 1KG,,,,,rs17637318,C,T,0.008,0.001
+SHBG,Males,rs34255979,Signal in 1KG,,,,,rs17651629,T,C,0.024,0.002
+SHBG,Males,rs2259305,Signal in 1KG,,,,,rs1772182,G,C,0.012,0.001
+SHBG,Males,rs562609617,Signal in 1KG,,,,,rs17767383,A,G,0.010,0.001
+SHBG,Males,rs62580766,Signal in 1KG,,,,,rs17806063,G,A,0.009,0.002
+SHBG,Males,rs28507491,Signal in 1KG,,,,,rs1946959,A,G,0.014,0.001
+SHBG,Males,rs201764793,Signal in 1KG,,,,,rs1983639,A,G,0.009,0.001
+SHBG,Males,rs12694450,Signal in 1KG,,,,,rs2030452,G,C,0.006,0.001
+SHBG,Males,rs36103835,Signal in 1KG,,,,,rs2113991,T,C,0.006,0.001
+SHBG,Males,rs7540115,Signal in 1KG,,,,,rs2153278,T,C,0.008,0.001
+SHBG,Males,rs13379043,Signal in 1KG,,,,,rs2159176,G,T,0.006,0.002
+SHBG,Males,rs10657979,Signal in 1KG,,,,,rs2160348,T,C,0.016,0.001
+SHBG,Males,rs11994858,Signal in 1KG,,,,,rs2202749,G,A,0.011,0.001
+SHBG,Males,rs12059956,Signal in 1KG,,,,,rs2266782,G,A,0.008,0.001
+SHBG,Males,rs1799831,Signal in 1KG,,,,,rs2268572,G,A,0.008,0.002
+SHBG,Males,rs4673528,Signal in 1KG,,,,,rs2287432,C,T,0.005,0.001
+SHBG,Males,rs62134282,Signal in 1KG,,,,,rs2301741,T,C,0.007,0.001
+SHBG,Males,rs11419346,Signal in 1KG,,,,,rs2303084,G,C,0.005,0.002
+SHBG,Males,rs2288004,Signal in 1KG,,,,,rs2303222,T,C,0.007,0.001
+SHBG,Males,rs7175361,Signal in 1KG,,,,,rs2304580,C,T,0.009,0.002
+SHBG,Males,rs11621792,Signal in 1KG,,,,,rs2332328,C,T,0.011,0.001
+SHBG,Males,rs10027275,Signal in 1KG,,,,,rs2358184,A,G,0.012,0.001
+SHBG,Males,rs7780562,Signal in 1KG,,,,,rs2391211,C,T,0.007,0.002
+SHBG,Males,rs9738226,Signal in 1KG,,,,,rs2393791,T,C,0.019,0.001
+SHBG,Males,rs10649697,Signal in 1KG,,,,,rs2409110,A,T,0.009,0.001
+SHBG,Males,rs11655704,Signal in 1KG,,,,,rs2411984,A,G,0.031,0.001
+SHBG,Males,rs778239811,Signal in 1KG,,,,,rs2473057,C,T,0.006,0.001
+SHBG,Males,rs1640267,Signal in 1KG,,,,,rs2537855,G,A,0.017,0.001
+SHBG,Males,rs2564923,Signal in 1KG,,,,,rs2564940,G,A,0.008,0.001
+SHBG,Males,rs1870927,Signal in 1KG,,,,,rs2615799,T,C,0.005,0.001
+SHBG,Males,rs3812275,Signal in 1KG,,,,,rs2718167,C,T,0.007,0.001
+SHBG,Males,rs36108764,Signal in 1KG,,,,,rs2896906,T,C,0.010,0.002
+SHBG,Males,rs3006593,Signal in 1KG,,,,,rs2934649,G,T,0.007,0.001
+SHBG,Males,rs2905801,Signal in 1KG,,,,,rs2952993,A,G,0.014,0.001
+SHBG,Males,rs2222018,Signal in 1KG,,,,,rs2972144,A,G,0.013,0.001
+SHBG,Males,rs2431752,Signal in 1KG,,,,,rs299284,T,C,0.010,0.002
+SHBG,Males,rs40270,Signal in 1KG,,,,,rs30000,G,A,0.013,0.001
+SHBG,Males,rs12928099,Signal in 1KG,,,,,rs3198697,T,C,0.006,0.001
+SHBG,Males,rs631695,Signal in 1KG,,,,,rs3740643,C,A,0.016,0.001
+SHBG,Males,rs71584764,Signal in 1KG,,,,,rs3748656,T,C,0.010,0.002
+SHBG,Males,rs13315174,Signal in 1KG,,,,,rs3772537,C,G,0.007,0.001
+SHBG,Males,rs6950023,Signal in 1KG,,,,,rs3779196,C,T,0.031,0.002
+SHBG,Males,rs111981233,Signal in 1KG,,,,,rs3810194,C,T,0.024,0.002
+SHBG,Males,rs12797706,Signal in 1KG,,,,,rs3814707,A,G,0.012,0.001
+SHBG,Males,rs2277283,Signal in 1KG,,,,,rs3890102,G,A,0.009,0.001
+SHBG,Males,rs35526088,Signal in 1KG,,,,,rs3900628,A,C,0.005,0.001
+SHBG,Males,rs72753908,Signal in 1KG,,,,,rs3914699,A,G,0.007,0.002
+SHBG,Males,rs55855238,Signal in 1KG,,,,,rs4092465,G,A,0.009,0.001
+SHBG,Males,rs187437,Signal in 1KG,,,,,rs41746,A,T,0.008,0.001
+SHBG,Males,rs58321169,Signal in 1KG,,,,,rs4273712,A,G,0.008,0.001
+SHBG,Males,rs28650012,Signal in 1KG,,,,,rs4581712,A,C,0.007,0.001
+SHBG,Males,rs35654957,Signal in 1KG,,,,,rs4647939,G,A,0.006,0.001
+SHBG,Males,rs111643014,Signal in 1KG,,,,,rs4713766,A,C,0.021,0.004
+SHBG,Males,rs4762755,Signal in 1KG,,,,,rs4762758,A,G,0.008,0.001
+SHBG,Males,rs904801,Signal in 1KG,,,,,rs4782367,T,C,0.008,0.001
+SHBG,Males,rs4812336,Signal in 1KG,,,,,rs4810245,A,G,0.008,0.001
+SHBG,Males,rs139974673,Signal in 1KG,,,,,rs481837,C,T,0.040,0.003
+SHBG,Males,rs60005573,Signal in 1KG,,,,,rs4927912,C,A,0.007,0.002
+SHBG,Males,rs45490496,Signal in 1KG,,,,,rs4983559,G,A,0.007,0.001
+SHBG,Males,rs501470,Signal in 1KG,,,,,rs505870,A,C,0.015,0.001
+SHBG,Males,rs665731,Signal in 1KG,,,,,rs586486,C,G,0.004,0.002
+SHBG,Males,rs73631501,Signal in 1KG,,,,,rs5933745,C,G,0.010,0.001
+SHBG,Males,rs1418334,Signal in 1KG,,,,,rs5942974,A,G,0.040,0.001
+SHBG,Males,rs2283760,Signal in 1KG,,,,,rs5987245,G,A,0.005,0.001
+SHBG,Males,rs7286550,Signal in 1KG,,,,,rs5995498,T,G,0.008,0.001
+SHBG,Males,rs73909848,Signal in 1KG,,,,,rs6096186,C,T,0.014,0.002
+SHBG,Males,rs591939,Signal in 1KG,,,,,rs646123,G,A,0.008,0.001
+SHBG,Males,rs6480299,Signal in 1KG,,,,,rs6480297,G,A,0.011,0.001
+SHBG,Males,rs62012358,Signal in 1KG,,,,,rs6494130,C,G,0.007,0.001
+SHBG,Males,rs6632893,Signal in 1KG,,,,,rs6629176,C,T,0.006,0.001
+SHBG,Males,rs73547906,Signal in 1KG,,,,,rs6648534,T,C,0.005,0.001
+SHBG,Males,rs71586027,Signal in 1KG,,,,,rs6699729,T,A,0.010,0.001
+SHBG,Males,rs4675682,Signal in 1KG,,,,,rs6740584,T,C,0.009,0.001
+SHBG,Males,rs11398692,Signal in 1KG,,,,,rs677231,T,A,0.006,0.001
+SHBG,Males,rs13108218,Signal in 1KG,,,,,rs6818397,T,G,0.014,0.001
+SHBG,Males,rs34372369,Signal in 1KG,,,,,rs6954724,A,G,0.016,0.002
+SHBG,Males,rs12536766,Signal in 1KG,,,,,rs6978392,G,A,0.004,0.001
+SHBG,Males,rs148427769,Signal in 1KG,,,,,rs7061449,T,C,0.012,0.003
+SHBG,Males,rs190712692,Signal in 1KG,,,,,rs7254892,A,G,0.014,0.004
+SHBG,Males,rs12818938,Signal in 1KG,,,,,rs7315782,G,A,0.009,0.002
+SHBG,Males,rs7631981,Signal in 1KG,,,,,rs7374856,A,C,0.005,0.001
+SHBG,Males,rs112352679,Signal in 1KG,,,,,rs7410318,T,C,0.010,0.002
+SHBG,Males,rs6900473,Signal in 1KG,,,,,rs7451021,T,C,0.009,0.001
+SHBG,Males,rs112965849,Signal in 1KG,,,,,rs748510,T,C,0.008,0.001
+SHBG,Males,rs4333851,Signal in 1KG,,,,,rs7528979,T,C,0.008,0.002
+SHBG,Males,rs6750410,Signal in 1KG,,,,,rs7568216,C,T,0.018,0.002
+SHBG,Males,rs62182125,Signal in 1KG,,,,,rs7607369,A,G,0.006,0.001
+SHBG,Males,rs55646464,Signal in 1KG,,,,,rs7705502,G,A,0.006,0.001
+SHBG,Males,rs35225944,Signal in 1KG,,,,,rs7788596,C,T,0.010,0.001
+SHBG,Males,rs4725944,Signal in 1KG,,,,,rs7789389,G,C,0.008,0.001
+SHBG,Males,rs73109480,Signal in 1KG,,,,,rs7790348,T,C,0.011,0.002
+SHBG,Males,rs75349541,Signal in 1KG,,,,,rs7817760,C,T,0.008,0.002
+SHBG,Males,rs1567353,Signal in 1KG,,,,,rs7856320,C,T,0.006,0.001
+SHBG,Males,rs4988308,Signal in 1KG,,,,,rs7944040,T,C,0.005,0.001
+SHBG,Males,rs56332871,Signal in 1KG,,,,,rs8023580,C,T,0.029,0.001
+SHBG,Males,rs8176526,Signal in 1KG,,,,,rs8176528,G,A,0.006,0.001
+SHBG,Males,rs820503,Signal in 1KG,,,,,rs820506,G,A,0.009,0.002
+SHBG,Males,rs860262,Signal in 1KG,,,,,rs849134,G,A,0.010,0.001
+SHBG,Males,rs3742366,Signal in 1KG,,,,,rs8548,C,A,0.009,0.001
+SHBG,Males,rs71115649,Signal in 1KG,,,,,rs937862,C,G,0.006,0.001
+SHBG,Males,rs4714001,Signal in 1KG,,,,,rs9394368,C,G,0.005,0.001
+SHBG,Males,rs62394490,Signal in 1KG,,,,,rs9461224,T,G,0.011,0.001
+SHBG,Males,rs8066941,Signal in 1KG,,,,,rs9906593,A,C,0.015,0.001
+SHBG,Males,rs59708846,Signal in 1KG,,,,,rs9970076,G,A,0.020,0.002
+SHBG,Males,rs10069690,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10107182,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10116426,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10153800,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1037169,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10421262,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1058319,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10864086,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10868080,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10871794,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs10895277,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs11601507,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs11666245,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs11739158,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs11743810,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs11856926,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs11867902,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1229492,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs12364060,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs12454712,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1260326,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs12696304,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs12705095,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs13389219,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1351394,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs157935,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs17050272,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs17185536,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs174528,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs17583875,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs17669311,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs17747324,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1782652,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1788641,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1801689,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1859690,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1871395,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1883783,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1890426,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs198384,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs1991401,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2106727,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2106854,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs211644,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2156805,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2197771,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2216707,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2238799,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2239222,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2247213,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2275560,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2287322,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs234051,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs246192,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2721195,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs2820441,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs29681,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs329122,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs34651,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs3746575,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs3780190,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs3781085,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs3782735,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs3795128,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs445,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs4715316,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs4841133,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs4979372,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs5749082,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs6258,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs6595447,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs6792725,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs687339,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs6965401,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7096937,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7210574,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7254776,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7314285,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs738409,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7694379,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7735249,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7808613,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs7892835,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs8030357,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs8038032,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs8038465,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs856534,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs864899,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs876435,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs907866,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs9697210,Signal in 1KG,,,,,Signal in HM,,,,
+SHBG,Males,rs9914426,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,7:98188671_CCTT_C,NA,,,,,,,,,
+Total testosterone,Females,rs749512116,rs111287576,CAGAT,C,0.033,0.004,rs12643026,C,A,0.032,0.004
+Total testosterone,Females,17:53371413_TA_T,rs11287227,TA,T,0.019,0.003,rs10852974,G,C,0.018,0.003
+Total testosterone,Females,1:150186390_AG_A,rs11303226,A,AG,0.017,0.003,rs6665499,C,T,0.016,0.003
+Total testosterone,Females,2:32504650_AT_A,rs11316138,A,AT,0.017,0.003,NA,,,,
+Total testosterone,Females,3:156851624_CA_C,rs11327349,C,CA,0.019,0.003,rs12487629,C,T,0.018,0.003
+Total testosterone,Females,22:31626042_CTT_C,rs139901221,CTT,C,0.016,0.003,rs5997919,A,G,0.015,0.003
+Total testosterone,Females,12:123639761_TAAATA_T,rs142398365,TAAATA,T,0.019,0.004,rs1727315,G,A,0.017,0.003
+Total testosterone,Females,11:123438708_TGAG_T,rs146910549,T,TGAG,0.048,0.005,rs850293,C,A,0.047,0.004
+Total testosterone,Females,rs776074878,rs199508240,CA,C,0.021,0.003,rs2249225,T,C,0.019,0.003
+Total testosterone,Females,10:5034014_ATTAC_A,rs199669245,ATTAC,A,0.183,0.019,NA,,,,
+Total testosterone,Females,6:34753277_GA_G,rs200893385,G,GA,0.018,0.003,rs6457792,G,A,0.015,0.003
+Total testosterone,Females,rs28484580,rs2272676,T,G,0.015,0.003,rs4235404,G,C,0.015,0.003
+Total testosterone,Females,rs11427441,rs2941541,T,C,0.020,0.003,rs2941541,T,C,0.020,0.003
+Total testosterone,Females,10:126834851_AT_A,rs34558482,A,AT,0.016,0.003,NA,,,,
+Total testosterone,Females,11:110176972_CT_C,rs34750130,CT,C,0.017,0.003,rs1618597,C,T,0.016,0.003
+Total testosterone,Females,21:43349613_GC_G,rs35497661,G,GC,0.033,0.005,rs11702562,C,T,0.035,0.005
+Total testosterone,Females,9:127663551_AT_A,rs35565039,AT,A,0.018,0.003,rs4838236,G,A,0.017,0.003
+Total testosterone,Females,20:60691366_CT_C,rs35952104,C,CT,0.019,0.004,rs6089650,T,C,0.019,0.004
+Total testosterone,Females,12:49441189_CT_C,rs550005425,CT,C,0.061,0.010,NA,,,,
+Total testosterone,Females,15:66049600_TG_T,rs557277320,TG,T,0.019,0.003,rs6494537,C,T,0.018,0.003
+Total testosterone,Females,2:135432074_CGCGCGCTACCATATCT_C,rs55920206,T,C,0.016,0.003,rs4954160,C,A,0.016,0.003
+Total testosterone,Females,rs745932882,rs57387401,AG,A,0.027,0.003,rs2488087,G,A,0.025,0.003
+Total testosterone,Females,4:57746479_TA_T,rs5858399,TA,T,0.020,0.003,rs2170073,A,G,0.019,0.003
+Total testosterone,Females,3:119786083_CA_C,rs67515346,CA,C,0.017,0.003,rs334563,C,A,0.016,0.003
+Total testosterone,Females,6:144301525_GT_G,rs71024882,G,GT,0.028,0.003,rs9399469,A,T,0.027,0.003
+Total testosterone,Females,3:27554392_CT_C,rs71087617,C,CT,0.054,0.009,rs9823830,A,G,0.054,0.009
+Total testosterone,Females,3:20085213_CTT_C,rs75154183,A,G,0.019,0.004,rs2365366,T,G,0.020,0.004
+Total testosterone,Females,21:40645556_AAGGCTGAGATGGGGGGAC_A,rs78610475,A,AAGGCTGAGATGGGGGGAC,0.021,0.004,NA,,,,
+Total testosterone,Females,rs779008104,rs79280477,AAAACAGATAC,A,0.024,0.003,rs7758037,G,C,0.024,0.003
+Total testosterone,Females,rs774224295,rs884171,A,T,0.017,0.003,rs884171,A,T,0.017,0.003
+Total testosterone,Females,rs532213132,rs9897769,A,G,0.016,0.003,NA,,,,
+Total testosterone,Females,rs10910476,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs112635299,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs112694713,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs113247979,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs11778724,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs117913411,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs1229984,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs12683780,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs138983180,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs17853284,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs184265581,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs187370584,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs34557412,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs34931250,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs35008345,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs4464040,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs45446698,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs56196860,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs577721086,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs5855544,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs62621812,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs72660136,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs72693130,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs7342537,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs74652944,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs7530117,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs77822621,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Females,rs2903385,Signal in 1KG,,,,,rs10010325,A,C,0.024,0.003
+Total testosterone,Females,rs13269725,Signal in 1KG,,,,,rs10112467,G,A,0.029,0.005
+Total testosterone,Females,rs34163044,Signal in 1KG,,,,,rs10164112,C,T,0.016,0.003
+Total testosterone,Females,rs7573187,Signal in 1KG,,,,,rs10202783,A,T,0.019,0.003
+Total testosterone,Females,rs59397130,Signal in 1KG,,,,,rs10498514,C,A,0.055,0.009
+Total testosterone,Females,rs9599996,Signal in 1KG,,,,,rs10507808,G,A,0.013,0.003
+Total testosterone,Females,rs10740131,Signal in 1KG,,,,,rs10761779,G,A,0.027,0.003
+Total testosterone,Females,rs2062479,Signal in 1KG,,,,,rs10801628,C,T,0.015,0.003
+Total testosterone,Females,rs571084788,Signal in 1KG,,,,,rs10864316,A,G,0.023,0.004
+Total testosterone,Females,rs61987429,Signal in 1KG,,,,,rs10873181,A,C,0.017,0.003
+Total testosterone,Females,rs11024458,Signal in 1KG,,,,,rs11024460,C,T,0.019,0.003
+Total testosterone,Females,rs11031005,Signal in 1KG,,,,,rs11031006,A,G,0.033,0.004
+Total testosterone,Females,rs11191801,Signal in 1KG,,,,,rs1107300,T,C,0.023,0.003
+Total testosterone,Females,rs10686842,Signal in 1KG,,,,,rs11086102,C,G,0.028,0.003
+Total testosterone,Females,rs35801460,Signal in 1KG,,,,,rs11168740,A,G,0.020,0.003
+Total testosterone,Females,rs4632729,Signal in 1KG,,,,,rs11249528,C,A,0.027,0.003
+Total testosterone,Females,rs111328885,Signal in 1KG,,,,,rs11572082,C,G,0.033,0.004
+Total testosterone,Females,rs76299412,Signal in 1KG,,,,,rs11605437,C,T,0.035,0.004
+Total testosterone,Females,rs8111359,Signal in 1KG,,,,,rs11673632,C,T,0.050,0.005
+Total testosterone,Females,rs56109436,Signal in 1KG,,,,,rs11784691,G,A,0.021,0.004
+Total testosterone,Females,rs34584018,Signal in 1KG,,,,,rs11855102,T,C,0.015,0.003
+Total testosterone,Females,rs505237,Signal in 1KG,,,,,rs12140250,G,A,0.015,0.003
+Total testosterone,Females,rs1214761,Signal in 1KG,,,,,rs1214759,G,A,0.031,0.003
+Total testosterone,Females,rs62059839,Signal in 1KG,,,,,rs12150660,T,G,0.030,0.003
+Total testosterone,Females,rs28612846,Signal in 1KG,,,,,rs12154905,G,A,0.015,0.003
+Total testosterone,Females,rs12185851,Signal in 1KG,,,,,rs12185822,A,G,0.021,0.003
+Total testosterone,Females,rs1242518,Signal in 1KG,,,,,rs1242490,C,G,0.020,0.003
+Total testosterone,Females,rs12893790,Signal in 1KG,,,,,rs12434496,G,A,0.021,0.004
+Total testosterone,Females,rs35397738,Signal in 1KG,,,,,rs12470654,G,A,0.018,0.003
+Total testosterone,Females,rs60117481,Signal in 1KG,,,,,rs12500824,A,G,0.019,0.003
+Total testosterone,Females,rs1278526,Signal in 1KG,,,,,rs1278527,T,C,0.019,0.003
+Total testosterone,Females,rs75848431,Signal in 1KG,,,,,rs12788072,G,A,0.029,0.004
+Total testosterone,Females,rs34269793,Signal in 1KG,,,,,rs12999558,A,G,0.065,0.006
+Total testosterone,Females,rs4586943,Signal in 1KG,,,,,rs13143896,G,A,0.018,0.003
+Total testosterone,Females,rs13184921,Signal in 1KG,,,,,rs13164781,C,T,0.025,0.003
+Total testosterone,Females,rs13229619,Signal in 1KG,,,,,rs13232120,T,A,0.054,0.004
+Total testosterone,Females,rs17245822,Signal in 1KG,,,,,rs1337985,C,T,0.028,0.003
+Total testosterone,Females,rs440150,Signal in 1KG,,,,,rs16928809,A,G,0.026,0.005
+Total testosterone,Females,rs200457494,Signal in 1KG,,,,,rs17084051,A,C,0.022,0.003
+Total testosterone,Females,rs36032941,Signal in 1KG,,,,,rs17134158,C,T,0.060,0.003
+Total testosterone,Females,rs6127099,Signal in 1KG,,,,,rs17216707,T,C,0.019,0.004
+Total testosterone,Females,rs72738949,Signal in 1KG,,,,,rs17509458,T,A,0.019,0.003
+Total testosterone,Females,rs77432559,Signal in 1KG,,,,,rs17646414,T,C,0.020,0.005
+Total testosterone,Females,rs6997799,Signal in 1KG,,,,,rs17711248,C,G,0.023,0.003
+Total testosterone,Females,rs72731535,Signal in 1KG,,,,,rs17757282,A,G,0.025,0.004
+Total testosterone,Females,rs11235688,Signal in 1KG,,,,,rs1783596,T,C,0.020,0.003
+Total testosterone,Females,rs75287599,Signal in 1KG,,,,,rs1800447,G,A,0.042,0.005
+Total testosterone,Females,rs111882448,Signal in 1KG,,,,,rs1925953,T,A,0.016,0.003
+Total testosterone,Females,rs2147419,Signal in 1KG,,,,,rs2031613,T,C,0.018,0.003
+Total testosterone,Females,rs58723250,Signal in 1KG,,,,,rs2034678,A,T,0.033,0.003
+Total testosterone,Females,rs1872930,Signal in 1KG,,,,,rs2035647,G,A,0.051,0.003
+Total testosterone,Females,rs61237993,Signal in 1KG,,,,,rs2050789,G,A,0.024,0.004
+Total testosterone,Females,rs3032555,Signal in 1KG,,,,,rs2232015,T,A,0.017,0.003
+Total testosterone,Females,rs8184986,Signal in 1KG,,,,,rs2236141,C,T,0.021,0.004
+Total testosterone,Females,rs569421885,Signal in 1KG,,,,,rs2250477,C,G,0.055,0.003
+Total testosterone,Females,rs13094915,Signal in 1KG,,,,,rs2272088,A,G,0.016,0.003
+Total testosterone,Females,rs117327231,Signal in 1KG,,,,,rs2276273,C,T,0.135,0.008
+Total testosterone,Females,rs199787521,Signal in 1KG,,,,,rs2280861,G,A,0.027,0.003
+Total testosterone,Females,rs1032388,Signal in 1KG,,,,,rs2295709,T,C,0.054,0.003
+Total testosterone,Females,rs7256920,Signal in 1KG,,,,,rs2302593,C,G,0.019,0.003
+Total testosterone,Females,rs35249079,Signal in 1KG,,,,,rs2306409,A,G,0.022,0.003
+Total testosterone,Females,rs62162863,Signal in 1KG,,,,,rs2341098,T,G,0.018,0.003
+Total testosterone,Females,rs6684361,Signal in 1KG,,,,,rs2392239,T,C,0.076,0.003
+Total testosterone,Females,rs2608652,Signal in 1KG,,,,,rs2608659,G,T,0.014,0.003
+Total testosterone,Females,rs10147094,Signal in 1KG,,,,,rs2614462,G,C,0.016,0.003
+Total testosterone,Females,rs2824138,Signal in 1KG,,,,,rs2824140,T,C,0.026,0.004
+Total testosterone,Females,rs2517582,Signal in 1KG,,,,,rs2844664,T,C,0.024,0.003
+Total testosterone,Females,rs9457466,Signal in 1KG,,,,,rs3127194,A,C,0.016,0.003
+Total testosterone,Females,rs33959428,Signal in 1KG,,,,,rs31863,G,A,0.015,0.003
+Total testosterone,Females,rs35427,Signal in 1KG,,,,,rs35441,C,T,0.016,0.003
+Total testosterone,Females,rs2011425,Signal in 1KG,,,,,rs3732218,G,A,0.032,0.005
+Total testosterone,Females,rs2879910,Signal in 1KG,,,,,rs3760818,T,A,0.014,0.003
+Total testosterone,Females,rs58175144,Signal in 1KG,,,,,rs3768015,A,G,0.014,0.003
+Total testosterone,Females,rs3771243,Signal in 1KG,,,,,rs3771240,C,T,0.029,0.003
+Total testosterone,Females,rs371162363,Signal in 1KG,,,,,rs3775198,G,A,0.033,0.005
+Total testosterone,Females,rs4067,Signal in 1KG,,,,,rs3821829,C,T,0.024,0.004
+Total testosterone,Females,rs13153019,Signal in 1KG,,,,,rs4075958,A,G,0.023,0.003
+Total testosterone,Females,rs34632394,Signal in 1KG,,,,,rs4128755,T,C,0.016,0.003
+Total testosterone,Females,rs10687319,Signal in 1KG,,,,,rs4234100,T,C,0.011,0.003
+Total testosterone,Females,rs4431325,Signal in 1KG,,,,,rs4421084,T,C,0.049,0.006
+Total testosterone,Females,rs12837203,Signal in 1KG,,,,,rs4523430,T,C,0.019,0.003
+Total testosterone,Females,rs62231822,Signal in 1KG,,,,,rs4685148,T,C,0.036,0.005
+Total testosterone,Females,rs35199395,Signal in 1KG,,,,,rs4746822,T,C,0.017,0.003
+Total testosterone,Females,rs71624037,Signal in 1KG,,,,,rs4854611,G,C,0.035,0.005
+Total testosterone,Females,rs12708515,Signal in 1KG,,,,,rs4886426,A,T,0.021,0.003
+Total testosterone,Females,rs2374456,Signal in 1KG,,,,,rs4953716,T,A,0.023,0.003
+Total testosterone,Females,rs4245930,Signal in 1KG,,,,,rs4956037,G,A,0.024,0.003
+Total testosterone,Females,rs12628709,Signal in 1KG,,,,,rs5763110,T,A,0.026,0.005
+Total testosterone,Females,rs7884765,Signal in 1KG,,,,,rs5985503,A,G,0.023,0.003
+Total testosterone,Females,rs590097,Signal in 1KG,,,,,rs604126,G,A,0.057,0.003
+Total testosterone,Females,rs11697333,Signal in 1KG,,,,,rs6087398,T,C,0.019,0.003
+Total testosterone,Females,rs6100174,Signal in 1KG,,,,,rs6100163,T,C,0.014,0.003
+Total testosterone,Females,rs9506725,Signal in 1KG,,,,,rs629445,G,A,0.051,0.003
+Total testosterone,Females,rs494242,Signal in 1KG,,,,,rs643434,G,A,0.017,0.003
+Total testosterone,Females,rs36088520,Signal in 1KG,,,,,rs6434887,A,G,0.026,0.005
+Total testosterone,Females,rs7618363,Signal in 1KG,,,,,rs6442176,T,C,0.034,0.004
+Total testosterone,Females,rs11948639,Signal in 1KG,,,,,rs6595442,T,C,0.017,0.003
+Total testosterone,Females,rs12078363,Signal in 1KG,,,,,rs6662137,T,G,0.027,0.003
+Total testosterone,Females,rs59741822,Signal in 1KG,,,,,rs6734803,G,A,0.032,0.005
+Total testosterone,Females,rs17201704,Signal in 1KG,,,,,rs6788984,A,G,0.043,0.004
+Total testosterone,Females,rs11638521,Signal in 1KG,,,,,rs7181230,G,A,0.064,0.003
+Total testosterone,Females,rs28421540,Signal in 1KG,,,,,rs7243806,A,G,0.032,0.003
+Total testosterone,Females,rs4804181,Signal in 1KG,,,,,rs7258994,T,C,0.034,0.003
+Total testosterone,Females,rs12977787,Signal in 1KG,,,,,rs732310,T,G,0.014,0.003
+Total testosterone,Females,rs10799713,Signal in 1KG,,,,,rs7521867,T,C,0.027,0.003
+Total testosterone,Females,rs7519368,Signal in 1KG,,,,,rs7527076,G,A,0.034,0.003
+Total testosterone,Females,rs7529520,Signal in 1KG,,,,,rs7535757,A,G,0.018,0.003
+Total testosterone,Females,rs3136354,Signal in 1KG,,,,,rs7562048,G,A,0.023,0.003
+Total testosterone,Females,rs7575635,Signal in 1KG,,,,,rs7580013,G,A,0.037,0.004
+Total testosterone,Females,rs534141419,Signal in 1KG,,,,,rs7610906,C,A,0.015,0.003
+Total testosterone,Females,rs67596711,Signal in 1KG,,,,,rs768863,T,G,0.039,0.003
+Total testosterone,Females,rs75217853,Signal in 1KG,,,,,rs7766042,C,T,0.033,0.005
+Total testosterone,Females,rs9638084,Signal in 1KG,,,,,rs7808966,C,A,0.019,0.003
+Total testosterone,Females,rs1169289,Signal in 1KG,,,,,rs7979473,A,G,0.018,0.003
+Total testosterone,Females,rs61661087,Signal in 1KG,,,,,rs8040086,G,A,0.028,0.003
+Total testosterone,Females,rs534645300,Signal in 1KG,,,,,rs8058961,A,G,0.019,0.003
+Total testosterone,Females,rs8126001,Signal in 1KG,,,,,rs8121509,C,T,0.017,0.003
+Total testosterone,Females,rs232159,Signal in 1KG,,,,,rs8182293,G,A,0.017,0.003
+Total testosterone,Females,rs12436785,Signal in 1KG,,,,,rs897713,C,T,0.030,0.003
+Total testosterone,Females,rs1870940,Signal in 1KG,,,,,rs905938,T,C,0.024,0.003
+Total testosterone,Females,rs76830943,Signal in 1KG,,,,,rs915178,C,T,0.019,0.003
+Total testosterone,Females,rs58072681,Signal in 1KG,,,,,rs9319570,G,A,0.109,0.006
+Total testosterone,Females,rs2344744,Signal in 1KG,,,,,rs9366197,T,C,0.017,0.003
+Total testosterone,Females,rs11191421,Signal in 1KG,,,,,rs9527,C,T,0.037,0.003
+Total testosterone,Females,rs9832502,Signal in 1KG,,,,,rs9870681,T,C,0.017,0.003
+Total testosterone,Females,rs112367565,Signal in 1KG,,,,,rs9959639,T,C,0.047,0.007
+Total testosterone,Females,rs1009360,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs10108398,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs10168169,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs10501081,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs10817260,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs10821415,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs10865479,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs11125180,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1119208,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs11673591,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1171617,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs11774829,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs11782259,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs11892043,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs12564492,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1260326,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs12658172,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs12900736,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1314911,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1547308,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1660322,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs167096,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs17043570,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs17053931,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs171021,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs17362923,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs17764067,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1883711,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs1939769,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs2074585,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs2113944,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs2186945,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs2270445,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs2473140,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs267190,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs287884,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs312023,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs3776299,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs3849653,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs4149056,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs4294422,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs437115,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs4453027,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs4736359,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs4820829,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs487624,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs4943729,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs4961485,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs5751229,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs6008259,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs6020423,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs6460528,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs674486,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs6904345,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs7291444,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs7633673,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs784420,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs7977247,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs8044588,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs8045779,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs837493,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs873779,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs881613,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs9319895,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs9552597,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs9611014,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs9687846,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs9850919,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Females,rs9898480,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs140357247,NA,,,,,,,,,
+Total testosterone,Males,19:35555222_GTC_G,rs10577478,G,GTC,0.037,0.004,NA,,,,
+Total testosterone,Males,6:100108564_TG_T,rs10706082,T,TG,0.022,0.003,NA,,,,
+Total testosterone,Males,9:140774721_T_C,rs10867084,C,T,0.017,0.003,rs10867084,C,T,0.017,0.003
+Total testosterone,Males,rs66956368,rs112765699,T,A,0.030,0.004,rs3821866,G,C,0.014,0.003
+Total testosterone,Males,rs113017476,rs112881196,G,C,0.190,0.008,NA,,,,
+Total testosterone,Males,rs111538456,rs113277738,0,0,0.000,0.000,rs2731440,T,A,0.026,0.003
+Total testosterone,Males,rs746303202,rs11335288,A,AG,0.020,0.003,rs3766927,C,T,0.020,0.003
+Total testosterone,Males,6:131936324_GTTT_G,rs139719926,GTTT,G,0.026,0.004,rs2245133,T,C,0.025,0.004
+Total testosterone,Males,10:81073027_CCCACCCACCA_C,rs146292747,CCCACCCACCA,C,0.021,0.004,rs7077812,T,C,0.019,0.004
+Total testosterone,Males,7:150502468_AT_A,rs146541367,A,AT,0.033,0.005,NA,,,,
+Total testosterone,Males,10:65158772_AAAG_A,rs150036478,A,AAAG,0.110,0.003,rs7912893,A,T,0.109,0.003
+Total testosterone,Males,3:152118069_ATTTATAATATGCCACTTTAGT_A,rs151332772,A,ATTTATAATATGCCACTTTAGT,0.035,0.005,rs17370867,C,T,0.034,0.005
+Total testosterone,Males,7:78482336_AG_A,rs200907201,AG,A,0.052,0.009,NA,,,,
+Total testosterone,Males,rs761954625,rs201897302,CTG,C,0.032,0.003,rs5914796,A,T,0.031,0.003
+Total testosterone,Males,rs5787948,rs2803608,T,C,0.017,0.003,rs2803608,T,C,0.017,0.003
+Total testosterone,Males,rs71027236,rs34018823,C,A,0.019,0.004,rs1468684,G,C,0.020,0.004
+Total testosterone,Males,5:135639923_GA_G,rs34941172,GA,G,0.031,0.004,rs11958545,C,T,0.030,0.004
+Total testosterone,Males,16:1684027_CA_C,rs35510689,C,CA,0.029,0.005,rs7196996,C,G,0.029,0.006
+Total testosterone,Males,rs66844552,rs35614701,G,A,0.016,0.003,rs873308,A,G,0.015,0.003
+Total testosterone,Males,17:17917246_AT_A,rs35745875,AT,A,0.019,0.003,rs2955382,T,C,0.017,0.003
+Total testosterone,Males,1:221045347_AT_A,rs36079165,A,AT,0.021,0.003,rs2247213,G,A,0.019,0.003
+Total testosterone,Males,X:146434326_GTTT_G,rs368611801,GTTT,G,0.017,0.002,rs5951961,G,C,0.016,0.002
+Total testosterone,Males,10:69632729_AT_A,rs371054378,AT,A,0.024,0.003,rs2224573,A,G,0.023,0.003
+Total testosterone,Males,16:28704506_ATTT_A,rs371092802,ATTT,A,0.034,0.003,rs12325278,A,G,0.033,0.003
+Total testosterone,Males,rs2016572,rs556503353,G,A,0.026,0.003,NA,,,,
+Total testosterone,Males,6:160768849_CTGCCCTG_C,rs557136302,C,CTGCCCTG,0.020,0.003,rs487060,T,C,0.020,0.003
+Total testosterone,Males,9:97023094_ATTTTTTTTTTTT_A,rs561717345,A,ATTTTTTTTTTTT,0.016,0.003,rs9696843,G,A,0.011,0.003
+Total testosterone,Males,20:39951474_TA_T,rs57706173,T,TA,0.022,0.003,rs6029632,A,G,0.022,0.003
+Total testosterone,Males,10:93564864_CT_C,rs5786972,CT,C,0.020,0.003,rs7076687,A,G,0.019,0.003
+Total testosterone,Males,rs782159242,rs5961192,G,T,0.014,0.002,rs5961192,G,T,0.014,0.002
+Total testosterone,Males,rs139316391,rs59774409,T,C,0.050,0.006,rs3810194,C,T,0.049,0.006
+Total testosterone,Males,4:69447407_GT_G,rs61573189,GT,G,0.060,0.004,NA,,,,
+Total testosterone,Males,1:167851935_TGTAGTGAGAGGTAGCCCAGC_T,rs67452660,T,TGTAGTGAGAGGTAGCCCAGC,0.017,0.003,rs203847,G,A,0.015,0.003
+Total testosterone,Males,rs11433420,rs67808154,T,TA,0.019,0.003,rs1402398,G,A,0.018,0.003
+Total testosterone,Males,rs775181992,rs76976306,A,AGCCCT,0.023,0.004,NA,,,,
+Total testosterone,Males,rs112765699,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs114165349,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs114816312,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs1203109,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs12810788,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs145602600,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs145843487,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs146447930,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs17580,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs191591035,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs202200760,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs28929474,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs41310053,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs4782568,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs528845403,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs534541609,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs543504257,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs550628400,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs55707100,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs56196860,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs61755050,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs61762319,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs6736913,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs6939861,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs72681869,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs76767219,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs7696472,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs77044968,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs79391862,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs79488654,Signal in 1KG,,,,,NA,,,,
+Total testosterone,Males,rs565931739,Signal in 1KG,,,,,rs10019555,G,A,0.037,0.004
+Total testosterone,Males,rs3841946,Signal in 1KG,,,,,rs1006895,T,C,0.033,0.004
+Total testosterone,Males,rs7835492,Signal in 1KG,,,,,rs10101710,A,T,0.039,0.036
+Total testosterone,Males,rs1812755,Signal in 1KG,,,,,rs10484012,T,C,0.020,0.003
+Total testosterone,Males,rs12543287,Signal in 1KG,,,,,rs10808961,A,G,0.018,0.003
+Total testosterone,Males,rs199950405,Signal in 1KG,,,,,rs10867605,G,A,0.018,0.004
+Total testosterone,Males,rs35182096,Signal in 1KG,,,,,rs10881583,C,T,0.022,0.004
+Total testosterone,Males,rs540730,Signal in 1KG,,,,,rs1106766,T,C,0.030,0.004
+Total testosterone,Males,rs7143218,Signal in 1KG,,,,,rs11160582,T,C,0.024,0.003
+Total testosterone,Males,rs139713000,Signal in 1KG,,,,,rs11622474,T,C,0.028,0.004
+Total testosterone,Males,rs12926107,Signal in 1KG,,,,,rs11641548,A,C,0.024,0.003
+Total testosterone,Males,rs841194,Signal in 1KG,,,,,rs11648117,G,C,0.025,0.004
+Total testosterone,Males,rs200651966,Signal in 1KG,,,,,rs11852815,C,T,0.023,0.003
+Total testosterone,Males,rs1799941,Signal in 1KG,,,,,rs12150660,T,G,0.190,0.003
+Total testosterone,Males,rs35824797,Signal in 1KG,,,,,rs12463074,G,A,0.044,0.007
+Total testosterone,Males,rs10028954,Signal in 1KG,,,,,rs12503526,A,T,0.019,0.003
+Total testosterone,Males,rs3809272,Signal in 1KG,,,,,rs1265566,T,C,0.018,0.003
+Total testosterone,Males,rs34702488,Signal in 1KG,,,,,rs12740128,C,T,0.025,0.004
+Total testosterone,Males,rs34131245,Signal in 1KG,,,,,rs12780499,C,T,0.029,0.005
+Total testosterone,Males,rs12910403,Signal in 1KG,,,,,rs12900045,T,C,0.018,0.003
+Total testosterone,Males,rs2764772,Signal in 1KG,,,,,rs12931939,T,C,0.024,0.004
+Total testosterone,Males,rs28394864,Signal in 1KG,,,,,rs12937634,T,C,0.050,0.003
+Total testosterone,Males,rs2668776,Signal in 1KG,,,,,rs1398217,G,C,0.021,0.003
+Total testosterone,Males,rs10832570,Signal in 1KG,,,,,rs1401454,C,T,0.025,0.003
+Total testosterone,Males,rs36086195,Signal in 1KG,,,,,rs1497406,G,A,0.019,0.003
+Total testosterone,Males,rs59194935,Signal in 1KG,,,,,rs1523327,T,A,0.018,0.003
+Total testosterone,Males,rs62415384,Signal in 1KG,,,,,rs1574430,C,A,0.016,0.003
+Total testosterone,Males,rs1349359,Signal in 1KG,,,,,rs1631380,A,C,0.016,0.003
+Total testosterone,Males,rs201814405,Signal in 1KG,,,,,rs17033491,A,G,0.026,0.004
+Total testosterone,Males,rs79717793,Signal in 1KG,,,,,rs17134608,G,A,0.049,0.004
+Total testosterone,Males,rs9986829,Signal in 1KG,,,,,rs17168570,C,A,0.038,0.003
+Total testosterone,Males,rs112530420,Signal in 1KG,,,,,rs17395416,T,G,0.023,0.004
+Total testosterone,Males,rs34851490,Signal in 1KG,,,,,rs17651629,T,C,0.044,0.005
+Total testosterone,Males,rs576009056,Signal in 1KG,,,,,rs17696392,A,T,0.022,0.004
+Total testosterone,Males,rs56853305,Signal in 1KG,,,,,rs1850512,C,T,0.021,0.005
+Total testosterone,Males,rs2583948,Signal in 1KG,,,,,rs1993669,C,T,0.035,0.005
+Total testosterone,Males,rs4871844,Signal in 1KG,,,,,rs2241260,G,A,0.015,0.003
+Total testosterone,Males,rs2306216,Signal in 1KG,,,,,rs2242229,G,T,0.026,0.004
+Total testosterone,Males,rs2540945,Signal in 1KG,,,,,rs2249105,G,A,0.018,0.003
+Total testosterone,Males,rs3768321,Signal in 1KG,,,,,rs2293476,G,C,0.026,0.004
+Total testosterone,Males,rs11621792,Signal in 1KG,,,,,rs2332328,C,T,0.016,0.003
+Total testosterone,Males,rs12406721,Signal in 1KG,,,,,rs2335077,G,A,0.032,0.003
+Total testosterone,Males,rs11099675,Signal in 1KG,,,,,rs2358184,A,G,0.021,0.004
+Total testosterone,Males,rs2393775,Signal in 1KG,,,,,rs2393791,T,C,0.026,0.003
+Total testosterone,Males,rs62062271,Signal in 1KG,,,,,rs2532288,T,C,0.029,0.004
+Total testosterone,Males,rs575146,Signal in 1KG,,,,,rs2739330,T,C,0.017,0.003
+Total testosterone,Males,rs4754839,Signal in 1KG,,,,,rs2846855,A,G,0.017,0.003
+Total testosterone,Males,rs2957683,Signal in 1KG,,,,,rs2923089,C,T,0.016,0.003
+Total testosterone,Males,rs2905801,Signal in 1KG,,,,,rs2952993,A,G,0.029,0.003
+Total testosterone,Males,rs40270,Signal in 1KG,,,,,rs30000,G,A,0.019,0.003
+Total testosterone,Males,rs9383605,Signal in 1KG,,,,,rs3020418,G,A,0.019,0.003
+Total testosterone,Males,rs12787293,Signal in 1KG,,,,,rs341053,G,A,0.020,0.003
+Total testosterone,Males,rs631695,Signal in 1KG,,,,,rs3740643,C,A,0.023,0.003
+Total testosterone,Males,rs573396813,Signal in 1KG,,,,,rs3752210,T,A,0.016,0.003
+Total testosterone,Males,rs7015,Signal in 1KG,,,,,rs3779196,C,T,0.055,0.004
+Total testosterone,Males,rs34396520,Signal in 1KG,,,,,rs3806661,G,A,0.018,0.003
+Total testosterone,Males,rs10750766,Signal in 1KG,,,,,rs3814707,A,G,0.023,0.004
+Total testosterone,Males,rs2012736,Signal in 1KG,,,,,rs3892170,G,C,0.047,0.005
+Total testosterone,Males,rs73079476,Signal in 1KG,,,,,rs4149056,T,C,0.054,0.004
+Total testosterone,Males,rs55867305,Signal in 1KG,,,,,rs4278125,G,A,0.032,0.003
+Total testosterone,Males,rs112107457,Signal in 1KG,,,,,rs4645631,C,G,0.027,0.004
+Total testosterone,Males,rs6766859,Signal in 1KG,,,,,rs4678408,G,A,0.031,0.003
+Total testosterone,Males,rs12125882,Signal in 1KG,,,,,rs473629,T,A,0.017,0.003
+Total testosterone,Males,rs28892005,Signal in 1KG,,,,,rs4775935,T,G,0.028,0.003
+Total testosterone,Males,rs4525526,Signal in 1KG,,,,,rs4790285,C,T,0.033,0.004
+Total testosterone,Males,rs1441911,Signal in 1KG,,,,,rs4859658,G,A,0.021,0.004
+Total testosterone,Males,rs35737316,Signal in 1KG,,,,,rs4951318,C,G,0.036,0.004
+Total testosterone,Males,rs45490496,Signal in 1KG,,,,,rs4983559,G,A,0.019,0.003
+Total testosterone,Males,rs112265145,Signal in 1KG,,,,,rs5934505,C,T,0.097,0.002
+Total testosterone,Males,rs6073431,Signal in 1KG,,,,,rs6073435,T,A,0.029,0.003
+Total testosterone,Males,rs650558,Signal in 1KG,,,,,rs646123,G,A,0.019,0.003
+Total testosterone,Males,rs61922185,Signal in 1KG,,,,,rs6487172,T,C,0.021,0.003
+Total testosterone,Males,rs72630041,Signal in 1KG,,,,,rs6525588,G,C,0.016,0.003
+Total testosterone,Males,rs11096640,Signal in 1KG,,,,,rs6531214,G,A,0.015,0.003
+Total testosterone,Males,rs3742223,Signal in 1KG,,,,,rs6577061,C,T,0.021,0.005
+Total testosterone,Males,rs74805556,Signal in 1KG,,,,,rs6624226,G,A,0.038,0.003
+Total testosterone,Males,rs34040779,Signal in 1KG,,,,,rs664595,T,C,0.017,0.004
+Total testosterone,Males,rs10649609,Signal in 1KG,,,,,rs6712203,T,C,0.017,0.003
+Total testosterone,Males,rs13108218,Signal in 1KG,,,,,rs6818397,T,G,0.022,0.003
+Total testosterone,Males,rs11772470,Signal in 1KG,,,,,rs6961634,A,G,0.030,0.004
+Total testosterone,Males,rs34955534,Signal in 1KG,,,,,rs6996954,T,C,0.038,0.005
+Total testosterone,Males,rs10982192,Signal in 1KG,,,,,rs7038862,T,C,0.022,0.004
+Total testosterone,Males,rs57349855,Signal in 1KG,,,,,rs7200841,T,C,0.021,0.003
+Total testosterone,Males,rs7216664,Signal in 1KG,,,,,rs7210574,C,T,0.017,0.003
+Total testosterone,Males,rs11671304,Signal in 1KG,,,,,rs7251104,G,C,0.017,0.003
+Total testosterone,Males,rs2038695,Signal in 1KG,,,,,rs7338818,C,T,0.021,0.003
+Total testosterone,Males,rs200647710,Signal in 1KG,,,,,rs738508,T,C,0.015,0.003
+Total testosterone,Males,rs141509569,Signal in 1KG,,,,,rs7516840,C,G,0.021,0.003
+Total testosterone,Males,rs6750410,Signal in 1KG,,,,,rs7568216,C,T,0.041,0.006
+Total testosterone,Males,rs7065171,Signal in 1KG,,,,,rs757309,A,G,0.018,0.002
+Total testosterone,Males,rs12614829,Signal in 1KG,,,,,rs7596561,T,C,0.030,0.004
+Total testosterone,Males,rs7610366,Signal in 1KG,,,,,rs7621942,C,T,0.021,0.003
+Total testosterone,Males,rs55869022,Signal in 1KG,,,,,rs7649178,G,A,0.026,0.005
+Total testosterone,Males,rs140218129,Signal in 1KG,,,,,rs767602,G,T,0.026,0.005
+Total testosterone,Males,rs1933801,Signal in 1KG,,,,,rs7759938,T,C,0.038,0.003
+Total testosterone,Males,rs148204274,Signal in 1KG,,,,,rs7831029,G,A,0.016,0.003
+Total testosterone,Males,rs7912521,Signal in 1KG,,,,,rs7908228,G,T,0.049,0.003
+Total testosterone,Males,rs56332871,Signal in 1KG,,,,,rs8023580,C,T,0.047,0.003
+Total testosterone,Males,rs12445820,Signal in 1KG,,,,,rs8053548,C,T,0.024,0.004
+Total testosterone,Males,rs62076019,Signal in 1KG,,,,,rs8075262,A,G,0.014,0.003
+Total testosterone,Males,rs1708302,Signal in 1KG,,,,,rs849135,A,G,0.018,0.003
+Total testosterone,Males,rs10958704,Signal in 1KG,,,,,rs881301,T,C,0.020,0.003
+Total testosterone,Males,rs72721770,Signal in 1KG,,,,,rs887507,G,A,0.019,0.003
+Total testosterone,Males,rs2551641,Signal in 1KG,,,,,rs889895,G,A,0.021,0.004
+Total testosterone,Males,rs148262335,Signal in 1KG,,,,,rs912202,C,G,0.026,0.003
+Total testosterone,Males,rs6676846,Signal in 1KG,,,,,rs912795,G,A,0.029,0.004
+Total testosterone,Males,rs7824394,Signal in 1KG,,,,,rs952559,G,A,0.024,0.003
+Total testosterone,Males,rs13289095,Signal in 1KG,,,,,rs9697210,G,A,0.021,0.004
+Total testosterone,Males,rs7166920,Signal in 1KG,,,,,rs972265,A,C,0.019,0.003
+Total testosterone,Males,rs9970140,Signal in 1KG,,,,,rs9970076,G,A,0.040,0.006
+Total testosterone,Males,rs10192634,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs10279715,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1033667,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs10421262,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1058319,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs10864086,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs10868080,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs10892924,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs10982156,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1154401,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs11607114,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs11703376,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs11735092,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1229498,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs12320328,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs12336359,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs12470971,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1260326,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs12796488,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs13074711,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1421085,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1624295,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs17408832,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs1994721,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs2090409,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs2239222,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs267733,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs2721195,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs2862954,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs329122,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs3808869,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs42945,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs4757142,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs4841133,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs60701,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs618888,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs6258,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs645040,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs6486542,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs6792725,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs6870458,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7182912,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7314285,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs738409,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7679843,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7735249,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7773995,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7828742,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7844586,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7915430,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs7997628,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs8107967,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs881090,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,rs9461224,Signal in 1KG,,,,,Signal in HM,,,,
+Total testosterone,Males,X:54243748_CA_C,X:54243748,CA,C,0.016,0.003,NA,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+1KG = 1000 Genomes,,,,,,,,,,,,
+HM = HapMap2,,,,,,,,,,,,
+NA = missing in hormone results,,,,,,,,,,,,
+SE = standard error,,,,,,,,,,,,
+,,,,,,,,,,,,
+Notes: Weights are effects from the relevant hormone analysis.,,,,,,,,,,,,
