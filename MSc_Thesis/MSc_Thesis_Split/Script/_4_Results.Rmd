@@ -81,10 +81,10 @@ no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Dat
 
 # Causal:
 causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen1_sim_summ_tib.rds"))
-#causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen1_sim_summ_tib.rds"))
+causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen1_sim_summ_tib.rds"))
 
 causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen2_sim_summ_tib.rds"))
-#causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
+causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
 
 causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen3_sim_summ_tib.rds"))
 #causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
@@ -203,14 +203,14 @@ no_causal_sim_summ_tib_display
 ```{r causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Positive Causal Effect", results='asis'}
 
 # Scenario 1
-causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib#,
-                                       #causal_20k_scen1_sim_summ_tib
+causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib,
+                                       causal_20k_scen1_sim_summ_tib
                                        ) %>% 
   mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 2
-causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib#,
-                                       #causal_20k_scen2_sim_summ_tib
+causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib,
+                                       causal_20k_scen2_sim_summ_tib
                                        ) %>% 
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
