@@ -16,9 +16,13 @@ knit: (function(inputFile, encoding) {
                         knit_root_dir = rprojroot::find_rstudio_root_file(),
                         output_dir = file.path("../Output")
                         )})
+bibliography: ../Script/Lit_Rev_Refs.bib
+csl: ../Script/vancouver-superscript.csl
+link-citations: TRUE
+urlcolor: blue  
 ---
 
-```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE, 
@@ -32,9 +36,10 @@ knitr::opts_chunk$set(echo = FALSE,
 
 # Load packages
 library(tidyverse)
+library(dplyr)
 library(bookdown)
-#library(TwoSampleMR)
-#library(rstan)
+library(TwoSampleMR)
+library(rstan)
 library(here)
 library(cowplot)
 library(kableExtra)
@@ -50,39 +55,44 @@ source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
 source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 
 # Load function scripts
-#source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-#source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
+source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
 
 # # Compile model for MR-Hevo
-# mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split", 
-#                                        "Script", 
-#                                        "Hevo", 
-#                                        "MRHevo_summarystats.stan"),
-#                            model_name="MRHevo.summarystats", verbose=FALSE)
+mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
+                                       "Script",
+                                       "Hevo",
+                                       "MRHevo_summarystats.stan"),
+                           model_name="MRHevo.summarystats", verbose=FALSE)
 
 
 # Load data
 # No Causal:
 no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen1_sim_summ_tib.rds"))
-no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
+#no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
 
 no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen2_sim_summ_tib.rds"))
-no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
+#no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
 
-no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
-no_causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen3_sim_summ_tib.rds"))
+#no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
+#no_causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen3_sim_summ_tib.rds"))
 
 
 # Causal:
 causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen1_sim_summ_tib.rds"))
-causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen1_sim_summ_tib.rds"))
+#causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen1_sim_summ_tib.rds"))
 
 causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen2_sim_summ_tib.rds"))
-causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
+#causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
 
 causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen3_sim_summ_tib.rds"))
-causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
+#causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
+
+# Citation Search 
+
+Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() %>% mutate(N=1)
+Citations_Instrument_Data_2 <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble()%>% mutate(N=2)
 
 ```
 
@@ -94,25 +104,29 @@ A summary is shown in Table \@ref(tab:no-causal-sim-summ-tib) and \@ref(tab:caus
 ```{r no-causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="no-causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect", results='asis'}
 
 # Scenario 1
-no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib,
-                                          no_causal_20k_scen1_sim_summ_tib) %>% 
+no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib#,
+                                          #no_causal_20k_scen1_sim_summ_tib
+                                          ) %>% 
   mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 2
-no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib,
-                                          no_causal_20k_scen2_sim_summ_tib) %>% 
+no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib#,
+                                          #no_causal_20k_scen2_sim_summ_tib
+                                          ) %>% 
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 3
-no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib,
-                                          no_causal_20k_scen3_sim_summ_tib) %>% 
-  mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+# no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib,
+#                                           no_causal_20k_scen3_sim_summ_tib
+#                                           ) %>% 
+#   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
 
 
 # Summary
 no_causal_sim_summ_tib <- bind_rows(no_causal_scen1_sim_summ_tib,
-                                    no_causal_scen2_sim_summ_tib,
-                                    no_causal_scen3_sim_summ_tib)
+                                    no_causal_scen2_sim_summ_tib#,
+                                    #no_causal_scen3_sim_summ_tib
+                                    )
 
 # Display
 no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>% 
@@ -173,7 +187,7 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
   autofit() |>
   fit_to_width(max_width = 7.5) |>
-  add_footer_lines("IV: Instumental Variable, SE: Standard Error \nData from 1000 Simulated Mendelian Randomisation Studies \nPositive Causal Effect (\U03B2 = 0)")
+  add_footer_lines("IV: Instumental Variable, SE: Standard Error \nData from 1000 Simulated Mendelian Randomisation Studies \nNull Causal Effect (\U03B2 = 0)")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)", 
 #             style = "Table Caption", 
 #             autonum = run_autonum(seq_id = "tab", 
@@ -186,21 +200,24 @@ no_causal_sim_summ_tib_display
 
 
 \newpage
-```{r causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Positive Causal Effect (\U03B2 = 0.1)", results='asis'}
+```{r causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Positive Causal Effect", results='asis'}
 
 # Scenario 1
-causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib,
-                                       causal_20k_scen1_sim_summ_tib) %>% 
+causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib#,
+                                       #causal_20k_scen1_sim_summ_tib
+                                       ) %>% 
   mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 2
-causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib,
-                                       causal_20k_scen2_sim_summ_tib) %>% 
+causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib#,
+                                       #causal_20k_scen2_sim_summ_tib
+                                       ) %>% 
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 3
-causal_scen3_sim_summ_tib <- bind_rows(causal_10k_scen3_sim_summ_tib,
-                                       causal_20k_scen3_sim_summ_tib) %>% 
+causal_scen3_sim_summ_tib <- bind_rows(causal_10k_scen3_sim_summ_tib#,
+                                       #causal_20k_scen3_sim_summ_tib
+                                       ) %>% 
   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
 
 
@@ -210,7 +227,7 @@ causal_sim_summ_tib <- bind_rows(causal_scen1_sim_summ_tib,
                                  causal_scen3_sim_summ_tib)
 
 # Display
-causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>% 
+causal_sim_summ_tib_display <- causal_sim_summ_tib %>% 
   # Change names for cleaner plotting
   mutate(Invalid = Prop_Invalid,
          F = round(F_stat, 1),
@@ -281,5 +298,159 @@ causal_sim_summ_tib_display
 ```
 
 
+```{r citations-reanalysis-summ-tib, include=TRUE, fig.id=TRUE,cache=TRUE, tab.cap=""}
 
-Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_4_Results.Rmd"))`.
+# library(tidyverse)
+# library(dplyr)
+# library(bookdown)
+# library(TwoSampleMR)
+# library(rstan)
+# library(here)
+# library(cowplot)
+# library(kableExtra)
+# library(tables)
+# library(flextable)
+# library(ftExtra)
+# library(officer)
+# 
+# # Load function scripts
+# source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+# source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
+# 
+# 
+# # # Compile model for MR-Hevo
+# mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
+#                                        "Script",
+#                                        "Hevo",
+#                                        "MRHevo_summarystats.stan"),
+#                            model_name="MRHevo.summarystats",
+#                            verbose=FALSE)
+
+Data_List <- bind_rows(Citations_Instrument_Data, Citations_Instrument_Data_2)
+
+
+reanalysis_tib <- get_reanalysis_tib(Data_List) %>% mutate(citation = "[@bowden_consistent_2016]") #%>% kable()
+
+reanalysis_tib
+
+#str(Data_List)
+
+```
+
+Table (\#tab:citations-reanalysis-summ-tib) reference[@bowden_consistent_2016]
+
+
+
+```{r citations-reanalysis-summ-fn, include=FALSE}
+
+get_reanalysis_tib <- function(models_in){
+  
+  output_tib_row <- tibble(N = as.integer(),
+                           WME_Av = as.double(),
+                           WME_SE = as.double(),
+                           Hevo_Av = as.double(),
+                           Hevo_SE = as.double()
+  )
+  
+  # Create blank tibble to receive results of Weighted
+  # Median Estimator function from MR-Base
+  
+  results_tib <-  tibble(N = as.integer(),
+                         WME_est = as.double(),
+                         WME_se = as.double(),
+                         WME_pval = as.double(),
+                         WME_nsnp = as.integer(),
+                         Hevo_est = as.double(),
+                         Hevo_se = as.double(),
+                         Hevo_sd = as.double(),
+                         Hevo_2.5 = as.double(),
+                         Hevo_97.5 = as.double(),
+                         Hevo_causal_detected = as.logical()
+  )
+  
+  # Convert full tibble to list of 1 tibble per dataset
+  model_list <- models_in %>% 
+    group_by(N) %>%
+    group_split()
+  
+  
+  # Should = 10
+  n_datasets <- length(model_list)
+  
+    # Run WME and MR-Hevo for each dataset 
+  for(dataset in 1:n_datasets){
+  
+    # Stored as individual vectors for MR-Hevo/RStan - not
+    # Tidyverse compatible
+    coeff_G_X_vect <- model_list[[dataset]]$Coeff_G_X
+    coeff_G_Y_vect <- model_list[[dataset]]$Coeff_G_Y
+    coeff_G_X_SE_vect <- model_list[[dataset]]$Coeff_G_X_SE
+    coeff_G_Y_SE_vect <- model_list[[dataset]]$Coeff_G_Y_SE
+    
+    
+    # N.B. MR-Hevo terminology vs WME paper/other code:
+    # alpha = effects of instruments on exposure, i.e. coeff_G_X
+    # beta = pleiotropic effects of instruments on outcome, i.e. alpha in WME
+    # gamma = effects of instruments on outcome, i.e. coeff_G_Y
+    # theta = causal effect X on Y, i.e. b
+    
+    # Results from weighted median estimator method
+    WME_results <- mr_weighted_median(b_exp = coeff_G_X_vect,
+                                      b_out = coeff_G_Y_vect,
+                                      se_exp = coeff_G_X_SE_vect,
+                                      se_out = coeff_G_Y_SE_vect,
+                                      parameters = list(nboot = 1000))
+
+    # Results from MR-Hevo method
+    Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
+                                     se.alpha_hat = coeff_G_X_SE_vect,
+                                     gamma_hat = coeff_G_Y_vect,
+                                     se.gamma_hat = coeff_G_Y_SE_vect
+    ) %>%
+      summary()
+    
+    
+    # Extract WME Results
+    results_tib[dataset, ]$WME_est <- WME_results$b
+    results_tib[dataset, ]$WME_se <- WME_results$se
+    results_tib[dataset, ]$WME_pval <- WME_results$pval
+    results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
+    
+    # Extract MR-Hevo Results
+    results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
+    results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
+    results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
+    results_tib[dataset, ]$Hevo_2.5 <- Hevo_results$summary["theta","2.5%"]
+    results_tib[dataset, ]$Hevo_97.5 <- Hevo_results$summary["theta","97.5%"]
+    
+    results_tib[dataset, ]$N <- dataset
+    
+  }
+  
+   results_tib <- results_tib %>%
+    mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
+  
+  
+  # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
+  # https://mr-dictionary.mrcieu.ac.uk/term/r-squared/
+  output_tib_row <- results_tib %>%
+    summarise(N = N,
+              WME_Av = mean(WME_est),
+              WME_SE = mean(WME_se),
+              Hevo_Av = mean(Hevo_est),
+              Hevo_SE = mean(Hevo_se),
+              Hevo_Causal = Hevo_causal_detected
+    ) %>%
+    mutate(across(where(is.double), round, 3))
+  
+  return(output_tib_row)
+  #return(results_tib)
+  
+  
+}
+
+
+```
+
+Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_4_Results.Rmd"))`
+
