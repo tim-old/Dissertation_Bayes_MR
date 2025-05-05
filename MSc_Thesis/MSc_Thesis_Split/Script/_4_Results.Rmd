@@ -282,4 +282,4 @@ causal_sim_summ_tib_display
 
 
 
-Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_4_Results.Rmd"))`
+Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_4_Results.Rmd"))`.
