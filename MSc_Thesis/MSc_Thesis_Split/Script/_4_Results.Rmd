@@ -75,7 +75,7 @@ no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Dat
 no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen2_sim_summ_tib.rds"))
 #no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
 
-#no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
+no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
 #no_causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen3_sim_summ_tib.rds"))
 
 
@@ -87,7 +87,7 @@ causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data",
 causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
 
 causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen3_sim_summ_tib.rds"))
-#causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
+causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
 
 # Citation Search 
 
@@ -116,16 +116,16 @@ no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib#,
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 3
-# no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib,
+ no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib#,
 #                                           no_causal_20k_scen3_sim_summ_tib
-#                                           ) %>% 
-#   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+                                           ) %>% 
+   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
 
 
 # Summary
 no_causal_sim_summ_tib <- bind_rows(no_causal_scen1_sim_summ_tib,
-                                    no_causal_scen2_sim_summ_tib#,
-                                    #no_causal_scen3_sim_summ_tib
+                                    no_causal_scen2_sim_summ_tib,
+                                    no_causal_scen3_sim_summ_tib
                                     )
 
 # Display
@@ -215,8 +215,8 @@ causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib,
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 3
-causal_scen3_sim_summ_tib <- bind_rows(causal_10k_scen3_sim_summ_tib#,
-                                       #causal_20k_scen3_sim_summ_tib
+causal_scen3_sim_summ_tib <- bind_rows(causal_10k_scen3_sim_summ_tib,
+                                       causal_20k_scen3_sim_summ_tib
                                        ) %>% 
   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
 
