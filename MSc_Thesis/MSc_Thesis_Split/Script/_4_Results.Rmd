@@ -55,7 +55,7 @@ source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
 source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 
 # Load function scripts
-source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+source(here("MSc_Thesis_Split", "Script", "simulation_functions_test.R"))
 source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
 
@@ -70,7 +70,7 @@ mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
 # Load data
 # No Causal:
 no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen1_sim_summ_tib.rds"))
-#no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
+no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
 
 no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen2_sim_summ_tib.rds"))
 #no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
@@ -104,8 +104,8 @@ A summary is shown in Table \@ref(tab:no-causal-sim-summ-tib) and \@ref(tab:caus
 ```{r no-causal-sim-summ-tib, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="no-causal-sim-summ-tib", tab.cap="Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect", results='asis'}
 
 # Scenario 1
-no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib#,
-                                          #no_causal_20k_scen1_sim_summ_tib
+no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib,
+                                          no_causal_20k_scen1_sim_summ_tib
                                           ) %>% 
   mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
 
@@ -234,10 +234,10 @@ causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
          R2 = paste0(R2_stat *100, "%"),
          Weighted_Median_Mean_Estimate = WME_Av,
          Weighted_Median_Mean_SE = paste0("(", WME_SE, ")"),
-         Weighted_Median_Positive_Rate = WME_Pos_Rate,
+         Weighted_Median_Positive_Rate = WME_Pos_Rate * 100,
          MR_Hevo_Mean_Estimate = Hevo_Av,
          MR_Hevo_Mean_SE= paste0("(", Hevo_SE, ")"),
-         MR_Hevo_Positive_Rate = Hevo_Pos_Rate) %>% 
+         MR_Hevo_Positive_Rate = Hevo_Pos_Rate * 100) %>% 
   # Drop old names
   select(N,
          Invalid,
@@ -331,7 +331,8 @@ Data_List <- bind_rows(Citations_Instrument_Data, Citations_Instrument_Data_2)
 
 reanalysis_tib <- get_reanalysis_tib(Data_List) %>% mutate(citation = "[@bowden_consistent_2016]") #%>% kable()
 
-reanalysis_tib
+reanalysis_tib %>% 
+  kable()
 
 #str(Data_List)
 
@@ -348,8 +349,10 @@ get_reanalysis_tib <- function(models_in){
   output_tib_row <- tibble(N = as.integer(),
                            WME_Av = as.double(),
                            WME_SE = as.double(),
+                           WME_OR = as.double,
                            Hevo_Av = as.double(),
-                           Hevo_SE = as.double()
+                           Hevo_SE = as.double(),
+                           Hevo_OR = as.double()
   )
   
   # Create blank tibble to receive results of Weighted
@@ -437,6 +440,7 @@ get_reanalysis_tib <- function(models_in){
     summarise(N = N,
               WME_Av = mean(WME_est),
               WME_SE = mean(WME_se),
+              WME_OR = exp(WME_Av),
               Hevo_Av = mean(Hevo_est),
               Hevo_SE = mean(Hevo_se),
               Hevo_Causal = Hevo_causal_detected

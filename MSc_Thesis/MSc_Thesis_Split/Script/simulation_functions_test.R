@@ -152,18 +152,18 @@ simulate_MR_data <- function(n_participants = as.integer(),
     
     # --- Set characteristics for each genetic instrument --- # 
     
-    # Set which instruments invalid, 0 = valid, 1 = invalid
-    invalid_instrument_vect <- rbinom(n = n_instruments,
-                                      size = 1, 
-                                      prob = prop_invalid)
-    
-    
     # Set genetic effects of each instrument on the exposure,
     # drawn from uniform distribution, min/max as per Bowden 
     # et al
     gamma_vect <- runif(n = n_instruments,
                         min = gamma_min,
                         max = gamma_max)
+    
+    # Set which instruments invalid, 0 = valid, 1 = invalid
+    invalid_instrument_vect <- rbinom(n = n_instruments,
+                                      size = 1, 
+                                      prob = prop_invalid)
+    
     
     
     # Set pleiotropic effects on outcome, Scenarios and 
@@ -440,8 +440,7 @@ get_summary_MR_tib_row <- function(model_list){
                          Hevo_n_Rhat = as.double(),
                          Hevo_z_stat = as.double(),
                          Hevo_pval = as.double(),
-                         Hevo_causal_detected = as.logical(), 
-                         .rows = n_datasets
+                         Hevo_causal_detected = as.logical()
   )
   
   
@@ -535,7 +534,135 @@ get_summary_MR_tib_row <- function(model_list){
 
 
 
-###------------------------------Extract Models-------------------------------------------###
+###----------------------------Re-analysis Tibble-----------------------------------------###
 
+get_reanalysis_tib <- function(models_in){
+  
+  output_tib_row <- tibble(N = as.integer(),
+                           WME_Av = as.double(),
+                           WME_SE = as.double(),
+                           Hevo_Av = as.double(),
+                           Hevo_SE = as.double()
+  )
+  
+  # Create blank tibble to receive results of Weighted
+  # Median Estimator function from MR-Base
+  
+  results_tib <-  tibble(N = as.integer(),
+                         WME_est = as.double(),
+                         WME_se = as.double(),
+                         WME_pval = as.double(),
+                         #WME_OR = as.double(),
+                         #WME_OR_lower_CI = as.double(),
+                         #WME_OR_upper_CI = as.double(),
+                         WME_nsnp = as.integer(),
+                         Hevo_est = as.double(),
+                         Hevo_se = as.double(),
+                         Hevo_sd = as.double()#,
+                         #Hevo_OR = as.double(),
+                         #Hevo_OR_lower_CI = as.double(),
+                         #Hevo_OR_upper_CI = as.double(),
+                         #Hevo_2.5 = as.double(),
+                         #Hevo_97.5 = as.double(),
+                         #Hevo_est_causal_detected = as.logical(),
+                         #Hevo_OR_causal_detected = as.logical()
+  )
+  
+  # Convert full tibble to list of 1 tibble per dataset
+  model_list <- models_in %>% 
+    group_by(N) %>%
+    group_split()
+  
+  
+  # Should = 10
+  n_datasets <- length(model_list)
+  
+  # Run WME and MR-Hevo for each dataset 
+  for(dataset in 1:n_datasets){
+    
+    # Stored as individual vectors for MR-Hevo/RStan - not
+    # Tidyverse compatible
+    coeff_G_X_vect <- model_list[[dataset]]$Coeff_G_X
+    coeff_G_Y_vect <- model_list[[dataset]]$Coeff_G_Y
+    coeff_G_X_SE_vect <- model_list[[dataset]]$Coeff_G_X_SE
+    coeff_G_Y_SE_vect <- model_list[[dataset]]$Coeff_G_Y_SE
+    
+    
+    # N.B. MR-Hevo terminology vs WME paper/other code:
+    # alpha = effects of instruments on exposure, i.e. coeff_G_X
+    # beta = pleiotropic effects of instruments on outcome, i.e. alpha in WME
+    # gamma = effects of instruments on outcome, i.e. coeff_G_Y
+    # theta = causal effect X on Y, i.e. b
+    
+    # Results from weighted median estimator method
+    WME_results <- mr_weighted_median(b_exp = coeff_G_X_vect,
+                                      b_out = coeff_G_Y_vect,
+                                      se_exp = coeff_G_X_SE_vect,
+                                      se_out = coeff_G_Y_SE_vect,
+                                      parameters = list(nboot = 1000))
+    
+    # Results from MR-Hevo method
+    Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
+                                     se.alpha_hat = coeff_G_X_SE_vect,
+                                     gamma_hat = coeff_G_Y_vect,
+                                     se.gamma_hat = coeff_G_Y_SE_vect
+    ) %>%
+      summary()
+    
+    
+    # Extract WME Results
+    results_tib[dataset, ]$WME_est <- WME_results$b
+    results_tib[dataset, ]$WME_se <- WME_results$se
+    results_tib[dataset, ]$WME_pval <- WME_results$pval
+    results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
+    
+    # Extract MR-Hevo Results
+    results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
+    results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
+    results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
+    #results_tib[dataset, ]$Hevo_2.5 <- Hevo_results$summary["theta","2.5%"]
+    #results_tib[dataset, ]$Hevo_97.5 <- Hevo_results$summary["theta","97.5%"]
+    
+    results_tib[dataset, ]$N <- dataset
+    
+                        
+  }
+  
+  results_tib <- results_tib %>%
+    #mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
+    mutate(WME_est_lower_CI = (WME_est - (1.96 * WME_se)),
+           WME_est_upper_CI = (WME_est + (1.96 * WME_se)),
+           WME_est_causal_detected = (WME_est_lower_CI > 0  | WME_est_upper_CI < 0),
+           WME_OR = exp(WME_est),
+           WME_OR_lower_CI = exp(WME_est_lower_CI),
+           WME_OR_upper_CI = exp(WME_est_upper_CI),
+           WME_OR_causal_detected = (WME_OR_lower_CI > 1  | WME_OR_upper_CI < 1),
+           Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
+           Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
+           Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0),
+           Hevo_OR = exp(Hevo_est),
+           Hevo_OR_lower_CI = exp(Hevo_est_lower_CI),
+           Hevo_OR_upper_CI = exp(Hevo_est_upper_CI),
+           Hevo_OR_causal_detected = (Hevo_OR_lower_CI > 1  | Hevo_OR_upper_CI < 1)
+           )
+  
+  
+  # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
+  # https://mr-dictionary.mrcieu.ac.uk/term/r-squared/
+  output_tib_row <- results_tib %>%
+    summarise(N = N,
+              WME_Av = mean(WME_est),
+              WME_SE = mean(WME_se),
+              Hevo_Av = mean(Hevo_est),
+              Hevo_SE = mean(Hevo_se),
+              Hevo_Est_Causal = Hevo_est_causal_detected
+    ) %>%
+    mutate(across(where(is.double), round, 3))
+  
+  #return(output_tib_row)
+  return(results_tib)
+
+  
+}
 
 
