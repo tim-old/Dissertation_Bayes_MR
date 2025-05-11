@@ -508,7 +508,22 @@ get_summary_MR_tib_row <- function(model_list){
   
   
   results_tib <- results_tib %>%
-    mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
+    #mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
+    mutate(WME_est_lower_CI = (WME_est - (1.96 * WME_se)),
+           WME_est_upper_CI = (WME_est + (1.96 * WME_se)),
+           WME_est_causal_detected = (WME_est_lower_CI > 0  | WME_est_upper_CI < 0),
+           WME_OR = exp(WME_est),
+           WME_OR_lower_CI = exp(WME_est_lower_CI),
+           WME_OR_upper_CI = exp(WME_est_upper_CI),
+           WME_OR_causal_detected = (WME_OR_lower_CI > 1  | WME_OR_upper_CI < 1),
+           Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
+           Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
+           Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0),
+           Hevo_OR = exp(Hevo_est),
+           Hevo_OR_lower_CI = exp(Hevo_est_lower_CI),
+           Hevo_OR_upper_CI = exp(Hevo_est_upper_CI),
+           Hevo_OR_causal_detected = (Hevo_OR_lower_CI > 1  | Hevo_OR_upper_CI < 1)
+    )
   
   
   # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
