@@ -94,7 +94,7 @@ _3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the $\phi_j$ p
 
 _The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 [sic] participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants."_ [@bowden_consistent_2016]
 
-To reproduce this model, code was written in R to generate the relevant participant level data. First, a function (`simulate_MR_data`) was written which included parameters specified by Bowden et al, and also to allow testing of data simulation:
+To reproduce this model, code was written in R to generate the relevant participant level data. First, a function (`get_simulated_MR_data`) was written which included parameters specified by Bowden et al, and also to allow testing of data simulation:
 
 
 
@@ -102,26 +102,27 @@ To reproduce this model, code was written in R to generate the relevant particip
 
 # Define function to create data generating model
 # Arguments/default values based on Bowden et al
-simulate_MR_data <- function(n_participants = as.integer(), 
-                             n_instruments = as.integer(),
-                             n_datasets = as.integer(),
-                             prop_invalid = 0.1,
-                             causal_effect = TRUE,
-                             balanced_pleio = TRUE,
-                             InSIDE_satisfied = TRUE,
-                             rand_error = TRUE,      # remove random errors, for testing
-                             two_sample = TRUE,      # 1- or 2-sample MR toggle, for testing
-                             beta_val = 0.1,         # size of causal effect
-                             allele_freq_min = 0.01, # frequency of effect allele
-                             allele_freq_max = 0.99,
-                             gamma_min = 0.03,       # size of pleiotropic effects on exposure
-                             gamma_max = 0.1,
-                             alpha_min = -0.2,       # size of pleiotropic effects on outcome
-                             alpha_max = 0.2,
-                             phi_min = -0.2,         # size of additional pleiotropic effects
-                             phi_max = 0.2){         # when InSIDE not satisfied
+get_simulated_MR_data <- function(n_participants = as.integer(), 
+                                  n_instruments = as.integer(),
+                                  n_datasets = as.integer(),
+                                  prop_invalid = 0.1,
+                                  causal_effect = TRUE,
+                                  balanced_pleio = TRUE,
+                                  InSIDE_satisfied = TRUE,
+                                  rand_error = TRUE,      # remove random errors, for testing
+                                  two_sample = TRUE,      # 1- or 2-sample MR toggle, for testing
+                                  beta_val = 0.1,         # size of causal effect
+                                  allele_freq_min = 0.01, # frequency of effect allele
+                                  allele_freq_max = 0.99,
+                                  gamma_min = 0.03,       # size of pleiotropic effects on exposure
+                                  gamma_max = 0.1,
+                                  alpha_min = -0.2,       # size of pleiotropic effects on outcome
+                                  alpha_max = 0.2,
+                                  phi_min = -0.2,         # size of additional pleiotropic effects
+                                  phi_max = 0.2){         # when InSIDE not satisfied
   
-  
+  # Set seed for reproducibility
+  set.seed(14101583)
   
   # Initialise blank lists to receive datasets for
   # each of:
@@ -407,22 +408,22 @@ This initial simulation function generated data in the following format:
 ```{r test-data-sim}
 
 # Check data produced in expected format
-set.seed(1701)
-test_data_sim <- simulate_MR_data(n_participants = 1000,
-                                  n_instruments = 25,
-                                  n_datasets = 2,
-                                  prop_invalid = 0.3,
-                                  rand_error = FALSE,
-                                  causal_effect = TRUE,
-                                  balanced_pleio = TRUE,
-                                  InSIDE_satisfied = TRUE)
+#set.seed(1701)
+test_data_sim <- get_simulated_MR_data(n_participants = 1000,
+                                       n_instruments = 25,
+                                       n_datasets = 2,
+                                       prop_invalid = 0.3,
+                                       rand_error = FALSE,
+                                       causal_effect = TRUE,
+                                       balanced_pleio = TRUE,
+                                       InSIDE_satisfied = TRUE)
 
 str(test_data_sim)
 
 ```
 
 
-A function (`extract_models`) was then written to create linear models from each dataset generated as per Bowden et al:
+A function (`get_models`) was then written to create linear models from each dataset generated as per Bowden et al:
 
 
 ```{r extract-models-fn, echo=TRUE}
@@ -430,7 +431,7 @@ A function (`extract_models`) was then written to create linear models from each
 
 # Create plotting tibble with Mean/SD X + Y grouped by
 # Dataset + instrument
-extract_models <- function(sim){
+get_models <- function(sim){
   
   output_list <- list()
   
@@ -498,7 +499,7 @@ These models generated estimates of the coefficient of gene:exposure association
 
 ```{r test-extract-model}
 
-test_extract_model <- extract_models(test_data_sim)
+test_extract_model <- get_models(test_data_sim)
 
 summary(test_extract_model[[1]])
 
@@ -525,41 +526,41 @@ A series of test plots were used to verify that data were simulated as intended 
 # no pleiotropic effects
 
 # 10% of instruments invalid
-set.seed(1701)
-sim_test_data_inval_0.1 <- simulate_MR_data(n_participants = 1000,
-                                            n_instruments = 25,
-                                            n_datasets = 1,
-                                            prop_invalid = 0.1, 
-                                            rand_error = FALSE,
-                                            causal_effect = FALSE,
-                                            alpha_min = -0.2,
-                                            alpha_max = 0.2)
+#set.seed(1701)
+sim_test_data_inval_0.1 <- get_simulated_MR_data(n_participants = 1000,
+                                                 n_instruments = 25,
+                                                 n_datasets = 1,
+                                                 prop_invalid = 0.1, 
+                                                 rand_error = FALSE,
+                                                 causal_effect = FALSE,
+                                                 alpha_min = -0.2,
+                                                 alpha_max = 0.2)
 
 # 30% of instruments invalid
-set.seed(1701)
-sim_test_data_inval_0.3 <- simulate_MR_data(n_participants = 1000,
-                                            n_instruments = 25,
-                                            n_datasets = 1,
-                                            prop_invalid = 0.3, 
-                                            rand_error = FALSE,
-                                            causal_effect = FALSE,
-                                            alpha_max = 0.2)
+#set.seed(1701)
+sim_test_data_inval_0.3 <- get_simulated_MR_data(n_participants = 1000,
+                                                 n_instruments = 25,
+                                                 n_datasets = 1,
+                                                 prop_invalid = 0.3, 
+                                                 rand_error = FALSE,
+                                                 causal_effect = FALSE,
+                                                 alpha_max = 0.2)
 
 # 50% of instruments invalid
-set.seed(1701)
-sim_test_data_inval_0.5 <- simulate_MR_data(n_participants = 1000,
-                                            n_instruments = 25,
-                                            n_datasets = 1,
-                                            prop_invalid = 0.5,
-                                            rand_error = FALSE,
-                                            causal_effect = FALSE,
-                                            alpha_min = -0.2,
-                                            alpha_max = 0.2)
+#set.seed(1701)
+sim_test_data_inval_0.5 <- get_simulated_MR_data(n_participants = 1000,
+                                                 n_instruments = 25,
+                                                 n_datasets = 1,
+                                                 prop_invalid = 0.5,
+                                                 rand_error = FALSE,
+                                                 causal_effect = FALSE,
+                                                 alpha_min = -0.2,
+                                                 alpha_max = 0.2)
 
 
-test_plot_tib_inval_0.1 <- extract_models(sim_test_data_inval_0.1)[[1]]
-test_plot_tib_inval_0.3 <- extract_models(sim_test_data_inval_0.3)[[1]]
-test_plot_tib_inval_0.5 <- extract_models(sim_test_data_inval_0.5)[[1]]
+test_plot_tib_inval_0.1 <- get_models(sim_test_data_inval_0.1)[[1]]
+test_plot_tib_inval_0.3 <- get_models(sim_test_data_inval_0.3)[[1]]
+test_plot_tib_inval_0.5 <- get_models(sim_test_data_inval_0.5)[[1]]
 
 test_plot_inval_0.1 <- test_plot_tib_inval_0.1 %>% 
   select(alpha, coeff_G_Y) %>% 
@@ -571,7 +572,7 @@ test_plot_inval_0.1 <- test_plot_tib_inval_0.1 %>%
   labs(y = "Observed Gene:Outcome Coefficient",
        title = "10% of 25 \nInstruments Invalid",
        caption = ""
-       ) 
+  ) 
 
 test_plot_inval_0.3 <- test_plot_tib_inval_0.3 %>% 
   select(alpha, coeff_G_Y) %>% 
@@ -583,7 +584,7 @@ test_plot_inval_0.3 <- test_plot_tib_inval_0.3 %>%
   labs(y = "Observed Gene:Outcome Coefficient",
        title = "30% of 25 \nInstruments Invalid",
        caption = ""
-       ) +
+  ) +
   theme(axis.title.y = element_blank())
 
 test_plot_inval_0.5 <- test_plot_tib_inval_0.5 %>% 
@@ -615,18 +616,18 @@ Similarly, with random error terms set to 0 (`rand_error = FALSE`) and no causal
 # Check observed gene:exposure coefficients for each instrument
 # (coeff_G_X) approximate true values (gamma) when a causal effect 
 # is present & a large number of participants are included 
-set.seed(1701)
-sim_test_data_gamma_1 <- simulate_MR_data(n_participants = 100,
-                                          n_instruments = 25,
-                                          n_datasets = 1,
-                                          prop_invalid = 0.1,
-                                          causal_effect = FALSE,
-                                          rand_error = FALSE,
-                                          balanced_pleio = TRUE,
-                                          InSIDE_satisfied = TRUE)
+#set.seed(1701)
+sim_test_data_gamma_1 <- get_simulated_MR_data(n_participants = 100,
+                                               n_instruments = 25,
+                                               n_datasets = 1,
+                                               prop_invalid = 0.1,
+                                               causal_effect = FALSE,
+                                               rand_error = FALSE,
+                                               balanced_pleio = TRUE,
+                                               InSIDE_satisfied = TRUE)
 
 
-test_plot_tib_gamma_1 <- extract_models(sim_test_data_gamma_1)[[1]] 
+test_plot_tib_gamma_1 <- get_models(sim_test_data_gamma_1)[[1]] 
 
 test_plot_tib_gamma_1 %>% 
   select(gamma, coeff_G_X) %>% 
@@ -698,31 +699,31 @@ With random error terms set to 0 (`rand_error = FALSE`) and no causal effect pre
 ```{r test-plot-causal, echo=FALSE}
 
 # No causal effect present
-set.seed(1701)
-sim_test_data_causal_0 <- simulate_MR_data(n_participants = 10000,
-                                           n_instruments = 100,
-                                           n_datasets = 1,
-                                           prop_invalid = 0,
-                                           causal_effect = FALSE,
-                                           rand_error = FALSE)
+#set.seed(1701)
+sim_test_data_causal_0 <- get_simulated_MR_data(n_participants = 10000,
+                                                n_instruments = 100,
+                                                n_datasets = 1,
+                                                prop_invalid = 0,
+                                                causal_effect = FALSE,
+                                                rand_error = FALSE)
 
-test_plot_tib_causal_0 <- extract_models(sim_test_data_causal_0)[[1]]
+test_plot_tib_causal_0 <- get_models(sim_test_data_causal_0)[[1]]
 
 test_plot_causal_0 <- plot_GY_GX(test_plot_tib_causal_0, 
                                  plot_title = "No Causal Effect")
 
 # Causal effect present
-set.seed(1701)
-sim_test_data_causal_1 <- simulate_MR_data(n_participants = 10000,
-                                           n_instruments = 100,
-                                           n_datasets = 1,
-                                           prop_invalid = 0, 
-                                           beta_val = 0.1,
-                                           causal_effect = TRUE,
-                                           rand_error = FALSE,
-                                           two_sample = FALSE)
+#set.seed(1701)
+sim_test_data_causal_1 <- get_simulated_MR_data(n_participants = 10000,
+                                                n_instruments = 100,
+                                                n_datasets = 1,
+                                                prop_invalid = 0, 
+                                                beta_val = 0.1,
+                                                causal_effect = TRUE,
+                                                rand_error = FALSE,
+                                                two_sample = FALSE)
 
-test_plot_tib_causal_1 <- extract_models(sim_test_data_causal_1)[[1]]
+test_plot_tib_causal_1 <- get_models(sim_test_data_causal_1)[[1]]
 
 test_plot_causal_1 <- plot_GY_GX(test_plot_tib_causal_1, 
                                  plot_title = "Causal Effect Present")+
@@ -746,31 +747,31 @@ plot_grid(test_plot_causal_0,
 
 
 # Causal effect not present
-set.seed(1701)
-sim_test_data_causal_0_errors <- simulate_MR_data(n_participants = 10000,
-                                                  n_instruments = 100,
-                                                  n_datasets = 1,
-                                                  prop_invalid = 0,
-                                                  causal_effect = FALSE,
-                                                  rand_error = TRUE,
-                                                  two_sample = FALSE)
+#set.seed(1701)
+sim_test_data_causal_0_errors <- get_simulated_MR_data(n_participants = 10000,
+                                                       n_instruments = 100,
+                                                       n_datasets = 1,
+                                                       prop_invalid = 0,
+                                                       causal_effect = FALSE,
+                                                       rand_error = TRUE,
+                                                       two_sample = FALSE)
 
-test_plot_tib_causal_0_errors <- extract_models(sim_test_data_causal_0_errors)[[1]]
+test_plot_tib_causal_0_errors <- get_models(sim_test_data_causal_0_errors)[[1]]
 
 test_plot_causal_0_errors <- plot_GY_GX(test_plot_tib_causal_0_errors, 
                                         plot_title = "No Causal Effect")
 
 # Causal effect present
-set.seed(1701)
-sim_test_data_causal_1_errors <- simulate_MR_data(n_participants = 10000,
-                                                  n_instruments = 100,
-                                                  n_datasets = 1,
-                                                  prop_invalid = 0,
-                                                  causal_effect = TRUE,
-                                                  rand_error = TRUE,
-                                                  two_sample = FALSE)
+#set.seed(1701)
+sim_test_data_causal_1_errors <- get_simulated_MR_data(n_participants = 10000,
+                                                       n_instruments = 100,
+                                                       n_datasets = 1,
+                                                       prop_invalid = 0,
+                                                       causal_effect = TRUE,
+                                                       rand_error = TRUE,
+                                                       two_sample = FALSE)
 
-test_plot_tib_causal_1_errors <- extract_models(sim_test_data_causal_1_errors)[[1]]
+test_plot_tib_causal_1_errors <- get_models(sim_test_data_causal_1_errors)[[1]]
 
 test_plot_causal_1_errors <-  plot_GY_GX(test_plot_tib_causal_1_errors, 
                                          plot_title = "Causal Effect Present") +
@@ -790,31 +791,31 @@ plot_grid(test_plot_causal_0_errors,
 
 
 # Causal effect not present
-set.seed(1701)
-sim_test_data_causal_0_2SMR <- simulate_MR_data(n_participants = 10000,
-                                                n_instruments = 100,
-                                                n_datasets = 1,
-                                                prop_invalid = 0,
-                                                causal_effect = FALSE,
-                                                rand_error = FALSE,
-                                                two_sample = TRUE)
+#set.seed(1701)
+sim_test_data_causal_0_2SMR <- get_simulated_MR_data(n_participants = 10000,
+                                                     n_instruments = 100,
+                                                     n_datasets = 1,
+                                                     prop_invalid = 0,
+                                                     causal_effect = FALSE,
+                                                     rand_error = FALSE,
+                                                     two_sample = TRUE)
 
-test_plot_tib_causal_0_2SMR <- extract_models(sim_test_data_causal_0_2SMR)[[1]]
+test_plot_tib_causal_0_2SMR <- get_models(sim_test_data_causal_0_2SMR)[[1]]
 
 test_plot_causal_0_2SMR <- plot_GY_GX(test_plot_tib_causal_0_2SMR, 
                                       plot_title = "No Causal Effect")
 
 # Causal effect present
-set.seed(1701)
-sim_test_data_causal_1_2SMR <- simulate_MR_data(n_participants = 10000,
-                                                n_instruments = 100,
-                                                n_datasets = 1,
-                                                prop_invalid = 0,
-                                                causal_effect = TRUE,
-                                                rand_error = FALSE,
-                                                two_sample = TRUE)
+#set.seed(1701)
+sim_test_data_causal_1_2SMR <- get_simulated_MR_data(n_participants = 10000,
+                                                     n_instruments = 100,
+                                                     n_datasets = 1,
+                                                     prop_invalid = 0,
+                                                     causal_effect = TRUE,
+                                                     rand_error = FALSE,
+                                                     two_sample = TRUE)
 
-test_plot_tib_causal_1_2SMR <- extract_models(sim_test_data_causal_1_2SMR)[[1]]
+test_plot_tib_causal_1_2SMR <- get_models(sim_test_data_causal_1_2SMR)[[1]]
 
 test_plot_causal_1_2SMR <- plot_GY_GX(test_plot_tib_causal_1_2SMR, 
                                       plot_title = "Causal Effect Present") +
@@ -836,31 +837,31 @@ plot_grid(test_plot_causal_0_2SMR,
 
 
 # Causal effect not present
-set.seed(1701)
-sim_test_data_causal_0_inval <- simulate_MR_data(n_participants = 10000,
-                                                 n_instruments = 100,
-                                                 n_datasets = 1,
-                                                 prop_invalid = 0.1,
-                                                 causal_effect = FALSE,
-                                                 rand_error = FALSE,
-                                                 two_sample = FALSE)
+#set.seed(1701)
+sim_test_data_causal_0_inval <- get_simulated_MR_data(n_participants = 10000,
+                                                      n_instruments = 100,
+                                                      n_datasets = 1,
+                                                      prop_invalid = 0.1,
+                                                      causal_effect = FALSE,
+                                                      rand_error = FALSE,
+                                                      two_sample = FALSE)
 
-test_plot_tib_causal_0_inval <- extract_models(sim_test_data_causal_0_inval)[[1]]
+test_plot_tib_causal_0_inval <- get_models(sim_test_data_causal_0_inval)[[1]]
 
 test_plot_causal_0_inval <- plot_GY_GX(test_plot_tib_causal_0_inval, 
                                        plot_title = "No Causal Effect")
 
 # Causal effect present
-set.seed(1701)
-sim_test_data_causal_1_inval <- simulate_MR_data(n_participants = 10000,
-                                                 n_instruments = 100,
-                                                 n_datasets = 1,
-                                                 prop_invalid = 0.1,
-                                                 causal_effect = TRUE,
-                                                 rand_error = FALSE,
-                                                 two_sample = FALSE)
+#set.seed(1701)
+sim_test_data_causal_1_inval <- get_simulated_MR_data(n_participants = 10000,
+                                                      n_instruments = 100,
+                                                      n_datasets = 1,
+                                                      prop_invalid = 0.1,
+                                                      causal_effect = TRUE,
+                                                      rand_error = FALSE,
+                                                      two_sample = FALSE)
 
-test_plot_tib_causal_1_inval <- extract_models(sim_test_data_causal_1_inval)[[1]]
+test_plot_tib_causal_1_inval <- get_models(sim_test_data_causal_1_inval)[[1]]
 
 test_plot_causal_1_inval <- plot_GY_GX(test_plot_tib_causal_1_inval, 
                                        plot_title = "Causal Effect Present") +
@@ -882,33 +883,33 @@ plot_grid(test_plot_causal_0_inval,
 
 
 # Causal effect not present
-set.seed(1701)
-sim_test_data_causal_0_unbal <- simulate_MR_data(n_participants = 10000,
-                                                 n_instruments = 100,
-                                                 n_datasets = 1,
-                                                 prop_invalid = 0.2,
-                                                 causal_effect = FALSE,
-                                                 rand_error = FALSE, 
-                                                 balanced_pleio = FALSE,
-                                                 two_sample = FALSE)
+#set.seed(1701)
+sim_test_data_causal_0_unbal <- get_simulated_MR_data(n_participants = 10000,
+                                                      n_instruments = 100,
+                                                      n_datasets = 1,
+                                                      prop_invalid = 0.2,
+                                                      causal_effect = FALSE,
+                                                      rand_error = FALSE, 
+                                                      balanced_pleio = FALSE,
+                                                      two_sample = FALSE)
 
-test_plot_tib_causal_0_unbal <- extract_models(sim_test_data_causal_0_unbal)[[1]]
+test_plot_tib_causal_0_unbal <- get_models(sim_test_data_causal_0_unbal)[[1]]
 
 test_plot_causal_0_unbal <- plot_GY_GX(test_plot_tib_causal_0_unbal, 
                                        plot_title = "No Causal Effect")
 
 # Causal effect present
-set.seed(1701)
-sim_test_data_causal_1_unbal <- simulate_MR_data(n_participants = 10000,
-                                                 n_instruments = 100,
-                                                 n_datasets = 1,
-                                                 prop_invalid = 0.2,
-                                                 causal_effect = TRUE,
-                                                 rand_error = FALSE,
-                                                 balanced_pleio = FALSE,
-                                                 two_sample = FALSE)
+#set.seed(1701)
+sim_test_data_causal_1_unbal <- get_simulated_MR_data(n_participants = 10000,
+                                                      n_instruments = 100,
+                                                      n_datasets = 1,
+                                                      prop_invalid = 0.2,
+                                                      causal_effect = TRUE,
+                                                      rand_error = FALSE,
+                                                      balanced_pleio = FALSE,
+                                                      two_sample = FALSE)
 
-test_plot_tib_causal_1_unbal <- extract_models(sim_test_data_causal_1_unbal)[[1]]
+test_plot_tib_causal_1_unbal <- get_models(sim_test_data_causal_1_unbal)[[1]]
 
 test_plot_causal_1_unbal <- plot_GY_GX(test_plot_tib_causal_1_unbal, 
                                        plot_title = "Causal Effect Present") +
@@ -928,10 +929,10 @@ plot_grid(test_plot_causal_0_unbal,
 #### InSIDE Assumption and Phi
 \leavevmode\newline The variable phi represents additional pleiotropic effects of each invalid instrument when the InSIDE assumption (INstrument Strength Independent of Direct Effect) is not satisfied. The InSIDE assumption states that the gene:exposure association is not correlated with the pleiotropic path gene:outcome path of any invalid genetic instruments. This assumption can be violated if e.g.:
 
- - several invalid genetic instruments influence the outcome via the same pleiotropic path
- 
- - several invalid genetic instruments are related to the same (unmeasured) confounders of the exposure:outcome relationship, aka correlated pleiotropy. 
- 
+- several invalid genetic instruments influence the outcome via the same pleiotropic path
+
+- several invalid genetic instruments are related to the same (unmeasured) confounders of the exposure:outcome relationship, aka correlated pleiotropy. 
+
 As such, when the InSIDE assumption is violated, even "strong" instruments (i.e. those with a strong gene:exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are balanced, InSIDE assumption violation may lead to greater imprecision in causal effect estimation; if pleiotropic effects are directional, InSIDE assumption violation may lead to bias.
 
 Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and InSIDE assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene:outcome coefficients with random error terms set to zero:
@@ -943,46 +944,46 @@ Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of
 # estimation of pleiotropic effects
 # N.B. cluster around alpha = 0 represents valid instruments with
 # no pleiotropic effects
-set.seed(1701)
-sim_test_data_phi_0 <- simulate_MR_data(n_participants = 100000,
-                                        n_instruments = 100,
-                                        n_datasets = 1,
-                                        prop_invalid = 0.3,
-                                        causal_effect = FALSE,
-                                        rand_error = FALSE, 
-                                        balanced_pleio = FALSE,
-                                        InSIDE_satisfied = TRUE)
+#set.seed(1701)
+sim_test_data_phi_0 <- get_simulated_MR_data(n_participants = 100000,
+                                             n_instruments = 100,
+                                             n_datasets = 1,
+                                             prop_invalid = 0.3,
+                                             causal_effect = FALSE,
+                                             rand_error = FALSE, 
+                                             balanced_pleio = FALSE,
+                                             InSIDE_satisfied = TRUE)
 
 
-set.seed(1701)
-sim_test_data_phi_1 <- simulate_MR_data(n_participants = 100000,
-                                        n_instruments = 100,
-                                        n_datasets = 1,
-                                        prop_invalid = 0.3,
-                                        causal_effect = FALSE,
-                                        rand_error = FALSE, 
-                                        balanced_pleio = FALSE,
-                                        InSIDE_satisfied = FALSE)
+#set.seed(1701)
+sim_test_data_phi_1 <- get_simulated_MR_data(n_participants = 100000,
+                                             n_instruments = 100,
+                                             n_datasets = 1,
+                                             prop_invalid = 0.3,
+                                             causal_effect = FALSE,
+                                             rand_error = FALSE, 
+                                             balanced_pleio = FALSE,
+                                             InSIDE_satisfied = FALSE)
 
 
 
-test_plot_tib_phi_0 <- extract_models(sim_test_data_phi_0)[[1]]
-test_plot_tib_phi_1 <- extract_models(sim_test_data_phi_1)[[1]]
+test_plot_tib_phi_0 <- get_models(sim_test_data_phi_0)[[1]]
+test_plot_tib_phi_1 <- get_models(sim_test_data_phi_1)[[1]]
 
 test_plot_phi_0 <- test_plot_tib_phi_0 %>%
   plot_template() +
-    aes(x = alpha, y = coeff_G_Y) +
-    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
-labs(title = "InSIDE Not Violated",
-         y = "Gene:Outcome Coefficient")
+  aes(x = alpha, y = coeff_G_Y) +
+  geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+  labs(title = "InSIDE Not Violated",
+       y = "Gene:Outcome Coefficient")
 
 
 test_plot_phi_1 <- test_plot_tib_phi_1 %>%
   plot_template() +
-    aes(x = alpha, y = coeff_G_Y) +
-    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
-labs(title = "InSIDE Violated",
-         y = "Gene:Outcome Coefficient") +
+  aes(x = alpha, y = coeff_G_Y) +
+  geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+  labs(title = "InSIDE Violated",
+       y = "Gene:Outcome Coefficient") +
   theme(axis.title.y = element_blank())
 
 
@@ -1005,46 +1006,46 @@ Setting `InSIDE_satisfied = TRUE` should mean `phi = 0`; `InSIDE_satisfied=FALSE
 # estimation of pleiotropic effects
 # N.B. cluster around alpha = 0 represents valid instruments with
 # no pleiotropic effects
-set.seed(1701)
-sim_test_data_phi_0 <- simulate_MR_data(n_participants = 100000,
-                                        n_instruments = 100,
-                                        n_datasets = 1,
-                                        prop_invalid = 0.3,
-                                        causal_effect = FALSE,
-                                        rand_error = FALSE, 
-                                        balanced_pleio = FALSE,
-                                        InSIDE_satisfied = TRUE)
+#set.seed(1701)
+sim_test_data_phi_0 <- get_simulated_MR_data(n_participants = 100000,
+                                             n_instruments = 100,
+                                             n_datasets = 1,
+                                             prop_invalid = 0.3,
+                                             causal_effect = FALSE,
+                                             rand_error = FALSE, 
+                                             balanced_pleio = FALSE,
+                                             InSIDE_satisfied = TRUE)
 
 
-set.seed(1701)
-sim_test_data_phi_1 <- simulate_MR_data(n_participants = 100000,
-                                        n_instruments = 100,
-                                        n_datasets = 1,
-                                        prop_invalid = 0.3,
-                                        causal_effect = FALSE,
-                                        rand_error = FALSE, 
-                                        balanced_pleio = FALSE,
-                                        InSIDE_satisfied = FALSE)
+#set.seed(1701)
+sim_test_data_phi_1 <- get_simulated_MR_data(n_participants = 100000,
+                                             n_instruments = 100,
+                                             n_datasets = 1,
+                                             prop_invalid = 0.3,
+                                             causal_effect = FALSE,
+                                             rand_error = FALSE, 
+                                             balanced_pleio = FALSE,
+                                             InSIDE_satisfied = FALSE)
 
 
 
-test_plot_tib_phi_0 <- extract_models(sim_test_data_phi_0)[[1]]
-test_plot_tib_phi_1 <- extract_models(sim_test_data_phi_1)[[1]]
+test_plot_tib_phi_0 <- get_models(sim_test_data_phi_0)[[1]]
+test_plot_tib_phi_1 <- get_models(sim_test_data_phi_1)[[1]]
 
 test_plot_phi_0 <- test_plot_tib_phi_0 %>%
   plot_template() +
-    aes(x = phi, y = coeff_G_Y) +
-    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
-labs(title = "InSIDE Not Violated",
-         y = "Gene:Outcome Coefficient")
+  aes(x = phi, y = coeff_G_Y) +
+  geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+  labs(title = "InSIDE Not Violated",
+       y = "Gene:Outcome Coefficient")
 
 
 test_plot_phi_1 <- test_plot_tib_phi_1 %>%
   plot_template() +
-    aes(x = phi, y = coeff_G_Y) +
-    geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
-labs(title = "InSIDE Violated",
-         y = "Gene:Outcome Coefficient") +
+  aes(x = phi, y = coeff_G_Y) +
+  geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
+  labs(title = "InSIDE Violated",
+       y = "Gene:Outcome Coefficient") +
   theme(axis.title.y = element_blank())
 
 
@@ -1058,7 +1059,7 @@ plot_grid(test_plot_phi_0,
 \newpage
 ### Summary Table
 
-Finally, a function (`get_summary_MR_tib_row`) was written to take models generated from each simulated dataset, estimate causal effect using both weighted median and MR-Hevo methodologies, then output a summary formatted as per Tables 2 & 3 in Bowden et al [@bowden_consistent_2016]:
+A function (`get_summary_MR_tib_row`) was written to take models generated from each simulated dataset, estimate causal effect using both weighted median and MR-Hevo methodologies, then output a summary formatted as per Tables 2 & 3 in Bowden et al [@bowden_consistent_2016]:
 
 
 
@@ -1159,7 +1160,7 @@ get_summary_MR_tib_row <- function(model_list){
                                       se_exp = coeff_G_X_SE_vect,
                                       se_out = coeff_G_Y_SE_vect,
                                       parameters = list(nboot = 1000))
-
+    
     # Results from MR-Hevo method
     Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
                                      se.alpha_hat = coeff_G_X_SE_vect,
@@ -1244,7 +1245,6 @@ get_summary_MR_tib_row <- function(model_list){
 ```{r test-source-fns, echo=FALSE}
 
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
 ```
 
@@ -1256,25 +1256,49 @@ source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 ```{r test-summary-MR-tib-row-fn}
 
 
-set.seed(14101583)
-test_tib_summ_MR_data <-  simulate_MR_data(n_participants = 10000,
-                                           n_instruments = 25,
-                                           n_datasets = 2,
-                                           prop_invalid = 0.1,
-                                           beta_val = 0.1,
-                                           causal_effect = TRUE,
-                                           rand_error = TRUE,
-                                           two_sample = TRUE,
-                                           balanced_pleio = TRUE,
-                                           InSIDE_satisfied = TRUE)
+#set.seed(14101583)
+test_tib_summ_MR_data <-  get_simulated_MR_data(n_participants = 10000,
+                                                n_instruments = 25,
+                                                n_datasets = 2,
+                                                prop_invalid = 0.1,
+                                                beta_val = 0.1,
+                                                causal_effect = TRUE,
+                                                rand_error = TRUE,
+                                                two_sample = TRUE,
+                                                balanced_pleio = TRUE,
+                                                InSIDE_satisfied = TRUE)
 
-test_tib_summ_MR_models <- extract_models(test_tib_summ_MR_data)
+test_tib_summ_MR_models <- get_models(test_tib_summ_MR_data)
 
 test_tib_summ_MR_row <- get_summary_MR_tib_row(test_tib_summ_MR_models)
 
 test_tib_summ_MR_row
 
 ```
+```{r test-summary-MR-tib-row-fn-2, include=FALSE}
+
+
+#set.seed(14101583)
+test_tib_summ_MR_data_2 <-  get_simulated_MR_data(n_participants = 10000,
+                                                  n_instruments = 25,
+                                                  n_datasets = 2,
+                                                  prop_invalid = 0.2,
+                                                  beta_val = 0.1,
+                                                  causal_effect = TRUE,
+                                                  rand_error = TRUE,
+                                                  two_sample = TRUE,
+                                                  balanced_pleio = TRUE,
+                                                  InSIDE_satisfied = TRUE)
+
+test_tib_summ_MR_models_2 <- get_models(test_tib_summ_MR_data_2)
+
+test_tib_summ_MR_row_2 <- get_summary_MR_tib_row(test_tib_summ_MR_models_2)
+
+test_tib_summ_MR_row_2
+
+```
+
+
 
 ```{r summary-extra-test, include=FALSE}
 
@@ -1291,7 +1315,7 @@ test_tib_summ_MR_row
 # 
 # # Causal effect present
 # set.seed(14101583)
-# sim_test_data_causal_2 <- simulate_MR_data(n_participants = 100000,
+# sim_test_data_causal_2 <- get_simulated_MR_data(n_participants = 100000,
 #                                            n_instruments = 25,
 #                                            n_datasets = 1,
 #                                            prop_invalid = 0.3,
@@ -1312,7 +1336,7 @@ test_tib_summ_MR_row
 # 
 # #sim_test_data_causal_2
 # 
-# test_plot_tib_causal_2 <- extract_models(sim_test_data_causal_2)[[1]]
+# test_plot_tib_causal_2 <- get_models(sim_test_data_causal_2)[[1]]
 # 
 # plot_GY_GX(test_plot_tib_causal_2, plot_title = "Causal Effect Present", x_max = 0.3, y_max = 0.3)
 # 
@@ -1323,7 +1347,97 @@ test_tib_summ_MR_row
 
 ```
 
+### Programmatic Creation of Datasets
 
+The above functions were then used, first to generate 1000 datasets for each scenario:
+
+```{r create-MR-dataset-script, echo=FALSE}
+
+# Load packages
+library(tidyverse)
+library(here)
+
+
+# Load function scripts
+source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+
+# Set inputs
+
+MR_dataset_inputs <- list(n_datasets = 1,
+                            prop_invalid = list("zero" = 0,
+                                                "point1" = 0.1,
+                                                "point2" = 0.2,
+                                                "point3" = 0.3),
+                            n_participants = list("10k" = 10, 
+                                                  "20k" = 20),
+                            n_instruments =  25,
+                            
+                            causal_effect = list("causal" = TRUE,
+                                                 "no_causal" = FALSE),
+                            
+                            balanced_pleio = list("scen1" = TRUE,
+                                                  "scen2" = FALSE,
+                                                  "scen3" = FALSE),
+                            
+                            InSIDE_satisfied = list("scen1" = TRUE,
+                                                    "scen2" = TRUE,
+                                                    "scen3" = FALSE)
+                            )
+
+MR_dataset_name <- function(input){
+  
+  pmap(input, paste0)
+}
+
+
+# 
+# foo <- pmap(MR_dataset_inputs, get_simulated_MR_data)
+# 
+# 
+# 
+# 
+
+
+#here("MSc_Thesis_Split", "Data", "Simulated_Datasets")
+
+foo <- pmap(list(1, n_instruments, n_datasets), get_simulated_MR_data)
+
+str(foo)
+
+```
+
+```{r test, include=FALSE}
+# bar <- tibble(n = 100, mean = list("a" = 5, "b" = 10), sd = 0.1)
+# pmap(bar, rnorm)
+# 
+# n_datasets <- 3
+# 
+# n_participants <-  list("10k" = 10, 
+#                         "20k" = 20)
+# 
+# n_instruments <-  25
+# 
+# prop_invalid = list("zero" = 0,
+#                     "point1" = 0.1,
+#                     "point2" = 0.2,
+#                     "point3" = 0.3)
+# 
+# causal_effect = list("causal" = TRUE,
+#                      "no_causal" = FALSE)
+# 
+# balanced_pleio = list("scen1" = TRUE,
+#                       "scen2" = FALSE,
+#                       "scen3" = FALSE)
+# 
+# InSIDE_satisfied = list("scen1" = TRUE,
+#                         "scen2" = TRUE,
+#                         "scen3" = FALSE)
+
+iwalk(mtcars, \(col, value) cat(value, ": ", median(col), "\n", sep = ""))
+
+mtcars
+
+```
 
 
 

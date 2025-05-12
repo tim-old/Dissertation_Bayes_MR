@@ -91,8 +91,8 @@ causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data",
 
 # Citation Search 
 
-Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() %>% mutate(N=1)
-Citations_Instrument_Data_2 <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble()%>% mutate(N=2)
+Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() %>% filter(Instrument !="rs7326482") %>% mutate(N=1)
+Citations_Instrument_Data_2 <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble()%>%filter(Instrument !="rs7326482") %>%  mutate(N=2)
 
 ```
 
@@ -314,7 +314,7 @@ causal_sim_summ_tib_display
 # library(officer)
 # 
 # # Load function scripts
-# source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+ source(here("MSc_Thesis_Split", "Script", "simulation_functions_test.R"))
 # source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 # 
 # 
@@ -331,8 +331,8 @@ Data_List <- bind_rows(Citations_Instrument_Data, Citations_Instrument_Data_2)
 
 reanalysis_tib <- get_reanalysis_tib(Data_List) %>% mutate(citation = "[@bowden_consistent_2016]") #%>% kable()
 
-reanalysis_tib %>% 
-  kable()
+reanalysis_tib #%>% 
+  #kable()
 
 #str(Data_List)
 
