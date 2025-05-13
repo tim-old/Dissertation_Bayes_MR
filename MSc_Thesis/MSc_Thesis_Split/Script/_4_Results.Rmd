@@ -64,7 +64,8 @@ mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
                                        "Script",
                                        "Hevo",
                                        "MRHevo_summarystats.stan"),
-                           model_name="MRHevo.summarystats", verbose=FALSE)
+                           model_name = "MRHevo.summarystats", 
+                           verbose = FALSE)
 
 
 # Load data
