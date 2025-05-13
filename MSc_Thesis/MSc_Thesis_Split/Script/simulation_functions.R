@@ -16,7 +16,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
                                   two_sample = TRUE,      # 1- or 2-sample MR toggle, for testing
                                   beta_val = 0.1,         # size of causal effect
                                   allele_freq_min = 0.4,  # frequency of effect allele 0.01/0.99
-                                  allele_freq_max = 0.6,  #?0.3/0.7
+                                  allele_freq_max = 0.6,  #?0.4/0.6
                                   gamma_min = 0.03,       # size of pleiotropic effects on exposure
                                   gamma_max = 0.1,
                                   alpha_min = -0.2,       # size of pleiotropic effects on outcome
@@ -48,27 +48,13 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   gamma_list <- list()
   alpha_list <- list()
   phi_list <- list()
-  beta_list <- list()
-  #prop_invalid_list <- list()
+
   
   n_participants_list <- list()
   n_instruments_list <- list()
-  n_datasets_list <- list()
   prop_invalid_list <- list()
-  causal_effect_list <- list()
-  balanced_pleio_list <- list()
-  InSIDE_satisfied_list <- list()
-  rand_error_list <- list()
-  two_sample_list <- list()
   beta_val_list <- list()
-  allele_freq_min_list <- list()
-  allele_freq_max_list <- list()
-  gamma_min_list <- list()
-  gamma_max_list <- list()
-  alpha_min_list <- list()
-  alpha_max_list <- list()
-  phi_min_list <- list()
-  phi_max_list <- list()
+
   
   
   # --- Assign features common to all datasets --- #
@@ -100,6 +86,13 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
                       max = gamma_max)
   
   
+  
+  # Set which instruments invalid, 0 = valid, 1 = invalid
+  invalid_instrument_vect <- rbinom(n = n_instruments,
+                                    size = 1, 
+                                    prob = prop_invalid)
+  
+  
   # Probability of effect allele set per dataset  
   # for each instrument, default value set at  
   # random between 0.01-0.99 (i.e. both effect +
@@ -107,16 +100,6 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   allele_freq_vect <- runif(n = n_instruments,
                             min = allele_freq_min,
                             max = allele_freq_max)
-  
-  
-  # Set which instruments invalid, 0 = valid, 1 = invalid
-  invalid_instrument_vect <- rbinom(n = n_instruments,
-                                    size = 1, 
-                                    prob = prop_invalid)
-  
-  # Re-set seed to ensure comparability across scenarios
-  # ?Not needed - to confirm with scenario 3
-  #set.seed(seed)
   
   # Set pleiotropic effects on outcome, Scenarios and 
   # min/max from Bowden et al
@@ -137,10 +120,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
            )
     )
     
-    # Re-set seed to ensure comparability across scenarios
-    # found/confirmed through testing
-    set.seed(seed)
-    
+
     # Assign default phi = 0 unless directional pleiotropy & 
     # InSIDE assumption not satisfied & genetic instrument invalid
     if(balanced_pleio == FALSE & InSIDE_satisfied == FALSE){
@@ -157,6 +137,10 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
     }
   }
   
+  # Re-set seed to ensure consistency across datasets
+  # N.B. above two if/ifelse statements cause de-sync 
+  # of number of randomised functions between valid/invalid
+  set.seed(seed)
   
   # --- Create separate datasets --- #
   
@@ -166,8 +150,27 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   
   for(n in 1:n_datasets){
     
-    #re-set seed to ensure comparability across scenarios
-    #set.seed(seed)
+    # --- Create matrix of genotypes --- #
+
+    # Assign genotypes by sampling from binomial distribution
+    # twice (as two alleles) per participant with probability
+    # equal to frequency of effect allele
+    # Create twice as many genotypes as participants in sample
+    # to simulate 2 sample MR, i.e. first half used to estimate
+    # Gene:Exposure, second half used to estimate Gene:Outcome
+    
+    # Matrix where columns are instruments, rows are participants
+    # Values 0, 1 or 2
+    # 0 = reference, i.e. zero effect alleles, 
+    # 1 = 1 effect allele, 2 = 2 effect alleles 
+    
+    G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
+                           size = 2,
+                           prob = rep(allele_freq_vect, 2 * n_participants)),
+                    nrow = 2 * n_participants,
+                    ncol = n_instruments,
+                    byrow = TRUE)
+    
     
     # Create error terms for U, X + Y per participant,
     # each drawn from standard normal distribution
@@ -185,37 +188,6 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
            Y_epsilon_vect <- rnorm(n = n_participants),
            Y_epsilon_vect <- rep(0, n_participants))
     
-    
-    # --- Create matrix of genotypes --- #
-    
-    # 0 = reference, i.e. zero effect alleles, 
-    # 1 = 1 effect allele, 2 = 2 effect alleles 
-    
-    # *** allele_freq_vect was here ***
-    
-    
-    
-    # Assign genotypes by sampling from binomial distribution
-    # twice (as two alleles) per participant with probability
-    # equal to frequency of effect allele
-    # Create twice as many genotypes as participants in sample
-    # to simulate 2 sample MR, i.e. first half used to estimate
-    # Gene:Exposure, second half used to estimate Gene:Outcome
-    
-    
-    # Matrix where columns are instruments, rows are participants
-    # Values 0, 1 or 2
-    G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
-                           size = 2,
-                           prob = rep(allele_freq_vect, 2 * n_participants)),
-                    nrow = 2 * n_participants,
-                    ncol = n_instruments,
-                    byrow = TRUE)
-    
-    
-    # ***gamma/invalid vectors were here***
-    
-
     
     # --- Combine Gene matrix/parameters to recreate model --- #
     
@@ -450,11 +422,11 @@ get_summary_MR_tib_row <- function(model_list){
                                       parameters = list(nboot = 1000))
     
     # Results from MR-Hevo method
-    #Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
-    #                                 se.alpha_hat = coeff_G_X_SE_vect,
-    #                                 gamma_hat = coeff_G_Y_vect,
-    #                                 se.gamma_hat = coeff_G_Y_SE_vect) %>%
-    #  summary()
+    Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
+                                    se.alpha_hat = coeff_G_X_SE_vect,
+                                    gamma_hat = coeff_G_Y_vect,
+                                    se.gamma_hat = coeff_G_Y_SE_vect) %>%
+     summary()
     
     
     # Extract WME Results
@@ -464,19 +436,19 @@ get_summary_MR_tib_row <- function(model_list){
     results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
     
     # Extract MR-Hevo Results
-    #results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
-    #results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
-    #results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
+    results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
+    results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
+    results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
     
   }
   
   # Add confidence intervals/causality report to MR-Hevo
-  #results_tib <- results_tib %>%
-  #  mutate(
-  #    Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
-  #    Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
-  #    Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0)
-  #  )
+  results_tib <- results_tib %>%
+   mutate(
+     Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
+     Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
+     Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0)
+   )
   
   
   # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
@@ -488,10 +460,10 @@ get_summary_MR_tib_row <- function(model_list){
               R2_stat = mean(R2_stat),
               WME_Av = mean(WME_est),
               WME_SE = mean(WME_se),
-              WME_Pos_Rate = length(WME_pval[WME_pval < 0.05]) / n_datasets#,
-              #Hevo_Av = mean(Hevo_est),
-              #Hevo_SE = mean(Hevo_se),
-              #Hevo_Pos_Rate = sum(Hevo_est_causal_detected) / n_datasets
+              WME_Pos_Rate = length(WME_pval[WME_pval < 0.05]) / n_datasets,
+              Hevo_Av = mean(Hevo_est),
+              Hevo_SE = mean(Hevo_se),
+              Hevo_Pos_Rate = sum(Hevo_est_causal_detected) / n_datasets
     ) %>% 
     mutate(across(where(is.double), round, 3))
   
@@ -520,25 +492,15 @@ get_reanalysis_tib <- function(models_in){
                          WME_est = as.double(),
                          WME_se = as.double(),
                          WME_pval = as.double(),
-                         #WME_OR = as.double(),
-                         #WME_OR_lower_CI = as.double(),
-                         #WME_OR_upper_CI = as.double(),
                          WME_nsnp = as.integer(),
                          Hevo_est = as.double(),
                          Hevo_se = as.double(),
-                         Hevo_sd = as.double()#,
-                         #Hevo_OR = as.double(),
-                         #Hevo_OR_lower_CI = as.double(),
-                         #Hevo_OR_upper_CI = as.double(),
-                         #Hevo_2.5 = as.double(),
-                         #Hevo_97.5 = as.double(),
-                         #Hevo_est_causal_detected = as.logical(),
-                         #Hevo_OR_causal_detected = as.logical()
+                         Hevo_sd = as.double()
   )
   
   # Convert full tibble to list of 1 tibble per dataset
   model_list <- models_in %>% 
-    group_by(N) %>%
+    group_by(Study_DOI) %>%
     group_split()
   
   
@@ -597,11 +559,7 @@ get_reanalysis_tib <- function(models_in){
   }
   
   results_tib <- results_tib %>%
-    #mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
-    mutate(#WME_est_lower_CI = (WME_est - (1.96 * WME_se)),
-           #WME_est_upper_CI = (WME_est + (1.96 * WME_se)),
-           #WME_est_causal_detected = (WME_est_lower_CI > 0  | WME_est_upper_CI < 0),
-           WME_OR = exp(WME_est),
+    mutate(WME_OR = exp(WME_est),
            WME_OR_lower_CI = exp(WME_est_lower_CI),
            WME_OR_upper_CI = exp(WME_est_upper_CI),
            #WME_OR_causal_detected = (WME_OR_lower_CI > 1  | WME_OR_upper_CI < 1),
