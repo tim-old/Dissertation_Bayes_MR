@@ -6,10 +6,9 @@ library(here)
 
 # Load function scripts
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
 # Set number of datasets used
-n <- 1000
+n <- 3
 
 # Load data
 causal_10k_point0_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point0_scen1_models.rds"))
