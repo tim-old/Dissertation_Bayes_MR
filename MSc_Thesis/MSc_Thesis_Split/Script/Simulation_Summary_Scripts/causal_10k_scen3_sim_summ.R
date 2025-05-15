@@ -35,6 +35,7 @@ causal_10k_scen3_sim_summ_tib <- bind_rows(causal_10k_point0_scen3,
                                            causal_10k_point2_scen3,
                                            causal_10k_point3_scen3)
 
+
 # Save
 saveRDS(causal_10k_scen3_sim_summ_tib, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen3_sim_summ_tib.rds"))
 
