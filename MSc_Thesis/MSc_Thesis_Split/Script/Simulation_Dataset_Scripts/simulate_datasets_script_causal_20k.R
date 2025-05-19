@@ -8,7 +8,7 @@ library(here)
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 
 # Set min datasets
-n_datasets <- 20
+n_datasets <- 1000
 
 ### ---------------------- Positive Causal Effect -------------------------- ###
 
