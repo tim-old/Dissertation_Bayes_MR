@@ -21,6 +21,8 @@ csl: vancouver-superscript.csl
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+library(ggdag)
 ```
 
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_2_Intro_Background.Rmd"))`
@@ -34,7 +36,7 @@ However, correlation does not by itself prove causation. A key challenge in epid
 
 Mendelian randomisation (MR) is a methodology intended to support causal inference from observational data. It applies the principles of instrumental variable (IV) analysis to genetic data, in essence performing a type of natural experiment often likened to a randomised-controlled trial (RCT) [@hernan_instruments_2006]. 
 
-In a properly conducted RCT, causality can be inferred due to a randomisation process being used as an "instrument" to allocate different levels of exposures to different experimental groups. If groups are randomly allocated, any confounding variables which might otherwise influence exposure:outcome relationships should be evenly distributed between groups, whether these confounders are known or not. As such, there should be no systematic differences between individuals from different groups is the exposure of interest - that is, there should be no bias [@stel_instrumental_2012]. Statistical methods can quantify the probability that any observed outcome differences could have occurred by chance, and thereafter any outcome differences can be interpreted as caused by exposure differences. As allocation and receipt of exposures is known to precede outcome measurements, reverse causality is impossible.
+In a properly conducted RCT, causality can be inferred due to a randomisation process being used as an "instrument" to allocate different levels of exposures to different experimental groups. If groups are randomly allocated, any confounding variables which might otherwise influence exposure:outcome relationships should be evenly distributed between groups, whether these confounders are known or not. As such, there should be no systematic differences between individuals from different groups in the exposure of interest - that is, there should be no bias [@stel_instrumental_2012]. Statistical methods can quantify the probability that any observed outcome differences could have occurred by chance, and thereafter any outcome differences can be interpreted as caused by exposure differences. As allocation and receipt of exposures is known to precede outcome measurements, reverse causality is impossible.
 
 In MR, naturally occurring genetic variants - “genetic instruments” – are chosen based on their known association to an exposure of interest. In theory, provided that the assumptions of IV analysis are met, random assignment of genetic variants from parents to offspring during meiosis can create a form of natural randomisation analagous to that performed for an RCT – both measured and unmeasured confounders should be distributed evenly between the groups created, allowing valid causal inference after other sources of bias and random variation are accounted for [@davies_reading_2018].
 
@@ -43,6 +45,11 @@ Three key assumptions of IV analysis must be met [@lousdal_introduction_2018]:
 2.	Independence – the genetic variant is independent of confounders of the relationship between exposure and outcome
 3.	Exclusion restriction – the genetic variant must not be associated with the outcome except via the exposure
 
+
+
+
+
+
 If these assumptions are satisfied, the “causal effect estimate” of the exposure on the outcome can be estimated by comparing measures of gene:exposure association with those of gene:outcome association. At its simplest, the relationship between exposure and outcome can be represented as a linear model:
 
 
@@ -50,11 +57,93 @@ If these assumptions are satisfied, the “causal effect estimate” of the expo
 
 instruments to an outcome of interest, genetic data can be used to investigate causal links between exposures and outcomes [@richmond_mendelian_2022]. by the Wald ratio, i.e. by dividing the co-efficient of gene-outcome association by the co-efficient of gene-exposure, giving a numerical measure of strength of causal exposure-outcome association [@burgess_robust_2020].
  
-Figure X. Taken from Burgess et al 2016 (DAG) [@burgess_sensitivity_2016]
-```{r DAG, include=FALSE}
+Figure (\#fig:DAG-assumptions-plot). adapted from Burgess et al 2016 (DAG) [@burgess_sensitivity_2016]
+```{r DAG-tib, include=FALSE}
+
+# Set up data for base case MR directed acyclic graph
+MR_DAG_coords <- list(x = c(G = 0, X = 1, Y = 2, U = 1.5),
+                      y = c(G = 0.5, X = 0.5, Y = 0.5, U = 1))
+
+
+base_dag_tib <- dagify(Y ~ X + U,
+                       X ~ G + U,
+                       labels = c("G" = "Genetic Variant",
+                                  "X" = "Exposure",
+                                  "Y" = "Outcome",
+                                  "U" = "Confounders"),
+                       coords = MR_DAG_coords,
+                       exposure = "X",
+                       outcome = "Y") %>% 
+  tidy_dagitty() 
+
+base_dag_tib
+
 
 ```
 
+```{r DAG-base-plot}
+
+base_dag_plot <- base_dag_tib %>% 
+  # ggplot(aes(x = x, 
+  #            y = y,
+  #            xend = xend,
+  #            yend = yend,
+  #            )) +
+  ggdag(node = FALSE) +
+  geom_dag_edges() +
+  geom_dag_text(col = "black",
+                fontface = "italic",
+                size = 10
+                ) +
+  # Label - beta
+  geom_dag_text(x = 1.5, 
+                y = 0.55, 
+                label = "\U03B2", 
+                size = 8,
+                fontface = "italic", 
+                colour = "black")+
+  theme_dag() +
+  scale_adjusted()
+
+base_dag_plot
+
+```
+
+
+```{r DAG-assumptions-plot}
+
+assumption_DAG_coords <- tibble(x = c(IV1 = 0.5, IV2 = 0.5, IV3 = 1),
+                              y = c(IV1 = 0, IV2 = 1, IV3 = 1)
+                              )
+
+assumptions_dag_plot <- base_dag_plot +
+  # Line - Direct effects/pleiotropy/alpha, IV assumption 3
+  geom_dag_edges_arc(aes(x = 0,
+                         xend = 2,
+                         y = 0.5,
+                         yend = 0.5,
+                         edge_linetype = "dashed"),
+                     curvature = -0.3,
+                     arrow = grid::arrow(length = grid::unit(7, "pt"), type = "closed")) +
+  # Label - alpha
+  geom_dag_text(x = 1, 
+                y = 0.1, 
+                label = "\U03B1", 
+                size = 8,
+                fontface = "italic", 
+                colour = "black") +
+  # Line - Direct effects on confounder/pleiotropy, IV assumption 2
+  geom_dag_edges_arc(aes(x = 0,
+                         xend = 1.5,
+                         y = 0.5,
+                         yend = 1,
+                         edge_linetype = "dashed"),
+                     curvature = 0.3,
+                     arrow = grid::arrow(length = grid::unit(7, "pt"), type = "closed")) 
+
+assumptions_dag_plot
+
+```
 
 
 In practice, only the relevance assumption can be directly tested and proven, as independence and exclusion restriction depend on all possible confounders of the exposure-outcome association, both measured and unmeasured[@ ***REF***]. Threats to the independence assumption will vary depending on the population, exposure and outcome being studied[@ ***REF***]. Exclusion restriction is a particularly universal issue in MR, due to so-called (horizontal) genetic pleiotropy, where a single genetic variant may have multiple “pleiotropic” effects – i.e. it may influence several traits simultaneously. Such pleiotropic effects may be unknown and open unmeasured causal pathways between a genetic instrument and the outcome, separate to the path involving the exposure of interest, thus potentially biasing MR estimates of the association between exposure and outcome [@hemani_evaluating_2018].
