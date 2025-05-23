@@ -38,6 +38,7 @@ library(rstan)
 library(here)
 library(cowplot)
 library(kableExtra)
+library(acronymsdown)
 
 # Load University of Edinburgh colour palette
 source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))

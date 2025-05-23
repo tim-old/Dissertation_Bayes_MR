@@ -1,37 +1,4 @@
----
-title: "2. Introduction and Background"
-output:
-  bookdown::pdf_document2:
-    latex_engine: xelatex
-    dev: cairo_pdf
-    fig_caption: TRUE
-    number_sections: FALSE
-    global_numbering: FALSE
-    pandoc_args: !expr acronymsdown::add_filter()
-  # pdf_document:
-  #   latex_engine: xelatex
-  #   dev: cairo_pdf
-knit: (function(inputFile, encoding) {
-      rmarkdown::render(inputFile,
-                        encoding = encoding,
-                        knit_root_dir = rprojroot::find_rstudio_root_file(),
-                        output_dir = file.path("../Output")
-                        )})
-bibliography: ../Script/Lit_Rev_Refs_Update.bib
-csl: ../Script/vancouver-superscript.csl
-link-citations: TRUE
-urlcolor: blue  
-
-
-acronyms:
-  keys:
-    - shortname: MR
-      longname: Mendelian randomisation
-    - shortname: WME
-      longname: weighted median estimator
-
-
----
+# Introduction and Background
 
 ```{r setup, include=FALSE}
 
@@ -54,20 +21,15 @@ library(TwoSampleMR)
 library(acronymsdown)
 
 # Load University of Edinburgh colour palette
-source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
+source(here("edin_uni_colours.R"))
 
 # Load pre-formatted plot template - call to ggplot with UoE colours
-source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
+source(here("edin_fig_style.R"))
 
 # Load function scripts
-source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+source(here("simulation_functions.R"))
 
 ```
-
-Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "2_Intro_Background.Rmd"))`
-
-
-# Introduction and Background
 
 ## Introduction to Mendelian Randomisation (MR)
 
@@ -466,3 +428,6 @@ The main aim of this study will be to demonstrate if the WME approach gives over
 <!-- 3. Compare the conclusions drawn from MR-Hevo causal effect estimation versus the weighted median estimator on real-world data -->
 
 
+
+
+\newpage

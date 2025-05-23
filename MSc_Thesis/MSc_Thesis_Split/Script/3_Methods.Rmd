@@ -3,15 +3,22 @@ title: "3. Methods"
 author: "B233241"
 date: "2025-01-07"
 output:
-  pdf_document:
+  bookdown::pdf_document2:
     latex_engine: xelatex
     dev: cairo_pdf
+    fig_caption: TRUE
+    number_sections: FALSE
+    global_numbering: FALSE
 knit: (function(inputFile, encoding) {
       rmarkdown::render(inputFile,
                         encoding = encoding,
                         knit_root_dir = rprojroot::find_rstudio_root_file(),
                         output_dir = file.path("../Output")
                         )})
+bibliography: ../Script/Lit_Rev_Refs_Update.bib
+csl: ../Script/vancouver-superscript.csl
+link-citations: TRUE
+urlcolor: blue  
 ---
 
 ```{r setup, include=FALSE}
@@ -47,9 +54,17 @@ Genotypes were simulated as for a two-sample setting, e.g. where number of parti
 
 ### Analysis of Simulated Data
 
+Each dataset generated was analysed using both WME and MR-Hevo methods, via functions from the `TwoSampleMR` and `mrhevo` packages, respectively[@hemani_mr-base_2018; @mckeigue_inference_2024]. Results were aggregated per group of 1,000 simulated datasets corresponding to a particular combination of scenario and parameter values. This resulted in a situation approximating to a meta-analysis per combination of scenario/parameter values, each including 1,000 simulated MR studies using the same 25 genetic instruments in the same population. Aggregated measures for both WME and MR-Hevo per "meta-analysis" were mean causal effect estimate; mean standard error of the causal effect estimate; and causality report rate, i.e. percentage of simulated studies reported as showing a non-null causal effect, either by p-value <0.05 (WME), or by a 95% credible interval for causal effect estimate not including 0 (MR-Hevo).
 
+Results of the above aggregations were tabulated as per Tables 2 and 3 of Bowden et al[@bowden_consistent_2016] to allow direct comparisons of both methods versus each other and versus the published characteristics of existing MR causal estimation methods.
 
-## Citation Search
+## Re-Analysis of Published Data
+
+To investigate the potential implications of any differences in performance between WME and MR-Hevo methods, a selection of published studies resporting causal effect estimates using the WME method was re-analysed. A sample size of 10 published studies was decided as a pragmatic compromise between the scope of this study and the need to check consistency of any observed differences. In the original Bowden et al simulation studies, the WME causal estimation method was  shown to generate a false-positive report rate of $\ge$ 30% with relatively minor violations of relevant assumptions[@bowden_consistent_2016]; therefore, even this relatively small sample of 10 studies would be expected to demonstrate differences between methods if the MR-Hevo approach is as appropriately conservative as its creators propose.
+
+To estimate the upper bound of the potential impact of MR-Hevo versus existing WME methodology, studies were chosen for re-analysis based on their number of citations in the wider MR literature. Compared to studies with few or no citations, highly-cited studies would be expected to have a larger impact on their respective fields if their conclusions were to change. In addition, highly-cited works will typically have been submitted to more scrutiny than less-cited works - both during peer review for consideration of publication in journals likely to produce highly-cited works, and from the wider scientific community following the widespread dissemination evidenced by a high citation count. As such, it would be expected that highly-cited works are likely to be free of significant methodological flaws which may impede interpretation of any re-analysis.
+
+### Citation Search
 
 The Scopus search platform [@] was used on 15/04/2025 to retrieve all articles citing the original weighted median estimator exposition paper [@bowden_consistent_2016]. The articles returned were sorted by the number of times the article itself have been cited, and the resulting list was saved to RIS format in blocks of ten articles for upload into the Covidence evidence synthesis platform. Abstracts were screened by a single reviewer (B233241), starting with the most cited article and proceeding in descending order of citation count, against the following inclusion and exclusion criteria:
 
@@ -57,13 +72,13 @@ Inclusion criteria:
 
 - Original two-sample MR study
 
-- Able to determine samples’ ancestry, including presence and degree of participant overlap between groups
+- Able to determine samples’ ancestry sufficient to establish presence and degree of participant overlap between groups
 
 - Reporting $\ge$ 20 human genetic instruments relating to exposure
 
 - Reports details of effect/non-effect alleles
 
-- Regression coefficients and standard errors and/or confidence intervals available
+- Regression coefficients and standard errors and/or confidence intervals available for each genetic instrument used
   
 - Uses Weighted Median Estimator
 
@@ -76,9 +91,9 @@ Exclusion criteria:
 
 Where eligibility could not be determined from abstract screening alone, full texts were retrieved and screened against the same criteria. Screening of abstracts and full texts was undertaken in blocks of ten articles, until the target of ten included studies for reanalysis had been reached. 
 
-Where one article reported on multiple exposure:outcome associations, data were only extracted for the association with the highest number of genetic instruments available. Data were extracted from full texts of included studies using a standardised data collection template, which included publication details, citation count, primary study question, degree of participant overlap between groups, number/details of genetic instruments used, effect estimates/standard errors calculated, and conclusion regarding causality as determined by the weighted median estimator method. 
+Where one article reported on multiple exposure-outcome associations, data were only extracted for the association with the highest number of genetic instruments available. Data were extracted from full texts of included studies using a standardised data collection template, which included publication details, citation count, primary study question, degree of participant overlap between groups, number/details of genetic instruments used, effect estimates/standard errors calculated, and conclusion regarding causality as determined by the weighted median estimator method. 
 
 
-(***5417 articles***)
+<!-- (***5417 articles***) -->
 
-Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_3_Methods.Rmd"))`
+Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "3_Methods.Rmd"))`
