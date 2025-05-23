@@ -6,27 +6,37 @@ bibliography: Lit_Rev_Refs.bib
 csl: vancouver-superscript.csl
 link-citations: TRUE
 urlcolor: blue
+acronyms:
+  loa_title: ""
+  include_unused: FALSE
+  insert_loa: FALSE
+  insert_links: TRUE
+  id_prefix: "acronyms_"
+  sorting: "alphabetical"
+  non_existing: "key"
+  style: "long-short"
+  fromfile: ./_acronyms.yml
 ---
 
 \newpage
 
-## Acknowledgements
+## Acknowledgements {-}
 
 I would like to acknowledge
 
 
-## Contributions
+## Contributions {-}
 
 Mine others
 
-## Statement of originality
+## Statement of Originality {-}
 
 I confirm that all work is my own except where indicated, that all sources are clearly referenced....
 
 
-## Word Count
+## Word Count {-}
 
 Word count: 
-922
+3166
 
 \newpage

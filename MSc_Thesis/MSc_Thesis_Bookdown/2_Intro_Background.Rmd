@@ -9,9 +9,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       include = FALSE,
                       cache = TRUE, 
                       dev = "png", 
-                      dpi = 500
-)
-
+                      dpi = 500)
 
 library(ggdag)
 library(here)
@@ -106,12 +104,12 @@ base_dag_plot <- base_dag_tib %>%
   theme_dag() +
   scale_adjusted()
 
-base_dag_plot
+#base_dag_plot
 
 
 ```
 
-```{r DAG-assumptions-plot, include=TRUE}
+```{r DAG-assumptions-plot, include=TRUE, results='asis'}
 #| fig.id="DAG-assumptions-plot",
 #| fig.cap="Causal diagram illustrating the relationships between genetic instrument _G_, exposure _X_, outcome _Y_ and confounders of the exposure-outcome relationship _U_ in Mendelian randomisation studies. Blue text & crosses represent key assumptions to ensure valid inference of causal effect of _X_ on _Y_ using _G_ as an instrumental variable. Red text represents violations of these assumptions that may lead to invalid inference through opening of alternate causal pathways. Greek characters represent the key parameters/association coefficients to be estimated. Adapted from Burgess et al 2016[@burgess_sensitivity_2016]"
 
@@ -235,7 +233,7 @@ assumptions_dag_plot
 ```
 
 
-Typically, MR studies estimate causal effect using a set of several genetic instruments; the causal effect estimate derived from the $jth$ instrument is denoted $\hat{\beta}_j$. Each estimate $\hat{\beta}_j$ acknowledges there will be specific effects on the observed values of exposure and outcome given the presence of that specific genetic variable $G_j$ under study, i.e. $\hat{\beta}_j$ is based on the observed exposure ${X|G_j}$ and outcome ${Y|G_j}$. These observed values of exposure and outcome can be described by their own linear models:
+Typically, MR studies estimate causal effect using a set of several genetic instruments; the causal effect estimate derived from the $jth$ instrument is denoted $\hat{\beta}_j$. Each estimate $\hat{\beta}_j$ acknowledges there will be specific effects on the observed values of exposure and outcome given the presence of that specific genetic variable $G_j$ under study, i.e. $\hat{\beta}_j$ is based on the instrument-conditioned exposure ${X|G_j}$ and outcome ${Y|G_j}$. These observed values of exposure and outcome can be described by their own linear models:
 
 \begin{equation} 
 X|G_j = \gamma_0 + \gamma_j G_j + \epsilon_{X_j}

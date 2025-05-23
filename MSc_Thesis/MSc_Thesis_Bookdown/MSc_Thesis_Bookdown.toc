@@ -1,0 +1,17 @@
+\contentsline {subsection}{Acknowledgements}{2}{section*.2}%
+\contentsline {subsection}{Contributions}{2}{section*.3}%
+\contentsline {subsection}{Statement of Originality}{2}{section*.4}%
+\contentsline {subsection}{Word Count}{2}{section*.5}%
+\contentsline {section}{\numberline {1}Introduction and Background}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introduction to Mendelian Randomisation (MR)}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Causal Effect Estimation in MR}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Violations to Assumptions}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Weighted Median Estimator (WME)}{7}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Issues With WME}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}MR-Hevo}{8}{subsection.1.6}%
+\contentsline {section}{\numberline {2}References}{9}{section.2}%
+\contentsline {section}{\numberline {A}Appendix A: List of Abbreviations}{11}{appendix.A}%
+\contentsline {section}{\numberline {B}Appendix B: Simulation Code}{12}{appendix.B}%
+\contentsline {subsubsection}{\numberline {B.0.1}Generating Data and Models}{12}{subsubsection.B.0.1}%
+\contentsline {subsubsection}{\numberline {B.0.2}Testing Generation of Data and Models}{13}{subsubsection.B.0.2}%
+\contentsline {section}{\numberline {C}Appendix C: Citation Search Strategy}{14}{appendix.C}%

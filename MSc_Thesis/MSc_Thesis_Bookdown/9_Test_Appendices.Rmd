@@ -10,11 +10,20 @@
  
 # Appendix A: List of Abbreviations
  
+\printacronyms
+ 
 \newpage
  
 # Appendix B: Simulation Code
 
 ```{r setup, include=TRUE}
+
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE,
+                      message=FALSE,
+                      error=FALSE,
+                      cache = TRUE, 
+                      tidy = TRUE)
 
 # Load packages
  library(tidyverse)

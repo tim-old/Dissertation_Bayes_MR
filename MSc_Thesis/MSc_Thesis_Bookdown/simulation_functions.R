@@ -338,7 +338,7 @@ get_models <- function(sim){
 
 # Run local copy of MR-Hevo functions
 # Not using full package due to conflicts with Windows
-source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
+source(here("functions.mrhevo.R"))
 
 # Standard set-up for RStan
 options(mc.cores = parallel::detectCores())
@@ -346,10 +346,7 @@ rstan_options(auto_write = TRUE, save_dso = TRUE)
 
 
 # Compile model for MR-Hevo
-mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", 
-                                      "Script", 
-                                      "Hevo", 
-                                      "MRHevo_summarystats.stan"),
+mr.stanmodel <- stan_model(file= here("MRHevo_summarystats.stan"),
                            model_name="MRHevo.summarystats", 
                            verbose=FALSE,
                            save_dso = TRUE,

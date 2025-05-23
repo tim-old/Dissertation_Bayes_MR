@@ -273,7 +273,7 @@ assumptions_dag_plot
 ```
 
 
-Typically, MR studies estimate causal effect using a set of several genetic instruments; the causal effect estimate derived from the $jth$ instrument is denoted $\hat{\beta}_j$. Each estimate $\hat{\beta}_j$ acknowledges there will be specific effects on the observed values of exposure and outcome given the presence of that specific genetic variable $G_j$ under study, i.e. $\hat{\beta}_j$ is based on the observed exposure ${X|G_j}$ and outcome ${Y|G_j}$. These observed values of exposure and outcome can be described by their own linear models:
+Typically, MR studies estimate causal effect using a set of several genetic instruments; the causal effect estimate derived from the $jth$ instrument is denoted $\hat{\beta}_j$. Each estimate $\hat{\beta}_j$ acknowledges there will be specific effects on the observed values of exposure and outcome given the presence of that specific genetic variable $G_j$ under study, i.e. $\hat{\beta}_j$ is based on the instrument-conditioned exposure ${X|G_j}$ and outcome ${Y|G_j}$. These observed values of exposure and outcome can be described by their own linear models:
 
 \begin{equation} 
 X|G_j = \gamma_0 + \gamma_j G_j + \epsilon_{X_j}

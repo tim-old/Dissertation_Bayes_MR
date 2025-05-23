@@ -7,20 +7,12 @@ bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-    dev: cairo_pdf
-    fig_caption: TRUE
-    number_sections: FALSE
-    global_numbering: FALSE
-    pandoc_args: !expr acronymsdown::add_filter()
-  #latex_engine: xelatex
+  dev: cairo_pdf
+  fig_caption: TRUE
+  number_sections: TRUE
+  global_numbering: FALSE
+  pandoc_args: !expr acronymsdown::add_filter()
   citation_package: default
   keep_tex: yes
+#bookdown::epub_book: default
 
-bookdown::epub_book: default
-
-acronyms:
-  keys:
-    - shortname: MR
-      longname: Mendelian randomisation
-    - shortname: WME
-      longname: weighted median estimator

@@ -1,0 +1,10 @@
+---
+acronyms:
+  keys:
+    - shortname: MR
+      longname: Mendelian randomisation
+    - shortname: WME
+      longname: weighted median estimator
+    - shortname: InSIDE
+      longname: Instrument Strength Independent of Direct Effect
+---
