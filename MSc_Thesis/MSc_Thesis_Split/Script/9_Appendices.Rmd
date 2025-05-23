@@ -3,7 +3,7 @@ title: "9. Appendices"
 #author: "B233241"
 #date: "2025-01-07"
 output:
-  pdf_document:
+  bookdown::pdf_document2:
     latex_engine: xelatex
     dev: cairo_pdf
 knit: (function(inputFile, encoding) {
@@ -26,9 +26,9 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning=FALSE, 
                       message=FALSE, 
                       error=FALSE,
-                      cache = TRUE#, 
-                      #dev = "png", 
-                      #dpi = 500
+                      cache = TRUE, 
+                      dev = "png", 
+                      dpi = 500
 )
 
 # Load packages
@@ -60,7 +60,7 @@ mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split",
 
 \newpage
 
-## Appendix B: Simulation Code
+## Appendix B: Simulation Code {#appendix-sim}
 
 ### Generating Data and Models
 
@@ -128,7 +128,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   # each of:
   #     U (vector: unmeasured confounding exposures per participant), 
   #     X (vector: exposure:outcome associations estimated per participant) 
-  #     Y (vector: gene:outcome association estimated per participant), 
+  #     Y (vector: gene-outcome association estimated per participant), 
   #     G (Matrices: Genotype data)
   #
   #     gamma (vector: pleiotropic effects of each instrument on exposure)
@@ -175,12 +175,12 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
                   0)
   
   # create vector of participant indices for 1st n participants
-  # i.e. participants used for estimating gene:exposure coefficient
+  # i.e. participants used for estimating gene-exposure coefficient
   sample_1_ref <- 1:n_participants        
   
   
-  # Default is to estimate gene:outcome coefficient from different sample
-  # to gene:exposure coefficient (i.e. simulating 2-sample MR)
+  # Default is to estimate gene-outcome coefficient from different sample
+  # to gene-exposure coefficient (i.e. simulating 2-sample MR)
   # two_sample == FALSE toggles to single sample for testing simulation
   ifelse(two_sample == FALSE,
          sample_2_ref <- sample_1_ref, # 1 sample MR
@@ -234,7 +234,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
     # equal to frequency of effect allele
     # Create twice as many genotypes as participants in sample
     # to simulate 2 sample MR, i.e. first half used to estimate
-    # Gene:Exposure, second half used to estimate Gene:Outcome
+    # Gene-Exposure, second half used to estimate Gene-Outcome
     
     
     # Matrix where columns are instruments, rows are participants
@@ -362,7 +362,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   
   #     U (vector: unmeasured confounding exposures per participant), 
   #     X (vector: exposure:outcome associations estimated per participant) 
-  #     Y (vector: gene:outcome association estimated per participant) 
+  #     Y (vector: gene-outcome association estimated per participant) 
   
   
   # --- Combine all outputs to return --- #
@@ -436,7 +436,7 @@ get_models <- function(sim){
   output_list <- list()
   
   # Create linear models per dataset to get coefficients
-  # for gene:exposure association (coeff_G_X) and gene:outcome
+  # for gene-exposure association (coeff_G_X) and gene-outcome
   # association (coeff_G_Y)
   for(dataset in 1:length(sim$X)){
     
@@ -454,7 +454,7 @@ get_models <- function(sim){
     n_participants<- sim$n_participants[[dataset]]
     
     
-    # Model for gene:exposure
+    # Model for gene-exposure
     X_lm <- lm(X ~ 0 + Instruments_X)
     coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
     SE_coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]
@@ -464,7 +464,7 @@ get_models <- function(sim){
     #R2_stat <- summary(X_lm)$r.squared
     #F_stat <- summary(X_lm)$fstatistic
     
-    # Model for gene:outcome
+    # Model for gene-outcome
     Y_lm <- lm(Y ~ 0 + Instruments_Y)
     coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 1] 
     SE_coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 2]
@@ -495,7 +495,7 @@ get_models <- function(sim){
 ```
 
 
-These models generated estimates of the coefficient of gene:exposure association (`coeff_G_X`), coefficient of gene:outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene:exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when InSIDE assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
+These models generated estimates of the coefficient of gene-exposure association (`coeff_G_X`), coefficient of gene-outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene-exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when InSIDE assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
 
 ```{r test-extract-model}
 
@@ -512,10 +512,10 @@ summary(test_extract_model[[1]])
 A series of test plots were used to verify that data were simulated as intended under the various conditions specified by input parameters. Test plots were not created for the parameters `n_participants`, `n_instruments` or `n_datasets`, as the functioning of these parameters could be readily inferred from the structure of the  datasets outputted, as above.
 
 #### Proportion of Invalid Instruments
-\leavevmode\newline The `prop_invalid` parameter specifies the proportion of invalid genetic instruments simulated, i.e. the proportion of genetic instruments affecting the outcome via direct/pleiotropic effects, and thus not solely via the exposure of interest. If simulated correctly, increasing the value of `prop_invalid` should increase the number of instruments with pleiotropic effects, i.e. instruments with `alpha` $\ne$ 0. With random error terms set to 0 and no causal effect present (i.e. `rand_error = FALSE` and `causal_effect = FALSE`), the estimated gene:outcome coefficient estimated using any given instrument will equal the pleiotropic effects of that instrument (i.e. `coeff_G_Y = alpha`), and therefore will only be non-zero for invalid instruments with non-zero pleiotropic effects on the outcome . Plotting `coeff_G_Y` against `alpha` for simulated data with no causal effect or random error should therefore yield a graph where
+\leavevmode\newline The `prop_invalid` parameter specifies the proportion of invalid genetic instruments simulated, i.e. the proportion of genetic instruments affecting the outcome via direct/pleiotropic effects, and thus not solely via the exposure of interest. If simulated correctly, increasing the value of `prop_invalid` should increase the number of instruments with pleiotropic effects, i.e. instruments with `alpha` $\ne$ 0. With random error terms set to 0 and no causal effect present (i.e. `rand_error = FALSE` and `causal_effect = FALSE`), the estimated gene-outcome coefficient estimated using any given instrument will equal the pleiotropic effects of that instrument (i.e. `coeff_G_Y = alpha`), and therefore will only be non-zero for invalid instruments with non-zero pleiotropic effects on the outcome . Plotting `coeff_G_Y` against `alpha` for simulated data with no causal effect or random error should therefore yield a graph where
 
-- For valid instruments: gene:outcome coefficient = alpha = 0
-- For invalid instruments:  gene:outcome coefficient = alpha $\ne$  0, with values spread uniformly between `alpha_min` and `alpha_max`
+- For valid instruments: gene-outcome coefficient = alpha = 0
+- For invalid instruments:  gene-outcome coefficient = alpha $\ne$  0, with values spread uniformly between `alpha_min` and `alpha_max`
 
 
 ```{r test-plot-prop-invalid, echo=FALSE}
@@ -569,7 +569,7 @@ test_plot_inval_0.1 <- test_plot_tib_inval_0.1 %>%
   aes(x = alpha, y = coeff_G_Y ) +
   scale_y_continuous(limits = c(-0.2, 0.2)) +
   scale_x_continuous(limits = c(-0.2, 0.2)) +
-  labs(y = "Observed Gene:Outcome Coefficient",
+  labs(y = "Observed Gene-Outcome Coefficient",
        title = "10% of 25 \nInstruments Invalid",
        caption = ""
   ) 
@@ -581,7 +581,7 @@ test_plot_inval_0.3 <- test_plot_tib_inval_0.3 %>%
   aes(x = alpha, y = coeff_G_Y ) +
   scale_y_continuous(limits = c(-0.2, 0.2)) +
   scale_x_continuous(limits = c(-0.2, 0.2)) +
-  labs(y = "Observed Gene:Outcome Coefficient",
+  labs(y = "Observed Gene-Outcome Coefficient",
        title = "30% of 25 \nInstruments Invalid",
        caption = ""
   ) +
@@ -594,7 +594,7 @@ test_plot_inval_0.5 <- test_plot_tib_inval_0.5 %>%
   aes(x = alpha, y = coeff_G_Y ) +
   scale_y_continuous(limits = c(-0.2, 0.2)) +
   scale_x_continuous(limits = c(-0.2, 0.2)) +
-  labs(y = "Observed Gene:Outcome Coefficient",
+  labs(y = "Observed Gene-Outcome Coefficient",
        title = "50% of 25 \nInstruments Invalid",
        caption = "Pleiotropic effects range: -0.2 to 0.2") +
   theme(axis.title.y = element_blank())
@@ -609,11 +609,11 @@ plot_grid(test_plot_inval_0.1,
 ```
 
 \newpage
-Similarly, with random error terms set to 0 (`rand_error = FALSE`) and no causal effect present (`causal_effect = FALSE`), gene:exposure coefficients estimated for each instrument should exactly match the actual values simulated, i.e. `coeff_G_X = gamma` for all instruments:
+Similarly, with random error terms set to 0 (`rand_error = FALSE`) and no causal effect present (`causal_effect = FALSE`), gene-exposure coefficients estimated for each instrument should exactly match the actual values simulated, i.e. `coeff_G_X = gamma` for all instruments:
 
 ```{r test-plot-gamma-1, echo=FALSE}
 
-# Check observed gene:exposure coefficients for each instrument
+# Check observed gene-exposure coefficients for each instrument
 # (coeff_G_X) approximate true values (gamma) when a causal effect 
 # is present & a large number of participants are included 
 #set.seed(1701)
@@ -634,14 +634,14 @@ test_plot_tib_gamma_1 %>%
   plot_template() +
   geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
   aes(x = gamma, y = coeff_G_X ) +
-  labs(y = "Observed Gene:Exposure Coefficient",
-       title = "Actual and Estimated Gene:Exposure Coefficients Match")
+  labs(y = "Observed Gene-Exposure Coefficient",
+       title = "Actual and Estimated Gene-Exposure Coefficients Match")
 
 ```
 
 \newpage
-#### Gene:Exposure Coefficient Versus Gene:Outcome Coefficient Plots
-\leavevmode\newline For the next phase of testing, a function (`plot_GY_GX`) was written to plot the coefficients for gene:exposure versus gene:outcome as estimated using the previously created linear models:
+#### Gene-Exposure Coefficient Versus Gene-Outcome Coefficient Plots
+\leavevmode\newline For the next phase of testing, a function (`plot_GY_GX`) was written to plot the coefficients for gene-exposure versus gene-outcome as estimated using the previously created linear models:
 
 ```{r plot-GY-GX-fn}
 
@@ -674,6 +674,7 @@ plot_GY_GX <- function(model_tib,
               hjust = 0, 
               data = . %>% slice_head()# prevent over-printing
     ) +
+    #label = expression("True" ~ hat(beta)~ "= 0.25"),
     annotate("text",
              x = beta_x,      # add hat to beta
              y = beta_y + hat_offset,
@@ -683,8 +684,8 @@ plot_GY_GX <- function(model_tib,
              vjust = 0.9
     ) +
     labs(title = plot_title,
-         x = "Gene:Exposure Coefficient",
-         y = "Gene:Outcome Coefficient") +
+         x = "Gene-Exposure Coefficient",
+         y = "Gene-Outcome Coefficient") +
     xlim(x_min, x_max) +
     ylim(y_min, y_max)
   
@@ -694,7 +695,7 @@ plot_GY_GX <- function(model_tib,
 ```
 
 \newpage
-With random error terms set to 0 (`rand_error = FALSE`) and no causal effect present, a graph of gene:exposure coefficients versus gene:outcome coefficients should be a straight line through the origin with gradient = 0; causal effect of $\beta$ = 0.1  present (`beta_val = 0.1`, `causal_effect = TRUE`), the slope of a graph of gene:exposure coefficients versus gene:outcome coefficients from the same sample should be a straight line through the origin with gradient = 0.1:
+With random error terms set to 0 (`rand_error = FALSE`) and no causal effect present, a graph of gene-exposure coefficients versus gene-outcome coefficients should be a straight line through the origin with gradient = 0; causal effect of $\beta$ = 0.1  present (`beta_val = 0.1`, `causal_effect = TRUE`), the slope of a graph of gene-exposure coefficients versus gene-outcome coefficients from the same sample should be a straight line through the origin with gradient = 0.1:
 
 ```{r test-plot-causal, echo=FALSE}
 
@@ -785,7 +786,7 @@ plot_grid(test_plot_causal_0_errors,
 
 \newpage
 #### One versus Two Sample MR
-\leavevmode\newline Where gene:exposure coefficients and gene:outcome coefficients are estimated from two separate samples rather than one (i.e. `two_sample = TRUE`, simulating 2 sample MR), even with random error terms set to zero, error will be introduced into causal effect estimation through random sampling of different combinations of effect alleles. However, where a causal effect is not present, the effect estimated will consistently be zero regardless of the combinations of alleles sampled, so random error should not be introduced:
+\leavevmode\newline Where gene-exposure coefficients and gene-outcome coefficients are estimated from two separate samples rather than one (i.e. `two_sample = TRUE`, simulating 2 sample MR), even with random error terms set to zero, error will be introduced into causal effect estimation through random sampling of different combinations of effect alleles. However, where a causal effect is not present, the effect estimated will consistently be zero regardless of the combinations of alleles sampled, so random error should not be introduced:
 
 ```{r test-plot-causal-2SMR, echo=FALSE}
 
@@ -831,7 +832,7 @@ plot_grid(test_plot_causal_0_2SMR,
 
 \newpage
 #### Invalid Instruments 
-\leavevmode\newline Where invalid instruments are present (i.e. `prop_invalid` $\ne$ `0`) and random error terms are set to 0, graphs of gene:exposure coefficients versus gene:outcome coefficients should be straight lines through the origin and all points representing valid instruments; the invalid instruments should appear as outliers to this line:
+\leavevmode\newline Where invalid instruments are present (i.e. `prop_invalid` $\ne$ `0`) and random error terms are set to 0, graphs of gene-exposure coefficients versus gene-outcome coefficients should be straight lines through the origin and all points representing valid instruments; the invalid instruments should appear as outliers to this line:
 
 ```{r test-plot-causal-inval, echo=FALSE}
 
@@ -927,15 +928,15 @@ plot_grid(test_plot_causal_0_unbal,
 
 \newpage
 #### InSIDE Assumption and Phi
-\leavevmode\newline The variable phi represents additional pleiotropic effects of each invalid instrument when the InSIDE assumption (INstrument Strength Independent of Direct Effect) is not satisfied. The InSIDE assumption states that the gene:exposure association is not correlated with the pleiotropic path gene:outcome path of any invalid genetic instruments. This assumption can be violated if e.g.:
+\leavevmode\newline The variable phi represents additional pleiotropic effects of each invalid instrument when the InSIDE assumption (INstrument Strength Independent of Direct Effect) is not satisfied. The InSIDE assumption states that the gene-exposure association is not correlated with the pleiotropic path gene-outcome path of any invalid genetic instruments. This assumption can be violated if e.g.:
 
 - several invalid genetic instruments influence the outcome via the same pleiotropic path
 
 - several invalid genetic instruments are related to the same (unmeasured) confounders of the exposure:outcome relationship, aka correlated pleiotropy. 
 
-As such, when the InSIDE assumption is violated, even "strong" instruments (i.e. those with a strong gene:exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are balanced, InSIDE assumption violation may lead to greater imprecision in causal effect estimation; if pleiotropic effects are directional, InSIDE assumption violation may lead to bias.
+As such, when the InSIDE assumption is violated, even "strong" instruments (i.e. those with a strong gene-exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are balanced, InSIDE assumption violation may lead to greater imprecision in causal effect estimation; if pleiotropic effects are directional, InSIDE assumption violation may lead to bias.
 
-Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and InSIDE assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene:outcome coefficients with random error terms set to zero:
+Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and InSIDE assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene-outcome coefficients with random error terms set to zero:
 
 
 ```{r test-plot-phi, echo=FALSE}
@@ -975,7 +976,7 @@ test_plot_phi_0 <- test_plot_tib_phi_0 %>%
   aes(x = alpha, y = coeff_G_Y) +
   geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
   labs(title = "InSIDE Not Violated",
-       y = "Gene:Outcome Coefficient")
+       y = "Gene-Outcome Coefficient")
 
 
 test_plot_phi_1 <- test_plot_tib_phi_1 %>%
@@ -983,7 +984,7 @@ test_plot_phi_1 <- test_plot_tib_phi_1 %>%
   aes(x = alpha, y = coeff_G_Y) +
   geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
   labs(title = "InSIDE Violated",
-       y = "Gene:Outcome Coefficient") +
+       y = "Gene-Outcome Coefficient") +
   theme(axis.title.y = element_blank())
 
 
@@ -997,7 +998,7 @@ plot_grid(test_plot_phi_0,
 ```
 
 \newpage
-Setting `InSIDE_satisfied = TRUE` should mean `phi = 0`; `InSIDE_satisfied=FALSE` should result in `phi` $\propto$ gene:outcome coefficient, with scatter only in the positive direction of gene:outcome coefficients given the model also requires directional pleiotropy before `phi` is used:
+Setting `InSIDE_satisfied = TRUE` should mean `phi = 0`; `InSIDE_satisfied=FALSE` should result in `phi` $\propto$ gene-outcome coefficient, with scatter only in the positive direction of gene-outcome coefficients given the model also requires directional pleiotropy before `phi` is used:
 
 
 ```{r test-plot-phi-2, echo=FALSE}
@@ -1037,7 +1038,7 @@ test_plot_phi_0 <- test_plot_tib_phi_0 %>%
   aes(x = phi, y = coeff_G_Y) +
   geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
   labs(title = "InSIDE Not Violated",
-       y = "Gene:Outcome Coefficient")
+       y = "Gene-Outcome Coefficient")
 
 
 test_plot_phi_1 <- test_plot_tib_phi_1 %>%
@@ -1045,7 +1046,7 @@ test_plot_phi_1 <- test_plot_tib_phi_1 %>%
   aes(x = phi, y = coeff_G_Y) +
   geom_point(colour = edin_bright_red_hex, alpha = 0.3) +
   labs(title = "InSIDE Violated",
-       y = "Gene:Outcome Coefficient") +
+       y = "Gene-Outcome Coefficient") +
   theme(axis.title.y = element_blank())
 
 
@@ -1244,7 +1245,7 @@ get_summary_MR_tib_row <- function(model_list){
 
 ```{r test-source-fns, echo=FALSE}
 
-source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+
 
 ```
 
@@ -1255,6 +1256,7 @@ source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 
 ```{r test-summary-MR-tib-row-fn}
 
+source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 
 #set.seed(14101583)
 test_tib_summ_MR_data <-  get_simulated_MR_data(n_participants = 10000,
@@ -1353,47 +1355,47 @@ test_tib_summ_MR_row_2
 
 ```
 
-### Programmatic Creation of Datasets
+<!-- ### Programmatic Creation of Datasets -->
 
-The above functions were then used, first to generate 1000 datasets for each scenario:
+<!-- The above functions were then used, first to generate 1000 datasets for each scenario: -->
 
 ```{r create-MR-dataset-script, echo=FALSE}
 
-# Load packages
-library(tidyverse)
-library(here)
-
-
-# Load function scripts
-source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-
-# Set inputs
-
-MR_dataset_inputs <- list(n_datasets = 1,
-                            prop_invalid = list("zero" = 0,
-                                                "point1" = 0.1,
-                                                "point2" = 0.2,
-                                                "point3" = 0.3),
-                            n_participants = list("10k" = 10, 
-                                                  "20k" = 20),
-                            n_instruments =  25,
-                            
-                            causal_effect = list("causal" = TRUE,
-                                                 "no_causal" = FALSE),
-                            
-                            balanced_pleio = list("scen1" = TRUE,
-                                                  "scen2" = FALSE,
-                                                  "scen3" = FALSE),
-                            
-                            InSIDE_satisfied = list("scen1" = TRUE,
-                                                    "scen2" = TRUE,
-                                                    "scen3" = FALSE)
-                            )
-
-MR_dataset_name <- function(input){
-  
-  pmap(input, paste0)
-}
+# # Load packages
+# library(tidyverse)
+# library(here)
+# 
+# 
+# # Load function scripts
+# source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+# 
+# # Set inputs
+# 
+# MR_dataset_inputs <- list(n_datasets = 1,
+#                             prop_invalid = list("zero" = 0,
+#                                                 "point1" = 0.1,
+#                                                 "point2" = 0.2,
+#                                                 "point3" = 0.3),
+#                             n_participants = list("10k" = 10, 
+#                                                   "20k" = 20),
+#                             n_instruments =  25,
+#                             
+#                             causal_effect = list("causal" = TRUE,
+#                                                  "no_causal" = FALSE),
+#                             
+#                             balanced_pleio = list("scen1" = TRUE,
+#                                                   "scen2" = FALSE,
+#                                                   "scen3" = FALSE),
+#                             
+#                             InSIDE_satisfied = list("scen1" = TRUE,
+#                                                     "scen2" = TRUE,
+#                                                     "scen3" = FALSE)
+#                             )
+# 
+# MR_dataset_name <- function(input){
+#   
+#   pmap(input, paste0)
+# }
 
 
 # 
@@ -1406,9 +1408,9 @@ MR_dataset_name <- function(input){
 
 #here("MSc_Thesis_Split", "Data", "Simulated_Datasets")
 
-foo <- pmap(list(1, n_instruments, n_datasets), get_simulated_MR_data)
-
-str(foo)
+# foo <- pmap(list(1, n_instruments, n_datasets), get_simulated_MR_data)
+# 
+# str(foo)
 
 ```
 
@@ -1439,9 +1441,9 @@ str(foo)
 #                         "scen2" = TRUE,
 #                         "scen3" = FALSE)
 
-iwalk(mtcars, \(col, value) cat(value, ": ", median(col), "\n", sep = ""))
-
-mtcars
+# iwalk(mtcars, \(col, value) cat(value, ": ", median(col), "\n", sep = ""))
+# 
+# mtcars
 
 ```
 
@@ -1449,6 +1451,6 @@ mtcars
 
 \newpage
 
-## Appendix C: Citation Search Strategy
+<!-- ## Appendix C: Citation Search Strategy -->
 
-\newpage
+<!-- \newpage -->
