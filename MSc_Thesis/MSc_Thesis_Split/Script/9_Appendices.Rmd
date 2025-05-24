@@ -6,6 +6,7 @@ output:
   bookdown::pdf_document2:
     latex_engine: xelatex
     dev: cairo_pdf
+    pandoc_args: !expr acronymsdown::add_filter()
 knit: (function(inputFile, encoding) {
       rmarkdown::render(inputFile,
                         encoding = encoding,
@@ -14,11 +15,37 @@ knit: (function(inputFile, encoding) {
                         )})
 fig_caption: TRUE
 toc: TRUE
-bibliography: ../Script/Lit_Rev_Refs.bib
+bibliography: 
+  - ../Script/Lit_Rev_Refs.bib
+  - ../../grateful-refs.bib
 csl: ../Script/vancouver-superscript.csl
 link-citations: TRUE
 urlcolor: blue  
+acronyms:
+  loa_title: ""
+  include_unused: TRUE
+  insert_loa: FALSE
+  insert_links: TRUE
+  id_prefix: "acronyms_"
+  sorting: "alphabetical"
+  non_existing: "key"
+  style: "long-short"
+  fromfile: ./_acronyms.yml
 ---
+
+# (APPENDIX) Appendix {-} 
+
+\newpage
+
+# Appendix A: List of Abbreviations
+
+
+\printacronyms
+
+
+\newpage
+
+# Appendix B: Simulation Code {#appendix-sim}
 
 ```{r setup, include=FALSE}
 
@@ -26,19 +53,19 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning=FALSE, 
                       message=FALSE, 
                       error=FALSE,
-                      cache = TRUE, 
+                      cache = TRUE,
                       dev = "png", 
                       dpi = 500
 )
 
 # Load packages
 library(tidyverse)
-library(TwoSampleMR)
-library(rstan)
+#library(rstan)
 library(here)
 library(cowplot)
 library(kableExtra)
 library(acronymsdown)
+library(grateful)
 
 # Load University of Edinburgh colour palette
 source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
@@ -46,61 +73,46 @@ source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
 # Load pre-formatted plot template - call to ggplot with UoE colours
 source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 
-# Compile model for MR-Hevo
-mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split", 
-                                      "Script", 
-                                      "Hevo", 
-                                      "MRHevo_summarystats.stan"),
-                           model_name="MRHevo.summarystats", verbose=FALSE)
-
 
 ```
 
-
-## Appendix A: List of Abbreviations
-
-\newpage
-
-## Appendix B: Simulation Code {#appendix-sim}
-
-### Generating Data and Models
+## Generating Data and Models
 
 The data generating model used was from Appendix 3 of Bowden et al [@bowden_consistent_2016]; the relevant section describing their model is reproduced below:
 
-_"..._
+>_"..._
 
-\begin{equation} 
+>\begin{equation} 
 U_i = \sum^J_{j=1} \phi_jG_{ij} + \epsilon_i^U
 \end{equation}
 
 
-\begin{equation} 
+>\begin{equation} 
 X_i = \sum^J_{j=1} \gamma_jG_{ij} + U_i + \epsilon_i^X
 \end{equation}
 
-\begin{equation} 
+>\begin{equation} 
 Y_i = \sum^J_{j=1} \alpha_jG_{ij} + \beta X_i + U_i + \epsilon_i^Y
 \end{equation}
 
-_for participants indexed by $i = 1, . . . , N$, and genetic instruments indexed by $j = 1, . . . , J$._
+>_for participants indexed by $i = 1, . . . , N$, and genetic instruments indexed by $j = 1, . . . , J$._
 
-_The error terms $\epsilon_i^U , \epsilon_i^X$ and $\epsilon_i^Y$ were each drawn independently from standard normal distributions. The genetic effects on the exposure γj are drawn from a uniform distribution between 0.03 and 0.1. Pleiotropic effects $\alpha_j$ and $\phi_j$ were set to zero if the genetic instrument was a valid instrumental variable. Otherwise (with probability 0.1, 0.2, or 0.3):_
+>_The error terms $\epsilon_i^U , \epsilon_i^X$ and $\epsilon_i^Y$ were each drawn independently from standard normal distributions. The genetic effects on the exposure γj are drawn from a uniform distribution between 0.03 and 0.1. Pleiotropic effects $\alpha_j$ and $\phi_j$ were set to zero if the genetic instrument was a valid instrumental variable. Otherwise (with probability 0.1, 0.2, or 0.3):_
 
-_1. In Scenario 1 (balanced pleiotropy, InSIDE satisfied), the $\alpha_j$ parameter was drawn from a uniform distribution between −0.2 and 0.2._
+>_1. In Scenario 1 (balanced pleiotropy, InSIDE satisfied), the $\alpha_j$ parameter was drawn from a uniform distribution between −0.2 and 0.2._
 
-_2. In Scenario 2 (directional pleiotropy, InSIDE satisfied), the $\alpha_j$ parameter was drawn from a uniform distribution between 0 and 0.2._ 
+>_2. In Scenario 2 (directional pleiotropy, InSIDE satisfied), the $\alpha_j$ parameter was drawn from a uniform distribution between 0 and 0.2._ 
 
-_3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the $\phi_j$ parameter was drawn from a uniform distribution between −0.2 and 0.2._
+>_3. In Scenario 3 (directional pleiotropy, InSIDE not satisfied), the $\phi_j$ parameter was drawn from a uniform distribution between −0.2 and 0.2._
 
 
-_The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 [sic] participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants."_ [@bowden_consistent_2016]
+>_The causal effect of the exposure on the outcome was either $\beta X = 0$ (null causal effect) or $\beta X = 0.1$ (positive causal effect). A total of 10 000 simulated datasets were generated for sample sizes of N = 10 000 and 20 [sic] participants. Only the summary data, that is genetic associations with the exposure and with the outcome and their standard errors as estimated by univariate regression on the genetic instruments in turn, were used by the analysis methods. In the two-sample setting, data were generated on 2N participants, and genetic associations with the exposure were estimated in the first N participants, and genetic associations with the outcome in the second N participants."_ [@bowden_consistent_2016]
 
 To reproduce this model, code was written in R to generate the relevant participant level data. First, a function (`get_simulated_MR_data`) was written which included parameters specified by Bowden et al, and also to allow testing of data simulation:
 
 
 
 ```{r wme-model-fn, echo=TRUE}
-
 # Define function to create data generating model
 # Arguments/default values based on Bowden et al
 get_simulated_MR_data <- function(n_participants = as.integer(), 
@@ -113,23 +125,24 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
                                   rand_error = TRUE,      # remove random errors, for testing
                                   two_sample = TRUE,      # 1- or 2-sample MR toggle, for testing
                                   beta_val = 0.1,         # size of causal effect
-                                  allele_freq_min = 0.01, # frequency of effect allele
-                                  allele_freq_max = 0.99,
+                                  allele_freq_min = 0.4,  # frequency of effect allele 0.01/0.99
+                                  allele_freq_max = 0.6,  #?0.4/0.6
                                   gamma_min = 0.03,       # size of pleiotropic effects on exposure
                                   gamma_max = 0.1,
                                   alpha_min = -0.2,       # size of pleiotropic effects on outcome
                                   alpha_max = 0.2,
                                   phi_min = -0.2,         # size of additional pleiotropic effects
-                                  phi_max = 0.2){         # when InSIDE not satisfied
+                                  phi_max = 0.2,          # when InSIDE not satisfied
+                                  seed = 14101583){       # Set seed for reproducibility
   
-  # Set seed for reproducibility
-  set.seed(14101583)
+  # Set seed to ensure comparability across scenarios
+  set.seed(seed)
   
   # Initialise blank lists to receive datasets for
   # each of:
   #     U (vector: unmeasured confounding exposures per participant), 
   #     X (vector: exposure:outcome associations estimated per participant) 
-  #     Y (vector: gene-outcome association estimated per participant), 
+  #     Y (vector: gene:outcome association estimated per participant), 
   #     G (Matrices: Genotype data)
   #
   #     gamma (vector: pleiotropic effects of each instrument on exposure)
@@ -145,27 +158,13 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   gamma_list <- list()
   alpha_list <- list()
   phi_list <- list()
-  beta_list <- list()
-  #prop_invalid_list <- list()
+
   
   n_participants_list <- list()
   n_instruments_list <- list()
-  n_datasets_list <- list()
   prop_invalid_list <- list()
-  causal_effect_list <- list()
-  balanced_pleio_list <- list()
-  InSIDE_satisfied_list <- list()
-  rand_error_list <- list()
-  two_sample_list <- list()
   beta_val_list <- list()
-  allele_freq_min_list <- list()
-  allele_freq_max_list <- list()
-  gamma_min_list <- list()
-  gamma_max_list <- list()
-  alpha_min_list <- list()
-  alpha_max_list <- list()
-  phi_min_list <- list()
-  phi_max_list <- list()
+
   
   
   # --- Assign features common to all datasets --- #
@@ -176,18 +175,82 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
                   0)
   
   # create vector of participant indices for 1st n participants
-  # i.e. participants used for estimating gene-exposure coefficient
+  # i.e. participants used for estimating gene:exposure coefficient
   sample_1_ref <- 1:n_participants        
   
   
-  # Default is to estimate gene-outcome coefficient from different sample
-  # to gene-exposure coefficient (i.e. simulating 2-sample MR)
+  # Default is to estimate gene:outcome coefficient from different sample
+  # to gene:exposure coefficient (i.e. simulating 2-sample MR)
   # two_sample == FALSE toggles to single sample for testing simulation
   ifelse(two_sample == FALSE,
          sample_2_ref <- sample_1_ref, # 1 sample MR
          sample_2_ref <- (n_participants+1):(2*n_participants)) # 2 sample MR
   
+  # --- Set characteristics for each genetic instrument --- # 
   
+  # Set genetic effects of each instrument on the exposure,
+  # drawn from uniform distribution, min/max as per Bowden 
+  # et al
+  gamma_vect <- runif(n = n_instruments,
+                      min = gamma_min,
+                      max = gamma_max)
+  
+  
+  
+  # Set which instruments invalid, 0 = valid, 1 = invalid
+  invalid_instrument_vect <- rbinom(n = n_instruments,
+                                    size = 1, 
+                                    prob = prop_invalid)
+  
+  
+  # Probability of effect allele set per dataset  
+  # for each instrument, default value set at  
+  # random between 0.01-0.99 (i.e. both effect +
+  # reference are common alleles)
+  allele_freq_vect <- runif(n = n_instruments,
+                            min = allele_freq_min,
+                            max = allele_freq_max)
+  
+  # Set pleiotropic effects on outcome, Scenarios and 
+  # min/max from Bowden et al
+  alpha_vect <- double() # Pleiotropic effects of instruments on outcome
+  phi_vect <- double() # Pleiotropic effects of confounders on outcome
+  
+  
+  for(j in 1:n_instruments){
+    ifelse(invalid_instrument_vect[j] == 0, # alpha = 0 if valid
+           alpha_vect[j] <- 0,
+           ifelse(balanced_pleio == TRUE,
+                  alpha_vect[j] <- runif(n = 1, # balanced
+                                         min = alpha_min,
+                                         max = alpha_max),
+                  alpha_vect[j] <- runif(n = 1, # directional
+                                         min = 0,
+                                         max = alpha_max)
+           )
+    )
+    
+
+    # Assign default phi = 0 unless directional pleiotropy & 
+    # InSIDE assumption not satisfied & genetic instrument invalid
+    if(balanced_pleio == FALSE & InSIDE_satisfied == FALSE){
+      ifelse(invalid_instrument_vect[j] == 0,
+             phi_vect[j] <- 0,
+             phi_vect[j] <- runif(n = 1,
+                                  min = phi_min,
+                                  max = phi_max)
+      )
+      
+    }
+    else{
+      phi_vect[j] <- 0
+    }
+  }
+  
+  # Re-set seed to ensure consistency across datasets
+  # N.B. above two if/ifelse statements cause de-sync 
+  # of number of randomised functions between valid/invalid
+  set.seed(seed)
   
   # --- Create separate datasets --- #
   
@@ -196,6 +259,28 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   # Use these to estimate U, X + Y
   
   for(n in 1:n_datasets){
+    
+    # --- Create matrix of genotypes --- #
+
+    # Assign genotypes by sampling from binomial distribution
+    # twice (as two alleles) per participant with probability
+    # equal to frequency of effect allele
+    # Create twice as many genotypes as participants in sample
+    # to simulate 2 sample MR, i.e. first half used to estimate
+    # Gene:Exposure, second half used to estimate Gene:Outcome
+    
+    # Matrix where columns are instruments, rows are participants
+    # Values 0, 1 or 2
+    # 0 = reference, i.e. zero effect alleles, 
+    # 1 = 1 effect allele, 2 = 2 effect alleles 
+    
+    G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
+                           size = 2,
+                           prob = rep(allele_freq_vect, 2 * n_participants)),
+                    nrow = 2 * n_participants,
+                    ncol = n_instruments,
+                    byrow = TRUE)
+    
     
     # Create error terms for U, X + Y per participant,
     # each drawn from standard normal distribution
@@ -214,98 +299,16 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
            Y_epsilon_vect <- rep(0, n_participants))
     
     
-    # --- Create matrix of genotypes --- #
-    
-    # 0 = reference, i.e. zero effect alleles, 
-    # 1 = 1 effect allele, 2 = 2 effect alleles 
-    
-    
-    # Probability of effect allele set per dataset  
-    # for each instrument, default value set at  
-    # random between 0.01-0.99 (i.e. both effect +
-    # reference are common alleles)
-    allele_freq_vect <- runif(n = n_instruments,
-                              min = allele_freq_min,
-                              max = allele_freq_max)
-    
-    
-    
-    # Assign genotypes by sampling from binomial distribution
-    # twice (as two alleles) per participant with probability
-    # equal to frequency of effect allele
-    # Create twice as many genotypes as participants in sample
-    # to simulate 2 sample MR, i.e. first half used to estimate
-    # Gene-Exposure, second half used to estimate Gene-Outcome
-    
-    
-    # Matrix where columns are instruments, rows are participants
-    # Values 0, 1 or 2
-    G_mat <- matrix(rbinom(n = 2 * n_participants * n_instruments,
-                           size = 2,
-                           prob = rep(allele_freq_vect, 2 * n_participants)),
-                    nrow = 2 * n_participants,
-                    ncol = n_instruments,
-                    byrow = TRUE)
-    
-    
-    # --- Set characteristics for each genetic instrument --- # 
-    
-    # Set genetic effects of each instrument on the exposure,
-    # drawn from uniform distribution, min/max as per Bowden 
-    # et al
-    gamma_vect <- runif(n = n_instruments,
-                        min = gamma_min,
-                        max = gamma_max)
-    
-    
-    # Set which instruments invalid, 0 = valid, 1 = invalid
-    invalid_instrument_vect <- rbinom(n = n_instruments,
-                                      size = 1, 
-                                      prob = prop_invalid)
-    
-    
-    # Set pleiotropic effects on outcome, Scenarios and 
-    # min/max from Bowden et al
-    alpha_vect <- double() # Pleiotropic effects of instruments on outcome
-    phi_vect <- double() # Pleiotropic effects of confounders on outcome
-    
-    for(j in 1:n_instruments){
-      ifelse(invalid_instrument_vect[j] == 0, # alpha = 0 if valid
-             alpha_vect[j] <- 0,
-             ifelse(balanced_pleio == TRUE,
-                    alpha_vect[j] <- runif(n = n_instruments, # balanced
-                                           min = alpha_min,
-                                           max = alpha_max),
-                    alpha_vect[j] <- runif(n = n_instruments, # directional
-                                           min = 0,
-                                           max = alpha_max)
-             )
-      )
-      
-      # Assign default phi = 0 unless directional pleiotropy & 
-      # InSIDE assumption not satisfied & genetic instrument invalid
-      if(balanced_pleio == FALSE & InSIDE_satisfied == FALSE){
-        ifelse(invalid_instrument_vect[j] == 0,
-               phi_vect[j] <- 0,
-               phi_vect[j] <- runif(n = 1,
-                                    min = phi_min,
-                                    max = phi_max)
-        )
-        
-      }
-      else{
-        phi_vect[j] <- 0
-      }
-    }
-    
-    
     # --- Combine Gene matrix/parameters to recreate model --- #
     
     # Create vectors of estimates for U, X and Y per individual,
     # i.e. Ui, Xi and Yi. Uses matrix inner product operator " %*%" 
     # https://stackoverflow.com/questions/22060515/the-r-operator 
     # http://matrixmultiplication.xyz/
-    
+
+    #     U (vector: unmeasured confounding exposures per participant), 
+    #     X (vector: exposure:outcome associations estimated per participant) 
+    #     Y (vector: gene:outcome association estimated per participant) 
     
     Ui_vect <-  G_mat %*% phi_vect + U_epsilon_vect
     
@@ -342,28 +345,12 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
     # Include inputs for reference/testing 
     n_participants_list[[n]] <- n_participants
     n_instruments_list[[n]] <- n_instruments
-    n_datasets_list[[n]] <- n_datasets
     prop_invalid_list[[n]] <- prop_invalid
-    causal_effect_list[[n]] <- causal_effect
-    balanced_pleio_list[[n]] <- balanced_pleio
-    InSIDE_satisfied_list[[n]] <- InSIDE_satisfied
-    rand_error_list[[n]] <- rand_error
-    two_sample_list[[n]] <- two_sample
     beta_val_list[[n]] <- beta_val
-    allele_freq_min_list[[n]] <- allele_freq_min
-    allele_freq_max_list[[n]] <- allele_freq_max
-    gamma_min_list[[n]] <- gamma_min
-    gamma_max_list[[n]] <- gamma_max
-    alpha_min_list[[n]] <- alpha_min
-    alpha_max_list[[n]] <- alpha_max
-    phi_min_list[[n]] <- phi_min
-    phi_max_list[[n]] <- phi_max
-    
+   
+     
   }
   
-  #     U (vector: unmeasured confounding exposures per participant), 
-  #     X (vector: exposure:outcome associations estimated per participant) 
-  #     Y (vector: gene-outcome association estimated per participant) 
   
   
   # --- Combine all outputs to return --- #
@@ -371,37 +358,23 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   combined_list <- list(U = U_list,         # Estimates 
                         X = X_list, 
                         Y = Y_list,
+                        
                         G_X = G_X_list,     # Genotypes of 1st sample
                         G_Y = G_Y_list,     # Genotypes of 2nd sample
                         
                         alpha = alpha_list, # Actual values for validating simulation
                         gamma = gamma_list,
                         phi = phi_list,
-                        #beta = beta_list,
-                        #prop_invalid = prop_invalid_list,
                         
                         n_participants = n_participants_list, # Inputs
                         n_instruments = n_instruments_list,
-                        n_datasets = n_datasets_list,
                         prop_invalid = prop_invalid_list,
-                        causal_effect = causal_effect_list,
-                        balanced_pleio = balanced_pleio_list,
-                        InSIDE_satisfied = InSIDE_satisfied_list,
-                        rand_error = rand_error_list,
-                        two_sample = two_sample_list,
-                        beta_val = beta_val_list,
-                        allele_freq_min = allele_freq_min_list,
-                        allele_freq_max = allele_freq_max_list,
-                        gamma_min = gamma_min_list,
-                        gamma_max = gamma_max_list,
-                        alpha_min = alpha_min_list,
-                        alpha_max = alpha_max_list,
-                        phi_min = phi_min_list,
-                        phi_max = phi_max_list
+                        beta_val = beta_val_list
   )
   
   return(combined_list)
 }
+
 ```
 
 This initial simulation function generated data in the following format:
@@ -433,11 +406,11 @@ A function (`get_models`) was then written to create linear models from each dat
 # Create plotting tibble with Mean/SD X + Y grouped by
 # Dataset + instrument
 get_models <- function(sim){
-  
+    
   output_list <- list()
   
   # Create linear models per dataset to get coefficients
-  # for gene-exposure association (coeff_G_X) and gene-outcome
+  # for gene:exposure association (coeff_G_X) and gene:outcome
   # association (coeff_G_Y)
   for(dataset in 1:length(sim$X)){
     
@@ -455,17 +428,16 @@ get_models <- function(sim){
     n_participants<- sim$n_participants[[dataset]]
     
     
-    # Model for gene-exposure
+    # Model for gene:exposure ***0 + deleted from X_lm and Y_lm***
     X_lm <- lm(X ~ 0 + Instruments_X)
     coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
     SE_coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]
     
     R2_stat <- summary(lm(X ~ Instruments_X))$r.squared
     F_stat <- summary(lm(X ~ Instruments_X))$fstatistic[[1]]
-    #R2_stat <- summary(X_lm)$r.squared
-    #F_stat <- summary(X_lm)$fstatistic
+
     
-    # Model for gene-outcome
+    # Model for gene:outcome
     Y_lm <- lm(Y ~ 0 + Instruments_Y)
     coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 1] 
     SE_coeff_G_Y_vect <- coef(summary(Y_lm))[1:(ncol(Instruments_Y)), 2]
@@ -496,7 +468,7 @@ get_models <- function(sim){
 ```
 
 
-These models generated estimates of the coefficient of gene-exposure association (`coeff_G_X`), coefficient of gene-outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene-exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when InSIDE assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
+These models generated estimates of the coefficient of gene-exposure association (`coeff_G_X`), coefficient of gene-outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene-exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when \acr{InSIDE} assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
 
 ```{r test-extract-model}
 
@@ -508,11 +480,11 @@ summary(test_extract_model[[1]])
 
 
 \newpage
-### Testing Generation of Data and Models
+## Testing Generation of Data and Models
 
 A series of test plots were used to verify that data were simulated as intended under the various conditions specified by input parameters. Test plots were not created for the parameters `n_participants`, `n_instruments` or `n_datasets`, as the functioning of these parameters could be readily inferred from the structure of the  datasets outputted, as above.
 
-#### Proportion of Invalid Instruments
+### Proportion of Invalid Instruments
 \leavevmode\newline The `prop_invalid` parameter specifies the proportion of invalid genetic instruments simulated, i.e. the proportion of genetic instruments affecting the outcome via direct/pleiotropic effects, and thus not solely via the exposure of interest. If simulated correctly, increasing the value of `prop_invalid` should increase the number of instruments with pleiotropic effects, i.e. instruments with `alpha` $\ne$ 0. With random error terms set to 0 and no causal effect present (i.e. `rand_error = FALSE` and `causal_effect = FALSE`), the estimated gene-outcome coefficient estimated using any given instrument will equal the pleiotropic effects of that instrument (i.e. `coeff_G_Y = alpha`), and therefore will only be non-zero for invalid instruments with non-zero pleiotropic effects on the outcome . Plotting `coeff_G_Y` against `alpha` for simulated data with no causal effect or random error should therefore yield a graph where
 
 - For valid instruments: gene-outcome coefficient = alpha = 0
@@ -641,7 +613,7 @@ test_plot_tib_gamma_1 %>%
 ```
 
 \newpage
-#### Gene-Exposure Coefficient Versus Gene-Outcome Coefficient Plots
+### Gene-Exposure Coefficient Versus Gene-Outcome Coefficient Plots
 \leavevmode\newline For the next phase of testing, a function (`plot_GY_GX`) was written to plot the coefficients for gene-exposure versus gene-outcome as estimated using the previously created linear models:
 
 ```{r plot-GY-GX-fn}
@@ -742,7 +714,7 @@ plot_grid(test_plot_causal_0,
 
 
 \newpage
-#### Random Errors
+### Random Errors
 \leavevmode\newline Re-plotting the same graphs with non-zero random error terms (`rand_error = TRUE`) should produce similar graphs with Gaussian spread around lines passing through the origin with gradients of 0 and 0.1 for no causal effect and causal effect, respectively:
 
 ```{r test-plot-causal-errors, echo=FALSE}
@@ -786,7 +758,7 @@ plot_grid(test_plot_causal_0_errors,
 ```
 
 \newpage
-#### One versus Two Sample MR
+### One versus Two Sample MR
 \leavevmode\newline Where gene-exposure coefficients and gene-outcome coefficients are estimated from two separate samples rather than one (i.e. `two_sample = TRUE`, simulating 2 sample MR), even with random error terms set to zero, error will be introduced into causal effect estimation through random sampling of different combinations of effect alleles. However, where a causal effect is not present, the effect estimated will consistently be zero regardless of the combinations of alleles sampled, so random error should not be introduced:
 
 ```{r test-plot-causal-2SMR, echo=FALSE}
@@ -832,7 +804,7 @@ plot_grid(test_plot_causal_0_2SMR,
 ```
 
 \newpage
-#### Invalid Instruments 
+### Invalid Instruments 
 \leavevmode\newline Where invalid instruments are present (i.e. `prop_invalid` $\ne$ `0`) and random error terms are set to 0, graphs of gene-exposure coefficients versus gene-outcome coefficients should be straight lines through the origin and all points representing valid instruments; the invalid instruments should appear as outliers to this line:
 
 ```{r test-plot-causal-inval, echo=FALSE}
@@ -878,7 +850,7 @@ plot_grid(test_plot_causal_0_inval,
 ```
 
 \newpage
-#### Balanced Versus Directional Pleiotropy
+### Balanced Versus Directional Pleiotropy
 \leavevmode\newline Replotting the above with unbalanced pleiotropy present (`balanced_pleio = FALSE`), the invalid instruments should all appear as outliers in the positive direction, i.e. steepening the line of best fit and leading to overestimation of the causal effect: 
 
 ```{r test-plot-causal-unbal, echo=FALSE}
@@ -928,16 +900,16 @@ plot_grid(test_plot_causal_0_unbal,
 <!-- https://mr-dictionary.mrcieu.ac.uk/term/inside/ -->
 
 \newpage
-#### InSIDE Assumption and Phi
-\leavevmode\newline The variable phi represents additional pleiotropic effects of each invalid instrument when the InSIDE assumption (INstrument Strength Independent of Direct Effect) is not satisfied. The InSIDE assumption states that the gene-exposure association is not correlated with the pleiotropic path gene-outcome path of any invalid genetic instruments. This assumption can be violated if e.g.:
+### InSIDE Assumption and Phi
+\leavevmode\newline The variable phi represents additional pleiotropic effects of each invalid instrument when the \acr{InSIDE} assumption is not satisfied. The \acr{InSIDE} assumption states that the gene-exposure association is not correlated with the pleiotropic path gene-outcome path of any invalid genetic instruments. This assumption can be violated if e.g.:
 
 - several invalid genetic instruments influence the outcome via the same pleiotropic path
 
 - several invalid genetic instruments are related to the same (unmeasured) confounders of the exposure:outcome relationship, aka correlated pleiotropy. 
 
-As such, when the InSIDE assumption is violated, even "strong" instruments (i.e. those with a strong gene-exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are balanced, InSIDE assumption violation may lead to greater imprecision in causal effect estimation; if pleiotropic effects are directional, InSIDE assumption violation may lead to bias.
+As such, when the \acr{InSIDE} assumption is violated, even "strong" instruments (i.e. those with a strong gene-exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are balanced, InSIDE assumption violation may lead to greater imprecision in causal effect estimation; if pleiotropic effects are directional, \acr{InSIDE} assumption violation may lead to bias.
 
-Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and InSIDE assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene-outcome coefficients with random error terms set to zero:
+Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and \acr{InSIDE} assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene-outcome coefficients with random error terms set to zero:
 
 
 ```{r test-plot-phi, echo=FALSE}
@@ -1059,13 +1031,20 @@ plot_grid(test_plot_phi_0,
 ```
 
 \newpage
-### Summary Table
+## Summary Table
 
 A function (`get_summary_MR_tib_row`) was written to take models generated from each simulated dataset, estimate causal effect using both weighted median and MR-Hevo methodologies, then output a summary formatted as per Tables 2 & 3 in Bowden et al [@bowden_consistent_2016]:
 
 
 
-```{r summary-MR-tib-row-fn, eval=FALSE}
+```{r summary-MR-tib-row-fn}
+
+# Load WME functions
+library(TwoSampleMR)
+
+# Load RStan - needed for MR-Hevo
+library(rstan)
+
 
 # Run local copy of MR-Hevo functions
 # Not using full package due to conflicts with Windows
@@ -1086,8 +1065,6 @@ mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split",
                            save_dso = TRUE,
                            auto_write = TRUE)
 
-# --- Need to comment out model.dir in Hevo_results --- #  
-
 get_summary_MR_tib_row <- function(model_list){
   
   
@@ -1106,30 +1083,18 @@ get_summary_MR_tib_row <- function(model_list){
   
   n_datasets <- length(model_list)
   
-  #output_tib_row$N <-  n_datasets
-  
   # Create blank tibble to receive results of Weighted
   # Median Estimator function from MR-Base
   
   results_tib <-  tibble(WME_est = as.double(),
                          WME_se = as.double(),
                          WME_pval = as.double(),
-                         WME_Q = as.double(),
-                         WME_Q_df = as.double(),
-                         WME_Q_pval = as.double(),
                          WME_nsnp = as.integer(),
                          Hevo_est = as.double(),
                          Hevo_se = as.double(),
                          Hevo_sd = as.double(),
-                         Hevo_2.5 = as.double(),
-                         Hevo_25 = as.double(),
-                         Hevo_50 = as.double(),
-                         Hevo_75 = as.double(),
-                         Hevo_97.5 = as.double(),
-                         Hevo_n_eff = as.double(),
-                         Hevo_n_Rhat = as.double(),
-                         Hevo_z_stat = as.double(),
-                         Hevo_pval = as.double(),
+                         Hevo_est_lower_CI = as.double(),
+                         Hevo_est_upper_CI = as.double(),
                          Hevo_causal_detected = as.logical()
   )
   
@@ -1165,101 +1130,77 @@ get_summary_MR_tib_row <- function(model_list){
     
     # Results from MR-Hevo method
     Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
-                                     se.alpha_hat = coeff_G_X_SE_vect,
-                                     gamma_hat = coeff_G_Y_vect,
-                                     se.gamma_hat = coeff_G_Y_SE_vect
-    ) %>%
-      summary()
+                                    se.alpha_hat = coeff_G_X_SE_vect,
+                                    gamma_hat = coeff_G_Y_vect,
+                                    se.gamma_hat = coeff_G_Y_SE_vect) %>%
+     summary()
     
     
     # Extract WME Results
     results_tib[dataset, ]$WME_est <- WME_results$b
     results_tib[dataset, ]$WME_se <- WME_results$se
     results_tib[dataset, ]$WME_pval <- WME_results$pval
-    results_tib[dataset, ]$WME_Q <- WME_results$Q
-    results_tib[dataset, ]$WME_Q_df <- WME_results$Q_df
-    results_tib[dataset, ]$WME_Q_pval <- WME_results$Q_pval
     results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
     
     # Extract MR-Hevo Results
     results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
     results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
     results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
-    results_tib[dataset, ]$Hevo_2.5 <- Hevo_results$summary["theta","2.5%"]
-    results_tib[dataset, ]$Hevo_25 <- Hevo_results$summary["theta","25%"]
-    results_tib[dataset, ]$Hevo_50 <- Hevo_results$summary["theta","50%"]
-    results_tib[dataset, ]$Hevo_75 <- Hevo_results$summary["theta","75%"]
-    results_tib[dataset, ]$Hevo_97.5 <- Hevo_results$summary["theta","97.5%"]
-    results_tib[dataset, ]$Hevo_n_eff <- Hevo_results$summary["theta","n_eff"]
-    results_tib[dataset, ]$Hevo_n_Rhat <- Hevo_results$summary["theta","Rhat"]
-    
+    results_tib[dataset, ]$Hevo_est_lower_CI <- Hevo_results$summary["theta","2.5%"]
+    results_tib[dataset, ]$Hevo_est_upper_CI <- Hevo_results$summary["theta","97.5%"]
     
   }
   
-  
+  # Add causality Boolean to MR-Hevo
   results_tib <- results_tib %>%
-    #mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
-    mutate(WME_est_lower_CI = (WME_est - (1.96 * WME_se)),
-           WME_est_upper_CI = (WME_est + (1.96 * WME_se)),
-           WME_est_causal_detected = (WME_est_lower_CI > 0  | WME_est_upper_CI < 0),
-           WME_OR = exp(WME_est),
-           WME_OR_lower_CI = exp(WME_est_lower_CI),
-           WME_OR_upper_CI = exp(WME_est_upper_CI),
-           WME_OR_causal_detected = (WME_OR_lower_CI > 1  | WME_OR_upper_CI < 1),
-           Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
-           Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
-           Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0),
-           Hevo_OR = exp(Hevo_est),
-           Hevo_OR_lower_CI = exp(Hevo_est_lower_CI),
-           Hevo_OR_upper_CI = exp(Hevo_est_upper_CI),
-           Hevo_OR_causal_detected = (Hevo_OR_lower_CI > 1  | Hevo_OR_upper_CI < 1)
-    )
+   mutate(Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0))
   
   
-  # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
-  # https://mr-dictionary.mrcieu.ac.uk/term/r-squared/
   output_tib_row <- results_tib %>% 
     summarise(N = n_participants,
               Prop_Invalid = prop_invalid,
-              F_stat = F_stat,
-              R2_stat = R2_stat,
+              F_stat = mean(F_stat),
+              R2_stat = mean(R2_stat),
               WME_Av = mean(WME_est),
               WME_SE = mean(WME_se),
               WME_Pos_Rate = length(WME_pval[WME_pval < 0.05]) / n_datasets,
               Hevo_Av = mean(Hevo_est),
               Hevo_SE = mean(Hevo_se),
-              Hevo_Pos_Rate = sum(Hevo_causal_detected) / n_datasets
+              Hevo_Lower_CI = mean(Hevo_est_lower_CI),
+              Hevo_Upper_CI = mean(Hevo_est_upper_CI),
+              Hevo_Pos_Rate = sum(Hevo_est_causal_detected) / n_datasets
     ) %>% 
     mutate(across(where(is.double), round, 3))
   
   return(output_tib_row)
-  #return(results_tib)
   
 }
 
 
-```
-
-
-
-
-
-```{r test-source-fns, echo=FALSE}
-
-
 
 ```
 
+```{r load-functions-sneaky, echo = FALSE}
 
+# test-summary-MR-tib-row-fn doesn't work without reloading functions here
+# does work when all relevant code copy/pasted to test script - ?bugged
+# Error code:
+# Error in `h()`:
+# ! error in evaluating the argument 'object' in selecting a method for function 'summary': could not find function "set.tau0"
+# or sometimes:
+# ! error in evaluating the argument 'object' in selecting a method for function 'summary': error in evaluating the argument 'object' in selecting a method for function 'sampling': object 'mr.stanmodel' not found
 
+# Load function scripts
+source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 
+# Run local copy of MR-Hevo functions
+# Not using full package due to conflicts with Windows
+source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
 
+```
 
 ```{r test-summary-MR-tib-row-fn}
 
-source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-
-#set.seed(14101583)
 test_tib_summ_MR_data <-  get_simulated_MR_data(n_participants = 10000,
                                                 n_instruments = 25,
                                                 n_datasets = 2,
@@ -1275,176 +1216,9 @@ test_tib_summ_MR_models <- get_models(test_tib_summ_MR_data)
 
 test_tib_summ_MR_row <- get_summary_MR_tib_row(test_tib_summ_MR_models)
 
-test_tib_summ_MR_row
-
-```
-
-
-
-
-
-
-```{r test-summary-MR-tib-row-fn-2, include=FALSE}
-
-
-#set.seed(14101583)
-test_tib_summ_MR_data_2 <-  get_simulated_MR_data(n_participants = 10000,
-                                                  n_instruments = 25,
-                                                  n_datasets = 2,
-                                                  prop_invalid = 0.2,
-                                                  beta_val = 0.1,
-                                                  causal_effect = TRUE,
-                                                  rand_error = TRUE,
-                                                  two_sample = TRUE,
-                                                  balanced_pleio = TRUE,
-                                                  InSIDE_satisfied = TRUE)
-
-test_tib_summ_MR_models_2 <- get_models(test_tib_summ_MR_data_2)
-
-test_tib_summ_MR_row_2 <- get_summary_MR_tib_row(test_tib_summ_MR_models_2)
-
-test_tib_summ_MR_row_2
-
-```
-
-
-
-```{r summary-extra-test, include=FALSE}
-
-# first element of each list element
-# map(test_tib_summ_MR_data, first) %>% 
-#   map(., first)
-
-#test_tib_summ_MR_models[[1]]
-
-
-#test_tib_summ_MR_row <- get_summary_MR_tib_row(test_tib_summ_MR_models)
-
-
-# 
-# # Causal effect present
-# set.seed(14101583)
-# sim_test_data_causal_2 <- get_simulated_MR_data(n_participants = 100000,
-#                                            n_instruments = 25,
-#                                            n_datasets = 1,
-#                                            prop_invalid = 0.3,
-#                                            beta_val = 1,                 # size of causal effect
-#                                            causal_effect = TRUE,
-#                                            rand_error = FALSE, 
-#                                            two_sample = FALSE,
-#                                            balanced_pleio = TRUE,
-#                                            InSIDE_satisfied = TRUE,
-#                                            allele_freq_min = 0.01,
-#                                            allele_freq_max = 0.99,
-#                                            gamma_min = 0.03,               # size of pleiotropic effects on exposure
-#                                            gamma_max = 0.1,
-#                                            alpha_min = -0.2,               # size of pleiotropic effects on outcome
-#                                            alpha_max = 0.2,
-#                                            phi_min = 0,
-#                                            phi_max = 0)
-# 
-# #sim_test_data_causal_2
-# 
-# test_plot_tib_causal_2 <- get_models(sim_test_data_causal_2)[[1]]
-# 
-# plot_GY_GX(test_plot_tib_causal_2, plot_title = "Causal Effect Present", x_max = 0.3, y_max = 0.3)
-# 
-# test_tib_summ_MR
-# 
-
-#test_tib_summ_MR_row
-
-```
-
-<!-- ### Programmatic Creation of Datasets -->
-
-<!-- The above functions were then used, first to generate 1000 datasets for each scenario: -->
-
-```{r create-MR-dataset-script, echo=FALSE}
-
-# # Load packages
-# library(tidyverse)
-# library(here)
-# 
-# 
-# # Load function scripts
-# source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-# 
-# # Set inputs
-# 
-# MR_dataset_inputs <- list(n_datasets = 1,
-#                             prop_invalid = list("zero" = 0,
-#                                                 "point1" = 0.1,
-#                                                 "point2" = 0.2,
-#                                                 "point3" = 0.3),
-#                             n_participants = list("10k" = 10, 
-#                                                   "20k" = 20),
-#                             n_instruments =  25,
-#                             
-#                             causal_effect = list("causal" = TRUE,
-#                                                  "no_causal" = FALSE),
-#                             
-#                             balanced_pleio = list("scen1" = TRUE,
-#                                                   "scen2" = FALSE,
-#                                                   "scen3" = FALSE),
-#                             
-#                             InSIDE_satisfied = list("scen1" = TRUE,
-#                                                     "scen2" = TRUE,
-#                                                     "scen3" = FALSE)
-#                             )
-# 
-# MR_dataset_name <- function(input){
-#   
-#   pmap(input, paste0)
-# }
-
-
-# 
-# foo <- pmap(MR_dataset_inputs, get_simulated_MR_data)
-# 
-# 
-# 
-# 
-
-
-#here("MSc_Thesis_Split", "Data", "Simulated_Datasets")
-
-# foo <- pmap(list(1, n_instruments, n_datasets), get_simulated_MR_data)
-# 
-# str(foo)
-
-```
-
-```{r test, include=FALSE}
-# bar <- tibble(n = 100, mean = list("a" = 5, "b" = 10), sd = 0.1)
-# pmap(bar, rnorm)
-# 
-# n_datasets <- 3
-# 
-# n_participants <-  list("10k" = 10, 
-#                         "20k" = 20)
-# 
-# n_instruments <-  25
-# 
-# prop_invalid = list("zero" = 0,
-#                     "point1" = 0.1,
-#                     "point2" = 0.2,
-#                     "point3" = 0.3)
-# 
-# causal_effect = list("causal" = TRUE,
-#                      "no_causal" = FALSE)
-# 
-# balanced_pleio = list("scen1" = TRUE,
-#                       "scen2" = FALSE,
-#                       "scen3" = FALSE)
-# 
-# InSIDE_satisfied = list("scen1" = TRUE,
-#                         "scen2" = TRUE,
-#                         "scen3" = FALSE)
-
-# iwalk(mtcars, \(col, value) cat(value, ": ", median(col), "\n", sep = ""))
-# 
-# mtcars
+test_tib_summ_MR_row %>% 
+  kable() %>% 
+  kable_styling(latex_options="scale_down")
 
 ```
 
@@ -1452,6 +1226,20 @@ test_tib_summ_MR_row_2
 
 \newpage
 
-<!-- ## Appendix C: Citation Search Strategy -->
+# Appendix C: R Packages Used
 
-<!-- \newpage -->
+
+```{r package-citations, include = TRUE, echo = FALSE}
+
+#nocite_references(cite_packages(output = "citekeys", out.dir = tempdir()))
+
+grateful::cite_packages(output = "table", 
+                        out.dir = here(),
+                        omit = NULL,
+                        include.RStudio = TRUE)
+
+  
+```
+
+
+\newpage

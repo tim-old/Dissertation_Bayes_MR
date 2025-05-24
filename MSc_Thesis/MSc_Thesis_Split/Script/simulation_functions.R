@@ -1,5 +1,6 @@
 library(tidyverse)
 library(rstan)
+library(TwoSampleMR)
 
 ###------------------------------Simulate MR Data-------------------------------------------###
 
@@ -353,7 +354,7 @@ mr.stanmodel <- stan_model(file= here("MSc_Thesis_Split",
                            model_name="MRHevo.summarystats", 
                            verbose=FALSE,
                            save_dso = TRUE,
-                           auto_write = TRUE, )
+                           auto_write = TRUE)
 
 # --- Need to comment out model.dir in Hevo_results --- #  
 
@@ -388,6 +389,8 @@ get_summary_MR_tib_row <- function(model_list){
                          Hevo_est = as.double(),
                          Hevo_se = as.double(),
                          Hevo_sd = as.double(),
+                         Hevo_est_lower_CI = as.double(),
+                         Hevo_est_upper_CI = as.double(),
                          Hevo_causal_detected = as.logical()
   )
   
@@ -439,14 +442,16 @@ get_summary_MR_tib_row <- function(model_list){
     results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
     results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
     results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
+    results_tib[dataset, ]$Hevo_est_lower_CI <- Hevo_results$summary["theta","2.5%"]
+    results_tib[dataset, ]$Hevo_est_upper_CI <- Hevo_results$summary["theta","97.5%"]
     
   }
   
-  # Add confidence intervals/causality report to MR-Hevo
+  # Add confidence intervals/causality Boolean to MR-Hevo
   results_tib <- results_tib %>%
    mutate(
-     Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
-     Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
+     #Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
+     #Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
      Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0)
    )
   
@@ -463,6 +468,8 @@ get_summary_MR_tib_row <- function(model_list){
               WME_Pos_Rate = length(WME_pval[WME_pval < 0.05]) / n_datasets,
               Hevo_Av = mean(Hevo_est),
               Hevo_SE = mean(Hevo_se),
+              Hevo_Lower_CI = mean(Hevo_est_lower_CI),
+              Hevo_Upper_CI = mean(Hevo_est_upper_CI),
               Hevo_Pos_Rate = sum(Hevo_est_causal_detected) / n_datasets
     ) %>% 
     mutate(across(where(is.double), round, 3))
@@ -495,7 +502,9 @@ get_reanalysis_tib <- function(models_in){
                          WME_nsnp = as.integer(),
                          Hevo_est = as.double(),
                          Hevo_se = as.double(),
-                         Hevo_sd = as.double()
+                         Hevo_sd = as.double(),
+                         Hevo_est_lower_CI = as.double(),
+                         Hevo_est_upper_CI = as.double()
   )
   
   # Convert full tibble to list of 1 tibble per dataset
@@ -550,6 +559,8 @@ get_reanalysis_tib <- function(models_in){
     results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
     results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
     results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
+    results_tib[dataset, ]$Hevo_est_lower_CI <- Hevo_results$summary["theta","2.5%"]
+    results_tib[dataset, ]$Hevo_est_upper_CI <- Hevo_results$summary["theta","97.5%"]
     #results_tib[dataset, ]$Hevo_2.5 <- Hevo_results$summary["theta","2.5%"]
     #results_tib[dataset, ]$Hevo_97.5 <- Hevo_results$summary["theta","97.5%"]
     
@@ -563,8 +574,8 @@ get_reanalysis_tib <- function(models_in){
            WME_OR_lower_CI = exp(WME_est_lower_CI),
            WME_OR_upper_CI = exp(WME_est_upper_CI),
            #WME_OR_causal_detected = (WME_OR_lower_CI > 1  | WME_OR_upper_CI < 1),
-           Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
-           Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
+           #Hevo_est_lower_CI = (Hevo_est - (1.96 * Hevo_se)),
+           #Hevo_est_upper_CI = (Hevo_est + (1.96 * Hevo_se)),
            Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0),
            Hevo_OR = exp(Hevo_est),
            Hevo_OR_lower_CI = exp(Hevo_est_lower_CI),

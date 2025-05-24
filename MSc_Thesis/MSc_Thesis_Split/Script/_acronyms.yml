@@ -1,0 +1,16 @@
+---
+acronyms:
+  keys:
+    - shortname: CI
+      longname: confidence interval
+    - shortname: InSIDE
+      longname: Instrument Strength Independent of Direct Effect
+    - shortname: IV
+      longname: instrumental variable
+    - shortname: MR
+      longname: Mendelian randomisation
+    - shortname: RCT
+      longname: randomised-controlled trial
+    - shortname: WME
+      longname: weighted median estimator
+---

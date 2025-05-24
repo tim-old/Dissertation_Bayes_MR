@@ -22,7 +22,7 @@ n_datasets <- 1000
 causal_20k_point0_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
                                                        n_instruments = 25,
                                                        n_datasets = n_datasets,
-                                                       prop_invalid = 0,
+                                                       prop_invalid = 10^-300,
                                                        causal_effect = TRUE, 
                                                        #two_sample = FALSE,     # for testing
                                                        #rand_error = FALSE,
@@ -92,14 +92,14 @@ saveRDS(causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", 
 # --- Scenario 2: Directional Pleiotropy, InSIDE Assumption Satisfied --- #
 
 
-## 10,000 Participants ##
+## 20,000 Participants ##
 
 # 0% Invalid
 
 causal_20k_point0_scen2_data <-  get_simulated_MR_data(n_participants = 20000,
                                                        n_instruments = 25,
                                                        n_datasets = n_datasets,
-                                                       prop_invalid = 0,
+                                                       prop_invalid = 10^-300,
                                                        causal_effect = TRUE,
                                                        beta_val = 0.1,
                                                        balanced_pleio = FALSE,
@@ -168,7 +168,7 @@ saveRDS(causal_20k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", 
 causal_20k_point0_scen3_data <-  get_simulated_MR_data(n_participants = 20000,
                                                        n_instruments = 25,
                                                        n_datasets = n_datasets,
-                                                       prop_invalid = 0,
+                                                       prop_invalid = 10^-300,
                                                        causal_effect = TRUE,
                                                        beta_val = 0.1,
                                                        balanced_pleio = FALSE,

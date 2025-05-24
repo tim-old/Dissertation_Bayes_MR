@@ -15,7 +15,9 @@ knit: (function(inputFile, encoding) {
                         knit_root_dir = rprojroot::find_rstudio_root_file(),
                         output_dir = file.path("../Output")
                         )})
-bibliography: ../Script/Lit_Rev_Refs_Update.bib
+bibliography: 
+  - ../Script/Lit_Rev_Refs.bib
+  - ../Script/grateful-refs.bib
 csl: ../Script/vancouver-superscript.csl
 link-citations: TRUE
 urlcolor: blue  
@@ -92,6 +94,53 @@ Exclusion criteria:
 Where eligibility could not be determined from abstract screening alone, full texts were retrieved and screened against the same criteria. Screening of abstracts and full texts was undertaken in blocks of ten articles, until the target of ten included studies for reanalysis had been reached. 
 
 Where one article reported on multiple exposure-outcome associations, data were only extracted for the association with the highest number of genetic instruments available. Data were extracted from full texts of included studies using a standardised data collection template, which included publication details, citation count, primary study question, degree of participant overlap between groups, number/details of genetic instruments used, effect estimates/standard errors calculated, and conclusion regarding causality as determined by the weighted median estimator method. 
+
+
+
+### Data Manipulation
+
+All simulations and data analyses were performed in `r version$version.string` [@***REF***] . A full list of packages used including version numbers can be found in Appendix @***REF***.
+
+
+```{r session-info, include=FALSE}
+
+# platform <- devtools::session_info() %>% #str()
+#   .$platform
+# 
+# packages <- devtools::session_info() %>% 
+#   .$packages %>% 
+#   tibble() %>% 
+#   filter(attached == TRUE) %>% 
+#   select(-c(path,
+#             loadedpath, 
+#             attached, 
+#             is_base, 
+#             md5ok, 
+#             library))
+# 
+# package_col <- packages$package
+# 
+# package_col %>% 
+#   map(citation) %>% 
+#   #print()
+#   print(style = "BibTeX")
+#   #print(style = "text")
+# 
+# # Create blank list
+# citations_list <- vector(mode = "list", length = length(package_col))
+# 
+# 
+# for(package in 1:length(package_col)){
+#   
+#   citations_list[package] <- citation(package_col[package])
+#  
+#}
+
+```
+
+
+### Ethical Approval
+
 
 
 <!-- (***5417 articles***) -->

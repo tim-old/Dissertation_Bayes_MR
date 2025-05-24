@@ -2,7 +2,7 @@
 library(tidyverse)
 library(here)
 
-
+# Not run 24/5/25
 
 # Load function scripts
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
@@ -10,7 +10,7 @@ source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 # Set min datasets
 n_datasets <- 1000
 
-### ---------------------- Positive no_causal Effect -------------------------- ###
+### ----------------------  No Causal Effect -------------------------- ###
 
 # --- Scenario 1: Balanced Pleiotropy, InSIDE Assumption Satisfied --- #
 
@@ -22,7 +22,7 @@ n_datasets <- 1000
 no_causal_20k_point0_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
                                                           n_instruments = 25,
                                                           n_datasets = n_datasets,
-                                                          prop_invalid = 0,
+                                                          prop_invalid = 10^-300,
                                                           causal_effect = FALSE, 
                                                           #two_sample = FALSE,     # for testing
                                                           #rand_error = FALSE,
@@ -99,7 +99,7 @@ saveRDS(no_causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data
 no_causal_20k_point0_scen2_data <-  get_simulated_MR_data(n_participants = 20000,
                                                           n_instruments = 25,
                                                           n_datasets = n_datasets,
-                                                          prop_invalid = 0,
+                                                          prop_invalid = 10^-300,
                                                           causal_effect = FALSE,
                                                           beta_val = 0.1,
                                                           balanced_pleio = FALSE,
@@ -168,7 +168,7 @@ saveRDS(no_causal_20k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data
 no_causal_20k_point0_scen3_data <-  get_simulated_MR_data(n_participants = 20000,
                                                           n_instruments = 25,
                                                           n_datasets = n_datasets,
-                                                          prop_invalid = 0,
+                                                          prop_invalid = 10^-300,
                                                           causal_effect = FALSE,
                                                           beta_val = 0.1,
                                                           balanced_pleio = FALSE,
