@@ -11,6 +11,10 @@ acronyms:
       longname: Mendelian randomisation
     - shortname: RCT
       longname: randomised-controlled trial
+    - shortname: SD
+      longname: standard deviation
+    - shortname: SE
+      longname: standard error
     - shortname: WME
       longname: weighted median estimator
 ---
