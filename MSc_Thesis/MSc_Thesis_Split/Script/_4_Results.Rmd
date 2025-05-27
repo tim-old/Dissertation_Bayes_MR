@@ -63,7 +63,7 @@ source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 # source(here("MSc_Thesis_Split", "Script", "Simulation_Summary_Scripts", "no_causal_10k_scen3_sim_summ.R"))
 
 
-# # Compile model for MR-Hevo
+# Compile model for MR-Hevo
 mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
                                        "Script",
                                        "Hevo",
@@ -73,6 +73,10 @@ mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
 
 
 # Load data
+no_causal_10k_point0_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point0_scen1_models.rds"))
+
+
+# Load results
 # No Causal:
 no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen1_sim_summ_tib.rds"))
 #no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
@@ -101,7 +105,27 @@ Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citation
 
 ```
 
+# Results
 
+## Simulation Study
+
+### Data Simulation
+
+Data were successfully simulated as intended. A selection of representative visualisations are presented in \ref(fig:data-sim-validation)
+
+```{r data-sim-validation, include=TRUE}
+#| fig.id = "data-sim-validation"
+#| fig.cap = "Plots of a random selection"
+
+set.seed(1701)
+rand_example <- sample(1:1000, 1, replace = FALSE)
+
+causal_10k_point0_scen1_models <- readRDS(here())
+
+
+```
+
+### Analysis of Simulated Data
 
 A summary is shown in Table <!-- \@ref(tab:no-causal-sim-summ-tib) and --> \@ref(tab:causal-sim-summ-tib) 
 
