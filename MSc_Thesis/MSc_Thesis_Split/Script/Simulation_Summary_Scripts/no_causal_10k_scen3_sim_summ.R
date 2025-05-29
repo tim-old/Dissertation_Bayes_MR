@@ -8,7 +8,7 @@ library(here)
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 
 # Set number of datasets used
-n <- 3
+n <- 1000
 
 # Load data
 no_causal_10k_point0_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point0_scen3_models.rds"))
