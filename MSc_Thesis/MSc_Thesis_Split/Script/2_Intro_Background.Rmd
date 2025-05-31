@@ -376,7 +376,7 @@ Gamma_gamma_plot <- causal_models %>%
             x = 0.08, # labels with gradient (causal effect estimate)
             y = 0.01,
             size = 3.5, 
-            fontface = "bold",
+            fontface = "italic",
             colour = edin_spruce_grey_hex, 
             hjust = 0, 
             data = . %>% slice_head() # prevent over-printing
@@ -454,15 +454,16 @@ MR-Hevo[@mckeigue_inference_2024] is an R package which uses more typical Bayesi
 
 The main aim of this study will be to demonstrate if the \acr{WME} approach gives over-confident causal estimates in the presence of pleiotropy, and whether this issue is more correctly handled by the MR-Hevo Bayesian approach.
 
-<!-- Research Questions: -->
 
-<!-- 1. How does MR-Hevo perform versus the weighted median estimator when estimating causal effects in MR studies? -->
-<!-- 2. Do conclusions of existing MR studies using weighted median causal effect estimation change if MR-Hevo methods are used? -->
+### Research Questions:
 
-<!-- Objectives: -->
+1. How does MR-Hevo perform versus the weighted median estimator when estimating causal effects in MR studies?
+2. Do conclusions of existing MR studies using weighted median causal effect estimation change if MR-Hevo methods are used?
 
-<!-- 1. Quantify the precision of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator -->
-<!-- 2. Evaluate the consistency of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator -->
-<!-- 3. Compare the conclusions drawn from MR-Hevo causal effect estimation versus the weighted median estimator on real-world data -->
+### Objectives:
+
+1. Quantify the precision of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator
+2. Evaluate the consistency of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator
+3. Compare the conclusions drawn from MR-Hevo causal effect estimation versus the weighted median estimator on real-world data
 
 
