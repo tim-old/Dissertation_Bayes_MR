@@ -19,3 +19,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_6_Limitations_Recommendations.Rmd"))`
+
+
+The random seed used happened to assign similar numbers (6 vs 7) of invalid instruments to both the 20% and 30% invalid instrument cases; relevant code was checked to ensure this was not an error in specification of model parameters. As this was noted after analysis had begun, it was decided not to re-run simulations to avoid implicit multiple comparisons in analysis.
+
+
+Bowden et al[@bowden_consistent_2016] used 10,000 simulations per 
