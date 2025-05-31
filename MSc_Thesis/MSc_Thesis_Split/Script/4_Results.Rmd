@@ -24,13 +24,14 @@ urlcolor: blue
 acronyms:
   loa_title: ""
   include_unused: TRUE
-  insert_loa: FALSE
+  insert_loa: "end"
   insert_links: TRUE
   id_prefix: "acronyms_"
   sorting: "alphabetical"
   non_existing: "key"
   style: "long-short"
   fromfile: ./_acronyms.yml
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -77,7 +78,7 @@ mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
                            verbose = FALSE)
 
 
-# Load data
+# --- Load data --- #
 ## 0% Invalid
 no_causal_10k_point0_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point0_scen1_models.rds"))
 causal_10k_point0_scen1_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point0_scen1_models.rds"))
@@ -95,7 +96,7 @@ no_causal_10k_point3_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Da
 causal_10k_point3_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point3_scen3_models.rds"))
 
 
-# Load results
+# --- Load results --- #
 # No Causal:
 no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen1_sim_summ_tib.rds"))
 #no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
@@ -117,7 +118,7 @@ causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data",
 causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen3_sim_summ_tib.rds"))
 #causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
 
-# Citation Search 
+# --- Citation Search --- # 
 
 Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() #%>% filter(Instrument !="rs7326482") %>% mutate(N=1)
 # Citations_Instrument_Data_2 <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() #%>%filter(Instrument !="rs7326482") %>%  mutate(N=2)
@@ -189,6 +190,7 @@ causal_sim_summ_tib <- bind_rows(causal_scen1_sim_summ_tib,
 #no_causal_sim_summ_tib
 ```
 
+Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "4_Results.Rmd"))`
 
 # Results
 
@@ -196,21 +198,14 @@ causal_sim_summ_tib <- bind_rows(causal_scen1_sim_summ_tib,
 
 ### Data Simulation
 
-Data were successfully simulated as intended. A selection of representative visualisations are presented in Figure \@ref(fig:data-sim-validation). 
-
-### Analysis of Simulated Data
-
-Results of \acr{WME} and MR-Hevo analyses of simulated datasets are summarised in Tables \@ref(tab:no-causal-sim-summ-display) and \@ref(tab:causal-sim-summ-display).
-
-Across all cases where no causal effect was present (Table \@ref(tab:no-causal-sim-summ-display)), the mean rate of reporting a causal effect for MR-Hevo was `r mean(no_causal_sim_summ_tib$Pos_Rate_Diff * 100)`% versus \acr{WME}. Of the `r no_causal_sim_summ_tib$Hevo_Better %>% length()` combinations of scenarios and parameters, MR-Hevo exhibited a favourable false positive rate versus \acr{WME} in `r no_causal_sim_summ_tib$Hevo_Better %>% sum(na.rm = TRUE)`. The mean estimate (95% \acr{CI}) across all cases was `r no_causal_sim_summ_tib$Hevo_Av %>% mean() %>% round(2)` (`r no_causal_sim_summ_tib$Hevo_Lower_CI %>% mean() %>% round(2)` to `r no_causal_sim_summ_tib$Hevo_Upper_CI %>% mean() %>% round(2)`) for MR-Hevo and `r no_causal_sim_summ_tib$WME_Av %>% mean() %>% round(2)` (`r no_causal_sim_summ_tib$WME_Lower_CI %>% mean() %>% round(2)` to `r no_causal_sim_summ_tib$WME_Upper_CI %>% mean() %>% round(2)`) for \acr{WME}.
-
+Data were successfully simulated as intended. A selection of representative visualisations are presented in Figure \@ref(fig:data-sim-validation). Full details of testing used to validate model outputs from parameter inputs are given in Appendix \@ref(appendix-sim-test). The $F$-statistic calculated from simulated instruments was >10, indicating that they were sufficiently strongly associated with exposure to meet the relevance assumption of \acr{IV} analysis (Tables \@ref(tab:no-causal-sim-summ-display) and \@ref(tab:causal-sim-summ-display)).
 
 \newpage
 
 
 ```{r data-sim-validation, include=TRUE, fig.height=7.5}
 #| fig.id = "data-sim-validation",
-#| fig.cap = "Plots of a representative group of simulated datasets; all simulate genetic instruments from the same index from the same random seed. Left and right columns demonstrate null and positive true causal effects, respectively. The scenario and the proportion of invalid (i.e. pleiotropic) genetic instruments changes with each row. a) 10% of instruments invalid, Scenario 1: balanced pleiotropy introduces noise around the causal effect. b) 20% of instruments invalid, Scenario 2: directional pleiotropy biases towards a positive effect estimate. c) 30% of instruments invalid, Scenario 3: directional pleiotropy and InSIDE assumption violation biases strongly towards a positive effect estimate."
+#| fig.cap = "Plots of a representative group of simulated datasets; all simulate genetic instruments from the same index from the same random seed. Left and right columns demonstrate null and positive true causal effects, respectively. The scenario and the proportion of invalid (i.e. pleiotropic) genetic instruments changes with each row. a) 10% of instruments invalid, Scenario 1: balanced pleiotropy introduces noise around the causal effect. b) 20% of instruments invalid, Scenario 2: directional pleiotropy biases in the direction of the invalid instruments. c) 30% of instruments invalid, Scenario 3: directional pleiotropy and InSIDE assumption violation strongly biases towards a positive effect estimate."
 
 # Get random dataset index
 set.seed(1701)
@@ -352,10 +347,90 @@ plot_grid(plot_two_cols,
 
 \newpage
 
+### Analysis of Simulated Data
+
+```{r inline-vals-no-causal}
+
+# --- No Causal --- #
+# Mean positive report rates
+no_causal_Hevo_mean_pos_rate <- mean(no_causal_sim_summ_tib$Hevo_Pos_Rate * 100) %>% signif(2)
+no_causal_WME_mean_pos_rate <- mean(no_causal_sim_summ_tib$WME_Pos_Rate * 100) %>% signif(2)
+
+# Proportion of combinations of scenarios/parameters
+no_causal_comb_n <- no_causal_sim_summ_tib$Hevo_Better %>% length()
+no_causal_Hevo_better_n <- no_causal_sim_summ_tib$Hevo_Better %>% sum(na.rm = TRUE)
+no_causal_Hevo_better_pc <- (no_causal_Hevo_better_n/no_causal_comb_n * 100) %>% signif(2)
+
+# Mean/CIs
+no_causal_Hevo_mean_est <- no_causal_sim_summ_tib$Hevo_Av %>% mean() %>% signif(2)
+no_causal_Hevo_mean_lower <- no_causal_sim_summ_tib$Hevo_Lower_CI %>% mean() %>% signif(2)
+no_causal_Hevo_mean_upper <- no_causal_sim_summ_tib$Hevo_Upper_CI %>% mean() %>% signif(2)
+
+no_causal_WME_mean_est <- no_causal_sim_summ_tib$WME_Av %>% mean() %>% signif(2)
+no_causal_WME_mean_lower <- no_causal_sim_summ_tib$WME_Lower_CI %>% mean() %>% signif(2)
+no_causal_WME_mean_upper <- no_causal_sim_summ_tib$WME_Upper_CI %>% mean() %>% signif(2)
+
+
+# SEs
+no_causal_Hevo_mean_SE <- no_causal_sim_summ_tib$Hevo_SE %>% mean() %>% signif(2)
+no_causal_Hevo_min_SE <- no_causal_sim_summ_tib$Hevo_SE %>% min() %>% signif(2)
+no_causal_Hevo_max_SE <- no_causal_sim_summ_tib$Hevo_SE %>% max() %>% signif(2)
+
+no_causal_WME_mean_SE <- no_causal_sim_summ_tib$WME_SE %>% mean() %>% signif(2)
+no_causal_WME_min_SE <- no_causal_sim_summ_tib$WME_SE %>% min() %>% signif(2)
+no_causal_WME_max_SE <- no_causal_sim_summ_tib$WME_SE %>% max() %>% signif(2)
+
+```
+
+#### No Causal Effect
+\leavevmode\newline Across all cases where no causal effect was present (Table \@ref(tab:no-causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. false positive rate) for MR-Hevo was `r no_causal_Hevo_mean_pos_rate`% versus `r no_causal_WME_mean_pos_rate`% for \acr{WME}. Of the `r no_causal_comb_n` combinations of scenarios and parameters, MR-Hevo exhibited a favourable false positive rate versus \acr{WME} in `r no_causal_Hevo_better_n` (`r no_causal_Hevo_better_pc`%). For both MR-Hevo and \acr{WME} methods, causal report rate generally increased with an increasing proportion of invalid instruments, and also as assumption violations progressively presented greater data variability and bias across scenarios 1 to 3.
+
+The mean causal effect estimate (mean reported 95% \acr{CI}s) across all cases was `r no_causal_Hevo_mean_est` (`r no_causal_Hevo_mean_lower` to `r no_causal_Hevo_mean_upper`) for MR-Hevo and `r no_causal_WME_mean_est` (`r no_causal_WME_mean_lower` to `r no_causal_WME_mean_upper`) for \acr{WME}. The mean (range) \acr{SE} of causal effect estimates across all cases was `r no_causal_Hevo_mean_SE` (`r no_causal_Hevo_min_SE` to `r no_causal_Hevo_max_SE`) for MR-Hevo and `r no_causal_WME_mean_SE` (`r no_causal_WME_min_SE` to `r no_causal_WME_max_SE`). For both MR-Hevo and \acr{WME} methods, causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase slightly both with an increasing proportion of invalid instruments, and as assumption violations progressively presented greater data variability and bias across scenarios 1 to 3.
+
+```{r inline-vals-causal}
+
+# --- No Causal --- #
+# Mean positive report rates
+causal_Hevo_mean_pos_rate <- mean(causal_sim_summ_tib$Hevo_Pos_Rate * 100) %>% signif(2)
+causal_WME_mean_pos_rate <- mean(causal_sim_summ_tib$WME_Pos_Rate * 100) %>% signif(2)
+
+# Proportion of combinations of scenarios/parameters
+causal_comb_n <- causal_sim_summ_tib$Hevo_Better %>% length()
+causal_Hevo_better_n <- causal_sim_summ_tib$Hevo_Better %>% sum(na.rm = TRUE)
+causal_Hevo_better_pc <- (causal_Hevo_better_n/causal_comb_n * 100) %>% signif(2)
+
+# Mean/CIs
+causal_Hevo_mean_est <- causal_sim_summ_tib$Hevo_Av %>% mean() %>% signif(2)
+causal_Hevo_mean_lower <- causal_sim_summ_tib$Hevo_Lower_CI %>% mean() %>% signif(2)
+causal_Hevo_mean_upper <- causal_sim_summ_tib$Hevo_Upper_CI %>% mean() %>% signif(2)
+
+causal_WME_mean_est <- causal_sim_summ_tib$WME_Av %>% mean() %>% signif(2)
+causal_WME_mean_lower <- causal_sim_summ_tib$WME_Lower_CI %>% mean() %>% signif(2)
+causal_WME_mean_upper <- causal_sim_summ_tib$WME_Upper_CI %>% mean() %>% signif(2)
+
+
+# SEs
+causal_Hevo_mean_SE <- causal_sim_summ_tib$Hevo_SE %>% mean() %>% signif(2)
+causal_Hevo_min_SE <- causal_sim_summ_tib$Hevo_SE %>% min() %>% signif(2)
+causal_Hevo_max_SE <- causal_sim_summ_tib$Hevo_SE %>% max() %>% signif(2)
+
+causal_WME_mean_SE <- causal_sim_summ_tib$WME_SE %>% mean() %>% signif(2)
+causal_WME_min_SE <- causal_sim_summ_tib$WME_SE %>% min() %>% signif(2)
+causal_WME_max_SE <- causal_sim_summ_tib$WME_SE %>% max() %>% signif(2)
+
+```
+
+#### Positive Causal Effect
+\leavevmode\newline Across all cases where positive causal effect was present (Table \@ref(tab:causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. sensitivity) for MR-Hevo was `r causal_Hevo_mean_pos_rate`% versus `r causal_WME_mean_pos_rate`% for \acr{WME}. Of the `r causal_comb_n` combinations of scenarios and parameters, MR-Hevo exhibited a favourable sensitivity versus \acr{WME} in `r causal_Hevo_better_n` (`r causal_Hevo_better_pc`%). For both MR-Hevo and \acr{WME} methods, causal report rate generally increased with an increasing proportion of invalid instruments, and also as assumption violations progressively presented greater data variability and bias across scenarios 1 to 3.
+
+The mean causal effect estimate (mean reported 95% \acr{CI}s) across all cases was `r causal_Hevo_mean_est` (`r causal_Hevo_mean_lower` to `r causal_Hevo_mean_upper`) for MR-Hevo and `r causal_WME_mean_est` (`r causal_WME_mean_lower` to `r causal_WME_mean_upper`) for \acr{WME}. The mean (range) \acr{SE} of causal effect estimates across all cases was `r causal_Hevo_mean_SE` (`r causal_Hevo_min_SE` to `r causal_Hevo_max_SE`) for MR-Hevo and `r causal_WME_mean_SE` (`r causal_WME_min_SE` to `r causal_WME_max_SE`). For both MR-Hevo and \acr{WME} methods, causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase slightly both with an increasing proportion of invalid instruments, and as assumption violations progressively presented greater data variability and bias across scenarios 1 to 3.
 
 \newpage
+
+## Tables
+
 ```{r no-causal-sim-summ-display, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="no-causal-sim-summ-display", tab.cap="Summary of 1,000 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect", results='asis'}
-#| ft.arraystretch = 0.8
+#| ft.arraystretch = 1
 
 
 # Display
@@ -433,11 +508,13 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   #line_spacing(space = 0, part = "header") |>
   line_spacing(space = 1, part = "body") |>
   fit_to_width(max_width = 6.5) |>
-  height_all(height = 5, unit = "mm",part = "all") |>
+  #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
-  add_footer_lines("IV: Instumental Variable, SE: Standard Error. Null Causal Effect (\U03B2 = 0)") |>
-  fontsize(5, i = 1, j = 1, part = "footer")
+  add_footer_lines("CI: Confidence Interval, IV: Instumental Variable, SE: Standard Error. Null Causal Effect (\U03B2 = 0)") |>
+  fontsize(8, i = c(1:5), j = c(1:13), part = "header") |>
+  fontsize(8, i = c(1:10), j = c(1:13), part = "body") |>
+  fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
 #             autonum = run_autonum(seq_id = "tab",
@@ -451,19 +528,27 @@ no_causal_sim_summ_tib_display
 
 \newpage
 ```{r causal-sim-summ-display, echo=FALSE, warning=FALSE, cache=TRUE, include=TRUE, tab.id="causal-sim-summ-display", tab.cap="Summary of 1,000 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect", results='asis'}
+#| ft.arraystretch = 1
+
 
 # Display
 causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
-  # Change names for cleaner plotting
-  mutate(Invalid = Prop_Invalid,
+# Change names for cleaner plotting
+  mutate(Invalid = paste0((Prop_Invalid * 100), "%"),
          F = round(F_stat, 1),
          R2 = paste0(R2_stat *100, "%"),
          Weighted_Median_Mean_Estimate = WME_Av,
          Weighted_Median_Mean_SE = paste0("(", WME_SE, ")"),
-         Weighted_Median_Positive_Rate = WME_Pos_Rate * 100,
+         Weighted_Median_Lower_CI = round(WME_Av - 1.96 * WME_SE, 2),
+         Weighted_Median_Upper_CI = round(WME_Av + 1.96 * WME_SE, 2),
+         Weighted_Median_95_CI = paste0(Weighted_Median_Lower_CI, " to ", Weighted_Median_Upper_CI),
+         Weighted_Median_Causal_Report_Rate = paste0((WME_Pos_Rate * 100), "%"),
          MR_Hevo_Mean_Estimate = Hevo_Av,
-         MR_Hevo_Mean_SE= paste0("(", Hevo_SE, ")"),
-         MR_Hevo_Positive_Rate = Hevo_Pos_Rate * 100) %>%
+         MR_Hevo_Mean_SE = paste0("(", Hevo_SE, ")"),
+         MR_Hevo_Lower_CI = round(Hevo_Lower_CI, 2),
+         MR_Hevo_Upper_CI = round(Hevo_Upper_CI, 2),
+         MR_Hevo_95_CI = paste0(round(Hevo_Lower_CI, 2), " to ", round(Hevo_Upper_CI, 2)),
+         MR_Hevo_Causal_Report_Rate = paste0((Hevo_Pos_Rate * 100), "%")) %>%
   # Drop old names
   select(N,
          Invalid,
@@ -471,10 +556,12 @@ causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
          R2,
          Weighted_Median_Mean_Estimate,
          Weighted_Median_Mean_SE,
-         Weighted_Median_Positive_Rate,
+         Weighted_Median_95_CI,
+         Weighted_Median_Causal_Report_Rate,
          MR_Hevo_Mean_Estimate,
          MR_Hevo_Mean_SE,
-         MR_Hevo_Positive_Rate,
+         MR_Hevo_95_CI,
+         MR_Hevo_Causal_Report_Rate,
          Scenario) %>%
   as_grouped_data(groups = c("Scenario")) %>%
   as_flextable(hide_grouplabel = TRUE, col_keys = c("N",
@@ -483,11 +570,13 @@ causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
                                                     "R2",
                                                     "Weighted_Median_Mean_Estimate",
                                                     "Weighted_Median_Mean_SE",
-                                                    "Weighted_Median_Positive_Rate",
+                                                    "Weighted_Median_95_CI", 
+                                                    "Weighted_Median_Causal_Report_Rate",
                                                     "blank_col",
                                                     "MR_Hevo_Mean_Estimate",
                                                     "MR_Hevo_Mean_SE",
-                                                    "MR_Hevo_Positive_Rate",
+                                                    "MR_Hevo_95_CI", 
+                                                    "MR_Hevo_Causal_Report_Rate",
                                                     "Scenario")) |>
   # To separate WME/MR-Hevo
   width(j = "blank_col", width = 0.2) |>
@@ -499,20 +588,31 @@ causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
   # Italicise N and F
   italic(part = "header", i = 1, j = c(1,3) ) |>
   # Fix name of invalid IVs
-  compose(part = "header", i = 1:4, j = 2, value = as_paragraph("Proportion \nof Invalid IVs")) |>
+  compose(part = "header", i = 1:4, j = 2, value = as_paragraph("Invalid IVs")) |>
+  # Fix name of 95% CIs
+  compose(part = "header", i = 3, j = c(7, 12), value = as_paragraph("Mean")) |>
+  compose(part = "header", i = 4, j = c(7, 12), value = as_paragraph("95% CI")) |>
   # Fix split headers
-  compose(part = "header", i = 3, j = c(5,9), value = as_paragraph("Mean Estimate")) |>
-  compose(part = "header", i = 4, j = c(5:6,9:10), value = as_paragraph("(Mean SE)")) |>
+  compose(part = "header", i = 3, j = c(5,10), value = as_paragraph("Mean Estimate")) |>
+  compose(part = "header", i = 4, j = c(5:6,10:11), value = as_paragraph("(Mean SE)")) |>
   merge_h(part = "header", i = 4) |>
   # Italicise/superscript R^2
   compose(part = "header", i = 1, j = 4, value = as_paragraph(as_i("R"), as_sup(as_i(as.character(2))))) |>
   
-  hline(part = "header", i = 2, j = c(5:7, 9:11), border = fp_border(color = "black", width = 1)) |>
+  hline(part = "header", i = 2, j = c(5:8, 10:13), border = fp_border(color = "black", width = 1)) |>
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
-  #add_footer_lines("Mean estimates, meand standar")
+  # Fix dimensions
   autofit() |>
-  fit_to_width(max_width = 7.5) |>
-  add_footer_lines("IV: Instumental Variable, SE: Standard Error \nData from 1000 Simulated Mendelian Randomisation Studies \nPositive Causal Effect (\U03B2 = 0.1)")
+  #line_spacing(space = 0, part = "header") |>
+  line_spacing(space = 1, part = "body") |>
+  fit_to_width(max_width = 6.5) |>
+  #height_all(height = 40, unit = "mm",part = "all") |>
+
+  # Add footer
+  add_footer_lines("CI: Confidence Interval, IV: Instumental Variable, SE: Standard Error. Null Causal Effect (\U03B2 = 0)") |>
+  fontsize(8, i = c(1:5), j = c(1:13), part = "header") |>
+  fontsize(8, i = c(1:15), j = c(1:13), part = "body") |>
+  fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
 #             autonum = run_autonum(seq_id = "tab",
@@ -524,49 +624,12 @@ causal_sim_summ_tib_display
 
 ```
 
-
-```{r citations-reanalysis-summ-tib, include=TRUE, fig.id=TRUE,cache=TRUE, tab.cap=""}
-
-# library(tidyverse)
-# library(dplyr)
-# library(bookdown)
-# library(TwoSampleMR)
-# library(rstan)
-# library(here)
-# library(cowplot)
-# library(kableExtra)
-# library(tables)
-# library(flextable)
-# library(ftExtra)
-# library(officer)
-# 
-# # Load function scripts
-# source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-# source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
-# 
-# 
-# # # Compile model for MR-Hevo
-# mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
-#                                        "Script",
-#                                        "Hevo",
-#                                        "MRHevo_summarystats.stan"),
-#                            model_name="MRHevo.summarystats",
-#                            verbose=FALSE)
-
-#Data_List <- bind_rows(Citations_Instrument_Data, Citations_Instrument_Data_2)
+\newpage
 
 
-##reanalysis_tib <- get_reanalysis_tib(Citations_Instrument_Data) #%>% mutate(citation = "[@bowden_consistent_2016]") #%>% kable()
+## Citations Search
 
-##reanalysis_tib #%>% 
-#kable()
-
-#str(Data_List)
-
-```
-
-Table (\#tab:citations-reanalysis-summ-tib) reference[@bowden_consistent_2016]
-
+A total of *** abstracts and *** full texts were screened to identify the 10 studies listed in Table \@ref(tab:citation-search-sample); the screening flow diagram is presented in Figure \@ref(fig:screening_flow).
 
 
 ```{r citations-reanalysis-summ-fn, include=FALSE}
@@ -576,16 +639,21 @@ get_reanalysis_tib <- function(models_in){
   output_tib_row <- tibble(N = as.integer(),
                            WME_Av = as.double(),
                            WME_SE = as.double(),
-                           WME_OR = as.double,
                            Hevo_Av = as.double(),
-                           Hevo_SE = as.double(),
-                           Hevo_OR = as.double()
+                           Hevo_SE = as.double()
   )
   
   # Create blank tibble to receive results of Weighted
   # Median Estimator function from MR-Base
   
-  results_tib <-  tibble(N = as.integer(),
+  results_tib <-  tibble(
+                         Study_Author = as.character(),
+                         Study_Ref = as.character(),
+                         Study_DOI = as.character(),
+                         Study_Exposure = as.character(),
+                         Study_Outcome = as.character(),
+                         Study_Reported_Measure = as.character(),
+                         N = as.integer(),
                          WME_est = as.double(),
                          WME_se = as.double(),
                          WME_pval = as.double(),
@@ -593,95 +661,249 @@ get_reanalysis_tib <- function(models_in){
                          Hevo_est = as.double(),
                          Hevo_se = as.double(),
                          Hevo_sd = as.double(),
-                         Hevo_2.5 = as.double(),
-                         Hevo_97.5 = as.double(),
-                         Hevo_causal_detected = as.logical()
+                         Hevo_est_lower_CI = as.double(),
+                         Hevo_est_upper_CI = as.double()
   )
   
   # Convert full tibble to list of 1 tibble per dataset
   model_list <- models_in %>% 
-    group_by(N) %>%
+    group_by(Study_DOI) %>%
     group_split()
   
   
   # Should = 10
   n_datasets <- length(model_list)
   
-  # Run WME and MR-Hevo for each dataset 
+  #Run WME and MR-Hevo for each dataset
   for(dataset in 1:n_datasets){
     
+    # Extract study details
+    results_tib[dataset, ]$Study_Author <- model_list[[dataset]]$Author[[1]]
+    results_tib[dataset, ]$Study_Ref <- model_list[[dataset]]$Study_Ref[[1]]
+    results_tib[dataset, ]$Study_DOI <- model_list[[dataset]]$Study_DOI[[1]]
+    results_tib[dataset, ]$Study_Exposure <- model_list[[dataset]]$Exposure[[1]]
+    results_tib[dataset, ]$Study_Outcome <- model_list[[dataset]]$Outcome[[1]]
+    results_tib[dataset, ]$Study_Reported_Measure <- model_list[[dataset]]$Reported_Measure[[1]]
+
     # Stored as individual vectors for MR-Hevo/RStan - not
     # Tidyverse compatible
     coeff_G_X_vect <- model_list[[dataset]]$Coeff_G_X
     coeff_G_Y_vect <- model_list[[dataset]]$Coeff_G_Y
     coeff_G_X_SE_vect <- model_list[[dataset]]$Coeff_G_X_SE
     coeff_G_Y_SE_vect <- model_list[[dataset]]$Coeff_G_Y_SE
-    
-    
+
+
     # N.B. MR-Hevo terminology vs WME paper/other code:
     # alpha = effects of instruments on exposure, i.e. coeff_G_X
     # beta = pleiotropic effects of instruments on outcome, i.e. alpha in WME
     # gamma = effects of instruments on outcome, i.e. coeff_G_Y
     # theta = causal effect X on Y, i.e. b
-    
+
     # Results from weighted median estimator method
     WME_results <- mr_weighted_median(b_exp = coeff_G_X_vect,
                                       b_out = coeff_G_Y_vect,
                                       se_exp = coeff_G_X_SE_vect,
                                       se_out = coeff_G_Y_SE_vect,
                                       parameters = list(nboot = 1000))
-    
+
     # Results from MR-Hevo method
-    Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
-                                     se.alpha_hat = coeff_G_X_SE_vect,
-                                     gamma_hat = coeff_G_Y_vect,
-                                     se.gamma_hat = coeff_G_Y_SE_vect
+    Hevo_results <- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
+                                      se.alpha_hat = coeff_G_X_SE_vect,
+                                      gamma_hat = coeff_G_Y_vect,
+                                      se.gamma_hat = coeff_G_Y_SE_vect
     ) %>%
       summary()
-    
-    
+
+
     # Extract WME Results
     results_tib[dataset, ]$WME_est <- WME_results$b
     results_tib[dataset, ]$WME_se <- WME_results$se
     results_tib[dataset, ]$WME_pval <- WME_results$pval
     results_tib[dataset, ]$WME_nsnp <- WME_results$nsnp
-    
+
     # Extract MR-Hevo Results
     results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
     results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
     results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
-    results_tib[dataset, ]$Hevo_2.5 <- Hevo_results$summary["theta","2.5%"]
-    results_tib[dataset, ]$Hevo_97.5 <- Hevo_results$summary["theta","97.5%"]
-    
+    results_tib[dataset, ]$Hevo_est_lower_CI <- Hevo_results$summary["theta","2.5%"]
+    results_tib[dataset, ]$Hevo_est_upper_CI <- Hevo_results$summary["theta","97.5%"]
+
     results_tib[dataset, ]$N <- dataset
-    
+
+
   }
-  
+
   results_tib <- results_tib %>%
-    mutate(Hevo_causal_detected = !(Hevo_2.5 < 0  & Hevo_97.5 > 0))
-  
-  
-  # https://pmc.ncbi.nlm.nih.gov/articles/PMC10616660/
-  # https://mr-dictionary.mrcieu.ac.uk/term/r-squared/
-  output_tib_row <- results_tib %>%
-    summarise(N = N,
-              WME_Av = mean(WME_est),
-              WME_SE = mean(WME_se),
-              WME_OR = exp(WME_Av),
-              Hevo_Av = mean(Hevo_est),
-              Hevo_SE = mean(Hevo_se),
-              Hevo_Causal = Hevo_causal_detected
-    ) %>%
-    mutate(across(where(is.double), round, 3))
-  
-  return(output_tib_row)
-  #return(results_tib)
-  
+    mutate(WME_OR = exp(WME_est),
+           WME_est_lower_CI = (WME_est - (1.96 * Hevo_se)),
+           WME_est_upper_CI = (WME_est + (1.96 * Hevo_se)),
+           WME_OR_lower_CI = exp(WME_est_lower_CI),
+           WME_OR_upper_CI = exp(WME_est_upper_CI),
+           WME_est_causal_detected = (WME_est_lower_CI > 0  | WME_est_upper_CI < 0),
+           #WME_OR_causal_detected = (WME_OR_lower_CI > 1  | WME_OR_upper_CI < 1),
+           Hevo_OR = exp(Hevo_est),
+           Hevo_OR_lower_CI = exp(Hevo_est_lower_CI),
+           Hevo_OR_upper_CI = exp(Hevo_est_upper_CI),
+           Hevo_OR_causal_detected = (Hevo_OR_lower_CI > 1  | Hevo_OR_upper_CI < 1),
+           Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0)
+    )
+
+  return(results_tib)
   
 }
 
 
 ```
 
-Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "4_Results.Rmd"))`
+```{r citations-reanalysis-summ-tib}
+
+citations_reanalysis_summ_tib <- Citations_Instrument_Data %>% 
+  #str()
+  #slice_head(n = 153) %>% #140
+  mutate(across(Coeff_G_X:Coeff_G_Y_SE, ~replace(., . == 0, 10^-100))) %>% 
+  get_reanalysis_tib() 
+
+#%>% mutate(citation = "[@bowden_consistent_2016]") #%>% kable()
+
+##reanalysis_tib #%>% 
+#kable()
+
+#str(Data_List)
+
+```
+
+
+```{r citations-reanalysis-summ-display, include=TRUE, cache=TRUE}
+#| tab.id = "citations-reanalysis-summ-display",
+#| tab.cap = "Reanalysis of 10 highly-cited two-sample MR articles referencing Bowden et al[@bowden_consistent_2016], comparing results of both WME and MR-Hevo causal effect estimation methods",
+#| ft.arraystretch = 1
+
+citations_reanalysis_summ_display <- citations_reanalysis_summ_tib %>%
+  # Change names for cleaner plotting
+  mutate(#Study_Author = paste0(Study_Author, Study_Ref),
+         Study_SNPs = WME_nsnp,
+         Blank = NA,
+         Weighted_Median_Beta = paste0(round(WME_est, 2), " (", round(WME_est_lower_CI, 2), "-", round(WME_est_upper_CI, 2), ")"),
+         Weighted_Median_SE = WME_se,
+         Weighted_Median_OR = paste0(round(WME_OR, 2), " (", round(WME_OR_lower_CI, 2), "-", round(WME_OR_upper_CI, 2), ")"),
+         Weighted_Median_Causality = if_else(WME_est_causal_detected, "Yes", "No"),
+         Blank_2 = NA,
+         MR_Hevo_Beta = paste0(round(Hevo_est, 2), " (", round(Hevo_est_lower_CI, 2), "-", round(Hevo_est_upper_CI, 2), ")"),
+         MR_Hevo_SE = Hevo_se,
+         MR_Hevo_OR = paste0(round(Hevo_OR, 2), " (", round(Hevo_OR_lower_CI, 2), "-", round(Hevo_OR_upper_CI, 2), ")"),
+         MR_Hevo_Causality = if_else(Hevo_est_causal_detected, "Yes", "No")
+         ) %>% 
+  # Drop old names
+  select(Study_Author,
+         #Study_Ref,
+         #Study_DOI,
+         Study_Exposure,
+         Study_Outcome,
+         Study_SNPs, 
+         Blank,
+         Weighted_Median_Beta,
+         Weighted_Median_SE,
+         Weighted_Median_OR,
+         Weighted_Median_Causality,
+         Blank_2,
+         MR_Hevo_Beta,
+         MR_Hevo_SE,
+         MR_Hevo_OR,
+         MR_Hevo_Causality) %>% 
+    mutate(across(where(is.double), signif, 2)) %>% 
+  #as_grouped_data(groups = "Study_Author", expand_single = FALSE,) %>%
+  flextable(#hide_grouplabel = TRUE, 
+    col_keys = c("Study_Author", #"Study_Ref", #"Study_DOI",
+                 "Study_Exposure",
+                 "Study_Outcome",
+                 "Study_SNPs", 
+                 "Blank", #5
+                 "Weighted_Median_Beta", 
+                 "Weighted_Median_SE",
+                 "Weighted_Median_OR",
+                 "Weighted_Median_Causality",
+                 "Blank_2", #10
+                 "MR_Hevo_Beta", 
+                 "MR_Hevo_SE",
+                 "MR_Hevo_OR",
+                 "MR_Hevo_Causality")) |>
+  # To separate Study Details/WME/MR-Hevo
+  width(j = c(5, 10), width = 0.2) |>
+  span_header() |>
+  align(part = "all", align = "center") |>
+  # Fix names blank cols - unsure why not working as above
+  compose(part = "header", i = 1:3, j = c(5, 10), value = as_paragraph("")) |>
+  # Blank study top row
+  compose(part = "header", i = 1, j = c(1), value = as_paragraph("")) |>
+  empty_blanks() |>
+  # Fix Causality name
+  width(j = c(6, 8, 11, 13), width = 20) |>
+  compose(part = "header", i = 3, j = c(9, 14), value = as_paragraph("Causality\nReported")) |>
+  empty_blanks() |>
+  # Fix Beta name
+  compose(part = "header", i = 3, j = c(6, 11), value = as_paragraph("\U03B2")) |> #\U0302
+  # Separating lines
+  hline(part = "header", i = 2, j = c(6:9, 11:14), border = fp_border(color = "black", width = 1)) |>
+  # Fix dimensions
+  autofit() |>
+  line_spacing(space = 1, part = "header") |>
+  line_spacing(space = 1, part = "body") |>
+  fit_to_width(max_width = 6.5) |>
+  #height_all(height = 40, unit = "mm",part = "all") |>
+  # Add footer
+  add_footer_lines("\U03B2 and OR presented as: estimate (95% CI).\n\U03B2: causal effect estimate, CI: Confidence Interval, OR: Odds Ratio, SE: Standard Error.") |>
+  #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
+  fontsize(8, i = c(1:3), j = c(1:14), part = "header") |>
+  fontsize(8, i = c(1:2), j = c(1:14), part = "body") |>
+  fontsize(8, i = 1, j = 1, part = "footer")
+  # reframe(N = N,
+  #         WME_Av = mean(WME_est),
+  #         WME_SE = mean(WME_se),
+  #         Hevo_Av = mean(Hevo_est),
+  #         Hevo_SE = mean(Hevo_se),
+  #         Hevo_Est_Causal = Hevo_est_causal_detected
+  # ) %>%
+
+citations_reanalysis_summ_display
+
+```
+
+Table (@\tab:citations-reanalysis-summ-display) reference[@bowden_consistent_2016]
+
+
+
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(bookdown)
+library(TwoSampleMR)
+library(rstan)
+library(here)
+library(cowplot)
+library(kableExtra)
+library(tables)
+library(flextable)
+library(ftExtra)
+library(officer)
+
+# Load function scripts
+source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
+source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
+
+
+# # Compile model for MR-Hevo
+mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
+                                       "Script",
+                                       "Hevo",
+                                       "MRHevo_summarystats.stan"),
+                           model_name="MRHevo.summarystats",
+                           verbose=FALSE)
+
+#Data_List <- bind_rows(Citations_Instrument_Data, Citations_Instrument_Data_2)
+
+```
+
+
+
 

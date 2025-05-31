@@ -34,3 +34,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_5_Discussion.Rmd"))`
 
+
+## Performance in Simulation Study
+
+In general, MR-Hevo over-estimated the true causal effect versus \acr{WME}
+
+## Citations

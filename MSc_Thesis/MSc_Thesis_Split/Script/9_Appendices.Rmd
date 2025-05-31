@@ -168,7 +168,7 @@ cowplot::plot_grid(prostate_vol_pop,
 # Appendix: Simulation Code {#appendix-sim}
 
 
-## Generating Data and Models
+## Generating Data and Models {#appendix-sim-gen}
 
 The data generating model used was from Appendix 3 of Bowden et al [@bowden_consistent_2016]; the relevant section describing their model is reproduced below:
 
@@ -572,7 +572,7 @@ summary(test_extract_model[[1]])
 
 
 \newpage
-## Testing Generation of Data and Models
+## Testing Generation of Data and Models {#appendix-sim-test}
 
 A series of test plots were used to verify that data were simulated as intended under the various conditions specified by input parameters. Test plots were not created for the parameters `n_participants`, `n_instruments` or `n_datasets`, as the functioning of these parameters could be readily inferred from the structure of the  datasets outputted, as above.
 
@@ -1123,7 +1123,7 @@ plot_grid(test_plot_phi_0,
 ```
 
 \newpage
-## Summary Table
+## Summary Table {#appendix-sim-summ}
 
 A function (`get_summary_MR_tib_row`) was written to take models generated from each simulated dataset, estimate causal effect using both weighted median and MR-Hevo methodologies, then output a summary formatted as per Tables 2 & 3 in Bowden et al [@bowden_consistent_2016]:
 
