@@ -1,6 +1,8 @@
 ---
 acronyms:
   keys:
+    - shortname: CLT
+      longname: central limit theorem
     - shortname: CI
       longname: confidence interval
     - shortname: InSIDE
@@ -15,6 +17,10 @@ acronyms:
       longname: standard deviation
     - shortname: SE
       longname: standard error
+    - shortname: SNP
+      longname: single nucleotide polymorphisms
+    - shortname: UMREG
+      longname: Usher Masters Research Ethics Group
     - shortname: WME
       longname: weighted median estimator
 ---

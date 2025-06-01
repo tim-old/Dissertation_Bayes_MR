@@ -37,6 +37,10 @@ Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script
 
 ## Performance in Simulation Study
 
+The citations search returned 5,417 articles referencing the Bowden et al [@bowden_consistent_2016]
 In general, MR-Hevo over-estimated the true causal effect versus \acr{WME}
 
 ## Citations
+
+
+Multiple grouped instruments not included.

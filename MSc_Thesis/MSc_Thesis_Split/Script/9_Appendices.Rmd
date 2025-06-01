@@ -6,6 +6,9 @@ output:
   bookdown::pdf_document2:
     latex_engine: xelatex
     dev: cairo_pdf
+    fig_caption: TRUE
+    number_sections: FALSE
+    global_numbering: FALSE
     pandoc_args: !expr acronymsdown::add_filter()
 knit: (function(inputFile, encoding) {
       rmarkdown::render(inputFile,
@@ -79,29 +82,31 @@ source(here("MSc_Thesis_Split", "Script", "edin_fig_style.R"))
 
 The typical process for "bootstrap" generating an estimate, \acr{SE} and \acr{CI}s of a population parameter (e.g. population mean $\mu$) from a sample $x$ is as follows[@buscaglia_chapter_2020]:
 
-1. A sample $x$ of $n$ individuals is selected from a total population $X$ of $N$ individuals
+1. A sample, $x$, of $n$ individuals is selected from a total population, $X$, of $N$ individuals
 2. This sample $x$ is then treated as the "bootstrap population"; the empirical distribution of values in the $n$ individuals in the bootstrap population is taken to be broadly representative of the distribution of values in the underlying population $X$ of $N$ individuals
-3. A "bootstrap sample" $x^*$  is then obtained by sampling individuals from the bootstrap population with replacement $n$ times per bootstrap sample, i.e. the new bootstrap sample comprises $n$ sampled individuals $x^*_1, x^*_2,...x^*_n$. As such, individuals from the original bootstrap population $x$ may contribute once, more than once or not at all to each bootstrap sample $x^*$.
-4. A total of $k$ bootstrap samples are generated $x^{*1}, x^{*2},...x^{*k}$, and the statistic of interest (e.g. sample mean $\bar{x}$) is estimated in each $\bar{x}^{*1}, \bar{x}^{*2},...\bar{x}^{*k}$
-5. The set of $k$ statistics are combined to form a "bootstrap distribution"; as expected from central limit theorem[@ross_chapter_2014], this is typically closer to a normal distribution than the underlying distribution of values in either the bootstrap population $x$ or the total population $X$. (See Figure \@ref(fig:prostate-vol) for an example of this)
+3. A "bootstrap sample", $x^*$,  is then obtained by re-sampling individuals from the bootstrap population with replacement $n$ times per bootstrap sample, i.e. the new bootstrap sample comprises $n$ sampled individuals, $x^*_1, x^*_2,...x^*_n$. As such, individuals from the original bootstrap population $x$ may contribute once, more than once or not at all to each bootstrap sample $x^*$.
+4. A total of $k$ bootstrap samples are generated, $x^{*1}, x^{*2},...x^{*k}$, and the statistic of interest (e.g. sample mean $\bar{x}$) is estimated in each individual sample, $\bar{x}^{*i}$, giving the complete set of $\bar{x}^{*1}, \bar{x}^{*2},...\bar{x}^{*i}...\bar{x}^{*k}$.
+5. The set of $k$ statistics are combined to form a "bootstrap distribution"; as expected from \acr{CLT}[@ross_chapter_2014], this is typically closer to a normal distribution than the underlying distribution of values in either the bootstrap population $x$ or the total population $X$. (See Figure \@ref(fig:prostate-vol) for an example of this)
 6. The final values are derived as follows:
 
-> - the parameter estimate (e.g. $\hat{\mu}$) is taken as the mean of the bootstrap distribution of $k$ estimates $(\sum^k_{i = 1} \bar{x}) \div n$
-> - the \acr{CI} s are taken as the values at the appropriate centiles at the edges of the sampling distribution, e.g. a 95% \acr{CI} would be generated using values at the 2.5th and 97.5th centiles
-> - the \acr{SE} of the estimate is taken as the \acr{SD} of the sampling distribution
+> - the parameter estimate (e.g. estimate of the true population mean, $\hat{\mu}$) is taken as the mean of the bootstrap distribution of $k$ estimates, $(\sum^k_{i = 1} \bar{x}) \div n$
+> - the \acr{CI}s are taken as the values at the appropriate centiles at the edges of the sampling distribution, e.g. a 95% \acr{CI} would be generated using values at the 2.5th and 97.5th centiles
+> - the \acr{SE} of the estimate is taken as the \acr{SD} of the sampling distribution, given by $\sqrt{\frac{1}{k - 1} \sum^k_{i = 1} (\bar{x_i} - \hat{\mu})^2}$
 
 
-## 
 
+## Bootstrapping - Example: Prostate Volume
 
+The above process is illustrated in \@ref(fig:prostate-vol). Data on prostate volume in 307 prostate cancer patients demonstrates a right-skewed distribution (A). An empirical distribution from a sample of 100 of these patients mirrors this right skew, and is used as the "bootstrap population" (B) for further re-sampling. As the bootstrap population is re-sampled more and more times, the "bootstrap distribution" of the sample means generated (C and D) gradually tends towards a normal distribution. The 95% \acr{CI} is given by the bounds defining the middle 95% of the bootstrap distribution of estimated means, as shown.
 
 ```{r prostate-vol, echo=FALSE, include=TRUE, fig.dim = c(6, 7.5)}
-#| fig.id = "prostate-vol",
-#| fig.cap = "Density histograms demonstrating distribution of prostate volumes in patients with prostatic cancer, taken from Cata et al 2011[@cata_blood_2011] via the R package `medicaldata`[@medicaldata]. A) Distribution from whole study population of 307 patients with non-missing data, exhibiting right-skew. B) Distribution from random sample of 100 patients, still exhibiting right-skew. C) Bootstrap distribution generated by re-sampling 1,000 bootstrap samples from the original sample of 100 patients, right-skew less apparent. D) Bootstrap distribution generated by re-sampling 100,000 bootstrap samples from the original sample of 100 patients, approaching normality."
+#| fig.id = 'prostate-vol',
+#| fig.cap = "Histograms demonstrating distribution of prostate volumes in patients with prostatic cancer, taken from Cata et al 2011[@cata_blood_2011] via the R package `medicaldata`[@medicaldata]. A) Distribution from whole study population of 307 patients with non-missing data, exhibiting right-skew. B) Distribution from random sample of 100 patients, still exhibiting right-skew. C) Bootstrap distribution generated by re-sampling 1,000 bootstrap samples from the original sample of 100 patients, right-skew less apparent. D) Bootstrap distribution generated by re-sampling 100,000 bootstrap samples from the original sample of 100 patients, approaching normality. 95% confidence intervals are demonstrated in plots C and D by marking the 2.5th and 97.5th centiles."
 
 
 library(medicaldata)
 library(infer)
+library(gghighlight)
 
 prostate_vol_pop <- blood_storage %>% 
   plot_template() +
@@ -128,10 +133,16 @@ prostate_vol_boot_1k <- blood_storage %>%
   generate(reps = 1000, 
            type = "bootstrap") %>% 
   calculate(stat = "mean") %>% 
+  # Calc CIs
+  mutate(lower = quantile(stat, 0.025),
+         upper = quantile(stat, 0.975)) %>% 
   plot_template() +
   geom_histogram(aes(x = stat),
                      #y=stat(density)),
                  fill = edin_blue_hex) +
+  # Plot CIs
+  gghighlight(stat > lower & stat < upper,
+              unhighlighted_params = list(fill = edin_burgundy_hex)) +
   labs(subtitle = "C) Bootstrap distribution, k = 1,000",
        x = NULL)
 
@@ -142,14 +153,17 @@ prostate_vol_boot_100k <- blood_storage %>%
   generate(reps = 100000, 
            type = "bootstrap") %>% 
   calculate(stat = "mean") %>% 
+  # Calc CIs
+  mutate(lower = quantile(stat, 0.025),
+         upper = quantile(stat, 0.975)) %>% 
   plot_template() +
   geom_histogram(aes(x = stat),
-                     #y=stat(density)),
-                 fill = edin_blue_hex) +
-  # geom_vline(aes(xintercept =  mean(stat)), 
-  #            colour = edin_bright_pink_hex, 
-  #            linewidth = 1,
-  #            linetype = "dotted") +
+                stat = "bin",
+                    #y=stat(density)),
+                fill = edin_blue_hex) +
+  # Plot CIs
+  gghighlight(stat > lower & stat < upper,
+              unhighlighted_params = list(fill = edin_burgundy_hex)) +
   labs(subtitle = "D) Bootstrap distribution, k = 100,000",
        x = "Prostate volume/mL")
 
@@ -164,6 +178,21 @@ cowplot::plot_grid(prostate_vol_pop,
 
 ```
 
+\newpage
+
+## Bootstrapping - Relevance to WME
+
+In current implementations of \acr{WME}, the \acr{WME} estimate of the causal effect ($\hat{\beta}_{WME}$) is calculated as described in Bowden et al[@bowden_consistent_2016], and the 95% \acr{CI} is generated separately using bootstrapping, though notably not using the method described above. 
+
+The bootstrapping process begins similarly, with re-sampling undertaken (a default of $k = 1000$ times) to generate $k$ bootstrap samples $x^{*1}, x^{*2},...x^{*k}$. Each individual bootstrap sample $x^{*i}$ is used to estimate the causal effect using the \acr{WME} method $\hat{\beta}^{*i}_{WME}$, and thus a bootstrap distribution of $k$ values of \acr{WME} is created, $\hat{\beta}^{*1}_{WME},  \hat{\beta}^{*2}_{WME}....\hat{\beta}^{*k}_{WME}$. 
+
+At this stage, however, the bootstrap distribution is then assumed to be approximately normally distributed without verifying this assumption. The 95% \acr{CI} of the bootstrap estimate is then calculated as 1.96 \acr{SD}s of the bootstrap distribution either side of the mean estimate, i.e. $\hat{\beta}_{WME} \pm 1.96  \times SE$. This approach may be problematic for several reasons. 
+
+Although \acr{CLT} leads us to expect that the bootstrap distribution will approach normality as the number of bootstrap iterations $k$ increases, the extent to which this occurs for a given $k$ may depend on the inital distribution of values in the population $X$, and so also on the distribution in the sample/bootstrap population $x$. If the true distribution of values is very non-normal, as may be the case for traits determined by complex genetic and environmental influences, it may take relatively more bootstrap iterations for the bootstrap distribution to become sufficiently normal to assume mean and \acr{SD} accurately describe it. 
+
+Additionally, the bootstrap \acr{SE} is inversely proportional to the number of bootstrap iterations $k$, as opposed to the usual standard error (given by $SE = \frac{SD}{\sqrt{n}}$), which is inversely proportional to the square root of the sample size $n$. It is therefore possible to generate smaller \acr{SE}s by increasing the number of bootstrap samples obtained. This may lead to false confidence in estimates generated despite potential issues with initial sample $x$, e.g. if it too small, or sampled in such a way that it is not representative of the underlying population $X$. Although such issues are inherent to any bootstrapping approaches, the usual method of generating bootstrapped \acr{CI}s detailed above uses more information (i.e. using the entire bootstrap distribution) to generate these values than the parameter-based $estimate \pm 1.96 \times SE$ method (i.e. using approximate summary statistics to represent the distribution). The usual method of bootstrap \acr{CI} generation may therefore be expected to highlight any variation or uncertainty present more readily than the parameter-based approach; this would be represented as wider \acr{CI}s.
+
+\newpage
 
 # Appendix: Simulation Code {#appendix-sim}
 
@@ -492,7 +521,7 @@ str(test_data_sim)
 A function (`get_models`) was then written to create linear models from each dataset generated as per Bowden et al:
 
 
-```{r extract-models-fn, echo=TRUE}
+```{r get-models-fn, echo=TRUE}
 
 
 # Create plotting tibble with Mean/SD X + Y grouped by
@@ -562,7 +591,7 @@ get_models <- function(sim){
 
 These models generated estimates of the coefficient of gene-exposure association (`coeff_G_X`), coefficient of gene-outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene-exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when \acr{InSIDE} assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
 
-```{r test-extract-model}
+```{r test-get-model}
 
 test_extract_model <- get_models(test_data_sim)
 
@@ -853,12 +882,12 @@ plot_grid(test_plot_causal_0_errors,
 ### One versus Two Sample MR
 \leavevmode\newline Where gene-exposure coefficients and gene-outcome coefficients are estimated from two separate samples rather than one (i.e. `two_sample = TRUE`, simulating 2 sample MR), even with random error terms set to zero, error will be introduced into causal effect estimation through random sampling of different combinations of effect alleles. However, where a causal effect is not present, the effect estimated will consistently be zero regardless of the combinations of alleles sampled, so random error should not be introduced:
 
-```{r test-plot-causal-2SMR, echo=FALSE}
+```{r test-plot-causal-2SMR, echo=FALSE, cache=FALSE}
 
 
 # Causal effect not present
 #set.seed(1701)
-sim_test_data_causal_0_2SMR <- get_simulated_MR_data(n_participants = 10000,
+sim_test_data_causal_0_2SMR <- get_simulated_MR_data(n_participants = 1000,
                                                      n_instruments = 100,
                                                      n_datasets = 1,
                                                      prop_invalid = 0,
@@ -873,7 +902,7 @@ test_plot_causal_0_2SMR <- plot_GY_GX(test_plot_tib_causal_0_2SMR,
 
 # Causal effect present
 #set.seed(1701)
-sim_test_data_causal_1_2SMR <- get_simulated_MR_data(n_participants = 10000,
+sim_test_data_causal_1_2SMR <- get_simulated_MR_data(n_participants = 1000,
                                                      n_instruments = 100,
                                                      n_datasets = 1,
                                                      prop_invalid = 0,
@@ -1320,6 +1349,8 @@ test_tib_summ_MR_row %>%
 
 # Appendix: R Packages Used {#appendix-pkg}
 
+## Package Citations
+
 ```{r package-citations, include = TRUE, echo = FALSE}
 
 #nocite_references(cite_packages(output = "citekeys", out.dir = tempdir()))
@@ -1344,6 +1375,39 @@ grateful::cite_packages(output = "paragraph",
   #knitr::kable()
 
   
+```
+
+## Session Information
+
+```{r session-info, include=TRUE, echo=FALSE}
+
+platform <- devtools::session_info() %>% #str()
+  .$platform
+
+packages <- devtools::session_info() %>%
+  .$packages %>%
+  tibble() %>%
+  filter(attached == TRUE) %>%
+  select(-c(path,
+            loadedpath,
+            attached,
+            is_base,
+            md5ok,
+            library))
+
+package_col <- packages$package
+
+# package_col %>%
+#   map(citation) %>%
+#   #print()
+#   print(style = "BibTeX")
+#   #print(style = "text")
+
+platform
+
+packages %>% 
+  print(n = nrow(.))
+
 ```
 
 
