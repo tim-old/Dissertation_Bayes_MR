@@ -1,51 +1,51 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.23)  1 JUN 2025 13:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.2)  2 JUN 2025 23:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"C:/Users/timol/OneDrive/Documents/R/Working Directory/Data_Science_MSc/Dissertation_Bayes_MR/MSc_Thesis/MSc_Thesis_Split/Output/4_Results.tex"
 (c:/Users/timol/OneDrive/Documents/R/Working Directory/Data_Science_MSc/Dissertation_Bayes_MR/MSc_Thesis/MSc_Thesis_Split/Output/4_Results.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-04-29>
+LaTeX2e <2025-06-01>
+L3 programming layer <2025-05-26>
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count268
-\c@section=\count269
-\c@subsection=\count270
-\c@subsubsection=\count271
-\c@paragraph=\count272
-\c@subparagraph=\count273
-\c@figure=\count274
-\c@table=\count275
+\c@part=\count271
+\c@section=\count272
+\c@subsection=\count273
+\c@subsubsection=\count274
+\c@paragraph=\count275
+\c@subparagraph=\count276
+\c@figure=\count277
+\c@table=\count278
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen146
+\bibindent=\dimen148
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2024/11/05 v2.17t AMS math features
+Package: amsmath 2025/05/18 v2.17x AMS math features
 \@mathmargin=\skip51
 For additional information on amsmath, use the `?' option.
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+Package: amstext 2024/11/17 v2.01 AMS text
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
-\ex@=\dimen147
+\ex@=\dimen149
 )) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen148
+\pmbraise@=\dimen150
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count276
+\inf@bad=\count279
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count277
-\leftroot@=\count278
+\uproot@=\count280
+\leftroot@=\count281
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count279
-\DOTSCASE@=\count280
+\classnum@=\count282
+\DOTSCASE@=\count283
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -55,36 +55,36 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen149
+\big@size=\dimen151
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count281
+\macc@depth=\count284
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count282
+\c@MaxMatrixCols=\count285
 \dotsspace@=\muskip17
-\c@parentequation=\count283
-\dspbrk@lvl=\count284
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
 \tag@help=\toks18
-\row@=\count285
-\column@=\count286
-\maxfields@=\count287
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
 \andhelp@=\toks19
-\eqnshift@=\dimen150
-\alignsep@=\dimen151
-\tagshift@=\dimen152
-\tagwidth@=\dimen153
-\totwidth@=\dimen154
-\lineht@=\dimen155
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
 \@envbody=\toks20
 \multlinegap=\skip52
 \multlinetaggap=\skip53
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -97,12 +97,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-04-29 L3 programming layer (loader) 
+Package: expl3 2025-05-26 L3 programming layer (loader) 
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-04-14 L3 backend support: XeTeX
-\g__graphics_track_int=\count288
-\g__pdfannot_backend_int=\count289
-\g__pdfannot_backend_link_int=\count290
+\g__graphics_track_int=\count291
+\g__pdfannot_backend_int=\count292
+\g__pdfannot_backend_link_int=\count293
 ))
 Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
@@ -115,31 +115,158 @@ Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count291
-\l__fontspec_language_int=\count292
-\l__fontspec_strnum_int=\count293
-\l__fontspec_tmp_int=\count294
-\l__fontspec_tmpa_int=\count295
-\l__fontspec_tmpb_int=\count296
-\l__fontspec_tmpc_int=\count297
-\l__fontspec_em_int=\count298
-\l__fontspec_emdef_int=\count299
-\l__fontspec_strong_int=\count300
-\l__fontspec_strongdef_int=\count301
-\l__fontspec_tmpa_dim=\dimen156
-\l__fontspec_tmpb_dim=\dimen157
-\l__fontspec_tmpc_dim=\dimen158
+\l__fontspec_script_int=\count294
+\l__fontspec_language_int=\count295
+\l__fontspec_strnum_int=\count296
+\l__fontspec_tmp_int=\count297
+\l__fontspec_tmpa_int=\count298
+\l__fontspec_tmpb_int=\count299
+\l__fontspec_tmpc_int=\count300
+\l__fontspec_em_int=\count301
+\l__fontspec_emdef_int=\count302
+\l__fontspec_strong_int=\count303
+\l__fontspec_strongdef_int=\count304
+\l__fontspec_tmpa_dim=\dimen158
+\l__fontspec_tmpb_dim=\dimen159
+\l__fontspec_tmpc_dim=\dimen160
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1) on input line 49.
+LaTeX Encoding Info:    Redeclaring text command \capitalogonek (encoding TS1) on input line 52.
+LaTeX Encoding Info:    Redeclaring text command \capitalgrave (encoding TS1) on input line 55.
+LaTeX Encoding Info:    Redeclaring text command \capitalacute (encoding TS1) on input line 56.
+LaTeX Encoding Info:    Redeclaring text command \capitalcircumflex (encoding TS1) on input line 57.
+LaTeX Encoding Info:    Redeclaring text command \capitaltilde (encoding TS1) on input line 58.
+LaTeX Encoding Info:    Redeclaring text command \capitaldieresis (encoding TS1) on input line 59.
+LaTeX Encoding Info:    Redeclaring text command \capitalhungarumlaut (encoding TS1) on input line 60.
+LaTeX Encoding Info:    Redeclaring text command \capitalring (encoding TS1) on input line 61.
+LaTeX Encoding Info:    Redeclaring text command \capitalcaron (encoding TS1) on input line 62.
+LaTeX Encoding Info:    Redeclaring text command \capitalbreve (encoding TS1) on input line 63.
+LaTeX Encoding Info:    Redeclaring text command \capitalmacron (encoding TS1) on input line 64.
+LaTeX Encoding Info:    Redeclaring text command \capitaldotaccent (encoding TS1) on input line 65.
+LaTeX Encoding Info:    Redeclaring text command \t (encoding TS1) on input line 66.
+LaTeX Encoding Info:    Redeclaring text command \capitaltie (encoding TS1) on input line 67.
+LaTeX Encoding Info:    Redeclaring text command \newtie (encoding TS1) on input line 68.
+LaTeX Encoding Info:    Redeclaring text command \capitalnewtie (encoding TS1) on input line 69.
+LaTeX Encoding Info:    Redeclaring text symbol \textcapitalcompwordmark (encoding TS1) on input line 70.
+LaTeX Encoding Info:    Redeclaring text symbol \textascendercompwordmark (encoding TS1) on input line 71.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightbase (encoding TS1) on input line 72.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightdblbase (encoding TS1) on input line 73.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwelveudash (encoding TS1) on input line 74.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequartersemdash (encoding TS1) on input line 75.
+LaTeX Encoding Info:    Redeclaring text symbol \textleftarrow (encoding TS1) on input line 76.
+LaTeX Encoding Info:    Redeclaring text symbol \textrightarrow (encoding TS1) on input line 77.
+LaTeX Encoding Info:    Redeclaring text symbol \textblank (encoding TS1) on input line 78.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollar (encoding TS1) on input line 79.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotesingle (encoding TS1) on input line 80.
+LaTeX Encoding Info:    Redeclaring text command \textasteriskcentered (encoding TS1) on input line 81.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphen (encoding TS1) on input line 92.
+LaTeX Encoding Info:    Redeclaring text symbol \textfractionsolidus (encoding TS1) on input line 93.
+LaTeX Encoding Info:    Redeclaring text symbol \textzerooldstyle (encoding TS1) on input line 94.
+LaTeX Encoding Info:    Redeclaring text symbol \textoneoldstyle (encoding TS1) on input line 95.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwooldstyle (encoding TS1) on input line 96.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreeoldstyle (encoding TS1) on input line 97.
+LaTeX Encoding Info:    Redeclaring text symbol \textfouroldstyle (encoding TS1) on input line 98.
+LaTeX Encoding Info:    Redeclaring text symbol \textfiveoldstyle (encoding TS1) on input line 99.
+LaTeX Encoding Info:    Redeclaring text symbol \textsixoldstyle (encoding TS1) on input line 100.
+LaTeX Encoding Info:    Redeclaring text symbol \textsevenoldstyle (encoding TS1) on input line 101.
+LaTeX Encoding Info:    Redeclaring text symbol \texteightoldstyle (encoding TS1) on input line 102.
+LaTeX Encoding Info:    Redeclaring text symbol \textnineoldstyle (encoding TS1) on input line 103.
+LaTeX Encoding Info:    Redeclaring text symbol \textlangle (encoding TS1) on input line 104.
+LaTeX Encoding Info:    Redeclaring text symbol \textminus (encoding TS1) on input line 105.
+LaTeX Encoding Info:    Redeclaring text symbol \textrangle (encoding TS1) on input line 106.
+LaTeX Encoding Info:    Redeclaring text symbol \textmho (encoding TS1) on input line 107.
+LaTeX Encoding Info:    Redeclaring text symbol \textbigcircle (encoding TS1) on input line 108.
+LaTeX Encoding Info:    Redeclaring text command \textcircled (encoding TS1) on input line 109.
+LaTeX Encoding Info:    Redeclaring text symbol \textohm (encoding TS1) on input line 115.
+LaTeX Encoding Info:    Redeclaring text symbol \textlbrackdbl (encoding TS1) on input line 116.
+LaTeX Encoding Info:    Redeclaring text symbol \textrbrackdbl (encoding TS1) on input line 117.
+LaTeX Encoding Info:    Redeclaring text symbol \textuparrow (encoding TS1) on input line 118.
+LaTeX Encoding Info:    Redeclaring text symbol \textdownarrow (encoding TS1) on input line 119.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciigrave (encoding TS1) on input line 120.
+LaTeX Encoding Info:    Redeclaring text symbol \textborn (encoding TS1) on input line 121.
+LaTeX Encoding Info:    Redeclaring text symbol \textdivorced (encoding TS1) on input line 122.
+LaTeX Encoding Info:    Redeclaring text symbol \textdied (encoding TS1) on input line 123.
+LaTeX Encoding Info:    Redeclaring text symbol \textleaf (encoding TS1) on input line 124.
+LaTeX Encoding Info:    Redeclaring text symbol \textmarried (encoding TS1) on input line 125.
+LaTeX Encoding Info:    Redeclaring text symbol \textmusicalnote (encoding TS1) on input line 126.
+LaTeX Encoding Info:    Redeclaring text symbol \texttildelow (encoding TS1) on input line 127.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphenchar (encoding TS1) on input line 128.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciibreve (encoding TS1) on input line 129.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciicaron (encoding TS1) on input line 130.
+LaTeX Encoding Info:    Redeclaring text symbol \textacutedbl (encoding TS1) on input line 131.
+LaTeX Encoding Info:    Redeclaring text symbol \textgravedbl (encoding TS1) on input line 132.
+LaTeX Encoding Info:    Redeclaring text symbol \textdagger (encoding TS1) on input line 133.
+LaTeX Encoding Info:    Redeclaring text symbol \textdaggerdbl (encoding TS1) on input line 134.
+LaTeX Encoding Info:    Redeclaring text symbol \textbardbl (encoding TS1) on input line 135.
+LaTeX Encoding Info:    Redeclaring text symbol \textperthousand (encoding TS1) on input line 136.
+LaTeX Encoding Info:    Redeclaring text symbol \textbullet (encoding TS1) on input line 137.
+LaTeX Encoding Info:    Redeclaring text symbol \textcelsius (encoding TS1) on input line 138.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollaroldstyle (encoding TS1) on input line 139.
+LaTeX Encoding Info:    Redeclaring text symbol \textcentoldstyle (encoding TS1) on input line 140.
+LaTeX Encoding Info:    Redeclaring text symbol \textflorin (encoding TS1) on input line 141.
+LaTeX Encoding Info:    Redeclaring text symbol \textcolonmonetary (encoding TS1) on input line 142.
+LaTeX Encoding Info:    Redeclaring text symbol \textwon (encoding TS1) on input line 143.
+LaTeX Encoding Info:    Redeclaring text symbol \textnaira (encoding TS1) on input line 144.
+LaTeX Encoding Info:    Redeclaring text symbol \textguarani (encoding TS1) on input line 145.
+LaTeX Encoding Info:    Redeclaring text symbol \textpeso (encoding TS1) on input line 146.
+LaTeX Encoding Info:    Redeclaring text symbol \textlira (encoding TS1) on input line 147.
+LaTeX Encoding Info:    Redeclaring text symbol \textrecipe (encoding TS1) on input line 148.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobang (encoding TS1) on input line 149.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobangdown (encoding TS1) on input line 150.
+LaTeX Encoding Info:    Redeclaring text symbol \textdong (encoding TS1) on input line 151.
+LaTeX Encoding Info:    Redeclaring text symbol \texttrademark (encoding TS1) on input line 152.
+LaTeX Encoding Info:    Redeclaring text symbol \textpertenthousand (encoding TS1) on input line 153.
+LaTeX Encoding Info:    Redeclaring text symbol \textpilcrow (encoding TS1) on input line 154.
+LaTeX Encoding Info:    Redeclaring text symbol \textbaht (encoding TS1) on input line 155.
+LaTeX Encoding Info:    Redeclaring text symbol \textnumero (encoding TS1) on input line 156.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiscount (encoding TS1) on input line 157.
+LaTeX Encoding Info:    Redeclaring text symbol \textestimated (encoding TS1) on input line 158.
+LaTeX Encoding Info:    Redeclaring text symbol \textopenbullet (encoding TS1) on input line 159.
+LaTeX Encoding Info:    Redeclaring text symbol \textservicemark (encoding TS1) on input line 160.
+LaTeX Encoding Info:    Redeclaring text symbol \textlquill (encoding TS1) on input line 161.
+LaTeX Encoding Info:    Redeclaring text symbol \textrquill (encoding TS1) on input line 162.
+LaTeX Encoding Info:    Redeclaring text symbol \textcent (encoding TS1) on input line 163.
+LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding TS1) on input line 164.
+LaTeX Encoding Info:    Redeclaring text symbol \textcurrency (encoding TS1) on input line 165.
+LaTeX Encoding Info:    Redeclaring text symbol \textyen (encoding TS1) on input line 166.
+LaTeX Encoding Info:    Redeclaring text symbol \textbrokenbar (encoding TS1) on input line 167.
+LaTeX Encoding Info:    Redeclaring text symbol \textsection (encoding TS1) on input line 168.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciidieresis (encoding TS1) on input line 169.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyright (encoding TS1) on input line 170.
+LaTeX Encoding Info:    Redeclaring text symbol \textordfeminine (encoding TS1) on input line 171.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyleft (encoding TS1) on input line 172.
+LaTeX Encoding Info:    Redeclaring text symbol \textlnot (encoding TS1) on input line 173.
+LaTeX Encoding Info:    Redeclaring text symbol \textcircledP (encoding TS1) on input line 174.
+LaTeX Encoding Info:    Redeclaring text symbol \textregistered (encoding TS1) on input line 175.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciimacron (encoding TS1) on input line 176.
+LaTeX Encoding Info:    Redeclaring text symbol \textdegree (encoding TS1) on input line 177.
+LaTeX Encoding Info:    Redeclaring text symbol \textpm (encoding TS1) on input line 178.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwosuperior (encoding TS1) on input line 179.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreesuperior (encoding TS1) on input line 180.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciiacute (encoding TS1) on input line 181.
+LaTeX Encoding Info:    Redeclaring text symbol \textmu (encoding TS1) on input line 182.
+LaTeX Encoding Info:    Redeclaring text symbol \textparagraph (encoding TS1) on input line 183.
+LaTeX Encoding Info:    Redeclaring text symbol \textperiodcentered (encoding TS1) on input line 184.
+LaTeX Encoding Info:    Redeclaring text symbol \textreferencemark (encoding TS1) on input line 185.
+LaTeX Encoding Info:    Redeclaring text symbol \textonesuperior (encoding TS1) on input line 186.
+LaTeX Encoding Info:    Redeclaring text symbol \textordmasculine (encoding TS1) on input line 187.
+LaTeX Encoding Info:    Redeclaring text symbol \textsurd (encoding TS1) on input line 188.
+LaTeX Encoding Info:    Redeclaring text symbol \textonequarter (encoding TS1) on input line 189.
+LaTeX Encoding Info:    Redeclaring text symbol \textonehalf (encoding TS1) on input line 190.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequarters (encoding TS1) on input line 191.
+LaTeX Encoding Info:    Redeclaring text symbol \texteuro (encoding TS1) on input line 192.
+LaTeX Encoding Info:    Redeclaring text symbol \texttimes (encoding TS1) on input line 193.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on input line 194.
 ))
-\g__um_fam_int=\count302
-\g__um_fonts_used_int=\count303
-\l__um_primecount_int=\count304
+\g__um_fam_int=\count305
+\g__um_fonts_used_int=\count306
+\l__um_primecount_int=\count307
 \g__um_primekern_muskip=\muskip18
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
@@ -206,85 +333,85 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count305
-\Gm@cntv=\count306
-\c@Gm@tempcnt=\count307
-\Gm@bindingoffset=\dimen159
-\Gm@wd@mp=\dimen160
-\Gm@odd@mp=\dimen161
-\Gm@even@mp=\dimen162
-\Gm@layoutwidth=\dimen163
-\Gm@layoutheight=\dimen164
-\Gm@layouthoffset=\dimen165
-\Gm@layoutvoffset=\dimen166
+\Gm@cnth=\count308
+\Gm@cntv=\count309
+\c@Gm@tempcnt=\count310
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
 \Gm@dimlist=\toks23
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTleft=\skip54
 \LTright=\skip55
 \LTpre=\skip56
 \LTpost=\skip57
-\LTchunksize=\count308
-\LTcapwidth=\dimen167
+\LTchunksize=\count311
+\LTcapwidth=\dimen169
 \LT@head=\box55
 \LT@firsthead=\box56
 \LT@foot=\box57
 \LT@lastfoot=\box58
 \LT@gbox=\box59
-\LT@cols=\count309
-\LT@rows=\count310
-\c@LT@tables=\count311
-\c@LT@chunks=\count312
+\LT@cols=\count312
+\LT@rows=\count313
+\c@LT@tables=\count314
+\c@LT@chunks=\count315
 \LT@p@ftn=\toks24
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen168
-\lightrulewidth=\dimen169
-\cmidrulewidth=\dimen170
-\belowrulesep=\dimen171
-\belowbottomsep=\dimen172
-\aboverulesep=\dimen173
-\abovetopsep=\dimen174
-\cmidrulesep=\dimen175
-\cmidrulekern=\dimen176
-\defaultaddspace=\dimen177
-\@cmidla=\count313
-\@cmidlb=\count314
-\@aboverulesep=\dimen178
-\@belowrulesep=\dimen179
-\@thisruleclass=\count315
-\@lastruleclass=\count316
-\@thisrulewidth=\dimen180
+\heavyrulewidth=\dimen170
+\lightrulewidth=\dimen171
+\cmidrulewidth=\dimen172
+\belowrulesep=\dimen173
+\belowbottomsep=\dimen174
+\aboverulesep=\dimen175
+\abovetopsep=\dimen176
+\cmidrulesep=\dimen177
+\cmidrulekern=\dimen178
+\defaultaddspace=\dimen179
+\@cmidla=\count316
+\@cmidlb=\count317
+\@aboverulesep=\dimen180
+\@belowrulesep=\dimen181
+\@thisruleclass=\count318
+\@lastruleclass=\count319
+\@thisrulewidth=\dimen182
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen181
+Package: array 2025/05/19 v2.6i Tabular extension package (FMi)
+\col@sep=\dimen183
 \ar@mcellbox=\box60
-\extrarowheight=\dimen182
+\extrarowheight=\dimen184
 \NC@list=\toks25
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box61
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count317
-\calc@Bcount=\count318
-\calc@Adimen=\dimen183
-\calc@Bdimen=\dimen184
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count320
+\calc@Bcount=\count321
+\calc@Adimen=\dimen185
+\calc@Bdimen=\dimen186
 \calc@Askip=\skip60
 \calc@Bskip=\skip61
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count319
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count322
 \calc@Cskip=\skip62
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count320
+\etb@tempcnta=\count323
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box62
-\fn@width=\dimen185
+\fn@width=\dimen187
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
@@ -294,28 +421,26 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
 )
-\Gin@req@height=\dimen186
-\Gin@req@width=\dimen187
+\Gin@req@height=\dimen188
+\Gin@req@width=\dimen189
 )
 \pandoc@box=\box63
-\cslhangindent=\skip63
-\csllabelwidth=\skip64
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip65
-\multirow@cntb=\count321
-\multirow@dima=\skip66
-\bigstrutjot=\dimen188
+\multirow@colwidth=\skip63
+\multirow@cntb=\count324
+\multirow@dima=\skip64
+\bigstrutjot=\dimen190
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen189
-\WF@size=\dimen190
-\c@WF@wrappedlines=\count322
+\wrapoverhang=\dimen191
+\WF@size=\dimen192
+\c@WF@wrappedlines=\count325
 \WF@box=\box64
 \WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count323
+\c@float@type=\count326
 \float@exts=\toks27
 \float@box=\box65
 \@float@everytoks=\toks28
@@ -323,8 +448,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
 \everycr=\toks29
-\minrowclearance=\skip67
-\rownum=\count324
+\minrowclearance=\skip65
+\rownum=\count327
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -338,32 +463,33 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box67
-\sift@deathcycles=\count325
-\@vwid@loff=\dimen191
-\@vwid@roff=\dimen192
+\sift@deathcycles=\count328
+\@vwid@loff=\dimen193
+\@vwid@roff=\dimen194
 )
-\c@taburow=\count326
-\tabu@nbcols=\count327
-\tabu@cnt=\count328
-\tabu@Xcol=\count329
-\tabu@alloc=\count330
-\tabu@nested=\count331
-\tabu@target=\dimen193
-\tabu@spreadtarget=\dimen194
-\tabu@naturalX=\dimen195
-\tabucolX=\dimen196
-\tabu@Xsum=\dimen197
-\extrarowdepth=\dimen198
-\abovetabulinesep=\dimen199
-\belowtabulinesep=\dimen256
-\tabustrutrule=\dimen257
+==> First Aid for varwidth.sty applied!
+\c@taburow=\count329
+\tabu@nbcols=\count330
+\tabu@cnt=\count331
+\tabu@Xcol=\count332
+\tabu@alloc=\count333
+\tabu@nested=\count334
+\tabu@target=\dimen195
+\tabu@spreadtarget=\dimen196
+\tabu@naturalX=\dimen197
+\tabucolX=\dimen198
+\tabu@Xsum=\dimen199
+\extrarowdepth=\dimen256
+\abovetabulinesep=\dimen257
+\belowtabulinesep=\dimen258
+\tabustrutrule=\dimen259
 \tabu@thebody=\toks30
 \tabu@footnotes=\toks31
 \tabu@box=\box68
 \tabu@arstrutbox=\box69
 \tabu@hleads=\box70
 \tabu@vleads=\box71
-\tabu@cellskip=\skip68
+\tabu@cellskip=\skip66
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box72
@@ -374,43 +500,43 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip69
+\TPTL@width=\skip67
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box73
 \UL@hyphenbox=\box74
-\UL@skip=\skip70
+\UL@skip=\skip68
 \UL@hook=\toks32
-\UL@height=\dimen258
-\UL@pe=\count332
-\UL@pixel=\dimen259
+\UL@height=\dimen260
+\UL@pe=\count335
+\UL@pixel=\dimen261
 \ULC@box=\box75
 Package: ulem 2019/11/18
-\ULdepth=\dimen260
+\ULdepth=\dimen262
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen261
-\c@nlinenum=\count333
+\rotheadsize=\dimen263
+\c@nlinenum=\count336
 \TeXr@lab=\toks33
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count334
+Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
+\c@tracingmulticols=\count337
 \mult@box=\box76
-\multicol@leftmargin=\dimen262
-\c@unbalance=\count335
-\c@collectmore=\count336
-\doublecol@number=\count337
-\multicoltolerance=\count338
-\multicolpretolerance=\count339
-\full@width=\dimen263
-\page@free=\dimen264
-\premulticols=\dimen265
-\postmulticols=\dimen266
-\multicolsep=\skip71
-\multicolbaselineskip=\skip72
+\multicol@leftmargin=\dimen264
+\c@unbalance=\count338
+\c@collectmore=\count339
+\doublecol@number=\count340
+\multicoltolerance=\count341
+\multicolpretolerance=\count342
+\full@width=\dimen265
+\page@free=\dimen266
+\premulticols=\dimen267
+\postmulticols=\dimen268
+\multicolsep=\skip69
+\multicolbaselineskip=\skip70
 \partial@page=\box77
 \last@line=\box78
 \mc@boxedresult=\box79
-\maxbalancingoverflow=\dimen267
+\maxbalancingoverflow=\dimen269
 \mult@rightbox=\box80
 \mult@grightbox=\box81
 \mult@firstbox=\box82
@@ -451,20 +577,21 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \@tempa=\box117
 \@tempa=\box118
 \@tempa=\box119
-\c@minrows=\count340
-\c@columnbadness=\count341
-\c@finalcolumnbadness=\count342
-\last@try=\dimen268
-\multicolovershoot=\dimen269
-\multicolundershoot=\dimen270
+\c@minrows=\count343
+\c@columnbadness=\count344
+\c@finalcolumnbadness=\count345
+\last@try=\dimen270
+\multicolovershoot=\dimen271
+\multicolundershoot=\dimen272
 \mult@nat@firstbox=\box120
 \colbreak@box=\box121
-\mc@col@check@num=\count343
+\mc@col@check@num=\count346
+\g__mc_curr_col_int=\count347
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 )
-\Oldarrayrulewidth=\skip73
-\Oldtabcolsep=\skip74
+\Oldarrayrulewidth=\skip71
+\Oldtabcolsep=\skip72
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-05-20 v7.01m Hypertext links for LaTeX
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -494,19 +621,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count344
+\c@section@level=\count348
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen271
-\Hy@linkcounter=\count345
-\Hy@pagecounter=\count346
+\@linkdim=\dimen273
+\Hy@linkcounter=\count349
+\Hy@pagecounter=\count350
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-05-20 v7.01m Hyperref: PDFDocEncoding definition (HO)
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count347
+\Hy@SavedSpaceFactor=\count351
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-05-20 v7.01m Hyperref: PDF Unicode definition (HO)
 )
@@ -518,21 +645,21 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count348
+\c@Hy@tempcnt=\count352
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip19
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen272
+\XeTeXLinkMargin=\dimen274
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count349
-\Field@Width=\dimen273
-\Fld@charsize=\dimen274
+\Fld@menulength=\count353
+\Field@Width=\dimen275
+\Fld@charsize=\dimen276
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -544,18 +671,18 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count350
-\c@Item=\count351
-\c@Hfootnote=\count352
+\Hy@abspage=\count354
+\c@Item=\count355
+\c@Hfootnote=\count356
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2025-05-20 v7.01m Hyperref driver for XeTeX
 \pdfm@box=\box122
-\c@Hy@AnnotLevel=\count353
-\HyField@AnnotCount=\count354
-\Fld@listcount=\count355
-\c@bookmark@seq@number=\count356
+\c@Hy@AnnotLevel=\count357
+\HyField@AnnotCount=\count358
+\Fld@listcount=\count359
+\c@bookmark@seq@number=\count360
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -566,51 +693,51 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip75
+\Hy@SectionHShift=\skip73
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
-\BKM@id=\count357
+\BKM@id=\count361
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 133.
+Package hyperref Info: Option `colorlinks' set `true' on input line 100.
 (./4_Results.aux)
 \openout1 = `4_Results.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 139.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 139.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 139.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 139.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 139.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 139.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 139.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 106.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999964596882403.
@@ -638,7 +765,7 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 139.
+(Font)              scaled to size 10.0pt on input line 106.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999964596882403.
@@ -674,15 +801,15 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 139.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 139.
+(Font)              `operators' in the math version `normal' on input line 106.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 139.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 106.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 139.
+(Font)              `operators' in the math version `bold' on input line 106.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 139.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 106.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999964596882403.
@@ -748,13 +875,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 139.
+(Font)              `symbols' in the math version `normal' on input line 106.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 139.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 106.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 139.
+(Font)              `symbols' in the math version `bold' on input line 106.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 139.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 106.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999964596882403.
@@ -814,13 +941,13 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 139.
+(Font)              `largesymbols' in the math version `normal' on input line 106.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 139.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 106.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 139.
+(Font)              `largesymbols' in the math version `bold' on input line 106.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 139.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 106.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -855,61 +982,59 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 139.
+Package hyperref Info: Link coloring ON on input line 106.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 141.
+(Font)              scaled to size 12.0pt on input line 108.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 141.
+(Font)              scaled to size 8.0pt on input line 108.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 141.
+(Font)              scaled to size 6.0pt on input line 108.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 108.
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 141.
+(Font)              scaled to size 12.0011pt on input line 108.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 141.
+(Font)              scaled to size 8.00073pt on input line 108.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 141.
+(Font)              scaled to size 6.00055pt on input line 108.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 141.
+(Font)              scaled to size 11.99872pt on input line 108.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 141.
+(Font)              scaled to size 7.99915pt on input line 108.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 141.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 141.
+(Font)              scaled to size 5.99936pt on input line 108.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 108.
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 141.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 108.
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./4_Results.toc)
+) (./4_Results.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 2.
+)
 \tf@toc=\write3
 \openout3 = `4_Results.toc'.
 
 
-LaTeX Warning: Reference `appendix-sim-test' on page 1 undefined on input line 155.
-
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 155.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 155.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 155.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 155.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 155.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 155.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 155.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 155.
-
-LaTeX Warning: Hyper reference `acronyms_IV' on page 1 undefined on input line 155.
+LaTeX Warning: Reference `appendix-sim-test' on page 1 undefined on input line 122.
 
 
 
@@ -918,60 +1043,6 @@ LaTeX Warning: Hyper reference `acronyms_IV' on page 1 undefined on input line 1
 ]
 File: C:/Users/timol/OneDrive/Documents/R/WORKIN~1/DATA_S~1/Dissertation_Bayes_MR/MSc_Thesis/MSc_Thesis_Split/Output/4_Results_files/figure-latex/data-sim-validation-1.png Graphic file (type bmp)
 <C:/Users/timol/OneDrive/Documents/R/WORKIN~1/DATA_S~1/Dissertation_Bayes_MR/MSc_Thesis/MSc_Thesis_Split/Output/4_Results_files/figure-latex/data-sim-validation-1.png>
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 171.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 171.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 171.
-
-
-LaTeX Warning: Hyper reference `acronyms_CI' on page 2 undefined on input line 173.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 173.
-
-
-LaTeX Warning: Hyper reference `acronyms_SE' on page 2 undefined on input line 173.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 173.
-
-
-LaTeX Warning: Hyper reference `acronyms_CI' on page 2 undefined on input line 173.
-
-
-LaTeX Warning: Hyper reference `acronyms_SE' on page 2 undefined on input line 173.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 177.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 177.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 177.
-
-
-LaTeX Warning: Hyper reference `acronyms_CI' on page 2 undefined on input line 179.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 179.
-
-
-LaTeX Warning: Hyper reference `acronyms_SE' on page 2 undefined on input line 179.
-
-
-LaTeX Warning: Hyper reference `acronyms_WME' on page 2 undefined on input line 179.
-
-
-LaTeX Warning: Hyper reference `acronyms_CI' on page 2 undefined on input line 179.
-
-
-LaTeX Warning: Hyper reference `acronyms_SE' on page 2 undefined on input line 179.
-
 
 
 [2]
@@ -1075,7 +1146,7 @@ Package fontspec Info:
 (fontspec)             <->s*[1]"Arial/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 203.
+(Font)              scaled to size 8.0pt on input line 170.
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 0.9999963218120226.
@@ -1138,11 +1209,11 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999963218120226]"Arial/BI/OT:script=latn;language=dflt;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/Arial(1)/m/n on input line 203.
+(Font)                  TU/lmr/m/n --> TU/Arial(1)/m/n on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/lmr/m/it --> TU/Arial(1)/m/it on input line 203.
+(Font)                  TU/lmr/m/it --> TU/Arial(1)/m/it on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/lmr/bx/n --> TU/Arial(1)/b/n on input line 203.
+(Font)                  TU/lmr/bx/n --> TU/Arial(1)/b/n on input line 170.
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 0.8311527808940205.
@@ -1272,7 +1343,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 227.
+(Font)              scaled to size 8.0pt on input line 194.
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 0.8311527808940205.
@@ -1306,7 +1377,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 6.0pt on input line 227.
+(Font)              scaled to size 6.0pt on input line 194.
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 0.8311527808940205.
@@ -1364,7 +1435,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 197--229
+Overfull \hbox (19.47978pt too wide) in alignment at lines 164--196
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1593,7 +1664,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 229--259
+Overfull \hbox (19.47978pt too wide) in alignment at lines 196--226
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1606,7 +1677,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 259--265
+Overfull \hbox (19.47978pt too wide) in alignment at lines 226--232
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1691,7 +1762,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 11.0pt on input line 275.
+(Font)              scaled to size 11.0pt on input line 242.
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 0.8311527808940205.
@@ -2461,7 +2532,431 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 265--329
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311536146592658.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311536146592658.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311536146592658.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311536146592658.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (19.47978pt too wide) in alignment at lines 232--326
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -2693,7 +3188,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 355--387
+Overfull \hbox (19.47978pt too wide) in alignment at lines 352--384
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -2922,7 +3417,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 387--417
+Overfull \hbox (19.47978pt too wide) in alignment at lines 384--414
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -2935,7 +3430,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 417--423
+Overfull \hbox (19.47978pt too wide) in alignment at lines 414--420
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -4212,7 +4707,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (19.47978pt too wide) in alignment at lines 423--517
+Overfull \hbox (19.47978pt too wide) in alignment at lines 420--514
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -4220,7 +4715,7 @@ Overfull \hbox (19.47978pt too wide) in alignment at lines 423--517
 
 [5]
 
-LaTeX Warning: Reference `tab:citation-search-sample' on page 6 undefined on input line 533.
+LaTeX Warning: Reference `tab:citation-search-sample' on page 6 undefined on input line 530.
 
 
 Package fontspec Info: 
@@ -4303,7 +4798,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (1.65942pt too wide) in paragraph at lines 565--565
+Overfull \hbox (1.65942pt too wide) in paragraph at lines 562--562
  [][]\TU/Arial(0)/m/n/8 SNPs[] 
  []
 
@@ -4364,12 +4859,12 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 565--565
+Overfull \hbox (11.22113pt too wide) in paragraph at lines 562--562
  []|[]\TU/Arial(0)/m/n/8 Causality[][] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 565--565
+Overfull \hbox (11.22894pt too wide) in paragraph at lines 562--562
  [][]\TU/Arial(0)/m/n/8 Reported[]| 
  []
 
@@ -4430,12 +4925,12 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 565--565
+Overfull \hbox (11.22113pt too wide) in paragraph at lines 562--562
  []|[]\TU/Arial(0)/m/n/8 Causality[][] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 565--565
+Overfull \hbox (11.22894pt too wide) in paragraph at lines 562--562
  [][]\TU/Arial(0)/m/n/8 Reported[]| 
  []
 
@@ -4520,7 +5015,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (1.65942pt too wide) in paragraph at lines 583--583
+Overfull \hbox (1.65942pt too wide) in paragraph at lines 580--580
  [][]\TU/Arial(0)/m/n/8 SNPs[] 
  []
 
@@ -4581,12 +5076,12 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 583--583
+Overfull \hbox (11.22113pt too wide) in paragraph at lines 580--580
  []|[]\TU/Arial(0)/m/n/8 Causality[][] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 583--583
+Overfull \hbox (11.22894pt too wide) in paragraph at lines 580--580
  [][]\TU/Arial(0)/m/n/8 Reported[]| 
  []
 
@@ -4647,12 +5142,12 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 583--583
+Overfull \hbox (11.22113pt too wide) in paragraph at lines 580--580
  []|[]\TU/Arial(0)/m/n/8 Causality[][] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 583--583
+Overfull \hbox (11.22894pt too wide) in paragraph at lines 580--580
  [][]\TU/Arial(0)/m/n/8 Reported[]| 
  []
 
@@ -4737,7 +5232,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (4.95555pt too wide) in paragraph at lines 595--595
+Overfull \hbox (4.95555pt too wide) in paragraph at lines 592--592
  []|[]\TU/Arial(0)/m/n/8 0.2400[]| 
  []
 
@@ -4782,7 +5277,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.68597pt too wide) in paragraph at lines 595--595
+Overfull \hbox (11.68597pt too wide) in paragraph at lines 592--592
  []|[]\TU/Arial(0)/m/n/8 0.003000[]| 
  []
 
@@ -4827,7 +5322,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (13.84192pt too wide) in paragraph at lines 601--601
+Overfull \hbox (13.84192pt too wide) in paragraph at lines 598--598
  []|[]\TU/Arial(0)/m/n/8 Schizophrenia[]| 
  []
 
@@ -4864,7 +5359,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (4.95555pt too wide) in paragraph at lines 601--601
+Overfull \hbox (4.95555pt too wide) in paragraph at lines 598--598
  []|[]\TU/Arial(0)/m/n/8 0.2500[]| 
  []
 
@@ -4909,7 +5404,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.68597pt too wide) in paragraph at lines 601--601
+Overfull \hbox (11.68597pt too wide) in paragraph at lines 598--598
  []|[]\TU/Arial(0)/m/n/8 0.630000[]| 
  []
 
@@ -4938,7 +5433,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 2.0pt on input line 607.
+(Font)              scaled to size 2.0pt on input line 604.
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 0.8311436095867238.
@@ -5491,22 +5986,24 @@ Package fontspec Info:
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
-! Undefined control sequence.
-l.649 Table (@\tab
-                  :citations-reanalysis-summ-display) reference\textsuperscr...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
- 
+
+[6] (./4_Results.aux)
+ ***********
+LaTeX2e <2025-06-01>
+L3 programming layer <2025-05-26>
+ ***********
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 19302 strings out of 472247
- 354011 string characters out of 5527980
- 947809 words of memory out of 5000000
- 45525 multiletter control sequences out of 15000+600000
+ 19325 strings out of 470549
+ 354801 string characters out of 5491784
+ 965369 words of memory out of 5000000
+ 47244 multiletter control sequences out of 15000+600000
  633510 words of font info for 110 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,13n,122p,2963b,545s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on 4_Results.pdf (5 pages).
+
+Output written on 4_Results.pdf (6 pages).

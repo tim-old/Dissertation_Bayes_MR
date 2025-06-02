@@ -40,7 +40,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE, 
                       message = FALSE, 
                       error = FALSE,
-                      cache = TRUE, 
+                      cache = FALSE, 
                       include = FALSE, 
                       dev = "png", 
                       dpi = 500
@@ -104,7 +104,7 @@ no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Dat
 no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen2_sim_summ_tib.rds"))
 #no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
 
-#no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
+no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
 #no_causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen3_sim_summ_tib.rds"))
 
 
@@ -141,16 +141,16 @@ no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib#,
   mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
 
 # Scenario 3
-#no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib#,
+no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib#,
 #                                           no_causal_20k_scen3_sim_summ_tib
-#                                           ) %>%
-#   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+                                           ) %>%
+   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
 
 
 # Summary
 no_causal_sim_summ_tib <- bind_rows(no_causal_scen1_sim_summ_tib,
-                                    no_causal_scen2_sim_summ_tib#,
-                                    #no_causal_scen3_sim_summ_tib
+                                    no_causal_scen2_sim_summ_tib,
+                                    no_causal_scen3_sim_summ_tib
 )%>% 
   mutate(WME_Lower_CI = WME_Av - 1.96 * WME_SE,
          WME_Upper_CI = WME_Av + 1.96 * WME_SE,
@@ -513,7 +513,7 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   # Add footer
   add_footer_lines("CI: Confidence Interval, IV: Instumental Variable, SE: Standard Error. Null Causal Effect (\U03B2 = 0)") |>
   fontsize(8, i = c(1:5), j = c(1:13), part = "header") |>
-  fontsize(8, i = c(1:10), j = c(1:13), part = "body") |>
+  fontsize(8, i = c(1:15), j = c(1:13), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
@@ -755,11 +755,12 @@ get_reanalysis_tib <- function(models_in){
 
 ```
 
-```{r citations-reanalysis-summ-tib}
+```{r citations-reanalysis-summ-tib, cache=TRUE}
 
-citations_reanalysis_summ_tib <- Citations_Instrument_Data %>% 
-  #str()
-  #slice_head(n = 153) %>% #140
+#citations_reanalysis_summ_tib <- 
+  Citations_Instrument_Data %>% 
+  #slice_head(n = 1000) %>% 
+  #slice(2185:2281) %>%
   mutate(across(Coeff_G_X:Coeff_G_Y_SE, ~replace(., . == 0, 10^-100))) %>% 
   get_reanalysis_tib() 
 
@@ -848,13 +849,13 @@ citations_reanalysis_summ_display <- citations_reanalysis_summ_tib %>%
   autofit() |>
   line_spacing(space = 1, part = "header") |>
   line_spacing(space = 1, part = "body") |>
-  fit_to_width(max_width = 6.5) |>
+  fit_to_width(max_width = 7.5) |>
   #height_all(height = 40, unit = "mm",part = "all") |>
   # Add footer
   add_footer_lines("\U03B2 and OR presented as: estimate (95% CI).\n\U03B2: causal effect estimate, CI: Confidence Interval, OR: Odds Ratio, SE: Standard Error.") |>
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
   fontsize(8, i = c(1:3), j = c(1:14), part = "header") |>
-  fontsize(8, i = c(1:2), j = c(1:14), part = "body") |>
+  fontsize(8, i = c(1:8), j = c(1:14), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
   # reframe(N = N,
   #         WME_Av = mean(WME_est),
@@ -868,41 +869,7 @@ citations_reanalysis_summ_display
 
 ```
 
-Table (@\tab:citations-reanalysis-summ-display) reference[@bowden_consistent_2016]
-
-
-
-
-```{r}
-library(tidyverse)
-library(dplyr)
-library(bookdown)
-library(TwoSampleMR)
-library(rstan)
-library(here)
-library(cowplot)
-library(kableExtra)
-library(tables)
-library(flextable)
-library(ftExtra)
-library(officer)
-
-# Load function scripts
-source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
-source(here("MSc_Thesis_Split", "Script", "Hevo", "functions.mrhevo.R"))
-
-
-# # Compile model for MR-Hevo
-mr.stanmodel <- stan_model(file = here("MSc_Thesis_Split",
-                                       "Script",
-                                       "Hevo",
-                                       "MRHevo_summarystats.stan"),
-                           model_name="MRHevo.summarystats",
-                           verbose=FALSE)
-
-#Data_List <- bind_rows(Citations_Instrument_Data, Citations_Instrument_Data_2)
-
-```
+<!-- Table (@\tab:citations-reanalysis-summ-display) reference[@bowden_consistent_2016] -->
 
 
 

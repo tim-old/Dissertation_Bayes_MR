@@ -15,79 +15,79 @@ n_datasets <- 1000
 # --- Scenario 1: Balanced Pleiotropy, InSIDE Assumption Satisfied --- #
 
 
-## 10,000 Participants ##
+## 20,000 Participants ##
 
 # 0% Invalid
 
-no_causal_20k_point0_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
-                                                          n_instruments = 25,
-                                                          n_datasets = n_datasets,
-                                                          prop_invalid = 10^-300,
-                                                          causal_effect = FALSE, 
-                                                          #two_sample = FALSE,     # for testing
-                                                          #rand_error = FALSE,
-                                                          beta_val = 0.1,
-                                                          balanced_pleio = TRUE,
-                                                          InSIDE_satisfied = TRUE)
-
-no_causal_20k_point0_scen1_models <- get_models(no_causal_20k_point0_scen1_data)
-
-
-saveRDS(no_causal_20k_point0_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point0_scen1_models.rds"))
-
-# 10% Invalid
-
-no_causal_20k_point1_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
-                                                          n_instruments = 25,
-                                                          n_datasets = n_datasets,
-                                                          prop_invalid = 0.1,
-                                                          causal_effect = FALSE,
-                                                          #two_sample = FALSE,
-                                                          #rand_error = FALSE,
-                                                          beta_val = 0.1,
-                                                          balanced_pleio = TRUE,
-                                                          InSIDE_satisfied = TRUE)
-
-no_causal_20k_point1_scen1_models <- get_models(no_causal_20k_point1_scen1_data)
-
-
-saveRDS(no_causal_20k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point1_scen1_models.rds"))
-
-# 20% Invalid
-
-no_causal_20k_point2_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
-                                                          n_instruments = 25,
-                                                          n_datasets = n_datasets,
-                                                          prop_invalid = 0.2,
-                                                          causal_effect = FALSE,
-                                                          #two_sample = FALSE,
-                                                          #rand_error = FALSE,
-                                                          beta_val = 0.1,
-                                                          balanced_pleio = TRUE,
-                                                          InSIDE_satisfied = TRUE)
-
-no_causal_20k_point2_scen1_models <- get_models(no_causal_20k_point2_scen1_data)
-
-
-saveRDS(no_causal_20k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point2_scen1_models.rds"))
-
-# 30% Invalid
-
-no_causal_20k_point3_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
-                                                          n_instruments = 25,
-                                                          n_datasets = n_datasets,
-                                                          prop_invalid = 0.3,
-                                                          causal_effect = FALSE,
-                                                          #two_sample = FALSE,
-                                                          #rand_error = FALSE,
-                                                          beta_val = 0.1,
-                                                          balanced_pleio = TRUE,
-                                                          InSIDE_satisfied = TRUE)
-
-no_causal_20k_point3_scen1_models <- get_models(no_causal_20k_point3_scen1_data)
-
-
-saveRDS(no_causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point3_scen1_models.rds"))
+# no_causal_20k_point0_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
+#                                                           n_instruments = 25,
+#                                                           n_datasets = n_datasets,
+#                                                           prop_invalid = 10^-300,
+#                                                           causal_effect = FALSE, 
+#                                                           #two_sample = FALSE,     # for testing
+#                                                           #rand_error = FALSE,
+#                                                           beta_val = 0.1,
+#                                                           balanced_pleio = TRUE,
+#                                                           InSIDE_satisfied = TRUE)
+# 
+# no_causal_20k_point0_scen1_models <- get_models(no_causal_20k_point0_scen1_data)
+# 
+# 
+# saveRDS(no_causal_20k_point0_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point0_scen1_models.rds"))
+# 
+# # 10% Invalid
+# 
+# no_causal_20k_point1_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
+#                                                           n_instruments = 25,
+#                                                           n_datasets = n_datasets,
+#                                                           prop_invalid = 0.1,
+#                                                           causal_effect = FALSE,
+#                                                           #two_sample = FALSE,
+#                                                           #rand_error = FALSE,
+#                                                           beta_val = 0.1,
+#                                                           balanced_pleio = TRUE,
+#                                                           InSIDE_satisfied = TRUE)
+# 
+# no_causal_20k_point1_scen1_models <- get_models(no_causal_20k_point1_scen1_data)
+# 
+# 
+# saveRDS(no_causal_20k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point1_scen1_models.rds"))
+# 
+# # 20% Invalid
+# 
+# no_causal_20k_point2_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
+#                                                           n_instruments = 25,
+#                                                           n_datasets = n_datasets,
+#                                                           prop_invalid = 0.2,
+#                                                           causal_effect = FALSE,
+#                                                           #two_sample = FALSE,
+#                                                           #rand_error = FALSE,
+#                                                           beta_val = 0.1,
+#                                                           balanced_pleio = TRUE,
+#                                                           InSIDE_satisfied = TRUE)
+# 
+# no_causal_20k_point2_scen1_models <- get_models(no_causal_20k_point2_scen1_data)
+# 
+# 
+# saveRDS(no_causal_20k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point2_scen1_models.rds"))
+# 
+# # 30% Invalid
+# 
+# no_causal_20k_point3_scen1_data <-  get_simulated_MR_data(n_participants = 20000,
+#                                                           n_instruments = 25,
+#                                                           n_datasets = n_datasets,
+#                                                           prop_invalid = 0.3,
+#                                                           causal_effect = FALSE,
+#                                                           #two_sample = FALSE,
+#                                                           #rand_error = FALSE,
+#                                                           beta_val = 0.1,
+#                                                           balanced_pleio = TRUE,
+#                                                           InSIDE_satisfied = TRUE)
+# 
+# no_causal_20k_point3_scen1_models <- get_models(no_causal_20k_point3_scen1_data)
+# 
+# 
+# saveRDS(no_causal_20k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point3_scen1_models.rds"))
 
 # --- Scenario 2: Directional Pleiotropy, InSIDE Assumption Satisfied --- #
 
