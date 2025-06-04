@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.2)  2 JUN 2025 23:48
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.2)  3 JUN 2025 01:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4798,11 +4798,6 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (1.65942pt too wide) in paragraph at lines 562--562
- [][]\TU/Arial(0)/m/n/8 SNPs[] 
- []
-
-
 Package fontspec Info: 
 (fontspec)             Arial scale = 0.8311527808940205.
 
@@ -4859,12 +4854,12 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 562--562
+Overfull \hbox (6.8851pt too wide) in paragraph at lines 562--562
  []|[]\TU/Arial(0)/m/n/8 Causality[][] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 562--562
+Overfull \hbox (6.89291pt too wide) in paragraph at lines 562--562
  [][]\TU/Arial(0)/m/n/8 Reported[]| 
  []
 
@@ -4925,12 +4920,163 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 562--562
+Overfull \hbox (6.8851pt too wide) in paragraph at lines 562--562
  []|[]\TU/Arial(0)/m/n/8 Causality[][] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 562--562
+Overfull \hbox (6.89291pt too wide) in paragraph at lines 562--562
+ [][]\TU/Arial(0)/m/n/8 Reported[]| 
+ []
+
+
+Overfull \hbox (99.36241pt too wide) in alignment at lines 544--564
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (6.8851pt too wide) in paragraph at lines 580--580
+ []|[]\TU/Arial(0)/m/n/8 Causality[][] 
+ []
+
+
+Overfull \hbox (6.89291pt too wide) in paragraph at lines 580--580
  [][]\TU/Arial(0)/m/n/8 Reported[]| 
  []
 
@@ -4991,164 +5137,47 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Overfull \hbox (1.65942pt too wide) in paragraph at lines 580--580
- [][]\TU/Arial(0)/m/n/8 SNPs[] 
- []
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 580--580
+Overfull \hbox (6.8851pt too wide) in paragraph at lines 580--580
  []|[]\TU/Arial(0)/m/n/8 Causality[][] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 580--580
+Overfull \hbox (6.89291pt too wide) in paragraph at lines 580--580
  [][]\TU/Arial(0)/m/n/8 Reported[]| 
  []
 
 
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Overfull \hbox (11.22113pt too wide) in paragraph at lines 580--580
- []|[]\TU/Arial(0)/m/n/8 Causality[][] 
+Overfull \hbox (99.36241pt too wide) in alignment at lines 564--582
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.22894pt too wide) in paragraph at lines 580--580
- [][]\TU/Arial(0)/m/n/8 Reported[]| 
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (99.36241pt too wide) in alignment at lines 582--588
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
@@ -5208,31 +5237,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311527808940205.
-
-
-Package fontspec Info: 
-(fontspec)             Arial scale = 1.
-
-
-Overfull \hbox (4.95555pt too wide) in paragraph at lines 592--592
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 592--592
  []|[]\TU/Arial(0)/m/n/8 0.2400[]| 
  []
 
@@ -5277,7 +5282,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.68597pt too wide) in paragraph at lines 592--592
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 592--592
  []|[]\TU/Arial(0)/m/n/8 0.003000[]| 
  []
 
@@ -5322,7 +5327,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (13.84192pt too wide) in paragraph at lines 598--598
+Overfull \hbox (1.55615pt too wide) in paragraph at lines 598--598
  []|[]\TU/Arial(0)/m/n/8 Schizophrenia[]| 
  []
 
@@ -5359,7 +5364,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (4.95555pt too wide) in paragraph at lines 598--598
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 598--598
  []|[]\TU/Arial(0)/m/n/8 0.2500[]| 
  []
 
@@ -5404,7 +5409,7 @@ Package fontspec Info:
 (fontspec)             Arial scale = 1.
 
 
-Overfull \hbox (11.68597pt too wide) in paragraph at lines 598--598
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 598--598
  []|[]\TU/Arial(0)/m/n/8 0.630000[]| 
  []
 
@@ -5426,17 +5431,15 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 2.0pt on input line 604.
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5444,7 +5447,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5452,7 +5455,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5460,7 +5463,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5468,7 +5471,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5476,15 +5479,142 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
 
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 604--604
+ []|[]\TU/Arial(0)/m/n/8 0.0500[]| 
+ []
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 604--604
+ []|[]\TU/Arial(0)/m/n/8 0.000830[]| 
+ []
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 0.8311527808940205.
+
+
+Package fontspec Info: 
+(fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 610--610
+ []|[]\TU/Arial(0)/m/n/8 0.0640[]| 
+ []
+
+
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5492,7 +5622,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5500,7 +5630,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5508,7 +5638,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5516,15 +5646,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
 
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 610--610
+ []|[]\TU/Arial(0)/m/n/8 0.960000[]| 
+ []
+
+
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5532,7 +5667,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5540,7 +5675,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5548,7 +5683,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5556,7 +5691,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5564,7 +5699,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5572,7 +5707,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5580,7 +5715,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5588,15 +5723,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 616--616
+ []|[]\TU/Arial(0)/m/n/8 0.0430[]| 
+ []
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5604,7 +5744,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5612,7 +5752,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5620,7 +5760,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5628,15 +5768,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
 
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 616--616
+ []|[]\TU/Arial(0)/m/n/8 0.000320[]| 
+ []
+
+
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5644,7 +5789,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5652,7 +5797,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5660,7 +5805,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5668,7 +5813,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5676,7 +5821,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5684,7 +5829,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5692,7 +5837,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5700,15 +5845,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 622--622
+ []|[]\TU/Arial(0)/m/n/8 1.3000[]| 
+ []
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5716,7 +5866,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5724,7 +5874,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5732,7 +5882,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5740,15 +5890,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
 
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 622--622
+ []|[]\TU/Arial(0)/m/n/8 0.010000[]| 
+ []
+
+
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5756,7 +5911,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5764,7 +5919,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5772,7 +5927,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5780,7 +5935,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5788,7 +5943,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5796,7 +5951,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5804,7 +5959,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5812,15 +5967,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 628--628
+ []|[]\TU/Arial(0)/m/n/8 0.1400[]| 
+ []
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5828,7 +5988,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5836,7 +5996,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5844,7 +6004,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5852,15 +6012,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
 
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 628--628
+ []|[]\TU/Arial(0)/m/n/8 0.002400[]| 
+ []
+
+
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5868,7 +6033,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5876,7 +6041,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5884,7 +6049,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5892,7 +6057,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5900,7 +6065,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5908,7 +6073,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5916,7 +6081,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5924,15 +6089,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (2.06523pt too wide) in paragraph at lines 634--634
+ []|[]\TU/Arial(0)/m/n/8 0.0034[]| 
+ []
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5940,7 +6110,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5948,7 +6118,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5956,7 +6126,7 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5964,15 +6134,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
 
 
+Overfull \hbox (7.34995pt too wide) in paragraph at lines 634--634
+ []|[]\TU/Arial(0)/m/n/8 0.000036[]| 
+ []
+
+
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
@@ -5980,11 +6155,16 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Arial scale = 0.8311436095867238.
+(fontspec)             Arial scale = 0.8311527808940205.
 
 
 Package fontspec Info: 
 (fontspec)             Arial scale = 1.
+
+
+Overfull \hbox (99.36241pt too wide) in alignment at lines 588--640
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
 
 
 
@@ -5998,12 +6178,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19325 strings out of 470549
- 354801 string characters out of 5491784
- 965369 words of memory out of 5000000
- 47244 multiletter control sequences out of 15000+600000
- 633510 words of font info for 110 fonts, out of 8000000 for 9000
+ 19318 strings out of 470549
+ 354635 string characters out of 5491784
+ 965367 words of memory out of 5000000
+ 47242 multiletter control sequences out of 15000+600000
+ 633478 words of font info for 106 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,13n,122p,2963b,545s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,122p,2966b,545s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 4_Results.pdf (6 pages).

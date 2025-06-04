@@ -757,19 +757,24 @@ get_reanalysis_tib <- function(models_in){
 
 ```{r citations-reanalysis-summ-tib, cache=TRUE}
 
-#citations_reanalysis_summ_tib <- 
-  Citations_Instrument_Data %>% 
-  #slice_head(n = 1000) %>% 
-  #slice(2185:2281) %>%
+#citations_reanalysis_summ_tib <-   
+  Citations_Instrument_Data %>%
+  slice(1:3108) %>% #trying to select blank rows without this?
+  #slice(2282:2730) %>% #xie
+  #slice(2731:3108) %>% #Clift
   mutate(across(Coeff_G_X:Coeff_G_Y_SE, ~replace(., . == 0, 10^-100))) %>% 
   get_reanalysis_tib() 
 
-#%>% mutate(citation = "[@bowden_consistent_2016]") #%>% kable()
+saveRDS(citations_reanalysis_summ_tib, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "citations_reanalysis_summ_tib.rds"))
 
-##reanalysis_tib #%>% 
-#kable()
 
-#str(Data_List)
+```
+
+
+
+```{r citation-search-sample, include=TRUE, cache=TRUE}
+#| tab.id = "citation-search-sample"
+#| tab.cap = "Summary of highly-cited two-sample Mendelian randomisation studies reporting a weighted median estimate of casual effect"
 
 ```
 
@@ -778,6 +783,8 @@ get_reanalysis_tib <- function(models_in){
 #| tab.id = "citations-reanalysis-summ-display",
 #| tab.cap = "Reanalysis of 10 highly-cited two-sample MR articles referencing Bowden et al[@bowden_consistent_2016], comparing results of both WME and MR-Hevo causal effect estimation methods",
 #| ft.arraystretch = 1
+
+citations_reanalysis_summ_tib <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "citations_reanalysis_summ_tib.rds"))
 
 citations_reanalysis_summ_display <- citations_reanalysis_summ_tib %>%
   # Change names for cleaner plotting
