@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+output:
+  html_document:
+    keep_md: true
+bibliography: grateful-refs.bib
+csl: vancouver-superscript.csl
+---
+
+@bookdown2016
+
+---
+# This is a YAML metadata block, not a front matter
+# Cite materials that are cited by flextable like below
+# Note that string must be quoted
+nocite: '@rmarkdown2018 @rmarkdown2020'
+---
+
+```{r}
+library(ftExtra)
+data.frame(pkg = 'bookdown @rmarkdown2018 @rmarkdown2020') %>%
+  as_flextable() %>%
+  colformat_md(pandoc_args = c('--csl', 'harvard-cite-them-right.csl'))
+```
