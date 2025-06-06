@@ -120,7 +120,7 @@ causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data",
 
 # --- Citation Search --- # 
 
-Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() #%>% filter(Instrument !="rs7326482") %>% mutate(N=1)
+Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as_tibble() #%>% filter(Instrument !="rs7326482") %>% mutate(N=1)
 # Citations_Instrument_Data_2 <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() #%>%filter(Instrument !="rs7326482") %>%  mutate(N=2)
 
 ```
@@ -629,10 +629,10 @@ causal_sim_summ_tib_display
 
 ## Citations Search
 
-A total of *** abstracts and *** full texts were screened to identify the 10 studies listed in Table \@ref(tab:citation-search-sample); the screening flow diagram is presented in Figure \@ref(fig:screening_flow).
+A total of 110 abstracts and 54 full texts were screened to identify the 10 studies listed in Table \@ref(tab:citation-search-sample-display); the screening flow diagram is presented in Figure \@ref(fig:screening-flow).
 
 
-```{r citations-reanalysis-summ-fn, include=FALSE}
+```{r citations-reanalysis-summ-fn, include=FALSE, eval=FALSE}
 
 get_reanalysis_tib <- function(models_in){
   
@@ -755,11 +755,11 @@ get_reanalysis_tib <- function(models_in){
 
 ```
 
-```{r citations-reanalysis-summ-tib, cache=TRUE}
+```{r citations-reanalysis-summ-tib, eval=FALSE}
 
 #citations_reanalysis_summ_tib <-   
   Citations_Instrument_Data %>%
-  slice(1:3108) %>% #trying to select blank rows without this?
+  #slice(1:3108) %>% #trying to select blank rows without this?
   #slice(2282:2730) %>% #xie
   #slice(2731:3108) %>% #Clift
   mutate(across(Coeff_G_X:Coeff_G_Y_SE, ~replace(., . == 0, 10^-100))) %>% 
@@ -772,10 +772,75 @@ saveRDS(citations_reanalysis_summ_tib, file = here("MSc_Thesis_Split", "Data", "
 
 
 
-```{r citation-search-sample, include=TRUE, cache=TRUE}
+```{r citation-search-sample-display, include=TRUE, cache=TRUE}
 #| tab.id = "citation-search-sample"
 #| tab.cap = "Summary of highly-cited two-sample Mendelian randomisation studies reporting a weighted median estimate of casual effect"
 
+
+citations_search_sample <- read_csv(here("MSc_Thesis_Split", "Data", "Citations_Search", "Citations_Methods_Comparison.csv"),na = "#N/A")
+
+citations_search_sample %>% 
+  mutate(
+    # fill blanks
+    Reported_WME_Lower_CI = if_else(is.na(Reported_WME_Lower_CI), 
+                                    (Reported_WME_Causal_Effect - (1.96 * Reported_WME_SE)),
+                                    Reported_WME_Lower_CI),
+    Reported_WME_Upper_CI = if_else(is.na(Reported_WME_Upper_CI),
+                                    (Reported_WME_Causal_Effect + (1.96 * Reported_WME_SE)),
+                                    Reported_WME_Upper_CI),
+    Overlap_Max_Est_Decimal = replace_na(Overlap_Max_Est_Decimal, 0),
+    # round
+    across(where(is.numeric), ~round(., 2)),
+    # combine effect estimate + CIs
+    Effect_Estimate = paste0(Reported_WME_Causal_Effect, " (", Reported_WME_Lower_CI, " to ", Reported_WME_Upper_CI, ")"),
+    # combine author/year
+    Study = paste0(Author, ", ", Year),
+    # convert TRUE/FALSE to Yes/No
+    Causality_Reported = if_else(Causality_Reported, "Yes", "No"),
+    # convert to %
+    Participants_Maximum_Estimated_Overlap = paste0((Overlap_Max_Est_Decimal * 100), "%"),
+    # change naming for flextable
+    Participants_N_Exposure = Exposure_N_Participants,
+    Participants_N_Outcome = Outcome_N_Participants
+    
+  ) %>% 
+  #sort by citation count
+  arrange(desc(Citations)) %>% 
+  select(Study,
+         DOI,
+         Citations,
+         Association,
+         n_Instruments,
+         Participants_N_Exposure,
+         Participants_N_Outcome,
+         Participants_Maximum_Estimated_Overlap,
+         Effect_Estimate,
+         Causality_Reported,
+         p_value
+         ) %>% 
+  as_flextable() %>% 
+  span_header() %>% 
+  align(part = "all", align = "center") %>% 
+  # Fix column titles
+  ## N Instruments
+  compose(part = "header", j = 5, value = as_paragraph(as_i("N"), " Instruments")) %>% 
+  merge_v(part = "header", j = 5) %>% 
+  ## Participants
+  compose(part = "header", i = 2, j = 6, value = as_paragraph(as_i("N"))) %>%
+  ## Effect
+  compose(part = "header", j = 9, value = as_paragraph("Effect Estimate")) %>% 
+  merge_v(part = "header", j = 9) %>% 
+  ## Causality
+  compose(part = "header", j = 10, value = as_paragraph("Causality Reported")) %>% 
+  merge_v(part = "header", j = 10) %>% 
+  ## p-value 
+  compose(part = "header", j = 11, value = as_paragraph(as_i("p"), "-value")) %>% 
+  merge_v(part = "header", j = 11) %>% 
+  # add lines
+  hline(part = "header", i = 1, j = c(6:8), border = fp_border(color = "black", width = 1)) #%>% 
+  #hline(part = "header", i = 2, j = c(6:7), border = fp_border(color = "black", width = 1))
+  
+  
 ```
 
 
