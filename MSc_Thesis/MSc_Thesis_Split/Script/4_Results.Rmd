@@ -8,8 +8,12 @@ output:
     number_sections: FALSE
     global_numbering: FALSE
     pandoc_args: !expr acronymsdown::add_filter()
+<<<<<<< HEAD
     #keep_tex: TRUE
     toc_depth: 4
+=======
+    keep_tex: TRUE
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
   # pdf_document:
   #   latex_engine: xelatex
   #   dev: cairo_pdf
@@ -67,7 +71,11 @@ library(tables)
 library(flextable)
 library(ftExtra)
 library(officer)
+<<<<<<< HEAD
 library(gluedown)
+=======
+library(gt)
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 
 # Load University of Edinburgh colour palette
 source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
@@ -118,8 +126,120 @@ causal_10k_point2_scen2_models <- readRDS(file = here("MSc_Thesis_Split", "Data"
 ## 30% Invalid
 no_causal_10k_point3_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_10k_point3_scen3_models.rds"))
 causal_10k_point3_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "causal_10k_point3_scen3_models.rds"))
+<<<<<<< HEAD
 ```
 
+=======
+
+
+# --- Load results --- #
+# No Causal:
+no_causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen1_sim_summ_tib.rds"))
+no_causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen1_sim_summ_tib.rds"))
+
+no_causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen2_sim_summ_tib.rds"))
+no_causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen2_sim_summ_tib.rds"))
+
+no_causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_10k_scen3_sim_summ_tib.rds"))
+#no_causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_scen3_sim_summ_tib.rds"))
+
+
+# Causal:
+causal_10k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen1_sim_summ_tib.rds"))
+causal_20k_scen1_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen1_sim_summ_tib.rds"))
+
+causal_10k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen2_sim_summ_tib.rds"))
+causal_20k_scen2_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
+
+causal_10k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_10k_scen3_sim_summ_tib.rds"))
+causal_20k_scen3_sim_summ_tib <- readRDS(file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen3_sim_summ_tib.rds"))
+
+# --- Citation Search --- # 
+
+Citations_Instrument_Data <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as_tibble() #%>% filter(Instrument !="rs7326482") %>% mutate(N=1)
+# Citations_Instrument_Data_2 <- read.csv(here("MSc_Thesis_Split", "Data", "Citations_Datasets", "Citations_Instrument_Data.csv")) %>% as.tibble() #%>%filter(Instrument !="rs7326482") %>%  mutate(N=2)
+
+```
+
+```{r sim-summ-tibs}
+
+# --- No Causal --- #
+# Scenario 1
+no_causal_scen1_sim_summ_tib <- bind_rows(no_causal_10k_scen1_sim_summ_tib,
+                                          no_causal_20k_scen1_sim_summ_tib
+) %>%
+  mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 2
+no_causal_scen2_sim_summ_tib <- bind_rows(no_causal_10k_scen2_sim_summ_tib,
+no_causal_20k_scen2_sim_summ_tib
+                                          ) %>%
+  mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 3
+no_causal_scen3_sim_summ_tib <- bind_rows(no_causal_10k_scen3_sim_summ_tib#,
+#                                           no_causal_20k_scen3_sim_summ_tib
+                                           ) %>%
+   mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+
+
+# Summary
+no_causal_sim_summ_tib <- bind_rows(no_causal_scen1_sim_summ_tib,
+                                    no_causal_scen2_sim_summ_tib,
+                                    no_causal_scen3_sim_summ_tib
+)%>% 
+  mutate(WME_Lower_CI = WME_Av - 1.96 * WME_SE,
+         WME_Upper_CI = WME_Av + 1.96 * WME_SE,
+         Pos_Rate_Diff = Hevo_Pos_Rate - WME_Pos_Rate,
+         Hevo_Better = Pos_Rate_Diff < 0)
+
+
+# --- Causal --- #
+# Scenario 1
+causal_scen1_sim_summ_tib <- bind_rows(causal_10k_scen1_sim_summ_tib,
+                                       causal_20k_scen1_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 2
+causal_scen2_sim_summ_tib <- bind_rows(causal_10k_scen2_sim_summ_tib,
+                                       causal_20k_scen2_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 3
+causal_scen3_sim_summ_tib <- bind_rows(causal_10k_scen3_sim_summ_tib,
+                                       causal_20k_scen3_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+
+
+# Summary
+causal_sim_summ_tib <- bind_rows(causal_scen1_sim_summ_tib,
+                                 causal_scen2_sim_summ_tib,
+                                 causal_scen3_sim_summ_tib) %>% 
+  mutate(WME_Lower_CI = WME_Av - 1.96 * WME_SE,
+         WME_Upper_CI = WME_Av + 1.96 * WME_SE,
+         Pos_Rate_Diff = Hevo_Pos_Rate - WME_Pos_Rate,
+         Hevo_Better = Pos_Rate_Diff < 0)
+  
+#no_causal_sim_summ_tib
+```
+
+Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "4_Results.Rmd"))`
+
+# Results
+
+## Simulation Study
+
+### Data Simulation
+
+Data were successfully simulated as intended. A selection of representative visualisations are presented in Figure \@ref(fig:data-sim-validation). Full details of testing used to validate model outputs from parameter inputs are given in Appendix \@ref(appendix-sim-test). The $F$-statistic calculated from simulated instruments was >10, indicating that they were sufficiently strongly associated with exposure to meet the relevance assumption of \acr{IV} analysis (Tables \@ref(tab:no-causal-sim-summ-display) and \@ref(tab:causal-sim-summ-display)).
+
+\newpage
+
+
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 ```{r data-sim-validation, include=TRUE, fig.height=7.5}
 #| fig.id = "data-sim-validation",
 #| fig.cap = "Plots of a representative group of simulated datasets; all simulate genetic instruments from the same index from the same random seed. Left and right columns demonstrate null and positive true causal effects, respectively. The scenario and the proportion of invalid (i.e. pleiotropic) genetic instruments changes with each row. a) 0% of instruments invalid, rendering Scenario assumptions regarding invalid assumptions irrelevant. b) 10% of instruments invalid, Scenario 1: balanced pleiotropy introduces noise around the causal effect. c) 20% of instruments invalid, Scenario 2: directional pleiotropy biases in the direction of the invalid instruments. d) 30% of instruments invalid, Scenario 3: directional pleiotropy and InSIDE assumption violation strongly biases towards a positive effect estimate."
@@ -437,7 +557,11 @@ The mean causal effect estimate (mean reported 95% \acr{CI}s) across all cases w
 ## Simulation Tables
 
 ```{r no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="no-causal-sim-summ-display", tab.cap="Summary of 1,000 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect", results='asis'}
+<<<<<<< HEAD
 #| ft.arraystretch = 1.3
+=======
+#| ft.arraystretch = 1
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 
 
 # Display
@@ -518,9 +642,15 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
+<<<<<<< HEAD
   add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
   fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
   fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
+=======
+  add_footer_lines("CI: Confidence Interval, IV: Instumental Variable, SE: Standard Error. Null Causal Effect (\U03B2 = 0)") |>
+  fontsize(8, i = c(1:5), j = c(1:13), part = "header") |>
+  fontsize(8, i = c(1:23), j = c(1:13), part = "body") |>
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
   fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
@@ -535,7 +665,11 @@ no_causal_sim_summ_tib_display
 
 \newpage
 ```{r causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="causal-sim-summ-display", tab.cap="Summary of 1,000 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect", results='asis'}
+<<<<<<< HEAD
 #| ft.arraystretch = 1.3
+=======
+#| ft.arraystretch = 1
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 
 
 # Display
@@ -616,8 +750,13 @@ causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
   #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
+<<<<<<< HEAD
   add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error. \nPositive Causal Effect (\U03B2 = 0.1)") |>
   fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+=======
+  add_footer_lines("CI: Confidence Interval, IV: Instumental Variable, SE: Standard Error. Null Causal Effect (\U03B2 = 0)") |>
+  fontsize(8, i = c(1:5), j = c(1:13), part = "header") |>
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
   fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
@@ -636,8 +775,11 @@ causal_sim_summ_tib_display
 
 ## Citations Search
 
+<<<<<<< HEAD
 ### Search Results
 
+=======
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 ```{r citations-reanalysis-summ-fn, include=FALSE, eval=FALSE}
 
 get_reanalysis_tib <- function(models_in){
@@ -764,6 +906,7 @@ get_reanalysis_tib <- function(models_in){
 
 ```{r citations-reanalysis-summ-tib, eval=FALSE}
 
+<<<<<<< HEAD
 # citations_reanalysis_summ_tib <- Citations_Instrument_Data %>%
 #   #slice()
 #   #slice(1452:1521) %>% # Mokry
@@ -773,6 +916,16 @@ get_reanalysis_tib <- function(models_in){
 #          across(starts_with("Coeff_"), ~as.double(.))) %>% 
 #   get_reanalysis_tib() %>% 
 #   mutate(Reanalysis_Discordant = (WME_est_causal_detected != Hevo_est_causal_detected))
+=======
+#citations_reanalysis_summ_tib <- 
+  Citations_Instrument_Data %>%
+  #slice()
+  #slice(1452:1521) %>% # Mokry
+  #slice(2282:2730) %>% # Xie
+  #slice(2731:3108) %>% # Clift
+  mutate(across(Coeff_G_X:Coeff_G_Y_SE, ~replace(., . == 0, 10^-100))) %>% 
+  get_reanalysis_tib() 
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 
 # saveRDS(citations_reanalysis_summ_tib, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "citations_reanalysis_summ_tib.rds"))
 # 
@@ -784,6 +937,7 @@ get_reanalysis_tib <- function(models_in){
 # citations_reanalysis_summ_tib
 ```
 
+<<<<<<< HEAD
 ```{r citation-data}
 
 citations_search_sample <- read_csv(here("MSc_Thesis_Split", "Data", "Citations_Search", "Citations_Methods_Comparison.csv"),na = "#N/A")
@@ -812,6 +966,37 @@ include_graphics(path = here("MSc_Thesis_Split", "Data", "Citations_Search", "WM
 #| tab.id = "citation-search-sample-display",
 #| tab.cap = "Summary of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of casual effect",
 #| ft.arraystretch = 1.2
+=======
+citations_reanalysis_summ_tib
+
+```
+
+```{r citation-data}
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
+
+
+#citations_search_sample_refs <- citations_search_sample %>% pull(Study_Ref) %>%  paste0(sep = ";")
+#cat(citations_search_sample_refs)
+```
+
+A total of 110 abstracts and 54 full texts were screened to identify the 10 studies[@choi_assessment_2019; @pasman_gwas_2018; @ligthart_genome_2018; @carter_understanding_2019; @mokry_obesity_2016; @carreras-torres_role_2017; @xu_causal_2022; @budu-aggrey_evidence_2019; @xie_associations_2023; @clift_smoking_2022] listed in Table \@ref(tab:citation-search-sample-display); the screening flow diagram is presented in Figure \@ref(fig:screening-flow).
+
+```{r screening-flow, include=TRUE, cache=FALSE}
+#| out.width = "100%",
+#| fig.id = "screening-flow",
+#| fig.cap = "Flow diagram of selection for sample of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of casual effect"
+
+include_graphics(path = here("MSc_Thesis_Split", "Data", "Citations_Search", "WME_citation_search_flow_diagram_crop.png"),
+                 error = FALSE)
+
+```
+
+\blandscape
+
+```{r citation-search-sample-display, include=TRUE, cache=FALSE, out.height=6}
+#| tab.id = "citation-search-sample-display",
+#| tab.cap = "Summary of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of casual effect",
+#| ft.arraystretch = 1.5
 
 
 citations_search_sample %>% 
@@ -881,6 +1066,7 @@ citations_search_sample %>%
   hline(part = "header", i = 2, j = c(8:9), border = fp_border(color = "black", width = 1)) %>% 
   hline(part = "body", i = c(1:10), j = c(1:11), border = fp_border(color = "black", width = 0.2)) %>% 
   # Add footer
+<<<<<<< HEAD
   add_footer_lines("\U03B2 and OR presented as: estimate (95% CI).\n\U03B2: causal effect estimate, CI: Confidence Interval, OR: Odds Ratio, SE: Standard Error.\nBMI: body mass index, CRP: C-reactive protein, NAFLD: non-alcoholic fatty liver disease, T2DM: type 2 diabetes mellitus") %>% 
   # Formatting
   #width(j = 2, width = 0.5,unit = "cm") #%>% 
@@ -894,6 +1080,16 @@ citations_search_sample %>%
   #height_all(height = 0.6) %>% 
   #hrule(rule = "exact", part = "all") %>% 
   #fit_to_width(max_width = 9)
+=======
+  #add_footer_lines(".") %>%
+  # Formatting
+  #width(j = 2, width = 0.5,unit = "cm") #%>% 
+  fontsize(24, i = c(1:4), j = c(1:11), part = "header") %>% 
+  fontsize(24, i = c(1:10), j = c(1:11), part = "body") %>% 
+  fontsize(24, i = 1, j = 1, part = "footer") %>% 
+  autofit() %>% 
+  fit_to_width(max_width = 9)
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
   # format citations
   #compose(part = "body", i = c(1:2), j = 1, value = as_paragraph_md(Author))
   #colformat_md(part = "all", j = 1, pandoc_args = c('--csl', 'harvard-cite-them-right.csl'))
@@ -903,6 +1099,7 @@ citations_search_sample %>%
 
 \elandscape
 
+<<<<<<< HEAD
 ```{r cite-data-load, eval=FALSE}
 
 # --- Citation Search --- # 
@@ -1119,13 +1316,24 @@ Conclusions regarding presence of a causal effect were consistent: reported  \ac
 \leavevmode\newline Across all ten studies re-analysed (Table \@ref(tab:citations-reanalysis-summ-display)), a causal effect was reported by MR-Hevo in `r reanalysis_Hevo_causal` and by \acr{WME} in `r reanalysis_WME_causal`; causal reporting was discordant in `r reanalysis_causal_discordant`
 
 Of the ten studies, 
+=======
+A summary of the re-analysis results is presented in Table \@ref(tab:citations-reanalysis-summ-display); estimates are presented both as $\beta$ regression coefficients and \acr{OR]s to aid comparison across studies.
+
+A number of \acr{WME} estimates generated through re-analysis matched the originally reported estimates poorly: Carrera-Torres et al [carreras-torres_role_2017], Ligthart et al [@ligthart_genome_2018], Mokry et al [@mokry_obesity_2016] and Xie et al [@xie_associations_2023]. Details of instruments used
+
+<!-- \begin{sidewaysfigure} -->
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 
 \blandscape
 
 ```{r citations-reanalysis-summ-display, include=TRUE, cache=FALSE}
 #| tab.id = "citations-reanalysis-summ-display",
 #| tab.cap = "Re-analysis of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of casual effect, comparing results of both WME and MR-Hevo causal effect estimation methods",
+<<<<<<< HEAD
 #| ft.arraystretch = 1.2
+=======
+#| ft.arraystretch = 1.5
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 
 
 citations_reanalysis_summ_display <- citations_reanalysis_summ_tib %>%
@@ -1214,7 +1422,11 @@ citations_reanalysis_summ_display <- citations_reanalysis_summ_tib %>%
   # Add footer
   add_footer_lines("\U03B2 and OR presented as: estimate (95% CI).\n\U03B2: causal effect estimate, CI: Confidence Interval, OR: Odds Ratio, SE: Standard Error.\nBMI: body mass index, CRP: C-reactive protein, NAFLD: non-alcoholic fatty liver disease, T2DM: type 2 diabetes mellitus") |>
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
+<<<<<<< HEAD
   fontsize(9, i = c(1:3), j = c(1:14), part = "header") |>
+=======
+  fontsize(8, i = c(1:3), j = c(1:14), part = "header") |>
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
   fontsize(8, i = c(1:10), j = c(1:14), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
   # reframe(N = N,
@@ -1230,6 +1442,14 @@ citations_reanalysis_summ_display
 ```
 
 \elandscape
+<<<<<<< HEAD
+=======
+
+<!-- \end{sidewaysfigure} -->
+
+Table \@ref(tab:citations-reanalysis-summ-display) 
+reference[@bowden_consistent_2016; @pasman_gwas_2018]
+>>>>>>> aee91d38eb8f999296f94ccd66a933cb1b31fccc
 
 
 
