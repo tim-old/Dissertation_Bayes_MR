@@ -33,11 +33,16 @@ causal_20k_point3_scen2 <- get_summary_MR_tib_row(causal_20k_point3_scen2_models
 saveRDS(causal_20k_point3_scen2, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_point3_scen2_row.rds"))
 rm(causal_20k_point3_scen2)
 
+causal_20k_point0_scen2 <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_point0_scen2_row.rds"))
+causal_20k_point1_scen2 <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_point1_scen2_row.rds"))
+causal_20k_point2_scen2 <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_point2_scen2_row.rds"))
+
+
 # Combine rows
 causal_20k_scen2_sim_summ_tib <- bind_rows(causal_20k_point0_scen2,
-                                              causal_20k_point1_scen2,
-                                              causal_20k_point2_scen2,
-                                              causal_20k_point3_scen2)
+                                           causal_20k_point1_scen2,
+                                           causal_20k_point2_scen2,
+                                           causal_20k_point3_scen2)
 
 # Save
 saveRDS(causal_20k_scen2_sim_summ_tib, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "causal_20k_scen2_sim_summ_tib.rds"))
