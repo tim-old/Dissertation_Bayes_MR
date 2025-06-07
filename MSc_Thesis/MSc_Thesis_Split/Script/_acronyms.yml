@@ -1,24 +1,16 @@
 ---
 acronyms:
   keys:
-    - shortname: BMI
-      longname: body mass index 
     - shortname: CLT
       longname: central limit theorem
     - shortname: CI
       longname: confidence interval
-    - shortname: CRP
-      longname: C-reactive protein
     - shortname: InSIDE
       longname: Instrument Strength Independent of Direct Effect
     - shortname: IV
       longname: instrumental variable
     - shortname: MR
       longname: Mendelian randomisation
-    - shortname: NAFLD
-      longname: non-alcoholic fatty liver disease
-    - shortname: OR
-      longname: odds ratio
     - shortname: RCT
       longname: randomised-controlled trial
     - shortname: SD
@@ -27,8 +19,6 @@ acronyms:
       longname: standard error
     - shortname: SNP
       longname: single nucleotide polymorphism
-    - shortname: T2DM
-      longname: type 2 diabetes mellitus
     - shortname: UMREG
       longname: Usher Masters Research Ethics Group
     - shortname: WME

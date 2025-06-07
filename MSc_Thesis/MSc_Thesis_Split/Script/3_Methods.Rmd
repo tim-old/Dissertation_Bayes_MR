@@ -118,7 +118,7 @@ For citation search data, a standardised data collection form was Microsoft Exce
 
 Data cleaning for citation search data was primarily undertaken using the Tidyverse suite of R packages [@tidyverse]. A full list of packages used can be found in Appendix \@(ref:appendix-pkg). 
 
-Data were manually screened at summary level and relevant features were extracted. Data were checked for completeness, consistency, duplicate values and plausibility. Data were transformed to an appropriate data type, and encoding of genetic variables was standardised into a single format. Missing values for association coefficients and \acr{SE}s were imputed as the mean value calculated per dataset. It was noted during early testing that MR-Hevo functions do not operate correctly when zero values are present in coefficients of genetic association or their standard errors; such zero values were therefore re-coded as an arbitrarily low value of $10^{-100}$.
+Data were manually screened at summary level and relevant features were extracted. Data were checked for completeness, consistency, duplicate values and plausibility. Data were transformed to an appropriate data type, and encoding of genetic variables was standardised into a single format. Accounting for missing genetic data was not required, as studies were only included if details of genetic instruments used were reported in full. It was noted during early testing that MR-Hevo functions do not operate correctly when zero values are present in coefficients of genetic association or their standard errors; such zero values were therefore re-coded as an arbitrarily low value of $10^{-100}$.
 
 ## Ethical Approval
 
