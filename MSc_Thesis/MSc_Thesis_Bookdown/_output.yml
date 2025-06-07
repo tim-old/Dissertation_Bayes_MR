@@ -6,7 +6,7 @@
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
-  latex_engine: xelatex
+  latex_engine: lualatex
   dev: cairo_pdf
   fig_caption: TRUE
   number_sections: TRUE

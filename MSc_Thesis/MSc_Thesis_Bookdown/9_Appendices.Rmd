@@ -15,7 +15,6 @@ knitr::opts_chunk$set(echo = TRUE,
 
 # Load packages
 library(tidyverse)
-library(dplyr)
 library(bookdown)
 library(here)
 library(cowplot)
@@ -197,6 +196,9 @@ To reproduce this model, code was written in R to generate the relevant particip
 
 
 ```{r wme-model-fn, echo=TRUE}
+
+library(dplyr)
+
 # Define function to create data generating model
 # Arguments/default values based on Bowden et al
 get_simulated_MR_data <- function(n_participants = as.integer(), 
@@ -254,9 +256,9 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   # --- Assign features common to all datasets --- #
   
   # size of causal effect
-  beta <- dplyr::if_else(causal_effect == TRUE, 
-                         beta_val,
-                         0)
+  beta <- if_else(causal_effect == TRUE, 
+                  beta_val,
+                  0)
   
   # create vector of participant indices for 1st n participants
   # i.e. participants used for estimating gene:exposure coefficient
