@@ -8,26 +8,35 @@ library(here)
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 
 # Set number of datasets used
-n <- 3
+n <- 1000
 
 # Load data
-no_causal_20k_point0_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point0_scen3_models.rds"))
-no_causal_20k_point1_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point1_scen3_models.rds"))
-no_causal_20k_point2_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point2_scen3_models.rds"))
-no_causal_20k_point3_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point3_scen3_models.rds"))
 
 # Generate rows
-no_causal_20k_point0_scen3 <- get_summary_MR_tib_row(no_causal_20k_point0_scen3_models[1:n])
-saveRDS(no_causal_20k_point0_scen3, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point0_scen3_row.rds"))
+#no_causal_20k_point0_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point0_scen3_models.rds"))
+#no_causal_20k_point0_scen3 <- get_summary_MR_tib_row(no_causal_20k_point0_scen3_models[1:n])
+#saveRDS(no_causal_20k_point0_scen3, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point0_scen3_row.rds"))
+#rm(no_causal_20k_point0_scen3_models)
 
-no_causal_20k_point1_scen3 <- get_summary_MR_tib_row(no_causal_20k_point1_scen3_models[1:n])
-saveRDS(no_causal_20k_point1_scen3, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point1_scen3_row.rds"))
+#no_causal_20k_point1_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point1_scen3_models.rds"))
+#no_causal_20k_point1_scen3 <- get_summary_MR_tib_row(no_causal_20k_point1_scen3_models[1:n])
+#saveRDS(no_causal_20k_point1_scen3, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point1_scen3_row.rds"))
+#rm(no_causal_20k_point1_scen3_models)
 
-no_causal_20k_point2_scen3 <- get_summary_MR_tib_row(no_causal_20k_point2_scen3_models[1:n])
-saveRDS(no_causal_20k_point2_scen3, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point2_scen3_row.rds"))
+#no_causal_20k_point2_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point2_scen3_models.rds"))
+#no_causal_20k_point2_scen3 <- get_summary_MR_tib_row(no_causal_20k_point2_scen3_models[1:n])
+#saveRDS(no_causal_20k_point2_scen3, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point2_scen3_row.rds"))
+#rm(no_causal_20k_point2_scen3_models)
 
+no_causal_20k_point3_scen3_models <- readRDS(file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_20k_point3_scen3_models.rds"))
 no_causal_20k_point3_scen3 <- get_summary_MR_tib_row(no_causal_20k_point3_scen3_models[1:n])
 saveRDS(no_causal_20k_point3_scen3, file = here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point3_scen3_row.rds"))
+rm(no_causal_20k_point3_scen3_models)
+
+no_causal_20k_point0_scen3 <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point0_scen3_row.rds"))
+no_causal_20k_point1_scen3 <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point1_scen3_row.rds"))
+no_causal_20k_point2_scen3 <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point2_scen3_row.rds"))
+no_causal_20k_point3_scen3 <- readRDS(here("MSc_Thesis_Split", "Data", "Summary_Tables", "no_causal_20k_point3_scen3_row.rds"))
 
 # Combine rows
 no_causal_20k_scen3_sim_summ_tib <- bind_rows(no_causal_20k_point0_scen3,

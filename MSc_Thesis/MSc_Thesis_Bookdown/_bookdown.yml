@@ -9,3 +9,4 @@ fontsize: 12pt
 monofont: "Arial"
 fig_caption: TRUE
 toc: TRUE
+toc_depth: 4

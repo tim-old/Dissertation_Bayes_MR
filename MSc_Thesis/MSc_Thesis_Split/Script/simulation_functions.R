@@ -582,11 +582,12 @@ get_reanalysis_tib <- function(models_in){
   
   results_tib <- results_tib %>%
     mutate(WME_OR = exp(WME_est),
-           WME_est_lower_CI = (WME_est - (1.96 * Hevo_se)),
-           WME_est_upper_CI = (WME_est + (1.96 * Hevo_se)),
+           WME_est_lower_CI = (WME_est - (1.96 * WME_se)),
+           WME_est_upper_CI = (WME_est + (1.96 * WME_se)),
            WME_OR_lower_CI = exp(WME_est_lower_CI),
            WME_OR_upper_CI = exp(WME_est_upper_CI),
-           WME_est_causal_detected = (WME_est_lower_CI > 0  | WME_est_upper_CI < 0),
+           WME_est_causal_detected = WME_pval < 0.05,
+           #WME_est_causal_detected = (WME_est_lower_CI > 0  | WME_est_upper_CI < 0),
            #WME_OR_causal_detected = (WME_OR_lower_CI > 1  | WME_OR_upper_CI < 1),
            Hevo_OR = exp(Hevo_est),
            Hevo_OR_lower_CI = exp(Hevo_est_lower_CI),

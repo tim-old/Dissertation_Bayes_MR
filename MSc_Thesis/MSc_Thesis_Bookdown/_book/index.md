@@ -2,7 +2,9 @@
 title: "Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology"
 author: "B233241"
 date: "September 2024 - June 2025"
-bibliography: Lit_Rev_Refs.bib
+bibliography: 
+  - Lit_Rev_Refs.bib
+  - grateful-refs.bib
 csl: vancouver-superscript.csl
 link-citations: TRUE
 urlcolor: blue
@@ -37,6 +39,6 @@ I confirm that all work is my own except where indicated, that all sources are c
 ## Word Count {-}
 
 Word count: 
-3166
+6647
 
 \newpage
