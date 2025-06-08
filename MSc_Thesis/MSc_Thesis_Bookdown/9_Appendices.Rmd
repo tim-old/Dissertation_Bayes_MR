@@ -8,9 +8,10 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning=FALSE, 
                       message=FALSE, 
                       error=FALSE,
-                      cache = TRUE,
-                      dev = "png", 
-                      dpi = 500
+                      cache = FALSE,
+                      include = TRUE
+                      #dev = "png", 
+                      #dpi = 500
 )
 
 # Load packages
@@ -196,8 +197,6 @@ To reproduce this model, code was written in R to generate the relevant particip
 
 
 ```{r wme-model-fn, echo=TRUE}
-
-library(dplyr)
 
 # Define function to create data generating model
 # Arguments/default values based on Bowden et al

@@ -39,6 +39,7 @@ I confirm that all work is my own except where indicated, that all sources are c
 ## Word Count {-}
 
 Word count: 
-6647
+4053
+<!-- + wordcountaddin::word_count("9_Appendices.Rmd")  -->
 
 \newpage
