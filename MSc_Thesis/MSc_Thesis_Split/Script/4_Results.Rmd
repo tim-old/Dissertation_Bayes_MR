@@ -71,7 +71,6 @@ library(flextable)
 library(ftExtra)
 library(officer)
 library(gluedown)
-library(gt)
 
 # Load University of Edinburgh colour palette
 source(here("MSc_Thesis_Split", "Script", "edin_uni_colours.R"))
