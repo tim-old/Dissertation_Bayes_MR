@@ -427,7 +427,7 @@ The main aim of this study will be to demonstrate if the \acr{WME} approach give
 
 ### Objectives: {-}
 
-1. Quantify the precision of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator
+1. Quantify the accuracy and precision of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator
 2. Evaluate the consistency of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator
 3. Compare the conclusions drawn from MR-Hevo causal effect estimation versus the weighted median estimator on real-world data
 

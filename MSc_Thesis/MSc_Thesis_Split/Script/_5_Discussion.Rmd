@@ -39,13 +39,26 @@ Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script
 ##
 Aims/objectives/hypotheses
 
-## Performance in Simulation Study
+## Performance of Methods
 
-The citations search returned 5,417 articles referencing the Bowden et al [@bowden_consistent_2016]
-In general, MR-Hevo over-estimated the true causal effect versus \acr{WME}
+### Null Causal Effect
+
+For a null causal effect, MR-Hevo was exhibited comparable accuracy to \acr{WME}, with both methods tending to slightly over-estimate the true causal effect. The mean \acr{SE} for MR-Hevo was almost 2 orders of magnitude smaller than for \acr{WME}, though mean \acr{CI}s were similarly consistent between methods despite this, reflecting differing methodology used in \acr{CI} construction (see Appendix ref(#appendix-boot)). Despite near identical quantitative effect estimation, MR-Hevo was consistently more accurate in categorical classification as causal/no causal effect, exhibiting a superior false-positive rate in all 24 meta-analyses with null causal effect. This performance lends credence to the claims of MR-Hevo's creators regarding the importance of \acr{CI} construction method being dissociated from \acr{SE}  estimation [@mckeigue_inference_2024]. 
+
+Regarding consistency, there is a trend towards both methods reporting a wider \acr{CI} with conditions promoting a greater effects of invalid instruments, as might be expected. However, MR-Hevo \acr{CI}s appear to widen slightly more than for \acr{WME}, both with increasing proportion of invalid instruments and progressive violation of \acr{IV} assumptions. This does suggest that MR-Hevo deals with pleiotropic effects more conservatively than \acr{WME}, namely by appropriately reducing the reported precision of the estimate to reflect additional uncertainty. Greater consistency of effect estimation by MR-Hevo versus \acr{WME} was particularly marked when moving between different scenarios representing different assumption violations. This may reflect....
+
+Accuracy/Precision
+Consistency
+
+### Positive Causal Effect
+
+When a positive causal effect was present, MR-Hevo exhibited a slightly higher mean sensitivity than \acr{WME} when all results were pooled, but on per meta-analysis basis it performed less well in a small majority of cases. The accuracy of MR-Hevo versus \acr{WME} was very slightly lower overall, again tending to over-estimate the true causal effect. Precision was similar to the null causal effect case, with a comparable \acr{CI} for both methods, but a much smaller \acr{SE} for MR-Hevo.
+
+The parameter combination appearing to drive the slightly discordant summary sensitivity results is 0% invalid instruments/20,000 participants, where MR-Hevo correctly reports disproportionately more causal effects than either \acr{WME} using that parameter combination, or MR-Hevo at 0% invalid instruments/10,000 participants.
 
 ## Citations
 
+The citations search returned 5,417 articles referencing the Bowden et al [@bowden_consistent_2016]
 
 Multiple grouped instruments not included.
 

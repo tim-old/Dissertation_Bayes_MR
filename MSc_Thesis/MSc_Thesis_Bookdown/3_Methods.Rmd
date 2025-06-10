@@ -6,7 +6,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Simulation Study
 
-To evaluate the performance of MR-Hevo causal estimation relative to WME, the precision and consistency of both methods were quantified using simulated datasets with known parameter values.
+To establish the performance of MR-Hevo causal estimation relative to WME, the accuracy, precision and consistency of both methods were evaluated using simulated datasets with known parameter values.
 
 ### Data Simulation
 
@@ -33,7 +33,7 @@ Genotypes were simulated as for a two-sample setting: where number of particpant
 
 ### Analysis of Simulated Data
 
-Each dataset generated was analysed using both WME and MR-Hevo methods, via functions from the `TwoSampleMR` and `mrhevo` packages, respectively[@hemani_mr-base_2018; @mckeigue_inference_2024]. Results were aggregated per group of 1,000 simulated datasets corresponding to a particular combination of scenario and parameter values. This resulted in one meta-analysis reported per combination of scenario/parameter values, each including 1,000 simulated MR studies using the same 25 genetic instruments in the same population. Aggregated measures for both WME and MR-Hevo per meta-analysis were mean causal effect estimate; mean standard error of the causal effect estimate; and causality report rate, i.e. percentage of simulated studies reported as showing a non-null causal effect, either by p-value <0.05 (WME), or by a 95% credible interval for causal effect estimate not including 0 (MR-Hevo).
+Each dataset generated was analysed using both WME and MR-Hevo methods, via functions from the `TwoSampleMR` and `mrhevo` packages, respectively[@hemani_mr-base_2018; @mckeigue_inference_2024]. Results were aggregated per group of 1,000 simulated datasets corresponding to a particular combination of scenario and parameter values. This resulted in one meta-analysis reported per combination of scenario/parameter values, each including 1,000 simulated MR studies using the same 25 genetic instruments in the same population. Aggregated measures for both WME and MR-Hevo per meta-analysis were mean causal effect estimate; mean standard errors/\acr{CI}s of the causal effect estimate; and causality report rate, i.e. percentage of simulated studies reported as a non-null causal effect with a 95% \acr{CI} for the causal effect estimate not including 0.
 
 Results of the above aggregations were tabulated as per Tables 2 and 3 of Bowden et al[@bowden_consistent_2016] to allow direct comparisons of both methods versus each other and versus the published characteristics of existing MR causal estimation methods.
 
@@ -82,7 +82,7 @@ For citation search data, a standardised data collection form was Microsoft Exce
 
 Data cleaning for citation search data was primarily undertaken using the Tidyverse suite of R packages [@tidyverse]. A full list of packages used can be found in Appendix \@ref(appendix-pkg). 
 
-Data were manually screened at summary level and relevant features were extracted. Data were checked for completeness, consistency, duplicate values and plausibility. Data were transformed to an appropriate data type, and encoding of genetic variables was standardised into a single format. Missing values for association coefficients and \acr{SE}s were imputed as the mean value calculated per dataset. It was noted during early testing that MR-Hevo functions do not operate correctly when zero values are present in coefficients of genetic association or their standard errors; such zero values were therefore re-coded as an arbitrarily low value of $10^{-100}$.
+Data were manually screened at summary level and relevant features were extracted. Data were checked for completeness, consistency, duplicate values and plausibility. Data were transformed to an appropriate data type, and encoding of genetic variables was standardised into a single format. Missing values for association coefficients and \acr{SE}s were imputed as the mean value calculated per dataset. It was noted during early testing that causal effect estimation functions did not operate correctly in the presence of zero-value coefficients of genetic association and/or their standard errors; such zero values were therefore re-coded as an arbitrarily low value of $10^{-100}$.
 
 ## Ethical Approval
 
