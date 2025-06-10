@@ -9,14 +9,11 @@
 
 Data were successfully simulated as intended. A selection of representative visualisations are presented in Figure \@ref(fig:data-sim-validation). Full details of testing used to validate model outputs from parameter inputs are given in Appendix \@ref(appendix-sim-test). The $F$-statistic calculated from simulated instruments was >10, indicating that they were sufficiently strongly associated with exposure to meet the relevance assumption of \acr{IV} analysis (Tables \@ref(tab:no-causal-sim-summ-display) and \@ref(tab:causal-sim-summ-display)).
 
-\newpage
 
 
 
 
 ![(\#fig:data-sim-validation)Plots of a representative group of simulated datasets; all simulate genetic instruments from the same index from the same random seed. Left and right columns demonstrate null and positive true causal effects, respectively; the true causal effect is represented by the gradient of the line shown. The scenario and the proportion of invalid (i.e. pleiotropic) genetic instruments changes with each row. a) 0% of instruments invalid, rendering scenario assumptions regarding invalid assumptions irrelevant. b) 10% of instruments invalid, Scenario 1: balanced pleiotropy introduces noise around the causal effect. c) 20% of instruments invalid, Scenario 2: directional pleiotropy biases in the direction of the invalid instruments. d) 30% of instruments invalid, Scenario 3: directional pleiotropy and InSIDE assumption violation strongly biases towards a positive effect estimate.](4_Results_files/figure-latex/data-sim-validation-1.pdf) 
-
-\newpage
 
 ### Analysis of Simulated Data
 
@@ -39,7 +36,7 @@ Causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase 
 
 
 #### Positive Causal Effect
-\leavevmode\newline Across all cases where no causal effect was present (Table \@ref(tab:causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. sensitivity) for MR-Hevo was 31% versus 28% for \acr{WME}. Of the 24 combinations of scenarios and parameters, MR-Hevo exhibited a favourable sensitivity versus \acr{WME} in only 10 (42%). 
+\leavevmode\newline Across all cases where no causal effect was present (Table \@ref(tab:causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. sensitivity) for MR-Hevo was 31% versus 28% for \acr{WME}. Of the 24 combinations of scenarios and parameters, MR-Hevo exhibited a favourable sensitivity versus \acr{WME} in 10 (42%). 
 
 For both MR-Hevo and \acr{WME} methods, causal report rates increased with an increasing proportion of invalid instruments up to around 20% invalid \acr{IV}s, though this was more consistent for \acr{WME} versus MR-Hevo. As assumption violations progressively presented greater data variability and bias across scenarios 1 to 3, both MR-Hevo and \acr{WME} methods tended to exhibit higher causal report rates. Both trends across differing scenarios and invalid instrument proportions were somewhat attenuated by increasing sample size from 10,000 to 20,000 participants for both methods, which also generally increased sensitivity for each method.
 
@@ -49,7 +46,6 @@ Causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase 
 
 \newpage
 
-## Simulation Tables
 
 
 ```{=latex}
@@ -589,17 +585,341 @@ Causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase 
 
 
 
+A total of 110 abstracts and 54 full texts were screened to identify the 10 studies included [@choi_assessment_2019;@pasman_gwas_2018;@ligthart_genome_2018;@carter_understanding_2019;@mokry_obesity_2016;@carreras-torres_role_2017;@xu_causal_2022;@budu-aggrey_evidence_2019;@xie_associations_2023;@clift_smoking_2022]; these studies are summarised in Table \@ref(tab:citation-search-sample-display). The flow diagram of study screening and selection is presented in Figure \@ref(fig:screening-flow).
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Data/Citations_Search/WME_citation_search_flow_diagram_crop} \caption{Flow diagram illustrating selection of sample of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of casual effect}(\#fig:screening-flow)
+\end{figure}
+
+\blandscape
+
+
+```{=latex}
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.3}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.75in}|p{0.75in}|p{0.98in}|p{0.75in}|p{0.75in}|p{0.75in}|p{0.75in}|p{0.75in}|p{0.75in}|p{0.75in}|p{0.75in}}
+
+\caption{Summary\ of\ ten\ highly-cited\ two-sample\ Mendelian\ randomisation\ articles\ reporting\ a\ weighted\ median\ estimate\ of\ casual\ effect}(\#tab:citation-search-sample-display)\\
+
+\ascline{1.5pt}{666666}{1-11}
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{3}{>{\centering}m{\dimexpr 2.25in+4\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Participants}}}} & \multicolumn{2}{>{\centering}m{\dimexpr 1.5in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Causal}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} \\
+
+\ascline{1pt}{000000}{5-7}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{2}{>{\centering}m{\dimexpr 1.5in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\textit{N}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Maximum}}}} & \multicolumn{2}{>{\centering}m{\dimexpr 1.5in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Effect}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} \\
+
+\ascline{1pt}{000000}{8-9}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Estimated}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Author}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Citations}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.98in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Association}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\textit{N}}}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\ }}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Instruments}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Exposure}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Outcome}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Overlap}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Measure}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Estimate}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Causality\ Reported}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\textit{p}}}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{-value}}}}}} \\
+
+\ascline{1.5pt}{666666}{1-11}\endfirsthead \caption[]{Summary\ of\ ten\ highly-cited\ two-sample\ Mendelian\ randomisation\ articles\ reporting\ a\ weighted\ median\ estimate\ of\ casual\ effect}(\#tab:citation-search-sample-display)\\
+
+\ascline{1.5pt}{666666}{1-11}
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{3}{>{\centering}m{\dimexpr 2.25in+4\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Participants}}}} & \multicolumn{2}{>{\centering}m{\dimexpr 1.5in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Causal}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} \\
+
+\ascline{1pt}{000000}{5-7}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{2}{>{\centering}m{\dimexpr 1.5in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\textit{N}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Maximum}}}} & \multicolumn{2}{>{\centering}m{\dimexpr 1.5in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Effect}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} \\
+
+\ascline{1pt}{000000}{8-9}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Estimated}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Author}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Citations}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.98in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Association}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\textit{N}}}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\ }}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Instruments}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Exposure}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Outcome}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Overlap}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Measure}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Estimate}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{Causality\ Reported}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\multirow[c]{-4}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{\textit{p}}}}\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Arial}{-value}}}}}} \\
+
+\ascline{1.5pt}{666666}{1-11}\endhead
+
+
+
+\multicolumn{11}{>{\raggedright}m{\dimexpr 8.48in+20\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β\ and\ OR\ presented\ as:\ estimate\ (95\%\ CI).}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β:\ causal\ effect\ estimate,\ CI:\ Confidence\ Interval,\ OR:\ Odds\ Ratio,\ SE:\ Standard\ Error.}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{BMI:\ body\ mass\ index,\ CRP:\ C-reactive\ protein,\ NAFLD:\ non-alcoholic\ fatty\ liver\ disease,\ T2DM:\ type\ 2\ diabetes\ mellitus}}}} \\
+
+\endlastfoot
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Budu-Aggrey\ et\ al,\ 2019}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{182}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{BMI\ vs\ Psoriasis}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{97}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{339,224}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{12,559}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.06\ (1\ to\ 1.12)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{-}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Carreras-Torres\ et\ al,\ 2017}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{200}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Height\ vs\ Pancreatic\ Cancer}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{558}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{253,288}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{15,002}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{19\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.14\ (1\ to\ 1.29)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.05}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Carter\ et\ al,\ 2019}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{199}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Education\ vs\ Coronary\ Disease}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1,267}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{766,345}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{184,305}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.62\ (0.57\ to\ 0.67)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{<0.001}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Choi\ et\ al,\ 2019}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{492}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Activity\ vs\ Depression}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{24}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{377,234}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{143,265}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.49\ (0.94\ to\ 2.36)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.08}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Clift\ et\ al,\ 2022}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{129}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Smoking\ Initiation\ vs\ COVID-19\ Infection}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{378}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1,232,091}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{281,105}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{36\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.53\ (1.02\ to\ 2.28)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.04}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Ligthart\ et\ al,\ 2018}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{298}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{CRP\ vs\ Schizophrenia}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{52}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{204,402}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{82,315}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.89\ (0.81\ to\ 0.96)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.004}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Mokry\ et\ al,\ 2016}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{199}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{BMI\ vs\ Multiple\ Sclerosis}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{70}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{322,105}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{38,589}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{2.5\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.26\ (0.98\ to\ 1.62)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.08}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Pasman\ et\ al,\ 2018}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{328}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Schizophrenia\ vs\ Cannabis\ Use}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{102}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{150,064}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{184,765}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\textit{β}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.163\ (0.067\ to\ 0.259)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.001}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Xie\ et\ al,\ 2023}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{138}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{T2DM\ vs\ NAFLD}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{449}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{441,016}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{218,792}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.61\ (1.09\ to\ 2.38)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{<0.001}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Xu\ et\ al,\ 2022}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{183}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.98in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Coeliac\ vs\ Gut\ Bifidobacterium}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{105}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{15,283}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{24,269}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{63\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.998\ (0.99\ to\ 1.005)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.56}}}} \\
+
+\ascline{0.2pt}{000000}{1-11}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+```
+
+\elandscape
+
+
+
+
+### Re-Analysis Results
 
 
 
 
 
 
+#### Data Validation and Re-Analysis
+\leavevmode\newline There were missing gene-outcome coefficients for three instruments from Xie et al[@xie_associations_2023], and one instrument in Clift et al[@clift_smoking_2022] was reported as having an implausibly large gene-outcome coefficient and standard error (-1243.03 and 19161.64, respectively); these were imputed as the respective mean value per study. Data were otherwise complete as expected per the descriptions in each study manuscript. A summary of the re-analysis results is presented in Table \@ref(tab:citations-reanalysis-summ-display); estimates are presented both as $\beta$ regression coefficients and \acr{OR}s to aid comparison across studies.
+
+#### Re-Analysed vs Reported WME Causal Estimates
+\leavevmode\newline 3 of the \acr{WME} estimates generated through re-analysis matched the originally reported estimates poorly (Ligthart et al[@ligthart_genome_2018], Carreras-Torres et al[@carreras-torres_role_2017], Mokry et al[@mokry_obesity_2016]), with a >0.1 difference in re-analysis estimates of \acr{OR} versus the values originally reported. Re-analysed \acr{OR} upper or lower \acr{CI}s were >0.1 different to reported values for 4 studies (Ligthart et al[@ligthart_genome_2018], Carreras-Torres et al[@carreras-torres_role_2017], Mokry et al[@mokry_obesity_2016], Budu-Aggrey et al[@budu-aggrey_evidence_2019]). Details of instruments used in re-analysis were re-checked against the relevant manuscripts to confirm accuracy of data used, with no discrepancies found.
+
+Overall, estimates and \acr{CI}s from re-analysis of the other 6 studies (Choi et al[@choi_assessment_2019], Xie et al[@xie_associations_2023], Pasman et al[@pasman_gwas_2018], Carter et al[@carter_understanding_2019], Clift et al[@clift_smoking_2022], Xu et al[@xu_causal_2022]) appeared comparable to reported values, after accounting for rounding errors from published summary data, and random variation inherent in bootstrap generation of \acr{CI}s.
+
+Compared with reported values of \acr{OR}s across the 9 studies using them, the mean difference for effect estimates (\acr{SE} of estimate) from the re-analysis estimate was 0.03 (0.17). For 95% \acr{CI}s, the mean differences between reported and re-analysed values were 0.07 for the lower bounds and -0.04 for upper bounds, i.e. reported \acr{CI}s were narrower on average than re-analysed \acr{WME} \acr{CI}s.
+
+Conclusions regarding presence of a causal effect were mostly consistent: reported  \acr{WME} and re-analysed \acr{WME} estimates were discordant in detecting a causal exposure-outcome effect for 2 studies:  1 where a previously reported causal effect was not found (Ligthart et al[@ligthart_genome_2018]), and 1 where a causal effect was found that had not been reported previously (Mokry et al[@mokry_obesity_2016]).
+
+
+<!-- three re-analysed studies detected a causal effect by \acr{WME} not reported previously (Choi et al [@choi_assessment_2019], Mokry et al [@mokry_obesity_2016] and Xu et al[@xu_causal_2022]); one study detected no causal effect in re-analysis despite one being reported in the original publication (Ligthart et al [@ligthart_genome_2018]). -->
+
+
+
+<!-- [@choi_assessment_2019; @pasman_gwas_2018; @ligthart_genome_2018; @carter_understanding_2019; @mokry_obesity_2016; @carreras-torres_role_2017; @xu_causal_2022; @budu-aggrey_evidence_2019; @xie_associations_2023; @clift_smoking_2022] -->
+
+
+
+
+#### Re-Analysed WME vs MR-Hevo Causal Estimates
+\leavevmode\newline Causal effect estimates generated by MR-Hevo were >0.1 different from re-analysed \acr{WME} estimates for 2 studies (Choi et al[@choi_assessment_2019], Carreras-Torres et al[@carreras-torres_role_2017]). Compared with \acr{WME} values of \acr{OR}s across the 9 studies using them, the mean difference for effect estimates (\acr{SE} of estimate) from the re-analysis estimate was -0.046 (-0.084). For 95% \acr{CI}s, the mean differences between MR-Hevo and \acr{WME} values were -0.044 for the lower bounds and -0.002 for upper bounds, i.e. MR-Hevo \acr{CI}s were wider and slightly shifted in the negative direction on average than \acr{WME} values. MR-Hevo \acr{OR} upper or lower \acr{CI}s were >0.1 different to \acr{WME} values for 6 studies (Choi et al[@choi_assessment_2019], Xie et al[@xie_associations_2023], Ligthart et al[@ligthart_genome_2018], Carreras-Torres et al[@carreras-torres_role_2017], Clift et al[@clift_smoking_2022], Mokry et al[@mokry_obesity_2016]).
+
+Overall, estimates and \acr{CI}s from MR-Hevo analysis of the other 4 studies (Pasman et al[@pasman_gwas_2018], Carter et al[@carter_understanding_2019], Budu-Aggrey et al[@budu-aggrey_evidence_2019], Xu et al[@xu_causal_2022]) appeared comparable to re-analysed \acr{WME} values.
+
+Conclusions regarding presence of a causal effect were consistent: re-analysed \acr{WME} estimates were discordant in detecting a causal exposure-outcome effect in 0 studies versus MR-Hevo, with both reporting a causal effect in the same 5 studies (Xie et al[@xie_associations_2023], Pasman et al[@pasman_gwas_2018], Carter et al[@carter_understanding_2019], Clift et al[@clift_smoking_2022], Mokry et al[@mokry_obesity_2016]).
+
+
+\blandscape
+
+
+```{=latex}
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.83in}|p{1.47in}|p{1.01in}|p{0.36in}|p{0.19in}|p{0.75in}|p{0.36in}|p{0.68in}|p{0.47in}|p{0.19in}|p{0.75in}|p{0.36in}|p{0.68in}|p{0.47in}}
+
+\caption{Re-analysis\ of\ ten\ highly-cited\ two-sample\ Mendelian\ randomisation\ articles\ reporting\ a\ weighted\ median\ estimate\ of\ casual\ effect,\ comparing\ results\ of\ both\ WME\ and\ MR-Hevo\ causal\ effect\ estimation\ methods}(\#tab:citations-reanalysis-summ-display)\\
+
+\ascline{1.5pt}{666666}{1-14}
+
+\multicolumn{4}{>{\centering}m{\dimexpr 3.67in+6\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{} \\
 
 
 
 
 
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Weighted\ Median}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{MR-Hevo}}}}}} \\
+
+\ascline{1pt}{000000}{6-9}\ascline{1pt}{000000}{11-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.83in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Author}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1.47in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Exposure}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1.01in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Outcome}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.36in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{SNPs}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\multirow[c]{-3}{*}{\parbox{0.19in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{SE}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Causality}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Reported}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.19in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{SE}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Causality}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Reported}}}} \\
+
+\ascline{1.5pt}{666666}{1-14}\endfirsthead \caption[]{Re-analysis\ of\ ten\ highly-cited\ two-sample\ Mendelian\ randomisation\ articles\ reporting\ a\ weighted\ median\ estimate\ of\ casual\ effect,\ comparing\ results\ of\ both\ WME\ and\ MR-Hevo\ causal\ effect\ estimation\ methods}(\#tab:citations-reanalysis-summ-display)\\
+
+\ascline{1.5pt}{666666}{1-14}
+
+\multicolumn{4}{>{\centering}m{\dimexpr 3.67in+6\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Weighted\ Median}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{} & \multicolumn{4}{>{\centering}m{\dimexpr 2.26in+6\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.75in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{MR-Hevo}}}}}} \\
+
+\ascline{1pt}{000000}{6-9}\ascline{1pt}{000000}{11-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.83in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Author}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1.47in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Exposure}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1.01in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Outcome}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.36in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{SNPs}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\multirow[c]{-3}{*}{\parbox{0.19in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{SE}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Causality}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Reported}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.19in}{\centering \textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{SE}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{OR}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Causality}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Reported}}}} \\
+
+\ascline{1.5pt}{666666}{1-14}\endhead
+
+
+
+\multicolumn{14}{>{\raggedright}m{\dimexpr 8.56in+26\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β\ and\ OR\ presented\ as:\ estimate\ (95\%\ CI).}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{β:\ causal\ effect\ estimate,\ CI:\ Confidence\ Interval,\ OR:\ Odds\ Ratio,\ SE:\ Standard\ Error.}}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{\linebreak }}}\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{BMI:\ body\ mass\ index,\ CRP:\ C-reactive\ protein,\ NAFLD:\ non-alcoholic\ fatty\ liver\ disease,\ T2DM:\ type\ 2\ diabetes\ mellitus}}}} \\
+
+\endlastfoot
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Budu-Aggrey\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{BMI}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Psoriasis}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{97}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\ (-0.29-0.29)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.148}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1\ (0.75-1.34)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.08\ (-0.17-0.33)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.002}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.08\ (0.84-1.39)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Carreras-Torres\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Height}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Pancreatic\ Cancer}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{558}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\ (-0.13-0.13)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.066}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1\ (0.88-1.14)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{-0.28\ (-1.34-0.5)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.513}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.76\ (0.26-1.64)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Carter\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Years\ of\ Education}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Coronary\ Artery\ Disease}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1,266}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{-0.46\ (-0.55--0.38)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.044}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.63\ (0.58-0.69)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{-0.48\ (-0.54--0.42)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.000}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.62\ (0.58-0.66)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Choi\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Self-Reported\ Physical\ Activity}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Major\ Depressive\ Disorder}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{25}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.39\ (-0.06-0.83)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.227}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.47\ (0.94-2.29)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.22\ (-0.23-0.65)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.004}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.25\ (0.8-1.91)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Clift\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Genetically\ Determined\ Smoking\ Initiation}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{COVID-19\ Infection}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{378}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.43\ (0.02-0.84)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.209}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.53\ (1.02-2.31)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.37\ (0.1-0.64)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.001}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.45\ (1.1-1.9)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Ligthart\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Genetically\ Determined\ CRP}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Schizophrenia}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{29}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{-0.41\ (-0.88-0.08)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.245}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.67\ (0.41-1.08)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{-0.38\ (-1.24-0.54)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.008}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.68\ (0.29-1.72)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Mokry\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{BMI}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Multiple\ Sclerosis}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{70}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.34\ (0.09-0.59)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.129}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.41\ (1.09-1.81)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.34\ (0.16-0.52)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.001}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.41\ (1.17-1.67)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Pasman\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Liability\ to\ Schizophrenia}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Cannabis\ Use}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{109}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.16\ (0.06-0.26)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.050}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.18\ (1.07-1.3)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.17\ (0.08-0.26)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.001}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.18\ (1.08-1.29)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Xie\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{T2DM}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{NAFLD}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{526}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.48\ (0.09-0.87)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.198}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.61\ (1.09-2.38)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.51\ (0.28-0.75)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.002}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1.67\ (1.32-2.13)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Yes}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.83in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Xu\ et\ al}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Coeliac\ Disease}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 1.01in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{Gut\ Bifidobacterium}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{105}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\ (-0.01-0)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.004}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1\ (0.99-1)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.19in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0\ (-0.01-0)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.36in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{0.000}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{1\ (0.99-1)}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{8}\selectfont{\global\setmainfont{Arial}{No}}}} \\
+
+\ascline{0.2pt}{000000}{1-14}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+```
+
+\elandscape
 
 
 
