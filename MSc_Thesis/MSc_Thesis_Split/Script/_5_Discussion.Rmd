@@ -32,8 +32,12 @@ knit: (function(inputFile, encoding) {
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Discussion
+
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_5_Discussion.Rmd"))`
 
+##
+Aims/objectives/hypotheses
 
 ## Performance in Simulation Study
 
@@ -44,3 +48,5 @@ In general, MR-Hevo over-estimated the true causal effect versus \acr{WME}
 
 
 Multiple grouped instruments not included.
+
+## Wider literature/context

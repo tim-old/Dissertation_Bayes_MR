@@ -9,6 +9,8 @@ acronyms:
       longname: confidence interval
     - shortname: CRP
       longname: C-reactive protein
+    - shortname: GWAS
+      longname: genome-wide association study
     - shortname: InSIDE
       longname: Instrument Strength Independent of Direct Effect
     - shortname: IV

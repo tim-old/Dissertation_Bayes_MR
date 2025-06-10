@@ -8,7 +8,7 @@ To evaluate the performance of MR-Hevo causal estimation relative to WME, the pr
 
 ### Data Simulation
 
-To aid comparability with existing methods and literature, the simulation methodology of the original WME exposition was reproduced based on published models and parameters in Appendix 3 of its supplementary materials[@bowden_consistent_2016]. Full details of simulation reproduction, including code and validation of outputs, is presented in \@ref(appendix-sim). 
+To aid comparability with existing methods and literature, the simulation methodology of the original WME exposition was reproduced based on published models and parameters in Appendix 3 of its supplementary materials[@bowden_consistent_2016]. Full details of simulation reproduction, including code and validation of outputs, is presented in Appendix \@ref(appendix-sim). 
 
 In brief, simulations were created based on three different scenarios, each representing a common set of assumptions about underlying data used for MR, and each increasingly challenging to the performance of any given MR causal estimation methodology:
 
@@ -43,7 +43,7 @@ To estimate the upper bound of the potential impact of MR-Hevo versus existing W
 
 ### Citation Search
 
-The Scopus search platform [@] was used on 15/04/2025 to retrieve all articles citing the original weighted median estimator exposition paper [@bowden_consistent_2016]. The articles returned were sorted by the number of times each article itself had been cited, and the resulting list was saved to RIS format in blocks of ten articles for upload into the Covidence evidence synthesis platform. Abstracts were screened by a single reviewer (B233241), starting with the most cited article and proceeding in descending order of citation count, against the following inclusion and exclusion criteria:
+The Scopus search platform [@noauthor_scopus_nodate] was used on 15/04/2025 to retrieve all articles citing the original weighted median estimator exposition paper [@bowden_consistent_2016]. The articles returned were sorted by the number of times each article itself had been cited, and the resulting list was saved to RIS format in blocks of ten articles for upload into the Covidence evidence synthesis platform. Abstracts were screened by a single reviewer (B233241), starting with the most cited article and proceeding in descending order of citation count, against the following inclusion and exclusion criteria:
 
 Inclusion criteria:
 
@@ -68,7 +68,7 @@ Exclusion criteria:
 
 Where eligibility could not be determined from abstract screening alone, full texts were retrieved and screened against the same criteria. Screening of abstracts and full texts was undertaken in blocks of ten articles, until the target of ten included studies for reanalysis had been reached. 
 
-Where an article reported multiple exposure-outcome associations, data were only extracted for the association with the highest number of genetic instruments available, or else for the first reported association where several were based on the same number of instruments. Data were extracted from full texts of included studies using a standardised data collection template, which included publication details, citation count, primary study question, degree of participant overlap between groups, number/details of genetic instruments used, effect estimates/standard errors calculated, and conclusion regarding causality as determined by the weighted median estimator method. 
+Where an article reported multiple exposure-outcome associations, data were only extracted for the association with the highest number of genetic instruments available, or else for the first reported association where several were based on the same number of instruments. Data were extracted from full texts of included studies using a standardised data collection template, which included publication details, citation count, primary study question, degree of potential participant overlap between groups, number/details of genetic instruments used, effect estimates/standard errors calculated, and conclusion regarding causality as determined by the weighted median estimator method. 
 
 ## Data Manipulation and Analysis
 
@@ -78,7 +78,7 @@ For the simulation study, full details of computation are available in Appendix 
 
 For citation search data, a standardised data collection form was Microsoft Excel [@microsoft_corporation_microsoft_2018] to create .csv files for subsequent analysis in R; Excel's "Get Data" function was also used to extract tables of genetic instruments where these were presented in non-csv format (e.g. pdf). 
 
-Data cleaning for citation search data was primarily undertaken using the Tidyverse suite of R packages [@tidyverse]. A full list of packages used can be found in Appendix \@(ref:appendix-pkg). 
+Data cleaning for citation search data was primarily undertaken using the Tidyverse suite of R packages [@tidyverse]. A full list of packages used can be found in Appendix \@ref(appendix-pkg). 
 
 Data were manually screened at summary level and relevant features were extracted. Data were checked for completeness, consistency, duplicate values and plausibility. Data were transformed to an appropriate data type, and encoding of genetic variables was standardised into a single format. Missing values for association coefficients and \acr{SE}s were imputed as the mean value calculated per dataset. It was noted during early testing that MR-Hevo functions do not operate correctly when zero values are present in coefficients of genetic association or their standard errors; such zero values were therefore re-coded as an arbitrarily low value of $10^{-100}$.
 

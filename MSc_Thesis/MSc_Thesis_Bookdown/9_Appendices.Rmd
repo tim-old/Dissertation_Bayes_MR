@@ -2,20 +2,22 @@
 
 \newpage
 
-```{r setup, include=FALSE}
+```{r setup9, include=FALSE}
 
 knitr::opts_chunk$set(echo = TRUE,
                       warning=FALSE, 
                       message=FALSE, 
                       error=FALSE,
-                      cache = FALSE,
-                      include = TRUE
-                      #dev = "png", 
-                      #dpi = 500
+                      cache = TRUE,
+                      include = TRUE,
+                      dev = "png", 
+                      dpi = 500
 )
 
 # Load packages
 library(tidyverse)
+library(dplyr) #bookdown not finding if_else
+library(magrittr) #bookdown not finding %>%
 library(bookdown)
 library(here)
 library(cowplot)
@@ -290,7 +292,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   
   # Probability of effect allele set per dataset  
   # for each instrument, default value set at  
-  # random between 0.01-0.99 (i.e. both effect +
+  # random between 0.4-0.6 (i.e. both effect +
   # reference are common alleles)
   allele_freq_vect <- runif(n = n_instruments,
                             min = allele_freq_min,
@@ -513,7 +515,7 @@ get_models <- function(sim){
     n_participants<- sim$n_participants[[dataset]]
     
     
-    # Model for gene:exposure ***0 + deleted from X_lm and Y_lm***
+    # Model for gene:exposure
     X_lm <- lm(X ~ 0 + Instruments_X)
     coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 1]
     SE_coeff_G_X_vect <- coef(summary(X_lm))[1:(ncol(Instruments_X)), 2]

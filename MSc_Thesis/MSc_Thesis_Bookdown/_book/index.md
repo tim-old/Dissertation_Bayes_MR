@@ -2,6 +2,10 @@
 title: "Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology"
 author: "B233241"
 date: "September 2024 - June 2025"
+header-includes:
+  - \usepackage{pdflscape}
+  - \newcommand{\blandscape}{\begin{landscape}}
+  - \newcommand{\elandscape}{\end{landscape}}
 bibliography: 
   - Lit_Rev_Refs.bib
   - grateful-refs.bib
@@ -39,7 +43,7 @@ I confirm that all work is my own except where indicated, that all sources are c
 ## Word Count {-}
 
 Word count: 
-4053
+5368
 <!-- + wordcountaddin::word_count("9_Appendices.Rmd")  -->
 
 \newpage

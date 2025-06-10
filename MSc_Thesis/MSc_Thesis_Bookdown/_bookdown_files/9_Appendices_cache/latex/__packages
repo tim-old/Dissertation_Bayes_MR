@@ -20,3 +20,4 @@ gghighlight
 TwoSampleMR
 StanHeaders
 rstan
+magrittr

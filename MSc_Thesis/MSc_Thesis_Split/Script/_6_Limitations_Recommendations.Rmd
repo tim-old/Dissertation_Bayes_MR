@@ -20,8 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_6_Limitations_Recommendations.Rmd"))`
 
+# Limitations and Recommendations
 
-The random seed used happened to assign similar numbers (6 vs 7) of invalid instruments to both the 20% and 30% invalid instrument cases; relevant code was checked to ensure this was not an error in specification of model parameters. As this was noted after analysis had begun, it was decided not to re-run simulations to avoid implicit multiple comparisons in analysis.
+## Limitations - Simulation Study {#lim-sim}
+
+Key objectives of this study were to evaluate the precision and consistency of MR-Hevo causal estimation under differing sets of assumptions, including differing proportions of invalid genetic instruments. The random seed used happened to assign similar numbers (6 vs 7) of invalid instruments to both the 20% and 30% invalid instrument cases; relevant code was checked to ensure this was not an error in specification of model parameters. As this was noted after analysis had begun, it was decided not to re-run simulations to avoid implicit multiple comparisons in analysis. However, the resulting datasets generated arguably do not represent the true differences expected between cohorts with a 10% change in valid instrument proportion. In particular, Scenario 3 simulations may have been disproportionately affected by this phenomenon. \acr{InSIDE} assumption violation means each invalid instrument may introduce different proportions of noise and bias to the causal effect estimates generated. If the average noise introduced per instrument is greater than the average bias introduced per instrument, then adding a single extra invalid instrument may act to bias towards the null if its predominant effect is to reduce estimate precision; the addition of several extra instruments may be required for noise terms to average each other out and so for bias terms to predominate. This may explain why several trends in causal estimates, confidence intervals and causal report rates abruptly plateau around 20% under assumptions for Scenarios 1 and 2, and reverse under Scenario 3. Conclusions drawn from trends tracking the progression from 0% to 20% invalid instruments should be unaffected, but speculating on trends with $\ge$30% invalid instruments from these data alone would seem inadvisable.
 
 
 Bowden et al[@bowden_consistent_2016] used 10,000 simulations per 

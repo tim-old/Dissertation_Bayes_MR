@@ -1,13 +1,13 @@
 # Results
 
 
-```{r setup, include=FALSE}
+```{r setup4, include=TRUE, echo=FALSE}
 
 knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE, 
                       message = FALSE, 
                       error = FALSE,
-                      cache = FALSE, 
+                      cache = TRUE, 
                       include = FALSE, 
                       dev = "png", 
                       dpi = 500
@@ -15,6 +15,9 @@ knitr::opts_chunk$set(echo = FALSE,
 
 # Load packages
 library(tidyverse)
+library(magrittr) #bookdown not finding %>%
+library(stringr)
+library(tidyr)
 library(dplyr)
 library(bookdown)
 library(knitr)
@@ -53,7 +56,6 @@ mr.stanmodel <- stan_model(file = here("Script",
 
 Data were successfully simulated as intended. A selection of representative visualisations are presented in Figure \@ref(fig:data-sim-validation). Full details of testing used to validate model outputs from parameter inputs are given in Appendix \@ref(appendix-sim-test). The $F$-statistic calculated from simulated instruments was >10, indicating that they were sufficiently strongly associated with exposure to meet the relevance assumption of \acr{IV} analysis (Tables \@ref(tab:no-causal-sim-summ-display) and \@ref(tab:causal-sim-summ-display)).
 
-\newpage
 
 ```{r data-sim-load}
 
@@ -224,8 +226,6 @@ plot_grid(plot_two_cols,
 
 ```
 
-\newpage
-
 ### Analysis of Simulated Data
 
 ```{r sim-summ-load}
@@ -395,7 +395,7 @@ causal_WME_max_SE <- causal_sim_summ_tib$WME_SE %>% max() %>% signif(2)
 ```
 
 #### Positive Causal Effect
-\leavevmode\newline Across all cases where no causal effect was present (Table \@ref(tab:causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. sensitivity) for MR-Hevo was `r causal_Hevo_mean_pos_rate`% versus `r causal_WME_mean_pos_rate`% for \acr{WME}. Of the `r causal_comb_n` combinations of scenarios and parameters, MR-Hevo exhibited a favourable sensitivity versus \acr{WME} in only `r causal_Hevo_better_n` (`r causal_Hevo_better_pc`%). 
+\leavevmode\newline Across all cases where no causal effect was present (Table \@ref(tab:causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. sensitivity) for MR-Hevo was `r causal_Hevo_mean_pos_rate`% versus `r causal_WME_mean_pos_rate`% for \acr{WME}. Of the `r causal_comb_n` combinations of scenarios and parameters, MR-Hevo exhibited a favourable sensitivity versus \acr{WME} in `r causal_Hevo_better_n` (`r causal_Hevo_better_pc`%). 
 
 For both MR-Hevo and \acr{WME} methods, causal report rates increased with an increasing proportion of invalid instruments up to around 20% invalid \acr{IV}s, though this was more consistent for \acr{WME} versus MR-Hevo. As assumption violations progressively presented greater data variability and bias across scenarios 1 to 3, both MR-Hevo and \acr{WME} methods tended to exhibit higher causal report rates. Both trends across differing scenarios and invalid instrument proportions were somewhat attenuated by increasing sample size from 10,000 to 20,000 participants for both methods, which also generally increased sensitivity for each method.
 
@@ -405,11 +405,12 @@ Causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase 
 
 \newpage
 
-## Simulation Tables
 
 ```{r no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="no-causal-sim-summ-display", tab.cap="Summary of 1,000 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect", results='asis'}
 #| ft.arraystretch = 1.3
 
+
+library(ftExtra)
 
 # Display
 no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
@@ -782,7 +783,7 @@ citations_search_sample_refs <- citations_search_sample %>% pull(Study_Ref) %>% 
 
 ```
 
-A total of 110 abstracts and 54 full texts were screened to identify the 10 studies included [`r citations_search_sample_refs %>% md_text()`]; these are summarised in Table \@ref(tab:citation-search-sample-display). The flow diagram of study screening and selection is presented in Figure \@ref(fig:screening-flow).
+A total of 110 abstracts and 54 full texts were screened to identify the 10 studies included [`r  gluedown::md_text(citations_search_sample_refs)`]; these studies are summarised in Table \@ref(tab:citation-search-sample-display). The flow diagram of study screening and selection is presented in Figure \@ref(fig:screening-flow).
 
 ```{r screening-flow, include=TRUE}
 #| out.width = "100%",
@@ -801,6 +802,8 @@ include_graphics(path = here("Data", "Citations_Search", "WME_citation_search_fl
 #| tab.cap = "Summary of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of casual effect",
 #| ft.arraystretch = 1.3
 
+library(magrittr) #bookdown forgets these packages, unclear why
+library(flextable)
 
 citations_search_sample %>% 
   mutate(
@@ -824,7 +827,9 @@ citations_search_sample %>%
     # convert TRUE/FALSE to Yes/No
     Causality_Reported = if_else(Causality_Reported, "Yes", "No"),
     # convert to %
-    Participants_Maximum_Estimated_Overlap = paste0((Overlap_Max_Est_Decimal * 100), "%"),
+    Participants_Maximum_Estimated_Overlap = if_else(is.na(Overlap_Max_Est_Decimal),
+                                                     "0%",
+                                                     paste0((Overlap_Max_Est_Decimal * 100), "%")),
     # change naming for flextable
     Participants_N_Exposure = Exposure_N_Participants,
     Participants_N_Outcome = Outcome_N_Participants,
@@ -1165,7 +1170,7 @@ diff_WME_nc_c_cites <- citations_combined_summ_tib %>%
 ```
 
 
-#### Data Validation and Re-analysis
+#### Data Validation and Re-Analysis
 \leavevmode\newline There were missing gene-outcome coefficients for three instruments from Xie et al[@xie_associations_2023], and one instrument in Clift et al[@clift_smoking_2022] was reported as having an implausibly large gene-outcome coefficient and standard error (-1243.03 and 19161.64, respectively); these were imputed as the respective mean value per study. Data were otherwise complete as expected per the descriptions in each study manuscript. A summary of the re-analysis results is presented in Table \@ref(tab:citations-reanalysis-summ-display); estimates are presented both as $\beta$ regression coefficients and \acr{OR}s to aid comparison across studies.
 
 #### Re-Analysed vs Reported WME Causal Estimates
@@ -1173,7 +1178,7 @@ diff_WME_nc_c_cites <- citations_combined_summ_tib %>%
 
 Overall, estimates and \acr{CI}s from re-analysis of the other `r comp_WME_est_CI_N` studies (`r comp_WME_est_CI_cites`) appeared comparable to reported values, after accounting for rounding errors from published summary data, and random variation inherent in bootstrap generation of \acr{CI}s.
 
-Compared with reported values of \acr{OR}s across the `r WME_diff_mean_OR$N` studies using them, the mean difference for effect estimates (\acr{SE}) from the re-analysis estimate was `r paste0(WME_diff_mean_OR$est_diff, " (", WME_diff_mean_OR$se_diff, ")")`. For 95% \acr{CI}s, the mean differences between reported and re-analysed values were `r WME_diff_mean_OR$lower_diff` for the lower bounds and `r WME_diff_mean_OR$upper_diff` for upper bounds, i.e. reported \acr{CI}s were narrower on average than re-analysed \acr{WME} \acr{CI}s.
+Compared with reported values of \acr{OR}s across the `r WME_diff_mean_OR$N` studies using them, the mean difference for effect estimates (\acr{SE} of estimate) from the re-analysis estimate was `r paste0(WME_diff_mean_OR$est_diff, " (", WME_diff_mean_OR$se_diff, ")")`. For 95% \acr{CI}s, the mean differences between reported and re-analysed values were `r WME_diff_mean_OR$lower_diff` for the lower bounds and `r WME_diff_mean_OR$upper_diff` for upper bounds, i.e. reported \acr{CI}s were narrower on average than re-analysed \acr{WME} \acr{CI}s.
 
 Conclusions regarding presence of a causal effect were mostly consistent: reported  \acr{WME} and re-analysed \acr{WME} estimates were discordant in detecting a causal exposure-outcome effect for `r diff_WME_causal_N` studies:  `r diff_WME_c_nc_N` where a previously reported causal effect was not found (`r diff_WME_c_nc_cites %>% md_text()`), and `r diff_WME_nc_c_N` where a causal effect was found that had not been reported previously (`r diff_WME_nc_c_cites %>% md_text()`).
 
@@ -1258,7 +1263,7 @@ reanalysis_causal_discordant <- citations_reanalysis_summ_tib$Hevo_WME_Causal_Di
 ```
 
 #### Re-Analysed WME vs MR-Hevo Causal Estimates
-\leavevmode\newline Causal effect estimates generated by MR-Hevo were >0.1 different from re-analysed \acr{WME} estimates for `r diff_Hevo_WME_est_over_point1_N` studies (`r diff_Hevo_WME_est_over_point1_cites`). Compared with \acr{WME} values of \acr{OR}s across the `r Hevo_WME_diff_mean_OR$N` studies using them, the mean difference for effect estimates (\acr{SE}) from the re-analysis estimate was `r paste0(Hevo_WME_diff_mean_OR$est_diff, " (", Hevo_WME_diff_mean_OR$se_diff, ")")`. For 95% \acr{CI}s, the mean differences between MR-Hevo and \acr{WME} values were `r Hevo_WME_diff_mean_OR$lower_diff` for the lower bounds and `r Hevo_WME_diff_mean_OR$upper_diff` for upper bounds, i.e. MR-Hevo \acr{CI}s were wider and slightly shifted in the negative direction on average than \acr{WME} values. MR-Hevo \acr{OR} upper or lower \acr{CI}s were >0.1 different to \acr{WME} values for `r diff_Hevo_WME_CIs_over_point1_N` studies (`r diff_Hevo_WME_CIs_over_point1_cites %>% md_text()`).
+\leavevmode\newline Causal effect estimates generated by MR-Hevo were >0.1 different from re-analysed \acr{WME} estimates for `r diff_Hevo_WME_est_over_point1_N` studies (`r diff_Hevo_WME_est_over_point1_cites`). Compared with \acr{WME} values of \acr{OR}s across the `r Hevo_WME_diff_mean_OR$N` studies using them, the mean difference for effect estimates (\acr{SE} of estimate) from the re-analysis estimate was `r paste0(Hevo_WME_diff_mean_OR$est_diff, " (", Hevo_WME_diff_mean_OR$se_diff, ")")`. For 95% \acr{CI}s, the mean differences between MR-Hevo and \acr{WME} values were `r Hevo_WME_diff_mean_OR$lower_diff` for the lower bounds and `r Hevo_WME_diff_mean_OR$upper_diff` for upper bounds, i.e. MR-Hevo \acr{CI}s were wider and slightly shifted in the negative direction on average than \acr{WME} values. MR-Hevo \acr{OR} upper or lower \acr{CI}s were >0.1 different to \acr{WME} values for `r diff_Hevo_WME_CIs_over_point1_N` studies (`r diff_Hevo_WME_CIs_over_point1_cites %>% md_text()`).
 
 Overall, estimates and \acr{CI}s from MR-Hevo analysis of the other `r comp_Hevo_WME_est_CI_N` studies (`r comp_Hevo_WME_est_CI_cites`) appeared comparable to re-analysed \acr{WME} values.
 
