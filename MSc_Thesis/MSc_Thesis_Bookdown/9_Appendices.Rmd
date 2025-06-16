@@ -759,6 +759,9 @@ With random error terms set to 0 (`rand_error = FALSE`) and no causal effect pre
 
 ```{r test-plot-causal, echo=FALSE}
 
+source(here("Script", "edin_fig_style.R"))
+source(here("Script", "edin_uni_colours.R"))
+
 # No causal effect present
 #set.seed(1701)
 sim_test_data_causal_0 <- get_simulated_MR_data(n_participants = 10000,
@@ -850,6 +853,7 @@ plot_grid(test_plot_causal_0_errors,
 
 ```{r test-plot-causal-2SMR, echo=FALSE, cache=FALSE}
 
+source
 
 # Causal effect not present
 #set.seed(1701)
@@ -1375,5 +1379,21 @@ packages %>%
 
 ```
 
+```{r system-info, include = TRUE, echo = FALSE}
+
+library(benchmarkme)
+
+sys_details_full <- benchmarkme::get_sys_details()
+
+sysname_release <- paste0(sys_details_full$sys_info, " ", sys_details_full$release)
+
+sys_ram <- sys_details_full$ram
+sys_cpu <- sys_details_full$cpu$model_name
+sys_cores <- sys_details_full$cpu$no_of_cores
+
+```
+
+CPU: `r sys_cpu`, `r sys_cores` cores
+RAM: `r sys_ram`
 
 \newpage

@@ -1,4 +1,4 @@
-# Methods
+# Methods {#Methods}
 
 ```{r setup3, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

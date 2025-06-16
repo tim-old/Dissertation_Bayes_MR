@@ -1447,5 +1447,308 @@ citations_reanalysis_summ_display
 
 \elandscape
 
+## Post-Hoc Testing
 
+```{r post-hoc-fn, include=FALSE}
+
+get_post_hoc_data <- function(n_participants_x = as.integer(), 
+                              n_participants_y = as.integer(),
+                              n_instruments = as.integer(),
+                              n_datasets = as.integer(),
+                              prop_invalid = 0.1,
+                              causal_effect = TRUE,
+                              balanced_pleio = TRUE,
+                              InSIDE_satisfied = TRUE,
+                              rand_error = TRUE,      # remove random errors, for testing
+                              beta_val = 0.1,         # size of causal effect
+                              allele_freq_min = 0.4,  # frequency of effect allele 0.01/0.99
+                              allele_freq_max = 0.6,  #?0.4/0.6
+                              gamma_min = 0.03,       # size of pleiotropic effects on exposure
+                              gamma_max = 0.1,
+                              alpha_min = -0.2,       # size of pleiotropic effects on outcome
+                              alpha_max = 0.2,
+                              phi_min = -0.2,         # size of additional pleiotropic effects
+                              phi_max = 0.2,          # when InSIDE not satisfied
+                              seed = 14101583){       # Set seed for reproducibility
+  
+  # Set seed to ensure comparability across scenarios
+  set.seed(seed)
+  
+  # Initialise blank lists to receive datasets for
+  # each of:
+  #     U (vector: unmeasured confounding exposures per participant), 
+  #     X (vector: exposure:outcome associations estimated per participant) 
+  #     Y (vector: gene:outcome association estimated per participant), 
+  #     G (Matrices: Genotype data)
+  #
+  #     gamma (vector: pleiotropic effects of each instrument on exposure)
+  #     alpha (vector: pleiotropic effects of each instrument on outcome)
+  #     phi (vector: additional pleiotropic effects of each instrument when InSIDE 
+  #     assumption not satisfied)
+  U_list <- list()
+  X_list <- list()
+  Y_list <- list()
+  G_X_list <- list()
+  G_Y_list <- list()
+  
+  gamma_list <- list()
+  alpha_list <- list()
+  phi_list <- list()
+
+  
+  n_participants_x_list <- list()
+  n_participants_y_list <- list()
+  n_participants_list <- list
+  n_instruments_list <- list()
+  prop_invalid_list <- list()
+  beta_val_list <- list()
+
+  
+  
+  # --- Assign features common to all datasets --- #
+  
+  # size of causal effect
+  beta <- if_else(causal_effect == TRUE, 
+                  beta_val,
+                  0)
+  
+  n_participants <- n_participants_x + n_participants_y
+  
+  # create vector of participant indices for 1st n participants
+  # i.e. participants used for estimating gene:exposure coefficient
+  sample_1_ref <- 1:n_participants_x        
+  
+
+  # create vector of participant indices for
+  # participants used for estimating gene:exposure coefficient
+  sample_2_ref <- (n_participants_x+1):(n_participants) # 2 sample MR
+  
+  # --- Set characteristics for each genetic instrument --- # 
+  
+  # Set genetic effects of each instrument on the exposure,
+  # drawn from uniform distribution, min/max as per Bowden 
+  # et al
+  gamma_vect <- runif(n = n_instruments,
+                      min = gamma_min,
+                      max = gamma_max)
+  
+  
+  
+  # Set which instruments invalid, 0 = valid, 1 = invalid
+  invalid_instrument_vect <- rbinom(n = n_instruments,
+                                    size = 1, 
+                                    prob = prop_invalid)
+  
+  
+  # Probability of effect allele set per dataset  
+  # for each instrument, default value set at  
+  # random between 0.01-0.99 (i.e. both effect +
+  # reference are common alleles)
+  allele_freq_vect <- runif(n = n_instruments,
+                            min = allele_freq_min,
+                            max = allele_freq_max)
+  
+  # Set pleiotropic effects on outcome, Scenarios and 
+  # min/max from Bowden et al
+  alpha_vect <- double() # Pleiotropic effects of instruments on outcome
+  phi_vect <- double() # Pleiotropic effects of confounders on outcome
+  
+  
+  for(j in 1:n_instruments){
+    ifelse(invalid_instrument_vect[j] == 0, # alpha = 0 if valid
+           alpha_vect[j] <- 0,
+           ifelse(balanced_pleio == TRUE,
+                  alpha_vect[j] <- runif(n = 1, # balanced
+                                         min = alpha_min,
+                                         max = alpha_max),
+                  alpha_vect[j] <- runif(n = 1, # directional
+                                         min = 0,
+                                         max = alpha_max)
+           )
+    )
+    
+
+    # Assign default phi = 0 unless directional pleiotropy & 
+    # InSIDE assumption not satisfied & genetic instrument invalid
+    if(balanced_pleio == FALSE & InSIDE_satisfied == FALSE){
+      ifelse(invalid_instrument_vect[j] == 0,
+             phi_vect[j] <- 0,
+             phi_vect[j] <- runif(n = 1,
+                                  min = phi_min,
+                                  max = phi_max)
+      )
+      
+    }
+    else{
+      phi_vect[j] <- 0
+    }
+  }
+  
+  # Re-set seed to ensure consistency across datasets
+  # N.B. above two if/ifelse statements cause de-sync 
+  # of number of randomised functions between valid/invalid
+  set.seed(seed)
+  
+  # --- Create separate datasets --- #
+  
+  # Create N datasets by simulating genotype matrices with
+  # 1 row per participant, 1 column per genetic instrument
+  # Use these to estimate U, X + Y
+  
+  for(n in 1:n_datasets){
+    
+    # --- Create matrix of genotypes --- #
+
+    # Assign genotypes by sampling from binomial distribution
+    # twice (as two alleles) per participant with probability
+    # equal to frequency of effect allele
+    
+    # Matrix where columns are instruments, rows are participants
+    # Values 0, 1 or 2
+    # 0 = reference, i.e. zero effect alleles, 
+    # 1 = 1 effect allele, 2 = 2 effect alleles 
+    
+    G_mat <- matrix(rbinom(n = n_participants * n_instruments,
+                           size = 2,
+                           prob = rep(allele_freq_vect, n_participants)),
+                    nrow = n_participants,
+                    ncol = n_instruments,
+                    byrow = TRUE)
+    
+    
+    # Create error terms for U, X + Y per participant,
+    # each drawn from standard normal distribution
+    # unless random error turned off (for testing)
+    
+    ifelse(rand_error == TRUE,
+           U_epsilon_vect <- rnorm(n = n_participants),
+           U_epsilon_vect <- rep(0, n_participants))
+    
+    ifelse(rand_error == TRUE,
+           X_epsilon_vect <- rnorm(n = n_participants),
+           X_epsilon_vect <- rep(0, n_participants))
+    
+    ifelse(rand_error == TRUE,
+           Y_epsilon_vect <- rnorm(n = n_participants),
+           Y_epsilon_vect <- rep(0, n_participants))
+    
+    
+    # --- Combine Gene matrix/parameters to recreate model --- #
+    
+    # Create vectors of estimates for U, X and Y per individual,
+    # i.e. Ui, Xi and Yi. Uses matrix inner product operator " %*%" 
+    # https://stackoverflow.com/questions/22060515/the-r-operator 
+    # http://matrixmultiplication.xyz/
+
+    #     U (vector: unmeasured confounding exposures per participant), 
+    #     X (vector: exposure:outcome associations estimated per participant) 
+    #     Y (vector: gene:outcome association estimated per participant) 
+    
+    Ui_vect <-  G_mat %*% phi_vect + U_epsilon_vect
+    
+    Xi_vect <-  G_mat[sample_1_ref, ] %*% gamma_vect + 
+      Ui_vect[sample_1_ref, ] + 
+      X_epsilon_vect
+    
+    Yi_vect <-  G_mat[sample_2_ref, ] %*% alpha_vect + 
+      beta * Xi_vect + 
+      Ui_vect[sample_2_ref, ] + 
+      Y_epsilon_vect
+    
+    
+    # Add vectors of estimates from this dataset to lists of 
+    # estimates from all datasets
+    U_list[[n]] <- Ui_vect
+    
+    X_list[[n]] <- Xi_vect
+    
+    Y_list[[n]] <- Yi_vect
+    
+    G_X_list[[n]] <- G_mat[sample_1_ref, ]
+    
+    G_Y_list[[n]] <- G_mat[sample_2_ref, ]
+    
+    
+    # Include actual parameter values generated for simulation 
+    alpha_list[[n]] <- alpha_vect
+    
+    gamma_list[[n]] <- gamma_vect
+    
+    phi_list[[n]] <- phi_vect
+    
+    # Include inputs for reference/testing 
+    n_participants_x_list[[n]] <- n_participants_x
+    n_participants_y_list[[n]] <- n_participants_y
+    n_participants_list[[n]] <- n_participants
+    n_instruments_list[[n]] <- n_instruments
+    prop_invalid_list[[n]] <- prop_invalid
+    beta_val_list[[n]] <- beta_val
+   
+     
+  }
+  
+  
+  
+  # --- Combine all outputs to return --- #
+  
+  combined_list <- list(U = U_list,         # Estimates 
+                        X = X_list, 
+                        Y = Y_list,
+                        
+                        G_X = G_X_list,     # Genotypes of 1st sample
+                        G_Y = G_Y_list,     # Genotypes of 2nd sample
+                        
+                        alpha = alpha_list, # Actual values for validating simulation
+                        gamma = gamma_list,
+                        phi = phi_list,
+                        
+                        n_participants_x = n_participants_x_list, # Inputs
+                        n_participants_y = n_participants_y_list, 
+                        n_instruments = n_instruments_list,
+                        prop_invalid = prop_invalid_list,
+                        beta_val = beta_val_list
+  )
+  
+  return(combined_list)
+}
+
+
+```
+
+```{r post-hoc-data, include=FALSE}
+
+# Set parameters
+cites_exposure_n <- citations_search_sample$Exposure_N_Participants %>% mean() %>% round(0)
+cites_outcome_n <- citations_search_sample$Outcome_N_Participants %>% mean() %>% round(0)
+cites_participants_n <- cites_exposure_n + cites_outcome_n
+cites_instrument_n <- citations_search_sample$n_Instruments %>% mean() %>% round(0)
+cites_beta_val <- citations_search_sample %>% 
+  mutate(Beta = if_else(Reported_WME_Measure == "Beta",
+                        Reported_WME_Causal_Effect,
+                        log(Reported_WME_Causal_Effect))) %>% 
+  pull(Beta) %>% 
+  mean() %>% 
+  round(2)
+
+# Simulate data
+causal_cites_means_point1_scen1_data <- get_simulated_MR_data(n_participants = cites_participants_n,
+                                                              n_instruments = cites_instrument_n,
+                                                              n_datasets = 10,
+                                                              prop_invalid = 0.1,
+                                                              causal_effect = TRUE,
+                                                              balanced_pleio = TRUE,
+                                                              InSIDE_satisfied = TRUE,
+                                                              rand_error = TRUE,      # remove random errors, for testing
+                                                              beta_val = cites_beta_val,         # size of causal effect
+                                                              allele_freq_min = 0.1,  # frequency of effect allele 0.01/0.99
+                                                              allele_freq_max = 0.9,  #?0.4/0.6
+                                                              seed = 14101583)
+
+```
+
+```{r post-hoc-models, include=FALSE}
+
+causal_cites_means_point1_scen1_models <- get_models(causal_cites_means_point1_scen1_data)
+
+```
 

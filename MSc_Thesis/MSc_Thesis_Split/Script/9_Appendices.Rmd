@@ -1410,5 +1410,21 @@ packages %>%
 
 ```
 
+```{r system-info, include = TRUE, echo = FALSE}
+
+library(benchmarkme)
+
+sys_details_full <- benchmarkme::get_sys_details()
+
+sysname_release <- paste0(sys_details_full$sys_info, " ", sys_details_full$release)
+
+sys_ram <- sys_details_full$ram
+sys_cpu <- sys_details_full$cpu$model_name
+sys_cores <- sys_details_full$cpu$no_of_cores
+
+```
+
+CPU: `r sys_cpu`, `r sys_cores` cores
+RAM: `r sys_ram`
 
 \newpage

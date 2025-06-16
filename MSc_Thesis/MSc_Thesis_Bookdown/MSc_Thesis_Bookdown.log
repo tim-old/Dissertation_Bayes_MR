@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.8)  9 JUN 2025 00:54
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.15)  16 JUN 2025 05:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **MSc_Thesis_Bookdown.tex
 (./MSc_Thesis_Bookdown.tex
-LaTeX2e <2025-06-01>
+LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
@@ -383,7 +383,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count319
 \@thisrulewidth=\dimen182
 ) (c:/Users/timol/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/05/19 v2.6i Tabular extension package (FMi)
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen183
 \ar@mcellbox=\box60
 \extrarowheight=\dimen184
@@ -10057,27 +10057,17 @@ Overfull \hbox (24.92328pt too wide) in alignment at lines 1230--1294
 [21
 
 ]
-Underfull \hbox (badness 3482) in paragraph at lines 1318--1318
-\TU/lmr/m/n/10 Available from: [][]$[][][][][] [] [] [] [][][][][][][][] [] [][][] [] [][][] [] [][][][][][] [] [][][][][][][][] [] [][][][] [] [][][][][] [] [][][][][][][][][][][][] [] [][][][][][][][][] []
- []
-
-
 
 [22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
-\TU/lmr/m/n/10 able from: [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][][][][][][][] [] [][][][][][] [][] [][] [] [][][][][] [][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
-[] [] [][][][][][][][] [][] [][][][][][][][][][][] [][] [][][] [][] [][][][][][][][][][][][][][] [][] [][] [][] [][][] [][] [][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][][][][][][][][] [] [][] [] [][][][] [] [][] [][]
- []
-
-
 
 [23]
+Underfull \hbox (badness 3482) in paragraph at lines 1351--1351
+\TU/lmr/m/n/10 Available from: [][]$[][][][][] [] [] [] [][][][][][][][] [] [][][] [] [][][] [] [][][][][][] [] [][][][][][][][] [] [][][][] [] [][][][][] [] [][][][][][][][][][][][] [] [][][][][][][][][] []
+ []
+
+
 
 [24]
 
@@ -10088,30 +10078,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
 [27]
 
 [28]
+
+[29]
 File: MSc_Thesis_Bookdown_files/figure-latex/prostate-vol-1.png Graphic file (type bmp)
 <MSc_Thesis_Bookdown_files/figure-latex/prostate-vol-1.png>
 
 
-[29]
-
 [30]
 
 [31]
-Missing character: There is no γ (U+03B3) in font [lmroman10-italic]:mapping=tex-text;!
-
 
 [32]
+Missing character: There is no γ (U+03B3) in font [lmroman10-italic]:mapping=tex-text;!
+
 
 [33]
 
 [34]
-Underfull \hbox (badness 1189) in paragraph at lines 1764--1765
+
+[35]
+Underfull \hbox (badness 1189) in paragraph at lines 1805--1806
 []\TU/lmr/m/n/10 Similarly, with random error terms set to 0 (\TU/lmtt/m/n/10 rand_error = FALSE\TU/lmr/m/n/10 ) and no causal effect present
  []
 
 
-
-[35]
 
 [36]
 
@@ -10130,32 +10120,34 @@ Underfull \hbox (badness 1189) in paragraph at lines 1764--1765
 [43]
 
 [44]
-Overfull \hbox (28.99498pt too wide) in paragraph at lines 1851--1851
+
+[45]
+Overfull \hbox (28.99498pt too wide) in paragraph at lines 1892--1892
 []\TU/lmtt/m/n/10 ##  pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)[] 
  []
 
 
-Overfull \hbox (622.24498pt too wide) in paragraph at lines 1851--1851
+Overfull \hbox (622.24498pt too wide) in paragraph at lines 1892--1892
 []\TU/lmtt/m/n/10 ##  quarto   ERROR: Unknown command "TMPDIR=C:/Users/timol/AppData/Local/Temp/RtmpoL0HFL/file4d9c24bb4b5d". Did you mean command "remove"? @ C:\\PROGRA~1\\RStudio\\resources\\app\\bin\\quarto\\bin\\quarto.exe[] 
  []
 
 
 
-[45]
+[46]
 
-[46] (./MSc_Thesis_Bookdown.aux)
+[47] (./MSc_Thesis_Bookdown.aux)
  ***********
-LaTeX2e <2025-06-01>
+LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18447 strings out of 470549
- 343099 string characters out of 5491784
- 989159 words of memory out of 5000000
- 46385 multiletter control sequences out of 15000+600000
+ 18455 strings out of 470543
+ 343232 string characters out of 5491679
+ 989756 words of memory out of 5000000
+ 46399 multiletter control sequences out of 15000+600000
  634397 words of font info for 119 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,13n,122p,2847b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on MSc_Thesis_Bookdown.pdf (46 pages).
+Output written on MSc_Thesis_Bookdown.pdf (47 pages).
