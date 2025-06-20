@@ -18,8 +18,28 @@ knit: (function(inputFile, encoding) {
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+# Abstract
+
+## Background
+
+Mendelian randomisation (MR) uses data from observational genetic studies to support causal inference between exposures and outcomes of interest. The field has been challenged by high false-positive report rates, including causal links reported despite biological implausibility. MR-Hevo is a novel MR causal effect estimation methodology whose creators claim superior performance versus the established weighted median estimator (WME) method.
+
+## Aims
+
+To evaluate any difference in performance between WME versus MR-Hevo methods, and establish whether these may alter conclusions drawn in real-world studies.
+
+## Methods
+
+Performance of each method was compared through parallel analysis of simulated data with known characteristics. Data were simulated per the published approach originally used to validate WME. Simulations represented a range of plausible combinations of population parameters and assumption violations. To investigate differences between methods using real-world data, both methods were applied to a sample of ten highly-cited MR studies reporting both a WME causal effect estimate and sufficient data to allow replication.
+
+## Results
+
+Using simulated data with no causal effect present, MR-Hevo demonstrated a lower false-positive report rate versus WME across all 24 combinations of parameters/assumption violations considered (mean false-positive report rate 0.41% versus 5.1%). Using simulated data with a true causal effect present, MR-Hevo demonstrated variable sensitivity versus WME depending on the combination of parameters/assumption violations considered. In general, both higher false-positive rate and higher sensitivity with WME versus MR-Hevo analysis correlated with assumption violations which tended to bias away from the null, suggesting MR-Hevo may be more robust to assumption violations. Re-analysis of highly-cited MR studies found poor reproducibility of published WME estimates in four of ten studies included. Causal effect estimates were similar in magnitude between MR-Hevo and WME; conclusions regarding presence of causality were consistent between both methods across all ten studies.
+
+## Conclusions
+
+Compared to WME, MR-Hevo causal effect estimation is associated with lower false-positive report rates and less perturbation by assumption violations. Across published MR literature reporting a causal effect, re-analysis using MR-Hevo may change conclusions in a minority of cases. Future work should investigate the non-reproducibility of MR results observed.
+
+
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_1_Abstract.Rmd"))`
-
-
-
-# Abstract {-}
