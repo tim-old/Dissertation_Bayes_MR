@@ -38,6 +38,46 @@
 \makeatother
 \usepackage{xcolor}
 \usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -162,7 +202,7 @@ I confirm that all work is my own except where indicated, that all sources are c
 \addcontentsline{toc}{subsection}{Word Count}
 
 Word count:
-5395
+8371
 
 \newpage
 
@@ -1305,6 +1345,48 @@ Conclusions regarding presence of a causal effect were consistent: re-analysed \
 
 \end{landscape}
 
+\section{Discussion}\label{discussion}
+
+\subsection{Performance of Methods}\label{performance-of-methods}
+
+\subsubsection{Simulation}\label{simulation}
+
+\paragraph{Null Causal Effect}\label{null-causal-effect}
+
+\leavevmode\newline For a null causal effect, MR-Hevo exhibited comparable accuracy to \hyperref[acronyms_WME]{WME}, with both methods tending to slightly over-estimate the true value. Considering precision, the mean \hyperref[acronyms_SE]{SE} for MR-Hevo was almost 2 orders of magnitude smaller than for \hyperref[acronyms_WME]{WME}, though mean \hyperref[acronyms_CI]{CI}s were similarly consistent between methods despite this, reflecting differing methodology used in \hyperref[acronyms_CI]{CI} construction (see Appendix \ref{appendix-boot}). Despite near identical quantitative effect estimation, MR-Hevo was consistently more accurate in categorical classification as causal/no causal effect, exhibiting a superior false-positive rate in all 24 meta-analyses with null causal effect. This performance lends credence to the claims of MR-Hevo's creators regarding the importance of \hyperref[acronyms_CI]{CI} construction method being dissociated from \hyperref[acronyms_SE]{SE} estimation\textsuperscript{\citeproc{ref-mckeigue_inference_2024}{16}}.
+
+Regarding consistency, there is a trend towards both methods reporting a wider \hyperref[acronyms_CI]{CI} with conditions promoting a greater effects of invalid instruments, as might be expected. However, MR-Hevo \hyperref[acronyms_CI]{CI}s appear to widen slightly more than for \hyperref[acronyms_WME]{WME}, both with increasing proportion of invalid instruments and progressive violation of \hyperref[acronyms_IV]{IV} assumptions. This does suggest that MR-Hevo deals with pleiotropic effects more conservatively than \hyperref[acronyms_WME]{WME}, namely by appropriately reducing the reported precision of the estimate to reflect additional uncertainty. Greater consistency of effect estimation by MR-Hevo versus \hyperref[acronyms_WME]{WME} was particularly marked when moving between different scenarios representing different assumption violations.
+
+\paragraph{Positive Causal Effect}\label{positive-causal-effect}
+
+\leavevmode\newline When a positive causal effect was present, MR-Hevo exhibited a slightly higher mean sensitivity than \hyperref[acronyms_WME]{WME} when all results were pooled, but on per meta-analysis basis it was out-performed in the majority of cases. The accuracy of MR-Hevo versus \hyperref[acronyms_WME]{WME} was very slightly lower overall, again tending to over-estimate the true causal effect. Precision was similar to the null causal effect case, with a comparable \hyperref[acronyms_CI]{CI} for both methods, but a much smaller \hyperref[acronyms_SE]{SE} for MR-Hevo.
+
+Regarding consistency, there are again trends towards both methods reporting wider \hyperref[acronyms_CI]{CI}s with a greater proportion of invalid instruments and/or greater violations of \hyperref[acronyms_IV]{IV} assumptions; again, this broadening of \hyperref[acronyms_CI]{CI}s is more marked for MR-Hevo than for \hyperref[acronyms_WME]{WME}. An exception to general trends is the combination of 0\% invalid instruments with 20,000 participants, where MR-Hevo reports narrower \hyperref[acronyms_CI]{CI}s - and therefore correctly reports disproportionately more causal effects - than either \hyperref[acronyms_WME]{WME} using that parameter combination, or MR-Hevo at 0\% invalid instruments with 10,000 participants. This parameter combination appears to drive the somewhat discordant summary of sensitivity results.
+
+It is not clear why this combination is associated with such a high causal report rate for MR-Hevo. If MR-Hevo performed particularly well versus \hyperref[acronyms_WME]{WME} in the absence of invalid instruments, this would be expected to hold in the 10,000 participants case also. Similarly, if MR-Hevo were particularly sensitive to the difference in sample size versus \hyperref[acronyms_WME]{WME}, larger discrepancies would be expected between the two methods with other parameter/scenario combinations when transitioning between 10,000 to 20,000 participants. Differences in assumption violations between scenarios do not affect this result, as assumption violations are only relevant to invalid instruments, of which there are none in the 0\% invalid case. This unexpected result may be an aberrant feature of the particular datasets generated, which could be investigated by re-running the analysis from a different random seed. Alternatively, it may be that, when using MR-Hevo methods, sample size interacts in a non-linear way for and invalid instrument proportions approaching zero with respect to the method's power. If the causal report rate for this parameter/scenario combination remained high after data simulation with a different seed, this possibility could be next investigated using simulated datasets with invalid instrument proportions between 0-10\%.
+
+\subsubsection{Re-Analysis}\label{re-analysis}
+
+As discussed in \ref{lim-cite}, the comparison of re-analysis \hyperref[acronyms_WME]{WME} causal effect estimates to those of MR-Hevo may represent the true performance of MR-Hevo on ``real-world'' data poorly, given the poor reproducibility of \hyperref[acronyms_WME]{WME} findings on re-analysis. This inability to reproduce published results using the corresponding published data and methods potentially represents a major issue for the field of \hyperref[acronyms_MR]{MR} - arguably greater than any difference in outcomes between methodologies. A full discussion is outside the scope of this project; however, the following data features were noted which may explain some of this phenomenon. Of the six studies with reproducible \hyperref[acronyms_WME]{WME} estimates, all presented data rounded to three to five decimal places. By contrast, of the four non-reproducible studies, only one (Ligthart et al\textsuperscript{\citeproc{ref-ligthart_genome_2018}{26}}) presented data rounded to three decimal places, with the other three reporting to one to two significant figures. It is possible that such minor data variations are proportionally large enough to influence causal effect estimates, given that most gene-exposure and gene-outcome coefficients are numerically small in absolute terms. The author (B233241) was unable to find any literature pertaining to this, or indeed to reproducibility of \hyperref[acronyms_MR]{MR} results in general; this would seem to be a lacuna which warrants further investigation.
+
+In studies where \hyperref[acronyms_WME]{WME} estimates were reproducible, MR-Hevo estimates and \hyperref[acronyms_CI]{CI}s matched closely. Across all studies, reproducible or not, conclusions regarding causality matched exactly, although estimates and particularly confidence intervals differed substantially between the two methods for some studies. This is a broadly reassuring finding, suggesting that the conclusions of the most highly-cited works in the field are robust to different methodologies. However, with thousands of \hyperref[acronyms_MR]{MR} studies now reported, as evidenced by the 5,417 articles referencing Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}} alone, this is not to say that MR-Hevo could not change conclusions of many published \hyperref[acronyms_MR]{MR} studies in the literature if it were used to re-analyse their data.
+
+\subsection{Results in Context}\label{results-in-context}
+
+A key concern in the \hyperref[acronyms_MR]{MR} literature of late has been of suspiciously high numbers of studies reporting causal effects, often in cases where causality does not seem biologically plausible\textsuperscript{\citeproc{ref-stender_reclaiming_2024}{15}}. It is against this backdrop that the creators of MR-Hevo introduce their approach as a potential solution, and it is worth considering this wider context before assessing the relative merits of each method.
+
+Several factors may be driving high positive report rates observed in published \hyperref[acronyms_MR]{MR} studies. As with other academic fields, there is likely to be an element of publication bias in favour of studies reporting statistically significant results\textsuperscript{\citeproc{ref-bowden_mendelian_2015}{34},\citeproc{ref-bowden_modelling_2010}{35}}; naturally, no causal effect estimation methods will be able to address this issue. The widespread availability and use of tools such as the \texttt{TwoSampleMR} R package\textsuperscript{\citeproc{ref-hemani_mr-base_2018}{14}} facilitate production of \hyperref[acronyms_MR]{MR} studies at scale. Genetic studies without a plausible hypothetical basis are at high baseline risk of false positives due to implicit multiple comparisons, given the number of potential genes and/or phenotypes which could be examined\textsuperscript{\citeproc{ref-balding_tutorial_2006}{36}}. The ability to generate \hyperref[acronyms_MR]{MR} studies in an automated way renders all such spurious associations more easily accessible for attempted publication; if these are then preferentially published versus the negative findings, this could contribute to the proliferation of positive \hyperref[acronyms_MR]{MR} studies observed. This was recognised by the creators of MR-Base themselves, prompting them to write a paper which programmatically assessed all possible exposure-outcome associations on the platform, in an attempt to disincentivise this practice\textsuperscript{\citeproc{ref-hemani_automating_2017}{37}}:
+
+\begin{quote}
+``\ldots we said what we're going to do is do the Mendelian randomization of everything against everything and put it online, and then say no one should be able to publish just the two-sample Mendelian randomization study because we've done them all''\textsuperscript{\citeproc{ref-mrc_ieu_at_university_of_bristol_noodles_2023}{38}}
+\end{quote}
+
+A related concern is that such methods are easily accessible to non-experts, such that the large numbers of studies so produced may also be disproportionately of low quality, without implementing safeguards against such issues. Some authors go so far as to state that \hyperref[acronyms_MR]{MR} needs ``reclaiming\ldots from the deluge of papers and misleading findings''\textsuperscript{\citeproc{ref-stender_reclaiming_2024}{15}}, and recommending evidence ``triangulation'' - i.e.~presenting non-\hyperref[acronyms_MR]{MR} data to support each claim of causality detected by \hyperref[acronyms_MR]{MR} methods - should be a necessary adjunct to publication of any causal \hyperref[acronyms_MR]{MR} finding\textsuperscript{\citeproc{ref-munafo_triangulating_2021}{39}}.
+
+By contrast, the group behind MR-Hevo assert that valid methods should yield valid results, regardless of the scale on which analyses are performed. Further, they argue that it is not biologically plausible that directional pleiotropy would routinely exist without the \hyperref[acronyms_InSIDE]{InSIDE} assumption also being violated\textsuperscript{\citeproc{ref-mckeigue_inference_2024}{16}}. Regarding this study's simulation results, this pre-supposed coupling of direction and magnitude of pleiotropic effects would imply that Scenario 2 is essentially defunct. The most relevant assumption set regarding bias introduced by invalid instruments with pleiotropic effects would then be Scenario 3, where \hyperref[acronyms_WME]{WME} exhibited the highest false-positive causal report rates, and where MR-Hevo arguably exhibits both the greatest improvement in consistency but fall in sensitivity versus \hyperref[acronyms_WME]{WME}. In the above ``everything against everthing'' pre-print\textsuperscript{\citeproc{ref-hemani_automating_2017}{37}}, it is significant that evidence of pleiotropy was noted in \textgreater90\% of comparisons on the MR-Base platform. The prescence of balanced pleiotropy would be expected to add only noise to causal effect estimates, and therefore could not explain a high false-positive causal report rate. Taken together, this would therefore suggest that MR-Hevo is the more suitable of the two methods to address any contributions of pleiotropic effects to the high false-positive causal report rates observed.
+
+\newpage
+
 \section{Limitations and Recommendations}\label{limitations-and-recommendations}
 
 \subsection{Limitations}\label{limitations}
@@ -1313,7 +1395,7 @@ Conclusions regarding presence of a causal effect were consistent: re-analysed \
 
 Key objectives of this study were to evaluate the accuracy, precision and consistency of MR-Hevo causal estimation under differing sets of assumptions, including differing proportions of invalid genetic instruments. The random seed used happened to assign similar numbers (6 vs 7) of invalid instruments to both the 20\% and 30\% invalid instrument cases; relevant code was checked to ensure this was not an error in specification of model parameters. As this was noted after analysis had begun, it was decided not to re-run simulations to avoid implicit multiple comparisons in analysis. However, the resulting datasets generated arguably do not represent the true differences expected between cohorts with a 10\% change in valid instrument proportion. In particular, Scenario 3 simulations may have been disproportionately affected by this phenomenon. \hyperref[acronyms_InSIDE]{InSIDE} assumption violation means each invalid instrument may introduce different proportions of noise and bias to the causal effect estimates generated. If the average noise introduced per instrument is greater than the average bias introduced per instrument, then adding a single extra invalid instrument may act to bias towards the null if its predominant effect is to reduce estimate precision; the addition of several extra instruments may be required for noise terms to average each other out and so for bias terms to predominate. This may explain why several trends in causal estimates, confidence intervals and causal report rates abruptly plateau around 20\% under assumptions for Scenarios 1 and 2, and reverse under Scenario 3. Conclusions drawn from trends tracking the progression from 0\% to 20\% invalid instruments should be unaffected, but speculating on trends with \(\ge\) 30\% invalid instruments from these data alone would seem inadvisable. If desired, these simulation studies could be extended to progressively larger proportions of invalid instruments to investigate this possibility further.
 
-This study had intended to exactly duplicate the simulation methodology of Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}} to maximise comparability of results; however several barriers prevented this. As outlined in \hyperref[Methods]{Methods}, the process of genotype generation, including frequencies of effect/non-effect alleles of simulated genetic instruments, was not reported by Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}}. In addition, Bowden et al used 10,000 simulations per meta-analysis of each combination of Scenario assumptions and simulation parameters; this was rendered impractical due to the computationally intensive nature of MR-Hevo's resampling approach. On a mid-range home desktop computer , each meta-analysis took in the order of 8 hours to process \(n = 1,000\) datasets; assuming \(O(n)\) growth in processing time, this implies reproducing both tables would take 2.29 weeks of processing time, which was not practical with the time available. This was also realised too late in the project timeline to arrange for alternative computing capability, such as through the University of Edinburgh's compute cluster ``Eddie''\textsuperscript{\citeproc{ref-noauthor_eddie_nodate}{34}}. Although exact replication would have been desirable, using 1,000 simulated datasets per analysis appears to have been sufficient to generate comparable mean values of the parameter estimates to those reported by Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}}. The main effect of increasing number of datasets per meta-analysis would be to improve precision of the mean estimates of each parameter (i.e.~precision of mean causal effect estimates, mean \hyperref[acronyms_SE]{SE}s and mean \hyperref[acronyms_CI]{CI}s). As the spread of these parameter estimates is not reported in Tables \ref{tab:no-causal-sim-summ-display} and \ref{tab:causal-sim-summ-display}, this change is not likely to have affected conclusions from this study.
+This study had intended to exactly duplicate the simulation methodology of Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}} to maximise comparability of results; however several barriers prevented this. As outlined in \hyperref[Methods]{Methods}, the process of genotype generation, including frequencies of effect/non-effect alleles of simulated genetic instruments, was not reported by Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}}. In addition, Bowden et al used 10,000 simulations per meta-analysis of each combination of Scenario assumptions and simulation parameters; this was rendered impractical due to the computationally intensive nature of MR-Hevo's resampling approach. On a mid-range home desktop computer (specification found in {[}Session\_Information{]}), each meta-analysis took in the order of 8 hours to process \(n = 1,000\) datasets; assuming \(O(n)\) growth in processing time, this implies reproducing both tables would take 2.29 weeks of processing time, which was not practical with the time available. This was also realised too late in the project timeline to arrange for alternative computing capability, such as through the University of Edinburgh's compute cluster ``Eddie''\textsuperscript{\citeproc{ref-noauthor_eddie_nodate}{40}}. Although exact replication would have been desirable, using 1,000 simulated datasets per analysis appears to have been sufficient to generate comparable mean values of the parameter estimates to those reported by Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}}. The main effect of increasing number of datasets per meta-analysis would be to improve precision of the mean estimates of each parameter (i.e.~precision of mean causal effect estimates, mean \hyperref[acronyms_SE]{SE}s and mean \hyperref[acronyms_CI]{CI}s). As the spread of these parameter estimates is not reported in Tables \ref{tab:no-causal-sim-summ-display} and \ref{tab:causal-sim-summ-display}, this change is not likely to have affected conclusions from this study.
 
 \subsubsection{Re-Analysis of Published Data}\label{lim-cite}
 
@@ -1474,148 +1556,172 @@ Following this study, the recommendations below are offered:
 \CSLLeftMargin{33. }%
 \CSLRightInline{Clift AK, Ende A von, Tan PS, Sallis HM, Lindson N, Coupland CAC, et al. Smoking and {COVID}-19 outcomes: An observational and {Mendelian} randomisation study using the {UK} {Biobank} cohort. Thorax {[}Internet{]}. 2022 Jan {[}cited 2025 Jun 3{]};77(1):65--73. Available from: \url{https://thorax.bmj.com/content/77/1/65}}
 
-\bibitem[\citeproctext]{ref-noauthor_eddie_nodate}
+\bibitem[\citeproctext]{ref-bowden_mendelian_2015}
 \CSLLeftMargin{34. }%
+\CSLRightInline{Bowden J, Davey Smith G, Burgess S. Mendelian randomization with invalid instruments: Effect estimation and bias detection through {Egger} regression. International Journal of Epidemiology {[}Internet{]}. 2015 Apr {[}cited 2025 Jun 12{]};44(2):512--25. Available from: \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4469799/}}
+
+\bibitem[\citeproctext]{ref-bowden_modelling_2010}
+\CSLLeftMargin{35. }%
+\CSLRightInline{Bowden J, Jackson D, Thompson SG. Modelling multiple sources of dissemination bias in meta-analysis. Statistics in Medicine {[}Internet{]}. 2010 {[}cited 2025 Jun 12{]};29(7-8):945--55. Available from: \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.3813}}
+
+\bibitem[\citeproctext]{ref-balding_tutorial_2006}
+\CSLLeftMargin{36. }%
+\CSLRightInline{Balding DJ. A tutorial on statistical methods for population association studies. Nature Reviews Genetics {[}Internet{]}. 2006 Oct {[}cited 2025 Jun 12{]};7(10):781--91. Available from: \url{https://www.nature.com/articles/nrg1916}}
+
+\bibitem[\citeproctext]{ref-hemani_automating_2017}
+\CSLLeftMargin{37. }%
+\CSLRightInline{Hemani G, Bowden J, Haycock P, Zheng J, Davis O, Flach P, et al. Automating {Mendelian} randomization through machine learning to construct a putative causal map of the human phenome {[}Internet{]}. bioRxiv; 2017 {[}cited 2025 Jun 12{]}. Available from: \url{https://www.biorxiv.org/content/10.1101/173682v2}}
+
+\bibitem[\citeproctext]{ref-mrc_ieu_at_university_of_bristol_noodles_2023}
+\CSLLeftMargin{38. }%
+\CSLRightInline{MRC IEU at University of Bristol. Noodles, {No} {Nulls} and {Numb} {Skulls}: {Threats} to the future of {Mendelian} {Randomization} - {G}. {Davey} {Smith} {[}Internet{]}. 2023 {[}cited 2025 Jun 12{]}. Available from: \url{https://www.youtube.com/watch?v=jQmlba_B_lg}}
+
+\bibitem[\citeproctext]{ref-munafo_triangulating_2021}
+\CSLLeftMargin{39. }%
+\CSLRightInline{Munafò MR, Higgins JPT, Smith GD. Triangulating {Evidence} through the {Inclusion} of {Genetically} {Informed} {Designs}. Cold Spring Harbor Perspectives in Medicine {[}Internet{]}. 2021 Aug {[}cited 2025 Jun 12{]};11(8):a040659. Available from: \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8327826/}}
+
+\bibitem[\citeproctext]{ref-noauthor_eddie_nodate}
+\CSLLeftMargin{40. }%
 \CSLRightInline{Eddie {[}Internet{]}. Edinburgh University DRS. {[}cited 2025 Jun 10{]}. Available from: \url{https://digitalresearchservices.ed.ac.uk/resources/eddie}}
 
 \bibitem[\citeproctext]{ref-buscaglia_chapter_2020}
-\CSLLeftMargin{35. }%
+\CSLLeftMargin{41. }%
 \CSLRightInline{Buscaglia DLS\&R. Chapter 3 {Confidence} {Intervals} via {Bootstrapping} {\textbar} {Introduction} to {Statistical} {Methodology}, {Second} {Edition} {[}Internet{]}. 2020 {[}cited 2025 May 25{]}. Available from: \url{https://bookdown.org/dereksonderegger/570/3-confidence-intervals-via-bootstrapping.html}}
 
 \bibitem[\citeproctext]{ref-ross_chapter_2014}
-\CSLLeftMargin{36. }%
+\CSLLeftMargin{42. }%
 \CSLRightInline{Ross SM. Chapter 6 - {Distributions} of {Sampling} {Statistics}. In: Ross SM, editor. Introduction to {Probability} and {Statistics} for {Engineers} and {Scientists} ({Fifth} {Edition}) {[}Internet{]}. Boston: Academic Press; 2014 {[}cited 2025 May 25{]}. p. 207--33. Available from: \url{https://www.sciencedirect.com/science/article/pii/B978012394811350006X}}
 
 \bibitem[\citeproctext]{ref-cata_blood_2011}
-\CSLLeftMargin{37. }%
+\CSLLeftMargin{43. }%
 \CSLRightInline{Cata JP, Klein EA, Hoeltge GA, Dalton JE, Mascha E, O'Hara J, et al. Blood {Storage} {Duration} and {Biochemical} {Recurrence} of {Cancer} {After} {Radical} {Prostatectomy}. Mayo Clinic Proceedings {[}Internet{]}. 2011 Feb {[}cited 2025 May 25{]};86(2):120--7. Available from: \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3031436/}}
 
 \bibitem[\citeproctext]{ref-medicaldata}
-\CSLLeftMargin{38. }%
+\CSLLeftMargin{44. }%
 \CSLRightInline{Higgins P. {medicaldata}: Data package for medical datasets {[}Internet{]}. 2021. Available from: \url{https://CRAN.R-project.org/package=medicaldata}}
 
 \bibitem[\citeproctext]{ref-acronymsdown}
-\CSLLeftMargin{39. }%
+\CSLLeftMargin{45. }%
 \CSLRightInline{Chaput R. {acronymsdown}: Acronyms and glossaries support for RMarkdown {[}Internet{]}. 2025. Available from: \url{https://github.com/rchaput/acronymsdown}}
 
 \bibitem[\citeproctext]{ref-bookdown2016}
-\CSLLeftMargin{40. }%
+\CSLLeftMargin{46. }%
 \CSLRightInline{Xie Y. {bookdown}: Authoring books and technical documents with {R} markdown {[}Internet{]}. Boca Raton, Florida: Chapman; Hall/CRC; 2016. Available from: \url{https://bookdown.org/yihui/bookdown}}
 
 \bibitem[\citeproctext]{ref-bookdown2025}
-\CSLLeftMargin{41. }%
+\CSLLeftMargin{47. }%
 \CSLRightInline{Xie Y. {bookdown}: Authoring books and technical documents with r markdown {[}Internet{]}. 2025. Available from: \url{https://github.com/rstudio/bookdown}}
 
 \bibitem[\citeproctext]{ref-car}
-\CSLLeftMargin{42. }%
+\CSLLeftMargin{48. }%
 \CSLRightInline{Fox J, Weisberg S. An {R} companion to applied regression {[}Internet{]}. Third. Thousand Oaks {CA}: Sage; 2019. Available from: \url{https://www.john-fox.ca/Companion/}}
 
 \bibitem[\citeproctext]{ref-cowplot}
-\CSLLeftMargin{43. }%
+\CSLLeftMargin{49. }%
 \CSLRightInline{Wilke CO. {cowplot}: Streamlined plot theme and plot annotations for {``{ggplot2}''} {[}Internet{]}. 2024. Available from: \url{https://CRAN.R-project.org/package=cowplot}}
 
 \bibitem[\citeproctext]{ref-crayon}
-\CSLLeftMargin{44. }%
+\CSLLeftMargin{50. }%
 \CSLRightInline{Csárdi G. {crayon}: Colored terminal output {[}Internet{]}. 2024. Available from: \url{https://CRAN.R-project.org/package=crayon}}
 
 \bibitem[\citeproctext]{ref-devtools}
-\CSLLeftMargin{45. }%
+\CSLLeftMargin{51. }%
 \CSLRightInline{Wickham H, Hester J, Chang W, Bryan J. {devtools}: Tools to make developing r packages easier {[}Internet{]}. 2022. Available from: \url{https://CRAN.R-project.org/package=devtools}}
 
 \bibitem[\citeproctext]{ref-flextable}
-\CSLLeftMargin{46. }%
+\CSLLeftMargin{52. }%
 \CSLRightInline{Gohel D, Skintzos P. {flextable}: Functions for tabular reporting {[}Internet{]}. 2025. Available from: \url{https://CRAN.R-project.org/package=flextable}}
 
 \bibitem[\citeproctext]{ref-ftExtra}
-\CSLLeftMargin{47. }%
+\CSLLeftMargin{53. }%
 \CSLRightInline{Yasumoto A. {ftExtra}: Extensions for {``{Flextable}''} {[}Internet{]}. 2024. Available from: \url{https://CRAN.R-project.org/package=ftExtra}}
 
 \bibitem[\citeproctext]{ref-ggdag}
-\CSLLeftMargin{48. }%
+\CSLLeftMargin{54. }%
 \CSLRightInline{Barrett M. {ggdag}: Analyze and create elegant directed acyclic graphs {[}Internet{]}. 2024. Available from: \url{https://CRAN.R-project.org/package=ggdag}}
 
 \bibitem[\citeproctext]{ref-gghighlight}
-\CSLLeftMargin{49. }%
+\CSLLeftMargin{55. }%
 \CSLRightInline{Yutani H. {gghighlight}: Highlight lines and points in {``{ggplot2}''} {[}Internet{]}. 2023. Available from: \url{https://CRAN.R-project.org/package=gghighlight}}
 
 \bibitem[\citeproctext]{ref-gluedown}
-\CSLLeftMargin{50. }%
+\CSLLeftMargin{56. }%
 \CSLRightInline{Nicholls K. {gluedown}: Wrap vectors in markdown formatting {[}Internet{]}. 2024. Available from: \url{https://CRAN.R-project.org/package=gluedown}}
 
 \bibitem[\citeproctext]{ref-grateful}
-\CSLLeftMargin{51. }%
+\CSLLeftMargin{57. }%
 \CSLRightInline{Rodriguez-Sanchez F, Jackson CP. {grateful}: Facilitate citation of {R} packages {[}Internet{]}. 2024. Available from: \url{https://pakillo.github.io/grateful/}}
 
 \bibitem[\citeproctext]{ref-grid}
-\CSLLeftMargin{52. }%
+\CSLLeftMargin{58. }%
 \CSLRightInline{R Core Team. {R}: A language and environment for statistical computing {[}Internet{]}. Vienna, Austria: R Foundation for Statistical Computing; 2025. Available from: \url{https://www.R-project.org/}}
 
 \bibitem[\citeproctext]{ref-here}
-\CSLLeftMargin{53. }%
+\CSLLeftMargin{59. }%
 \CSLRightInline{Müller K. {here}: A simpler way to find your files {[}Internet{]}. 2020. Available from: \url{https://CRAN.R-project.org/package=here}}
 
 \bibitem[\citeproctext]{ref-infer}
-\CSLLeftMargin{54. }%
+\CSLLeftMargin{60. }%
 \CSLRightInline{Couch SP, Bray AP, Ismay C, Chasnovski E, Baumer BS, Çetinkaya-Rundel M. \href{https://doi.org/10.21105/joss.03661}{{infer}: An {R} package for tidyverse-friendly statistical inference}. Journal of Open Source Software. 2021;6(65):3661. }
 
 \bibitem[\citeproctext]{ref-kableExtra}
-\CSLLeftMargin{55. }%
+\CSLLeftMargin{61. }%
 \CSLRightInline{Zhu H. {kableExtra}: Construct complex table with {``{kable}''} and pipe syntax {[}Internet{]}. 2024. Available from: \url{https://CRAN.R-project.org/package=kableExtra}}
 
 \bibitem[\citeproctext]{ref-knitr2014}
-\CSLLeftMargin{56. }%
+\CSLLeftMargin{62. }%
 \CSLRightInline{Xie Y. {knitr}: A comprehensive tool for reproducible research in {R}. In: Stodden V, Leisch F, Peng RD, editors. Implementing reproducible computational research. Chapman; Hall/CRC; 2014. }
 
 \bibitem[\citeproctext]{ref-knitr2015}
-\CSLLeftMargin{57. }%
+\CSLLeftMargin{63. }%
 \CSLRightInline{Xie Y. Dynamic documents with {R} and knitr {[}Internet{]}. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC; 2015. Available from: \url{https://yihui.org/knitr/}}
 
 \bibitem[\citeproctext]{ref-knitr2025}
-\CSLLeftMargin{58. }%
+\CSLLeftMargin{64. }%
 \CSLRightInline{Xie Y. {knitr}: A general-purpose package for dynamic report generation in {R} {[}Internet{]}. 2025. Available from: \url{https://yihui.org/knitr/}}
 
 \bibitem[\citeproctext]{ref-matrixStats}
-\CSLLeftMargin{59. }%
+\CSLLeftMargin{65. }%
 \CSLRightInline{Bengtsson H. {matrixStats}: Functions that apply to rows and columns of matrices (and to vectors) {[}Internet{]}. 2025. Available from: \url{https://CRAN.R-project.org/package=matrixStats}}
 
 \bibitem[\citeproctext]{ref-officer}
-\CSLLeftMargin{60. }%
+\CSLLeftMargin{66. }%
 \CSLRightInline{Gohel D, Moog S, Heckmann M. {officer}: Manipulation of microsoft word and PowerPoint documents {[}Internet{]}. 2025. Available from: \url{https://CRAN.R-project.org/package=officer}}
 
 \bibitem[\citeproctext]{ref-parallel}
-\CSLLeftMargin{61. }%
+\CSLLeftMargin{67. }%
 \CSLRightInline{R Core Team. {R}: A language and environment for statistical computing {[}Internet{]}. Vienna, Austria: R Foundation for Statistical Computing; 2025. Available from: \url{https://www.R-project.org/}}
 
 \bibitem[\citeproctext]{ref-rmarkdown2018}
-\CSLLeftMargin{62. }%
+\CSLLeftMargin{68. }%
 \CSLRightInline{Xie Y, Allaire JJ, Grolemund G. R markdown: The definitive guide {[}Internet{]}. Boca Raton, Florida: Chapman; Hall/CRC; 2018. Available from: \url{https://bookdown.org/yihui/rmarkdown}}
 
 \bibitem[\citeproctext]{ref-rmarkdown2020}
-\CSLLeftMargin{63. }%
+\CSLLeftMargin{69. }%
 \CSLRightInline{Xie Y, Dervieux C, Riederer E. R markdown cookbook {[}Internet{]}. Boca Raton, Florida: Chapman; Hall/CRC; 2020. Available from: \url{https://bookdown.org/yihui/rmarkdown-cookbook}}
 
 \bibitem[\citeproctext]{ref-rmarkdown2024}
-\CSLLeftMargin{64. }%
+\CSLLeftMargin{70. }%
 \CSLRightInline{Allaire J, Xie Y, Dervieux C, McPherson J, Luraschi J, Ushey K, et al. {rmarkdown}: Dynamic documents for r {[}Internet{]}. 2024. Available from: \url{https://github.com/rstudio/rmarkdown}}
 
 \bibitem[\citeproctext]{ref-rstan}
-\CSLLeftMargin{65. }%
+\CSLLeftMargin{71. }%
 \CSLRightInline{Stan Development Team. {RStan}: The {R} interface to {Stan} {[}Internet{]}. 2025. Available from: \url{https://mc-stan.org/}}
 
 \bibitem[\citeproctext]{ref-tables}
-\CSLLeftMargin{66. }%
+\CSLLeftMargin{72. }%
 \CSLRightInline{Murdoch D. {tables}: Formula-driven table generation {[}Internet{]}. 2024. Available from: \url{https://CRAN.R-project.org/package=tables}}
 
 \bibitem[\citeproctext]{ref-TwoSampleMR2017}
-\CSLLeftMargin{67. }%
+\CSLLeftMargin{73. }%
 \CSLRightInline{Hemani G, Tilling K, Davey Smith G. Orienting the causal relationship between imprecisely measured traits using GWAS summary data. PLoS Genetics {[}Internet{]}. 2017;13(11):e1007081. Available from: \url{https://doi.org/10.1371/journal.pgen.1007081}}
 
 \bibitem[\citeproctext]{ref-TwoSampleMR2018}
-\CSLLeftMargin{68. }%
+\CSLLeftMargin{74. }%
 \CSLRightInline{Hemani G, Zheng J, Elsworth B, Wade K, Baird D, Haberland V, et al. The MR-base platform supports systematic causal inference across the human phenome. eLife {[}Internet{]}. 2018;7:e34408. Available from: \url{https://elifesciences.org/articles/34408}}
 
 \bibitem[\citeproctext]{ref-wordcountaddin}
-\CSLLeftMargin{69. }%
+\CSLLeftMargin{75. }%
 \CSLRightInline{Marwick B. {wordcountaddin}: Word counts and readability statistics in r markdown documents {[}Internet{]}. 2025. Available from: \url{https://github.com/benmarwick/wordcountaddin}}
 
 \end{CSLReferences}
@@ -1665,7 +1771,7 @@ weighted median estimator
 
 \subsection{Bootstrapping - General Method}\label{bootstrapping---general-method}
 
-The typical process for ``bootstrap'' generating an estimate, \hyperref[acronyms_SE]{SE} and \hyperref[acronyms_CI]{CI}s of a population parameter (e.g.~population mean \(\mu\)) from a sample \(x\) is as follows\textsuperscript{\citeproc{ref-buscaglia_chapter_2020}{35}}:
+The typical process for ``bootstrap'' generating an estimate, \hyperref[acronyms_SE]{SE} and \hyperref[acronyms_CI]{CI}s of a population parameter (e.g.~population mean \(\mu\)) from a sample \(x\) is as follows\textsuperscript{\citeproc{ref-buscaglia_chapter_2020}{41}}:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1679,7 +1785,7 @@ The typical process for ``bootstrap'' generating an estimate, \hyperref[acronyms
 \item
   A total of \(k\) bootstrap samples are generated, \(x^{*1}, x^{*2},...x^{*k}\), and the statistic of interest (e.g.~sample mean \(\bar{x}\)) is estimated in each individual sample, \(\bar{x}^{*i}\), giving the complete set of \(\bar{x}^{*1}, \bar{x}^{*2},...\bar{x}^{*i}...\bar{x}^{*k}\).
 \item
-  The set of \(k\) statistics are combined to form a ``bootstrap distribution''; as expected from \hyperref[acronyms_CLT]{central limit theorem (CLT)}\textsuperscript{\citeproc{ref-ross_chapter_2014}{36}}, this is typically closer to a normal distribution than the underlying distribution of values in either the bootstrap population \(x\) or the total population \(X\). (See Figure \ref{fig:prostate-vol} for an example of this)
+  The set of \(k\) statistics are combined to form a ``bootstrap distribution''; as expected from \hyperref[acronyms_CLT]{central limit theorem (CLT)}\textsuperscript{\citeproc{ref-ross_chapter_2014}{42}}, this is typically closer to a normal distribution than the underlying distribution of values in either the bootstrap population \(x\) or the total population \(X\). (See Figure \ref{fig:prostate-vol} for an example of this)
 \item
   The final values are derived as follows:
 \end{enumerate}
@@ -1703,7 +1809,7 @@ The above process is illustrated in \ref{fig:prostate-vol}. Data on prostate vol
 \begin{figure}
 \centering
 \pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/prostate-vol-1.png}}
-\caption{\label{fig:prostate-vol}Histograms demonstrating distribution of prostate volumes in patients with prostatic cancer, taken from Cata et al 2011\textsuperscript{\citeproc{ref-cata_blood_2011}{37}} via the R package \texttt{medicaldata}\textsuperscript{\citeproc{ref-medicaldata}{38}}. A) Distribution from whole study population of 307 patients with non-missing data, exhibiting right-skew. B) Distribution from random sample of 100 patients, still exhibiting right-skew. C) Bootstrap distribution generated by re-sampling 1,000 bootstrap samples from the original sample of 100 patients, right-skew less apparent. D) Bootstrap distribution generated by re-sampling 100,000 bootstrap samples from the original sample of 100 patients, approaching normality. 95\% confidence intervals are demonstrated in plots C and D by marking the 2.5th and 97.5th centiles.}
+\caption{\label{fig:prostate-vol}Histograms demonstrating distribution of prostate volumes in patients with prostatic cancer, taken from Cata et al 2011\textsuperscript{\citeproc{ref-cata_blood_2011}{43}} via the R package \texttt{medicaldata}\textsuperscript{\citeproc{ref-medicaldata}{44}}. A) Distribution from whole study population of 307 patients with non-missing data, exhibiting right-skew. B) Distribution from random sample of 100 patients, still exhibiting right-skew. C) Bootstrap distribution generated by re-sampling 1,000 bootstrap samples from the original sample of 100 patients, right-skew less apparent. D) Bootstrap distribution generated by re-sampling 100,000 bootstrap samples from the original sample of 100 patients, approaching normality. 95\% confidence intervals are demonstrated in plots C and D by marking the 2.5th and 97.5th centiles.}
 \end{figure}
 
 \newpage
@@ -1778,9 +1884,105 @@ To reproduce this model, code was written in R to generate the relevant particip
 
 This initial simulation function generated data in the following format:
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Check data produced in expected format}
+\CommentTok{\#set.seed(1701)}
+\NormalTok{test\_data\_sim }\OtherTok{\textless{}{-}} \FunctionTok{get\_simulated\_MR\_data}\NormalTok{(}\AttributeTok{n\_participants =} \DecValTok{1000}\NormalTok{,}
+                                       \AttributeTok{n\_instruments =} \DecValTok{25}\NormalTok{,}
+                                       \AttributeTok{n\_datasets =} \DecValTok{2}\NormalTok{,}
+                                       \AttributeTok{prop\_invalid =} \FloatTok{0.3}\NormalTok{,}
+                                       \AttributeTok{rand\_error =} \ConstantTok{FALSE}\NormalTok{,}
+                                       \AttributeTok{causal\_effect =} \ConstantTok{TRUE}\NormalTok{,}
+                                       \AttributeTok{balanced\_pleio =} \ConstantTok{TRUE}\NormalTok{,}
+                                       \AttributeTok{InSIDE\_satisfied =} \ConstantTok{TRUE}\NormalTok{)}
+
+\FunctionTok{str}\NormalTok{(test\_data\_sim)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## List of 12
+##  $ U             :List of 2
+##   ..$ : num [1:2000, 1] 0 0 0 0 0 0 0 0 0 0 ...
+##   ..$ : num [1:2000, 1] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ X             :List of 2
+##   ..$ : num [1:1000, 1] 1.59 1.29 1.02 1.89 1.49 ...
+##   ..$ : num [1:1000, 1] 1.85 1.84 2.18 1.16 1.44 ...
+##  $ Y             :List of 2
+##   ..$ : num [1:1000, 1] 0.0704 0.1351 0.1589 0.0944 0.0161 ...
+##   ..$ : num [1:1000, 1] 0.59017 0.10039 0.00743 0.27896 0.27746 ...
+##  $ G_X           :List of 2
+##   ..$ : int [1:1000, 1:25] 2 0 1 2 1 0 1 0 0 2 ...
+##   ..$ : int [1:1000, 1:25] 0 1 2 1 1 1 0 2 0 2 ...
+##  $ G_Y           :List of 2
+##   ..$ : int [1:1000, 1:25] 1 1 0 1 2 0 1 0 1 2 ...
+##   ..$ : int [1:1000, 1:25] 1 1 1 1 0 1 2 0 2 0 ...
+##  $ alpha         :List of 2
+##   ..$ : num [1:25] 0 0 0.1157 0 -0.0634 ...
+##   ..$ : num [1:25] 0 0 0.1157 0 -0.0634 ...
+##  $ gamma         :List of 2
+##   ..$ : num [1:25] 0.0938 0.0808 0.0755 0.0342 0.0443 ...
+##   ..$ : num [1:25] 0.0938 0.0808 0.0755 0.0342 0.0443 ...
+##  $ phi           :List of 2
+##   ..$ : num [1:25] 0 0 0 0 0 0 0 0 0 0 ...
+##   ..$ : num [1:25] 0 0 0 0 0 0 0 0 0 0 ...
+##  $ n_participants:List of 2
+##   ..$ : num 1000
+##   ..$ : num 1000
+##  $ n_instruments :List of 2
+##   ..$ : num 25
+##   ..$ : num 25
+##  $ prop_invalid  :List of 2
+##   ..$ : num 0.3
+##   ..$ : num 0.3
+##  $ beta_val      :List of 2
+##   ..$ : num 0.1
+##   ..$ : num 0.1
+\end{verbatim}
+
 A function (\texttt{get\_models}) was then written to create linear models from each dataset generated as per Bowden et al:
 
 These models generated estimates of the coefficient of gene-exposure association (\texttt{coeff\_G\_X}), coefficient of gene-outcome association (\texttt{coeff\_G\_Y}), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e.~actual gene-exposure associations (\texttt{gamma}), pleiotropic effects of invalid instruments (\texttt{alpha}), additional pleiotropic effects when \hyperref[acronyms_InSIDE]{InSIDE} assumption not satified (\texttt{phi}), causal effect of exposure on outcome (\texttt{beta}) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (\texttt{prop\_invalid}).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{test\_extract\_model }\OtherTok{\textless{}{-}} \FunctionTok{get\_models}\NormalTok{(test\_data\_sim)}
+
+\FunctionTok{summary}\NormalTok{(test\_extract\_model[[}\DecValTok{1}\NormalTok{]])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     dataset    Instrument   coeff_G_X        coeff_G_X_SE      
+##  Min.   :1   Min.   : 1   Min.   :0.03419   Min.   :6.659e-17  
+##  1st Qu.:1   1st Qu.: 7   1st Qu.:0.05645   1st Qu.:6.807e-17  
+##  Median :1   Median :13   Median :0.06823   Median :6.873e-17  
+##  Mean   :1   Mean   :13   Mean   :0.06791   Mean   :6.889e-17  
+##  3rd Qu.:1   3rd Qu.:19   3rd Qu.:0.08594   3rd Qu.:6.935e-17  
+##  Max.   :1   Max.   :25   Max.   :0.09379   Max.   :7.313e-17  
+##      gamma             F_stat             R2_stat    coeff_G_Y        
+##  Min.   :0.03419   Min.   :6.224e+27   Min.   :1   Min.   :-0.109067  
+##  1st Qu.:0.05645   1st Qu.:6.224e+27   1st Qu.:1   1st Qu.: 0.004951  
+##  Median :0.06823   Median :6.224e+27   Median :1   Median : 0.006555  
+##  Mean   :0.06791   Mean   :6.224e+27   Mean   :1   Mean   : 0.013297  
+##  3rd Qu.:0.08594   3rd Qu.:6.224e+27   3rd Qu.:1   3rd Qu.: 0.008890  
+##  Max.   :0.09379   Max.   :6.224e+27   Max.   :1   Max.   : 0.162629  
+##   coeff_G_Y_SE          alpha                phi         beta    
+##  Min.   :0.001550   Min.   :-0.115363   Min.   :0   Min.   :0.1  
+##  1st Qu.:0.001579   1st Qu.: 0.000000   1st Qu.:0   1st Qu.:0.1  
+##  Median :0.001591   Median : 0.000000   Median :0   Median :0.1  
+##  Mean   :0.001598   Mean   : 0.006717   Mean   :0   Mean   :0.1  
+##  3rd Qu.:0.001624   3rd Qu.: 0.000000   3rd Qu.:0   3rd Qu.:0.1  
+##  Max.   :0.001653   Max.   : 0.156224   Max.   :0   Max.   :0.1  
+##   prop_invalid n_instruments n_participants
+##  Min.   :0.3   Min.   :25    Min.   :1000  
+##  1st Qu.:0.3   1st Qu.:25    1st Qu.:1000  
+##  Median :0.3   Median :25    Median :1000  
+##  Mean   :0.3   Mean   :25    Mean   :1000  
+##  3rd Qu.:0.3   3rd Qu.:25    3rd Qu.:1000  
+##  Max.   :0.3   Max.   :25    Max.   :1000
+\end{verbatim}
 
 \newpage
 
@@ -1800,9 +2002,13 @@ A series of test plots were used to verify that data were simulated as intended 
   For invalid instruments: gene-outcome coefficient = alpha \(\ne\) 0, with values spread uniformly between \texttt{alpha\_min} and \texttt{alpha\_max}
 \end{itemize}
 
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-prop-invalid-1.png}}
+
 \newpage
 
 Similarly, with random error terms set to 0 (\texttt{rand\_error\ =\ FALSE}) and no causal effect present (\texttt{causal\_effect\ =\ FALSE}), gene-exposure coefficients estimated for each instrument should exactly match the actual values simulated, i.e.~\texttt{coeff\_G\_X\ =\ gamma} for all instruments:
+
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-gamma-1-1.png}}
 
 \newpage
 
@@ -1810,9 +2016,61 @@ Similarly, with random error terms set to 0 (\texttt{rand\_error\ =\ FALSE}) and
 
 \leavevmode\newline For the next phase of testing, a function (\texttt{plot\_GY\_GX}) was written to plot the coefficients for gene-exposure versus gene-outcome as estimated using the previously created linear models:
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot\_GY\_GX }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(model\_tib, }
+                       \AttributeTok{plot\_title =} \FunctionTok{as.character}\NormalTok{(}\ConstantTok{NA}\NormalTok{),}
+                       \AttributeTok{x\_min =} \DecValTok{0}\NormalTok{,                     }\CommentTok{\# set x{-}axis limits}
+                       \AttributeTok{x\_max =} \FloatTok{0.1}\NormalTok{,}
+                       \AttributeTok{y\_min =} \SpecialCharTok{{-}}\FloatTok{0.05}\NormalTok{,                 }\CommentTok{\# set x{-}axis limits}
+                       \AttributeTok{y\_max =} \FloatTok{0.06}\NormalTok{,}
+                       \AttributeTok{beta\_x =} \FloatTok{0.075}\NormalTok{,                }\CommentTok{\# set beta{-}hat position}
+                       \AttributeTok{beta\_y =} \FloatTok{0.05}\NormalTok{,}
+                       \AttributeTok{hat\_offset =} \FloatTok{0.003}
+\NormalTok{)}
+\NormalTok{\{}
+  
+\NormalTok{  model\_tib }\SpecialCharTok{\%\textgreater{}\%} 
+    \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Gradient =} \FunctionTok{round}\NormalTok{(}\FunctionTok{coefficients}\NormalTok{(}\FunctionTok{lm}\NormalTok{(coeff\_G\_Y }\SpecialCharTok{\textasciitilde{}} \DecValTok{0} \SpecialCharTok{+}\NormalTok{ coeff\_G\_X)[}\DecValTok{1}\NormalTok{], }\DecValTok{5}\NormalTok{), }
+                            \AttributeTok{digits =} \DecValTok{2}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+    \FunctionTok{plot\_template}\NormalTok{() }\SpecialCharTok{+} \CommentTok{\# pre{-}formatted plot template {-} call to ggplot with UoE colours}
+    \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ coeff\_G\_X, }\AttributeTok{y =}\NormalTok{ coeff\_G\_Y) }\SpecialCharTok{+}
+    \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{colour =}\NormalTok{ edin\_bright\_red\_hex, }\AttributeTok{alpha =} \FloatTok{0.3}\NormalTok{) }\SpecialCharTok{+}
+    \FunctionTok{geom\_abline}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{intercept =} \DecValTok{0}\NormalTok{, }
+                    \AttributeTok{slope =}\NormalTok{ Gradient),}
+                \AttributeTok{size =} \DecValTok{1}\NormalTok{,}
+                \AttributeTok{colour =}\NormalTok{ edin\_uni\_blue\_hex) }\SpecialCharTok{+}
+    \FunctionTok{geom\_text}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{label =} \FunctionTok{paste0}\NormalTok{(}\StringTok{"\textbackslash{}U03B2 = "}\NormalTok{, }\FunctionTok{as.character}\NormalTok{(Gradient))), }\CommentTok{\#beta}
+              \AttributeTok{x =}\NormalTok{ beta\_x, }\CommentTok{\# labels with gradient (causal effect estimate)}
+              \AttributeTok{y =}\NormalTok{ beta\_y,}
+              \AttributeTok{colour =}\NormalTok{ edin\_uni\_blue\_hex, }
+              \AttributeTok{hjust =} \DecValTok{0}\NormalTok{, }
+              \AttributeTok{data =}\NormalTok{ . }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{slice\_head}\NormalTok{()}\CommentTok{\# prevent over{-}printing}
+\NormalTok{    ) }\SpecialCharTok{+}
+    \CommentTok{\#label = expression("True" \textasciitilde{} hat(beta)\textasciitilde{} "= 0.25"),}
+    \FunctionTok{annotate}\NormalTok{(}\StringTok{"text"}\NormalTok{,}
+             \AttributeTok{x =}\NormalTok{ beta\_x,      }\CommentTok{\# add hat to beta}
+             \AttributeTok{y =}\NormalTok{ beta\_y }\SpecialCharTok{+}\NormalTok{ hat\_offset,}
+             \AttributeTok{label =} \FunctionTok{paste}\NormalTok{(}\StringTok{"\textbackslash{}U02C6"}\NormalTok{),}
+             \AttributeTok{colour =}\NormalTok{ edin\_uni\_blue\_hex, }
+             \AttributeTok{hjust =} \SpecialCharTok{{-}}\FloatTok{0.4}\NormalTok{,}
+             \AttributeTok{vjust =} \FloatTok{0.9}
+\NormalTok{    ) }\SpecialCharTok{+}
+    \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =}\NormalTok{ plot\_title,}
+         \AttributeTok{x =} \StringTok{"Gene{-}Exposure Coefficient"}\NormalTok{,}
+         \AttributeTok{y =} \StringTok{"Gene{-}Outcome Coefficient"}\NormalTok{) }\SpecialCharTok{+}
+    \FunctionTok{xlim}\NormalTok{(x\_min, x\_max) }\SpecialCharTok{+}
+    \FunctionTok{ylim}\NormalTok{(y\_min, y\_max)}
+  
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
 \newpage
 
 With random error terms set to 0 (\texttt{rand\_error\ =\ FALSE}) and no causal effect present, a graph of gene-exposure coefficients versus gene-outcome coefficients should be a straight line through the origin with gradient = 0; causal effect of \(\beta\) = 0.1 present (\texttt{beta\_val\ =\ 0.1}, \texttt{causal\_effect\ =\ TRUE}), the slope of a graph of gene-exposure coefficients versus gene-outcome coefficients from the same sample should be a straight line through the origin with gradient = 0.1:
+
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-causal-1.png}}
 
 \newpage
 
@@ -1820,11 +2078,15 @@ With random error terms set to 0 (\texttt{rand\_error\ =\ FALSE}) and no causal 
 
 \leavevmode\newline Re-plotting the same graphs with non-zero random error terms (\texttt{rand\_error\ =\ TRUE}) should produce similar graphs with Gaussian spread around lines passing through the origin with gradients of 0 and 0.1 for no causal effect and causal effect, respectively:
 
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-causal-errors-1.png}}
+
 \newpage
 
 \subsubsection{One versus Two Sample MR}\label{one-versus-two-sample-mr}
 
 \leavevmode\newline Where gene-exposure coefficients and gene-outcome coefficients are estimated from two separate samples rather than one (i.e.~\texttt{two\_sample\ =\ TRUE}, simulating 2 sample MR), even with random error terms set to zero, error will be introduced into causal effect estimation through random sampling of different combinations of effect alleles. However, where a causal effect is not present, the effect estimated will consistently be zero regardless of the combinations of alleles sampled, so random error should not be introduced:
+
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-causal-2SMR-1.png}}
 
 \newpage
 
@@ -1832,11 +2094,15 @@ With random error terms set to 0 (\texttt{rand\_error\ =\ FALSE}) and no causal 
 
 \leavevmode\newline Where invalid instruments are present (i.e.~\texttt{prop\_invalid} \(\ne\) \texttt{0}) and random error terms are set to 0, graphs of gene-exposure coefficients versus gene-outcome coefficients should be straight lines through the origin and all points representing valid instruments; the invalid instruments should appear as outliers to this line:
 
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-causal-inval-1.png}}
+
 \newpage
 
 \subsubsection{Balanced Versus Directional Pleiotropy}\label{balanced-versus-directional-pleiotropy}
 
 \leavevmode\newline Replotting the above with unbalanced pleiotropy present (\texttt{balanced\_pleio\ =\ FALSE}), the invalid instruments should all appear as outliers in the positive direction, i.e.~steepening the line of best fit and leading to overestimation of the causal effect:
+
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-causal-unbal-1.png}}
 
 \newpage
 
@@ -1855,9 +2121,13 @@ As such, when the \hyperref[acronyms_InSIDE]{InSIDE} assumption is violated, eve
 
 Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}} modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship. Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (\texttt{0\ \textless{}\ alpha\ \textless{}\ 0.2}) and \hyperref[acronyms_InSIDE]{InSIDE} assumption violation. As such, switching \texttt{InSIDE\_satisfied} from \texttt{TRUE} to \texttt{FALSE} should add scatter to the linear association expected when plotting alpha versus gene-outcome coefficients with random error terms set to zero:
 
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-phi-1.png}}
+
 \newpage
 
 Setting \texttt{InSIDE\_satisfied\ =\ TRUE} should mean \texttt{phi\ =\ 0}; \texttt{InSIDE\_satisfied=FALSE} should result in \texttt{phi} \(\propto\) gene-outcome coefficient, with scatter only in the positive direction of gene-outcome coefficients given the model also requires directional pleiotropy before \texttt{phi} is used:
+
+\pandocbounded{\includegraphics[keepaspectratio]{MSc_Thesis_Bookdown_files/figure-latex/test-plot-phi-2-1.png}}
 
 \newpage
 
@@ -1865,15 +2135,215 @@ Setting \texttt{InSIDE\_satisfied\ =\ TRUE} should mean \texttt{phi\ =\ 0}; \tex
 
 A function (\texttt{get\_summary\_MR\_tib\_row}) was written to take models generated from each simulated dataset, estimate causal effect using both weighted median and MR-Hevo methodologies, then output a summary formatted as per Tables 2 \& 3 in Bowden et al\textsuperscript{\citeproc{ref-bowden_consistent_2016}{8}}:
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load WME functions}
+\FunctionTok{library}\NormalTok{(TwoSampleMR)}
+
+\CommentTok{\# Load RStan {-} needed for MR{-}Hevo}
+\FunctionTok{library}\NormalTok{(rstan)}
+
+
+\CommentTok{\# Run local copy of MR{-}Hevo functions}
+\CommentTok{\# Not using full package due to conflicts with Windows}
+\FunctionTok{source}\NormalTok{(}\FunctionTok{here}\NormalTok{(}\StringTok{"Script"}\NormalTok{, }\StringTok{"Hevo"}\NormalTok{, }\StringTok{"functions.mrhevo.R"}\NormalTok{))}
+
+\CommentTok{\# Standard set{-}up for RStan}
+\FunctionTok{options}\NormalTok{(}\AttributeTok{mc.cores =}\NormalTok{ parallel}\SpecialCharTok{::}\FunctionTok{detectCores}\NormalTok{())}
+\FunctionTok{rstan\_options}\NormalTok{(}\AttributeTok{auto\_write =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{save\_dso =} \ConstantTok{TRUE}\NormalTok{)}
+
+
+\CommentTok{\# Compile model for MR{-}Hevo}
+\NormalTok{mr.stanmodel }\OtherTok{\textless{}{-}} \FunctionTok{stan\_model}\NormalTok{(}\AttributeTok{file=} \FunctionTok{here}\NormalTok{(}\StringTok{"Script"}\NormalTok{, }
+                                      \StringTok{"Hevo"}\NormalTok{, }
+                                      \StringTok{"MRHevo\_summarystats.stan"}\NormalTok{),}
+                           \AttributeTok{model\_name=}\StringTok{"MRHevo.summarystats"}\NormalTok{, }
+                           \AttributeTok{verbose=}\ConstantTok{FALSE}\NormalTok{,}
+                           \AttributeTok{save\_dso =} \ConstantTok{TRUE}\NormalTok{,}
+                           \AttributeTok{auto\_write =} \ConstantTok{TRUE}\NormalTok{)}
+
+\NormalTok{get\_summary\_MR\_tib\_row }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(model\_list)\{}
+  
+  
+  \CommentTok{\# Create output tibble in same format as Table 2/3 from}
+  \CommentTok{\# Bowden et al}
+\NormalTok{  output\_tib\_row }\OtherTok{\textless{}{-}} \FunctionTok{tibble}\NormalTok{(}\AttributeTok{N =} \FunctionTok{as.integer}\NormalTok{(),}
+                           \AttributeTok{Prop\_Invalid =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{F\_stat =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{R2\_stat =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{WME\_Av =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{WME\_SE =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{WME\_Pos\_Rate =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{Hevo\_Av =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{Hevo\_SE =} \FunctionTok{as.double}\NormalTok{(),}
+                           \AttributeTok{Hevo\_Pos\_Rate =} \FunctionTok{as.double}\NormalTok{())}
+  
+\NormalTok{  n\_datasets }\OtherTok{\textless{}{-}} \FunctionTok{length}\NormalTok{(model\_list)}
+  
+  \CommentTok{\# Create blank tibble to receive results of Weighted}
+  \CommentTok{\# Median Estimator function from MR{-}Base}
+  
+\NormalTok{  results\_tib }\OtherTok{\textless{}{-}}  \FunctionTok{tibble}\NormalTok{(}\AttributeTok{WME\_est =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{WME\_se =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{WME\_pval =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{WME\_nsnp =} \FunctionTok{as.integer}\NormalTok{(),}
+                         \AttributeTok{Hevo\_est =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{Hevo\_se =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{Hevo\_sd =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{Hevo\_est\_lower\_CI =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{Hevo\_est\_upper\_CI =} \FunctionTok{as.double}\NormalTok{(),}
+                         \AttributeTok{Hevo\_causal\_detected =} \FunctionTok{as.logical}\NormalTok{()}
+\NormalTok{  )}
+  
+  
+  \CommentTok{\# Run WME and MR{-}Hevo for each dataset }
+  \ControlFlowTok{for}\NormalTok{(dataset }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_datasets)\{}
+    
+    \CommentTok{\# Stored as individual vectors for MR{-}Hevo/RStan {-} not}
+    \CommentTok{\# Tidyverse compatible}
+\NormalTok{    coeff\_G\_X\_vect }\OtherTok{\textless{}{-}}\NormalTok{ model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{coeff\_G\_X}
+\NormalTok{    coeff\_G\_Y\_vect }\OtherTok{\textless{}{-}}\NormalTok{ model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{coeff\_G\_Y}
+\NormalTok{    coeff\_G\_X\_SE\_vect }\OtherTok{\textless{}{-}}\NormalTok{ model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{coeff\_G\_X\_SE}
+\NormalTok{    coeff\_G\_Y\_SE\_vect }\OtherTok{\textless{}{-}}\NormalTok{ model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{coeff\_G\_Y\_SE}
+\NormalTok{    prop\_invalid }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{prop\_invalid)}
+\NormalTok{    F\_stat }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{F\_stat)}
+\NormalTok{    R2\_stat }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{R2\_stat)}
+\NormalTok{    n\_instruments }\OtherTok{\textless{}{-}} \FunctionTok{max}\NormalTok{(model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{Instrument)}
+\NormalTok{    n\_participants }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(model\_list[[dataset]]}\SpecialCharTok{$}\NormalTok{n\_participants)}
+    
+    
+    \CommentTok{\# N.B. MR{-}Hevo terminology vs WME paper/other code:}
+    \CommentTok{\# alpha = effects of instruments on exposure, i.e. coeff\_G\_X}
+    \CommentTok{\# beta = pleiotropic effects of instruments on outcome, i.e. alpha in WME}
+    \CommentTok{\# gamma = effects of instruments on outcome, i.e. coeff\_G\_Y}
+    \CommentTok{\# theta = causal effect X on Y, i.e. b}
+    
+    \CommentTok{\# Results from weighted median estimator method}
+\NormalTok{    WME\_results }\OtherTok{\textless{}{-}} \FunctionTok{mr\_weighted\_median}\NormalTok{(}\AttributeTok{b\_exp =}\NormalTok{ coeff\_G\_X\_vect,}
+                                      \AttributeTok{b\_out =}\NormalTok{ coeff\_G\_Y\_vect,}
+                                      \AttributeTok{se\_exp =}\NormalTok{ coeff\_G\_X\_SE\_vect,}
+                                      \AttributeTok{se\_out =}\NormalTok{ coeff\_G\_Y\_SE\_vect,}
+                                      \AttributeTok{parameters =} \FunctionTok{list}\NormalTok{(}\AttributeTok{nboot =} \DecValTok{1000}\NormalTok{))}
+    
+    \CommentTok{\# Results from MR{-}Hevo method}
+\NormalTok{    Hevo\_results}\OtherTok{\textless{}{-}} \FunctionTok{run\_mrhevo.sstats}\NormalTok{(}\AttributeTok{alpha\_hat =}\NormalTok{ coeff\_G\_X\_vect,}
+                                    \AttributeTok{se.alpha\_hat =}\NormalTok{ coeff\_G\_X\_SE\_vect,}
+                                    \AttributeTok{gamma\_hat =}\NormalTok{ coeff\_G\_Y\_vect,}
+                                    \AttributeTok{se.gamma\_hat =}\NormalTok{ coeff\_G\_Y\_SE\_vect) }\SpecialCharTok{\%\textgreater{}\%}
+     \FunctionTok{summary}\NormalTok{()}
+    
+    
+    \CommentTok{\# Extract WME Results}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{WME\_est }\OtherTok{\textless{}{-}}\NormalTok{ WME\_results}\SpecialCharTok{$}\NormalTok{b}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{WME\_se }\OtherTok{\textless{}{-}}\NormalTok{ WME\_results}\SpecialCharTok{$}\NormalTok{se}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{WME\_pval }\OtherTok{\textless{}{-}}\NormalTok{ WME\_results}\SpecialCharTok{$}\NormalTok{pval}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{WME\_nsnp }\OtherTok{\textless{}{-}}\NormalTok{ WME\_results}\SpecialCharTok{$}\NormalTok{nsnp}
+    
+    \CommentTok{\# Extract MR{-}Hevo Results}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{Hevo\_est }\OtherTok{\textless{}{-}}\NormalTok{ Hevo\_results}\SpecialCharTok{$}\NormalTok{summary[}\StringTok{"theta"}\NormalTok{,}\StringTok{"mean"}\NormalTok{]}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{Hevo\_se }\OtherTok{\textless{}{-}}\NormalTok{ Hevo\_results}\SpecialCharTok{$}\NormalTok{summary[}\StringTok{"theta"}\NormalTok{,}\StringTok{"se\_mean"}\NormalTok{]}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{Hevo\_sd }\OtherTok{\textless{}{-}}\NormalTok{ Hevo\_results}\SpecialCharTok{$}\NormalTok{summary[}\StringTok{"theta"}\NormalTok{,}\StringTok{"sd"}\NormalTok{]}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{Hevo\_est\_lower\_CI }\OtherTok{\textless{}{-}}\NormalTok{ Hevo\_results}\SpecialCharTok{$}\NormalTok{summary[}\StringTok{"theta"}\NormalTok{,}\StringTok{"2.5\%"}\NormalTok{]}
+\NormalTok{    results\_tib[dataset, ]}\SpecialCharTok{$}\NormalTok{Hevo\_est\_upper\_CI }\OtherTok{\textless{}{-}}\NormalTok{ Hevo\_results}\SpecialCharTok{$}\NormalTok{summary[}\StringTok{"theta"}\NormalTok{,}\StringTok{"97.5\%"}\NormalTok{]}
+    
+\NormalTok{  \}}
+  
+  \CommentTok{\# Add causality Boolean to MR{-}Hevo}
+\NormalTok{  results\_tib }\OtherTok{\textless{}{-}}\NormalTok{ results\_tib }\SpecialCharTok{\%\textgreater{}\%}
+   \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Hevo\_est\_causal\_detected =}\NormalTok{ (Hevo\_est\_lower\_CI }\SpecialCharTok{\textgreater{}} \DecValTok{0}  \SpecialCharTok{|}\NormalTok{ Hevo\_est\_upper\_CI }\SpecialCharTok{\textless{}} \DecValTok{0}\NormalTok{))}
+  
+  
+\NormalTok{  output\_tib\_row }\OtherTok{\textless{}{-}}\NormalTok{ results\_tib }\SpecialCharTok{\%\textgreater{}\%} 
+    \FunctionTok{summarise}\NormalTok{(}\AttributeTok{N =}\NormalTok{ n\_participants,}
+              \AttributeTok{Prop\_Invalid =}\NormalTok{ prop\_invalid,}
+              \AttributeTok{F\_stat =} \FunctionTok{mean}\NormalTok{(F\_stat),}
+              \AttributeTok{R2\_stat =} \FunctionTok{mean}\NormalTok{(R2\_stat),}
+              \AttributeTok{WME\_Av =} \FunctionTok{mean}\NormalTok{(WME\_est),}
+              \AttributeTok{WME\_SE =} \FunctionTok{mean}\NormalTok{(WME\_se),}
+              \AttributeTok{WME\_Pos\_Rate =} \FunctionTok{length}\NormalTok{(WME\_pval[WME\_pval }\SpecialCharTok{\textless{}} \FloatTok{0.05}\NormalTok{]) }\SpecialCharTok{/}\NormalTok{ n\_datasets,}
+              \AttributeTok{Hevo\_Av =} \FunctionTok{mean}\NormalTok{(Hevo\_est),}
+              \AttributeTok{Hevo\_SE =} \FunctionTok{mean}\NormalTok{(Hevo\_se),}
+              \AttributeTok{Hevo\_Lower\_CI =} \FunctionTok{mean}\NormalTok{(Hevo\_est\_lower\_CI),}
+              \AttributeTok{Hevo\_Upper\_CI =} \FunctionTok{mean}\NormalTok{(Hevo\_est\_upper\_CI),}
+              \AttributeTok{Hevo\_Pos\_Rate =} \FunctionTok{sum}\NormalTok{(Hevo\_est\_causal\_detected) }\SpecialCharTok{/}\NormalTok{ n\_datasets}
+\NormalTok{    ) }\SpecialCharTok{\%\textgreater{}\%} 
+    \FunctionTok{mutate}\NormalTok{(}\FunctionTok{across}\NormalTok{(}\FunctionTok{where}\NormalTok{(is.double), round, }\DecValTok{3}\NormalTok{))}
+  
+  \FunctionTok{return}\NormalTok{(output\_tib\_row)}
+  
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{test\_tib\_summ\_MR\_data }\OtherTok{\textless{}{-}}  \FunctionTok{get\_simulated\_MR\_data}\NormalTok{(}\AttributeTok{n\_participants =} \DecValTok{10000}\NormalTok{,}
+                                                \AttributeTok{n\_instruments =} \DecValTok{25}\NormalTok{,}
+                                                \AttributeTok{n\_datasets =} \DecValTok{2}\NormalTok{,}
+                                                \AttributeTok{prop\_invalid =} \FloatTok{0.1}\NormalTok{,}
+                                                \AttributeTok{beta\_val =} \FloatTok{0.1}\NormalTok{,}
+                                                \AttributeTok{causal\_effect =} \ConstantTok{TRUE}\NormalTok{,}
+                                                \AttributeTok{rand\_error =} \ConstantTok{TRUE}\NormalTok{,}
+                                                \AttributeTok{two\_sample =} \ConstantTok{TRUE}\NormalTok{,}
+                                                \AttributeTok{balanced\_pleio =} \ConstantTok{TRUE}\NormalTok{,}
+                                                \AttributeTok{InSIDE\_satisfied =} \ConstantTok{TRUE}\NormalTok{)}
+
+\NormalTok{test\_tib\_summ\_MR\_models }\OtherTok{\textless{}{-}} \FunctionTok{get\_models}\NormalTok{(test\_tib\_summ\_MR\_data)}
+
+\NormalTok{test\_tib\_summ\_MR\_row }\OtherTok{\textless{}{-}} \FunctionTok{get\_summary\_MR\_tib\_row}\NormalTok{(test\_tib\_summ\_MR\_models)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## CHECKING DATA AND PREPROCESSING FOR MODEL 'MRHevo.summarystats' NOW.
+## 
+## COMPILING MODEL 'MRHevo.summarystats' NOW.
+## 
+## STARTING SAMPLER FOR MODEL 'MRHevo.summarystats' NOW.
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## CHECKING DATA AND PREPROCESSING FOR MODEL 'MRHevo.summarystats' NOW.
+## 
+## COMPILING MODEL 'MRHevo.summarystats' NOW.
+## 
+## STARTING SAMPLER FOR MODEL 'MRHevo.summarystats' NOW.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{test\_tib\_summ\_MR\_row }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{kable}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{kable\_styling}\NormalTok{(}\AttributeTok{latex\_options=}\StringTok{"scale\_down"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+\centering
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
+\begin{tabular}{r|r|r|r|r|r|r|r|r|r|r|r}
+\hline
+N & Prop\_Invalid & F\_stat & R2\_stat & WME\_Av & WME\_SE & WME\_Pos\_Rate & Hevo\_Av & Hevo\_SE & Hevo\_Lower\_CI & Hevo\_Upper\_CI & Hevo\_Pos\_Rate\\
+\hline
+10000 & 0.1 & 14.739 & 0.036 & 0.091 & 0.09 & 0.5 & 0.121 & 0.001 & -0.052 & 0.302 & 0\\
+\hline
+\end{tabular}}
+\end{table}
+
 \newpage
 
 \section{Appendix: R Packages Used}\label{appendix-pkg}
 
 \subsection{Package Citations}\label{package-citations}
 
-This work was completed using R version 4.4.3\textsuperscript{\citeproc{ref-base}{21}} with the following R packages: acronymsdown v. 0.11.1\textsuperscript{\citeproc{ref-acronymsdown}{39}}, bookdown v. 0.43\textsuperscript{\citeproc{ref-bookdown2016}{40},\citeproc{ref-bookdown2025}{41}}, car v. 3.1.3\textsuperscript{\citeproc{ref-car}{42}}, cowplot v. 1.1.3\textsuperscript{\citeproc{ref-cowplot}{43}}, crayon v. 1.5.3\textsuperscript{\citeproc{ref-crayon}{44}}, devtools v. 2.4.5\textsuperscript{\citeproc{ref-devtools}{45}}, flextable v. 0.9.9\textsuperscript{\citeproc{ref-flextable}{46}}, ftExtra v. 0.6.4\textsuperscript{\citeproc{ref-ftExtra}{47}}, ggdag v. 0.2.13\textsuperscript{\citeproc{ref-ggdag}{48}}, gghighlight v. 0.4.1\textsuperscript{\citeproc{ref-gghighlight}{49}}, gluedown v. 1.0.9\textsuperscript{\citeproc{ref-gluedown}{50}}, grateful v. 0.2.12\textsuperscript{\citeproc{ref-grateful}{51}}, grid v. 4.4.3\textsuperscript{\citeproc{ref-grid}{52}}, here v. 1.0.1\textsuperscript{\citeproc{ref-here}{53}}, infer v. 1.0.8\textsuperscript{\citeproc{ref-infer}{54}}, kableExtra v. 1.4.0\textsuperscript{\citeproc{ref-kableExtra}{55}}, knitr v. 1.50\textsuperscript{\citeproc{ref-knitr2014}{56}--\citeproc{ref-knitr2025}{58}}, matrixStats v. 1.5.0\textsuperscript{\citeproc{ref-matrixStats}{59}}, medicaldata v. 0.2.0\textsuperscript{\citeproc{ref-medicaldata}{38}}, officer v. 0.6.10\textsuperscript{\citeproc{ref-officer}{60}}, parallel v. 4.4.3\textsuperscript{\citeproc{ref-parallel}{61}}, rmarkdown v. 2.29\textsuperscript{\citeproc{ref-rmarkdown2018}{62}--\citeproc{ref-rmarkdown2024}{64}}, rstan v. 2.32.7\textsuperscript{\citeproc{ref-rstan}{65}}, tables v. 0.9.31\textsuperscript{\citeproc{ref-tables}{66}}, tidyverse v. 2.0.0\textsuperscript{\citeproc{ref-tidyverse}{23}}, TwoSampleMR v. 0.6.16\textsuperscript{\citeproc{ref-TwoSampleMR2017}{67},\citeproc{ref-TwoSampleMR2018}{68}}, wordcountaddin v. 0.3.0.9000\textsuperscript{\citeproc{ref-wordcountaddin}{69}}.
+This work was completed using R version 4.4.3\textsuperscript{\citeproc{ref-base}{21}} with the following R packages: acronymsdown v. 0.11.1\textsuperscript{\citeproc{ref-acronymsdown}{45}}, bookdown v. 0.43\textsuperscript{\citeproc{ref-bookdown2016}{46},\citeproc{ref-bookdown2025}{47}}, car v. 3.1.3\textsuperscript{\citeproc{ref-car}{48}}, cowplot v. 1.1.3\textsuperscript{\citeproc{ref-cowplot}{49}}, crayon v. 1.5.3\textsuperscript{\citeproc{ref-crayon}{50}}, devtools v. 2.4.5\textsuperscript{\citeproc{ref-devtools}{51}}, flextable v. 0.9.9\textsuperscript{\citeproc{ref-flextable}{52}}, ftExtra v. 0.6.4\textsuperscript{\citeproc{ref-ftExtra}{53}}, ggdag v. 0.2.13\textsuperscript{\citeproc{ref-ggdag}{54}}, gghighlight v. 0.4.1\textsuperscript{\citeproc{ref-gghighlight}{55}}, gluedown v. 1.0.9\textsuperscript{\citeproc{ref-gluedown}{56}}, grateful v. 0.2.12\textsuperscript{\citeproc{ref-grateful}{57}}, grid v. 4.4.3\textsuperscript{\citeproc{ref-grid}{58}}, here v. 1.0.1\textsuperscript{\citeproc{ref-here}{59}}, infer v. 1.0.8\textsuperscript{\citeproc{ref-infer}{60}}, kableExtra v. 1.4.0\textsuperscript{\citeproc{ref-kableExtra}{61}}, knitr v. 1.50\textsuperscript{\citeproc{ref-knitr2014}{62}--\citeproc{ref-knitr2025}{64}}, matrixStats v. 1.5.0\textsuperscript{\citeproc{ref-matrixStats}{65}}, medicaldata v. 0.2.0\textsuperscript{\citeproc{ref-medicaldata}{44}}, officer v. 0.6.10\textsuperscript{\citeproc{ref-officer}{66}}, parallel v. 4.4.3\textsuperscript{\citeproc{ref-parallel}{67}}, rmarkdown v. 2.29\textsuperscript{\citeproc{ref-rmarkdown2018}{68}--\citeproc{ref-rmarkdown2024}{70}}, rstan v. 2.32.7\textsuperscript{\citeproc{ref-rstan}{71}}, tables v. 0.9.31\textsuperscript{\citeproc{ref-tables}{72}}, tidyverse v. 2.0.0\textsuperscript{\citeproc{ref-tidyverse}{23}}, TwoSampleMR v. 0.6.16\textsuperscript{\citeproc{ref-TwoSampleMR2017}{73},\citeproc{ref-TwoSampleMR2018}{74}}, wordcountaddin v. 0.3.0.9000\textsuperscript{\citeproc{ref-wordcountaddin}{75}}.
 
-\subsection{Session Information}\label{session-information}
+\subsection{Session Information}\label{Session_Information}
+
+CPU: 13th Gen Intel(R) Core(TM) i7-13700H, 20 cores \newline
+RAM: 16.9 GB
 
 \begin{verbatim}
 ##  setting  value
@@ -1929,9 +2399,6 @@ This work was completed using R version 4.4.3\textsuperscript{\citeproc{ref-base
 ## 32 tidyverse   2.0.0         2.0.0         2023~ CRAN ~
 ## 33 TwoSampleMR 0.6.16        0.6.16        2025~ https~
 \end{verbatim}
-
-CPU: 13th Gen Intel(R) Core(TM) i7-13700H, 20 cores
-RAM: \ensuremath{1.69071\times 10^{10}}
 
 \newpage
 

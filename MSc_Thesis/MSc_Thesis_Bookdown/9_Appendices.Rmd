@@ -5,11 +5,11 @@
 ```{r setup9, include=FALSE}
 
 knitr::opts_chunk$set(echo = TRUE,
+                      include = TRUE,
                       warning=FALSE, 
                       message=FALSE, 
                       error=FALSE,
                       cache = TRUE,
-                      include = TRUE,
                       dev = "png", 
                       dpi = 500
 )
@@ -466,7 +466,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
 
 This initial simulation function generated data in the following format:
 
-```{r test-data-sim}
+```{r test-data-sim, echo = TRUE, include = TRUE}
 
 # Check data produced in expected format
 #set.seed(1701)
@@ -557,7 +557,7 @@ get_models <- function(sim){
 
 These models generated estimates of the coefficient of gene-exposure association (`coeff_G_X`), coefficient of gene-outcome association (`coeff_G_Y`), and the relevant standard errors of these estimates. The values of parameters inputted were also returned to aid in further testing of data/model generation, i.e. actual gene-exposure associations (`gamma`), pleiotropic effects of invalid instruments (`alpha`), additional pleiotropic effects when \acr{InSIDE} assumption not satified (`phi`), causal effect of exposure on outcome (`beta`) and the proportion of invalid genetic instruments with pleiotropic effects on the outcome (`prop_invalid`).
 
-```{r test-get-model}
+```{r test-get-model, echo = TRUE, include = TRUE}
 
 test_extract_model <- get_models(test_data_sim)
 
@@ -578,7 +578,7 @@ A series of test plots were used to verify that data were simulated as intended 
 - For invalid instruments:  gene-outcome coefficient = alpha $\ne$  0, with values spread uniformly between `alpha_min` and `alpha_max`
 
 
-```{r test-plot-prop-invalid, echo=FALSE}
+```{r test-plot-prop-invalid, echo=FALSE, include = TRUE}
 
 # Check altering proportion of invalid instruments alters 
 # proportion of instruments displaying pleiotropic effects
@@ -671,7 +671,7 @@ plot_grid(test_plot_inval_0.1,
 \newpage
 Similarly, with random error terms set to 0 (`rand_error = FALSE`) and no causal effect present (`causal_effect = FALSE`), gene-exposure coefficients estimated for each instrument should exactly match the actual values simulated, i.e. `coeff_G_X = gamma` for all instruments:
 
-```{r test-plot-gamma-1, echo=FALSE}
+```{r test-plot-gamma-1, echo=FALSE, include = TRUE}
 
 # Check observed gene-exposure coefficients for each instrument
 # (coeff_G_X) approximate true values (gamma) when a causal effect 
@@ -703,7 +703,7 @@ test_plot_tib_gamma_1 %>%
 ### Gene-Exposure Coefficient Versus Gene-Outcome Coefficient Plots
 \leavevmode\newline For the next phase of testing, a function (`plot_GY_GX`) was written to plot the coefficients for gene-exposure versus gene-outcome as estimated using the previously created linear models:
 
-```{r plot-GY-GX-fn}
+```{r plot-GY-GX-fn, echo=TRUE, include = TRUE}
 
 plot_GY_GX <- function(model_tib, 
                        plot_title = as.character(NA),
@@ -757,7 +757,7 @@ plot_GY_GX <- function(model_tib,
 \newpage
 With random error terms set to 0 (`rand_error = FALSE`) and no causal effect present, a graph of gene-exposure coefficients versus gene-outcome coefficients should be a straight line through the origin with gradient = 0; causal effect of $\beta$ = 0.1  present (`beta_val = 0.1`, `causal_effect = TRUE`), the slope of a graph of gene-exposure coefficients versus gene-outcome coefficients from the same sample should be a straight line through the origin with gradient = 0.1:
 
-```{r test-plot-causal, echo=FALSE}
+```{r test-plot-causal, echo=FALSE, include = TRUE}
 
 source(here("Script", "edin_fig_style.R"))
 source(here("Script", "edin_uni_colours.R"))
@@ -807,7 +807,7 @@ plot_grid(test_plot_causal_0,
 ### Random Errors
 \leavevmode\newline Re-plotting the same graphs with non-zero random error terms (`rand_error = TRUE`) should produce similar graphs with Gaussian spread around lines passing through the origin with gradients of 0 and 0.1 for no causal effect and causal effect, respectively:
 
-```{r test-plot-causal-errors, echo=FALSE}
+```{r test-plot-causal-errors, echo=FALSE, include = TRUE}
 
 
 # Causal effect not present
@@ -851,9 +851,10 @@ plot_grid(test_plot_causal_0_errors,
 ### One versus Two Sample MR
 \leavevmode\newline Where gene-exposure coefficients and gene-outcome coefficients are estimated from two separate samples rather than one (i.e. `two_sample = TRUE`, simulating 2 sample MR), even with random error terms set to zero, error will be introduced into causal effect estimation through random sampling of different combinations of effect alleles. However, where a causal effect is not present, the effect estimated will consistently be zero regardless of the combinations of alleles sampled, so random error should not be introduced:
 
-```{r test-plot-causal-2SMR, echo=FALSE, cache=FALSE}
+```{r test-plot-causal-2SMR, echo=FALSE, cache=FALSE, include = TRUE}
 
-source
+source(here("Script", "edin_fig_style.R"))
+source(here("Script", "edin_uni_colours.R"))
 
 # Causal effect not present
 #set.seed(1701)
@@ -898,7 +899,7 @@ plot_grid(test_plot_causal_0_2SMR,
 ### Invalid Instruments 
 \leavevmode\newline Where invalid instruments are present (i.e. `prop_invalid` $\ne$ `0`) and random error terms are set to 0, graphs of gene-exposure coefficients versus gene-outcome coefficients should be straight lines through the origin and all points representing valid instruments; the invalid instruments should appear as outliers to this line:
 
-```{r test-plot-causal-inval, echo=FALSE}
+```{r test-plot-causal-inval, echo=FALSE, include = TRUE}
 
 
 # Causal effect not present
@@ -944,7 +945,7 @@ plot_grid(test_plot_causal_0_inval,
 ### Balanced Versus Directional Pleiotropy
 \leavevmode\newline Replotting the above with unbalanced pleiotropy present (`balanced_pleio = FALSE`), the invalid instruments should all appear as outliers in the positive direction, i.e. steepening the line of best fit and leading to overestimation of the causal effect: 
 
-```{r test-plot-causal-unbal, echo=FALSE}
+```{r test-plot-causal-unbal, echo=FALSE, include = TRUE}
 
 
 # Causal effect not present
@@ -1003,7 +1004,7 @@ As such, when the \acr{InSIDE} assumption is violated, even "strong" instruments
 Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and \acr{InSIDE} assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene-outcome coefficients with random error terms set to zero:
 
 
-```{r test-plot-phi, echo=FALSE}
+```{r test-plot-phi, echo=FALSE, include = TRUE}
 
 # Check violating InSIDE assumption results in distorted 
 # estimation of pleiotropic effects
@@ -1065,7 +1066,7 @@ plot_grid(test_plot_phi_0,
 Setting `InSIDE_satisfied = TRUE` should mean `phi = 0`; `InSIDE_satisfied=FALSE` should result in `phi` $\propto$ gene-outcome coefficient, with scatter only in the positive direction of gene-outcome coefficients given the model also requires directional pleiotropy before `phi` is used:
 
 
-```{r test-plot-phi-2, echo=FALSE}
+```{r test-plot-phi-2, echo=FALSE, include = TRUE}
 
 # Check violating InSIDE assumption results in distorted 
 # estimation of pleiotropic effects
@@ -1128,7 +1129,7 @@ A function (`get_summary_MR_tib_row`) was written to take models generated from 
 
 
 
-```{r summary-MR-tib-row-fn}
+```{r summary-MR-tib-row-fn, echo=TRUE, include = TRUE}
 
 # Load WME functions
 library(TwoSampleMR)
@@ -1289,7 +1290,7 @@ source(here("Script", "Hevo", "functions.mrhevo.R"))
 
 ```
 
-```{r test-summary-MR-tib-row-fn}
+```{r test-summary-MR-tib-row-fn, echo=TRUE, include = TRUE}
 
 test_tib_summ_MR_data <-  get_simulated_MR_data(n_participants = 10000,
                                                 n_instruments = 25,
@@ -1346,7 +1347,25 @@ grateful::cite_packages(output = "paragraph",
   
 ```
 
-## Session Information
+## Session Information {#Session_Information}
+
+
+```{r system-info, include = TRUE, echo = FALSE}
+
+library(benchmarkme)
+
+sys_details_full <- benchmarkme::get_sys_details()
+
+sysname_release <- paste0(sys_details_full$sys_info, " ", sys_details_full$release)
+
+sys_ram <- sys_details_full$ram
+sys_cpu <- sys_details_full$cpu$model_name
+sys_cores <- sys_details_full$cpu$no_of_cores
+
+```
+
+CPU: `r sys_cpu`, `r sys_cores` cores \newline
+RAM: `r (sys_ram * 10^-9) %>% format(scientific = FALSE) %>% as.numeric() %>%  round(., 1)` GB
 
 ```{r session-info, include=TRUE, echo=FALSE}
 
@@ -1378,22 +1397,5 @@ packages %>%
   print(n = nrow(.))
 
 ```
-
-```{r system-info, include = TRUE, echo = FALSE}
-
-library(benchmarkme)
-
-sys_details_full <- benchmarkme::get_sys_details()
-
-sysname_release <- paste0(sys_details_full$sys_info, " ", sys_details_full$release)
-
-sys_ram <- sys_details_full$ram
-sys_cpu <- sys_details_full$cpu$model_name
-sys_cores <- sys_details_full$cpu$no_of_cores
-
-```
-
-CPU: `r sys_cpu`, `r sys_cores` cores
-RAM: `r sys_ram`
 
 \newpage

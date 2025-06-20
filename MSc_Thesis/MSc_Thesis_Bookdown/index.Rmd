@@ -50,6 +50,7 @@ wordcountaddin::word_count("index.Rmd") +
 wordcountaddin::word_count("2_Intro_Background.Rmd") + 
 wordcountaddin::word_count("3_Methods.Rmd") +
 wordcountaddin::word_count("4_Results.Rmd") +
+wordcountaddin::word_count("5_Discussion.Rmd") +
 wordcountaddin::word_count("6_Limitations_Recommendations.Rmd") 
 `
 <!-- + wordcountaddin::word_count("9_Appendices.Rmd")  -->
