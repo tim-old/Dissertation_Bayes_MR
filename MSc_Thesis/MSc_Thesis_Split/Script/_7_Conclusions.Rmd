@@ -19,3 +19,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 Word count: `r wordcountaddin::word_count(here::here("MSc_Thesis_Split", "Script", "_7_Conclusions.Rmd"))`
+
+# Conclusions
+
+This project aimed to establish whether the \acr{WME} causal effect estimation method for \acr{MR} studies produces over-confident effect estimates versus the MR-Hevo method. 
+
+Using simulated data with known parameters, \acr{WME} and MR-Hevo produced similar effect estimates and 95% \acr{CI}s when averaged over all cases.  However, MR-Hevo reported wider \acr{CI}s than \acr{WME} specifically in cases where key assumptions of \acr{IV} analysis were violated; this resulted in an overall false-positive report rate an order of magnitude lower for MR-Hevo versus \acr{WME} (`r no_causal_Hevo_mean_pos_rate`% versus `r no_causal_WME_mean_pos_rate`%) across simulations with no causal effect present. In cases where a causal effect was present, the overall sensitivity was slightly higher for MR-Hevo versus \acr{WME} (`r causal_Hevo_mean_pos_rate`% versus `r causal_WME_mean_pos_rate`%), though this appeared to be driven by one parameter combination in particular (20,000 simulated participants, 0% invalid instruments), a phenomenon which warrants further investication. In a majority of cases (58%), MR-Hevo's greatly improved specificity came at the expense of a moderate drop in sensitivity, typically in the order of 5-10%, though up to 23% in the most extreme case.
+
+Analysis of data from highly cited \acr{MR} studies was attempted using both \acr{WME} and MR-Hevo
