@@ -19,7 +19,7 @@ n_datasets <- 100
 
 # 0% Invalid
 
-no_causal_200k_point0_scen1_data <-  get_simulated_MR_data(n_participants = 2000000,
+no_causal_200k_point0_scen1_data <-  get_simulated_MR_data(n_participants = 200000,
                                                            n_instruments = 25,
                                                            n_datasets = n_datasets,
                                                            prop_invalid = 10^-300,
@@ -34,6 +34,7 @@ no_causal_200k_point0_scen1_models <- get_models(no_causal_200k_point0_scen1_dat
 
 
 saveRDS(no_causal_200k_point0_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point0_scen1_models.rds"))
+rm(no_causal_200k_point0_scen1_data, no_causal_200k_point0_scen1_models)
 
 # 10% Invalid
 
@@ -52,6 +53,7 @@ no_causal_200k_point1_scen1_models <- get_models(no_causal_200k_point1_scen1_dat
 
 
 saveRDS(no_causal_200k_point1_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point1_scen1_models.rds"))
+rm(no_causal_200k_point1_scen1_data, no_causal_200k_point1_scen1_models)
 
 # 20% Invalid
 
@@ -70,6 +72,7 @@ no_causal_200k_point2_scen1_models <- get_models(no_causal_200k_point2_scen1_dat
 
 
 saveRDS(no_causal_200k_point2_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point2_scen1_models.rds"))
+rm(no_causal_200k_point2_scen1_data, no_causal_200k_point2_scen1_models)
 
 # 30% Invalid
 
@@ -88,6 +91,8 @@ no_causal_200k_point3_scen1_models <- get_models(no_causal_200k_point3_scen1_dat
 
 
 saveRDS(no_causal_200k_point3_scen1_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point3_scen1_models.rds"))
+rm(no_causal_200k_point3_scen1_data, no_causal_200k_point3_scen1_models)
+
 
 # --- Scenario 2: Directional Pleiotropy, InSIDE Assumption Satisfied --- #
 
@@ -109,6 +114,7 @@ no_causal_200k_point0_scen2_models <- get_models(no_causal_200k_point0_scen2_dat
 
 
 saveRDS(no_causal_200k_point0_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point0_scen2_models.rds"))
+rm(no_causal_200k_point0_scen2_data, no_causal_200k_point0_scen2_models)
 
 # 10% Invalid
 
@@ -125,6 +131,8 @@ no_causal_200k_point1_scen2_models <- get_models(no_causal_200k_point1_scen2_dat
 
 
 saveRDS(no_causal_200k_point1_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point1_scen2_models.rds"))
+rm(no_causal_200k_point1_scen2_data, no_causal_200k_point1_scen2_models)
+
 
 # 20% Invalid
 
@@ -141,6 +149,7 @@ no_causal_200k_point2_scen2_models <- get_models(no_causal_200k_point2_scen2_dat
 
 
 saveRDS(no_causal_200k_point2_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point2_scen2_models.rds"))
+rm(no_causal_200k_point2_scen2_data, no_causal_200k_point2_scen2_models)
 
 # 30% Invalid
 
@@ -157,6 +166,7 @@ no_causal_200k_point3_scen2_models <- get_models(no_causal_200k_point3_scen2_dat
 
 
 saveRDS(no_causal_200k_point3_scen2_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point3_scen2_models.rds"))
+rm(no_causal_200k_point3_scen2_data, no_causal_200k_point3_scen2_models)
 
 # --- Scenario 3: Directional Pleiotropy, InSIDE Assumption Not Satisfied --- #
 
@@ -178,6 +188,8 @@ no_causal_200k_point0_scen3_models <- get_models(no_causal_200k_point0_scen3_dat
 
 
 saveRDS(no_causal_200k_point0_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point0_scen3_models.rds"))
+rm(no_causal_200k_point0_scen3_data, no_causal_200k_point0_scen3_models)
+
 
 # 10% Invalid
 
@@ -194,6 +206,8 @@ no_causal_200k_point1_scen3_models <- get_models(no_causal_200k_point1_scen3_dat
 
 
 saveRDS(no_causal_200k_point1_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point1_scen3_models.rds"))
+rm(no_causal_200k_point1_scen3_data, no_causal_200k_point1_scen3_models)
+
 
 # 20% Invalid
 
@@ -210,6 +224,8 @@ no_causal_200k_point2_scen3_models <- get_models(no_causal_200k_point2_scen3_dat
 
 
 saveRDS(no_causal_200k_point2_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point2_scen3_models.rds"))
+rm(no_causal_200k_point2_scen3_data,no_causal_200k_point2_scen3_models )
+
 
 # 30% Invalid
 
@@ -226,4 +242,4 @@ no_causal_200k_point3_scen3_models <- get_models(no_causal_200k_point3_scen3_dat
 
 
 saveRDS(no_causal_200k_point3_scen3_models, file = here("MSc_Thesis_Split", "Data", "Simulated_Datasets", "no_causal_200k_point3_scen3_models.rds"))
-
+rm(no_causal_200k_point3_scen3_data, no_causal_200k_point3_scen3_models)

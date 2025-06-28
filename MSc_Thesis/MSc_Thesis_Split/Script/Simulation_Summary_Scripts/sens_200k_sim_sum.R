@@ -8,7 +8,7 @@ library(here)
 source(here("MSc_Thesis_Split", "Script", "simulation_functions.R"))
 
 # Set number of datasets used
-n <- 1
+n <- 100
 
 ### --- Scenario 1 --- ###
 

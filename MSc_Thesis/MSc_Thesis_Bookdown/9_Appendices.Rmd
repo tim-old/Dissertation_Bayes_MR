@@ -26,10 +26,10 @@ library(acronymsdown)
 library(grateful)
 
 # Load University of Edinburgh colour palette
-source(here("Script", "edin_uni_colours.R"))
+source(here::here("Script", "edin_uni_colours.R"))
 
 # Load pre-formatted plot template - call to ggplot with UoE colours
-source(here("Script", "edin_fig_style.R"))
+source(here::here("Script", "edin_fig_style.R"))
 
 
 ```
@@ -759,8 +759,8 @@ With random error terms set to 0 (`rand_error = FALSE`) and no causal effect pre
 
 ```{r test-plot-causal, echo=FALSE, include = TRUE}
 
-source(here("Script", "edin_fig_style.R"))
-source(here("Script", "edin_uni_colours.R"))
+source(here::here("Script", "edin_fig_style.R"))
+source(here::here("Script", "edin_uni_colours.R"))
 
 # No causal effect present
 #set.seed(1701)
@@ -853,8 +853,8 @@ plot_grid(test_plot_causal_0_errors,
 
 ```{r test-plot-causal-2SMR, echo=FALSE, cache=FALSE, include = TRUE}
 
-source(here("Script", "edin_fig_style.R"))
-source(here("Script", "edin_uni_colours.R"))
+source(here::here("Script", "edin_fig_style.R"))
+source(here::here("Script", "edin_uni_colours.R"))
 
 # Causal effect not present
 #set.seed(1701)
@@ -1140,7 +1140,7 @@ library(rstan)
 
 # Run local copy of MR-Hevo functions
 # Not using full package due to conflicts with Windows
-source(here("Script", "Hevo", "functions.mrhevo.R"))
+source(here::here("Script", "Hevo", "functions.mrhevo.R"))
 
 # Standard set-up for RStan
 options(mc.cores = parallel::detectCores())
@@ -1148,7 +1148,7 @@ rstan_options(auto_write = TRUE, save_dso = TRUE)
 
 
 # Compile model for MR-Hevo
-mr.stanmodel <- stan_model(file= here("Script", 
+mr.stanmodel <- stan_model(file= here::here("Script", 
                                       "Hevo", 
                                       "MRHevo_summarystats.stan"),
                            model_name="MRHevo.summarystats", 
@@ -1261,7 +1261,7 @@ get_summary_MR_tib_row <- function(model_list){
               Hevo_Upper_CI = mean(Hevo_est_upper_CI),
               Hevo_Pos_Rate = sum(Hevo_est_causal_detected) / n_datasets
     ) %>% 
-    mutate(across(where(is.double), round, 3))
+    mutate(across(where::here(is.double), round, 3))
   
   return(output_tib_row)
   
@@ -1282,11 +1282,11 @@ get_summary_MR_tib_row <- function(model_list){
 # ! error in evaluating the argument 'object' in selecting a method for function 'summary': error in evaluating the argument 'object' in selecting a method for function 'sampling': object 'mr.stanmodel' not found
 
 # Load function scripts
-source(here("Script", "simulation_functions.R"))
+source(here::here("Script", "simulation_functions.R"))
 
 # Run local copy of MR-Hevo functions
 # Not using full package due to conflicts with Windows
-source(here("Script", "Hevo", "functions.mrhevo.R"))
+source(here::here("Script", "Hevo", "functions.mrhevo.R"))
 
 ```
 
@@ -1327,7 +1327,7 @@ test_tib_summ_MR_row %>%
 
 grateful::cite_packages(output = "paragraph",
                         passive.voice = TRUE,
-                        out.dir = here(),
+                        out.dir = here::here(),
                         omit = NULL,
                         include.RStudio = FALSE) 
   #gt() %>% 
@@ -1347,7 +1347,7 @@ grateful::cite_packages(output = "paragraph",
   
 ```
 
-## Session Information {#Session_Information}
+## Session Information {#Session-Information}
 
 
 ```{r system-info, include = TRUE, echo = FALSE}
