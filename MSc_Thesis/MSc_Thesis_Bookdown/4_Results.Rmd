@@ -228,6 +228,8 @@ plot_grid(plot_two_cols,
 
 ### Analysis of Simulated Data
 
+Due to a coding issue with outputs from MR-Hevo functions, the \acr{SE}s were not successfully retrieved. 95% \acr{CI}s were retrieved as intended. To aid comprehension and comparison of below results, it was decided to display an estimated \acr{SE} for MR-Hevo, calculated as $\frac{(Upper \space CI - Lower \space CI)}{3.92}$, i.e. approximating the bootstrap distribution as normally distributed as expected per \acr{CLT}. However, the reader should note that, whilst \acr{CI}s for MR-Hevo are accurate, MR-Hevo \acr{SE}s are approximate only.
+
 ```{r sim-summ-load}
 
 # --- Load results --- #
@@ -332,6 +334,9 @@ no_causal_Hevo_better_pc <- (no_causal_Hevo_better_n/no_causal_comb_n * 100) %>%
 
 # Mean/CIs
 no_causal_Hevo_mean_est <- no_causal_sim_summ_tib$Hevo_Av %>% mean() %>% signif(2)
+no_causal_Hevo_mean_est_S1 <- no_causal_sim_summ_tib$Hevo_Av %>% filter() %>% mean() %>% signif(2)
+no_causal_Hevo_mean_est_S2 <- no_causal_sim_summ_tib$Hevo_Av %>% mean() %>% signif(2)
+no_causal_Hevo_mean_est_S3 <- no_causal_sim_summ_tib$Hevo_Av %>% mean() %>% signif(2)
 no_causal_Hevo_mean_lower <- no_causal_sim_summ_tib$Hevo_Lower_CI %>% mean() %>% signif(2)
 no_causal_Hevo_mean_upper <- no_causal_sim_summ_tib$Hevo_Upper_CI %>% mean() %>% signif(2)
 
@@ -353,6 +358,8 @@ no_causal_WME_max_SE <- no_causal_sim_summ_tib$WME_SE %>% max() %>% signif(2)
 
 #### No Causal Effect {#results-sim-no-causal}
 \leavevmode\newline Across all cases where no causal effect was present (Table \@ref(tab:no-causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. false-positive rate) for MR-Hevo was `r no_causal_Hevo_mean_pos_rate`% versus `r no_causal_WME_mean_pos_rate`% for \acr{WME}. Of the `r no_causal_comb_n` combinations of scenarios and parameters, MR-Hevo exhibited a favourable false-positive rate versus \acr{WME} in `r no_causal_Hevo_better_n` (`r no_causal_Hevo_better_pc`%). 
+
+Under Scenario 1, 
 
 For both MR-Hevo and \acr{WME} methods, false-positive report rates generally increased with an increasing proportion of invalid instruments up to around 20% invalid \acr{IV}s. As assumption violations progressively presented greater data variability and bias across scenarios 1 to 3, both MR-Hevo and \acr{WME} methods tended to exhibit higher false-positive report rates, though this progression was noticably attenuated for MR-Hevo versus \acr{WME}, particularly under the assumptions of Scenario 3.  Both trends across invalid instrument proportions and scenarios were somewhat attenuated by increasing sample size from 10,000 to 20,000 participants for both methods.
 

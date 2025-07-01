@@ -45,7 +45,7 @@ source(here::here("Script", "edin_fig_style.R"))
 
 ## Bootstrapping - General Method
 
-The typical process for "bootstrap" generating an estimate, \acr{SE} and \acr{CI}s of a population parameter (e.g. population mean $\mu$) from a sample $x$ is as follows[@buscaglia_chapter_2020]:
+Estimating the true value of a population parameter from a smaller sample of the population inherently involves uncertainty. Unless data are gathered from all members of the population, it is always possible that population members excluded from a sample will be poorly represented by the population members included in the sample. The typical process for "bootstrap" generating an estimate, \acr{SE} and \acr{CI}s of a population parameter (e.g. population mean $\mu$) from a sample $x$ is as follows[@buscaglia_chapter_2020]:
 
 1. A sample, $x$, of $n$ individuals is selected from a total population, $X$, of $N$ individuals
 2. This sample $x$ is then treated as the "bootstrap population"; the empirical distribution of values in the $n$ individuals in the bootstrap population is taken to be broadly representative of the distribution of values in the underlying population $X$ of $N$ individuals
@@ -54,7 +54,7 @@ The typical process for "bootstrap" generating an estimate, \acr{SE} and \acr{CI
 5. The set of $k$ statistics are combined to form a "bootstrap distribution"; as expected from \acr{CLT}[@ross_chapter_2014], this is typically closer to a normal distribution than the underlying distribution of values in either the bootstrap population $x$ or the total population $X$. (See Figure \@ref(fig:prostate-vol) for an example of this)
 6. The final values are derived as follows:
 
-> - the parameter estimate (e.g. estimate of the true population mean, $\hat{\mu}$) is taken as the mean of the bootstrap distribution of $k$ estimates, $(\sum^k_{i = 1} \bar{x}) \div n$
+> - the parameter estimate (e.g. estimate of the true population mean, $\hat{\mu}$) is taken as the mean of the bootstrap distribution of $k$ estimates, $\hat{\mu} = (\sum^k_{i = 1} \bar{x}) \div k$
 > - the \acr{CI}s are taken as the values at the appropriate centiles at the edges of the sampling distribution, e.g. a 95% \acr{CI} would be generated using values at the 2.5th and 97.5th centiles
 > - the \acr{SE} of the estimate is taken as the \acr{SD} of the sampling distribution, given by $\sqrt{\frac{1}{k - 1} \sum^k_{i = 1} (\bar{x_i} - \hat{\mu})^2}$
 
@@ -76,20 +76,26 @@ library(gghighlight)
 prostate_vol_pop <- blood_storage %>% 
   plot_template() +
   geom_histogram(aes(x = PVol), 
-                     #y = stat(density)),
+                 binwidth = 2,
+                 #y = stat(density)),
                  fill = edin_blue_hex) +
   labs(subtitle = "A) True distribution, N = 307",
-       x = NULL)
+       x = NULL) +
+  xlim(10, 275) +
+  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 set.seed(1701)
 prostate_vol_samp <- blood_storage %>% 
   slice_sample(n = 100) %>% 
   plot_template() +
   geom_histogram(aes(x = PVol), 
-                     #y=stat(density)),
+                 binwidth = 2,
+                 #y=stat(density)),
                  fill = edin_blue_hex) +
   labs(subtitle = "B) Empirical distribution, n = 100",
-       x = NULL)
+       x = NULL) +
+  xlim(10, 275) +
+  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 set.seed(1701)
 prostate_vol_boot_1k <- blood_storage %>% 
@@ -103,13 +109,16 @@ prostate_vol_boot_1k <- blood_storage %>%
          upper = quantile(stat, 0.975)) %>% 
   plot_template() +
   geom_histogram(aes(x = stat),
-                     #y=stat(density)),
+                 binwidth = 2,
+                 #y=stat(density)),
                  fill = edin_blue_hex) +
   # Plot CIs
   gghighlight(stat > lower & stat < upper,
               unhighlighted_params = list(fill = edin_burgundy_hex)) +
   labs(subtitle = "C) Bootstrap distribution, k = 1,000",
-       x = NULL)
+       x = NULL) +
+  xlim(10, 275) +
+  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 set.seed(1701)
 prostate_vol_boot_100k <- blood_storage %>% 
@@ -123,14 +132,17 @@ prostate_vol_boot_100k <- blood_storage %>%
          upper = quantile(stat, 0.975)) %>% 
   plot_template() +
   geom_histogram(aes(x = stat),
-                stat = "bin",
-                    #y=stat(density)),
+                stat = "bin", 
+                binwidth = 2,
+                #y=stat(density)),
                 fill = edin_blue_hex) +
   # Plot CIs
   gghighlight(stat > lower & stat < upper,
               unhighlighted_params = list(fill = edin_burgundy_hex)) +
   labs(subtitle = "D) Bootstrap distribution, k = 100,000",
-       x = "Prostate volume/mL")
+       x = "Prostate volume/mL") +
+  xlim(10,275) +
+  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 
 cowplot::plot_grid(prostate_vol_pop, 
@@ -147,15 +159,21 @@ cowplot::plot_grid(prostate_vol_pop,
 
 ## Bootstrapping - Relevance to WME
 
-In current implementations of \acr{WME}, the \acr{WME} estimate of the causal effect ($\hat{\beta}_{WME}$) is calculated as described in Bowden et al[@bowden_consistent_2016], and the 95% \acr{CI} is generated separately using bootstrapping, though notably not using the method described above. 
+In current implementations of \acr{WME}, the \acr{WME} estimate of the causal effect ($\hat{\beta}_{WME}$) is calculated as described in Bowden et al[@bowden_consistent_2016], and the 95% \acr{CI} is generated separately using what is described as a bootstrapping approach. However, the implementation of this deviates from the standard bootstrapping methodology described above.
 
-The bootstrapping process begins similarly, with re-sampling undertaken (a default of $k = 1000$ times) to generate $k$ bootstrap samples $x^{*1}, x^{*2},...x^{*k}$. Each individual bootstrap sample $x^{*i}$ is used to estimate the causal effect using the \acr{WME} method $\hat{\beta}^{*i}_{WME}$, and thus a bootstrap distribution of $k$ values of \acr{WME} is created, $\hat{\beta}^{*1}_{WME},  \hat{\beta}^{*2}_{WME}....\hat{\beta}^{*k}_{WME}$. 
+\acr{CI}s for \acr{WME} are generated in the following way (see [Web Appendix 2](https://research-information.bris.ac.uk/ws/portalfiles/portal/101612595/Bowden_et_al_2016_Genetic_Epidemiology.sup_1.pdf) from the original paper[@bowden_consistent_2016] for full code):
 
-At this stage, however, the bootstrap distribution is then assumed to be approximately normally distributed without verifying this assumption. The 95% \acr{CI} of the bootstrap estimate is then calculated as 1.96 \acr{SD}s of the bootstrap distribution either side of the mean estimate, i.e. $\hat{\beta}_{WME} \pm 1.96  \times SE$. This approach may be problematic for several reasons. 
+1. Summary data (estimates of gene-exposure coefficient $\hat{\gamma}$, gene-outcome coefficient $\hat{\Gamma}$, and their respective standard errors) are obtained for a sample $x$ of $n$ genetic instruments, $G_1, G_2...G_j...G_n$.
+2. For each instrument $G_j$ in $x$, a normal distribution is created centered on the input gene-exposure coefficient estimate $\hat{\gamma_j}$, with the \acr{SD} of this distribution set equal to the \acr{SE} of the estimate, $SE({\hat{\gamma_j}})$.
+3. Each of these normal distributions $\mathcal{N}(\space \hat{\gamma_j}, \space SE({\hat{\gamma_j}})\space)$ is treated as a bootstrap population for estimating the gene-exposure coefficient and standard error for its respective instrument. Each instrument is re-sampled a default of $k = 1000$ times from its bootstrap population, forming a bootstrap distribution of $k$ estimates of the gene-exposure coefficient for each instrument, $\hat{\gamma}_j^{*1}, \hat{\gamma}_j^{*2}...\hat{\gamma}_j^{*k}$
+4. Steps $2.$ and $3.$ are repeated using gene-outcome coefficients and their \acr{SE}s
+5. For each instrument, a Wald estimate of causal effect, $\hat{\beta_j} = \frac{\hat{\Gamma}_j}{\hat{\gamma}_j}$ is obtained from each of the $k$ pairs of gene-exposure and gene-outcome coefficients, $\hat{\beta_j}^{*1}, \hat{\beta_j}^{*2}...\hat{\beta_j}^{*k}$
+6. A weighted median causal estimate is calculated from each of the $k$ sets of Wald estimates, $\hat{\beta}_{WME}^{*1}, \hat{\beta}_{WME}^{*2}...\hat{\beta}_{WME}^{*k}$, or $(\hat{\beta}_{WME}^{*i})_{i=1}^k$
+7. The standard deviation of the $k$ bootstrapped values of $(\hat{\beta}_{WME}^{*i})_{i=1}^k$ is taken as the bootstrapped standard error $SE^*$ of the empiric/observed \acr{WME} causal estimate, $\hat{\beta}_{WME}$. The 95% \acr{CI} is then calculated as $\hat{\beta}_{WME} \pm 1.96  \times SE^*$
 
-Although \acr{CLT} leads us to expect that the bootstrap distribution will approach normality as the number of bootstrap iterations $k$ increases, the extent to which this occurs for a given $k$ may depend on the inital distribution of values in the population $X$, and so also on the distribution in the sample/bootstrap population $x$. If the true distribution of values is very non-normal, as may be the case for traits determined by complex genetic and environmental influences, it may take relatively more bootstrap iterations for the bootstrap distribution to become sufficiently normal to assume mean and \acr{SD} accurately describe it. 
+This approach differs from typical bootstrapping methodology in several regards. Of particular note, gene-exposure and gene-outcome coefficients are re-sampled from normal distributions _for a given set of instruments_. This approach may adequately account for some random error in the estimation of these coefficients, but it does not account for the distribution or magnitude of pleiotropic effects. A re-sampling approach could account for pleiotropy-related uncertainty, but this would require re-sampling of the instruments themselves, which is difficult to implement in practice. 
 
-Additionally, the bootstrap \acr{SE} is inversely proportional to the number of bootstrap iterations $k$, as opposed to the usual standard error (given by $SE = \frac{SD}{\sqrt{n}}$), which is inversely proportional to the square root of the sample size $n$. It is therefore possible to generate smaller \acr{SE}s by increasing the number of bootstrap samples obtained. This may lead to false confidence in estimates generated despite potential issues with initial sample $x$, e.g. if it too small, or sampled in such a way that it is not representative of the underlying population $X$. Although such issues are inherent to any bootstrapping approaches, the usual method of generating bootstrapped \acr{CI}s detailed above uses more information (i.e. using the entire bootstrap distribution) to generate these values than the parameter-based $estimate \pm 1.96 \times SE$ method (i.e. using approximate summary statistics to represent the distribution). The usual method of bootstrap \acr{CI} generation may therefore be expected to highlight any variation or uncertainty present more readily than the parameter-based approach; this would be represented as wider \acr{CI}s.
+Given that this method of \acr{CI} generation does not account for an important source of uncertainty, it would be expected to be over-confident and produce \acr{CI}s which are too narrow. Narrow \acr{CI}s are less likely to include the null value, and therefore this may lead to higher rates of causality being reported when using this method, even when no true causal effect exists. As such, incorrect \acr{CI} generation may therefore contribute to a higher Type 1 error rate when using \acr{WME} than might otherwise be expected. 
 
 \newpage
 
@@ -214,7 +232,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
                                   beta_val = 0.1,         # size of causal effect
                                   allele_freq_min = 0.4,  # frequency of effect allele 0.01/0.99
                                   allele_freq_max = 0.6,  #?0.4/0.6
-                                  gamma_min = 0.03,       # size of pleiotropic effects on exposure
+                                  gamma_min = 0.03,       # size of genetic effects on exposure
                                   gamma_max = 0.1,
                                   alpha_min = -0.2,       # size of pleiotropic effects on outcome
                                   alpha_max = 0.2,
@@ -1235,8 +1253,8 @@ get_summary_MR_tib_row <- function(model_list){
     
     # Extract MR-Hevo Results
     results_tib[dataset, ]$Hevo_est <- Hevo_results$summary["theta","mean"]
-    results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"]
-    results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"]
+    results_tib[dataset, ]$Hevo_se <- Hevo_results$summary["theta","se_mean"] # Used in error - actually Monte Carlo SE
+    results_tib[dataset, ]$Hevo_sd <- Hevo_results$summary["theta","sd"] # Should have been used as SE - SD of bootstrap distribution
     results_tib[dataset, ]$Hevo_est_lower_CI <- Hevo_results$summary["theta","2.5%"]
     results_tib[dataset, ]$Hevo_est_upper_CI <- Hevo_results$summary["theta","97.5%"]
     

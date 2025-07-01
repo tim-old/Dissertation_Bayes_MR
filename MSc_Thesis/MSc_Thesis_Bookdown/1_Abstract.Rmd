@@ -2,15 +2,15 @@
 
 ## Background
 
-Mendelian randomisation (MR) uses data from observational genetic studies to support causal inference between exposures and outcomes of interest. The field has been challenged by high false-positive report rates, including causal links reported despite biological implausibility. MR-Hevo is a novel MR causal effect estimation methodology whose creators claim superior performance versus the established weighted median estimator (WME) method.
+Mendelian randomisation (MR) uses data from observational genetic studies to support causal inference between exposures and outcomes of interest. The field has been challenged by high false-positive report rates. MR-Hevo is an MR causal effect estimation methodology whose creators claim fewer false-positive reports versus the established weighted median estimator (WME) method.
 
 ## Aims
 
-To evaluate any difference in performance between WME versus MR-Hevo methods, and establish whether these may alter conclusions drawn in real-world studies.
+To evaluate any difference in causal effect estimates between WME versus MR-Hevo methods, and establish whether these may alter conclusions drawn in real-world studies.
 
 ## Methods
 
-Performance of each method was compared through parallel analysis of simulated data with known characteristics. Data were simulated per the published approach originally used to validate WME. Simulations represented a range of plausible combinations of population parameters and assumption violations. To investigate differences between methods using real-world data, both methods were applied to a sample of ten highly-cited MR studies reporting both a WME causal effect estimate and sufficient data to allow replication.
+Performance of each method was compared through parallel analysis of simulated data with known characteristics. Data were simulated per the published approach used to validate WME. Simulations represented a range of plausible combinations of population parameters and assumption violations. To investigate differences between methods using real-world data, both methods were applied to a sample of ten highly-cited MR studies reporting both a WME causal effect estimate and sufficient data to allow replication.
 
 ## Results
 
