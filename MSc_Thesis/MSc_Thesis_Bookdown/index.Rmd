@@ -1,5 +1,5 @@
 ---
-title: "Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Novel Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology"
+title: "Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Modern Bayesian Approach To Genetic Pleiotropy Versus Established Weighted Median Methodology"
 author: "B233241"
 date: "September 2024 - June 2025"
 header-includes:
@@ -28,16 +28,12 @@ acronyms:
 
 ## Acknowledgements {-}
 
-I would like to acknowledge
+I would like to thank Dr Athina Spiliopoulou for her expertise, kindness, and infinite patience in supervising this dissertation. I thank Professor Paul McKeigue for his input regarding the background and methodology of the project. Finally, my deepest gratitude goes to my wife, for keeping all our plates spinning while I've been busy shouting at my laptop.
 
 
-## Contributions {-}
+## Statement of Originality & Contributions {-}
 
-Mine others
-
-## Statement of Originality {-}
-
-I confirm that all work is my own except where indicated, that all sources are clearly referenced....
+I confirm that all work is my own except where indicated, and that all sources are clearly referenced. Parts of this dissertation were informed by my participation in a related project with my supervisor's research group, which included comparison of Mendelian randomisation causal estimation methods using similar methodology, i.e. data simulation and citation searching. I confirm that all simulation code, literature searches and analyses contained within this dissertation are solely my own work, produced under the appropriate guidance of my supervisor.
 
 
 ## Word Count {-}
@@ -46,7 +42,6 @@ I confirm that all work is my own except where indicated, that all sources are c
 
 Word count: 
 `r 
-wordcountaddin::word_count("index.Rmd") +
 wordcountaddin::word_count("2_Intro_Background.Rmd") + 
 wordcountaddin::word_count("3_Methods.Rmd") +
 wordcountaddin::word_count("4_Results.Rmd") +

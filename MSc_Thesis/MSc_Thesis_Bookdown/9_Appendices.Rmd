@@ -132,10 +132,10 @@ prostate_vol_boot_100k <- blood_storage %>%
          upper = quantile(stat, 0.975)) %>% 
   plot_template() +
   geom_histogram(aes(x = stat),
-                stat = "bin", 
-                binwidth = 2,
-                #y=stat(density)),
-                fill = edin_blue_hex) +
+                 stat = "bin", 
+                 binwidth = 2,
+                 #y=stat(density)),
+                 fill = edin_blue_hex) +
   # Plot CIs
   gghighlight(stat > lower & stat < upper,
               unhighlighted_params = list(fill = edin_burgundy_hex)) +
@@ -151,7 +151,7 @@ cowplot::plot_grid(prostate_vol_pop,
                    prostate_vol_boot_100k,
                    ncol = 1,
                    rel_heights = c(1,1,1,1.3)
-                   )
+)
 
 ```
 
@@ -263,13 +263,13 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   gamma_list <- list()
   alpha_list <- list()
   phi_list <- list()
-
+  
   
   n_participants_list <- list()
   n_instruments_list <- list()
   prop_invalid_list <- list()
   beta_val_list <- list()
-
+  
   
   
   # --- Assign features common to all datasets --- #
@@ -335,7 +335,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
            )
     )
     
-
+    
     # Assign default phi = 0 unless directional pleiotropy & 
     # InSIDE assumption not satisfied & genetic instrument invalid
     if(balanced_pleio == FALSE & InSIDE_satisfied == FALSE){
@@ -366,7 +366,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
   for(n in 1:n_datasets){
     
     # --- Create matrix of genotypes --- #
-
+    
     # Assign genotypes by sampling from binomial distribution
     # twice (as two alleles) per participant with probability
     # equal to frequency of effect allele
@@ -410,7 +410,7 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
     # i.e. Ui, Xi and Yi. Uses matrix inner product operator " %*%" 
     # https://stackoverflow.com/questions/22060515/the-r-operator 
     # http://matrixmultiplication.xyz/
-
+    
     #     U (vector: unmeasured confounding exposures per participant), 
     #     X (vector: exposure:outcome associations estimated per participant) 
     #     Y (vector: gene:outcome association estimated per participant) 
@@ -452,8 +452,8 @@ get_simulated_MR_data <- function(n_participants = as.integer(),
     n_instruments_list[[n]] <- n_instruments
     prop_invalid_list[[n]] <- prop_invalid
     beta_val_list[[n]] <- beta_val
-   
-     
+    
+    
   }
   
   
@@ -511,7 +511,7 @@ A function (`get_models`) was then written to create linear models from each dat
 # Create plotting tibble with Mean/SD X + Y grouped by
 # Dataset + instrument
 get_models <- function(sim){
-    
+  
   output_list <- list()
   
   # Create linear models per dataset to get coefficients
@@ -540,7 +540,7 @@ get_models <- function(sim){
     
     R2_stat <- summary(lm(X ~ Instruments_X))$r.squared
     F_stat <- summary(lm(X ~ Instruments_X))$fstatistic[[1]]
-
+    
     
     # Model for gene:outcome
     Y_lm <- lm(Y ~ 0 + Instruments_Y)
@@ -1017,7 +1017,7 @@ plot_grid(test_plot_causal_0_unbal,
 
 - several invalid genetic instruments are related to the same (unmeasured) confounders of the exposure:outcome relationship, aka correlated pleiotropy. 
 
-As such, when the \acr{InSIDE} assumption is violated, even "strong" instruments (i.e. those with a strong gene-exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are balanced, InSIDE assumption violation may lead to greater imprecision in causal effect estimation; if pleiotropic effects are directional, \acr{InSIDE} assumption violation may lead to bias.
+As such, when the \acr{InSIDE} assumption is violated, even "strong" instruments (i.e. those with a strong gene-exposure relationship) may not allow accurate estimation of the true causal effect, as pleiotropic effects may scale with instrument strength. If pleiotropic effects are directional, \acr{InSIDE} assumption violation may lead to bias.
 
 Bowden et al [@bowden_consistent_2016] modeled phi as the pleiotropic effects of unmeasured genetic confounders of the exposure:outcome relationship.  Phi adds additional error to causal effect estimation in scenarios with directional pleiotropic effects (`0 < alpha < 0.2`) and \acr{InSIDE} assumption violation. As such, switching `InSIDE_satisfied` from `TRUE` to `FALSE` should add scatter to the linear association expected when plotting alpha versus gene-outcome coefficients with random error terms set to zero:
 
@@ -1167,8 +1167,8 @@ rstan_options(auto_write = TRUE, save_dso = TRUE)
 
 # Compile model for MR-Hevo
 mr.stanmodel <- stan_model(file= here::here("Script", 
-                                      "Hevo", 
-                                      "MRHevo_summarystats.stan"),
+                                            "Hevo", 
+                                            "MRHevo_summarystats.stan"),
                            model_name="MRHevo.summarystats", 
                            verbose=FALSE,
                            save_dso = TRUE,
@@ -1239,10 +1239,10 @@ get_summary_MR_tib_row <- function(model_list){
     
     # Results from MR-Hevo method
     Hevo_results<- run_mrhevo.sstats(alpha_hat = coeff_G_X_vect,
-                                    se.alpha_hat = coeff_G_X_SE_vect,
-                                    gamma_hat = coeff_G_Y_vect,
-                                    se.gamma_hat = coeff_G_Y_SE_vect) %>%
-     summary()
+                                     se.alpha_hat = coeff_G_X_SE_vect,
+                                     gamma_hat = coeff_G_Y_vect,
+                                     se.gamma_hat = coeff_G_Y_SE_vect) %>%
+      summary()
     
     
     # Extract WME Results
@@ -1262,7 +1262,7 @@ get_summary_MR_tib_row <- function(model_list){
   
   # Add causality Boolean to MR-Hevo
   results_tib <- results_tib %>%
-   mutate(Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0))
+    mutate(Hevo_est_causal_detected = (Hevo_est_lower_CI > 0  | Hevo_est_upper_CI < 0))
   
   
   output_tib_row <- results_tib %>% 
@@ -1331,9 +1331,788 @@ test_tib_summ_MR_row %>%
 
 ```
 
+\newpage
+
+# Appendix: Sensitivity Analyses {#appendix-sens}
+
+```{r load-sens-results}
+
+# --- Load results --- #
+# 100 snp
+## No Causal:
+sens_no_causal_20k_100snp_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_20k_100snp_scen1_sim_summ_tib.rds"))
+sens_no_causal_20k_100snp_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_20k_100snp_scen1_sim_summ_tib.rds"))
+
+sens_no_causal_20k_100snp_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_20k_100snp_scen2_sim_summ_tib.rds"))
+sens_no_causal_20k_100snp_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_20k_100snp_scen2_sim_summ_tib.rds"))
+
+sens_no_causal_20k_100snp_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_20k_100snp_scen3_sim_summ_tib.rds"))
+sens_no_causal_20k_100snp_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_20k_100snp_scen3_sim_summ_tib.rds"))
+
+
+## Causal:
+sens_causal_20k_100snp_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_20k_100snp_scen1_sim_summ_tib.rds"))
+sens_causal_20k_100snp_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_20k_100snp_scen1_sim_summ_tib.rds"))
+
+sens_causal_20k_100snp_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_20k_100snp_scen2_sim_summ_tib.rds"))
+sens_causal_20k_100snp_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_20k_100snp_scen2_sim_summ_tib.rds"))
+
+sens_causal_20k_100snp_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_20k_100snp_scen3_sim_summ_tib.rds"))
+sens_causal_20k_100snp_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_20k_100snp_scen3_sim_summ_tib.rds"))
+
+
+# --- Load results --- #
+# 200k participants
+## No Causal:
+sens_no_causal_200k_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_200k_scen1_sim_summ_tib.rds"))
+sens_no_causal_200k_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_200k_scen1_sim_summ_tib.rds"))
+
+sens_no_causal_200k_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_200k_scen2_sim_summ_tib.rds"))
+sens_no_causal_200k_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_200k_scen2_sim_summ_tib.rds"))
+
+sens_no_causal_200k_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_200k_scen3_sim_summ_tib.rds"))
+sens_no_causal_200k_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_no_causal_200k_scen3_sim_summ_tib.rds"))
+
+
+## Causal:
+sens_causal_200k_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_200k_scen1_sim_summ_tib.rds"))
+sens_causal_200k_scen1_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_200k_scen1_sim_summ_tib.rds"))
+
+sens_causal_200k_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_200k_scen2_sim_summ_tib.rds"))
+sens_causal_200k_scen2_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_200k_scen2_sim_summ_tib.rds"))
+
+sens_causal_200k_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_200k_scen3_sim_summ_tib.rds"))
+sens_causal_200k_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tables", "sens_causal_200k_scen3_sim_summ_tib.rds"))
+
+```
+
+## Simulation Study
+
+### 100 Genetic Instruments {#sens-tibs-100-snp}
+```{r sens-100-snp-sim-sum-tibs}
+
+# --- No Causal --- #
+# Scenario 1
+sens_100snp_no_causal_scen1_sim_summ_tib <- bind_rows(sens_no_causal_20k_100snp_scen1_sim_summ_tib
+) %>%
+  mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 2
+sens_100snp_no_causal_scen2_sim_summ_tib <- bind_rows(sens_no_causal_20k_100snp_scen2_sim_summ_tib
+) %>%
+  mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 3
+sens_100snp_no_causal_scen3_sim_summ_tib <- bind_rows(sens_no_causal_20k_100snp_scen3_sim_summ_tib
+) %>%
+  mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+
+
+# Summary
+sens_100snp_no_causal_sim_summ_tib <- bind_rows(sens_100snp_no_causal_scen1_sim_summ_tib,
+                                                sens_100snp_no_causal_scen2_sim_summ_tib,
+                                                sens_100snp_no_causal_scen3_sim_summ_tib
+)%>% 
+  mutate(WME_Lower_CI = WME_Av - 1.96 * WME_SE,
+         WME_Upper_CI = WME_Av + 1.96 * WME_SE,
+         Hevo_SE_Calc = round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3),
+         Pos_Rate_Diff = Hevo_Pos_Rate - WME_Pos_Rate,
+         Hevo_Better = Pos_Rate_Diff < 0)
+
+
+# --- Causal --- #
+# Scenario 1
+sens_100snp_causal_scen1_sim_summ_tib <- bind_rows(sens_causal_20k_100snp_scen1_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 2
+sens_100snp_causal_scen2_sim_summ_tib <- bind_rows(sens_causal_20k_100snp_scen2_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 3
+sens_100snp_causal_scen3_sim_summ_tib <- bind_rows(sens_causal_20k_100snp_scen3_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+
+
+# Summary
+sens_100snp_causal_sim_summ_tib <- bind_rows(sens_100snp_causal_scen1_sim_summ_tib,
+                                             sens_100snp_causal_scen2_sim_summ_tib,
+                                             sens_100snp_causal_scen3_sim_summ_tib) %>% 
+  mutate(WME_Lower_CI = WME_Av - 1.96 * WME_SE,
+         WME_Upper_CI = WME_Av + 1.96 * WME_SE,
+         Hevo_SE_Calc = round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3),
+         Pos_Rate_Diff = Hevo_Pos_Rate - WME_Pos_Rate,
+         Hevo_Better = Pos_Rate_Diff < 0)
+
+
+```
+
+```{r sens-100-snp-no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-100-snp-no-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect and using 100 genetic instruments", results='asis'}
+#| ft.arraystretch = 1.3
+
+
+library(ftExtra)
+
+# Display
+sens_100snp_no_causal_sim_summ_display <- sens_100snp_no_causal_sim_summ_tib %>%
+  # Change names for cleaner plotting
+  mutate(Invalid = paste0((Prop_Invalid * 100), "%"),
+         F = round(F_stat, 1),
+         R2 = paste0(R2_stat *100, "%"),
+         Weighted_Median_Mean_Estimate = WME_Av,
+         Weighted_Median_Mean_SE = paste0("(", WME_SE, ")"),
+         Weighted_Median_Lower_CI = round(WME_Av - 1.96 * WME_SE, 2),
+         Weighted_Median_Upper_CI = round(WME_Av + 1.96 * WME_SE, 2),
+         Weighted_Median_95_CI = paste0(Weighted_Median_Lower_CI, " to ", Weighted_Median_Upper_CI),
+         Weighted_Median_Causal_Report_Rate = paste0((WME_Pos_Rate * 100), "%"),
+         MR_Hevo_Mean_Estimate = Hevo_Av,
+         #MR_Hevo_Mean_SE = paste0("(", round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3), ")"),
+         MR_Hevo_Mean_SE = paste0("(", Hevo_SE_Calc, ")"),
+         MR_Hevo_Lower_CI = round(Hevo_Lower_CI, 2),
+         MR_Hevo_Upper_CI = round(Hevo_Upper_CI, 2),
+         MR_Hevo_95_CI = paste0(round(Hevo_Lower_CI, 2), " to ", round(Hevo_Upper_CI, 2)),
+         MR_Hevo_Causal_Report_Rate = paste0((Hevo_Pos_Rate * 100), "%")) %>%
+  # Drop old names
+  select(N,
+         Invalid,
+         F,
+         R2,
+         Weighted_Median_Mean_Estimate,
+         Weighted_Median_Mean_SE,
+         Weighted_Median_95_CI,
+         Weighted_Median_Causal_Report_Rate,
+         MR_Hevo_Mean_Estimate,
+         MR_Hevo_Mean_SE,
+         MR_Hevo_95_CI,
+         MR_Hevo_Causal_Report_Rate,
+         Scenario) %>%
+  as_grouped_data(groups = c("Scenario")) %>%
+  as_flextable(hide_grouplabel = TRUE, col_keys = c("N",
+                                                    "Invalid",
+                                                    "F",
+                                                    "R2",
+                                                    "Weighted_Median_Mean_Estimate",
+                                                    "Weighted_Median_Mean_SE",
+                                                    "Weighted_Median_95_CI", 
+                                                    "Weighted_Median_Causal_Report_Rate",
+                                                    "blank_col",
+                                                    "MR_Hevo_Mean_Estimate",
+                                                    "MR_Hevo_Mean_SE",
+                                                    "MR_Hevo_95_CI", 
+                                                    "MR_Hevo_Causal_Report_Rate",
+                                                    "Scenario")) |>
+  # To separate WME/MR-Hevo
+  width(j = "blank_col", width = 0.2) |>
+  empty_blanks() |>
+  span_header() |>
+  align(part = "all", align = "center") |>
+  align(part = "body", j =c(5, 10),  align = "right") |>
+  align(part = "body", j =c(6, 11),  align = "left") |>
+  # Italicise N and F
+  italic(part = "header", i = 1, j = c(1,3) ) |>
+  # Fix name of invalid IVs
+  flextable::compose(part = "header", i = 1:4, j = 2, value = as_paragraph("Invalid IVs")) |>
+  # Fix name of 95% CIs
+  flextable::compose(part = "header", i = 3, j = c(7, 12), value = as_paragraph("Mean")) |>
+  flextable::compose(part = "header", i = 4, j = c(7, 12), value = as_paragraph("95% CI")) |>
+  # Fix split headers
+  flextable::compose(part = "header", i = 3, j = c(5,10), value = as_paragraph("Mean Estimate")) |>
+  flextable::compose(part = "header", i = 4, j = c(5:6), value = as_paragraph("(Mean SE)")) |>
+  flextable::compose(part = "header", i = 4, j = c(10:11), value = as_paragraph("(Mean SE*)")) |>
+  #flextable::compose(part = "header", i = 4, j = c(5:6,10:11), value = as_paragraph("(Mean SE)")) |>
+  merge_h(part = "header", i = 4) |>
+  # Italicise/superscript R^2
+  flextable::compose(part = "header", i = 1, j = 4, value = as_paragraph(as_i("R"), as_sup(as_i(as.character(2))))) |>
+  
+  hline(part = "header", i = 2, j = c(5:8, 10:13), border = officer::fp_border(color = "black", width = 1)) |>
+  #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
+  # Fix dimensions
+  autofit() |>
+  #line_spacing(space = 0, part = "header") |>
+  line_spacing(space = 1, part = "body") |>
+  fit_to_width(max_width = 6.5) #|>
+  #height_all(height = 40, unit = "mm",part = "all") |>
+
+  # Add footer
+  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
+  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
+  #fontsize(8, i = 1, j = 1, part = "footer")
+# set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
+#             style = "Table Caption",
+#             autonum = run_autonum(seq_id = "tab",
+#                                   bkm = "no-causal-sim-summ-tib"))
+
+sens_100snp_no_causal_sim_summ_display
+
+
+```
+
+\newpage
+
+
+```{r sens-100-snp-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-100-snp-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 100 genetic instruments", results='asis'}
+#| ft.arraystretch = 1.3
+
+
+library(ftExtra)
+
+# Display
+sens_100snp_causal_sim_summ_display <- sens_100snp_causal_sim_summ_tib %>%
+  # Change names for cleaner plotting
+  mutate(Invalid = paste0((Prop_Invalid * 100), "%"),
+         F = round(F_stat, 1),
+         R2 = paste0(R2_stat *100, "%"),
+         Weighted_Median_Mean_Estimate = WME_Av,
+         Weighted_Median_Mean_SE = paste0("(", WME_SE, ")"),
+         Weighted_Median_Lower_CI = round(WME_Av - 1.96 * WME_SE, 2),
+         Weighted_Median_Upper_CI = round(WME_Av + 1.96 * WME_SE, 2),
+         Weighted_Median_95_CI = paste0(Weighted_Median_Lower_CI, " to ", Weighted_Median_Upper_CI),
+         Weighted_Median_Causal_Report_Rate = paste0((WME_Pos_Rate * 100), "%"),
+         MR_Hevo_Mean_Estimate = Hevo_Av,
+         #MR_Hevo_Mean_SE = paste0("(", round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3), ")"),
+         MR_Hevo_Mean_SE = paste0("(", Hevo_SE_Calc, ")"),
+         MR_Hevo_Lower_CI = round(Hevo_Lower_CI, 2),
+         MR_Hevo_Upper_CI = round(Hevo_Upper_CI, 2),
+         MR_Hevo_95_CI = paste0(round(Hevo_Lower_CI, 2), " to ", round(Hevo_Upper_CI, 2)),
+         MR_Hevo_Causal_Report_Rate = paste0((Hevo_Pos_Rate * 100), "%")) %>%
+  # Drop old names
+  select(N,
+         Invalid,
+         F,
+         R2,
+         Weighted_Median_Mean_Estimate,
+         Weighted_Median_Mean_SE,
+         Weighted_Median_95_CI,
+         Weighted_Median_Causal_Report_Rate,
+         MR_Hevo_Mean_Estimate,
+         MR_Hevo_Mean_SE,
+         MR_Hevo_95_CI,
+         MR_Hevo_Causal_Report_Rate,
+         Scenario) %>%
+  as_grouped_data(groups = c("Scenario")) %>%
+  as_flextable(hide_grouplabel = TRUE, col_keys = c("N",
+                                                    "Invalid",
+                                                    "F",
+                                                    "R2",
+                                                    "Weighted_Median_Mean_Estimate",
+                                                    "Weighted_Median_Mean_SE",
+                                                    "Weighted_Median_95_CI", 
+                                                    "Weighted_Median_Causal_Report_Rate",
+                                                    "blank_col",
+                                                    "MR_Hevo_Mean_Estimate",
+                                                    "MR_Hevo_Mean_SE",
+                                                    "MR_Hevo_95_CI", 
+                                                    "MR_Hevo_Causal_Report_Rate",
+                                                    "Scenario")) |>
+  # To separate WME/MR-Hevo
+  width(j = "blank_col", width = 0.2) |>
+  empty_blanks() |>
+  span_header() |>
+  align(part = "all", align = "center") |>
+  align(part = "body", j =c(5, 10),  align = "right") |>
+  align(part = "body", j =c(6, 11),  align = "left") |>
+  # Italicise N and F
+  italic(part = "header", i = 1, j = c(1,3) ) |>
+  # Fix name of invalid IVs
+  flextable::compose(part = "header", i = 1:4, j = 2, value = as_paragraph("Invalid IVs")) |>
+  # Fix name of 95% CIs
+  flextable::compose(part = "header", i = 3, j = c(7, 12), value = as_paragraph("Mean")) |>
+  flextable::compose(part = "header", i = 4, j = c(7, 12), value = as_paragraph("95% CI")) |>
+  # Fix split headers
+  flextable::compose(part = "header", i = 3, j = c(5,10), value = as_paragraph("Mean Estimate")) |>
+  flextable::compose(part = "header", i = 4, j = c(5:6), value = as_paragraph("(Mean SE)")) |>
+  flextable::compose(part = "header", i = 4, j = c(10:11), value = as_paragraph("(Mean SE*)")) |>
+  #flextable::compose(part = "header", i = 4, j = c(5:6,10:11), value = as_paragraph("(Mean SE)")) |>
+  merge_h(part = "header", i = 4) |>
+  # Italicise/superscript R^2
+  flextable::compose(part = "header", i = 1, j = 4, value = as_paragraph(as_i("R"), as_sup(as_i(as.character(2))))) |>
+  
+  hline(part = "header", i = 2, j = c(5:8, 10:13), border = officer::fp_border(color = "black", width = 1)) |>
+  #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
+  # Fix dimensions
+  autofit() |>
+  #line_spacing(space = 0, part = "header") |>
+  line_spacing(space = 1, part = "body") |>
+  fit_to_width(max_width = 6.5) #|>
+  #height_all(height = 40, unit = "mm",part = "all") |>
+
+  # Add footer
+  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
+  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
+  #fontsize(8, i = 1, j = 1, part = "footer")
+# set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
+#             style = "Table Caption",
+#             autonum = run_autonum(seq_id = "tab",
+#                                   bkm = "no-causal-sim-summ-tib"))
+
+sens_100snp_causal_sim_summ_display
+
+
+```
+
+\newpage
+
+### 200,000 Participants {#sens-tibs-200k}
+```{r sens-200k-sim-sum-tibs}
+
+# --- No Causal --- #
+# Scenario 1
+sens_200k_no_causal_scen1_sim_summ_tib <- bind_rows(sens_no_causal_200k_scen1_sim_summ_tib
+) %>%
+  mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 2
+sens_200k_no_causal_scen2_sim_summ_tib <- bind_rows(sens_no_causal_200k_scen2_sim_summ_tib
+) %>%
+  mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 3
+sens_200k_no_causal_scen3_sim_summ_tib <- bind_rows(sens_no_causal_200k_scen3_sim_summ_tib
+) %>%
+  mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+
+
+# Summary
+sens_200k_no_causal_sim_summ_tib <- bind_rows(sens_200k_no_causal_scen1_sim_summ_tib,
+                                              sens_200k_no_causal_scen2_sim_summ_tib,
+                                              sens_200k_no_causal_scen3_sim_summ_tib
+)%>% 
+  mutate(WME_Lower_CI = WME_Av - 1.96 * WME_SE,
+         WME_Upper_CI = WME_Av + 1.96 * WME_SE,
+         Hevo_SE_Calc = round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3),
+         Pos_Rate_Diff = Hevo_Pos_Rate - WME_Pos_Rate,
+         Hevo_Better = Pos_Rate_Diff < 0)
+
+
+# --- Causal --- #
+# Scenario 1
+sens_200k_causal_scen1_sim_summ_tib <- bind_rows(sens_causal_200k_scen1_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 1: Balanced pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 2
+sens_200k_causal_scen2_sim_summ_tib <- bind_rows(sens_causal_200k_scen2_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 2: Directional pleiotropy, InSIDE assumption satisfied")
+
+# Scenario 3
+sens_200k_causal_scen3_sim_summ_tib <- bind_rows(sens_causal_200k_scen3_sim_summ_tib
+) %>% 
+  mutate(Scenario = "Scenario 3: Directional pleiotropy, InSIDE assumption not satisfied")
+
+
+# Summary
+sens_200k_causal_sim_summ_tib <- bind_rows(sens_200k_causal_scen1_sim_summ_tib,
+                                             sens_200k_causal_scen2_sim_summ_tib,
+                                             sens_200k_causal_scen3_sim_summ_tib) %>% 
+  mutate(WME_Lower_CI = WME_Av - 1.96 * WME_SE,
+         WME_Upper_CI = WME_Av + 1.96 * WME_SE,
+         Hevo_SE_Calc = round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3),
+         Pos_Rate_Diff = Hevo_Pos_Rate - WME_Pos_Rate,
+         Hevo_Better = Pos_Rate_Diff < 0)
+
+
+```
+
+```{r sens-200k-no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-no-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect and using 200,000 participants", results='asis'}
+#| ft.arraystretch = 1.3
+
+
+library(ftExtra)
+
+# Display
+sens_200k_no_causal_sim_summ_display <- sens_200k_no_causal_sim_summ_tib %>%
+  # Change names for cleaner plotting
+  mutate(Invalid = paste0((Prop_Invalid * 100), "%"),
+         F = round(F_stat, 1),
+         R2 = paste0(R2_stat *100, "%"),
+         Weighted_Median_Mean_Estimate = WME_Av,
+         Weighted_Median_Mean_SE = paste0("(", WME_SE, ")"),
+         Weighted_Median_Lower_CI = round(WME_Av - 1.96 * WME_SE, 2),
+         Weighted_Median_Upper_CI = round(WME_Av + 1.96 * WME_SE, 2),
+         Weighted_Median_95_CI = paste0(Weighted_Median_Lower_CI, " to ", Weighted_Median_Upper_CI),
+         Weighted_Median_Causal_Report_Rate = paste0((WME_Pos_Rate * 100), "%"),
+         MR_Hevo_Mean_Estimate = Hevo_Av,
+         #MR_Hevo_Mean_SE = paste0("(", round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3), ")"),
+         MR_Hevo_Mean_SE = paste0("(", Hevo_SE_Calc, ")"),
+         MR_Hevo_Lower_CI = round(Hevo_Lower_CI, 2),
+         MR_Hevo_Upper_CI = round(Hevo_Upper_CI, 2),
+         MR_Hevo_95_CI = paste0(round(Hevo_Lower_CI, 2), " to ", round(Hevo_Upper_CI, 2)),
+         MR_Hevo_Causal_Report_Rate = paste0((Hevo_Pos_Rate * 100), "%")) %>%
+  # Drop old names
+  select(N,
+         Invalid,
+         F,
+         R2,
+         Weighted_Median_Mean_Estimate,
+         Weighted_Median_Mean_SE,
+         Weighted_Median_95_CI,
+         Weighted_Median_Causal_Report_Rate,
+         MR_Hevo_Mean_Estimate,
+         MR_Hevo_Mean_SE,
+         MR_Hevo_95_CI,
+         MR_Hevo_Causal_Report_Rate,
+         Scenario) %>%
+  as_grouped_data(groups = c("Scenario")) %>%
+  as_flextable(hide_grouplabel = TRUE, col_keys = c("N",
+                                                    "Invalid",
+                                                    "F",
+                                                    "R2",
+                                                    "Weighted_Median_Mean_Estimate",
+                                                    "Weighted_Median_Mean_SE",
+                                                    "Weighted_Median_95_CI", 
+                                                    "Weighted_Median_Causal_Report_Rate",
+                                                    "blank_col",
+                                                    "MR_Hevo_Mean_Estimate",
+                                                    "MR_Hevo_Mean_SE",
+                                                    "MR_Hevo_95_CI", 
+                                                    "MR_Hevo_Causal_Report_Rate",
+                                                    "Scenario")) |>
+  # To separate WME/MR-Hevo
+  width(j = "blank_col", width = 0.2) |>
+  empty_blanks() |>
+  span_header() |>
+  align(part = "all", align = "center") |>
+  align(part = "body", j =c(5, 10),  align = "right") |>
+  align(part = "body", j =c(6, 11),  align = "left") |>
+  # Italicise N and F
+  italic(part = "header", i = 1, j = c(1,3) ) |>
+  # Fix name of invalid IVs
+  flextable::compose(part = "header", i = 1:4, j = 2, value = as_paragraph("Invalid IVs")) |>
+  # Fix name of 95% CIs
+  flextable::compose(part = "header", i = 3, j = c(7, 12), value = as_paragraph("Mean")) |>
+  flextable::compose(part = "header", i = 4, j = c(7, 12), value = as_paragraph("95% CI")) |>
+  # Fix split headers
+  flextable::compose(part = "header", i = 3, j = c(5,10), value = as_paragraph("Mean Estimate")) |>
+  flextable::compose(part = "header", i = 4, j = c(5:6), value = as_paragraph("(Mean SE)")) |>
+  flextable::compose(part = "header", i = 4, j = c(10:11), value = as_paragraph("(Mean SE*)")) |>
+  #flextable::compose(part = "header", i = 4, j = c(5:6,10:11), value = as_paragraph("(Mean SE)")) |>
+  merge_h(part = "header", i = 4) |>
+  # Italicise/superscript R^2
+  flextable::compose(part = "header", i = 1, j = 4, value = as_paragraph(as_i("R"), as_sup(as_i(as.character(2))))) |>
+  
+  hline(part = "header", i = 2, j = c(5:8, 10:13), border = officer::fp_border(color = "black", width = 1)) |>
+  #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
+  # Fix dimensions
+  autofit() |>
+  #line_spacing(space = 0, part = "header") |>
+  line_spacing(space = 1, part = "body") |>
+  fit_to_width(max_width = 6.5) #|>
+  #height_all(height = 40, unit = "mm",part = "all") |>
+
+  # Add footer
+  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
+  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
+  #fontsize(8, i = 1, j = 1, part = "footer")
+# set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
+#             style = "Table Caption",
+#             autonum = run_autonum(seq_id = "tab",
+#                                   bkm = "no-causal-sim-summ-tib"))
+
+sens_200k_no_causal_sim_summ_display
+
+
+```
+
+\newpage
+
+```{r sens-200k-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 200,000 participants", results='asis'}
+#| ft.arraystretch = 1.3
+
+
+library(ftExtra)
+
+# Display
+sens_200k_causal_sim_summ_display <- sens_200k_causal_sim_summ_tib %>%
+  # Change names for cleaner plotting
+  mutate(Invalid = paste0((Prop_Invalid * 100), "%"),
+         F = round(F_stat, 1),
+         R2 = paste0(R2_stat *100, "%"),
+         Weighted_Median_Mean_Estimate = WME_Av,
+         Weighted_Median_Mean_SE = paste0("(", WME_SE, ")"),
+         Weighted_Median_Lower_CI = round(WME_Av - 1.96 * WME_SE, 2),
+         Weighted_Median_Upper_CI = round(WME_Av + 1.96 * WME_SE, 2),
+         Weighted_Median_95_CI = paste0(Weighted_Median_Lower_CI, " to ", Weighted_Median_Upper_CI),
+         Weighted_Median_Causal_Report_Rate = paste0((WME_Pos_Rate * 100), "%"),
+         MR_Hevo_Mean_Estimate = Hevo_Av,
+         #MR_Hevo_Mean_SE = paste0("(", round((Hevo_Upper_CI - Hevo_Lower_CI)/3.92, 3), ")"),
+         MR_Hevo_Mean_SE = paste0("(", Hevo_SE_Calc, ")"),
+         MR_Hevo_Lower_CI = round(Hevo_Lower_CI, 2),
+         MR_Hevo_Upper_CI = round(Hevo_Upper_CI, 2),
+         MR_Hevo_95_CI = paste0(round(Hevo_Lower_CI, 2), " to ", round(Hevo_Upper_CI, 2)),
+         MR_Hevo_Causal_Report_Rate = paste0((Hevo_Pos_Rate * 100), "%")) %>%
+  # Drop old names
+  select(N,
+         Invalid,
+         F,
+         R2,
+         Weighted_Median_Mean_Estimate,
+         Weighted_Median_Mean_SE,
+         Weighted_Median_95_CI,
+         Weighted_Median_Causal_Report_Rate,
+         MR_Hevo_Mean_Estimate,
+         MR_Hevo_Mean_SE,
+         MR_Hevo_95_CI,
+         MR_Hevo_Causal_Report_Rate,
+         Scenario) %>%
+  as_grouped_data(groups = c("Scenario")) %>%
+  as_flextable(hide_grouplabel = TRUE, col_keys = c("N",
+                                                    "Invalid",
+                                                    "F",
+                                                    "R2",
+                                                    "Weighted_Median_Mean_Estimate",
+                                                    "Weighted_Median_Mean_SE",
+                                                    "Weighted_Median_95_CI", 
+                                                    "Weighted_Median_Causal_Report_Rate",
+                                                    "blank_col",
+                                                    "MR_Hevo_Mean_Estimate",
+                                                    "MR_Hevo_Mean_SE",
+                                                    "MR_Hevo_95_CI", 
+                                                    "MR_Hevo_Causal_Report_Rate",
+                                                    "Scenario")) |>
+  # To separate WME/MR-Hevo
+  width(j = "blank_col", width = 0.2) |>
+  empty_blanks() |>
+  span_header() |>
+  align(part = "all", align = "center") |>
+  align(part = "body", j =c(5, 10),  align = "right") |>
+  align(part = "body", j =c(6, 11),  align = "left") |>
+  # Italicise N and F
+  italic(part = "header", i = 1, j = c(1,3) ) |>
+  # Fix name of invalid IVs
+  flextable::compose(part = "header", i = 1:4, j = 2, value = as_paragraph("Invalid IVs")) |>
+  # Fix name of 95% CIs
+  flextable::compose(part = "header", i = 3, j = c(7, 12), value = as_paragraph("Mean")) |>
+  flextable::compose(part = "header", i = 4, j = c(7, 12), value = as_paragraph("95% CI")) |>
+  # Fix split headers
+  flextable::compose(part = "header", i = 3, j = c(5,10), value = as_paragraph("Mean Estimate")) |>
+  flextable::compose(part = "header", i = 4, j = c(5:6), value = as_paragraph("(Mean SE)")) |>
+  flextable::compose(part = "header", i = 4, j = c(10:11), value = as_paragraph("(Mean SE*)")) |>
+  #flextable::compose(part = "header", i = 4, j = c(5:6,10:11), value = as_paragraph("(Mean SE)")) |>
+  merge_h(part = "header", i = 4) |>
+  # Italicise/superscript R^2
+  flextable::compose(part = "header", i = 1, j = 4, value = as_paragraph(as_i("R"), as_sup(as_i(as.character(2))))) |>
+  
+  hline(part = "header", i = 2, j = c(5:8, 10:13), border = officer::fp_border(color = "black", width = 1)) |>
+  #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
+  # Fix dimensions
+  autofit() |>
+  #line_spacing(space = 0, part = "header") |>
+  line_spacing(space = 1, part = "body") |>
+  fit_to_width(max_width = 6.5) #|>
+  #height_all(height = 40, unit = "mm",part = "all") |>
+
+  # Add footer
+  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
+  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
+  #fontsize(8, i = 1, j = 1, part = "footer")
+# set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
+#             style = "Table Caption",
+#             autonum = run_autonum(seq_id = "tab",
+#                                   bkm = "no-causal-sim-summ-tib"))
+
+sens_200k_causal_sim_summ_display
+
+
+```
 
 
 \newpage
+
+
+## Re-Analysis Study {#appendix-sens-reanalysis}
+
+```{r sens-citations-reanalysis-data-save, eval=FALSE}
+
+sens_data_clift_smoking_2022_outlier <- read.csv(here("Data", "Citations_Datasets", "clift_smoking_2022.csv")) %>% 
+  as_tibble() %>% 
+  # Use Study_DOI as get_reanalysis function groups by this
+  mutate(Study_DOI = "Outlier Included")
+
+
+sens_data_xie_associations_2023_max <- read.csv(here("Data", "Citations_Datasets", "xie_associations_2023.csv")) %>% 
+  as_tibble() %>% 
+  mutate(
+    Study_DOI = "NAs imputed - max values",
+    # imputes missing as max
+    across(starts_with("Coeff_"), ~str_replace_all(., pattern = "[Aa:Zz]", replacement = NA_character_)),
+    across(starts_with("Coeff_"), ~as.double(.)),
+    across(where(is.numeric), ~replace_na(., max(., na.rm = TRUE)))
+  )
+
+sens_data_xie_associations_2023_min <- read.csv(here("Data", "Citations_Datasets", "xie_associations_2023.csv")) %>% 
+  as_tibble() %>% 
+  mutate(
+    Study_DOI = "NAs imputed - min values",
+    # imputes missing as max
+    across(starts_with("Coeff_"), ~str_replace_all(., pattern = "[Aa:Zz]", replacement = NA_character_)),
+    across(starts_with("Coeff_"), ~as.double(.)),
+    across(where(is.numeric), ~replace_na(., min(., na.rm = TRUE)))
+  )
+
+
+sens_citation_datasets_list <- list(sens_data_clift_smoking_2022_outlier,
+                                    sens_data_xie_associations_2023_max,
+                                    sens_data_xie_associations_2023_min)  
+
+for(dataset in 1:length(sens_citation_datasets_list)){
+  
+  sens_citation_datasets_list[[dataset]] <- sens_citation_datasets_list[[dataset]] %>% 
+    tibble() %>% 
+    mutate(
+      # replace all unicode dash variations with minus - to stop conversion to char
+      # https://stackoverflow.com/questions/48923599/searching-for-all-variations-of-hyphens-and-dashes-in-regex
+      across(starts_with("Coeff_"), 
+             ~str_replace_all(.,
+                              pattern = "[\u002D\u058A\u05BE\u1400\u1806\u2010-\u2015\u2E17\u2E1A\u2E3A\u2E3B\u2E40\u301C\u3030\u30A0\uFE31\uFE32\uFE58\uFE63\uFF0D]", 
+                              # https://www.kaggle.com/discussions/questions-and-answers/54715
+                              replacement = "\U002D")),
+      # replace zeros for MR-Hevo
+      across(starts_with("Coeff_"), ~replace(., . == 0, 10^-100)), 
+      # remove square brackets from ref tags
+      across(Study_Ref, ~str_replace_all(., "\\[|\\]", ""))
+    )
+    
+}
+
+
+# Combine
+Sens_Citations_Instrument_Data <- bind_rows(sens_citation_datasets_list)
+
+write.csv(Sens_Citations_Instrument_Data, here("Data", "Citations_Datasets", "Sens_Citations_Instrument_Data.csv"), append = FALSE)
+
+
+```
+
+```{r sens-citations-reanalysis-sum-tib, eval=FALSE}
+
+Sens_Citations_Instrument_Data <- read.csv(here("Data", "Citations_Datasets", "Sens_Citations_Instrument_Data.csv"))
+
+sens_citations_reanalysis_summ_tib <- Sens_Citations_Instrument_Data %>% 
+  mutate(across(Coeff_G_X:Coeff_G_Y_SE, ~replace(., . == 0, 10^-100))) %>% 
+  get_reanalysis_tib() 
+
+
+write.csv(sens_citations_reanalysis_summ_tib, here("Data", "Citations_Datasets", "sens_citations_reanalysis_summ_tib.csv"),append = FALSE)
+
+```
+```{r sens-citations-reanalysis-sum-display}
+#| tab.id = "sens-citations-reanalysis-summ-display",
+#| tab.cap = "Sensitivity re-analyses using inclusion of outliers and imputation of missing values as most extreme values from the respective dataset",
+#| ft.arraystretch = 1.5
+
+sens_citations_reanalysis_summ_tib <- read.csv(here("Data", "Citations_Datasets", "sens_citations_reanalysis_summ_tib.csv"))
+
+sens_citations_reanalysis_summ_tib %>% 
+  mutate(across(where(is.numeric), \(x) round(x, 3)), 
+         Study_SNPs = WME_nsnp,
+         Blank = NA,
+         Weighted_Median_Beta = paste0(round(WME_est, 2), " (", round(WME_est_lower_CI, 2), "-", round(WME_est_upper_CI, 2), ")"),
+         Weighted_Median_SE = WME_se,
+         Weighted_Median_OR = paste0(round(WME_OR, 2), " (", round(WME_OR_lower_CI, 2), "-", round(WME_OR_upper_CI, 2), ")"),
+         Weighted_Median_Causality = if_else(WME_est_causal_detected, "Yes", "No"),
+         Blank_2 = NA,
+         MR_Hevo_Beta = paste0(round(Hevo_est, 2), " (", round(Hevo_est_lower_CI, 2), "-", round(Hevo_est_upper_CI, 2), ")"),
+         MR_Hevo_SE = Hevo_se,
+         MR_Hevo_OR = paste0(round(Hevo_OR, 2), " (", round(Hevo_OR_lower_CI, 2), "-", round(Hevo_OR_upper_CI, 2), ")"),
+         MR_Hevo_Causality = if_else(Hevo_est_causal_detected, "Yes", "No")
+         ) %>% 
+  # Sort
+  arrange(Study_Author) %>% 
+  # Drop old names
+  select(Study_Author,
+         #Study_Ref,
+         Study_DOI,
+         Study_Exposure,
+         Study_Outcome,
+         Study_SNPs, 
+         Blank,
+         Weighted_Median_Beta,
+         Weighted_Median_SE,
+         Weighted_Median_OR,
+         Weighted_Median_Causality,
+         Blank_2,
+         MR_Hevo_Beta,
+         MR_Hevo_SE,
+         MR_Hevo_OR,
+         MR_Hevo_Causality) %>% 
+    mutate(across(where(is.double), round, 3)) %>% 
+  #as_grouped_data(groups = "Study_Author", expand_single = FALSE,) %>%
+  flextable(#hide_grouplabel = TRUE, 
+    col_keys = c("Study_Author", #"Study_Ref", 
+                 "Study_DOI",
+                 "Study_Exposure",
+                 "Study_Outcome",
+                 "Study_SNPs", 
+                 "Blank", #5
+                 "Weighted_Median_Beta", 
+                 "Weighted_Median_SE",
+                 "Weighted_Median_OR",
+                 "Weighted_Median_Causality",
+                 "Blank_2", #10
+                 "MR_Hevo_Beta", 
+                 "MR_Hevo_SE",
+                 "MR_Hevo_OR",
+                 "MR_Hevo_Causality")) |>
+  # To separate Study Details/WME/MR-Hevo
+  width(j = c(6, 11), width = 0.2) |>
+  span_header() |>
+  align(part = "all", align = "center") |>
+  # Fix names 
+  ## Blank cols - unsure why not working as above
+  flextable::compose(part = "header", i = 1:3, j = c(6, 11), value = as_paragraph("")) |>
+  ## Blank study top row
+  flextable::compose(part = "header", i = 1, j = c(1), value = as_paragraph("")) |>
+  empty_blanks() |>
+  ## Re-analysis
+  flextable::compose(part = "header", i = c(1:2), j = c(2), value = as_paragraph("Re-Analysis")) %>% 
+  ## WME
+  flextable::compose(part = "header", i = c(1:2), j = c(7:10), value = as_paragraph("Weighted Median")) %>% 
+  merge_v(part = "header", j = c(6:9)) %>% 
+  ## MR-Hevo
+  flextable::compose(part = "header", i = c(1:2), j = c(12:15), value = as_paragraph("MR-Hevo")) %>% 
+  merge_v(part = "header", j = c(11:14)) %>% 
+  ## Causality
+  width(j = c(6, 8, 11, 13), width = 20) |>
+  flextable::compose(part = "header", i = 3, j = c(10, 15), value = as_paragraph("Causality\nReported")) |>
+  empty_blanks() |>
+  ## Beta
+  flextable::compose(part = "header", i = 3, j = c(7, 12), value = as_paragraph("\U03B2")) |> #\U0302
+  # Separating lines
+  hline(part = "header", i = 2, j = c(7:10, 12:15), border = officer::fp_border(color = "black", width = 1)) |>
+  hline(part = "body", i = c(1:3), j = c(1:15), border = officer::fp_border(color = "black", width = 0.2)) |>
+  # Fix dimensions
+  autofit() |>
+  line_spacing(space = 1, part = "header") |>
+  line_spacing(space = 1, part = "body") |>
+  fit_to_width(max_width = 9) |>
+  height_all(height = 0.6) |>
+  #height_all(height = 40, unit = "mm",part = "all") |>
+  # Add footer
+  add_footer_lines("\U03B2 and OR presented as: estimate (95% CI).\n\U03B2: causal effect estimate, CI: Confidence Interval, OR: Odds Ratio, SE: Standard Error.\nBMI: body mass index, CRP: C-reactive protein, NAFLD: non-alcoholic fatty liver disease, T2DM: type 2 diabetes mellitus") |>
+  #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
+  fontsize(9, i = c(1:3), j = c(1:15), part = "header") |>
+  fontsize(8, i = c(1:3), j = c(1:15), part = "header") |>
+  fontsize(8, i = c(1:3), j = c(1:15), part = "body") |>
+  fontsize(8, i = 1, j = 1, part = "footer")
+  # reframe(N = N,
+  #         WME_Av = mean(WME_est),
+  #         WME_SE = mean(WME_se),
+  #         Hevo_Av = mean(Hevo_est),
+  #         Hevo_SE = mean(Hevo_se),
+  #         Hevo_Est_Causal = Hevo_est_causal_detected
+  # ) %>%
+
+
+```
+
 
 # Appendix: R Packages Used {#appendix-pkg}
 
@@ -1348,21 +2127,21 @@ grateful::cite_packages(output = "paragraph",
                         out.dir = here::here(),
                         omit = NULL,
                         include.RStudio = FALSE) 
-  #gt() %>% 
-  #fmt_markdown()
+#gt() %>% 
+#fmt_markdown()
 
-  #kable() %>% 
-  #kable_styling() %>% 
-  #unclass() %>% 
-  #cat()
-  #str_replace_all(pattern = ",", "\n") #%>% 
-  #cat() %>% 
-  #return()
-  #tibble() %>%
-  #mutate(Citation = paste0("[", Citation, "]")) %>%
-  #knitr::kable()
+#kable() %>% 
+#kable_styling() %>% 
+#unclass() %>% 
+#cat()
+#str_replace_all(pattern = ",", "\n") #%>% 
+#cat() %>% 
+#return()
+#tibble() %>%
+#mutate(Citation = paste0("[", Citation, "]")) %>%
+#knitr::kable()
 
-  
+
 ```
 
 ## Session Information {#Session-Information}
