@@ -1386,7 +1386,7 @@ sens_causal_200k_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tabl
 
 ```
 
-## Simulation Study
+## Simulation Study (Post-Hoc)
 
 ### 100 Genetic Instruments {#sens-tibs-100-snp}
 ```{r sens-100-snp-sim-sum-tibs}
@@ -1926,6 +1926,7 @@ sens_200k_causal_sim_summ_display
 
 \newpage
 
+\blandscape
 
 ## Re-Analysis Study {#appendix-sens-reanalysis}
 
@@ -2003,14 +2004,14 @@ sens_citations_reanalysis_summ_tib <- Sens_Citations_Instrument_Data %>%
 write.csv(sens_citations_reanalysis_summ_tib, here("Data", "Citations_Datasets", "sens_citations_reanalysis_summ_tib.csv"),append = FALSE)
 
 ```
-```{r sens-citations-reanalysis-sum-display}
+```{r sens-citations-reanalysis-sum-display, include = TRUE}
 #| tab.id = "sens-citations-reanalysis-summ-display",
 #| tab.cap = "Sensitivity re-analyses using inclusion of outliers and imputation of missing values as most extreme values from the respective dataset",
 #| ft.arraystretch = 1.5
 
 sens_citations_reanalysis_summ_tib <- read.csv(here("Data", "Citations_Datasets", "sens_citations_reanalysis_summ_tib.csv"))
 
-sens_citations_reanalysis_summ_tib %>% 
+sens_citations_reanalysis_summ_display <- sens_citations_reanalysis_summ_tib %>% 
   mutate(across(where(is.numeric), \(x) round(x, 3)), 
          Study_SNPs = WME_nsnp,
          Blank = NA,
@@ -2020,7 +2021,7 @@ sens_citations_reanalysis_summ_tib %>%
          Weighted_Median_Causality = if_else(WME_est_causal_detected, "Yes", "No"),
          Blank_2 = NA,
          MR_Hevo_Beta = paste0(round(Hevo_est, 2), " (", round(Hevo_est_lower_CI, 2), "-", round(Hevo_est_upper_CI, 2), ")"),
-         MR_Hevo_SE = Hevo_se,
+         MR_Hevo_SE = round((Hevo_est_upper_CI - Hevo_est_lower_CI)/3.92, 3),
          MR_Hevo_OR = paste0(round(Hevo_OR, 2), " (", round(Hevo_OR_lower_CI, 2), "-", round(Hevo_OR_upper_CI, 2), ")"),
          MR_Hevo_Causality = if_else(Hevo_est_causal_detected, "Yes", "No")
          ) %>% 
@@ -2082,6 +2083,9 @@ sens_citations_reanalysis_summ_tib %>%
   ## Causality
   width(j = c(6, 8, 11, 13), width = 20) |>
   flextable::compose(part = "header", i = 3, j = c(10, 15), value = as_paragraph("Causality\nReported")) |>
+  ## SE*
+  flextable::compose(part = "header", i = 3, j = c(12), value = as_paragraph("SE*")) |>
+  ## Blanks
   empty_blanks() |>
   ## Beta
   flextable::compose(part = "header", i = 3, j = c(7, 12), value = as_paragraph("\U03B2")) |> #\U0302
@@ -2096,7 +2100,7 @@ sens_citations_reanalysis_summ_tib %>%
   height_all(height = 0.6) |>
   #height_all(height = 40, unit = "mm",part = "all") |>
   # Add footer
-  add_footer_lines("\U03B2 and OR presented as: estimate (95% CI).\n\U03B2: causal effect estimate, CI: Confidence Interval, OR: Odds Ratio, SE: Standard Error.\nBMI: body mass index, CRP: C-reactive protein, NAFLD: non-alcoholic fatty liver disease, T2DM: type 2 diabetes mellitus") |>
+  add_footer_lines("\U03B2 and OR presented as: estimate (95% CI).\n\U03B2: causal effect estimate, CI: Confidence Interval, OR: Odds Ratio, SE: Standard Error, SE*: Estimated Standard Error.\nNAFLD: non-alcoholic fatty liver disease, T2DM: type 2 diabetes mellitus") |>
   #footnote(i = c(1,4), j = c(2, 5), part = "header", value = as_paragraph(c("IV: Instrumental Variable", "SE: Standard Error")))
   fontsize(9, i = c(1:3), j = c(1:15), part = "header") |>
   fontsize(8, i = c(1:3), j = c(1:15), part = "header") |>
@@ -2110,9 +2114,13 @@ sens_citations_reanalysis_summ_tib %>%
   #         Hevo_Est_Causal = Hevo_est_causal_detected
   # ) %>%
 
+sens_citations_reanalysis_summ_display
 
 ```
 
+\elandscape
+
+\newpage
 
 # Appendix: R Packages Used {#appendix-pkg}
 
