@@ -1536,11 +1536,11 @@ sens_100snp_no_causal_sim_summ_display <- sens_100snp_no_causal_sim_summ_tib %>%
   fit_to_width(max_width = 6.5) #|>
   #height_all(height = 40, unit = "mm",part = "all") |>
 
-  # Add footer
-  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
-  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
-  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
-  #fontsize(8, i = 1, j = 1, part = "footer")
+  #Add footer
+  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nNull Causal Effect (\U03B2 = 0)") |>
+  fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+  fontsize(8, i = c(1:15), j = c(1:13), part = "body") |>
+  fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
 #             autonum = run_autonum(seq_id = "tab",
@@ -1641,10 +1641,10 @@ sens_100snp_causal_sim_summ_display <- sens_100snp_causal_sim_summ_tib %>%
   #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
-  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
-  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
-  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
-  #fontsize(8, i = 1, j = 1, part = "footer")
+add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nNull Causal Effect (\U03B2 = 0)") |>
+fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+fontsize(8, i = c(1:15), j = c(1:13), part = "body") |>
+fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
 #             autonum = run_autonum(seq_id = "tab",
@@ -1719,7 +1719,7 @@ sens_200k_causal_sim_summ_tib <- bind_rows(sens_200k_causal_scen1_sim_summ_tib,
 
 ```
 
-```{r sens-200k-no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-no-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect and using 200,000 participants", results='asis'}
+```{r sens-200k-no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-no-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect and using 200,000 participants and 25 genetic instruments", results='asis'}
 #| ft.arraystretch = 1.3
 
 
@@ -1806,10 +1806,10 @@ sens_200k_no_causal_sim_summ_display <- sens_200k_no_causal_sim_summ_tib %>%
   #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
-  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
-  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
-  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
-  #fontsize(8, i = 1, j = 1, part = "footer")
+  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nNull Causal Effect (\U03B2 = 0)") |>
+  fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+  fontsize(8, i = c(1:15), j = c(1:13), part = "body") |>
+  fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
 #             autonum = run_autonum(seq_id = "tab",
@@ -1822,7 +1822,7 @@ sens_200k_no_causal_sim_summ_display
 
 \newpage
 
-```{r sens-200k-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 200,000 participants", results='asis'}
+```{r sens-200k-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 200,000 participants and 25 genetic instruments", results='asis'}
 #| ft.arraystretch = 1.3
 
 
@@ -1909,10 +1909,10 @@ sens_200k_causal_sim_summ_display <- sens_200k_causal_sim_summ_tib %>%
   #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
-  #add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
-  #fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
-  #fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
-  #fontsize(8, i = 1, j = 1, part = "footer")
+  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nNull Causal Effect (\U03B2 = 0)") |>
+  fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
+  fontsize(8, i = c(1:15), j = c(1:13), part = "body") |>
+  fontsize(8, i = 1, j = 1, part = "footer")
 # set_caption(caption = "Summary of 1000 Simulated Mendelian Randomisation Studies With Null Causal Effect (\U03B2 = 0)",
 #             style = "Table Caption",
 #             autonum = run_autonum(seq_id = "tab",

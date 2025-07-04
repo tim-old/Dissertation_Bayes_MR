@@ -228,7 +228,7 @@ plot_grid(plot_two_cols,
 
 ### Analysis of Simulated Data
 
-Due to a coding issue with outputs from MR-Hevo functions, the \acr{SE}s were not successfully retrieved; all 95% \acr{CI}s were retrieved as intended. To aid comprehension and comparison of below results with regards to variance of causal effect estimates, it was decided to display an estimated \acr{SE} for MR-Hevo. Estimated \acr{SE} was calculated as $(Upper \space CI - Lower \space CI) \div 3.92$, i.e. approximating the bootstrap distribution as normally distributed as expected per \acr{CLT} (see Appendix \@ref(appendix-boot)). However, the reader should note that, whilst reported MR-Hevo \acr{CI}s are accurate, MR-Hevo \acr{SE}s are approximate only.
+Due to a coding issue with outputs from MR-Hevo functions, the \acr{SE}s for MR-Hevo causal estimates were not successfully retrieved; all 95% \acr{CI}s were retrieved as intended. To aid comprehension and comparison of below results with regards to variance of causal effect estimates, it was decided to display an estimated \acr{SE} for MR-Hevo. Estimated \acr{SE} was calculated as $(Upper \space CI - Lower \space CI) \div (2 \times 1.96)$, i.e. approximating the bootstrap distribution as normally distributed per the expectation from \acr{CLT} (see Appendix \@ref(appendix-boot)). However, the reader should note that, whilst reported MR-Hevo \acr{CI}s are accurate, MR-Hevo \acr{SE}s are approximate only.
 
 ```{r sim-summ-load}
 
@@ -442,58 +442,7 @@ Under Scenario 2 assumptions, the mean causal estimate (mean \acr{SE}) across al
 
 Under Scenario 3 assumptions, the mean causal estimate (mean \acr{SE}) across all parameter combinations was `r paste0(causal_Hevo_mean_est_S3, " (", causal_Hevo_mean_SE_S3, ")")` for MR-Hevo and `r paste0(causal_WME_mean_est_S3, " (", causal_WME_mean_SE_S3, ")")` for \acr{WME}.
 
-Overall, MR-Hevo estimates displayed slight bias away from the null across all three scenarios, whereas \acr{WME} estimates were more mixed. Variance of estimates was consistent for both methods across all three scenarios, with MR-Hevo estimates again demonstrating fractionally more variance than \acr{WME}. For both methods, increasing proportion of invalid instruments tended to increase both size and variance of effect estimates, though again the 30% invalid instrument cases in Scenarios 1 and 3 did not follow this pattern. Increasing sample size tended to decrease both bias and variance of estimates as expected.
-
-<!-- For both MR-Hevo and \acr{WME} methods, false-positive report rates generally increased with an increasing proportion of invalid instruments up to around 20% invalid \acr{IV}s. As assumption violations progressively presented greater data variability and bias across scenarios 1 to 3, both MR-Hevo and \acr{WME} methods tended to exhibit higher false-positive report rates, though this progression was noticably attenuated for MR-Hevo versus \acr{WME}, particularly under the assumptions of Scenario 3.  Both trends across invalid instrument proportions and scenarios were somewhat attenuated by increasing sample size from 10,000 to 20,000 participants for both methods. -->
-
-<!-- The mean causal effect estimate (mean reported 95% \acr{CI}s) across all cases was `r no_causal_Hevo_mean_est` (`r no_causal_Hevo_mean_lower` to `r no_causal_Hevo_mean_upper`) for MR-Hevo and `r no_causal_WME_mean_est` (`r no_causal_WME_mean_lower` to `r no_causal_WME_mean_upper`) for \acr{WME}. For \acr{SE}, the mean (range) \acr{SE} of causal effect estimates across all cases was `r no_causal_Hevo_mean_SE` (`r no_causal_Hevo_min_SE` to `r no_causal_Hevo_max_SE`) for MR-Hevo and `r no_causal_WME_mean_SE` (`r no_causal_WME_min_SE` to `r no_causal_WME_max_SE`) for \acr{WME}.  -->
-
-<!-- Causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase slightly for each method, both with an increasing proportion of invalid instruments up to 20% invalid \acr{IV}s, and as assumption violations progressively presented greater data variability and bias across scenarios 1 to 3. For both these trends, MR-Hevo estimates tended to be more affected than those from \acr{WME}, in contrast to the false-positive report rates, though MR-Hevo causal effect estimates were once more relatively less affected by Scenario 3 assumptions. Again, both trends across differing scenarios and invalid instrument proportions were somewhat attenuated by increasing sample size from 10,000 to 20,000 participants for both methods. -->
-
-
-<!-- ```{r inline-vals-causal} -->
-
-<!-- # --- No Causal --- # -->
-<!-- # Mean positive report rates -->
-<!-- causal_Hevo_mean_pos_rate <- mean(causal_sim_summ_tib$Hevo_Pos_Rate * 100) %>% signif(2) -->
-<!-- causal_WME_mean_pos_rate <- mean(causal_sim_summ_tib$WME_Pos_Rate * 100) %>% signif(2) -->
-
-<!-- # Proportion of combinations of scenarios/parameters -->
-<!-- causal_comb_n <- causal_sim_summ_tib$Hevo_Better %>% length() -->
-<!-- causal_Hevo_better_n <- causal_sim_summ_tib$Hevo_Better %>% sum(na.rm = TRUE) -->
-<!-- causal_Hevo_better_pc <- (causal_Hevo_better_n/causal_comb_n * 100) %>% signif(2) -->
-
-<!-- # Mean/CIs -->
-<!-- causal_Hevo_mean_est <- causal_sim_summ_tib$Hevo_Av %>% mean() %>% signif(2) -->
-<!-- causal_Hevo_mean_lower <- causal_sim_summ_tib$Hevo_Lower_CI %>% mean() %>% signif(2) -->
-<!-- causal_Hevo_mean_upper <- causal_sim_summ_tib$Hevo_Upper_CI %>% mean() %>% signif(2) -->
-
-<!-- causal_WME_mean_est <- causal_sim_summ_tib$WME_Av %>% mean() %>% signif(2) -->
-<!-- causal_WME_mean_lower <- causal_sim_summ_tib$WME_Lower_CI %>% mean() %>% signif(2) -->
-<!-- causal_WME_mean_upper <- causal_sim_summ_tib$WME_Upper_CI %>% mean() %>% signif(2) -->
-
-
-<!-- # SEs -->
-<!-- causal_Hevo_mean_SE <- causal_sim_summ_tib$Hevo_SE %>% mean() %>% signif(2) -->
-<!-- causal_Hevo_min_SE <- causal_sim_summ_tib$Hevo_SE %>% min() %>% signif(2) -->
-<!-- causal_Hevo_max_SE <- causal_sim_summ_tib$Hevo_SE %>% max() %>% signif(2) -->
-
-<!-- causal_WME_mean_SE <- causal_sim_summ_tib$WME_SE %>% mean() %>% signif(2) -->
-<!-- causal_WME_min_SE <- causal_sim_summ_tib$WME_SE %>% min() %>% signif(2) -->
-<!-- causal_WME_max_SE <- causal_sim_summ_tib$WME_SE %>% max() %>% signif(2) -->
-
-<!-- ``` -->
-
-<!-- #### Positive Causal Effect {#results-sim-causal} -->
-<!-- \leavevmode\newline Across all cases where no causal effect was present (Table \@ref(tab:causal-sim-summ-display)), the mean rate of reporting a causal effect (i.e. sensitivity) for MR-Hevo was `r causal_Hevo_mean_pos_rate`% versus `r causal_WME_mean_pos_rate`% for \acr{WME}. Of the `r causal_comb_n` combinations of scenarios and parameters, MR-Hevo exhibited a favourable sensitivity versus \acr{WME} in `r causal_Hevo_better_n` (`r causal_Hevo_better_pc`%).  -->
-
-<!-- Under Scenario 1 assumptions, the mean causal estimate (\acr{SE}) was `r` -->
-
-<!-- For both MR-Hevo and \acr{WME} methods, causal report rates increased with an increasing proportion of invalid instruments up to around 20% invalid \acr{IV}s, though this was more consistent for \acr{WME} versus MR-Hevo. As assumption violations progressively presented greater data variability and bias across scenarios 1 to 3, both MR-Hevo and \acr{WME} methods tended to exhibit higher causal report rates. Both trends across differing scenarios and invalid instrument proportions were somewhat attenuated by increasing sample size from 10,000 to 20,000 participants for both methods, which also generally increased sensitivity for each method. -->
-
-<!-- The mean causal effect estimate (mean reported 95% \acr{CI}s) across all cases was `r causal_Hevo_mean_est` (`r causal_Hevo_mean_lower` to `r causal_Hevo_mean_upper`) for MR-Hevo and `r causal_WME_mean_est` (`r causal_WME_mean_lower` to `r causal_WME_mean_upper`) for \acr{WME}. For \acr{SE}, the mean (range) \acr{SE} of causal effect estimates across all cases was `r causal_Hevo_mean_SE` (`r causal_Hevo_min_SE` to `r causal_Hevo_max_SE`) for MR-Hevo and `r causal_WME_mean_SE` (`r causal_WME_min_SE` to `r causal_WME_max_SE`) for \acr{WME}.  -->
-
-<!-- Causal effect estimates, width of \acr{CI}s and \acr{SE} all tended to increase slightly for each method with an increasing proportion of invalid instruments up to 20-30% invalid \acr{IV}s; MR-Hevo estimates tended to be more affected by proportion of invalid instruments compared to \acr{WME} estimates. As assumption violations progressively presented greater data variability and bias across scenarios 1 to 3, \acr{WME} causal estimates tended to increase across all three; MR-Hevo estimates increased when switching from Scenario 1 to Scenario 2, but were relatively unaffected in Scenario 3 versus Scenario 2. Again, trends across invalid instrument proportions were somewhat attenuated by increasing sample from 10,000 to 20,000 participants for both methods, though the effects of sample size on trends across scenarios was less obvious. -->
+Overall, MR-Hevo estimates displayed slight bias away from the null across all three scenarios, whereas \acr{WME} estimates were more mixed. Variance of estimates was consistent for both methods across all three scenarios, with MR-Hevo estimates again demonstrating fractionally more variance than \acr{WME}. For both methods, increasing proportion of invalid instruments tended to increase both size and variance of effect estimates, though again the 30% invalid instrument cases in Scenarios 1 and 3 did not follow this pattern. Increasing sample size tended to decrease both bias and variance of estimates, as expected.
 
 \newpage
 
@@ -585,7 +534,7 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
-  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \nNull Causal Effect (\U03B2 = 0)") |>
+  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nNull Causal Effect (\U03B2 = 0)") |>
   fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
   fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
@@ -684,7 +633,7 @@ causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
   fit_to_width(max_width = 6.5) |>
   #height_all(height = 40, unit = "mm",part = "all") |>
   # Add footer
-  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error. \nPositive Causal Effect (\U03B2 = 0.1)") |>
+  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nPositive Causal Effect (\U03B2 = 0.1)") |>
   fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
   fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
@@ -1295,7 +1244,7 @@ diff_WME_nc_c_cites <- citations_combined_summ_tib %>%
 
 
 #### Data Validation and Re-Analysis
-\leavevmode\newline There were missing gene-outcome coefficients for three instruments from Xie et al[@xie_associations_2023], and one instrument in Clift et al[@clift_smoking_2022] was reported as having an implausibly large gene-outcome coefficient and standard error (-1243.03 and 19161.64, respectively); these instruments were excluded from the main analyses, and included/imputed as the most extreme values per study as a worst-case sensitivity analysis, which did not change conclusions (Appendix \@ref(appendix-sens-reanalysis)). Data were otherwise complete as expected per the descriptions in each study manuscript. A summary of the re-analysis results is presented in Table \@ref(tab:citations-reanalysis-summ-display); estimates are presented both as $\beta$ regression coefficients and \acr{OR}s to aid comparison across studies.
+\leavevmode\newline There were missing gene-outcome coefficients for three instruments from Xie et al[@xie_associations_2023], and one instrument in Clift et al[@clift_smoking_2022] was reported as having an implausibly large gene-outcome coefficient and standard error (-1243.03 and 19161.64, respectively); these instruments were excluded from the main analyses, and included/imputed as the most extreme values per study as a worst-case sensitivity analysis, which did not change conclusions (Appendix \@ref(appendix-sens-reanalysis)). Data were otherwise complete as expected per the descriptions in each study manuscript. A summary of the re-analysis results is presented in Table \@ref(tab:citations-reanalysis-summ-display); estimates are presented both as $\beta$ regression coefficients and \acr{OR}s for non-continuous variables to aid comparison across studies.
 
 #### Re-Analysed vs Reported WME Causal Estimates
 \leavevmode\newline `r diff_WME_est_over_point1_N` of the \acr{WME} estimates generated through re-analysis matched the originally reported estimates poorly (`r diff_WME_est_over_point1_cites`), with a >0.1 difference in re-analysis estimates of \acr{OR} versus the values originally reported. Re-analysed \acr{OR} upper or lower \acr{CI}s were >0.1 different to reported values for `r diff_WME_CIs_over_point1_N` studies (`r diff_WME_CIs_over_point1_cites %>% gluedown::md_text()`). Details of instruments used in re-analysis were re-checked against the relevant manuscripts to confirm accuracy of data used, with no discrepancies found.
@@ -1383,7 +1332,7 @@ re_analysis_Hevo_causal_cites <- citations_combined_summ_tib %>%
   paste(collapse = ", ")
 
 reanalysis_WME_causal <- citations_reanalysis_summ_tib$WME_est_causal_detected %>% sum(na.rm = TRUE)
-reanalysis_causal_discordant <- citations_reanalysis_summ_tib$Hevo_WME_Causal_Discordant %>% sum(na.rm = TRUE)
+reanalysis_causal_discordant <- citations_reanalysis_summ_tib$Discordant %>% sum(na.rm = TRUE)
 ```
 
 #### Re-Analysed WME vs MR-Hevo Causal Estimates
@@ -1478,6 +1427,8 @@ citations_reanalysis_summ_display <- citations_reanalysis_summ_tib %>%
   empty_blanks() |>
   ## Beta
   flextable::compose(part = "header", i = 3, j = c(6, 11), value = as_paragraph("\U03B2")) |> #\U0302
+  # Remove ORs for continuous 
+  flextable::compose(part = "body", i = 8, j = c(8, 13), value = as_paragraph("-")) |> #\U0302
   # Separating lines
   hline(part = "header", i = 2, j = c(6:9, 11:14), border = officer::fp_border(color = "black", width = 1)) |>
   hline(part = "body", i = c(1:10), j = c(1:14), border = officer::fp_border(color = "black", width = 0.2)) |>
