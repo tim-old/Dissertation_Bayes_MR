@@ -54,7 +54,7 @@ mr.stanmodel <- stan_model(file = here("Script",
 
 ### Data Simulation
 
-Data were successfully simulated as intended. A selection of representative visualisations are presented in Figure \@ref(fig:data-sim-validation). Full details of testing used to validate model outputs from parameter inputs are given in Appendix \@ref(appendix-sim-test). The $F$-statistic calculated from simulated instruments was >10, indicating that they were sufficiently strongly associated with exposure to meet the relevance assumption of \acr{IV} analysis (Tables \@ref(tab:no-causal-sim-summ-display) and \@ref(tab:causal-sim-summ-display)).
+Data were successfully simulated as intended. A selection of representative visualisations are presented in Figure \@ref(fig:data-sim-validation). Full details of testing used to validate model outputs from parameter inputs are given in Appendix \@ref(appendix-sim-test). The minimum $F$-statistic calculated from simulated instruments across all simulations was >10, indicating that instruments were sufficiently strongly associated with exposure to meet the relevance assumption of \acr{IV} analysis (Tables \@ref(tab:no-causal-sim-summ-display) and \@ref(tab:causal-sim-summ-display)).
 
 
 ```{r data-sim-load}
@@ -85,9 +85,9 @@ Citations_Instrument_Data <- read.csv(here("Data", "Citations_Datasets", "Citati
 ```
 
 
-```{r data-sim-validation, include=TRUE, fig.height=7.5}
+```{r data-sim-validation, include=TRUE, fig.height=7}
 #| fig.id = "data-sim-validation",
-#| fig.cap = "Plots of a representative group of simulated datasets; all simulate genetic instruments from the same index from the same random seed. Left and right columns demonstrate null and positive true causal effects, respectively; the true causal effect is represented by the gradient of the line shown. The scenario and the proportion of invalid (i.e. pleiotropic) genetic instruments changes with each row. a) 0% of instruments invalid, rendering scenario assumptions regarding invalid assumptions irrelevant. b) 10% of instruments invalid, Scenario 1: balanced pleiotropy simulated, though random sampling of these instruments has introduced some directionality; both variance and some bias are introduced to causal effect estimation. c) 20% of instruments invalid, Scenario 2: directional pleiotropy biases in the direction of the invalid instruments. d) 30% of instruments invalid, Scenario 3: directional pleiotropy and InSIDE assumption violation strongly biases towards a positive effect estimate."
+#| fig.cap = "Plots of a representative group of simulated datasets; all simulate genetic instruments from the same index from the same random seed. Left and right columns demonstrate null and positive true causal effects, respectively; the true causal effect is represented by the gradient of the line shown. The scenario and the proportion of invalid (i.e. pleiotropic) genetic instruments changes with each row. a) 0% of instruments invalid, rendering scenario assumptions regarding invalid assumptions irrelevant. b) 10% of instruments invalid, Scenario 1: balanced pleiotropy simulated, though random sampling of these instruments has introduced some directionality; both variance and some bias are introduced to causal effect estimation. c) 20% of instruments invalid, Scenario 2: directional pleiotropy biases in the direction of the invalid instruments. d) 30% of instruments invalid, Scenario 3: directional pleiotropy and InSIDE assumption violation strongly biases towards a positive effect estimate in a manner difficult to statistically distinguish from a true causal effect."
 
 # Get random dataset index
 set.seed(1701)
@@ -442,7 +442,7 @@ Under Scenario 2 assumptions, the mean causal estimate (mean \acr{SE}) across al
 
 Under Scenario 3 assumptions, the mean causal estimate (mean \acr{SE}) across all parameter combinations was `r paste0(causal_Hevo_mean_est_S3, " (", causal_Hevo_mean_SE_S3, ")")` for MR-Hevo and `r paste0(causal_WME_mean_est_S3, " (", causal_WME_mean_SE_S3, ")")` for \acr{WME}.
 
-Overall, MR-Hevo estimates displayed slight bias away from the null across all three scenarios, whereas \acr{WME} estimates were more mixed. Variance of estimates was consistent for both methods across all three scenarios, with MR-Hevo estimates again demonstrating fractionally more variance than \acr{WME}. For both methods, increasing proportion of invalid instruments tended to increase both size and variance of effect estimates, though again the 30% invalid instrument cases in Scenarios 1 and 3 did not follow this pattern. Increasing sample size tended to decrease both bias and variance of estimates, as expected.
+Overall, MR-Hevo estimates displayed slight bias away from the null across all three scenarios, whereas \acr{WME} estimates were more mixed. MR-Hevo estimates again demonstrated fractionally more variance on average than \acr{WME}. For both methods, increasing proportion of invalid instruments tended to increase both size and variance of effect estimates, though again the 30% invalid instrument cases in Scenarios 1 and 3 did not follow this pattern. Increasing sample size tended to decrease both bias and variance of estimates, as expected.
 
 \newpage
 
@@ -534,7 +534,7 @@ no_causal_sim_summ_tib_display <- no_causal_sim_summ_tib %>%
   #height_all(height = 40, unit = "mm",part = "all") |>
 
   # Add footer
-  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nNull Causal Effect (\U03B2 = 0)") |>
+  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error, SE*: Estimated Standard Error. F and R\U00B2 statistics presented are the minimum values across all simulated datasets. \nNull Causal Effect (\U03B2 = 0)") |>
   fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
   fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
@@ -633,7 +633,7 @@ causal_sim_summ_tib_display <- causal_sim_summ_tib %>%
   fit_to_width(max_width = 6.5) |>
   #height_all(height = 40, unit = "mm",part = "all") |>
   # Add footer
-  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error. \n\U1D439 and \U1D445\U00B2 statistics presented are the minimum values across all simulated datasets. \nPositive Causal Effect (\U03B2 = 0.1)") |>
+  add_footer_lines("CI: Confidence Interval, InSIDE: Instrument Strength Independent of Direct Effect, IV: Instumental Variable, SE: Standard Error. F and R\U00B2 statistics presented are the minimum values across all simulated datasets. \nPositive Causal Effect (\U03B2 = 0.1)") |>
   fontsize(9, i = c(1:5), j = c(1:13), part = "header") |>
   fontsize(8, i = c(1:27), j = c(1:13), part = "body") |>
   fontsize(8, i = 1, j = 1, part = "footer")
@@ -851,7 +851,7 @@ citations_search_sample_refs <- citations_search_sample %>% pull(Study_Ref) %>% 
 
 ```
 
-A total of 110 abstracts and 54 full texts were screened to identify the 10 studies included [`r  gluedown::md_text(citations_search_sample_refs)`]; these studies are summarised in Table \@ref(tab:citation-search-sample-display). The flow diagram of study screening and selection is presented in Figure \@ref(fig:screening-flow).
+A total of 103 abstracts and 54 full texts were screened to identify the 10 studies included [`r  gluedown::md_text(citations_search_sample_refs)`]; these studies are summarised in Table \@ref(tab:citation-search-sample-display). The flow diagram of study screening and selection is presented in Figure \@ref(fig:screening-flow).
 
 ```{r screening-flow, include=TRUE}
 #| out.width = "100%",
@@ -1244,7 +1244,7 @@ diff_WME_nc_c_cites <- citations_combined_summ_tib %>%
 
 
 #### Data Validation and Re-Analysis
-\leavevmode\newline There were missing gene-outcome coefficients for three instruments from Xie et al[@xie_associations_2023], and one instrument in Clift et al[@clift_smoking_2022] was reported as having an implausibly large gene-outcome coefficient and standard error (-1243.03 and 19161.64, respectively); these instruments were excluded from the main analyses, and included/imputed as the most extreme values per study as a worst-case sensitivity analysis, which did not change conclusions (Appendix \@ref(appendix-sens-reanalysis)). Data were otherwise complete as expected per the descriptions in each study manuscript. A summary of the re-analysis results is presented in Table \@ref(tab:citations-reanalysis-summ-display); estimates are presented both as $\beta$ regression coefficients and \acr{OR}s for non-continuous variables to aid comparison across studies.
+\leavevmode\newline There were missing gene-outcome coefficients for 3 instruments from Xie et al[@xie_associations_2023], and 1 instrument in Clift et al[@clift_smoking_2022] was reported as having an implausibly large gene-outcome coefficient and standard error (-1243.03 and 19161.64, respectively); these instruments were excluded from the main analyses, and included/imputed as the most extreme values per study as a worst-case sensitivity analysis, which did not change conclusions (Appendix \@ref(appendix-sens-reanalysis)). Data were otherwise complete as expected per the descriptions in each study manuscript. A summary of the re-analysis results is presented in Table \@ref(tab:citations-reanalysis-summ-display); estimates are presented both as $\beta$ regression coefficients and \acr{OR}s for discrete variables to aid comparison across studies.
 
 #### Re-Analysed vs Reported WME Causal Estimates
 \leavevmode\newline `r diff_WME_est_over_point1_N` of the \acr{WME} estimates generated through re-analysis matched the originally reported estimates poorly (`r diff_WME_est_over_point1_cites`), with a >0.1 difference in re-analysis estimates of \acr{OR} versus the values originally reported. Re-analysed \acr{OR} upper or lower \acr{CI}s were >0.1 different to reported values for `r diff_WME_CIs_over_point1_N` studies (`r diff_WME_CIs_over_point1_cites %>% gluedown::md_text()`). Details of instruments used in re-analysis were re-checked against the relevant manuscripts to confirm accuracy of data used, with no discrepancies found.
