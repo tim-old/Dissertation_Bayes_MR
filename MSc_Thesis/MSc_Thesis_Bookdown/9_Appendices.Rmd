@@ -1386,7 +1386,7 @@ sens_causal_200k_scen3_sim_summ_tib <- readRDS(file = here("Data", "Summary_Tabl
 
 ```
 
-## Simulation Study (Post-Hoc)
+## Simulation Study (Post-Hoc) {#appendix-sens-post-hoc}
 
 ### 100 Genetic Instruments {#sens-tibs-100-snp}
 ```{r sens-100-snp-sim-sum-tibs}
