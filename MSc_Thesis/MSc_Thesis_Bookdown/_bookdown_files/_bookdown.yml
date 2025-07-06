@@ -1,0 +1,14 @@
+book_filename: "MSc_Thesis_Bookdown"
+new_session: FALSE
+#before_chapter_script: _common.R
+delete_merged_file: TRUE
+language:
+  ui:
+    chapter_name: "Chapter "
+fontsize: 12pt
+monofont: "Arial"
+fig_caption: TRUE
+toc: TRUE
+lof: TRUE
+lot: TRUE
+toc_depth: 4

@@ -1,0 +1,56 @@
+---
+title: "Causal Effect Estimation in Mendelian Randomisation Studies - Evaluating a Modern Bayesian Approach to Genetic Pleiotropy Versus Established Weighted Median Methodology"
+author: "B233241"
+date: "September 2024 - July 2025"
+header-includes:
+  - \usepackage{pdflscape}
+  - \newcommand{\blandscape}{\begin{landscape}}
+  - \newcommand{\elandscape}{\end{landscape}}
+  - \usepackage{lmodern}
+bibliography: 
+  - Lit_Rev_Refs.bib
+  - grateful-refs.bib
+csl: vancouver-superscript.csl
+link-citations: TRUE
+urlcolor: blue
+acronyms:
+  loa_title: ""
+  include_unused: FALSE
+  insert_loa: FALSE
+  insert_links: TRUE
+  id_prefix: "acronyms_"
+  sorting: "alphabetical"
+  non_existing: "key"
+  style: "long-short"
+  fromfile: ./_acronyms.yml
+---
+
+\newpage
+
+## Acknowledgements {-}
+
+I would like to thank Dr Athina Spiliopoulou for her expertise, kindness, and infinite patience in supervising this dissertation. I thank Professor Paul McKeigue for his input regarding the background and methodology of the project. Finally, my deepest gratitude goes to my wife, for keeping all our plates spinning while I've been busy shouting at my laptop.
+
+
+## Statement of Originality & Contributions {-}
+
+I confirm that all work is my own except where indicated, and that all sources are clearly referenced. Parts of this dissertation were informed by my participation in a related project with my supervisor's research group, which included comparison of Mendelian randomisation causal estimation methods using similar methodology, i.e. data simulation and citation searching. I confirm that all simulation code, literature searches and analyses contained within this dissertation are solely my own work, produced under the appropriate guidance of my supervisor.
+
+
+## Word Count {-}
+
+<!-- Your dissertation should be 10,000 words in length (this includes the tables & figures and footnotes but excludes the abstract, table of contents, bibliography, and appendices). When you submit your dissertation, you must attach a word count using your word processing package. This must be reported on the title page. -->
+
+Word count: 
+`r 
+wordcountaddin::word_count("2_Intro_Background.Rmd") + 
+wordcountaddin::word_count("3_Methods.Rmd") +
+wordcountaddin::word_count("4_Results.Rmd") +
+wordcountaddin::word_count("5_Discussion.Rmd") +
+wordcountaddin::word_count("6_Limitations_Recommendations.Rmd") +
+wordcountaddin::word_count("7_Conclusions.Rmd")
+`
+<!-- wordcountaddin::word_count("index.Rmd") +  -->
+<!-- wordcountaddin::word_count("9_Appendices.Rmd")  -->
+
+\newpage

@@ -1,0 +1,18 @@
+# bookdown::bs4_book:
+#   css: style.css
+#   theme:
+#     primary: "#096B72"
+#   repo: https://github.com/tim-old/Dissertation_Bayes_MR/tree/982beba4e3014e546329a131ec08b72c73547a68/MSc_Thesis/MSc_Thesis_Bookdown
+bookdown::pdf_book:
+  #includes:
+    #in_header: preamble.tex
+  latex_engine: xelatex
+  dev: cairo_pdf
+  fig_caption: TRUE
+  number_sections: TRUE
+  global_numbering: FALSE
+  pandoc_args: !expr acronymsdown::add_filter()
+  citation_package: default
+  keep_tex: yes
+#bookdown::epub_book: default
+

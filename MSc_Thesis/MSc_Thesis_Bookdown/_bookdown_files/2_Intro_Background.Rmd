@@ -1,0 +1,454 @@
+# Introduction and Background
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE, 
+                      message = FALSE, 
+                      error = FALSE,
+                      include = FALSE,
+                      cache = TRUE, 
+                      dev = "png", 
+                      dpi = 500)
+
+library(ggdag)
+library(here)
+library(tidyverse)
+library(bookdown)
+library(TwoSampleMR)
+library(acronymsdown)
+
+# Load University of Edinburgh colour palette
+source(here("Script", "edin_uni_colours.R"))
+
+# Load pre-formatted plot template - call to ggplot with UoE colours
+source(here("Script", "edin_fig_style.R"))
+
+# Load function scripts
+source(here("Script", "simulation_functions.R"))
+
+```
+
+
+## Introduction to Mendelian Randomisation (MR)
+
+Epidemiology is the study of determinants and distribution of disease across populations; a common epidemiological study aim is therefore to seek evidence as to whether a given exposure (e.g. cigarette smoking) may cause a given outcome (e.g. lung cancer) [@coggon_chapter_2003]. Logistics limit experimental interventions across large groups, so insights into associations between exposures and outcomes are gleaned from observational data of people in the population of interest. Comparing health outcomes between individuals with different levels of a particular exposure may highlight potential links, e.g. higher cancer incidence in those who smoke more is consistent with a causal role for cigarettes in carcinogenesis [@coggon_chapter_2003]. 
+
+However, correlation does not prove causation. A key epidemiological challenge is accounting for so-called "confounding" factors; these are other variables, associated with both the exposure and the outcome of interest, which represent an alternative causal explanation for any exposure-outcome links observed[@martens_instrumental_2006]. If smokers also drink more alcohol than non-smokers, then an observed link between smoking and increased cancer risk could plausibly be caused by increased alcohol exposure, either partially or entirely. Another potential issue with observational data is "reverse causation", where the presumed outcome is in fact a cause of the exposure; this might be the case if a cancer diagnosis drove individuals to drink and smoke more, and data were collected without respect to exposure timings.
+
+\acr{MR} is a methodology intended to support causal inference from observational data. It applies the principles of \acr{IV} analysis to genetic data, performing a type of natural experiment often likened to a \acr{RCT} [@hernan_instruments_2006]. 
+
+In a properly conducted \acr{RCT}, causality can be inferred due to a randomisation process being used as an "instrument" to allocate different levels of exposures to different experimental groups. If groups are randomly allocated, any confounding variables which might otherwise influence exposure-outcome relationships should be evenly distributed between groups, whether these confounders are known or not. As such, there should be no systematic differences between individuals from different groups in the exposure of interest - that is, there should be no bias [@stel_instrumental_2013]. Statistical methods can quantify the probability that any observed outcome differences could have occurred by chance, and thereafter any outcome differences can be interpreted as caused by exposure differences. As allocation and receipt of exposures is known to precede outcome measurements, reverse causality is impossible.
+
+In \acr{MR}, naturally occurring genetic variants - “genetic instruments” – are chosen based on their known association to an exposure of interest. Random assignment of alleles (i.e. variants of a given gene) from parents to offspring during meiosis creates randomisation analagous to that performed for an \acr{RCT} – both measured and unmeasured confounders should be distributed evenly between the groups created. Such genetic randomisation should therefore enable valid causal inference, provided that assumptions of \acr{IV} analysis are met [@davies_reading_2018].
+
+## Causal Effect Estimation in MR
+
+At its simplest, the relationship between two continuous variables - an exposure $X$ and outcome $Y$ - can be represented as a linear model:
+
+\begin{equation} 
+Y = \alpha + \beta X + \epsilon
+\end{equation}
+
+where $\alpha$ represents all non-$X$ determinants of $Y$, $\beta$ is the causal effect of $X$ on $Y$ and $\epsilon$ is an error term. The $\beta$ term is a numerical measure of strength of causal exposure-outcome association, where:
+
+  - $\beta = 0$ implies no causal link between exposure and outcome
+  - $\beta > 0$ implies $X$ causes $Y$
+  - $\beta < 0$ implies $X$ prevents $Y$ 
+  
+To estimate a causal effect using a genetic variant in an \acr{IV} analysis, three key assumptions must be met [@lousdal_introduction_2018]:
+
+1.	Relevance – the genetic variant must be associated with the exposure of interest
+2.	Independence – the genetic variant is independent of confounders of the relationship between exposure and outcome
+3.	Exclusion restriction – the genetic variant must not be associated with the outcome except via the exposure
+
+These assumptions are represented graphically in Figure \@ref(fig:DAG-assumptions-plot). 
+
+```{r DAG-tib}
+
+# Set up data for base case MR directed acyclic graph
+MR_DAG_coords <- list(x = c(G = 0, X = 1, Y = 2, U = 1.5),
+                      y = c(G = 0.5, X = 0.5, Y = 0.5, U = 1))
+
+
+base_dag_tib <- dagify(Y ~ X + U,
+                       X ~ G + U,
+                       labels = c("G" = "Genetic Variant",
+                                  "X" = "Exposure",
+                                  "Y" = "Outcome",
+                                  "U" = "Confounders"),
+                       coords = MR_DAG_coords,
+                       exposure = "X",
+                       outcome = "Y") %>% 
+  tidy_dagitty() 
+
+base_dag_tib
+
+
+```
+
+```{r DAG-base-plot}
+
+# Plot
+base_dag_plot <- base_dag_tib %>% 
+  # ggplot(aes(x = x,
+  #            y = y,
+  #            xend = xend,
+  #            yend = yend,
+  #            )) +
+  ggdag(node = FALSE) +
+  geom_dag_edges(edge_width = 1.1) +
+  geom_dag_text(col = "black",
+                fontface = "italic",
+                size = 10
+                ) +
+  theme_dag() +
+  scale_adjusted()
+
+base_dag_plot
+
+
+```
+
+```{r DAG-assumptions-plot, include=TRUE}
+#| fig.id="DAG-assumptions-plot",
+#| fig.cap="Causal diagram illustrating the relationships between genetic instrument _G_, exposure _X_, outcome _Y_ and confounders of the exposure-outcome relationship _U_ in Mendelian randomisation studies. Blue text & crosses represent key assumptions to ensure valid inference of causal effect of _X_ on _Y_ using _G_ as an instrumental variable. Red text represents violations of these assumptions that may lead to invalid inference through opening of alternate causal pathways. Greek characters represent the key parameters/association coefficients to be estimated. Adapted from Burgess et al 2016[@burgess_sensitivity_2016]"
+
+# Formatting for assumption labels
+assumption_label_col <- edin_muted_blue_hex
+assumption_label_size <- 4
+assumption_viol_label_col <- edin_burgundy_hex
+assumption_viol_label_size <- 4
+assumption_viol_cross_size <- 6
+
+# Formatting for parameter labels
+parameter_label_col <- edin_spruce_grey_hex
+parameter_label_size <- 5
+
+# parameter_vals <- list(size = 4,
+#                        fontface = "italic", 
+#                        colour = "red")
+
+
+assumptions_dag_plot <- base_dag_plot +
+  # Line - Direct effects/uncorrelated pleiotropy/alpha, IV assumption 3
+  geom_dag_edges_arc(aes(x = 0,
+                         xend = 2,
+                         y = 0.5,
+                         yend = 0.5,
+                         edge_linetype = "dotted"),
+                     curvature = -0.4,
+                     arrow = grid::arrow(length = grid::unit(12, "pt"), type = "closed")) +
+  # Line - Direct effects on confounder/correlated pleiotropy, IV assumption 2
+  geom_dag_edges_arc(aes(x = 0,
+                         xend = 1.5,
+                         y = 0.5,
+                         yend = 1,
+                         edge_linetype = "dotted"),
+                     curvature = 0.3,
+                     arrow = grid::arrow(length = grid::unit(12, "pt"), type = "closed")
+                     ) +
+  # # Label - alpha
+  # geom_dag_text(x = 1, 
+  #               y = 0.25, 
+  #               label = "\U03B1", 
+  #               size = parameter_label_size,
+  #               fontface = "italic", 
+  #               colour = parameter_label_col) +
+  # Label - beta
+  geom_dag_text(x = 1.5, 
+                y = 0.55, 
+                label = expression(beta), #"\U03B2",
+                size = parameter_label_size,
+                fontface = "italic",
+                colour = parameter_label_col
+                ) +
+  # Label - gamma (Y)
+  geom_dag_text(x = 0.5, 
+                y = 0.55, 
+                label = expression(gamma), #"\U03B3",
+                size = parameter_label_size,
+                fontface = "italic",
+                colour = parameter_label_col
+                ) +
+  # Label - Gamma (7)
+  geom_dag_text(x = 1, 
+                y = 0.001, 
+                label = expression("|- - - - - - - - - - - - - - - - - - -"~Gamma~ "=" ~ gamma * beta~"- - - - - - - - - - - - - - - - - - -|"), 
+                #label = expression("\\~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"~Gamma~ "=" ~ gamma * beta~"~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~/"), 
+                size = parameter_label_size,
+                fontface = "italic", 
+                colour = parameter_label_col) +
+  # Label - IV1
+  geom_dag_text(x = 0.5, 
+                y = 0.45, 
+                label = "Assumption 1: Relevance", 
+                size = assumption_label_size, 
+                colour = assumption_label_col) +
+  # Label - IV2
+  geom_dag_text(x = 0.4, 
+                y = 1.05, 
+                label = "Assumption 2:\nIndependence", 
+                size = assumption_label_size, 
+                colour = assumption_label_col) +
+  # Cross - IV2
+  geom_dag_text(x = 0.65, 
+                y = 1, 
+                label = "X", 
+                size = assumption_viol_cross_size,
+                fontface = "bold", 
+                colour = assumption_label_col) +
+  # Label - Correlated Pleiotropy
+  geom_dag_text(x = 0.85, 
+                y = 0.875, 
+                label = "Correlated Pleiotropy\n(InSIDE Assumption Violated)", 
+                size = assumption_viol_label_size,
+                #fontface = "italic", 
+                colour = assumption_viol_label_col) +
+  # Label - IV3
+  geom_dag_text(x = 1, 
+                y = 0.16, 
+                label = "Assumption 3: Exclusion\nRestriction", 
+                size = assumption_label_size, 
+                colour = assumption_label_col) +
+  # Cross - IV3
+  geom_dag_text(x = 1, 
+                y = 0.06, 
+                label = "X", 
+                size = assumption_viol_cross_size,
+                fontface = "bold", 
+                colour = assumption_label_col) +
+  # Label - Uncorrelated Pleiotropy
+  geom_dag_text(x = 1, 
+                y = 0.27, 
+                label = "Uncorrelated Pleiotropy", 
+                size = assumption_viol_label_size,
+                #fontface = "italic", 
+                colour = assumption_viol_label_col) #+
+  #labs(#title = "Key Assumptions in Mendelian Randomisation",
+       #subtitle = "", #[@burgess_sensitivity_2016]
+       #caption = "\nG: Genetic Instrument, U: Confounders, X: Exposure, Y: Outcome\n" )
+
+assumptions_dag_plot
+
+```
+
+
+Typically, \acr{MR} studies estimate the causal effect using several genetic instruments; the causal effect estimate derived from the $jth$ instrument is denoted $\hat{\beta}_j$. Let:
+
+\begin{equation} 
+X|G_j = \gamma_0 + \gamma_j G_j + \epsilon_{X_j}
+\end{equation}
+
+\begin{equation} 
+Y|G_j = \Gamma_0 + \Gamma_j G_j + \epsilon_{Y_j}
+\end{equation}
+
+be linear models for exposure and outcome, respectively, given a specific genetic instrument $G_j$, where:
+
+  - $\gamma_0$ and $\Gamma_0$ reflect intercept values corresponding to the predicted value for $X$ and $Y$, respectively, when $G_j = 0$ (i.e. these are the predicted values for an individual carrying the non-effect allele of the genetic variant)
+
+  - $\gamma_j$ and $\Gamma_j$ are coefficients of association with the genetic variant, representing the extent to which an effect allele of $G_j$ will perturb the value of $X$ or $Y$ versus the non-effect allele
+
+  - $\epsilon_{X_j}$ and $\epsilon_{Y_j}$ are error terms, representing effects of variables not explicitly included in the model, e.g. confounders of the exposure-outcome relationship ($U$ in the causal diagram), and genetic contributions outside of $G_j$.
+
+It can be shown that a simple causal effect estimate for the exposure on the outcome can be obtained from a single genetic instrument by the Wald method, dividing the coefficient of gene-outcome association by the coefficient of gene-exposure association, i.e.:
+
+\begin{equation} 
+\hat{\beta}_j = \frac {\hat{\Gamma}_j} {\hat{\gamma}_j}
+\end{equation}
+
+These coefficients of gene-exposure and gene-outcome association ($\hat{\gamma}$ and $\hat{\Gamma}$) can be obtained from a \acr{GWAS}, which quantifies associations between small genetic variations - known as \acr{SNP}s - and various phenotypes. Each genetic instrument selected from a \acr{GWAS} may be valid or invalid, depending on it meeting the above assumptions. The overall causal effect estimate $\hat{\beta}$ from any given \acr{MR} method will typically seek to pool effect estimates from several instruments so as to minimise effects of any invalid instruments included, e.g. by removing/down-weighting contributions of genetic instruments which might be violating one or more assumptions. This is equivalent to plotting all estimated coefficients of gene-outcome association ($\bar{\Gamma}$) versus all estimated coefficients of gene-exposure association ($\bar{\gamma}$) for the set of instruments, then using the gradient of a regression line through the points as the causal effect estimate $\hat{\beta}$; picking an \acr{MR} methodology is analogous to choosing the method to draw the line of best fit (Figure \@ref(fig:Gamma-gamma-plot)). For binary outcomes, the coefficients of gene-outcome association ($\bar{\Gamma}$) are expressed as log odds ratios ($log(OR)$) for estimating the causal effect, and the causal effect estimate can be converted to an \acr{OR} through exponentiation, i.e.:
+
+\begin{equation} 
+OR = e^{\hat{\beta}}
+\end{equation}
+
+```{r Gamma-gamma-plot, include=TRUE}
+#| fig.id="Gamma-gamma-plot",
+#| fig.cap="Simulated MR Study on 10,000 individuals using 25 genetic instruments, of which 30% are invalid (red points) and introduce directional pleiotropic effects. The true value of the exposure-outcome causal effect is 0.25 (grey line, causal effect represented by gradient). Regression using an unajusted least-squares linear model (light blue line) results in a biased estimate in the positive direction due to the influence of the invalid instruments. Using the Weighted Median Estimator method (pink line) attenuates the effects of the invalid instruments, resulting in an estimate closer to the true value. Adapted from Bowden et al 2016[@bowden_consistent_2016]"
+
+true_beta <- 0.25
+
+# Simulate individuals' data
+causal_data <- get_simulated_MR_data(n_participants = 10000,
+                                     n_instruments = 25,
+                                     n_datasets = 1,
+                                     prop_invalid = 0.3,
+                                     causal_effect = TRUE, 
+                                     beta_val = true_beta, 
+                                     balanced_pleio = FALSE)
+
+# Get models inc estimates of  Coeff_G_X/Coeff_G_Y
+causal_models <- tibble(get_models(causal_data)[[1]])
+
+# Assign values to vectors
+coeff_G_X_vect <- causal_models$coeff_G_X
+coeff_G_Y_vect <- causal_models$coeff_G_Y
+coeff_G_X_SE_vect <- causal_models$coeff_G_X_SE
+coeff_G_Y_SE_vect <- causal_models$coeff_G_Y_SE
+
+
+# Calculate WME estimates
+causal_models_WME <- mr_weighted_median(b_exp = coeff_G_X_vect,
+                                        b_out = coeff_G_Y_vect,
+                                        se_exp = coeff_G_X_SE_vect,
+                                        se_out = coeff_G_Y_SE_vect,
+                                        parameters = list(nboot = 1000)
+                                        )
+# Calculate gradients for plotting
+lm_gradient <- round(coefficients(lm(causal_models$coeff_G_Y ~ 0 + causal_models$coeff_G_X)[1]), digits = 2)
+
+WME_gradient <- round(causal_models_WME$b, digits = 2)
+
+# Extra tibble for plotting
+lines_tib <- tibble(intercept = c(0,0,0),
+                    slope = c(true_beta, lm_gradient, WME_gradient),
+                    values = c("True", "Linear", "WME")
+                    )
+
+# Plot
+Gamma_gamma_plot <- causal_models %>%
+  mutate(Invalid = (alpha != 0)) %>% 
+  plot_template() +
+  aes(x = coeff_G_X, 
+      y = coeff_G_Y) + 
+  # Instruments
+  geom_point(aes(fill = Invalid),
+             pch = 21,
+             #alpha = 0.75,
+             size = 3) +
+  # Lines
+  geom_abline(data = lines_tib,
+              aes(colour = values,
+                  slope = slope,
+                  intercept = intercept),
+              size = c(1.5, 0.75, 0.75)
+              ) +
+  scale_colour_manual(name = "Effect Estimate",
+                      values = c("True" = edin_spruce_grey_hex,
+                                 "Linear" = edin_bright_blue_hex,
+                                 "WME" = edin_bright_pink_hex),
+                      labels = c("True" = "True \U03B2", 
+                                 "Linear" = "Least Squares",
+                                 "WME" = "Weighted Median"),
+                      guide = "legend") +
+  # Add betas
+  ## True
+  geom_text(label = paste0("True \U03B2 = ", true_beta), #beta
+            x = 0.08, # labels with gradient (causal effect estimate)
+            y = 0.01,
+            size = 3.5, 
+            fontface = "italic",
+            colour = edin_spruce_grey_hex, 
+            hjust = 0, 
+            data = . %>% slice_head() # prevent over-printing
+  ) +
+  ## Linear
+  geom_text(label = expression("Least Squares" ~ hat(beta) ~ "= 0.61"), #beta
+            x = 0.075, # labels with gradient (causal effect estimate)
+            y = 0.09,
+            size = 3.5, 
+            #fontface = "bold",
+            colour = edin_bright_blue_hex, 
+            hjust = 0, 
+            data = . %>% slice_head() # prevent over-printing
+  ) +
+  ## WME
+  geom_text(label = expression("WME" ~ hat(beta) ~ "= 0.3"), #beta
+            x = 0.088, # labels with gradient (causal effect estimate)
+            y = 0.045,
+            size = 3.5, 
+            #fontface = "bold",
+            colour = edin_bright_pink_hex, 
+            hjust = 0, 
+            data = . %>% slice_head() # prevent over-printing
+  ) +
+  # Colours for valid/invalid instruments
+  scale_fill_manual(values = c(edin_muted_turquoise_hex, edin_burgundy_hex),
+                   labels = c("Valid", "Invalid")) +
+  #Colours for regression lines
+  labs(#title = plot_title,
+    #x = "gene-exposure Coefficient ( \U0302\U03B3)",  #U1D67 small gamma
+    #y = "gene-outcome Coefficient ( \U0302\U1D26)") + #U0393 big Gamma
+    x = expression("Gene-Exposure Coefficient (" ~hat(gamma)~ ")"),  
+    y = expression("Gene-Outcome Coefficient (" ~hat(Gamma)~ ")"),
+    colour = "Regression Lines",
+    fill = "Instruments") +
+  #guides(guide)
+  xlim(-0.01, 0.125)
+  
+Gamma_gamma_plot
+
+
+```
+
+## Violations to Assumptions
+
+In practice, only the relevance assumption can be directly tested and proven. Typically, genetic variants for \acr{MR} studies are selected as instruments based on their observed strength of association with exposures of interest in one or more \acr{GWAS}. Sufficient gene-exposure association can be partly assured by selection using an appropriate genome-wide significance level (e.g. $p < 10 ^{-8}$) during this instrument selection. Statistical testing can also further quantify the gene-exposure relationship; commonly used measures include the $R^2$ statistic, representing the proportion of variance in the exposure explained by the genotype, and the related $F$-statistic, which additionally accounts for the sample size under investigation [@richmond_mendelian_2022]. An $F$-statistic of $\ge$ 10 is generally considered to represent a strong enough gene-exposure association to consider a genetic instrument for use [@martens_instrumental_2006].
+
+The assumptions of independence and exclusion restriction depend on all determinants of the outcome, both known and unknown; as such, these can never be proven absolutely. Various methods have been proposed to quantify and account for violations of these two additional assumptions, including the weighted median estimator, described below [@bowden_consistent_2016].
+ 
+The main methods to avoid violations of the independence assumption relate to appropriate controls for population structure, to avoid confounding due to ancestry or population stratification. For example, in two-sample MR studies, where gene-exposure and gene-outcome coefficients are estimated from two separate \acr{GWAS} studies, spurious exposure-outcome associations can be generated by confounding due to underlying differences in e.g. allele frequency, baseline disease risks etc. between ancestrally different populations; techniques such as principle components analysis can help control for such differences [@richmond_mendelian_2022].
+
+Exclusion restriction is a particularly troublesome issue in MR, due to so-called (horizontal) genetic pleiotropy, which is abundant among genetic variants associated with disease traits[@sivakumaran_abundant_2011]. A genetic variant has “pleiotropic” effects if it influences several traits simultaneously through its involvement in multiple biological pathways; such alternative biological pathways - and the resulting pleiotropic effects - are often unknown. Pleiotropic effects open unmeasured causal pathways between a genetic instrument and the outcome (Figure \@ref(fig:DAG-assumptions-plot)), thus introducing bias in the \acr{MR} estimate of the association between exposure and outcome. As pleiotropy influences outcome separate to the path involving the exposure of interest, the term "direct effects" is also used[@hemani_evaluating_2018]. Where pleiotropic effects are in both positive and negative directions with a mean of zero - "balanced pleiotropy" - then they only add variance to the causal effect estimate, making inference more uncertain [@morrison_mendelian_2020]. By contrast, "directional pleiotropy", where the mean of pleiotropic effects is non-zero, may introduce bias [@bowden_consistent_2016] (Figure \@ref(fig:Gamma-gamma-plot)). Note that, due to sampling error, the distribution of pleiotropic effects in a finite sample of genetic instruments may not reflect the true distribution across all possible genetic instruments for a given trait. For example, even where balanced pleiotropy is present across all genetic variants influencing a trait, bias could still be introduced into \acr{MR} estimates of causal effect if a sample of instruments used happens (by chance) to have a non-zero mean pleiotropic effect on the outcome; the probability of this occuring reduces as the number of instruments used increases. In general, as the number of instruments used tends towards infinity, balanced pleiotropy will tend to introduce more variance than bias into causal effect estimates, and directional pleiotropy will tend to introduce bias more consistently than any additional variance it contributes.
+
+If an additional causal pathway acts between gene $G$ and outcome $Y$ via a confounding factor $U$, then the magnitude of direct - and therefore overall - effects of $G$ on $Y$ will correlate with the effects of $G$ on $X$ (i.e. $\Gamma \propto \gamma$), and "correlated pleiotropy" is present. If an additional causal pathway acts directly between gene $G$ and outcome $Y$ independent of both exposure $X$ and confounders $U$, this results in "uncorrelated pleiotropy" (Figure \@ref(fig:DAG-assumptions-plot)). Both correlated and uncorrelated pleiotropy can introduce bias which distorts the estimate of the true causal effect. In general, correlated pleiotropy is far more challenging to account for - potentially impossible using \acr{MR} methods alone. Any attempt to statistically describe associations between genes, exposures and outcomes in the presence of correlated pleiotropy will struggle to identify a unique model - different parameterisations where different proportions of overall gene-outcome association are subsumed into the confounder-outcome association may be equally plausible given available observational data. For this reason, several MR methods explicitly require an additional assumption of \acr{InSIDE}, i.e no correlated pleiotropy to be present [@grant_bayesian_2024].
+
+## Weighted Median Estimator (WME)
+
+A common approach to produce exposure-outcome causal effect estimates robust to violations of the exclusion restriction assumption is the \acr{WME}  method, proposed by Bowden et al [@bowden_consistent_2016]. 
+
+In \acr{WME} analysis, several genetic instruments are used to estimate the exposure-outcome causal effect $\hat{\beta}$. Each instrument is known to be associated with the exposure of interest, but an unknown proportion of these instruments may be invalid due to pleiotropic genetic effects. The median causal effect will provide a consistent effect estimate despite presence of pleiotropic effects, provided that <50% of included instruments are invalid. However, the simple median is an inefficient estimator - it weights estimates from all included instruments equally, without accounting for differences in precision of estimates obtained from each instrument, or by extension the factors influencing precision (e.g. sample size)[@bowden_consistent_2016].
+
+\acr{WME} therefore assigns a weight to each genetic instrument’s estimate of the causal effect according to the inverse of the variance of the estimate; these weighted effect estimates are used to construct a cumulative distribution function for the value of the causal effect across the range of values estimated based on each of the instruments. The 50th percentile of this distribution can then be taken as a “weighted median estimate” of the true causal effect, theoretically producing consistent causal estimates even if up to 50% of the included information comes from invalid instruments [@bowden_consistent_2016]. An example of \acr{WME} attenuating the effects of invalid instruments is shown in Figure \@ref(fig:Gamma-gamma-plot).
+
+## Issues With WME Confidence Intervals
+
+\acr{WME} calculation methods are available via several prolific \acr{MR} tools: the R packages `MendelianRandomization`[@yavorska_mendelianrandomization_2017] and `TwoSampleMR`, and the MR-Base web platform[@hemani_mr-base_2018]. \acr{WME} is now commonly used either as the primary method or as a sensitivity analysis to account for pleiotropic effects in a large number of \acr{MR} studies. \acr{WME}'s cited "breakdown level" of 50% invalid instruments suggests that, in the vast majority of cases, \acr{WME} causal effect estimates should be robust to the presence of pleiotropic effects[@bowden_consistent_2016]. Despite this, a growing concern in the field of \acr{MR} regarding high Type 1 error rates (i.e. frequently declaring a causal effect between exposures and outcomes where none is actually present)[@stender_reclaiming_2024]. If \acr{WME} causal estimates are indeed robust to pleiotropy as claimed, another possible explanation for the method allowing null hypotheses to be falsely accepted would be if the \acr{CI} it reports for its causal estimates were inappropriately narrow.
+
+\acr{CI}s are a measure of the precision of an effect estimate, representing the range of values expected to contain the true effect given the observed variance of data around the observed average effect. Two key sources of uncertainty lead to variance in \acr{MR} causal effect estimates:
+
+1. Uncertainty around estimation of the gene-exposure and gene-outcome coefficients ($\hat{\gamma}$ and $\hat{\Gamma}$).
+
+2. Uncertainty around the presence and magnitude of pleiotropic effects of included instruments.
+
+All commonly available tools to calculate \acr{WME} implement the original method for generating the 95% \acr{CI}, using "bootstrapping" methodology to re-sample coefficients and causal estimates derived from each instrument. However, this approach only accounts for uncertainty from Point 1 (estimation of $\hat{\gamma}$ and $\hat{\Gamma}$), and may therefore under-estimate the total variance relevant to causal effect estimation. A fuller explanation of the theoretical issues with this approach, together with an overview of bootstrapping in general, is presented in Appendix \@ref(appendix-boot).
+
+In brief, this method would be expected to lead to \acr{CI}s which are too narrow, giving over-confidence in the causal effect estimates obtained, and therefore inflated Type 1 error rates.  Given the widespread use of \acr{WME} across \acr{MR} literature, this issue with its \acr{CI} generation could potentially have far-reaching consequences.
+
+## MR-Hevo
+
+MR-Hevo is an R package implementing an alternative approach to \acr{MR} causal estimation. It uses Bayesian methodology to estimate MR causal effects and corresponding \acr{CI}s. 
+
+In general, Bayesian methods can estimate parameters in the following way[@clyde_chapter_2022]:
+
+1. A "prior" is specified - this is a probability distribution which represents existing beliefs about likely values of that parameter (e.g. based on data from previous studies), 
+2. Further data is collected
+3. The prior is updated based on the new data to form a "posterior" probability distribution, i.e. an improved representation of likely values of the parameter is created which incorporates the new information available
+
+
+In this case, MR-Hevo directly addresses possible pleiotropy through use of a prior probability distribution which models pleiotropic effects of instruments on the outcome. The chosen prior distribution (a regularised hierarchical horseshoe, building on the work of Piironen & Vehtari[@piironen_sparsity_2017]) represents existing knowledge that most genetic instruments will not exert pleiotropic effects on the outcome, but some will, and these pleiotropic effects may be large. The R implementation of MR-Hevo then uses the probabilistic programming language, Stan, to directly sample the posterior probability distribution of pleiotropic effects on the outcome[@mckeigue_inference_2024]. Essentially, this process involves using a computationally intensive, simulation based, "trial-and-error" approach using Markov chain Monte Carlo algorithms to perform inference over all model parameters and the available data[@homan_no-u-turn_2014; @hamra_markov_2013]. 
+
+Once the joint posterior distribution over all model parameters has been sampled, it is possible to obtain the marginal likelihood for the causal effect parameter given the data by dividing the posterior distributions by the prior. This computation marginalises over the pleiotropic effects, i.e. integrates over all possible values for these effects, thus removing their influence on other model parameters. This approach accounts for both main sources of uncertainty in \acr{MR} studies, and also allows classical hypothesis testing for the maximum likelihood estimate of the causal effect, including calculation of a p-value from the marginal likelihood[@mckeigue_inference_2024].
+
+
+## Aims and Objectives
+
+The main aim of this study was to compare the outputs and resulting conclusions of MR-Hevo versus \acr{WME} causal effect estimation methods in \acr{MR} studies. In particular, this study aims to demonstrate if the \acr{WME} approach gives over-confident causal estimates in the presence of pleiotropy, and whether this issue is more correctly handled by the MR-Hevo approach as its creators suggest. This will be achieved through addressing the research questions and objectives as outlined below:
+
+
+### Research Questions: {-}
+
+1. How do \acr{MR} causal effect estimates from MR-Hevo differ versus the weighted median estimator?
+2. Do conclusions of existing MR studies using weighted median causal effect estimation change if MR-Hevo methods are used?
+
+### Objectives: {-}
+
+1. Quantify the bias of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator
+2. Quantify the variance of MR-Hevo causal estimates for simulated data under differing sets of common assumptions, with reference to the weighted median estimator
+3. Compare the conclusions drawn from MR-Hevo causal effect estimation versus the weighted median estimator on real-world data
+
+
+
+\newpage
