@@ -21,7 +21,7 @@ These results do suggest that, despite MR-Hevo point estimates being marginally 
 
 Variance of estimates was similar to the null causal effect case, with broadly comparable average \acr{SE}s/\acr{CI}s across both methods, though disproportionately higher variance for MR-Hevo versus \acr{WME} estimates with parameter/scenario combinations promoting bias due to pleiotropy.
 
-Again, these findings would be in keeping with MR-Hevo reporting causality in a way more robust to assumption violations than \acr{WME}, rather than \acr{WME} truly being a more powerful method for detecting causal effects..
+Again, these findings would be in keeping with MR-Hevo reporting causality in a way more robust to assumption violations than \acr{WME}, rather than \acr{WME} truly being a more powerful method for detecting causal effects.
 
 An exception to general trends is the combination of 0% invalid instruments with 20,000 participants, where MR-Hevo reports narrower \acr{CI}s - and therefore correctly reports disproportionately more causal effects - than either \acr{WME} using that parameter combination, or MR-Hevo at 0% invalid instruments with 10,000 participants.
 

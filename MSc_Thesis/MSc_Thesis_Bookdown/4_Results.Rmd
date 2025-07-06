@@ -228,7 +228,7 @@ plot_grid(plot_two_cols,
 
 ### Analysis of Simulated Data
 
-Due to a coding issue with outputs from MR-Hevo functions, the \acr{SE}s for MR-Hevo causal estimates were not successfully retrieved; all 95% \acr{CI}s were retrieved as intended. To aid comprehension and comparison of below results with regards to variance of causal effect estimates, it was decided to display an estimated \acr{SE} for MR-Hevo. Estimated \acr{SE} was calculated as $(Upper \space CI - Lower \space CI) \div (2 \times 1.96)$, i.e. approximating the bootstrap distribution as normally distributed per the expectation from \acr{CLT} (see Appendix \@ref(appendix-boot)). However, the reader should note that, whilst reported MR-Hevo \acr{CI}s are accurate, MR-Hevo \acr{SE}s are approximate only.
+Due to a coding issue with outputs from MR-Hevo functions, the \acr{SE}s for MR-Hevo causal estimates were not successfully retrieved; all 95% \acr{CI}s were retrieved as intended. To aid comprehension and comparison of below results with regards to variance of causal effect estimates, it was decided to display an estimated \acr{SE} for MR-Hevo. Estimated \acr{SE} was calculated as $(Upper~~CI - Lower~~CI) \div (2 \times 1.96)$, i.e. approximating the bootstrap distribution as normally distributed per the expectation from \acr{CLT} (see Appendix \@ref(appendix-boot)). As such, whilst reported MR-Hevo \acr{CI}s are accurate, MR-Hevo \acr{SE}s are approximate only.
 
 ```{r sim-summ-load}
 
@@ -857,7 +857,7 @@ A total of 103 abstracts and 54 full texts were screened to identify the 10 stud
 #| out.width = "100%",
 #| out.height = "70%",
 #| fig.id = "screening-flow",
-#| fig.cap = "Flow diagram illustrating selection of sample of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of causal effect"
+#| fig.cap = "Flow diagram illustrating selection of a sample of ten highly-cited two-sample Mendelian randomisation articles reporting a weighted median estimate of causal effect"
 
 include_graphics(path = here("Data", "Citations_Search", "WME_citation_search_flow_diagram_crop.png"),
                  error = FALSE)

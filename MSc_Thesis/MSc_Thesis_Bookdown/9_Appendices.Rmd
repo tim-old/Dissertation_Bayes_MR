@@ -1825,7 +1825,7 @@ sens_200k_no_causal_sim_summ_display
 
 \newpage
 
-```{r sens-200k-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 200,000 participants with 25 genetic instruments", results='asis'}
+```{r sens-200k-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 200,000 participants with 25 genetic instruments", results='asis', cache=FALSE}
 #| ft.arraystretch = 1.3
 
 library(flextable)
