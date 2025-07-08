@@ -64,6 +64,41 @@ To estimate a causal effect using a genetic variant in an \acr{IV} analysis, thr
 
 These assumptions are represented graphically in Figure \@ref(fig:DAG-assumptions-plot). 
 
+
+
+
+Typically, \acr{MR} studies estimate the causal effect using several genetic instruments; the causal effect estimate derived from the $jth$ instrument is denoted $\hat{\beta}_j$. Let:
+
+\begin{equation} 
+X|G_j = \gamma_0 + \gamma_j G_j + \epsilon_{X_j}
+\end{equation}
+
+\begin{equation} 
+Y|G_j = \Gamma_0 + \Gamma_j G_j + \epsilon_{Y_j}
+\end{equation}
+
+be linear models for exposure and outcome, respectively, given a specific genetic instrument $G_j$, where:
+
+  - $\gamma_0$ and $\Gamma_0$ reflect intercept values corresponding to the predicted value for $X$ and $Y$, respectively, when $G_j = 0$ (i.e. these are the predicted values for an individual carrying the non-effect allele of the genetic variant)
+
+  - $\gamma_j$ and $\Gamma_j$ are coefficients of association with the genetic variant, representing the extent to which an effect allele of $G_j$ will perturb the value of $X$ or $Y$ versus the non-effect allele
+
+  - $\epsilon_{X_j}$ and $\epsilon_{Y_j}$ are error terms, representing effects of variables not explicitly included in the model, e.g. confounders of the exposure-outcome relationship ($U$ in the causal diagram), and genetic contributions outside of $G_j$.
+
+It can be shown that a simple causal effect estimate for the exposure on the outcome can be obtained from a single genetic instrument by the Wald method, dividing the coefficient of gene-outcome association by the coefficient of gene-exposure association, i.e.:
+
+\begin{equation} 
+\hat{\beta}_j = \frac {\hat{\Gamma}_j} {\hat{\gamma}_j}
+\end{equation}
+
+These coefficients of gene-exposure and gene-outcome association ($\hat{\gamma}$ and $\hat{\Gamma}$) can be obtained from a \acr{GWAS}, which quantifies associations between small genetic variations - known as \acr{SNP}s - and various phenotypes. Each genetic instrument selected from a \acr{GWAS} may be valid or invalid, depending on it meeting the above assumptions. The overall causal effect estimate $\hat{\beta}$ from any given \acr{MR} method will typically seek to pool effect estimates from several instruments so as to minimise effects of any invalid instruments included, e.g. by removing/down-weighting contributions of genetic instruments which might be violating one or more assumptions. This is equivalent to plotting all estimated coefficients of gene-outcome association ($\bar{\Gamma}$) versus all estimated coefficients of gene-exposure association ($\bar{\gamma}$) for the set of instruments, then using the gradient of a regression line through the points as the causal effect estimate $\hat{\beta}$; picking an \acr{MR} methodology is analogous to choosing the method to draw the line of best fit (Figure \@ref(fig:Gamma-gamma-plot)). For binary outcomes, the coefficients of gene-outcome association ($\bar{\Gamma}$) are expressed as log odds ratios ($log(OR)$) for estimating the causal effect, and the causal effect estimate can be converted to an \acr{OR} through exponentiation, i.e.:
+
+\begin{equation} 
+OR = e^{\hat{\beta}}
+\end{equation}
+
+\newpage
+
 ```{r DAG-tib}
 
 # Set up data for base case MR directed acyclic graph
@@ -232,37 +267,6 @@ assumptions_dag_plot <- base_dag_plot +
 assumptions_dag_plot
 
 ```
-
-
-Typically, \acr{MR} studies estimate the causal effect using several genetic instruments; the causal effect estimate derived from the $jth$ instrument is denoted $\hat{\beta}_j$. Let:
-
-\begin{equation} 
-X|G_j = \gamma_0 + \gamma_j G_j + \epsilon_{X_j}
-\end{equation}
-
-\begin{equation} 
-Y|G_j = \Gamma_0 + \Gamma_j G_j + \epsilon_{Y_j}
-\end{equation}
-
-be linear models for exposure and outcome, respectively, given a specific genetic instrument $G_j$, where:
-
-  - $\gamma_0$ and $\Gamma_0$ reflect intercept values corresponding to the predicted value for $X$ and $Y$, respectively, when $G_j = 0$ (i.e. these are the predicted values for an individual carrying the non-effect allele of the genetic variant)
-
-  - $\gamma_j$ and $\Gamma_j$ are coefficients of association with the genetic variant, representing the extent to which an effect allele of $G_j$ will perturb the value of $X$ or $Y$ versus the non-effect allele
-
-  - $\epsilon_{X_j}$ and $\epsilon_{Y_j}$ are error terms, representing effects of variables not explicitly included in the model, e.g. confounders of the exposure-outcome relationship ($U$ in the causal diagram), and genetic contributions outside of $G_j$.
-
-It can be shown that a simple causal effect estimate for the exposure on the outcome can be obtained from a single genetic instrument by the Wald method, dividing the coefficient of gene-outcome association by the coefficient of gene-exposure association, i.e.:
-
-\begin{equation} 
-\hat{\beta}_j = \frac {\hat{\Gamma}_j} {\hat{\gamma}_j}
-\end{equation}
-
-These coefficients of gene-exposure and gene-outcome association ($\hat{\gamma}$ and $\hat{\Gamma}$) can be obtained from a \acr{GWAS}, which quantifies associations between small genetic variations - known as \acr{SNP}s - and various phenotypes. Each genetic instrument selected from a \acr{GWAS} may be valid or invalid, depending on it meeting the above assumptions. The overall causal effect estimate $\hat{\beta}$ from any given \acr{MR} method will typically seek to pool effect estimates from several instruments so as to minimise effects of any invalid instruments included, e.g. by removing/down-weighting contributions of genetic instruments which might be violating one or more assumptions. This is equivalent to plotting all estimated coefficients of gene-outcome association ($\bar{\Gamma}$) versus all estimated coefficients of gene-exposure association ($\bar{\gamma}$) for the set of instruments, then using the gradient of a regression line through the points as the causal effect estimate $\hat{\beta}$; picking an \acr{MR} methodology is analogous to choosing the method to draw the line of best fit (Figure \@ref(fig:Gamma-gamma-plot)). For binary outcomes, the coefficients of gene-outcome association ($\bar{\Gamma}$) are expressed as log odds ratios ($log(OR)$) for estimating the causal effect, and the causal effect estimate can be converted to an \acr{OR} through exponentiation, i.e.:
-
-\begin{equation} 
-OR = e^{\hat{\beta}}
-\end{equation}
 
 ```{r Gamma-gamma-plot, include=TRUE}
 #| fig.id="Gamma-gamma-plot",

@@ -61,6 +61,8 @@ Inclusion criteria:
   
 - Uses Weighted Median Estimator
 
+\newpage
+
 Exclusion criteria: 
 
 - Methodology paper, review article, editorial or letter
@@ -88,4 +90,4 @@ Data were manually screened at summary level and relevant features were extracte
 
 The protocol for this work has been reviewed and approved by the \acr{UMREG} at the University of Edinburgh, Ethics ID: UM241126. Due to the nature of the project, using simulated and publically available data only, no significant ethical issues were foreseen, and sponsorship was deemed unnecessary by the \acr{UMREG} reviewing panel.
 
-
+\newpage

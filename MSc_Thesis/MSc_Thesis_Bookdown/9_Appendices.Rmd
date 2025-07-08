@@ -81,8 +81,8 @@ prostate_vol_pop <- blood_storage %>%
                  fill = edin_blue_hex) +
   labs(subtitle = "A) True distribution, N = 307",
        x = NULL) +
-  xlim(10, 275) +
-  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
+  xlim(10, 275) #+
+  #theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 set.seed(1701)
 prostate_vol_samp <- blood_storage %>% 
@@ -94,8 +94,8 @@ prostate_vol_samp <- blood_storage %>%
                  fill = edin_blue_hex) +
   labs(subtitle = "B) Empirical distribution, n = 100",
        x = NULL) +
-  xlim(10, 275) +
-  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
+  xlim(10, 275) #+
+  #theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 set.seed(1701)
 prostate_vol_boot_1k <- blood_storage %>% 
@@ -117,8 +117,8 @@ prostate_vol_boot_1k <- blood_storage %>%
               unhighlighted_params = list(fill = edin_burgundy_hex)) +
   labs(subtitle = "C) Bootstrap distribution, k = 1,000",
        x = NULL) +
-  xlim(10, 275) +
-  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
+  xlim(10, 275) #+
+  #theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 set.seed(1701)
 prostate_vol_boot_100k <- blood_storage %>% 
@@ -141,8 +141,8 @@ prostate_vol_boot_100k <- blood_storage %>%
               unhighlighted_params = list(fill = edin_burgundy_hex)) +
   labs(subtitle = "D) Bootstrap distribution, k = 100,000",
        x = "Prostate volume/mL") +
-  xlim(10,275) +
-  theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
+  xlim(10,275) #+
+  #theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust=0.5))
 
 
 cowplot::plot_grid(prostate_vol_pop, 
@@ -150,7 +150,8 @@ cowplot::plot_grid(prostate_vol_pop,
                    prostate_vol_boot_1k,
                    prostate_vol_boot_100k,
                    ncol = 1,
-                   rel_heights = c(1,1,1,1.3)
+                   rel_heights = c(1,1,1,1.3),
+                   align = "v"
 )
 
 ```
@@ -1452,7 +1453,7 @@ sens_100snp_causal_sim_summ_tib <- bind_rows(sens_100snp_causal_scen1_sim_summ_t
 ```
 
 ```{r sens-100-snp-no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-100-snp-no-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect and using 20,000 participants with 100 genetic instruments", results='asis'}
-#| ft.arraystretch = 1.3
+#| ft.arraystretch = 1
 
 
 library(flextable)
@@ -1557,7 +1558,7 @@ sens_100snp_no_causal_sim_summ_display
 
 
 ```{r sens-100-snp-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-100-snp-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 20,000 participants with 100 genetic instruments", results='asis'}
-#| ft.arraystretch = 1.3
+#| ft.arraystretch = 1
 
 library(flextable)
 library(ftExtra)
@@ -1722,7 +1723,7 @@ sens_200k_causal_sim_summ_tib <- bind_rows(sens_200k_causal_scen1_sim_summ_tib,
 ```
 
 ```{r sens-200k-no-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-no-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with null causal effect and using 200,000 participants with 25 genetic instruments", results='asis'}
-#| ft.arraystretch = 1.3
+#| ft.arraystretch = 1
 
 
 library(flextable)
@@ -1826,7 +1827,7 @@ sens_200k_no_causal_sim_summ_display
 \newpage
 
 ```{r sens-200k-causal-sim-summ-display, echo=FALSE, warning=FALSE, include=TRUE, tab.id="sens-200k-causal-sim-summ-display", tab.cap="Summary of 100 simulated Mendelian randomisation studies per combination of scenario and parameters, all with positive causal effect and using 200,000 participants with 25 genetic instruments", results='asis', cache=FALSE}
-#| ft.arraystretch = 1.3
+#| ft.arraystretch = 1
 
 library(flextable)
 library(ftExtra)
@@ -2010,7 +2011,7 @@ write.csv(sens_citations_reanalysis_summ_tib, here("Data", "Citations_Datasets",
 ```{r sens-citations-reanalysis-sum-display, include = TRUE}
 #| tab.id = "sens-citations-reanalysis-summ-display",
 #| tab.cap = "Sensitivity re-analyses using inclusion of outliers and imputation of missing values as most extreme values from the respective dataset",
-#| ft.arraystretch = 1.5
+#| ft.arraystretch = 1
 
 sens_citations_reanalysis_summ_tib <- read.csv(here("Data", "Citations_Datasets", "sens_citations_reanalysis_summ_tib.csv"))
 
